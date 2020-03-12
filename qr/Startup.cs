@@ -43,6 +43,8 @@ namespace qr
                 app.UseHsts();
             }
 
+            app.AddHealthChecks();
+
             var swaggerOptions = new SwaggerOptions();
             Configuration.GetSection(nameof(SwaggerOptions)).Bind(swaggerOptions);
 

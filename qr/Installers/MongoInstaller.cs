@@ -10,6 +10,7 @@ namespace qr.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
+            return;
             // Example #3: Suboptions
             // Bind options using a sub-section of the appsettings.json file.
             services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));

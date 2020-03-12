@@ -11,7 +11,6 @@ namespace qr.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            return;
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection")));
