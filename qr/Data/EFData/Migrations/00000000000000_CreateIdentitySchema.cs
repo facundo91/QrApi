@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace qr.EFData.Migrations
+namespace qr.Data.EFData.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

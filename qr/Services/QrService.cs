@@ -1,59 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AutoMapper;
-using Microsoft.EntityFrameworkCore;
+using qr.DAL;
+using qr.Data;
 using qr.Domain;
 using qr.Dtos;
-using qr.EFData;
 
 namespace qr.Services
 {
     public class QrService : IQrService
     {
-        private readonly ApplicationDbContext _dbContext;
-        private readonly IMapper _mapper;
+        private readonly IGenericRepository<QrDto, Qr> _qrRepository;
 
-        public QrService(ApplicationDbContext applicationDbContext, IMapper mapper)
+        public QrService(IDataContext dataContext)
         {
-            _dbContext = applicationDbContext;
-            _mapper = mapper;
-        }
-        public async Task<List<Qr>> GetQrsAsync()
-        {
-            var qrDtoList = await _dbContext.Qrs.ToListAsync();
-            return _mapper.Map<List<Qr>>(qrDtoList);
+            _qrRepository = dataContext.qrRepository;
         }
 
-        public async Task<Qr> GetQrByIdAsync(Guid qrId)
-        {
-            var qrDto = await _dbContext.Qrs.SingleOrDefaultAsync(x => x.Id == qrId);
-            return _mapper.Map<Qr>(qrDto);
-        }
+        public Task<IEnumerable<Qr>> GetQrsAsync() => 
+            _qrRepository.GetAllAsync();
 
-        public async Task<Qr> CreateQrAsync(Qr qrToCreate)
-        {
-            qrToCreate.Id = Guid.NewGuid();
-            var qrDto = _mapper.Map<QrDto>(qrToCreate);
-            _dbContext.Qrs.Add(qrDto);
-            var created = await _dbContext.SaveChangesAsync();
-            return created > 0 ? _mapper.Map<Qr>(qrDto) : null;
-        }
+        public Task<Qr> GetQrByIdAsync(Guid qrId) =>
+            _qrRepository.GetByIdAsync(qrId);
 
-        public async Task<bool> UpdateQrAsync(Qr qrToUpdate)
-        {
-            _dbContext.Qrs.Update(_mapper.Map<QrDto>(qrToUpdate));
-            var updated = await _dbContext.SaveChangesAsync();
-            return updated > 0;
-        }
+        public Task<Qr> CreateQrAsync(Qr qrToCreate) =>
+            _qrRepository.InsertAsync(qrToCreate);
 
-        public async Task<bool> DeleteQrAsync(Guid qrId)
-        {
-            var qrDto = await _dbContext.Qrs.SingleOrDefaultAsync(x => x.Id == qrId);
-            if (qrDto == null) return false;
-            _dbContext.Qrs.Remove(qrDto);
-            var deleted = await _dbContext.SaveChangesAsync();
-            return deleted > 0;
-        }
+        public Task<Qr> UpdateQrAsync(Qr qrToUpdate) =>
+            _qrRepository.UpdateAsync(qrToUpdate);
+
+        public Task<bool> DeleteQrAsync(Guid qrId) =>
+            _qrRepository.DeleteAsync(qrId);
     }
 }

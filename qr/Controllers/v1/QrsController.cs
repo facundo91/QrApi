@@ -10,6 +10,7 @@ using qr.Services;
 
 namespace qr.Controllers.v1
 {
+    //Should only be request and respond a versioned typed of object
     public class QrsController : Controller
     {
         private readonly IQrService _qrService;
@@ -57,7 +58,7 @@ namespace qr.Controllers.v1
         {
             var qr = _mapper.Map<Qr>(qrRequest);
             var qrUpdated = await _qrService.UpdateQrAsync(qr);
-            if (!qrUpdated) return NotFound();
+            if (qrUpdated == null) return NotFound();
             return Ok(_mapper.Map<QrResponse>(qr));
         }
 

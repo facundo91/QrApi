@@ -2,8 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qr.EFData;
-using qr.Services;
+using qr.Data;
+using qr.Data.EFData;
+using qr.Data.JsonData;
+using qr.Data.MongoData;
+using qr.Options;
 
 namespace qr.Installers
 {
@@ -11,14 +14,28 @@ namespace qr.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-
-            services.AddScoped<IQrService, QrService>();
-
+            var ioCOptions = new IoCOptions();
+            configuration.GetSection(nameof(IoCOptions)).Bind(ioCOptions);
+            switch (ioCOptions.DalImplementation)
+            {
+                case "json":
+                    services.AddSingleton<IDataContext, JsonContext>();
+                    break;
+                case "ef":
+                    services.AddDbContext<ApplicationDbContext>(options =>
+                        options.UseSqlServer(
+                            configuration.GetConnectionString("DefaultConnection")));
+                    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                        .AddEntityFrameworkStores<ApplicationDbContext>();
+                    services.AddSingleton<IDataContext, ApplicationDbContext>();
+                    break;
+                case "mongodb":
+                    services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));
+                    services.AddSingleton<IDataContext, MongoContext>();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

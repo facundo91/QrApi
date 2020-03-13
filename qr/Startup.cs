@@ -1,10 +1,14 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using qr.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.FeatureManagement;
+using Microsoft.FeatureManagement.FeatureFilters;
 using Microsoft.OpenApi.Models;
+using qr.Filters;
 using qr.Installers;
 
 namespace qr
@@ -21,6 +25,17 @@ namespace qr
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services
+            .AddFeatureManagement(Configuration.GetSection("FeatureManagement"))
+            .AddFeatureFilter<PercentageFilter>();
+            services
+                .AddMvc(options =>
+                {
+                    options.EnableEndpointRouting = false;
+                    options.Filters.Add<ValidationFilter>();
+
+                })
+                .AddFluentValidation(mvcConfiguration => mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.AddMvcCore().AddApiExplorer();
             services.AddSwaggerGen(x => { x.SwaggerDoc("v1", new OpenApiInfo { Title = "QR API", Version = "v1" }); });
             //services.AddControllersWithViews();

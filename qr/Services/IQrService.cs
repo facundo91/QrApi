@@ -7,10 +7,10 @@ namespace qr.Services
 {
     public interface IQrService
     {
-        Task<List<Qr>> GetQrsAsync();
+        Task<IEnumerable<Qr>> GetQrsAsync();
         Task<Qr> GetQrByIdAsync(Guid qrId);
         Task<Qr> CreateQrAsync(Qr qrToCreate);
-        Task<bool> UpdateQrAsync(Qr qrToUpdate);
+        Task<Qr> UpdateQrAsync(Qr qrToUpdate);
         Task<bool> DeleteQrAsync(Guid qrId);
 
     }

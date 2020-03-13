@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace qr.EFData.Migrations
+namespace qr.Data.EFData.Migrations
 {
     public partial class AddedQrs : Migration
     {
