@@ -1,10 +1,10 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using qr.Contracts.v1.Responses;
+using qrAPI.Contracts.v1.Responses;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace qr.Filters
+namespace qrAPI.Filters
 {
     public class ValidationFilter : IAsyncActionFilter
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace qr.Contracts.v1.Responses
+namespace qrAPI.Contracts.v1.Responses
 {
     public class QrResponse
     {

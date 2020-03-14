@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qr.Services;
+using qrAPI.Services;
 
-namespace qr.Installers
+namespace qrAPI.Installers
 {
     public class ServicesInstaller : IInstaller
     {

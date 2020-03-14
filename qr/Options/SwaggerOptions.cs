@@ -1,4 +1,4 @@
-﻿namespace qr.Options
+﻿namespace qrAPI.Options
 {
     public class SwaggerOptions
     {

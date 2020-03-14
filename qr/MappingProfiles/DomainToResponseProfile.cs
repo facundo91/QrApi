@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using qr.Contracts.v1.Responses;
-using qr.Domain;
+using qrAPI.Contracts.v1.Responses;
+using qrAPI.Domain;
 
-namespace qr.MappingProfiles
+namespace qrAPI.MappingProfiles
 {
     public class DomainToResponseProfile : Profile
     {

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using qr.Domain;
-using qr.Dtos;
+using qrAPI.DAL.Dtos;
+using qrAPI.Domain;
 
-namespace qr.MappingProfiles
+namespace qrAPI.MappingProfiles
 {
     public class DomainToDtoProfile : Profile
     {

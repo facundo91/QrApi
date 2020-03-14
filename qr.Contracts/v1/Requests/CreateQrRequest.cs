@@ -1,4 +1,4 @@
-﻿namespace qr.Contracts.v1.Requests
+﻿namespace qrAPI.Contracts.v1.Requests
 {
     public class CreateQrRequest
     {

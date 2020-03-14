@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using qr.Contracts.v1.Requests;
-using qr.Domain;
+using qrAPI.Contracts.v1.Requests;
+using qrAPI.Domain;
 
-namespace qr.MappingProfiles
+namespace qrAPI.MappingProfiles
 {
     public class RequestToDomainProfile : Profile
     {

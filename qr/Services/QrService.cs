@@ -1,35 +1,55 @@
-﻿using System;
+﻿using MediatR;
+using qrAPI.Commands.Qrs.ServiceCommands;
+using qrAPI.Domain;
+using qrAPI.Queries.Qrs.ServiceQueries;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using qr.DAL;
-using qr.Data;
-using qr.Domain;
-using qr.Dtos;
 
-namespace qr.Services
+namespace qrAPI.Services
 {
     public class QrService : IQrService
     {
-        private readonly IGenericRepository<QrDto, Qr> _qrRepository;
+        private readonly IMediator _mediator;
 
-        public QrService(IDataContext dataContext)
+        public QrService(IMediator mediator)
         {
-            _qrRepository = dataContext.qrRepository;
+            _mediator = mediator;
         }
 
-        public Task<IEnumerable<Qr>> GetQrsAsync() => 
-            _qrRepository.GetAllAsync();
+        public async Task<IEnumerable<Qr>> GetQrsAsync()
+        {
+            var query = new GetQrsAsyncQuery();
+            var result = await _mediator.Send(query);
+            return result;
+        }
 
-        public Task<Qr> GetQrByIdAsync(Guid qrId) =>
-            _qrRepository.GetByIdAsync(qrId);
+        public async Task<Qr> GetQrByIdAsync(Guid qrId)
+        {
+            var query = new GetQrByIdAsyncQuery(qrId);
+            var result = await _mediator.Send(query);
+            return result;
+        }
 
-        public Task<Qr> CreateQrAsync(Qr qrToCreate) =>
-            _qrRepository.InsertAsync(qrToCreate);
+        public async Task<Qr> CreateQrAsync(Qr qrToCreate)
+        {
+            var command = new CreateQrAsyncCommand(qrToCreate);
+            var result = await _mediator.Send(command);
+            return result;
+        }
 
-        public Task<Qr> UpdateQrAsync(Qr qrToUpdate) =>
-            _qrRepository.UpdateAsync(qrToUpdate);
+        public async Task<Qr> UpdateQrAsync(Qr qrToUpdate)
+        {
+            var command = new UpdateQrAsyncCommand(qrToUpdate);
+            var result = await _mediator.Send(command);
+            return result;
+        }
 
-        public Task<bool> DeleteQrAsync(Guid qrId) =>
-            _qrRepository.DeleteAsync(qrId);
+        public async Task<bool> DeleteQrAsync(Guid qrId)
+        {
+            var command = new DeleteQrAsyncCommand(qrId);
+            var result = await _mediator.Send(command);
+            return result;
+        }
     }
 }

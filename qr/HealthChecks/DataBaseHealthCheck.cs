@@ -1,9 +1,9 @@
-﻿using System.Threading;
+﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
+using qrAPI.DAL.Data;
+using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
-using qr.Data;
 
-namespace qr.HealthChecks
+namespace qrAPI.HealthChecks
 {
     public class DataBaseHealthCheck : IHealthCheck
     {
@@ -14,7 +14,8 @@ namespace qr.HealthChecks
             _context = context;
         }
 
-        public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = new CancellationToken())
+        public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context,
+            CancellationToken cancellationToken = new CancellationToken())
         {
             try
             {

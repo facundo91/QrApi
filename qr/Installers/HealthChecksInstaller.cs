@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qr.Data.EFData;
-using qr.HealthChecks;
-using qr.Options;
+using qrAPI.DAL.Data.EFData;
+using qrAPI.HealthChecks;
+using qrAPI.Options;
 
-namespace qr.Installers
+namespace qrAPI.Installers
 {
     public class HealthChecksInstaller : IInstaller
     {

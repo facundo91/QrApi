@@ -1,14 +1,14 @@
-﻿using System;
-using System.Linq;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-using qr.HealthChecks;
+using qrAPI.Contracts.HealthChecks;
+using System;
+using System.Linq;
 
-namespace qr.Installers
+namespace qrAPI.Installers
 {
     public static class InstallerExtensions
     {

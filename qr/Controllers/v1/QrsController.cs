@@ -1,73 +1,68 @@
-﻿using System;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using qr.Contracts.v1;
-using qr.Contracts.v1.Requests;
-using qr.Contracts.v1.Responses;
-using qr.Domain;
-using qr.Services;
+using qrAPI.Commands.Qrs.ControllerCommands;
+using qrAPI.Contracts.v1;
+using qrAPI.Contracts.v1.Requests;
+using qrAPI.Queries.Qrs.ControllerQueries;
+using System;
+using System.Threading.Tasks;
 
-namespace qr.Controllers.v1
+namespace qrAPI.Controllers.v1
 {
-    //Should only be request and respond a versioned typed of object
+    //Should only be request and respond the corresponding version typed of object
     public class QrsController : Controller
     {
-        private readonly IQrService _qrService;
-        private readonly IMapper _mapper;
+        private readonly IMediator _mediator;
 
-        public QrsController(IQrService qrService, IMapper mapper)
+        public QrsController(IMediator mediator)
         {
-            _qrService = qrService;
-            _mapper = mapper;
+            _mediator = mediator;
         }
 
         [HttpGet(ApiRoutes.Qrs.GetAll)]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAllQrs()
         {
-            return Ok(await _qrService.GetQrsAsync());
+            var query = new GetAllQrsQuery();
+            var result = await _mediator.Send(query);
+            return Ok(result);
         }
 
         [HttpGet(ApiRoutes.Qrs.Get)]
-        public async Task<IActionResult> Get([FromRoute]Guid qrId)
+        public async Task<IActionResult> GetQr([FromRoute] Guid qrId)
         {
-            var qr = await _qrService.GetQrByIdAsync(qrId);
-            if (qr == null) return NotFound();
-            var qrResponse = _mapper.Map<QrResponse>(qr);
-            return Ok(qrResponse);
+            var query = new GetQrByIdQuery(qrId);
+            var result = await _mediator.Send(query);
+            return result != null ? (IActionResult) Ok(result) : NotFound();
         }
 
         [HttpPost(ApiRoutes.Qrs.Create)]
-        public async Task<IActionResult> Create([FromBody] CreateQrRequest qrRequest)
+        public async Task<IActionResult> CreateQr([FromBody] CreateQrRequest qrRequest)
         {
-            var qr = _mapper.Map<Qr>(qrRequest);
+            var command = new CreateQrCommand(qrRequest);
+            var result = await _mediator.Send(command);
+            return result == null
+                ? (IActionResult) BadRequest()
+                : CreatedAtAction("CreateQr", new {id = result.Id}, result);
 
-            var qrCreated = await _qrService.CreateQrAsync(qr);
-
-            if (qrCreated == null) return BadRequest();
-
-            var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
-            var locationUri = baseUrl + "/" + ApiRoutes.Qrs.Get.Replace("{qrId}", qrCreated.Id.ToString());
-
-            var qrResponse = _mapper.Map<QrResponse>(qrCreated);
-            return Created(locationUri, qrResponse);
+            //var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
+            //var locationUri = baseUrl + "/" + ApiRoutes.Qrs.Get.Replace("{qrId}", result.Id.ToString());
+            //return Created(locationUri, result);
         }
 
         [HttpPut(ApiRoutes.Qrs.Update)]
-        public async Task<IActionResult> Update([FromRoute]Guid qrId, [FromBody] UpdateQrRequest qrRequest)
+        public async Task<IActionResult> UpdateQr([FromRoute] Guid qrId, [FromBody] UpdateQrRequest qrRequest)
         {
-            var qr = _mapper.Map<Qr>(qrRequest);
-            var qrUpdated = await _qrService.UpdateQrAsync(qr);
-            if (qrUpdated == null) return NotFound();
-            return Ok(_mapper.Map<QrResponse>(qr));
+            var command = new UpdateQrCommand(qrId, qrRequest);
+            var result = await _mediator.Send(command);
+            return result == null ? (IActionResult) NotFound() : Ok(result);
         }
 
         [HttpDelete(ApiRoutes.Qrs.Delete)]
-        public async Task<IActionResult> Delete([FromRoute]Guid qrId)
+        public async Task<IActionResult> DeleteQr([FromRoute] Guid qrId)
         {
-            var updated = await _qrService.DeleteQrAsync(qrId);
-            if (updated) return NoContent();
-            return NotFound();
+            var command = new DeleteQrCommand(qrId);
+            var result = await _mediator.Send(command);
+            return result ? (IActionResult) NoContent() : NotFound();
         }
     }
 }

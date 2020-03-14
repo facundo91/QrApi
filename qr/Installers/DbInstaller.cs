@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qr.Data;
-using qr.Data.EFData;
-using qr.Data.JsonData;
-using qr.Data.MongoData;
-using qr.Options;
+using qrAPI.DAL.Data;
+using qrAPI.DAL.Data.EFData;
+using qrAPI.DAL.Data.JsonData;
+using qrAPI.DAL.Data.MongoData;
+using qrAPI.Options;
 
-namespace qr.Installers
+namespace qrAPI.Installers
 {
     public class DbInstaller : IInstaller
     {

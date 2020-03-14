@@ -1,17 +1,17 @@
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using qr.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.FeatureManagement;
 using Microsoft.FeatureManagement.FeatureFilters;
 using Microsoft.OpenApi.Models;
-using qr.Filters;
-using qr.Installers;
+using qrAPI.Filters;
+using qrAPI.Installers;
+using qrAPI.Options;
 
-namespace qr
+namespace qrAPI
 {
     public class Startup
     {
@@ -26,18 +26,18 @@ namespace qr
         public void ConfigureServices(IServiceCollection services)
         {
             services
-            .AddFeatureManagement(Configuration.GetSection("FeatureManagement"))
-            .AddFeatureFilter<PercentageFilter>();
+                .AddFeatureManagement(Configuration.GetSection("FeatureManagement"))
+                .AddFeatureFilter<PercentageFilter>();
             services
                 .AddMvc(options =>
                 {
                     options.EnableEndpointRouting = false;
                     options.Filters.Add<ValidationFilter>();
-
                 })
-                .AddFluentValidation(mvcConfiguration => mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>());
+                .AddFluentValidation(mvcConfiguration =>
+                    mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.AddMvcCore().AddApiExplorer();
-            services.AddSwaggerGen(x => { x.SwaggerDoc("v1", new OpenApiInfo { Title = "QR API", Version = "v1" }); });
+            services.AddSwaggerGen(x => { x.SwaggerDoc("v1", new OpenApiInfo {Title = "QR API", Version = "v1"}); });
             //services.AddControllersWithViews();
             services.AddRazorPages();
             services.InstallServicesInAssembly(Configuration);
@@ -65,7 +65,10 @@ namespace qr
 
             app.UseSwagger(options => { options.RouteTemplate = swaggerOptions.JsonRoute; });
 
-            app.UseSwaggerUI(options => { options.SwaggerEndpoint(swaggerOptions.UiEndpoint, swaggerOptions.Description); });
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint(swaggerOptions.UiEndpoint, swaggerOptions.Description);
+            });
 
 
             app.UseHttpsRedirection();

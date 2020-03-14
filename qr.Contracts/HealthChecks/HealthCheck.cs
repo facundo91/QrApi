@@ -1,4 +1,4 @@
-﻿namespace qr.HealthChecks
+﻿namespace qrAPI.Contracts.HealthChecks
 {
     public class HealthCheck
     {

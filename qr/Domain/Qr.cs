@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace qr.Domain
+namespace qrAPI.Domain
 {
     public class Qr
     {

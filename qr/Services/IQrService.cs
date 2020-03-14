@@ -1,9 +1,9 @@
-﻿using System;
+﻿using qrAPI.Domain;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using qr.Domain;
 
-namespace qr.Services
+namespace qrAPI.Services
 {
     public interface IQrService
     {
@@ -12,6 +12,5 @@ namespace qr.Services
         Task<Qr> CreateQrAsync(Qr qrToCreate);
         Task<Qr> UpdateQrAsync(Qr qrToUpdate);
         Task<bool> DeleteQrAsync(Guid qrId);
-
     }
 }
