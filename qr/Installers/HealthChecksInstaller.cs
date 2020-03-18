@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.DAL.Data.EFData;
+using qrAPI.Data.EFData;
 using qrAPI.HealthChecks;
 using qrAPI.Options;
 

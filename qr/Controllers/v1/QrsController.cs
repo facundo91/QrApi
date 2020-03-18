@@ -6,6 +6,8 @@ using qrAPI.Contracts.v1.Requests;
 using qrAPI.Queries.Qrs.ControllerQueries;
 using System;
 using System.Threading.Tasks;
+using Microsoft.FeatureManagement.Mvc;
+using qrAPI.Options;
 
 namespace qrAPI.Controllers.v1
 {
@@ -40,9 +42,10 @@ namespace qrAPI.Controllers.v1
         {
             var command = new CreateQrCommand(qrRequest);
             var result = await _mediator.Send(command);
-            return result == null
-                ? (IActionResult) BadRequest()
-                : CreatedAtAction("CreateQr", new {id = result.Id}, result);
+            return result //TODO
+                ? Ok()
+                //? CreatedAtAction("CreateQr", new {id = result.Id}, result) 
+                : (IActionResult) BadRequest();
 
             //var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
             //var locationUri = baseUrl + "/" + ApiRoutes.Qrs.Get.Replace("{qrId}", result.Id.ToString());
@@ -50,11 +53,12 @@ namespace qrAPI.Controllers.v1
         }
 
         [HttpPut(ApiRoutes.Qrs.Update)]
+        [FeatureGate(FeatureFlags.EndpointFlag)]
         public async Task<IActionResult> UpdateQr([FromRoute] Guid qrId, [FromBody] UpdateQrRequest qrRequest)
         {
             var command = new UpdateQrCommand(qrId, qrRequest);
             var result = await _mediator.Send(command);
-            return result == null ? (IActionResult) NotFound() : Ok(result);
+            return result ? Ok() : (IActionResult) NotFound();
         }
 
         [HttpDelete(ApiRoutes.Qrs.Delete)]

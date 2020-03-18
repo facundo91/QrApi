@@ -2,10 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.DAL.Data;
-using qrAPI.DAL.Data.EFData;
-using qrAPI.DAL.Data.JsonData;
-using qrAPI.DAL.Data.MongoData;
+using qrAPI.Data;
+using qrAPI.Data.EFData;
+using qrAPI.Data.JsonData;
+using qrAPI.Data.MongoData;
 using qrAPI.Options;
 
 namespace qrAPI.Installers
@@ -27,7 +27,8 @@ namespace qrAPI.Installers
                             configuration.GetConnectionString("DefaultConnection")));
                     services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                         .AddEntityFrameworkStores<ApplicationDbContext>();
-                    services.AddSingleton<IDataContext, ApplicationDbContext>();
+                    services.AddScoped<IDataContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
+                    //services.AddSingleton<IDataContext, ApplicationDbContext>();
                     break;
                 case "mongodb":
                     services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));

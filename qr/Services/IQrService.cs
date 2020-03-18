@@ -9,8 +9,8 @@ namespace qrAPI.Services
     {
         Task<IEnumerable<Qr>> GetQrsAsync();
         Task<Qr> GetQrByIdAsync(Guid qrId);
-        Task<Qr> CreateQrAsync(Qr qrToCreate);
-        Task<Qr> UpdateQrAsync(Qr qrToUpdate);
+        Task<bool> CreateQrAsync(Qr qrToCreate);
+        Task<bool> UpdateQrAsync(Qr qrToUpdate);
         Task<bool> DeleteQrAsync(Guid qrId);
     }
 }

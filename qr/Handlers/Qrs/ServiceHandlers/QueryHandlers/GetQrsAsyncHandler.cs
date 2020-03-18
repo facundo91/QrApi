@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using MediatR;
-using qrAPI.DAL.Data;
-using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
 using qrAPI.Domain;
 using qrAPI.Queries.Qrs.ServiceQueries;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using qrAPI.Data;
+using qrAPI.Dtos;
+using qrAPI.Repositories;
 
 namespace qrAPI.Handlers.Qrs.ServiceHandlers.QueryHandlers
 {

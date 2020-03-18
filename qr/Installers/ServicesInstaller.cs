@@ -8,7 +8,7 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IQrService, QrService>();
+            services.AddTransient<IQrService, QrService>();
         }
     }
 }

@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using qrAPI.Contracts.v1;
+using qrAPI.Contracts.v1.Requests;
+using qrAPI.Contracts.v1.Responses;
+using qrAPI.Data.EFData;
+
+namespace qrAPI.IntegrationTests
+{
+    public class IntegrationTest : IDisposable
+    {
+        protected readonly HttpClient TestClient;
+        private readonly IServiceProvider _serviceProvider;
+
+        public IntegrationTest()
+        {
+            var appFactory = new WebApplicationFactory<Startup>()
+                .WithWebHostBuilder(builder =>
+                {
+                    builder.ConfigureServices(services =>
+                    {
+                        services.RemoveAll(typeof(DbContextOptions<ApplicationDbContext>));
+                        services.AddDbContext<ApplicationDbContext>(options =>
+                        {
+                            options.UseInMemoryDatabase("TestDB");
+                        });
+                    });
+                });
+            _serviceProvider = appFactory.Services;
+            TestClient = appFactory.CreateClient();
+        }
+
+        protected async Task<QrResponse> CreatePostAsync(CreateQrRequest request)
+        {
+            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, request);
+            return (await response.Content.ReadAsAsync<QrResponse>());
+        }
+
+        protected async Task<List<QrResponse>> GetAllQrs()
+        {
+            return (await TestClient.GetAsync(ApiRoutes.Qrs.GetAll)
+                    .ConfigureAwait(false)).Content
+                .ReadAsAsync<List<QrResponse>>().Result;
+        }
+
+        public void Dispose()
+        {
+            using var serviceScope = _serviceProvider.CreateScope();
+            var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
+            context.Database.EnsureDeleted();
+        }
+
+    }
+}

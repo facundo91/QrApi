@@ -13,7 +13,7 @@ namespace qrAPI.Filters
             if (!context.ModelState.IsValid)
             {
                 var errorsInModelState = context.ModelState
-                    .Where(x => x.Value.Errors.Count > 0)
+                    .Where(x => x.Value.Errors.Any())
                     .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(x => x.ErrorMessage)).ToArray();
 
                 var errorResponse = new ErrorResponse();

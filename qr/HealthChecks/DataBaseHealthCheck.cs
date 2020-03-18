@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
-using qrAPI.DAL.Data;
 using System.Threading;
 using System.Threading.Tasks;
+using qrAPI.Data;
 
 namespace qrAPI.HealthChecks
 {

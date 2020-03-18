@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using qrAPI.Commands.Qrs.ControllerCommands;
-using qrAPI.Contracts.v1.Responses;
 using qrAPI.Domain;
 using qrAPI.Services;
 using System.Threading;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace qrAPI.Handlers.Qrs.ControllerHandlers.CommandHandlers
 {
-    public class CreateQrHandler : IRequestHandler<CreateQrCommand, QrResponse>
+    public class CreateQrHandler : IRequestHandler<CreateQrCommand, bool>
     {
         private readonly IMapper _mapper;
         private readonly IQrService _qrService;
@@ -20,11 +19,10 @@ namespace qrAPI.Handlers.Qrs.ControllerHandlers.CommandHandlers
             _qrService = qrService;
         }
 
-        public async Task<QrResponse> Handle(CreateQrCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(CreateQrCommand request, CancellationToken cancellationToken)
         {
             var qr = _mapper.Map<Qr>(request.CreateQrRequest);
-            var qrCreated = await _qrService.CreateQrAsync(qr);
-            return qrCreated == null ? null : _mapper.Map<QrResponse>(qrCreated);
+            return await _qrService.CreateQrAsync(qr);
         }
     }
 }

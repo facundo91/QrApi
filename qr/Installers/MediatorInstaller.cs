@@ -8,7 +8,7 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddMediatR(typeof(Startup));
+            services.AddMediatR(typeof(Startup).Assembly);
         }
     }
 }

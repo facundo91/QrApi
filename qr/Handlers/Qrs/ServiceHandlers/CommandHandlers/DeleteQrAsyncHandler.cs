@@ -1,10 +1,10 @@
 ﻿using MediatR;
 using qrAPI.Commands.Qrs.ServiceCommands;
-using qrAPI.DAL.Data;
-using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
 using System.Threading;
 using System.Threading.Tasks;
+using qrAPI.Data;
+using qrAPI.Dtos;
+using qrAPI.Repositories;
 
 namespace qrAPI.Handlers.Qrs.ServiceHandlers.CommandHandlers
 {
@@ -19,8 +19,7 @@ namespace qrAPI.Handlers.Qrs.ServiceHandlers.CommandHandlers
 
         public async Task<bool> Handle(DeleteQrAsyncCommand request, CancellationToken cancellationToken)
         {
-            var result = await _qrRepository.DeleteAsync(request.QrId);
-            return result;
+            return await _qrRepository.DeleteAsync(request.QrId);
         }
     }
 }

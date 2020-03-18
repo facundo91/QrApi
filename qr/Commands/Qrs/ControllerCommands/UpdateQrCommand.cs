@@ -1,11 +1,10 @@
 ﻿using MediatR;
 using qrAPI.Contracts.v1.Requests;
-using qrAPI.Contracts.v1.Responses;
 using System;
 
 namespace qrAPI.Commands.Qrs.ControllerCommands
 {
-    public class UpdateQrCommand : IRequest<QrResponse>
+    public class UpdateQrCommand : IRequest<bool>
     {
         public Guid QrId { get; }
         public UpdateQrRequest QrRequest { get; }
