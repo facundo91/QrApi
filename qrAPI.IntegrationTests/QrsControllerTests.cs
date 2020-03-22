@@ -31,7 +31,7 @@ namespace qrAPI.IntegrationTests
             var getAllBefore = (await GetAllQrs()).Count;
             var createQrRequest = new CreateQrRequest { Name = "Test QR" };
             //Act
-            await CreatePostAsync(createQrRequest);
+            await CreateQrAsync(createQrRequest);
             var getAllAfter = (await GetAllQrs()).Count;
             //Assert
             (getAllAfter - getAllBefore).Should().Be(1);
@@ -44,7 +44,7 @@ namespace qrAPI.IntegrationTests
             const string qrName = "Test QR";
             var createQrRequest = new CreateQrRequest { Name = qrName };
             //Act
-            var qrResponse = await CreatePostAsync(createQrRequest);
+            var qrResponse = await CreateQrAsync(createQrRequest);
             //Assert
             qrResponse.Name.Should().Be(qrName);
         }

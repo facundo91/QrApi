@@ -9,6 +9,7 @@ namespace qrAPI.Installers
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<IQrService, QrService>();
+            services.AddTransient<IPetService, PetService>();
         }
     }
 }

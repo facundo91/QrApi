@@ -39,11 +39,12 @@ namespace qrAPI.UnitTests.Services
         {
             //Arrange
             var qr = new Qr { Name = "Test Qr" };
-            _mediatorMock.Setup(m => m.Send(It.IsAny<CreateQrAsyncCommand>(), It.IsAny<CancellationToken>()))
-                .ReturnsAsync(true);
+            _mediatorMock.Setup(m => 
+                    m.Send(It.IsAny<CreateQrAsyncCommand>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(new Qr());
             //Act
             //Assert
-            (await _qrService.CreateQrAsync(qr)).Should().BeTrue();
+            (await _qrService.CreateQrAsync(qr)).Should().Be(true);
         }
 
     }

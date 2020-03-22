@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace qrAPI.DALTests.Repositories
+namespace qrAPI.UnitTests.Repositories
 {
     [TestClass()]
     public class GenericMongoRepositoryTests

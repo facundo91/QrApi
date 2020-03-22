@@ -7,10 +7,5 @@ namespace qrAPI.Dtos
     public abstract class Dto
     {
         [BsonId, Key] public Guid Id { get; set; }
-
-        public Dto()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }

@@ -27,13 +27,11 @@ namespace qrAPI.Repositories
                 .Find((FilterDefinition<TDto>)id).FirstOrDefaultAsync();
         }
 
-        public async Task<bool> InsertAsync(TDto obj)
+        public async Task<TDto> InsertAsync(TDto obj)
         {
-            if (await GetByIdAsync(obj.Id) == null)
-                return false;
             obj.Id = Guid.NewGuid();
             await _table.InsertOneAsync(obj);
-            return true;
+            return obj;
         }
 
         public async Task<bool> UpdateAsync(TDto obj)

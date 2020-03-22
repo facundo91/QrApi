@@ -4,12 +4,13 @@ using qrAPI.Commands.Qrs.ServiceCommands;
 using System.Threading;
 using System.Threading.Tasks;
 using qrAPI.Data;
+using qrAPI.Domain;
 using qrAPI.Dtos;
 using qrAPI.Repositories;
 
 namespace qrAPI.Handlers.Qrs.ServiceHandlers.CommandHandlers
 {
-    public class CreateQrAsyncHandler : IRequestHandler<CreateQrAsyncCommand, bool>
+    public class CreateQrAsyncHandler : IRequestHandler<CreateQrAsyncCommand, Qr>
     {
         private readonly IMapper _mapper;
         private readonly IGenericRepository<QrDto> _qrRepository;
@@ -20,10 +21,11 @@ namespace qrAPI.Handlers.Qrs.ServiceHandlers.CommandHandlers
             _qrRepository = dataContext.QrRepository;
         }
 
-        public async Task<bool> Handle(CreateQrAsyncCommand request, CancellationToken cancellationToken)
+        public async Task<Qr> Handle(CreateQrAsyncCommand request, CancellationToken cancellationToken)
         {
             var qrDto = _mapper.Map<QrDto>(request.QrToCreate);
-            return await _qrRepository.InsertAsync(qrDto);
+            QrDto qrCreated = await _qrRepository.InsertAsync(qrDto);
+            return _mapper.Map<Qr>(qrCreated);
         }
     }
 }

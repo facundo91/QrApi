@@ -28,12 +28,11 @@ namespace qrAPI.Repositories
             return await _table.FindAsync(id);
         }
 
-        public async Task<bool> InsertAsync(TDto obj)
+        public async Task<TDto> InsertAsync(TDto obj)
         {
-            //obj.Id = Guid.NewGuid();
-            await _table.AddAsync(obj);
+            var objCreated = (await _table.AddAsync(obj)).Entity;
             var created = await Save();
-            return created > 0;
+            return created == 0 ? null : objCreated;
         }
 
         public async Task<bool> UpdateAsync(TDto obj)

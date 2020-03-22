@@ -8,10 +8,12 @@ namespace qrAPI.Data.JsonData
     {
         public JsonContext()
         {
-            QrRepository = new GenericJsonRepository<QrDto>();
+            QrRepository = new GenericJsonRepository<QrDto>("qrs.json");
+            PetRepository = new GenericJsonRepository<PetDto>("pets.json");
         }
 
         public IGenericRepository<QrDto> QrRepository { get; }
-        public void HealthCheck() => _ = new FileInfo("qrs.10.json");
+        public IGenericRepository<PetDto> PetRepository { get; }
+        public void HealthCheck() => _ = new FileInfo("qrs.json");
     }
 }

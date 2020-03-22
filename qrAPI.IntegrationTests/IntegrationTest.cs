@@ -36,10 +36,16 @@ namespace qrAPI.IntegrationTests
             TestClient = appFactory.CreateClient();
         }
 
-        protected async Task<QrResponse> CreatePostAsync(CreateQrRequest request)
+        protected async Task<QrResponse> CreateQrAsync(CreateQrRequest request)
         {
             var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, request);
-            return (await response.Content.ReadAsAsync<QrResponse>());
+            return await response.Content.ReadAsAsync<QrResponse>();
+        }
+
+        protected async Task<PetResponse> CreatePetAsync(CreatePetRequest request)
+        {
+            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Pets.Create, request);
+            return await response.Content.ReadAsAsync<PetResponse>();
         }
 
         protected async Task<List<QrResponse>> GetAllQrs()
@@ -47,6 +53,13 @@ namespace qrAPI.IntegrationTests
             return (await TestClient.GetAsync(ApiRoutes.Qrs.GetAll)
                     .ConfigureAwait(false)).Content
                 .ReadAsAsync<List<QrResponse>>().Result;
+        }
+
+        protected async Task<List<PetResponse>> GetAllPets()
+        {
+            return (await TestClient.GetAsync(ApiRoutes.Pets.GetAll)
+                    .ConfigureAwait(false)).Content
+                .ReadAsAsync<List<PetResponse>>().Result;
         }
 
         public void Dispose()

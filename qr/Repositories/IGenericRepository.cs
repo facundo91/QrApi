@@ -8,7 +8,7 @@ namespace qrAPI.Repositories
     {
         Task<IEnumerable<TDto>> GetAllAsync();
         Task<TDto> GetByIdAsync(object id);
-        Task<bool> InsertAsync(TDto obj);
+        Task<TDto> InsertAsync(TDto obj);
         Task<bool> UpdateAsync(TDto obj);
         Task<bool> DeleteAsync(object id);
     }

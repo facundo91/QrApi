@@ -42,9 +42,8 @@ namespace qrAPI.Controllers.v1
         {
             var command = new CreateQrCommand(qrRequest);
             var result = await _mediator.Send(command);
-            return result //TODO
-                ? Ok()
-                //? CreatedAtAction("CreateQr", new {id = result.Id}, result) 
+            return result != null
+                ? CreatedAtAction("CreateQr", new {id = result.Id}, result) 
                 : (IActionResult) BadRequest();
 
             //var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";

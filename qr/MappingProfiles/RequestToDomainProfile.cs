@@ -8,8 +8,12 @@ namespace qrAPI.MappingProfiles
     {
         public RequestToDomainProfile()
         {
-            CreateMap<CreateQrRequest, Qr>().ReverseMap();
-            CreateMap<UpdateQrRequest, Qr>().ReverseMap();
+            CreateMap<CreateQrRequest, Qr>();
+            CreateMap<UpdateQrRequest, Qr>();
+
+            CreateMap<CreatePetRequest, Pet>().ForMember(dest => dest.Owner, opt =>
+                opt.MapFrom(src => new Person { Id = src.Owner }));
+            CreateMap<UpdatePetRequest, Pet>();
         }
     }
 }

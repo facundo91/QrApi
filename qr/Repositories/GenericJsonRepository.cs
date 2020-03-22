@@ -13,9 +13,9 @@ namespace qrAPI.Repositories
     {
         private readonly List<TDto> _table = new List<TDto>();
 
-        public GenericJsonRepository()
+        public GenericJsonRepository(string path)
         {
-            LoadJson();
+            LoadJson(path);
             _table.ForEach(x => x.Id = Guid.NewGuid());
         }
 
@@ -23,13 +23,11 @@ namespace qrAPI.Repositories
 
         private TDto GetById(object id) => _table.FirstOrDefault(x => x.Id == (Guid) id);
 
-        private bool Insert(TDto obj)
+        private TDto Insert(TDto obj)
         {
-            if (GetById(obj.Id) == null)
-                return false;
             obj.Id = Guid.NewGuid();
             _table.Add(obj);
-            return true;
+            return obj;
         }
 
         private bool Update(TDto obj)
@@ -46,9 +44,9 @@ namespace qrAPI.Repositories
             return _table.Remove(firstOrDefault);
         }
 
-        private void LoadJson()
+        private void LoadJson(string path)
         {
-            using (StreamReader r = new StreamReader("qrs.10.json"))
+            using (StreamReader r = new StreamReader(path))
             {
                 string json = r.ReadToEnd();
                 List<TDto> items = JsonConvert.DeserializeObject<List<TDto>>(json);
@@ -62,7 +60,7 @@ namespace qrAPI.Repositories
         public Task<TDto> GetByIdAsync(object id) =>
             Task.FromResult(GetById(id));
 
-        public Task<bool> InsertAsync(TDto obj) =>
+        public Task<TDto> InsertAsync(TDto obj) =>
             Task.FromResult(Insert(obj));
 
         public Task<bool> UpdateAsync(TDto obj) =>

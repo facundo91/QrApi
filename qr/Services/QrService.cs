@@ -31,10 +31,10 @@ namespace qrAPI.Services
             return result;
         }
 
-        public async Task<bool> CreateQrAsync(Qr qrToCreate)
+        public async Task<Qr> CreateQrAsync(Qr qrToCreate)
         {
             var command = new CreateQrAsyncCommand(qrToCreate);
-            var result = await _mediator.Send(command);
+            Qr result = await _mediator.Send(command);
             return result;
         }
 

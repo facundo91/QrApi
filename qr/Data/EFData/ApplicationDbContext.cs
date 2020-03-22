@@ -12,10 +12,11 @@ namespace qrAPI.Data.EFData
             : base(options)
         {
             QrRepository = new GenericEfRepository<QrDto>(this);
+            PetRepository = new GenericEfRepository<PetDto>(this);
         }
 
-        public DbSet<QrDto> Qrs { get; set; }
         public IGenericRepository<QrDto> QrRepository { get; }
+        public IGenericRepository<PetDto> PetRepository { get; }
         public void HealthCheck() => _ = Database.ProviderName;
     }
 }

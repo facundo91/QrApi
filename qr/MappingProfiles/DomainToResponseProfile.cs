@@ -9,6 +9,7 @@ namespace qrAPI.MappingProfiles
         public DomainToResponseProfile()
         {
             CreateMap<Qr, QrResponse>().ReverseMap();
+            CreateMap<Pet, PetResponse>().ReverseMap();
         }
     }
 }

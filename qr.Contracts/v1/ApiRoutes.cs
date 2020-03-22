@@ -8,11 +8,22 @@
 
         public static class Qrs
         {
-            public const string GetAll = Base + "/qrs";
-            public const string Get = Base + "/qrs/{qrId}";
-            public const string Update = Base + "/qrs/{qrId}";
-            public const string Delete = Base + "/qrs/{qrId}";
-            public const string Create = Base + "/qrs";
+            public const string Relative = Base + "/qrs";
+            public const string GetAll = Relative;
+            public const string Get = Relative + "/{qrId}";
+            public const string Update = Relative + "/{qrId}";
+            public const string Delete = Relative + "/{qrId}";
+            public const string Create = Relative;
+        }
+
+        public static class Pets
+        {
+            public const string Relative = Base + "/pets";
+            public const string GetAll = Relative;
+            public const string Get = Relative + "/{qrId}";
+            public const string Update = Relative + "/{qrId}";
+            public const string Delete = Relative + "/{qrId}";
+            public const string Create = Relative;
         }
     }
 }

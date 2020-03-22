@@ -3,7 +3,7 @@ using qrAPI.Domain;
 
 namespace qrAPI.Commands.Qrs.ServiceCommands
 {
-    public class CreateQrAsyncCommand : IRequest<bool>
+    public class CreateQrAsyncCommand : IRequest<Qr>
     {
         public Qr QrToCreate { get; }
 
