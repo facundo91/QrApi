@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using qrAPI.Dtos;
 using qrAPI.Repositories;
 
@@ -6,14 +7,16 @@ namespace qrAPI.Data.JsonData
 {
     public class JsonContext : IDataContext
     {
-        public JsonContext()
+        public IGenericRepository<T> GetRepository<T>() where T : Dto
         {
-            QrRepository = new GenericJsonRepository<QrDto>("qrs.json");
-            PetRepository = new GenericJsonRepository<PetDto>("pets.json");
+            return DtosDictionary.TypeDictionary[typeof(T)] switch
+            {
+                0 => (IGenericRepository<T>)new GenericJsonRepository<QrDto>("qrs.json"),
+                1 => (IGenericRepository<T>)new GenericJsonRepository<PetDto>("pets.json"),
+                2 => (IGenericRepository<T>)new GenericJsonRepository<PetDto>("pets.json"),
+                _ => throw new InvalidOperationException()
+            };
         }
-
-        public IGenericRepository<QrDto> QrRepository { get; }
-        public IGenericRepository<PetDto> PetRepository { get; }
         public void HealthCheck() => _ = new FileInfo("qrs.json");
     }
 }

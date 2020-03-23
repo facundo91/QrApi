@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using qrAPI.Domain;
+﻿using qrAPI.Domain;
 
 namespace qrAPI.Services
 {
-    public interface IPetService
+    public interface IPetService<TDomainObject> : IGenericService<TDomainObject> 
+        where TDomainObject : Pet
     {
-        Task<IEnumerable<Pet>> GetPetsAsync();
-        Task<Pet> GetPetByIdAsync(Guid petId);
-        Task<Pet> CreatePetAsync(Pet petToCreate);
-        Task<bool> UpdatePetAsync(Pet petToUpdate);
-        Task<bool> DeletePetAsync(Guid petId);
     }
 }

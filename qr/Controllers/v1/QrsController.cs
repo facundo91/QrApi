@@ -1,12 +1,13 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using qrAPI.Commands.Qrs.ControllerCommands;
+﻿using Microsoft.AspNetCore.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
-using qrAPI.Queries.Qrs.ControllerQueries;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.FeatureManagement.Mvc;
+using qrAPI.Contracts.v1.Responses;
+using qrAPI.Domain;
+using qrAPI.Mediators;
 using qrAPI.Options;
 
 namespace qrAPI.Controllers.v1
@@ -14,37 +15,34 @@ namespace qrAPI.Controllers.v1
     //Should only be request and respond the corresponding version typed of object
     public class QrsController : Controller
     {
-        private readonly IMediator _mediator;
+        private readonly IControllerServiceMediator<Qr> _controllerServiceMediator;
 
-        public QrsController(IMediator mediator)
+        public QrsController(IControllerServiceMediator<Qr> controllerServiceMediator)
         {
-            _mediator = mediator;
+            _controllerServiceMediator = controllerServiceMediator;
         }
 
         [HttpGet(ApiRoutes.Qrs.GetAll)]
         public async Task<IActionResult> GetAllQrs()
         {
-            var query = new GetAllQrsQuery();
-            var result = await _mediator.Send(query);
+            var result = await _controllerServiceMediator.GetAllAsync<IEnumerable<QrResponse>>();
             return Ok(result);
         }
 
         [HttpGet(ApiRoutes.Qrs.Get)]
         public async Task<IActionResult> GetQr([FromRoute] Guid qrId)
         {
-            var query = new GetQrByIdQuery(qrId);
-            var result = await _mediator.Send(query);
-            return result != null ? (IActionResult) Ok(result) : NotFound();
+            var result = await _controllerServiceMediator.GetByIdAsync<QrResponse>(qrId);
+            return result != null ? (IActionResult)Ok(result) : NotFound();
         }
 
         [HttpPost(ApiRoutes.Qrs.Create)]
         public async Task<IActionResult> CreateQr([FromBody] CreateQrRequest qrRequest)
         {
-            var command = new CreateQrCommand(qrRequest);
-            var result = await _mediator.Send(command);
+            var result = await _controllerServiceMediator.CreateAsync<QrResponse>(qrRequest);
             return result != null
-                ? CreatedAtAction("CreateQr", new {id = result.Id}, result) 
-                : (IActionResult) BadRequest();
+                ? CreatedAtAction("CreateQr", new { id = result.Id }, result)
+                : (IActionResult)BadRequest();
 
             //var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
             //var locationUri = baseUrl + "/" + ApiRoutes.Qrs.Get.Replace("{qrId}", result.Id.ToString());
@@ -55,17 +53,15 @@ namespace qrAPI.Controllers.v1
         [FeatureGate(FeatureFlags.EndpointFlag)]
         public async Task<IActionResult> UpdateQr([FromRoute] Guid qrId, [FromBody] UpdateQrRequest qrRequest)
         {
-            var command = new UpdateQrCommand(qrId, qrRequest);
-            var result = await _mediator.Send(command);
-            return result ? Ok() : (IActionResult) NotFound();
+            var result = await _controllerServiceMediator.UpdateAsync(qrRequest);
+            return result ? Ok() : (IActionResult)NotFound();
         }
 
         [HttpDelete(ApiRoutes.Qrs.Delete)]
         public async Task<IActionResult> DeleteQr([FromRoute] Guid qrId)
         {
-            var command = new DeleteQrCommand(qrId);
-            var result = await _mediator.Send(command);
-            return result ? (IActionResult) NoContent() : NotFound();
+            var result = await _controllerServiceMediator.DeleteAsync(qrId);
+            return result ? (IActionResult)NoContent() : NotFound();
         }
     }
 }

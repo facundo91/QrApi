@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace qrAPI.Dtos
 {
+    [Table("Pets")]
     public class PetDto : Dto
     {
         public string Name { get; set; }

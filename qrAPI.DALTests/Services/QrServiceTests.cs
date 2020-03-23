@@ -1,12 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FluentAssertions;
 using MediatR;
 using Moq;
-using qrAPI.Commands.Qrs.ServiceCommands;
 using qrAPI.Domain;
-using qrAPI.Queries.Qrs.ServiceQueries;
 using qrAPI.Services;
 using Xunit;
 

@@ -1,48 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using MediatR;
-using qrAPI.Commands.Pets.ServiceCommands;
-using qrAPI.Domain;
-using qrAPI.Queries.Pets.ServiceQueries;
+﻿using qrAPI.Domain;
+using qrAPI.Dtos;
+using qrAPI.Mediators;
 
 namespace qrAPI.Services
 {
-    public class PetService : IPetService
+    public class PetService : AbstractGenericService<Pet, PetDto>, IPetService<Pet> 
     {
-        private readonly IMediator _mediator;
-
-        public PetService(IMediator mediator)
+        public PetService(IServiceDalMediator<Pet, PetDto> serviceDalMediator) : base(serviceDalMediator)
         {
-            _mediator = mediator;
-        }
-        public async Task<IEnumerable<Pet>> GetPetsAsync()
-        {
-            var pet = new GetPetsAsyncQuery();
-            var result = await _mediator.Send(pet);
-            return result;
         }
 
-        public async Task<Pet> GetPetByIdAsync(Guid petId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<Pet> CreatePetAsync(Pet petToCreate)
-        {
-            var command = new CreatePetAsyncCommand(petToCreate);
-            Pet result = await _mediator.Send(command);
-            return result;
-        }
-
-        public async Task<bool> UpdatePetAsync(Pet petToUpdate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<bool> DeletePetAsync(Guid petId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

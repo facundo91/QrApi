@@ -28,7 +28,6 @@ namespace qrAPI.Installers
                     services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                         .AddEntityFrameworkStores<ApplicationDbContext>();
                     services.AddScoped<IDataContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
-                    //services.AddSingleton<IDataContext, ApplicationDbContext>();
                     break;
                 case "mongodb":
                     services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using qrAPI.Domain;
 using qrAPI.Services;
 
 namespace qrAPI.Installers
@@ -8,8 +9,8 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddTransient<IQrService, QrService>();
-            services.AddTransient<IPetService, PetService>();
+            services.AddTransient<IQrService<Qr>, QrService>();
+            services.AddTransient<IPetService<Pet>, PetService>();
         }
     }
 }

@@ -20,9 +20,9 @@
         {
             public const string Relative = Base + "/pets";
             public const string GetAll = Relative;
-            public const string Get = Relative + "/{qrId}";
-            public const string Update = Relative + "/{qrId}";
-            public const string Delete = Relative + "/{qrId}";
+            public const string Get = Relative + "/{petId}";
+            public const string Update = Relative + "/{petId}";
+            public const string Delete = Relative + "/{petId}";
             public const string Create = Relative;
         }
     }

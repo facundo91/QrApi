@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace qrAPI.Dtos
 {
-    public abstract class Dto
+    public class Dto
     {
         [BsonId, Key] public Guid Id { get; set; }
     }
