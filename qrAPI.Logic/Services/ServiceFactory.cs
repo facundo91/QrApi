@@ -1,7 +1,7 @@
 ﻿using System;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 
-namespace qrAPI.Services
+namespace qrAPI.Logic.Services
 {
     public class ServiceFactory : IServiceFactory
     {

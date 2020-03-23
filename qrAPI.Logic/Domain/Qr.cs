@@ -1,4 +1,4 @@
-﻿namespace qrAPI.Domain
+﻿namespace qrAPI.Logic.Domain
 {
     public class Qr : DomainObject
     {

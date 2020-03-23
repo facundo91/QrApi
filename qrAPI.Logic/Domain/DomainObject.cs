@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace qrAPI.Domain
+namespace qrAPI.Logic.Domain
 {
     public abstract class DomainObject
     {

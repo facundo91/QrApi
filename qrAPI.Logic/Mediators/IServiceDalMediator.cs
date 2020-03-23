@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace qrAPI.Mediators
+namespace qrAPI.Logic.Mediators
 {
     public interface IServiceDalMediator<TDomainObject,TDto>
     {

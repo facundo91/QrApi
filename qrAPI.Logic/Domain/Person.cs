@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace qrAPI.Domain
+namespace qrAPI.Logic.Domain
 {
     public class Person : DomainObject
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 
-namespace qrAPI.Services
+namespace qrAPI.Logic.Services
 {
     public interface IGenericService<TDomainObject> where TDomainObject : DomainObject
     {

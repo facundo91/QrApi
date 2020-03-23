@@ -29,6 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\qr.Contracts\qrAPI.Contracts.csproj" />
     <ProjectReference Include="..\qrAPI.DAL\qrAPI.DAL.csproj" />
+    <ProjectReference Include="..\qrAPI.Logic\qrAPI.Logic.csproj" />
   </ItemGroup>
 
 </Project>

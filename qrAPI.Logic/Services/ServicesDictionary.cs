@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 
-namespace qrAPI.Services
+namespace qrAPI.Logic.Services
 {
     public static class ServicesDictionary
     {

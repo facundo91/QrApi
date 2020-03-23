@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using qrAPI.DAL.Dtos;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 
 namespace qrAPI.MappingProfiles
 {

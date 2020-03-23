@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.FeatureManagement.Mvc;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 using qrAPI.Mediators;
 using qrAPI.Options;
 

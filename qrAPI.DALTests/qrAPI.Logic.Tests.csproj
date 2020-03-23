@@ -20,7 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\qr\qrAPI.csproj" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\qrAPI.Logic\qrAPI.Logic.csproj" />
   </ItemGroup>
 
 </Project>

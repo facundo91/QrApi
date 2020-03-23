@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI", "qr\qrAPI.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Contracts", "qr.Contracts\qrAPI.Contracts.csproj", "{49738199-3771-4DA1-A579-500268323B86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.UnitTests", "qrAPI.DALTests\qrAPI.UnitTests.csproj", "{7B077665-BAD2-4F86-A9ED-D73860CBBA74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Logic.Tests", "qrAPI.DALTests\qrAPI.Logic.Tests.csproj", "{7B077665-BAD2-4F86-A9ED-D73860CBBA74}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.IntegrationTests", "qrAPI.IntegrationTests\qrAPI.IntegrationTests.csproj", "{5E4397F5-E54D-43FB-A917-027E344F2DDD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.DAL", "qrAPI.DAL\qrAPI.DAL.csproj", "{B782D63C-A832-4AAF-B421-371EDD48BF95}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.Logic", "qrAPI.Logic\qrAPI.Logic.csproj", "{45AA4FE5-9BEC-43AB-A716-2CE5261C19A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.DAL.Tests", "qrAPI.DAL.Tests\qrAPI.DAL.Tests.csproj", "{144812D0-8F6F-4A89-AD24-165939F907DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{45AA4FE5-9BEC-43AB-A716-2CE5261C19A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45AA4FE5-9BEC-43AB-A716-2CE5261C19A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45AA4FE5-9BEC-43AB-A716-2CE5261C19A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144812D0-8F6F-4A89-AD24-165939F907DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144812D0-8F6F-4A89-AD24-165939F907DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144812D0-8F6F-4A89-AD24-165939F907DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144812D0-8F6F-4A89-AD24-165939F907DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

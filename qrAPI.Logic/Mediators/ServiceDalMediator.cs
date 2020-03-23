@@ -5,9 +5,9 @@ using AutoMapper;
 using qrAPI.DAL.Data;
 using qrAPI.DAL.Dtos;
 using qrAPI.DAL.Repositories;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 
-namespace qrAPI.Mediators
+namespace qrAPI.Logic.Mediators
 {
     public class ServiceDalMediator<TDomainObject, TDto> : IServiceDalMediator<TDomainObject, TDto>
         where TDomainObject : DomainObject

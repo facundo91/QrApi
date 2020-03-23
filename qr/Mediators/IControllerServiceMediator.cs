@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 
 namespace qrAPI.Mediators
 {

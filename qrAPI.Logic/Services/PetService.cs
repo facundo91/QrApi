@@ -1,8 +1,8 @@
 ﻿using qrAPI.DAL.Dtos;
-using qrAPI.Domain;
-using qrAPI.Mediators;
+using qrAPI.Logic.Domain;
+using qrAPI.Logic.Mediators;
 
-namespace qrAPI.Services
+namespace qrAPI.Logic.Services
 {
     public class PetService : AbstractGenericService<Pet, PetDto>, IPetService<Pet> 
     {

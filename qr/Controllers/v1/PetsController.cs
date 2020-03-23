@@ -6,7 +6,7 @@ using Microsoft.FeatureManagement.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Domain;
+using qrAPI.Logic.Domain;
 using qrAPI.Mediators;
 using qrAPI.Options;
 

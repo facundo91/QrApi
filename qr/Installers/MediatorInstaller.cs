@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using qrAPI.Logic.Mediators;
+using qrAPI.Logic.Services;
 using qrAPI.Mediators;
-using qrAPI.Services;
-using ServiceFactory = qrAPI.Services.ServiceFactory;
+using ServiceFactory = qrAPI.Logic.Services.ServiceFactory;
 
 namespace qrAPI.Installers
 {

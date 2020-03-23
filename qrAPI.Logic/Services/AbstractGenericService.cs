@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using qrAPI.DAL.Dtos;
-using qrAPI.Domain;
-using qrAPI.Mediators;
+using qrAPI.Logic.Domain;
+using qrAPI.Logic.Mediators;
 
-namespace qrAPI.Services
+namespace qrAPI.Logic.Services
 {
     public class AbstractGenericService<TDomainObject, TDto> : IGenericService<TDomainObject>
     where TDomainObject : DomainObject

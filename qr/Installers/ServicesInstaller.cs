@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Domain;
-using qrAPI.Services;
+using qrAPI.Logic.Domain;
+using qrAPI.Logic.Services;
 
 namespace qrAPI.Installers
 {

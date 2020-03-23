@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
-using qrAPI.Domain;
-using qrAPI.Services;
+using qrAPI.Logic.Domain;
+using qrAPI.Logic.Services;
 
 namespace qrAPI.Mediators
 {
