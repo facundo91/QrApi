@@ -10,8 +10,6 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddMediatR(typeof(Startup).Assembly);
-
             services.AddScoped(typeof(IControllerServiceMediator<>), typeof(ControllerServiceMediator<>));
             services.AddScoped<IServiceFactory, ServiceFactory>();
             services.AddScoped(typeof(IServiceDalMediator<,>), typeof(ServiceDalMediator<,>));

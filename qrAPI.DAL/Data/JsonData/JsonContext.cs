@@ -1,18 +1,22 @@
-﻿using AutoMapper;
+﻿using System;
+using System.IO;
 using qrAPI.DAL.Dtos;
 using qrAPI.DAL.Repositories;
-using System.IO;
 
 namespace qrAPI.DAL.Data.JsonData
 {
     public class JsonContext : IDataContext
     {
-        public JsonContext(IMapper mapper)
+        public IGenericRepository<T> GetRepository<T>() where T : Dto
         {
-            QrRepository = new GenericJsonRepository<QrDto>();
+            return DtosDictionary.TypeDictionary[typeof(T)] switch
+            {
+                0 => (IGenericRepository<T>)new GenericJsonRepository<QrDto>("qrs.json"),
+                1 => (IGenericRepository<T>)new GenericJsonRepository<PetDto>("pets.json"),
+                2 => (IGenericRepository<T>)new GenericJsonRepository<PetDto>("pets.json"),
+                _ => throw new InvalidOperationException()
+            };
         }
-
-        public IGenericRepository<QrDto> QrRepository { get; }
-        public void HealthCheck() => _ = new FileInfo("qrs.10.json");
+        public void HealthCheck() => _ = new FileInfo("qrs.json");
     }
 }

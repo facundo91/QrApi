@@ -1,9 +1,9 @@
-﻿using AutoMapper;
+﻿using System;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using qrAPI.DAL.Dtos;
+using qrAPI.DAL.Options;
 using qrAPI.DAL.Repositories;
-using qrAPI.Options;
 
 namespace qrAPI.DAL.Data.MongoData
 {
@@ -11,20 +11,20 @@ namespace qrAPI.DAL.Data.MongoData
     {
         private readonly IMongoDatabase _database;
 
-        public MongoContext(IOptions<MongoOptions> settings, IMapper mapper)
+        public MongoContext(IOptions<MongoOptions> settings)
         {
             var client = new MongoClient(settings.Value.DefaultConnection);
             _database = client.GetDatabase(settings.Value.Database);
-            QrRepository = new GenericMongoRepository<QrDto>(_database.GetCollection<QrDto>("qrset"));
         }
-
-        //public MongoContext()
-        //{
-        //    var client = new MongoClient("mongodb://localhost:27017");
-        //    _database = client.GetDatabase("qrdb");
-        //}
-
-        public IGenericRepository<QrDto> QrRepository { get; }
+        public IGenericRepository<T> GetRepository<T>() where T : Dto
+        {
+            return DtosDictionary.TypeDictionary[typeof(T)] switch
+            {
+                0 => (IGenericRepository<T>)new GenericMongoRepository<QrDto>(_database.GetCollection<QrDto>("qrset")),
+                1 => (IGenericRepository<T>)new GenericMongoRepository<PetDto>(_database.GetCollection<PetDto>("petset")),
+                _ => throw new InvalidOperationException()
+            };
+        }
         public void HealthCheck() => _database.ListCollections();
     }
 }

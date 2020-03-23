@@ -1,10 +1,10 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace qrAPI.DAL.Dtos
 {
-    public abstract class Dto
+    public class Dto
     {
         [BsonId, Key] public Guid Id { get; set; }
     }

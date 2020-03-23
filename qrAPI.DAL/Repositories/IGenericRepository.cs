@@ -1,6 +1,6 @@
-﻿using qrAPI.DAL.Dtos;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Repositories
 {
@@ -9,7 +9,7 @@ namespace qrAPI.DAL.Repositories
         Task<IEnumerable<TDto>> GetAllAsync();
         Task<TDto> GetByIdAsync(object id);
         Task<TDto> InsertAsync(TDto obj);
-        Task<TDto> UpdateAsync(TDto obj);
+        Task<bool> UpdateAsync(TDto obj);
         Task<bool> DeleteAsync(object id);
     }
 }

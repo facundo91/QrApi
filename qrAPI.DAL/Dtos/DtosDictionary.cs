@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace qrAPI.Dtos
+namespace qrAPI.DAL.Dtos
 {
     public static class DtosDictionary
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using qrAPI.DAL.Dtos;
 using qrAPI.Domain;
-using qrAPI.Dtos;
 using qrAPI.Mediators;
 
 namespace qrAPI.Services

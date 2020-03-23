@@ -1,4 +1,4 @@
-﻿namespace qrAPI.Options
+﻿namespace qrAPI.DAL.Options
 {
     public class MongoOptions
     {

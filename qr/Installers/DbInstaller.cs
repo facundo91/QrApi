@@ -2,10 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Data;
-using qrAPI.Data.EFData;
-using qrAPI.Data.JsonData;
-using qrAPI.Data.MongoData;
+using qrAPI.DAL.Data;
+using qrAPI.DAL.Data.EFData;
+using qrAPI.DAL.Data.JsonData;
+using qrAPI.DAL.Data.MongoData;
+using qrAPI.DAL.Options;
 using qrAPI.Options;
 
 namespace qrAPI.Installers

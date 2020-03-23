@@ -5,7 +5,7 @@ namespace qrAPI.DAL.Data
 {
     public interface IDataContext
     {
-        public IGenericRepository<QrDto> QrRepository { get; }
         void HealthCheck();
+        IGenericRepository<T> GetRepository<T>() where T : Dto;
     }
 }

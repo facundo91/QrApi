@@ -1,5 +1,5 @@
-﻿using qrAPI.Domain;
-using qrAPI.Dtos;
+﻿using qrAPI.DAL.Dtos;
+using qrAPI.Domain;
 using qrAPI.Mediators;
 
 namespace qrAPI.Services

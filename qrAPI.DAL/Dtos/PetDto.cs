@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace qrAPI.Dtos
+namespace qrAPI.DAL.Dtos
 {
     [Table("Pets")]
     public class PetDto : Dto

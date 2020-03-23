@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using qrAPI.DAL.Data.EFData;
 using qrAPI.DAL.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace qrAPI.DAL.Repositories
 {
@@ -16,7 +15,7 @@ namespace qrAPI.DAL.Repositories
         public GenericEfRepository(ApplicationDbContext context)
         {
             _context = context;
-            _table = _context.Set<TDto>();
+            _table = context.Set<TDto>();
         }
 
         public async Task<IEnumerable<TDto>> GetAllAsync()
@@ -31,29 +30,29 @@ namespace qrAPI.DAL.Repositories
 
         public async Task<TDto> InsertAsync(TDto obj)
         {
-            obj.Id = Guid.NewGuid();
-            await _table.AddAsync(obj);
-            return obj;
+            var objCreated = (await _table.AddAsync(obj)).Entity;
+            var created = await Save();
+            return created == 0 ? null : objCreated;
         }
 
-        public Task<TDto> UpdateAsync(TDto obj)
+        public async Task<bool> UpdateAsync(TDto obj)
         {
-            _table.Attach(obj);
-            _context.Entry(obj).State = EntityState.Modified;
-            return Task.FromResult(obj);
+            _table.Update(obj);
+            var updated = await Save();
+            return updated > 0;
         }
 
         public async Task<bool> DeleteAsync(object id)
         {
-            TDto existing = await _table.FindAsync(id);
-            if (existing == null) return false;
-            _table.Remove(existing);
-            return true;
+            var obj = await GetByIdAsync(id);
+            _table.Remove(obj);
+            var deleted = await Save();
+            return deleted > 0;
         }
 
-        private void Save()
+        private async Task<int> Save()
         {
-            _context.SaveChanges();
+            return await _context.SaveChangesAsync();
         }
     }
 }

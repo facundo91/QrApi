@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Data.EFData;
+using qrAPI.DAL.Data.EFData;
 
 namespace qrAPI.IntegrationTests
 {

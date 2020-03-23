@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace qrAPI.DAL.Data.EFData.Migrations
 {
-    public partial class AddedQrs : Migration
+    public partial class Qrs : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,10 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true)
                 },
-                constraints: table => { table.PrimaryKey("PK_Qrs", x => x.Id); });
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Qrs", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

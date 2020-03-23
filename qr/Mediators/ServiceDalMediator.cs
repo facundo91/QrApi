@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using qrAPI.Data;
+using qrAPI.DAL.Data;
+using qrAPI.DAL.Dtos;
+using qrAPI.DAL.Repositories;
 using qrAPI.Domain;
-using qrAPI.Dtos;
-using qrAPI.Repositories;
 
 namespace qrAPI.Mediators
 {
