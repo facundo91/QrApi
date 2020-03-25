@@ -16,8 +16,7 @@ namespace qrAPI.Installers
             switch (ioCOptions.DalImplementation)
             {
                 case "ef":
-                    services.AddHealthChecks()
-                        .AddDbContextCheck<ApplicationDbContext>();
+                    services.AddHealthChecks().AddDbContextCheck<ApplicationDbContext>();
                     break;
                 default:
                     services.AddHealthChecks().AddCheck<DataBaseHealthCheck>(ioCOptions.DalImplementation);

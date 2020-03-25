@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using qrAPI.DAL.Data.EFData;
@@ -12,15 +13,18 @@ namespace qrAPI.DAL.Repositories
         private readonly ApplicationDbContext _context;
         private readonly DbSet<TDto> _table;
 
-        public GenericEfRepository(ApplicationDbContext context)
+        public GenericEfRepository(ApplicationDbContext context, DbSet<TDto> table)
         {
             _context = context;
-            _table = context.Set<TDto>();
+            _table = table;
         }
 
         public async Task<IEnumerable<TDto>> GetAllAsync()
         {
-            return await _table.ToListAsync();
+            var table = await _table.ToListAsync();
+            Console.WriteLine("s");
+            return table;
+            //return await _table.ToListAsync();
         }
 
         public async Task<TDto> GetByIdAsync(object id)
@@ -37,7 +41,9 @@ namespace qrAPI.DAL.Repositories
 
         public async Task<bool> UpdateAsync(TDto obj)
         {
-            _table.Update(obj);
+            var dto = await GetByIdAsync(obj.Id);
+            if (dto == null) return false;
+            _context.Entry(dto).CurrentValues.SetValues(obj);
             var updated = await Save();
             return updated > 0;
         }
@@ -45,6 +51,7 @@ namespace qrAPI.DAL.Repositories
         public async Task<bool> DeleteAsync(object id)
         {
             var obj = await GetByIdAsync(id);
+            if (obj == null) return false;
             _table.Remove(obj);
             var deleted = await Save();
             return deleted > 0;

@@ -1,13 +1,9 @@
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using qrAPI.Filters;
 using qrAPI.Installers;
-using qrAPI.Options;
 
 namespace qrAPI
 {
@@ -23,16 +19,7 @@ namespace qrAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services
-                .AddMvc(options =>
-                {
-                    options.EnableEndpointRouting = false;
-                    options.Filters.Add<ValidationFilter>();
-                })
-                .AddFluentValidation(mvcConfiguration =>
-                    mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.AddMvcCore().AddApiExplorer();
-            services.AddSwaggerGen(x => { x.SwaggerDoc("v1", new OpenApiInfo {Title = "QR API", Version = "v1"}); });
             //services.AddControllersWithViews();
             services.AddRazorPages();
             services.InstallServicesInAssembly(Configuration);
@@ -44,35 +31,26 @@ namespace qrAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                //app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
             app.AddHealthChecks();
 
-            var swaggerOptions = new SwaggerOptions();
-            Configuration.GetSection(nameof(SwaggerOptions)).Bind(swaggerOptions);
-
-            app.UseSwagger(options => { options.RouteTemplate = swaggerOptions.JsonRoute; });
-
-            app.UseSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint(swaggerOptions.UiEndpoint, swaggerOptions.Description);
-            });
-
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.AddSwagger(Configuration);
+
             app.UseRouting();
 
-            //app.UseAuthentication();
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

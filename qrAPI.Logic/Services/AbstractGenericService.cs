@@ -2,45 +2,46 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using qrAPI.DAL.Dtos;
+using qrAPI.Logic.Adapters;
 using qrAPI.Logic.Domain;
-using qrAPI.Logic.Mediators;
 
 namespace qrAPI.Logic.Services
 {
-    public class AbstractGenericService<TDomainObject, TDto> : IGenericService<TDomainObject>
+    public abstract class AbstractGenericService<TDomainObject, TDto> : IGenericService<TDomainObject>
     where TDomainObject : DomainObject
     where TDto : Dto
     {
 
-        private readonly IServiceDalMediator<TDomainObject, TDto> _serviceDalMediator;
+        private readonly IServiceAdapter<TDomainObject, TDto> _serviceToDalAdapter;
 
-        protected AbstractGenericService(IServiceDalMediator<TDomainObject, TDto> serviceDalMediator)
+        protected AbstractGenericService(IServiceAdapter<TDomainObject, TDto> serviceToDalAdapter)
         {
-            _serviceDalMediator = serviceDalMediator;
+            _serviceToDalAdapter = serviceToDalAdapter;
         }
+
         public virtual async Task<IEnumerable<TDomainObject>> GetAllAsync()
         {
-            return await _serviceDalMediator.GetAllAsync();
+            return await _serviceToDalAdapter.GetAllAsync();
         }
 
         public async Task<TDomainObject> GetByIdAsync(Guid id)
         {
-            return await _serviceDalMediator.GetByIdAsync(id);
+            return await _serviceToDalAdapter.GetByIdAsync(id);
         }
 
         public async Task<TDomainObject> CreateAsync(TDomainObject objToCreate)
         {
-            return await _serviceDalMediator.CreateAsync(objToCreate);
+            return await _serviceToDalAdapter.CreateAsync(objToCreate);
         }
 
         public async Task<bool> UpdateAsync(TDomainObject objToUpdate)
         {
-            return await _serviceDalMediator.UpdateAsync(objToUpdate);
+            return await _serviceToDalAdapter.UpdateAsync(objToUpdate);
         }
 
         public async Task<bool> DeleteAsync(Guid id)
         {
-            return await _serviceDalMediator.DeleteAsync(id);
+            return await _serviceToDalAdapter.DeleteAsync(id);
         }
     }
 }

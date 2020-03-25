@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using FluentAssertions;
 using qrAPI.Contracts.v1.Requests;
+using qrAPI.Contracts.v1.Requests.Create;
 using Xunit;
 
 namespace qrAPI.IntegrationTests
@@ -23,7 +24,8 @@ namespace qrAPI.IntegrationTests
         public async Task CreatePet_AddsOnePetToDal()
         {
             //Arrange
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet" , Birthdate = DateTime.Now,Gender = Gender.Female,Owner = Guid.NewGuid(), PictureUrl = ""};
+            var createPetRequest = new CreatePetRequest { Name = "Test Pet" , Birthdate = DateTime.Now,Gender = Gender.Female,
+                OwnerId = Guid.NewGuid(), PictureUrl = ""};
             //Act
             var petCreated = await CreatePetAsync(createPetRequest);
             //Assert

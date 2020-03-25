@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using FluentAssertions;
 using qrAPI.Contracts.v1;
-using qrAPI.Contracts.v1.Requests;
+using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Responses;
 using Xunit;
 

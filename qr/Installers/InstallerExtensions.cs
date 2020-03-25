@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using qrAPI.Contracts.HealthChecks;
 using System;
 using System.Linq;
+using qrAPI.Options;
 
 namespace qrAPI.Installers
 {
@@ -20,6 +21,16 @@ namespace qrAPI.Installers
             installers.ForEach(installer => installer.InstallServices(services, configuration));
         }
 
+        public static void AddSwagger(this IApplicationBuilder app, IConfiguration configuration)
+        {
+            var swaggerOptions = new SwaggerOptions();
+            configuration.GetSection(nameof(SwaggerOptions)).Bind(swaggerOptions);
+            app.UseSwagger(options => { options.RouteTemplate = swaggerOptions.JsonRoute; });
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint(swaggerOptions.UiEndpoint, swaggerOptions.Description);
+            });
+        }
         public static void AddHealthChecks(this IApplicationBuilder app)
         {
             app.UseHealthChecks("/health", new HealthCheckOptions

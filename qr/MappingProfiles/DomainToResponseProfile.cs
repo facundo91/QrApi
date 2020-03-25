@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.Logic.Domain;
 
@@ -8,8 +9,9 @@ namespace qrAPI.MappingProfiles
     {
         public DomainToResponseProfile()
         {
-            CreateMap<Qr, QrResponse>().ReverseMap();
-            CreateMap<Pet, PetResponse>().ReverseMap();
+            CreateMap<Qr, QrResponse>();
+
+            CreateMap<Pet, PetResponse>();
         }
     }
 }

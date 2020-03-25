@@ -7,5 +7,6 @@ namespace qrAPI.DAL.Data
     {
         void HealthCheck();
         IGenericRepository<T> GetRepository<T>() where T : Dto;
+        IRefreshTokenRepository GetRefreshTokenRepository();
     }
 }

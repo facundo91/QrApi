@@ -25,6 +25,12 @@ namespace qrAPI.DAL.Data.MongoData
                 _ => throw new InvalidOperationException()
             };
         }
+
+        public IRefreshTokenRepository GetRefreshTokenRepository()
+        {
+            throw new NotImplementedException();
+        }
+
         public void HealthCheck() => _database.ListCollections();
     }
 }

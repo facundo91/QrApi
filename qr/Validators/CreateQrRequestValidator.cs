@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using qrAPI.Contracts.v1.Requests;
+using qrAPI.Contracts.v1.Requests.Create;
 
 namespace qrAPI.Validators
 {

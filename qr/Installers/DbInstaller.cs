@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,23 +21,39 @@ namespace qrAPI.Installers
             switch (ioCOptions.DalImplementation)
             {
                 case "json":
-                    services.AddSingleton<IDataContext, JsonContext>();
+                    InstallJsonDb(services);
                     break;
                 case "ef":
-                    services.AddDbContext<ApplicationDbContext>(options =>
-                        options.UseSqlServer(
-                            configuration.GetConnectionString("DefaultConnection")));
-                    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                        .AddEntityFrameworkStores<ApplicationDbContext>();
-                    services.AddScoped<IDataContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
+                    InstallEfDb(services, configuration);
                     break;
                 case "mongodb":
-                    services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));
-                    services.AddSingleton<IDataContext, MongoContext>();
+                    InstallMongoDb(services, configuration);
                     break;
                 default:
-                    break;
+                    throw new InvalidOperationException();
             }
+        }
+
+        private static void InstallJsonDb(IServiceCollection services)
+        {
+            services.AddSingleton<IDataContext, JsonContext>();
+        }
+
+        private static void InstallMongoDb(IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));
+            services.AddSingleton<IDataContext, MongoContext>();
+        }
+
+        private static void InstallEfDb(IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    configuration.GetConnectionString("DefaultConnection")));
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IDataContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
         }
     }
 }

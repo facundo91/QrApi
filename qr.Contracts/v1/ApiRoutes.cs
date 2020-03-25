@@ -8,7 +8,7 @@
 
         public static class Qrs
         {
-            public const string Relative = Base + "/qrs";
+            private const string Relative = Base + "/qrs";
             public const string GetAll = Relative;
             public const string Get = Relative + "/{qrId}";
             public const string Update = Relative + "/{qrId}";
@@ -18,12 +18,30 @@
 
         public static class Pets
         {
-            public const string Relative = Base + "/pets";
+            private const string Relative = Base + "/pets";
             public const string GetAll = Relative;
             public const string Get = Relative + "/{petId}";
             public const string Update = Relative + "/{petId}";
             public const string Delete = Relative + "/{petId}";
             public const string Create = Relative;
+        }
+
+        public static class MedicalRecords
+        {
+            private const string Relative = Base + "/pets/{petId}/MedicalRecords";
+            public const string GetAll = Relative;
+            public const string Get = Relative + "/{medicalRecordId}";
+            public const string Update = Relative + "/{medicalRecordId}";
+            public const string Delete = Relative + "/{medicalRecordId}";
+            public const string Create = Relative;
+        }
+
+        public static class Identity
+        {
+            private const string Relative = Base + "/identity";
+            public const string Login = Relative + "/login";
+            public const string Register = Relative + "/register";
+            public const string Refresh = Relative + "/refresh";
         }
     }
 }

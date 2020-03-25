@@ -8,9 +8,10 @@ namespace qrAPI.MappingProfiles
     {
         public DomainToDtoProfile()
         {
-            CreateMap<Qr, QrDto>().ReverseMap();
+            CreateMap<Qr, QrDto>().ForMember(dest => dest.PetId, opt =>
+                opt.MapFrom(src => src.Pet.Id));
 
-            CreateMap<Pet, PetDto>().ReverseMap();
+            CreateMap<Pet, PetDto>();
         }
     }
 }

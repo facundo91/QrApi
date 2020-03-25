@@ -2,8 +2,7 @@
 
 namespace qrAPI.Logic.Services
 {
-    public interface IQrService<TDomainObject> : IGenericService<TDomainObject> 
-        where TDomainObject : Qr
+    public interface IQrService : IGenericService<Qr>
     {
     }
 }

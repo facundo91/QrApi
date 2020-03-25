@@ -1,12 +1,12 @@
 ﻿using qrAPI.DAL.Dtos;
+using qrAPI.Logic.Adapters;
 using qrAPI.Logic.Domain;
-using qrAPI.Logic.Mediators;
 
 namespace qrAPI.Logic.Services
 {
-    public class QrService : AbstractGenericService<Qr, QrDto>, IQrService<Qr>
+    public class QrService : AbstractGenericService<Qr, QrDto>, IQrService
     {
-        public QrService(IServiceDalMediator<Qr, QrDto> serviceDalMediator) : base(serviceDalMediator)
+        public QrService(IServiceAdapter<Qr, QrDto> serviceToDalAdapter) : base(serviceToDalAdapter)
         {
         }
     }

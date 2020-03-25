@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
-using qrAPI.Contracts.v1.Requests;
+using Microsoft.AspNetCore.Identity;
+using qrAPI.Contracts.v1.Requests.Create;
+using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Logic.Domain;
 
 namespace qrAPI.MappingProfiles
@@ -8,11 +10,13 @@ namespace qrAPI.MappingProfiles
     {
         public RequestToDomainProfile()
         {
-            CreateMap<CreateQrRequest, Qr>();
+            CreateMap<CreateQrRequest, Qr>().ForMember(dest => dest.Pet, opt =>
+                opt.MapFrom(src => new Pet { Id = src.PetId }));
+
             CreateMap<UpdateQrRequest, Qr>();
 
-            CreateMap<CreatePetRequest, Pet>().ForMember(dest => dest.Owner, opt =>
-                opt.MapFrom(src => new Person { Id = src.Owner }));
+            CreateMap<CreatePetRequest, Pet>();
+
             CreateMap<UpdatePetRequest, Pet>();
         }
     }

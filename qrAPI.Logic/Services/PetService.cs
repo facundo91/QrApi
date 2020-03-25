@@ -1,12 +1,12 @@
 ﻿using qrAPI.DAL.Dtos;
+using qrAPI.Logic.Adapters;
 using qrAPI.Logic.Domain;
-using qrAPI.Logic.Mediators;
 
 namespace qrAPI.Logic.Services
 {
-    public class PetService : AbstractGenericService<Pet, PetDto>, IPetService<Pet> 
+    public class PetService : AbstractGenericService<Pet, PetDto>, IPetService 
     {
-        public PetService(IServiceDalMediator<Pet, PetDto> serviceDalMediator) : base(serviceDalMediator)
+        public PetService(IServiceAdapter<Pet, PetDto> serviceToDalAdapter) : base(serviceToDalAdapter)
         {
         }
 
