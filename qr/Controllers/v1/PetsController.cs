@@ -30,7 +30,7 @@ namespace qrAPI.Controllers.v1
         /// </summary>
         /// <response code="200">Returns all the pets in the system</response>
         [HttpGet(ApiRoutes.Pets.GetAll)]
-        [Cached(600)]
+        [Cached(30)]
         public async Task<IActionResult> GetAllPets()
         {
             var result = await _controllerAdapter.GetAllAsync<IEnumerable<PetResponse>>();

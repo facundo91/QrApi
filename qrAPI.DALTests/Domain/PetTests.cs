@@ -1,26 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using FluentAssertions;
-using Moq;
-using qrAPI.DAL.Dtos;
-using qrAPI.Logic.Adapters;
-using qrAPI.Logic.Domain;
-using qrAPI.Logic.Services;
 using Xunit;
 
 namespace qrAPI.Logic.Tests.Domain
 {
     public class PetTests : LogicTests
     {
-        //public PetServiceTests()
-        //{
-        //    _serviceAdapterMock = new Mock<IServiceAdapter<Pet, PetDto>>();
-        //    _petService = new PetService(_serviceAdapterMock.Object);
-        //}
-
         [Fact]
         public void AddNewOwner_AddsNewOwner()
         {

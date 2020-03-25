@@ -3,6 +3,8 @@ using qrAPI.Contracts.v1;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement.Mvc;
 using qrAPI.Adapters;
@@ -17,6 +19,7 @@ using qrAPI.Options;
 namespace qrAPI.Controllers.v1
 {
     //Should only be request and respond the corresponding version typed of object
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class QrsController : Controller
     {
         private readonly IControllerAdapter<Qr> _controllerAdapter;
@@ -27,7 +30,7 @@ namespace qrAPI.Controllers.v1
         }
 
         [HttpGet(ApiRoutes.Qrs.GetAll)]
-        [Cached(600)]
+        [Cached(30)]
         public async Task<IActionResult> GetAllQrs()
         {
             var result = await _controllerAdapter.GetAllAsync<IEnumerable<QrResponse>>();
@@ -35,7 +38,9 @@ namespace qrAPI.Controllers.v1
         }
 
         [HttpGet(ApiRoutes.Qrs.Get)]
-        [Cached(600)]
+        [FeatureGate(FeatureFlags.EndpointFlag)]
+        [Authorize(Policy = "MustWorkForQRightThing")]
+        [Cached(30)]
         public async Task<IActionResult> GetQr([FromRoute] Guid qrId)
         {
             var result = await _controllerAdapter.GetByIdAsync<QrResponse>(qrId);
@@ -43,6 +48,8 @@ namespace qrAPI.Controllers.v1
         }
 
         [HttpPost(ApiRoutes.Qrs.Create)]
+        [FeatureGate(FeatureFlags.EndpointFlag)]
+        [Authorize(Policy = "MustWorkForQRightThing")]
         public async Task<IActionResult> CreateQr([FromBody] CreateQrRequest qrRequest)
         {
             var result = await _controllerAdapter.CreateAsync<QrResponse>(qrRequest);

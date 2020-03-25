@@ -6,7 +6,7 @@ namespace qrAPI.Logic.Services
 {
     public class QrService : AbstractGenericService<Qr, QrDto>, IQrService
     {
-        public QrService(IServiceAdapter<Qr, QrDto> serviceToDalAdapter) : base(serviceToDalAdapter)
+        public QrService(IServiceAdapter<QrDto> serviceToDalAdapter) : base(serviceToDalAdapter)
         {
         }
     }

@@ -5,7 +5,7 @@ using qrAPI.Logic.Domain;
 
 namespace qrAPI.Logic.Adapters
 {
-    public interface IMedicalRecordServiceAdapter : IServiceAdapter<MedicalRecord, MedicalRecordDto>
+    public interface IMedicalRecordServiceAdapter : IServiceAdapter<MedicalRecordDto>
     {
         Task<MedicalRecord> CreateAsync(Guid petId, MedicalRecord medicalRecord);
     }

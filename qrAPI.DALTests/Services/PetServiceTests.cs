@@ -12,12 +12,12 @@ namespace qrAPI.Logic.Tests.Services
 {
     public class PetServiceTests : LogicTests
     {
-        private IPetService _petService;
-        private readonly Mock<IServiceAdapter<Pet, PetDto>> _serviceAdapterMock;
+        private readonly IPetService _petService;
+        private readonly Mock<IServiceAdapter<PetDto>> _serviceAdapterMock;
 
         public PetServiceTests()
         {
-            _serviceAdapterMock = new Mock<IServiceAdapter<Pet, PetDto>>();
+            _serviceAdapterMock = new Mock<IServiceAdapter<PetDto>>();
             _petService = new PetService(_serviceAdapterMock.Object);
         }
 
@@ -26,7 +26,7 @@ namespace qrAPI.Logic.Tests.Services
         {
             // Arrange
             var pets = new List<Pet> {PampaPet};
-            _serviceAdapterMock.Setup(x => x.GetAllAsync()).ReturnsAsync(pets);
+            _serviceAdapterMock.Setup(x => x.GetAllAsync<Pet>()).ReturnsAsync(pets);
             // Act
             var allPets = await _petService.GetAllAsync();
             // Assert
@@ -38,7 +38,7 @@ namespace qrAPI.Logic.Tests.Services
         {
             // Arrange
             var pets = new List<Pet> { PampaPet, VulpiPet };
-            _serviceAdapterMock.Setup(x => x.GetAllAsync()).ReturnsAsync(pets);
+            _serviceAdapterMock.Setup(x => x.GetAllAsync<Pet>()).ReturnsAsync(pets);
             // Act
             var allPets = await _petService.GetAllAsync();
             // Assert
@@ -50,7 +50,7 @@ namespace qrAPI.Logic.Tests.Services
         {
             // Arrange
             var pets = new List<Pet>();
-            _serviceAdapterMock.Setup(x => x.GetAllAsync()).ReturnsAsync(pets);
+            _serviceAdapterMock.Setup(x => x.GetAllAsync<Pet>()).ReturnsAsync(pets);
             // Act
             var allPets = await _petService.GetAllAsync();
             // Assert

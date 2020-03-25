@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using qrAPI.DAL.Dtos;
 
 namespace qrAPI.Logic.Adapters
 {
-    public interface IServiceAdapter<TDomainObject,TDto>
+    public interface IServiceAdapter<TDto> where TDto : Dto
     {
-        Task<IEnumerable<TDomainObject>> GetAllAsync();
-        Task<TDomainObject> GetByIdAsync(Guid id);
-        Task<TDomainObject> CreateAsync(TDomainObject objToCreate);
-        Task<bool> UpdateAsync(TDomainObject objToUpdate);
+        Task<IEnumerable<T>> GetAllAsync<T>();
+        Task<T> GetByIdAsync<T>(Guid id);
+        Task<T> CreateAsync<T>(T objToCreate);
+        Task<bool> UpdateAsync<T>(T objToUpdate);
         Task<bool> DeleteAsync(Guid id);
     }
 }

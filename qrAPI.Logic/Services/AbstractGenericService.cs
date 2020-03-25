@@ -12,21 +12,21 @@ namespace qrAPI.Logic.Services
     where TDto : Dto
     {
 
-        private readonly IServiceAdapter<TDomainObject, TDto> _serviceToDalAdapter;
+        private readonly IServiceAdapter<TDto> _serviceToDalAdapter;
 
-        protected AbstractGenericService(IServiceAdapter<TDomainObject, TDto> serviceToDalAdapter)
+        protected AbstractGenericService(IServiceAdapter<TDto> serviceToDalAdapter)
         {
             _serviceToDalAdapter = serviceToDalAdapter;
         }
 
         public virtual async Task<IEnumerable<TDomainObject>> GetAllAsync()
         {
-            return await _serviceToDalAdapter.GetAllAsync();
+            return await _serviceToDalAdapter.GetAllAsync<TDomainObject>();
         }
 
         public async Task<TDomainObject> GetByIdAsync(Guid id)
         {
-            return await _serviceToDalAdapter.GetByIdAsync(id);
+            return await _serviceToDalAdapter.GetByIdAsync<TDomainObject>(id);
         }
 
         public async Task<TDomainObject> CreateAsync(TDomainObject objToCreate)

@@ -12,7 +12,7 @@ namespace qrAPI.Installers
             services.AddTransient(typeof(IControllerAdapter<>), typeof(ControllerAdapter<>));
             services.AddTransient<IMedicalRecordsControllerAdapter, MedicalRecordsControllerAdapter>();
 
-            services.AddTransient(typeof(IServiceAdapter<,>), typeof(ServiceAdapter<,>));
+            services.AddTransient(typeof(IServiceAdapter<>), typeof(ServiceAdapter<>));
             services.AddTransient<IMedicalRecordServiceAdapter, MedicalRecordServiceAdapter>();
         }
     }
