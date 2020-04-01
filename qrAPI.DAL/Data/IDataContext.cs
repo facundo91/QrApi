@@ -1,12 +1,12 @@
-﻿using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
+﻿using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Data
 {
     public interface IDataContext
     {
         void HealthCheck();
-        IGenericRepository<T> GetRepository<T>() where T : Dto;
+        IRepository<T> GetRepository<T>() where T : Dto;
         IRefreshTokenRepository GetRefreshTokenRepository();
     }
 }

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Data;
 using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
 
 namespace qrAPI.Logic.Adapters
 {
     public class ServiceAdapter<TDto> : IServiceAdapter<TDto> where TDto : Dto
     {
         private readonly IMapper _mapper;
-        private readonly IGenericRepository<TDto> _repository;
+        private readonly IRepository<TDto> _repository;
 
         public ServiceAdapter(IMapper mapper, IDataContext dataContext)
         {
@@ -27,7 +27,7 @@ namespace qrAPI.Logic.Adapters
 
         public async Task<T> GetByIdAsync<T>(Guid id)
         {
-            var result = await _repository.GetByIdAsync(id);
+            var result = await _repository.GetAsync(id);
             return MapToT<T>(result);
         }
 

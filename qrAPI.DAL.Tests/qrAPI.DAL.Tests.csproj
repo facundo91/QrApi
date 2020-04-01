@@ -17,4 +17,10 @@
     <ProjectReference Include="..\qrAPI.DAL\qrAPI.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CacheDaos\" />
+    <Folder Include="EfDaos\" />
+    <Folder Include="MongoDaos\" />
+  </ItemGroup>
+
 </Project>

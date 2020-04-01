@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Data;
 using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
 using qrAPI.Logic.Domain;
 
 namespace qrAPI.Logic.Adapters
@@ -13,7 +13,7 @@ namespace qrAPI.Logic.Adapters
     {
         private readonly IMapper _mapper;
         private readonly IServiceAdapter<MedicalRecordDto> _serviceAdapter;
-        private readonly IGenericRepository<MedicalRecordDto> _repository;
+        private readonly IRepository<MedicalRecordDto> _repository;
 
         public MedicalRecordServiceAdapter(IMapper mapper, IDataContext dataContext, IServiceAdapter<MedicalRecordDto> serviceAdapter)
         {

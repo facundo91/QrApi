@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using qrAPI.DAL.Data.EFData;
 using qrAPI.HealthChecks;
-using qrAPI.Options;
+using qrAPI.Infrastructure.Options;
 
 namespace qrAPI.Installers
 {

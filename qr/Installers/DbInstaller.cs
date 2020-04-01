@@ -8,7 +8,7 @@ using qrAPI.DAL.Data.EFData;
 using qrAPI.DAL.Data.JsonData;
 using qrAPI.DAL.Data.MongoData;
 using qrAPI.DAL.Options;
-using qrAPI.Options;
+using qrAPI.Infrastructure.Options;
 
 namespace qrAPI.Installers
 {

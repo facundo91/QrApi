@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using qrAPI.Contracts.HealthChecks;
 using System;
 using System.Linq;
-using qrAPI.Options;
+using qrAPI.Infrastructure.Options;
 
 namespace qrAPI.Installers
 {

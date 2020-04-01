@@ -1,9 +1,13 @@
+using System;
+using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using qrAPI.Installers;
+using qrAPI.Presentation.Controllers.v1;
 
 namespace qrAPI
 {
@@ -23,6 +27,17 @@ namespace qrAPI
             //services.AddControllersWithViews();
             services.AddRazorPages();
             services.InstallServicesInAssembly(Configuration);
+
+            //var assembly = typeof(qrAPI.Presentation).Assembly;
+            //services.AddControllersWithViews()
+            //    .AddApplicationPart(assembly);
+
+            //services.AddControllers().
+
+            //var controllers = typeof(Startup).Assembly.ExportedTypes
+            //    .Where(x => typeof(ControllerBase).IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
+            //    .Select(x => x.Assembly).ToList();
+            //controllers.ForEach(controller =>   controller.InstallServices(services, configuration));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using qrAPI.DAL.Daos.EfImplementations;
+using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
 
 namespace qrAPI.DAL.Data.EFData
 {
@@ -14,13 +15,13 @@ namespace qrAPI.DAL.Data.EFData
         {
         }
 
-        public IGenericRepository<T> GetRepository<T>() where T : Dto
+        public IRepository<T> GetRepository<T>() where T : Dto
         {
             return DtosDictionary.TypeDictionary[typeof(T)] switch
             {
-                0 => (IGenericRepository<T>)new GenericEfRepository<QrDto>(this, Qrs),
-                1 => (IGenericRepository<T>)new GenericEfRepository<PetDto>(this, Pets),
-                2 => (IGenericRepository<T>)new GenericEfRepository<RefreshToken>(this, RefreshTokens),
+                0 => (IRepository<T>)new EfRepository<QrDto>(this),
+                1 => (IRepository<T>)new EfRepository<PetDto>(this),
+                2 => (IRepository<T>)new EfRepository<RefreshToken>(this),
                 _ => throw new InvalidOperationException()
             };
         }

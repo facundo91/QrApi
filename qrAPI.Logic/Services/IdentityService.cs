@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Data;
 using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Repositories;
 using qrAPI.Logic.Options;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
@@ -21,7 +21,7 @@ namespace qrAPI.Logic.Services
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly JwtOptions _jwtSettings;
         private readonly TokenValidationParameters _tokenValidationParameters;
-        private readonly IGenericRepository<RefreshToken> _repository;
+        private readonly IRepository<RefreshToken> _repository;
 
         public IdentityService(UserManager<IdentityUser> userManager, 
             JwtOptions jwtSettings, 
@@ -116,7 +116,7 @@ namespace qrAPI.Logic.Services
 
             var jti = validatedToken.Claims.Single(x => x.Type == JwtRegisteredClaimNames.Jti).Value;
 
-            var storedRefreshToken = await _repository.GetByIdAsync(refreshToken);
+            var storedRefreshToken = await _repository.GetAsync(refreshToken);
 
             //var storedRefreshToken = await _repository.SingleOrDefaultAsync(x => x.Token == refreshToken);
 

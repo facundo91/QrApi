@@ -5,22 +5,58 @@
     <UserSecretsId>aspnet-qr-4D321F07-E378-4EE6-94D3-B9113608A9D8</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\facun\source\repos\QrApi\qr\qrAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Adapters\**" />
+    <Compile Remove="Cache\**" />
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="Filters\**" />
+    <Compile Remove="Options\**" />
+    <Compile Remove="Validators\**" />
+    <Content Remove="Adapters\**" />
+    <Content Remove="Cache\**" />
+    <Content Remove="Controllers\**" />
+    <Content Remove="Filters\**" />
+    <Content Remove="Options\**" />
+    <Content Remove="Validators\**" />
+    <EmbeddedResource Remove="Adapters\**" />
+    <EmbeddedResource Remove="Cache\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="Filters\**" />
+    <EmbeddedResource Remove="Options\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Adapters\**" />
+    <None Remove="Cache\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="Filters\**" />
+    <None Remove="Options\**" />
+    <None Remove="Validators\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="3.1.3" />
     <PackageReference Include="Microsoft.FeatureManagement" Version="2.0.0" />
     <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="2.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+    <PackageReference Include="Tweetbook.Contracts" Version="1.0.0" />
+    <PackageReference Include="Tweetbook.Sdk" Version="1.0.0" />
   </ItemGroup>
 
 
@@ -28,6 +64,7 @@
     <ProjectReference Include="..\qr.Contracts\qrAPI.Contracts.csproj" />
     <ProjectReference Include="..\qrAPI.DAL\qrAPI.DAL.csproj" />
     <ProjectReference Include="..\qrAPI.Logic\qrAPI.Logic.csproj" />
+    <ProjectReference Include="..\qrAPI.Presentation\qrAPI.Presentation.csproj" />
   </ItemGroup>
 
 </Project>

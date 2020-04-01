@@ -2,7 +2,7 @@
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Filters;
+using qrAPI.Presentation.Filters;
 
 namespace qrAPI.Installers
 {
