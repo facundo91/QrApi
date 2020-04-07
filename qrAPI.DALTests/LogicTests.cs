@@ -29,7 +29,7 @@ namespace qrAPI.Logic.Tests
             Dad = null,
             Gender = Gender.Female,
             Mom = null,
-            Owner = new Person(),
+            Owner = new Person{Id = Guid.NewGuid()},
             MedicalRecords = new List<MedicalRecord>()
         };
         protected readonly Pet VulpiPet = new Pet
@@ -42,7 +42,7 @@ namespace qrAPI.Logic.Tests
             Dad = null,
             Gender = Gender.Male,
             Mom = null,
-            Owner = new Person(),
+            Owner = new Person { Id = Guid.NewGuid() },
             MedicalRecords = new List<MedicalRecord>()
         };
     }
