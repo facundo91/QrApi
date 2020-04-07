@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using qrAPI.Contracts.v1;
+using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.DAL.Data.EFData.Contexts;
@@ -48,18 +50,35 @@ namespace qrAPI.IntegrationTests.v1
             return await response.Content.ReadAsAsync<PetResponse>();
         }
 
-        protected async Task<List<QrResponse>> GetAllQrs()
+        protected async Task<List<QrResponse>> GetAllQrsAsync() =>
+            (await TestClient.GetAsync(ApiRoutes.Qrs.GetAll))
+            .Content.ReadAsAsync<List<QrResponse>>().Result;
+
+        protected async Task<List<PetResponse>> GetAllPetsAsync() =>
+            (await TestClient.GetAsync(ApiRoutes.Pets.GetAll))
+            .Content.ReadAsAsync<List<PetResponse>>().Result;
+
+        protected async Task<PetResponse> GetPetAsync(Guid id)
         {
-            return (await TestClient.GetAsync(ApiRoutes.Qrs.GetAll)
-                    .ConfigureAwait(false)).Content
-                .ReadAsAsync<List<QrResponse>>().Result;
+            var response = (await TestClient.GetAsync(ApiRoutes.Pets.Get.Replace("{petId}", id.ToString())));
+            return await response.Content.ReadAsAsync<PetResponse>();
         }
 
-        protected async Task<List<PetResponse>> GetAllPets()
+        protected async Task AuthenticateAsync(string email = "test@integration.com", string password = "SomePass1234!")
         {
-            return (await TestClient.GetAsync(ApiRoutes.Pets.GetAll)
-                    .ConfigureAwait(false)).Content
-                .ReadAsAsync<List<PetResponse>>().Result;
+            TestClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", await GetJwtAsync(email, password));
+        }
+
+        private async Task<string> GetJwtAsync(string email, string password)
+        {
+            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Identity.Register, new UserRegistrationRequest
+            {
+                Email = email,
+                Password = password
+            });
+
+            var registrationResponse = await response.Content.ReadAsAsync<AuthSuccessResponse>();
+            return registrationResponse.Token;
         }
 
         public void Dispose()

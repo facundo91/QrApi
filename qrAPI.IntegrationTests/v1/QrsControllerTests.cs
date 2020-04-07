@@ -28,11 +28,11 @@ namespace qrAPI.IntegrationTests.v1
         public async Task CreateQr_AddsOneItemToTable()
         {
             //Arrange
-            var getAllBefore = (await GetAllQrs()).Count;
+            var getAllBefore = (await GetAllQrsAsync()).Count;
             var createQrRequest = new CreateQrRequest { Name = "Test QR" };
             //Act
             await CreateQrAsync(createQrRequest);
-            var getAllAfter = (await GetAllQrs()).Count;
+            var getAllAfter = (await GetAllQrsAsync()).Count;
             //Assert
             (getAllAfter - getAllBefore).Should().Be(1);
         }

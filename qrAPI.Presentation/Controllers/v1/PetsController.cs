@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -10,7 +9,6 @@ using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Infrastructure.Extensions;
 using qrAPI.Infrastructure.Options;
 using qrAPI.Presentation.Cache;
 using qrAPI.Presentation.Adapters.v1.Interfaces;
@@ -40,17 +38,6 @@ namespace qrAPI.Presentation.Controllers.v1
             return Ok(result);
         }
 
-        /// <summary>
-        /// Returns all the pets in the system
-        /// </summary>
-        /// <response code="200">Returns all the pets in the system</response>
-        [HttpGet(ApiRoutes.Pets.GetAllForCurrentUser)]
-        [Cached(30)]
-        public async Task<IActionResult> GetAllPetsForCurrentUser()
-        {
-            var result = await _controllerAdapter.GetAllFromCurrentUserAsync();
-            return Ok(result);
-        }
 
         [HttpGet(ApiRoutes.Pets.Get)]
         [Cached(600)]
@@ -58,20 +45,6 @@ namespace qrAPI.Presentation.Controllers.v1
         {
             var result = await _controllerAdapter.GetByIdAsync<PetResponse>(petId);
             return result != null ? (IActionResult)Ok(result) : NotFound();
-        }
-
-        /// <summary>
-        /// Creates a pet in the system
-        /// </summary>
-        /// <response code="201">Creates a pet in the system</response>
-        /// <response code="400">Unable to create the pet due to validation error</response>
-        [HttpPost(ApiRoutes.Pets.CreateForCurrentUser)]
-        public async Task<IActionResult> CreatePetForCurrentUser([FromBody] CreatePetRequest petRequest)
-        {
-            var result = await _controllerAdapter.CreateForCurrentUserAsync(petRequest);
-            return result != null
-                ? CreatedAtAction("CreatePet", new { id = result.Id }, result)
-                : (IActionResult)BadRequest();
         }
 
         /// <summary>
@@ -93,7 +66,7 @@ namespace qrAPI.Presentation.Controllers.v1
         public async Task<IActionResult> UpdatePet([FromRoute] Guid petId, [FromBody] UpdatePetRequest petRequest)
         {
             var result = await _controllerAdapter.UpdateAsync(petId, petRequest);
-            return result ? Ok() : (IActionResult)NotFound();
+            return result ? NoContent() : (IActionResult)NotFound();
         }
 
         [HttpDelete(ApiRoutes.Pets.Delete)]

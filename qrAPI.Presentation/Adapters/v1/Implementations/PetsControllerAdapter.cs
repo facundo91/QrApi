@@ -17,18 +17,5 @@ namespace qrAPI.Presentation.Adapters.v1.Implementations
         {
             _service = service;
         }
-
-        public async Task<IEnumerable<PetResponse>> GetAllFromCurrentUserAsync()
-        {
-            var pets = await _service.GetAllFromCurrentUserAsync();
-            return _mapper.Map<IEnumerable<PetResponse>>(pets);
-        }
-
-        public async Task<PetResponse> CreateForCurrentUserAsync(CreatePetRequest petToCreate)
-        {
-            var pet = _mapper.Map<Pet>(petToCreate);
-            var petCreated = await _service.CreatePetForCurrentUserAsync(pet);
-            return _mapper.Map<PetResponse>(petCreated);
-        }
     }
 }
