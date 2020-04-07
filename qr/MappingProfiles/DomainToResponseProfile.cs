@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.Logic.Domain;
 
@@ -11,7 +10,9 @@ namespace qrAPI.MappingProfiles
         {
             CreateMap<Qr, QrResponse>();
 
-            CreateMap<Pet, PetResponse>();
+            CreateMap<Pet, PetResponse>().ForMember(dest => dest.Owner,
+                opt =>
+                    opt.MapFrom(src => src.Owner.Id));
         }
     }
 }

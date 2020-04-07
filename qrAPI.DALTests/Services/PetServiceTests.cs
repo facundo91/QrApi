@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FluentAssertions;
+using Microsoft.AspNetCore.Http;
 using Moq;
-using qrAPI.DAL.Dtos;
-using qrAPI.Logic.Adapters;
+using qrAPI.Logic.Adapters.Interfaces;
 using qrAPI.Logic.Domain;
-using qrAPI.Logic.Services;
+using qrAPI.Logic.Services.Implementations;
+using qrAPI.Logic.Services.Interfaces;
 using Xunit;
 
 namespace qrAPI.Logic.Tests.Services
@@ -13,12 +14,16 @@ namespace qrAPI.Logic.Tests.Services
     public class PetServiceTests : LogicTests
     {
         private readonly IPetService _petService;
-        private readonly Mock<IServiceAdapter<PetDto>> _serviceAdapterMock;
+        private readonly Mock<IPetServiceAdapter> _serviceAdapterMock;
+        private readonly Mock<IHttpContextAccessor> _httpContextAccessorMock;
+        private readonly Mock<IIdentityService> _identityServiceMock;
 
         public PetServiceTests()
         {
-            _serviceAdapterMock = new Mock<IServiceAdapter<PetDto>>();
-            _petService = new PetService(_serviceAdapterMock.Object);
+            _serviceAdapterMock = new Mock<IPetServiceAdapter>();
+            _httpContextAccessorMock = new Mock<IHttpContextAccessor>();
+            _identityServiceMock = new Mock<IIdentityService>();
+            _petService = new PetService(_serviceAdapterMock.Object, _httpContextAccessorMock.Object, _identityServiceMock.Object);
         }
 
         [Fact]

@@ -11,7 +11,7 @@ namespace qrAPI.DAL.Dtos
         public string Name { get; set; }
         public DateTime Birthdate { get; set; }
         public Gender Gender { get; set; }
-        public string? OwnerId { get; set; }
+        public Guid? OwnerId { get; set; }
         [ForeignKey(nameof(OwnerId))]
         public virtual IdentityUser Owner { get; set; }
         public string PictureUrl { get; set; }

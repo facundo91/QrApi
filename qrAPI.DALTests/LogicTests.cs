@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using Microsoft.AspNetCore.Identity;
 using qrAPI.Logic.Domain;
 
@@ -30,7 +29,7 @@ namespace qrAPI.Logic.Tests
             Dad = null,
             Gender = Gender.Female,
             Mom = null,
-            Owners = new List<Person>(),
+            Owner = new Person(),
             MedicalRecords = new List<MedicalRecord>()
         };
         protected readonly Pet VulpiPet = new Pet
@@ -43,7 +42,7 @@ namespace qrAPI.Logic.Tests
             Dad = null,
             Gender = Gender.Male,
             Mom = null,
-            Owners = new List<Person>(),
+            Owner = new Person(),
             MedicalRecords = new List<MedicalRecord>()
         };
     }

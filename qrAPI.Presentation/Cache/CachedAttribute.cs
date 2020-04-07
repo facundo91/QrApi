@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Logic.Services;
+using qrAPI.Infrastructure.Cache;
+using qrAPI.Infrastructure.Settings;
 
 namespace qrAPI.Presentation.Cache
 {
@@ -23,7 +24,7 @@ namespace qrAPI.Presentation.Cache
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            var cacheSettings = context.HttpContext.RequestServices.GetRequiredService<RedisCacheSettings>();
+            var cacheSettings = context.HttpContext.RequestServices.GetRequiredService<MemoryCacheSettings>();
 
             if (!cacheSettings.Enabled)
             {
@@ -31,10 +32,10 @@ namespace qrAPI.Presentation.Cache
                 return;
             }
 
-            var cacheService = context.HttpContext.RequestServices.GetRequiredService<IResponseCacheService>();
+            var cacheService = context.HttpContext.RequestServices.GetRequiredService<ICacheHelper>();
 
             var cacheKey = GenerateCacheKeyFromRequest(context.HttpContext.Request);
-            var cachedResponse = await cacheService.GetCachedResponseAsync(cacheKey);
+            var cachedResponse = await cacheService.GetCachedAsync(cacheKey);
 
             if (!string.IsNullOrEmpty(cachedResponse))
             {
@@ -52,7 +53,7 @@ namespace qrAPI.Presentation.Cache
 
             if (executedContext.Result is OkObjectResult okObjectResult)
             {
-                await cacheService.CacheResponseAsync(cacheKey, okObjectResult.Value, TimeSpan.FromSeconds(_timeToLiveSeconds));
+                await cacheService.CacheAsync(cacheKey, okObjectResult.Value, TimeSpan.FromSeconds(_timeToLiveSeconds));
             }
         }
 

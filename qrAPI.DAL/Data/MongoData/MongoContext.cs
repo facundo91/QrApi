@@ -27,11 +27,6 @@ namespace qrAPI.DAL.Data.MongoData
             };
         }
 
-        public IRefreshTokenRepository GetRefreshTokenRepository()
-        {
-            throw new NotImplementedException();
-        }
-
         public void HealthCheck() => _database.ListCollections();
     }
 }

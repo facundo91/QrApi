@@ -24,6 +24,8 @@
             public const string Update = Relative + "/{petId}";
             public const string Delete = Relative + "/{petId}";
             public const string Create = Relative;
+            public const string CreateForCurrentUser = Relative + "/CurrentUser";
+            public const string GetAllForCurrentUser = Relative +"/CurrentUser";
         }
 
         public static class MedicalRecords

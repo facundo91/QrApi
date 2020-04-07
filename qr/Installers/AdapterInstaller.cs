@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Logic.Adapters;
+using qrAPI.Logic.Adapters.Implementations;
+using qrAPI.Logic.Adapters.Interfaces;
+using qrAPI.Presentation.Adapters.v1.Implementations;
+using qrAPI.Presentation.Adapters.v1.Interfaces;
 
 namespace qrAPI.Installers
 {
@@ -8,14 +11,22 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddTransient(typeof(Presentation.Adapters.v1.IControllerAdapter<>), typeof(Presentation.Adapters.v1.ControllerAdapter<>));
-            services.AddTransient<Presentation.Adapters.v1.IMedicalRecordsControllerAdapter, Presentation.Adapters.v1.MedicalRecordsControllerAdapter>();
+            AddControllerAdapters(services);
+            AddServiceAdapters(services);
+        }
 
-            services.AddTransient(typeof(Presentation.Adapters.v2.IControllerAdapter<>), typeof(Presentation.Adapters.v2.ControllerAdapter<>));
-            services.AddTransient<Presentation.Adapters.v2.IMedicalRecordsControllerAdapter, Presentation.Adapters.v2.MedicalRecordsControllerAdapter>();
+        private static void AddControllerAdapters(IServiceCollection services)
+        {
+            services.AddTransient<IMedicalRecordsControllerAdapter, MedicalRecordsControllerAdapter>();
+            services.AddTransient<IPetsControllerAdapter, PetsControllerAdapter>();
+            services.AddTransient<IQrsControllerAdapter, QrsControllerAdapter>();
+        }
 
-            services.AddTransient(typeof(IServiceAdapter<>), typeof(ServiceAdapter<>));
+        private static void AddServiceAdapters(IServiceCollection services)
+        {
             services.AddTransient<IMedicalRecordServiceAdapter, MedicalRecordServiceAdapter>();
+            services.AddTransient<IPetServiceAdapter, PetServiceAdapter>();
+            services.AddTransient<IQrServiceAdapter, QrServiceAdapter>();
         }
     }
 }

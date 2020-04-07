@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace qrAPI.Logic.Domain
 {
@@ -10,7 +9,7 @@ namespace qrAPI.Logic.Domain
         public string Name { get; set; }
         public DateTime Birthdate { get; set; }
         public Gender Gender { get; set; }
-        public IEnumerable<Person> Owners { get; set; } = new List<Person>();
+        public Person? Owner { get; set; }
         public Pet Dad { get; set; }
         public Pet Mom { get; set; }
         public Uri PictureUrl { get; set; }
@@ -19,8 +18,8 @@ namespace qrAPI.Logic.Domain
 
         public void AddNewOwner(Person newOwner, bool bothWays = true)
         {
-            if (Owners.ToList().Exists(x => x.Id == newOwner.Id)) return;
-            Owners.ToList().Add(newOwner);
+            if (Owner.Id == newOwner.Id) return;
+            Owner = newOwner;
             if (bothWays) newOwner.AddOwnedPet(this,false);
         }
     }

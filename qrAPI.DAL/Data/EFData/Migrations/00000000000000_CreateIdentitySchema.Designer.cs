@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using qrAPI.DAL.Data.EFData.Contexts;
 
 namespace qrAPI.DAL.Data.EFData.Migrations
 {

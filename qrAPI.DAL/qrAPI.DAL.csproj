@@ -32,4 +32,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\qrAPI.Infrastructure\qrAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

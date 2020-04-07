@@ -1,23 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Dtos;
+using qrAPI.Infrastructure.Cache;
+using qrAPI.Infrastructure.Settings;
 
 namespace qrAPI.DAL.Daos.CacheImplementations
 {
     public class PetCacheRepository : CacheRepository<PetDto>, IPetRepository
     {
-        public PetCacheRepository(IPetRepository repository) : base(repository)
+        private readonly IPetRepository _repository;
+
+        public PetCacheRepository(IPetRepository repository, MemoryCacheSettings memoryCacheOptions, ICacheHelper cacheHelper) 
+            : base(repository, memoryCacheOptions, cacheHelper)
         {
+            _repository = repository;
         }
 
-        public Task<IEnumerable<PetDto>> GetAllByName(string name)
+
+        public async Task<IEnumerable<PetDto>> GetAllByNameAsync(string name)
         {
-            //use cache function to try to get the value
-            //pass as parameter the way to get it from the repository
-            throw new NotImplementedException();
+            return await GetAllAndCacheAsync(async () => await _repository.GetAllByNameAsync(name),
+                () => GenerateCacheKeyFromQuery($"|name-{name}"));
+        }
+
+        public async Task<IEnumerable<PetDto>> GetAllByUserIdAsync(Guid userId)
+        {
+            return await GetAllAndCacheAsync(async () => await _repository.GetAllByUserIdAsync(userId),
+                () => GenerateCacheKeyFromQuery($"|userId-{userId}"));
         }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using qrAPI.DAL.Data.EFData;
+using qrAPI.DAL.Data.EFData.Contexts;
 
 namespace qrAPI.DAL.Data.EFData.Migrations
 {

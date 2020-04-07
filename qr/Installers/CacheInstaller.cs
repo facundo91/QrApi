@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Logic.Services;
-using qrAPI.Presentation.Cache;
+using qrAPI.Infrastructure.Cache;
+using qrAPI.Infrastructure.Settings;
 using StackExchange.Redis;
 
 namespace qrAPI.Installers
@@ -10,8 +10,8 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            var redisCacheSettings = new RedisCacheSettings();
-            configuration.GetSection(nameof(RedisCacheSettings)).Bind(redisCacheSettings);
+            var redisCacheSettings = new MemoryCacheSettings();
+            configuration.GetSection(nameof(MemoryCacheSettings)).Bind(redisCacheSettings);
             services.AddSingleton(redisCacheSettings);
 
             if (!redisCacheSettings.Enabled) return;
@@ -19,7 +19,7 @@ namespace qrAPI.Installers
             services.AddSingleton<IConnectionMultiplexer>(_ =>
                 ConnectionMultiplexer.Connect(redisCacheSettings.ConnectionString));
             services.AddStackExchangeRedisCache(options => options.Configuration = redisCacheSettings.ConnectionString);
-            services.AddSingleton<IResponseCacheService, ResponseCacheService>();
+            services.AddScoped<ICacheHelper, RedisCacheHelper>();
         }
     }
 }

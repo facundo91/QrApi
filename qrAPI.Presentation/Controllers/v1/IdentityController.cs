@@ -4,10 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Logic.Services;
+using qrAPI.Logic.Services.Interfaces;
 
 namespace qrAPI.Presentation.Controllers.v1
 {
+    [Produces("application/json")]
     public class IdentityController : ControllerBase
     {
         private readonly IIdentityService _identityService;

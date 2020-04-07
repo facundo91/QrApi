@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using qrAPI.DAL.Data.EFData;
+using qrAPI.DAL.Data.EFData.Contexts;
 
 namespace qrAPI
 {

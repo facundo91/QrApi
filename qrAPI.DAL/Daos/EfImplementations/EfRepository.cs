@@ -1,21 +1,29 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Data.EFData;
+using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Daos.EfImplementations
 {
     public class EfRepository<TDto> : IRepository<TDto> where TDto : Dto
     {
-        private readonly ApplicationDbContext _context;
+        protected readonly ApplicationDbContext _context;
         protected readonly DbSet<TDto> _table;
 
         public EfRepository(ApplicationDbContext context)
         {
             _context = context;
             _table = context.Set<TDto>();
+        }
+
+        protected async Task<IEnumerable<TDto>> GetAllByQueryExpressionAsync(Expression<Func<TDto, bool>> expression)
+        {
+            return await _table.Where(expression).ToListAsync();
         }
 
         public async Task<IEnumerable<TDto>> GetAllAsync()

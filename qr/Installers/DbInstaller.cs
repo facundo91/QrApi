@@ -3,12 +3,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using qrAPI.DAL.Daos.CacheImplementations;
+using qrAPI.DAL.Daos.EfImplementations;
+using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Data;
-using qrAPI.DAL.Data.EFData;
-using qrAPI.DAL.Data.JsonData;
+using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Data.MongoData;
+using qrAPI.DAL.Dtos;
 using qrAPI.DAL.Options;
 using qrAPI.Infrastructure.Options;
+using qrAPI.Infrastructure.Settings;
 
 namespace qrAPI.Installers
 {
@@ -20,9 +24,6 @@ namespace qrAPI.Installers
             configuration.GetSection(nameof(IoCOptions)).Bind(ioCOptions);
             switch (ioCOptions.DalImplementation)
             {
-                case "json":
-                    InstallJsonDb(services);
-                    break;
                 case "ef":
                     InstallEfDb(services, configuration);
                     break;
@@ -34,11 +35,6 @@ namespace qrAPI.Installers
             }
         }
 
-        private static void InstallJsonDb(IServiceCollection services)
-        {
-            services.AddSingleton<IDataContext, JsonContext>();
-        }
-
         private static void InstallMongoDb(IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));
@@ -48,12 +44,22 @@ namespace qrAPI.Installers
         private static void InstallEfDb(IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddScoped<IDataContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
+            
+            services.AddTransient(typeof(IRepository<MedicalRecordDto>), typeof(EfRepository<MedicalRecordDto>));
+            services.AddTransient(typeof(IRepository<QrDto>), typeof(EfRepository<QrDto>));
+            services.AddTransient<IRefreshTokenRepository, RefreshTokenEfRepository>();
+            services.AddTransient<IPetRepository, PetEfRepository>();
+
+            var redisCacheSettings = new MemoryCacheSettings();
+            configuration.GetSection(nameof(MemoryCacheSettings)).Bind(redisCacheSettings);
+            if (redisCacheSettings.Enabled)
+            {
+                services.Decorate<IPetRepository, PetCacheRepository>();
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace qrAPI.Installers
 {
@@ -16,12 +17,12 @@ namespace qrAPI.Installers
             {
                 x.SwaggerDoc("v1", new OpenApiInfo { Title = "Qr API", Version = "v1" });
 
-                //x.ExampleFilters();
+                x.ExampleFilters();
 
                 x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    Description = "JWT AuthorizationConstants header using the bearer scheme",
-                    Name = "AuthorizationConstants",
+                    Description = "JWT Authorization header using the bearer scheme",
+                    Name = "Authorization",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 });
@@ -40,7 +41,7 @@ namespace qrAPI.Installers
                 x.IncludeXmlComments(xmlPath);
             });
 
-            //services.AddSwaggerExamplesFromAssemblyOf<Startup>();
+            services.AddSwaggerExamplesFromAssemblyOf<Startup>();
         }
     }
 }

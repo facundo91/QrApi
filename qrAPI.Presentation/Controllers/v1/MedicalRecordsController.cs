@@ -6,11 +6,12 @@ using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.Logic.Domain;
-using qrAPI.Presentation.Adapters.v1;
+using qrAPI.Presentation.Adapters.v1.Interfaces;
 using qrAPI.Presentation.Cache;
 
 namespace qrAPI.Presentation.Controllers.v1
 {
+    [Produces("application/json")]
     public class MedicalRecordsController : ControllerBase
     {
         private readonly IMedicalRecordsControllerAdapter _medicalRecordsControllerAdapter;
