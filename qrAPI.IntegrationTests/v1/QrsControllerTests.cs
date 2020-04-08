@@ -1,22 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FluentAssertions;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
+using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
 using Xunit;
 
 namespace qrAPI.IntegrationTests.v1
 {
-    public class QrsControllerTests : IntegrationTest
+    public class QrsControllerTests : QrsControllerFixture
     {
         [Fact]
-        public async Task GetAll_WithoutQrs_ReturnsEmptyResponse()
+        public async Task GetAllQrs_WithoutQrs_ReturnsEmptyResponse()
         {
             //Arrange
-
             //Act
             var response = await TestClient.GetAsync(ApiRoutes.Qrs.GetAll);
             //Assert
@@ -25,29 +26,43 @@ namespace qrAPI.IntegrationTests.v1
         }
 
         [Fact]
-        public async Task CreateQr_AddsOneItemToTable()
+        public async Task CreateQr_AddsOneItem()
         {
             //Arrange
-            var getAllBefore = (await GetAllQrsAsync()).Count;
             var createQrRequest = new CreateQrRequest { Name = "Test QR" };
             //Act
-            await CreateQrAsync(createQrRequest);
-            var getAllAfter = (await GetAllQrsAsync()).Count;
+            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest);
             //Assert
-            (getAllAfter - getAllBefore).Should().Be(1);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            var qrCreated = await response.Content.ReadAsAsync<QrResponse>();
+            qrCreated.Name.Should().Be(createQrRequest.Name);
+            qrCreated.Id.Should().NotBeEmpty();
         }
 
-        [Fact]
-        public async Task CreateQr_ReturnsQrResponse()
+    }
+
+    public abstract class  QrsControllerFixture : IntegrationTest
+    {
+        protected async Task<QrResponse> CreateQrAsync(CreateQrRequest request)
         {
-            //Arrange
-            const string qrName = "Test QR";
-            var createQrRequest = new CreateQrRequest { Name = qrName };
-            //Act
-            var qrResponse = await CreateQrAsync(createQrRequest);
-            //Assert
-            qrResponse.Name.Should().Be(qrName);
+            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, request);
+            return await response.Content.ReadAsAsync<QrResponse>();
         }
 
+        protected async Task<List<QrResponse>> GetAllQrsAsync() =>
+            (await TestClient.GetAsync(ApiRoutes.Qrs.GetAll))
+            .Content.ReadAsAsync<List<QrResponse>>().Result;
+
+        protected async Task<QrResponse> GetQrAsync(Guid id) =>
+            (await TestClient.GetAsync(ApiRoutes.Qrs.Get.Replace("{qrId}",id.ToString())))
+            .Content.ReadAsAsync<QrResponse>().Result;
+
+        protected async Task<bool> UpdateQrAsync(Guid id,UpdateQrRequest updateQrRequest) =>
+            (await TestClient.PutAsJsonAsync(ApiRoutes.Qrs.Update.Replace("{qrId}", id.ToString()), updateQrRequest))
+            .Content.ReadAsAsync<bool>().Result;
+
+        protected async Task<bool> DeleteQrAsync(Guid id) =>
+            (await TestClient.DeleteAsync(ApiRoutes.Qrs.Delete.Replace("{qrId}", id.ToString())))
+            .Content.ReadAsAsync<bool>().Result;
     }
 }

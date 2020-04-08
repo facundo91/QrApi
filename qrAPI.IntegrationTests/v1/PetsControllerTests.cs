@@ -18,7 +18,7 @@ namespace qrAPI.IntegrationTests.v1
     {
 
         [Fact]
-        public async Task GetAllPets_WithoutPets_ReturnsEmpty()
+        public async Task GetAllPets_WithoutPets_ReturnsEmptyResponse()
         {
             //Arrange
             await AuthenticateAsync();

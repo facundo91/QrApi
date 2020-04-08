@@ -37,22 +37,11 @@ namespace qrAPI.IntegrationTests.v1
             _serviceProvider = appFactory.Services;
             TestClient = appFactory.CreateClient();
         }
-
-        protected async Task<QrResponse> CreateQrAsync(CreateQrRequest request)
-        {
-            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, request);
-            return await response.Content.ReadAsAsync<QrResponse>();
-        }
-
         protected async Task<PetResponse> CreatePetAsync(CreatePetRequest request)
         {
             var response = await TestClient.PostAsJsonAsync(ApiRoutes.Pets.Create, request);
             return await response.Content.ReadAsAsync<PetResponse>();
         }
-
-        protected async Task<List<QrResponse>> GetAllQrsAsync() =>
-            (await TestClient.GetAsync(ApiRoutes.Qrs.GetAll))
-            .Content.ReadAsAsync<List<QrResponse>>().Result;
 
         protected async Task<List<PetResponse>> GetAllPetsAsync() =>
             (await TestClient.GetAsync(ApiRoutes.Pets.GetAll))

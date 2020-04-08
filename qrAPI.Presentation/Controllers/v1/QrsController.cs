@@ -49,10 +49,6 @@ namespace qrAPI.Presentation.Controllers.v1
             return result != null
                 ? CreatedAtAction("CreateQr", new { id = result.Id }, result)
                 : (IActionResult)BadRequest();
-
-            //var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
-            //var locationUri = baseUrl + "/" + ApiRoutes.Qrs.Get.Replace("{qrId}", result.Id.ToString());
-            //return Created(locationUri, result);
         }
 
         [HttpPut(ApiRoutes.Qrs.Update)]
