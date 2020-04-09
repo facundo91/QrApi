@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
@@ -9,6 +10,8 @@ using qrAPI.Logic.Services.Interfaces;
 namespace qrAPI.Presentation.Controllers.v1
 {
     [Produces("application/json")]
+    [ApiVersionNeutral]
+    [ODataRouting]
     public class IdentityController : ControllerBase
     {
         private readonly IIdentityService _identityService;

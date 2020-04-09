@@ -12,6 +12,6 @@ namespace qrAPI.Contracts.v1.Responses
         public Gender Gender { get; set; }
         public Guid? OwnerId { get; set; }
         [Url]
-        public Uri PictureUrl { get; set; }
+        public string PictureUrl { get; set; }
     }
 }

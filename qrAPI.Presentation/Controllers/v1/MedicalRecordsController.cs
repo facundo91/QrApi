@@ -1,18 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.Logic.Domain;
 using qrAPI.Presentation.Adapters.v1.Interfaces;
+using static qrAPI.Contracts.ApiVersions;
 using qrAPI.Presentation.Cache;
 
 namespace qrAPI.Presentation.Controllers.v1
 {
     [Produces("application/json")]
-    public class MedicalRecordsController : ControllerBase
+    [ODataRoutePrefix("MedicalRecords")]
+    [ApiVersion(V1Tag)]
+    public class MedicalRecordsController : ODataController
     {
         private readonly IMedicalRecordsControllerAdapter _medicalRecordsControllerAdapter;
 
@@ -22,7 +27,9 @@ namespace qrAPI.Presentation.Controllers.v1
         }
 
         [HttpGet(ApiRoutes.MedicalRecords.GetAll)]
-        [Cached(600)]
+        [ODataRoute]
+        [EnableQuery]
+        [Cached(60)]
         public async Task<IActionResult> GetAllMedicalRecords()
         {
             var result = await _medicalRecordsControllerAdapter.GetAllAsync<IEnumerable<MedicalRecord>>();

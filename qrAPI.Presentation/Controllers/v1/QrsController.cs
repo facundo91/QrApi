@@ -11,16 +11,16 @@ using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.Infrastructure.Options;
 using qrAPI.Presentation.Adapters.v1.Interfaces;
-using qrAPI.Presentation.Cache;
+using static qrAPI.Contracts.ApiVersions;
+using static Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace qrAPI.Presentation.Controllers.v1
 {
     //Should only be request and respond the corresponding version typed of object
     [Produces("application/json")]
-    [ApiVersion("1.0")]
-    [ApiExplorerSettings(IgnoreApi = false)]
-    //[ODataRoutePrefix("Qrs")]
-    public class QrsController : ControllerBase
+    [ApiVersion(V1Tag)]
+    [ODataRoutePrefix("Qrs")]
+    public class QrsController : ODataController
     {
         private readonly IQrsControllerAdapter _controllerAdapter;
 
@@ -29,8 +29,10 @@ namespace qrAPI.Presentation.Controllers.v1
             _controllerAdapter = controllerAdapter;
         }
 
+        [ODataRoute]
+        [ProducesResponseType(typeof(IEnumerable<PetResponse>), Status200OK)]
         [HttpGet(ApiRoutes.Qrs.GetAll)]
-        [Cached(30)]
+        [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         [EnableQuery]
         public async Task<IActionResult> GetAllQrs()
         {
@@ -39,8 +41,10 @@ namespace qrAPI.Presentation.Controllers.v1
         }
 
         [HttpGet(ApiRoutes.Qrs.Get)]
+        [ODataRoute("{qrId}")]
+        [EnableQuery]
         [FeatureGate(FeatureFlags.EndpointFlag)]
-        [Cached(30)]
+        [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         public async Task<IActionResult> GetQr([FromRoute] Guid qrId)
         {
             var result = await _controllerAdapter.GetByIdAsync<QrResponse>(qrId);

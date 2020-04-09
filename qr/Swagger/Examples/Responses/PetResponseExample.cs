@@ -16,7 +16,7 @@ namespace qrAPI.SwaggerExamples.Responses
                 Gender = Gender.Female,
                 Name = "Vulpi",
                 OwnerId = Guid.NewGuid(),
-                PictureUrl = new Uri("https://picture.com/vulpi")
+                PictureUrl = "https://picture.com/vulpi"
             };
         }
     }

@@ -43,7 +43,7 @@ namespace qrAPI.Presentation.Cache
                 {
                     Content = cachedResponse,
                     ContentType = "application/json",
-                    StatusCode = (int?) HttpStatusCode.OK
+                    StatusCode = (int?)HttpStatusCode.OK
                 };
                 context.Result = contentResult;
                 return;

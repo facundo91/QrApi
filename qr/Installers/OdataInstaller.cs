@@ -13,7 +13,8 @@ namespace qrAPI.Installers
         {
             services.AddApiVersioning(options =>
             {
-                options.DefaultApiVersion = Configuration.ApiVersions.V1;
+                options.DefaultApiVersion = Contracts.ApiVersions.V1;
+                options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ReportApiVersions = true;
             });
             services.AddOData().EnableApiVersioning();

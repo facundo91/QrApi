@@ -33,7 +33,7 @@ namespace qrAPI.IntegrationTests.v1
             //Act
             var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest);
             //Assert
-            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            response.StatusCode.Should().Be(HttpStatusCode.Created);
             var qrCreated = await response.Content.ReadAsAsync<QrResponse>();
             qrCreated.Name.Should().Be(createQrRequest.Name);
             qrCreated.Id.Should().NotBeEmpty();

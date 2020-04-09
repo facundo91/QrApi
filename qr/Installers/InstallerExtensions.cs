@@ -21,8 +21,7 @@ namespace qrAPI.Installers
             installers.ForEach(installer => installer.InstallServices(services, configuration));
         }
 
-        public static void AddSwagger(this IApplicationBuilder app, IConfiguration configuration,
-            IApiVersionDescriptionProvider provider)
+        public static void AddSwagger(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         {
             app.UseSwagger();
             app.UseSwaggerUI(
