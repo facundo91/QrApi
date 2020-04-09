@@ -13,6 +13,7 @@ using Xunit;
 
 namespace qrAPI.IntegrationTests.v1
 {
+    [Collection("Sequential")]
     public class QrsControllerTests : QrsControllerFixture
     {
         [Fact]
@@ -56,7 +57,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             var createQrRequest = new CreateQrRequest { Name = "Test QR" };
-            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest);
+            await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest);
             var qrResponseBoundClient = ODataClient.For<QrResponse>("Qrs");
             //Act
             var qrs = await qrResponseBoundClient.FindEntriesAsync();

@@ -14,6 +14,7 @@ using Xunit;
 
 namespace qrAPI.IntegrationTests.v1
 {
+    [Collection("Sequential")]
     public class PetsControllerTests : IntegrationTest
     {
 
