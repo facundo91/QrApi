@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using qrAPI.DAL.Dtos;
 using qrAPI.Logic.Domain;
 

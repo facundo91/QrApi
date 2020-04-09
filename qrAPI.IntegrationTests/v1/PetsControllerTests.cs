@@ -44,7 +44,7 @@ namespace qrAPI.IntegrationTests.v1
             returnedPost.Name.Should().Be(createPetRequest.Name);
             returnedPost.Birthdate.Should().Be(createPetRequest.Birthdate);
             returnedPost.Gender.Should().Be(createPetRequest.Gender);
-            (new Uri(returnedPost.PictureUrl)).Should().BeEquivalentTo(new Uri(createPetRequest.PictureUrl));
+            returnedPost.PictureUrl.Should().BeEquivalentTo(new Uri(createPetRequest.PictureUrl));
         }
 
         [Fact]
@@ -63,7 +63,7 @@ namespace qrAPI.IntegrationTests.v1
             getAllPets.First().Name.Should().Be(createPetRequest.Name);
             getAllPets.First().Birthdate.Should().Be(createPetRequest.Birthdate);
             getAllPets.First().Gender.Should().Be(createPetRequest.Gender);
-            new Uri(getAllPets.First().PictureUrl).Should().BeEquivalentTo(new Uri(createPetRequest.PictureUrl));
+            getAllPets.First().PictureUrl.Should().BeEquivalentTo(new Uri(createPetRequest.PictureUrl));
         }
 
         [Fact]
@@ -82,8 +82,8 @@ namespace qrAPI.IntegrationTests.v1
             getCreatedPet.Name.Should().Be(petCreated.Name).And.Be(createPetRequest.Name);
             getCreatedPet.Birthdate.Should().Be(petCreated.Birthdate).And.Be(createPetRequest.Birthdate);
             getCreatedPet.Gender.Should().Be(petCreated.Gender).And.Be(createPetRequest.Gender);
-            new Uri(getCreatedPet.PictureUrl).Should().BeEquivalentTo(new Uri(petCreated.PictureUrl));
-            new Uri(getCreatedPet.PictureUrl).Should().BeEquivalentTo(new Uri(createPetRequest.PictureUrl));
+            getCreatedPet.PictureUrl.Should().BeEquivalentTo(petCreated.PictureUrl);
+            getCreatedPet.PictureUrl.Should().BeEquivalentTo(createPetRequest.PictureUrl);
         }
 
         [Fact]
@@ -173,8 +173,8 @@ namespace qrAPI.IntegrationTests.v1
                 Name = "Updated Pet",
                 Birthdate = DateTime.Now,
                 Gender = Gender.Male,
-                PictureUrl = petCreated.PictureUrl, //Stays the same
-                OwnerId = petCreated.Owner.GetValueOrDefault()
+                PictureUrl = petCreated.PictureUrl.OriginalString, //Stays the same
+                OwnerId = petCreated.OwnerId.GetValueOrDefault()
             };
             var response = await TestClient.PutAsJsonAsync(ApiRoutes.Pets.Update.Replace("{petId}", petCreated.Id.ToString()), updatePetRequest);
             //Assert
@@ -183,8 +183,8 @@ namespace qrAPI.IntegrationTests.v1
             updatedPet.Name.Should().Be(updatePetRequest.Name);
             updatedPet.Birthdate.Should().Be(updatePetRequest.Birthdate);
             updatedPet.Gender.Should().Be(updatePetRequest.Gender);
-            new Uri(updatedPet.PictureUrl).Should().BeEquivalentTo(new Uri(updatePetRequest.PictureUrl));
-            updatedPet.Owner.Should().Be(updatePetRequest.OwnerId);
+            updatedPet.PictureUrl.Should().BeEquivalentTo(new Uri(updatePetRequest.PictureUrl));
+            updatedPet.OwnerId.Should().Be(updatePetRequest.OwnerId);
         }
 
         [Fact]
@@ -206,8 +206,8 @@ namespace qrAPI.IntegrationTests.v1
                 Name = "Updated Pet",
                 Birthdate = DateTime.Now,
                 Gender = Gender.Male,
-                PictureUrl = petCreated.PictureUrl, //Stays the same
-                OwnerId = petCreated.Owner.GetValueOrDefault()
+                PictureUrl = petCreated.PictureUrl.OriginalString, //Stays the same
+                OwnerId = petCreated.OwnerId.GetValueOrDefault()
             };
             await AuthenticateAsync("test@mail.com", "APass123!");
             var response = await TestClient.PutAsJsonAsync(ApiRoutes.Pets.Update.Replace("{petId}", petCreated.Id.ToString()), updatePetRequest);

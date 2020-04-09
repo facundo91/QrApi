@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Threading.Tasks;
-using FluentAssertions;
 using qrAPI.DAL.Daos.EfImplementations;
-using Xunit;
 
 namespace qrAPI.DAL.Tests.EfDaos
 {

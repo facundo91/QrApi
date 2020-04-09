@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 using qrAPI.Contracts.v1;
@@ -15,6 +17,9 @@ namespace qrAPI.Presentation.Controllers.v1
 {
     //Should only be request and respond the corresponding version typed of object
     [Produces("application/json")]
+    [ApiVersion("1.0")]
+    [ApiExplorerSettings(IgnoreApi = false)]
+    //[ODataRoutePrefix("Qrs")]
     public class QrsController : ControllerBase
     {
         private readonly IQrsControllerAdapter _controllerAdapter;
@@ -26,6 +31,7 @@ namespace qrAPI.Presentation.Controllers.v1
 
         [HttpGet(ApiRoutes.Qrs.GetAll)]
         [Cached(30)]
+        [EnableQuery]
         public async Task<IActionResult> GetAllQrs()
         {
             var result = await _controllerAdapter.GetAllAsync<IEnumerable<QrResponse>>();

@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using qrAPI.Contracts.HealthChecks;
 using System;
 using System.Linq;
-using qrAPI.Infrastructure.Options;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace qrAPI.Installers
 {
@@ -21,15 +21,19 @@ namespace qrAPI.Installers
             installers.ForEach(installer => installer.InstallServices(services, configuration));
         }
 
-        public static void AddSwagger(this IApplicationBuilder app, IConfiguration configuration)
+        public static void AddSwagger(this IApplicationBuilder app, IConfiguration configuration,
+            IApiVersionDescriptionProvider provider)
         {
-            var swaggerOptions = new SwaggerOptions();
-            configuration.GetSection(nameof(SwaggerOptions)).Bind(swaggerOptions);
-            app.UseSwagger(options => { options.RouteTemplate = swaggerOptions.JsonRoute; });
-            app.UseSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint(swaggerOptions.UiEndpoint, swaggerOptions.Description);
-            });
+            app.UseSwagger();
+            app.UseSwaggerUI(
+                options =>
+                {
+                    // build a swagger endpoint for each discovered API version
+                    foreach (var description in provider.ApiVersionDescriptions)
+                    {
+                        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                    }
+                });
         }
         public static void AddHealthChecks(this IApplicationBuilder app)
         {

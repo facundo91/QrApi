@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using AutoMapper;
-using qrAPI.Contracts.v1.Requests.Create;
-using qrAPI.Contracts.v1.Responses;
+﻿using AutoMapper;
 using qrAPI.Logic.Domain;
 using qrAPI.Logic.Services.Interfaces;
 using qrAPI.Presentation.Adapters.v1.Interfaces;

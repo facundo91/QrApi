@@ -1,9 +1,15 @@
+using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using qrAPI.Installers;
+using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Builder;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using FluentValidation.AspNetCore;
+using qrAPI.Presentation.Filters;
+using static Microsoft.AspNetCore.Mvc.CompatibilityVersion;
+using static Microsoft.OData.ODataUrlKeyDelimiter;
 
 namespace qrAPI
 {
@@ -19,57 +25,40 @@ namespace qrAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvcCore().AddApiExplorer();
-            //services.AddControllersWithViews();
-            services.AddRazorPages();
+            // the sample application always uses the latest version, but you may want an explicit version such as Version_2_2
+            // note: Endpoint Routing is enabled by default; however, it is unsupported by OData and MUST be false
+            services.AddMvc(options =>
+            {
+                options.EnableEndpointRouting = false;
+                options.Filters.Add<ValidationFilter>();
+            })
+                .AddFluentValidation(mvcConfiguration => mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>())
+                .SetCompatibilityVersion(Latest);
             services.InstallServicesInAssembly(Configuration);
-
-            //var assembly = typeof(qrAPI.Presentation).Assembly;
-            //services.AddControllersWithViews()
-            //    .AddApplicationPart(assembly);
-
-            //services.AddControllers().
-
-            //var controllers = typeof(Startup).Assembly.ExportedTypes
-            //    .Where(x => typeof(ControllerBase).IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
-            //    .Select(x => x.Assembly).ToList();
-            //controllers.ForEach(controller =>   controller.InstallServices(services, configuration));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, VersionedODataModelBuilder modelBuilder, IApiVersionDescriptionProvider provider)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                //app.UseDatabaseErrorPage();
-            }
-            else
-            {
-                //app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
             app.AddHealthChecks();
-
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.AddSwagger(Configuration);
-
-            app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseResponseCaching();
+            app.UseMvc(
+                routeBuilder =>
+                {
+                    // the following will not work as expected
+                    // BUG: https://github.com/OData/WebApi/issues/1837
+                    // routeBuilder.SetDefaultODataOptions( new ODataOptions() { UrlKeyDelimiter = Parentheses } );
+                    routeBuilder.ServiceProvider.GetRequiredService<ODataOptions>().UrlKeyDelimiter = Parentheses;
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
-            });
+                    // global odata query options
+                    routeBuilder.Select().Filter().OrderBy().MaxTop(10).Count();
+
+                    routeBuilder.MapVersionedODataRoutes("odata", "api", modelBuilder.GetEdmModels());
+                });
+            app.AddSwagger(Configuration, provider);
         }
     }
 }

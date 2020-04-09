@@ -1,8 +1,4 @@
-﻿using System.Linq;
-using FluentAssertions;
-using Xunit;
-
-namespace qrAPI.Logic.Tests.Domain
+﻿namespace qrAPI.Logic.Tests.Domain
 {
     public class PetTests : LogicTests
     {

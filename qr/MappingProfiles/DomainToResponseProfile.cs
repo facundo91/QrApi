@@ -10,7 +10,7 @@ namespace qrAPI.MappingProfiles
         {
             CreateMap<Qr, QrResponse>();
 
-            CreateMap<Pet, PetResponse>().ForMember(dest => dest.Owner,
+            CreateMap<Pet, PetResponse>().ForMember(dest => dest.OwnerId,
                 opt =>
                     opt.MapFrom(src => src.Owner.Id));
         }

@@ -9,6 +9,7 @@ namespace qrAPI.Presentation.Validators
         {
             RuleFor(x => x.Name)
                 .NotEmpty()
+                .NotNull()
                 .MaximumLength(50);
         }
     }
