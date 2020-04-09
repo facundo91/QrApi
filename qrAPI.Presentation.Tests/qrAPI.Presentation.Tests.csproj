@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\qr.Contracts\qrAPI.Contracts.csproj" />
+    <ProjectReference Include="..\qrAPI.Contracts\qrAPI.Contracts.csproj" />
     <ProjectReference Include="..\qrAPI.Presentation\qrAPI.Presentation.csproj" />
   </ItemGroup>
 

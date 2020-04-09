@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -37,6 +38,48 @@ namespace qrAPI.IntegrationTests.v1
             var qrCreated = await response.Content.ReadAsAsync<QrResponse>();
             qrCreated.Name.Should().Be(createQrRequest.Name);
             qrCreated.Id.Should().NotBeEmpty();
+        }
+
+        [Fact]
+        public async Task GetAllQrs_WithoutAny_ReturnsEmpty()
+        {
+            //Arrange
+            var qrResponseBoundClient = ODataClient.For<QrResponse>("Qrs");
+            //Act
+            var qrs = await qrResponseBoundClient.FindEntriesAsync();
+            //Assert
+            qrs.Should().BeNullOrEmpty();
+        }
+
+        [Fact]
+        public async Task GetAllQrs_WithOneQr_ReturnsQr()
+        {
+            //Arrange
+            var createQrRequest = new CreateQrRequest { Name = "Test QR" };
+            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest);
+            var qrResponseBoundClient = ODataClient.For<QrResponse>("Qrs");
+            //Act
+            var qrs = await qrResponseBoundClient.FindEntriesAsync();
+            //Assert
+            qrs.Should().HaveCount(1);
+            qrs.FirstOrDefault().Name.Should().BeEquivalentTo("Test QR");
+        }
+
+        [Fact]
+        public async Task GetAllQrs_WithTwoQrs_OrderByName_ReturnsQrsOrderedByName()
+        {
+            //Arrange
+            var createQrRequest1 = new CreateQrRequest { Name = "ZZZTest QR" };
+            var createQrRequest2 = new CreateQrRequest { Name = "AAATest QR" };
+            await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest1);
+            await TestClient.PostAsJsonAsync(ApiRoutes.Qrs.Create, createQrRequest2);
+            var qrResponseBoundClient = ODataClient.For<QrResponse>("Qrs");
+            //Act
+            var qrs = await qrResponseBoundClient.OrderBy(qrOrder => qrOrder.Name).FindEntriesAsync();
+            //Assert
+            qrs.Should().HaveCount(2);
+            qrs.ElementAt(0).Name.Should().BeEquivalentTo("AAATest QR");
+            qrs.ElementAt(1).Name.Should().BeEquivalentTo("ZZZTest QR");
         }
 
     }

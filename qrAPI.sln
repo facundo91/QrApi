@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI", "qr\qrAPI.csproj", "{A5A2405A-427E-404E-B285-60B5E72A6ADB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI", "qrAPI\qrAPI.csproj", "{A5A2405A-427E-404E-B285-60B5E72A6ADB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Contracts", "qr.Contracts\qrAPI.Contracts.csproj", "{49738199-3771-4DA1-A579-500268323B86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Contracts", "qrAPI.Contracts\qrAPI.Contracts.csproj", "{49738199-3771-4DA1-A579-500268323B86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Logic.Tests", "qrAPI.DALTests\qrAPI.Logic.Tests.csproj", "{7B077665-BAD2-4F86-A9ED-D73860CBBA74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Logic.Tests", "qrAPI.Logic.Tests\qrAPI.Logic.Tests.csproj", "{7B077665-BAD2-4F86-A9ED-D73860CBBA74}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.IntegrationTests", "qrAPI.IntegrationTests\qrAPI.IntegrationTests.csproj", "{5E4397F5-E54D-43FB-A917-027E344F2DDD}"
 EndProject
@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Logic", "qrAPI.Logic\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.DAL.Tests", "qrAPI.DAL.Tests\qrAPI.DAL.Tests.csproj", "{144812D0-8F6F-4A89-AD24-165939F907DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.Presentation", "qrAPI.Presentation\qrAPI.Presentation.csproj", "{5F709B57-BC89-46B7-8D18-5B424B61A91D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Presentation", "qrAPI.Presentation\qrAPI.Presentation.csproj", "{5F709B57-BC89-46B7-8D18-5B424B61A91D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.Infrastructure", "qrAPI.Infrastructure\qrAPI.Infrastructure.csproj", "{5E3704F3-66EF-4A2F-A823-C748A0ECC9C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Infrastructure", "qrAPI.Infrastructure\qrAPI.Infrastructure.csproj", "{5E3704F3-66EF-4A2F-A823-C748A0ECC9C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.Presentation.Tests", "qrAPI.Presentation.Tests\qrAPI.Presentation.Tests.csproj", "{C83657AA-F7B2-40A9-9C46-F5473E21DE47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Presentation.Tests", "qrAPI.Presentation.Tests\qrAPI.Presentation.Tests.csproj", "{C83657AA-F7B2-40A9-9C46-F5473E21DE47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qrAPI.Sdk", "qrAPI.Sdk\qrAPI.Sdk.csproj", "{F65876F3-7891-4BDC-BF8F-0F20E2354618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qrAPI.Sdk", "qrAPI.Sdk\qrAPI.Sdk.csproj", "{F65876F3-7891-4BDC-BF8F-0F20E2354618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

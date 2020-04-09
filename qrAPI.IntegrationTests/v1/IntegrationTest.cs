@@ -12,15 +12,18 @@ using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.DAL.Data.EFData.Contexts;
+using Simple.OData.Client;
 
 namespace qrAPI.IntegrationTests.v1
 {
     public class IntegrationTest : IDisposable
     {
         protected readonly HttpClient TestClient;
+        protected readonly IODataClient ODataClient;
         private readonly IServiceProvider _serviceProvider;
 
-        public IntegrationTest()
+
+        protected IntegrationTest()
         {
             var appFactory = new WebApplicationFactory<Startup>()
                 .WithWebHostBuilder(builder =>
@@ -36,6 +39,13 @@ namespace qrAPI.IntegrationTests.v1
                 });
             _serviceProvider = appFactory.Services;
             TestClient = appFactory.CreateClient();
+
+            var relativeUri = new Uri("odata/", UriKind.Relative);
+            ODataClient = new ODataClient(new ODataClientSettings(TestClient, relativeUri)
+            {
+                IgnoreResourceNotFoundException = true,
+                OnTrace = (x, y) => Console.WriteLine(string.Format(x, y))
+            });
         }
         protected async Task<PetResponse> CreatePetAsync(CreatePetRequest request)
         {

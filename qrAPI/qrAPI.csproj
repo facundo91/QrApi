@@ -65,10 +65,17 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\qr.Contracts\qrAPI.Contracts.csproj" />
+    <ProjectReference Include="..\qrAPI.Contracts\qrAPI.Contracts.csproj" />
     <ProjectReference Include="..\qrAPI.DAL\qrAPI.DAL.csproj" />
     <ProjectReference Include="..\qrAPI.Logic\qrAPI.Logic.csproj" />
     <ProjectReference Include="..\qrAPI.Presentation\qrAPI.Presentation.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

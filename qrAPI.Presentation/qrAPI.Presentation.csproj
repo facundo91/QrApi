@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\qr.Contracts\qrAPI.Contracts.csproj" />
+    <ProjectReference Include="..\qrAPI.Contracts\qrAPI.Contracts.csproj" />
     <ProjectReference Include="..\qrAPI.Infrastructure\qrAPI.Infrastructure.csproj" />
     <ProjectReference Include="..\qrAPI.Logic\qrAPI.Logic.csproj" />
   </ItemGroup>
