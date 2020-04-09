@@ -22,7 +22,7 @@ namespace qrAPI.Installers
                 {
                     // add a custom operation filter which sets default values
                     options.OperationFilter<SwaggerDefaultValues>();
-
+                    options.ExampleFilters();
                     // integrate xml comments
                     Directory.GetFiles(AppContext.BaseDirectory, "*.xml", SearchOption.TopDirectoryOnly)
                         .ToList().ForEach(xmlFile => options.IncludeXmlComments(xmlFile));

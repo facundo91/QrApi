@@ -30,7 +30,7 @@ namespace qrAPI.Presentation.Controllers.v1
         }
 
         [ODataRoute]
-        [ProducesResponseType(typeof(IEnumerable<PetResponse>), Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<QrResponse>), Status200OK)]
         [HttpGet(ApiRoutes.Qrs.GetAll)]
         [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         [EnableQuery]
@@ -43,6 +43,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [HttpGet(ApiRoutes.Qrs.Get)]
         [ODataRoute("{qrId}")]
         [EnableQuery]
+        [ProducesResponseType(typeof(QrResponse), Status200OK)]
         [FeatureGate(FeatureFlags.EndpointFlag)]
         [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         public async Task<IActionResult> GetQr([FromRoute] Guid qrId)

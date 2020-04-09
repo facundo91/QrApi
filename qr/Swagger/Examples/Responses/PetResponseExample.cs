@@ -3,7 +3,7 @@ using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace qrAPI.SwaggerExamples.Responses
+namespace qrAPI.Swagger.Examples.Responses
 {
     public class PetResponseExample : IExamplesProvider<PetResponse>
     {

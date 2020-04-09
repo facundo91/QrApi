@@ -6,11 +6,9 @@ using qrAPI.Installers;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Builder;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.OData.Edm;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Presentation.Filters;
 using static Microsoft.OData.ODataUrlKeyDelimiter;
 
 namespace qrAPI
@@ -27,12 +25,6 @@ namespace qrAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(options =>
-                {
-                    options.Filters.Add<ValidationFilter>();
-                })
-                .AddFluentValidation(mvcConfiguration => mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>());
-            services.AddControllers();
             services.InstallServicesInAssembly(Configuration);
         }
 
@@ -54,11 +46,9 @@ namespace qrAPI
                 endpoints.ServiceProvider.GetRequiredService<ODataOptions>().UrlKeyDelimiter = Parentheses;
                 endpoints.MapControllers();
                 endpoints.EnableDependencyInjection();
-                endpoints.Select().Filter().OrderBy().Count().MaxTop(10);
+                endpoints.Select().Filter().OrderBy().Count().Expand().MaxTop(10);
                 endpoints.MapODataRoute("odata", "odata", GetEdmModel());
-            }); //new
-
-
+            });
             app.AddSwagger(provider);
         }
 
@@ -67,6 +57,7 @@ namespace qrAPI
             var odataBuilder = new ODataConventionModelBuilder();
             odataBuilder.EntitySet<PetResponse>("Pets").EntityType.HasKey(o => o.Id);
             odataBuilder.EntitySet<QrResponse>("Qrs").EntityType.HasKey(o => o.Id);
+            odataBuilder.EntitySet<MedicalRecordResponse>("MedicalRecords").EntityType.HasKey(o => o.Id);
 
             return odataBuilder.GetEdmModel();
         }

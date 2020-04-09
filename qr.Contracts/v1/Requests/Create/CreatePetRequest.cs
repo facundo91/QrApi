@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace qrAPI.Contracts.v1.Requests.Create
 {
@@ -8,6 +9,7 @@ namespace qrAPI.Contracts.v1.Requests.Create
         [Required]
         public string Name { get; set; }
         public DateTime Birthdate { get; set; }
+        [EnumDataType(typeof(Gender))]
         public Gender Gender { get; set; }
         public Guid OwnerId { get; set; }
         [Url]
