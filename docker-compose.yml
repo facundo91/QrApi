@@ -5,11 +5,17 @@ networks:
     name: localdev
     
 services:
-  main-api:
+  qr-api:
     build: 
       context: .
       dockerfile: qrAPI/Dockerfile
     restart: always
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - MemoryCacheSettings__ConnectionString=${MemoryCacheSettings__ConnectionString}
+      - MemoryCacheSettings__Enabled=${MemoryCacheSettings__Enabled}
+      - ConnectionStrings__DefaultConnection=${ConnectionStrings__DefaultConnection}
+      - JwtOptions__Secret=${JwtOptions__Secret}
     ports:
       - "7000:80"
     depends_on:
@@ -23,7 +29,7 @@ services:
     container_name: db-server
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=Facu1234
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
       - MSSQL_TCP_PORT=1433
     ports:
       - "1400:1433"
