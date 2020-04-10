@@ -2,8 +2,7 @@
 {
     public static class ApiRoutes
     {
-        private const string Root = "api";
-        private const string Base = Root;
+        private const string Base = "api";
 
         public static class Qrs
         {

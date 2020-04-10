@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -7,21 +6,24 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
-using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.DAL.Data.EFData.Contexts;
+using qrAPI.Sdk.v1;
+using Refit;
 using Simple.OData.Client;
 
 namespace qrAPI.IntegrationTests.v1
 {
     public class IntegrationTest : IDisposable
     {
-        protected readonly HttpClient TestClient;
-        protected readonly IODataClient ODataClient;
+        protected readonly IQrsApi QrsApi;
+        protected readonly IPetsApi PetsApi;
+        protected readonly IBoundClient<PetResponse> PetsOdataClient;
+        protected readonly IBoundClient<QrResponse> QrsOdataClient;
         private readonly IServiceProvider _serviceProvider;
-
+        private readonly IIdentityApi _identityApi;
+        private readonly HttpClient _testClient;
 
         protected IntegrationTest()
         {
@@ -38,46 +40,30 @@ namespace qrAPI.IntegrationTests.v1
                     });
                 });
             _serviceProvider = appFactory.Services;
-            TestClient = appFactory.CreateClient();
+            _testClient = appFactory.CreateClient();
+            _identityApi = RestService.For<IIdentityApi>(_testClient);
+            QrsApi = RestService.For<IQrsApi>(_testClient);
+            PetsApi = RestService.For<IPetsApi>(_testClient);
+
 
             var relativeUri = new Uri("odata/", UriKind.Relative);
-            ODataClient = new ODataClient(new ODataClientSettings(TestClient, relativeUri)
+            var oDataClient = new ODataClient(new ODataClientSettings(_testClient, relativeUri)
             {
                 IgnoreResourceNotFoundException = true,
                 OnTrace = (x, y) => Console.WriteLine(string.Format(x, y))
             });
-        }
-        protected async Task<PetResponse> CreatePetAsync(CreatePetRequest request)
-        {
-            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Pets.Create, request);
-            return await response.Content.ReadAsAsync<PetResponse>();
+            PetsOdataClient = oDataClient.For<PetResponse>("Pets");
+            QrsOdataClient = oDataClient.For<QrResponse>("Qrs");
         }
 
-        protected async Task<List<PetResponse>> GetAllPetsAsync() =>
-            (await TestClient.GetAsync(ApiRoutes.Pets.GetAll))
-            .Content.ReadAsAsync<List<PetResponse>>().Result;
-
-        protected async Task<PetResponse> GetPetAsync(Guid id)
+        protected async Task RegisterAsync(string email = "test@integration.com", string password = "SomePass1234!")
         {
-            var response = (await TestClient.GetAsync(ApiRoutes.Pets.Get.Replace("{petId}", id.ToString())));
-            return await response.Content.ReadAsAsync<PetResponse>();
-        }
-
-        protected async Task AuthenticateAsync(string email = "test@integration.com", string password = "SomePass1234!")
-        {
-            TestClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", await GetJwtAsync(email, password));
-        }
-
-        private async Task<string> GetJwtAsync(string email, string password)
-        {
-            var response = await TestClient.PostAsJsonAsync(ApiRoutes.Identity.Register, new UserRegistrationRequest
+            var response = await _identityApi.RegisterAsync(new UserRegistrationRequest
             {
                 Email = email,
                 Password = password
             });
-
-            var registrationResponse = await response.Content.ReadAsAsync<AuthSuccessResponse>();
-            return registrationResponse.Token;
+            _testClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", response.Content.Token);
         }
 
         public void Dispose()
