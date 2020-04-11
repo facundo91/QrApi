@@ -1,26 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
-using MongoDB.Driver;
 using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Data.MongoData;
 using qrAPI.DAL.Dtos;
+using qrAPI.DAL.Options;
 
 namespace qrAPI.DAL.Daos.MongoImplementations
 {
     public class PetMongoRepository : MongoRepository<PetDto>, IPetRepository
     {
-        public PetMongoRepository(IMongoCollection<PetDto> table) : base(table)
+        public PetMongoRepository(MongoOptions settings) : base(settings)
         {
         }
 
-        public Task<IEnumerable<PetDto>> GetAllByNameAsync(string name)
+        public async Task<IEnumerable<PetDto>> GetAllByNameAsync(string name)
         {
-            throw new System.NotImplementedException();
+            Expression<Func<PetDto, bool>> expression = pet => pet.Name.StartsWith(name);
+            return await GetAllByQueryExpressionAsync(expression);
         }
 
-        public Task<IEnumerable<PetDto>> GetAllByUserIdAsync(Guid userId)
+        public async Task<IEnumerable<PetDto>> GetAllByUserIdAsync(Guid userId)
         {
-            throw new System.NotImplementedException();
+            Expression<Func<PetDto, bool>> expression = pet => pet.OwnerId == userId;
+            return await GetAllByQueryExpressionAsync(expression);
         }
+
+
     }
 }

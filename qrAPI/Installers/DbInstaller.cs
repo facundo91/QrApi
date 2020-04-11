@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using qrAPI.DAL.Daos.CacheImplementations;
 using qrAPI.DAL.Daos.EfImplementations;
 using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Daos.MongoImplementations;
 using qrAPI.DAL.Data;
 using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Data.MongoData;
@@ -37,8 +38,29 @@ namespace qrAPI.Installers
 
         private static void InstallMongoDb(IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<MongoOptions>(configuration.GetSection(nameof(MongoOptions)));
-            services.AddSingleton<IDataContext, MongoContext>();
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            var mongoOptions = new MongoOptions();
+            configuration.GetSection(nameof(MongoOptions)).Bind(mongoOptions);
+            services.AddSingleton(mongoOptions);
+
+            services.AddTransient(typeof(IRepository<MedicalRecordDto>), typeof(EfRepository<MedicalRecordDto>));
+            services.AddTransient(typeof(IRepository<QrDto>), typeof(EfRepository<QrDto>));
+            services.AddTransient<IRefreshTokenRepository, RefreshTokenEfRepository>();
+            services.AddTransient<IPetRepository, PetMongoRepository>();
+
+            var redisCacheSettings = new MemoryCacheSettings();
+            configuration.GetSection(nameof(MemoryCacheSettings)).Bind(redisCacheSettings);
+            if (redisCacheSettings.Enabled)
+            {
+                services.Decorate<IPetRepository, PetCacheRepository>();
+                services.Decorate(typeof(IRepository<QrDto>), typeof(CacheRepository<QrDto>));
+                services.Decorate(typeof(IRepository<MedicalRecordDto>), typeof(CacheRepository<MedicalRecordDto>));
+            }
         }
 
         private static void InstallEfDb(IServiceCollection services, IConfiguration configuration)
@@ -59,6 +81,8 @@ namespace qrAPI.Installers
             if (redisCacheSettings.Enabled)
             {
                 services.Decorate<IPetRepository, PetCacheRepository>();
+                services.Decorate(typeof(IRepository<QrDto>), typeof(CacheRepository<QrDto>));
+                services.Decorate(typeof(IRepository<MedicalRecordDto>), typeof(CacheRepository<MedicalRecordDto>));
             }
         }
     }

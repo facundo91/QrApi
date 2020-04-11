@@ -8,7 +8,7 @@ namespace qrAPI.DAL.Dtos
     public abstract class Dto
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [BsonId]
+        //[BsonId]
         [Key]
         public virtual Guid Id { get; set; }
     }

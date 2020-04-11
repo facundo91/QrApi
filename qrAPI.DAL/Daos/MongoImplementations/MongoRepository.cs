@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MongoDB.Driver;
 using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Data.MongoData;
 using qrAPI.DAL.Dtos;
+using qrAPI.DAL.Options;
 
 namespace qrAPI.DAL.Daos.MongoImplementations
 {
@@ -11,9 +15,15 @@ namespace qrAPI.DAL.Daos.MongoImplementations
     {
         private readonly IMongoCollection<TDto> _table;
 
-        public MongoRepository(IMongoCollection<TDto> table)
+        public MongoRepository(MongoOptions settings)
         {
-            _table = table;
+            var client = new MongoClient(settings.DefaultConnection);
+            _table = client.GetDatabase(settings.Database).GetCollection<TDto>(typeof(TDto).Name);
+        }
+
+        protected async Task<IEnumerable<TDto>> GetAllByQueryExpressionAsync(Expression<Func<TDto, bool>> expression)
+        {
+            return (await _table.FindAsync(expression)).Current;
         }
 
         public async Task<IEnumerable<TDto>> GetAllAsync()
@@ -23,8 +33,8 @@ namespace qrAPI.DAL.Daos.MongoImplementations
 
         public async Task<TDto> GetAsync(object id)
         {
-            return await _table
-                .Find((FilterDefinition<TDto>)id).FirstOrDefaultAsync();
+            return (await _table.FindAsync(x => x.Id == (Guid) id))
+                .Current.FirstOrDefault();
         }
 
         public async Task<TDto> InsertAsync(TDto obj)

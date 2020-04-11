@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 networks:
   localdev:
@@ -6,6 +6,7 @@ networks:
     
 services:
   qr-api:
+    container_name: qr-api
     build: 
       context: .
       dockerfile: qrAPI/Dockerfile
@@ -16,13 +17,16 @@ services:
       - MemoryCacheSettings__Enabled=${MemoryCacheSettings__Enabled}
       - ConnectionStrings__DefaultConnection=${ConnectionStrings__DefaultConnection}
       - JwtOptions__Secret=${JwtOptions__Secret}
+      - MongoOptions__DefaultConnection=${MongoOptions__DefaultConnection}
     ports:
       - "7000:80"
     depends_on:
       - db-server
       - redis
+      - mongo
     networks:
       - localdev
+  # Connect @ localhost:7000/swagger
         
   db-server:
     image: microsoft/mssql-server-linux:2017-latest
@@ -35,6 +39,11 @@ services:
       - "1400:1433"
     networks:
       - localdev
+  # Connect using Microsoft SQL Server Management Studio
+  # Server name: 127.0.0.1,1400
+  # Authentication: SQL Server Authentication
+  # Login: sa
+  # Password: MSSQL_SA_PASSWORD
   
   redis:
     image: redis
@@ -43,3 +52,32 @@ services:
       - "6379:6379"
     networks:
       - localdev
+  # Connect using RedisInsight @ localhost:6379
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - 27017:27017
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=myDBReader
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+    networks:
+      - localdev
+  # Connect using MongoDB Compass Community
+  # Connection String: mongodb://myDBReader:[MONGO_INITDB_ROOT_PASSWORD]@localhost:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false
+  # or using mongo-express below
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=myDBReader
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+    networks:
+      - localdev
+  # Connect @ localhost:8081
