@@ -17,14 +17,12 @@ namespace qrAPI.Installers
 
         private static void AddControllerAdapters(IServiceCollection services)
         {
-            services.AddTransient<IMedicalRecordsControllerAdapter, MedicalRecordsControllerAdapter>();
             services.AddTransient<IPetsControllerAdapter, PetsControllerAdapter>();
             services.AddTransient<IQrsControllerAdapter, QrsControllerAdapter>();
         }
 
         private static void AddServiceAdapters(IServiceCollection services)
         {
-            services.AddTransient<IMedicalRecordServiceAdapter, MedicalRecordServiceAdapter>();
             services.AddTransient<IPetServiceAdapter, PetServiceAdapter>();
             services.AddTransient<IQrServiceAdapter, QrServiceAdapter>();
         }

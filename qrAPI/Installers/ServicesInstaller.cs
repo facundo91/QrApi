@@ -12,7 +12,6 @@ namespace qrAPI.Installers
             services.AddTransient<IIdentityService, IdentityService>();
             services.AddTransient<IQrService, QrService>();
             services.AddTransient<IPetService, PetService>();
-            services.AddTransient<IMedicalRecordService, MedicalRecordService>();
         }
     }
 }

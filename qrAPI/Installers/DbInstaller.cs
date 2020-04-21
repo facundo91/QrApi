@@ -7,9 +7,7 @@ using qrAPI.DAL.Daos.CacheImplementations;
 using qrAPI.DAL.Daos.EfImplementations;
 using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Daos.MongoImplementations;
-using qrAPI.DAL.Data;
 using qrAPI.DAL.Data.EFData.Contexts;
-using qrAPI.DAL.Data.MongoData;
 using qrAPI.DAL.Dtos;
 using qrAPI.DAL.Options;
 using qrAPI.Infrastructure.Options;
@@ -48,8 +46,7 @@ namespace qrAPI.Installers
             configuration.GetSection(nameof(MongoOptions)).Bind(mongoOptions);
             services.AddSingleton(mongoOptions);
 
-            services.AddTransient(typeof(IRepository<MedicalRecordDto>), typeof(EfRepository<MedicalRecordDto>));
-            services.AddTransient(typeof(IRepository<QrDto>), typeof(EfRepository<QrDto>));
+            services.AddTransient(typeof(IRepository<QrDto>), typeof(QrEfRepository));
             services.AddTransient<IRefreshTokenRepository, RefreshTokenEfRepository>();
             services.AddTransient<IPetRepository, PetMongoRepository>();
 
@@ -59,7 +56,6 @@ namespace qrAPI.Installers
             {
                 services.Decorate<IPetRepository, PetCacheRepository>();
                 services.Decorate(typeof(IRepository<QrDto>), typeof(CacheRepository<QrDto>));
-                services.Decorate(typeof(IRepository<MedicalRecordDto>), typeof(CacheRepository<MedicalRecordDto>));
             }
         }
 
@@ -71,10 +67,10 @@ namespace qrAPI.Installers
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             
-            services.AddTransient(typeof(IRepository<MedicalRecordDto>), typeof(EfRepository<MedicalRecordDto>));
-            services.AddTransient(typeof(IRepository<QrDto>), typeof(EfRepository<QrDto>));
+            services.AddTransient(typeof(IRepository<QrDto>), typeof(QrEfRepository));
             services.AddTransient<IRefreshTokenRepository, RefreshTokenEfRepository>();
             services.AddTransient<IPetRepository, PetEfRepository>();
+            services.AddTransient<IUserPetRepository, UserPetRepository>();
 
             var redisCacheSettings = new MemoryCacheSettings();
             configuration.GetSection(nameof(MemoryCacheSettings)).Bind(redisCacheSettings);
@@ -82,7 +78,6 @@ namespace qrAPI.Installers
             {
                 services.Decorate<IPetRepository, PetCacheRepository>();
                 services.Decorate(typeof(IRepository<QrDto>), typeof(CacheRepository<QrDto>));
-                services.Decorate(typeof(IRepository<MedicalRecordDto>), typeof(CacheRepository<MedicalRecordDto>));
             }
         }
     }

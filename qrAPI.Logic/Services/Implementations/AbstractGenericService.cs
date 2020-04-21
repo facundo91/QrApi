@@ -25,22 +25,22 @@ namespace qrAPI.Logic.Services.Implementations
             return await _serviceToDalAdapter.GetAllAsync<TDomainObject>();
         }
 
-        public async Task<TDomainObject> GetByIdAsync(Guid id)
+        public virtual async Task<TDomainObject> GetByIdAsync(Guid id)
         {
             return await _serviceToDalAdapter.GetByIdAsync<TDomainObject>(id);
         }
 
-        public async Task<TDomainObject> CreateAsync(TDomainObject objToCreate)
+        public virtual async Task<TDomainObject> CreateAsync(TDomainObject objToCreate)
         {
             return await _serviceToDalAdapter.CreateAsync(objToCreate);
         }
 
-        public async Task<bool> UpdateAsync(TDomainObject objToUpdate)
+        public virtual async Task<bool> UpdateAsync(TDomainObject objToUpdate)
         {
             return await _serviceToDalAdapter.UpdateAsync(objToUpdate);
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public virtual async Task<bool> DeleteAsync(Guid id)
         {
             return await _serviceToDalAdapter.DeleteAsync(id);
         }

@@ -27,9 +27,9 @@ namespace qrAPI
                 await roleManager.CreateAsync(adminRole);
             }
 
-            if (!await roleManager.RoleExistsAsync("Owner"))
+            if (!await roleManager.RoleExistsAsync("Owners"))
             {
-                var ownerRole = new IdentityRole("Owner");
+                var ownerRole = new IdentityRole("Owners");
                 await roleManager.CreateAsync(ownerRole);
             }
             await host.RunAsync();

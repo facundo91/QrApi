@@ -1,7 +1,7 @@
-﻿#nullable enable
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Identity;
 
 namespace qrAPI.DAL.Dtos
 {
@@ -9,11 +9,11 @@ namespace qrAPI.DAL.Dtos
     public class PetDto : Dto
     {
         public string Name { get; set; }
+        [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
         public Gender Gender { get; set; }
-        public Guid? OwnerId { get; set; }
-        [ForeignKey(nameof(OwnerId))]
-        public virtual IdentityUser Owner { get; set; }
-        public string PictureUrl { get; set; }
+        public string Breed { get; set; }
+        public IEnumerable<UserPetDto> UserPets { get; set; } = new List<UserPetDto>();
+        public Uri PictureUrl { get; set; }
     }
 }

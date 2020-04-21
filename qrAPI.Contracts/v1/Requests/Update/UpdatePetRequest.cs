@@ -10,7 +10,10 @@ namespace qrAPI.Contracts.v1.Requests.Update
         public DateTime Birthdate { get; set; }
         [EnumDataType(typeof(Gender))]
         public Gender Gender { get; set; }
-        public Guid OwnerId { get; set; }
+        public Guid[] Owners { get; set; }
+        [Url]
         public string PictureUrl { get; set; }
+        public string Breed { get; set; }
+
     }
 }

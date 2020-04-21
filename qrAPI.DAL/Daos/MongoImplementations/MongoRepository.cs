@@ -5,7 +5,6 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MongoDB.Driver;
 using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Data.MongoData;
 using qrAPI.DAL.Dtos;
 using qrAPI.DAL.Options;
 

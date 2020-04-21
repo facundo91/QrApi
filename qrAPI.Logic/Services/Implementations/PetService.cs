@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using qrAPI.DAL.Dtos;
@@ -23,13 +24,13 @@ namespace qrAPI.Logic.Services.Implementations
             _identityService = identityService;
         }
 
-        public new async Task<IEnumerable<Pet>> GetAllAsync()
+        public override async Task<IEnumerable<Pet>> GetAllAsync()
         {
             var userId = _httpContextAccessor.HttpContext.GetUserId();
             return await _serviceToDalAdapter.GetAllByUserAsync(userId);
         }
 
-        public new async Task<Pet> CreateAsync(Pet petToCreate)
+        public override async Task<Pet> CreateAsync(Pet petToCreate)
         {
             var userId = _httpContextAccessor.HttpContext.GetUserId();
             var owner = await _identityService.GetPersonAsync(userId);
@@ -37,20 +38,21 @@ namespace qrAPI.Logic.Services.Implementations
             return await base.CreateAsync(petToCreate);
         }
 
-        public new async Task<Pet> GetByIdAsync(Guid id)
+        public override async Task<Pet> GetByIdAsync(Guid id)
         {
             var pet = await base.GetByIdAsync(id);
+            if (pet == null) return null;
             var userId = _httpContextAccessor.HttpContext.GetUserId();
-            return pet?.Owner?.Id == userId ? pet : null;
+            return pet.Owners.Any(owner => owner.Id == userId) ? pet : null;
         }
 
-        public new async Task<bool> DeleteAsync(Guid id)
+        public override async Task<bool> DeleteAsync(Guid id)
         {
             var pet = await GetByIdAsync(id);
             return pet != null && await base.DeleteAsync(id);
         }
 
-        public new async Task<bool> UpdateAsync(Pet petToCreate)
+        public override async Task<bool> UpdateAsync(Pet petToCreate)
         {
             var pet = await GetByIdAsync(petToCreate.Id);
             return pet != null && await base.UpdateAsync(petToCreate);

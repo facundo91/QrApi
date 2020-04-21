@@ -170,10 +170,10 @@ namespace qrAPI.Logic.Services.Implementations
             }
         }
 
-        public async Task<Person> GetPersonAsync(Guid userId)
+        public async Task<User> GetPersonAsync(Guid userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var person = new Person { Id = userId, Identity = user };
+            var person = new User { Id = userId, Identity = user };
             return person;
         }
 

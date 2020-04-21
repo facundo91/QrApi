@@ -19,32 +19,32 @@ namespace qrAPI.Logic.Adapters.Implementations
             _repository = repository;
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync<T>()
+        public virtual async Task<IEnumerable<T>> GetAllAsync<T>()
         {
             var result = await _repository.GetAllAsync();
             return _mapper.Map<IEnumerable<T>>(result);
         }
 
-        public async Task<T> GetByIdAsync<T>(Guid id)
+        public virtual async Task<T> GetByIdAsync<T>(Guid id)
         {
             var result = await _repository.GetAsync(id);
             return MapToT<T>(result);
         }
 
-        public async Task<T> CreateAsync<T>(T objToCreate)
+        public virtual async Task<T> CreateAsync<T>(T objToCreate)
         {
             var dto = MapToTDto(objToCreate);
             var objCreated = await _repository.InsertAsync(dto);
             return MapToT<T>(objCreated);
         }
 
-        public async Task<bool> UpdateAsync<T>(T objToUpdate)
+        public virtual async Task<bool> UpdateAsync<T>(T objToUpdate)
         {
             var dto = MapToTDto(objToUpdate);
             return await _repository.UpdateAsync(dto);
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public virtual async Task<bool> DeleteAsync(Guid id)
         {
             return await _repository.DeleteAsync(id);
         }

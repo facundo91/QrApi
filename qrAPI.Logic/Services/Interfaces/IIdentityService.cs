@@ -13,6 +13,6 @@ namespace qrAPI.Logic.Services.Interfaces
 
         Task<AuthenticationResult> RefreshTokenAsync(string token, string refreshToken);
 
-        Task<Person> GetPersonAsync(Guid userId);
+        Task<User> GetPersonAsync(Guid userId);
     }
 }

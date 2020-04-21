@@ -2,9 +2,10 @@
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Bogus;
 using FluentAssertions;
+using qrAPI.Contracts.v1.Fakers.Requests.Create;
 using qrAPI.Contracts.v1.Requests;
-using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using Xunit;
 
@@ -26,12 +27,13 @@ namespace qrAPI.IntegrationTests.v1
             response.Content.Should().BeEmpty();
         }
 
+
         [Fact]
         public async Task GetAllPets_Odata_WithOnePet_ReturnsPet()
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             await PetsApi.CreateAsync(createPetRequest);
             //Act
             var pets = await PetsOdataClient
@@ -49,7 +51,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
             var response = await PetsApi.CreateAsync(createPetRequest);
             //Assert
@@ -67,7 +69,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
             await PetsApi.CreateAsync(createPetRequest);
             var response = await PetsApi.GetAllAsync();
@@ -87,7 +89,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
             var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
             var response = await PetsApi.GetAsync(petCreated.Id);
@@ -118,7 +120,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
             var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
             var response = await PetsApi.DeleteAsync(petCreated.Id);
@@ -144,10 +146,10 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
             //Act
-            await RegisterAsync("test@mail.com", "APass123!");
+            await RegisterAsync(new Faker().Internet.Email(), "T3stPa$$");
             var getAllPets = await PetsApi.GetAllAsync();
             var getAPet = await PetsApi.GetAsync(petCreated.Id);
             //Assert
@@ -161,10 +163,10 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest { Name = "Test Pet", Birthdate = DateTime.Now, Gender = Gender.Female, PictureUrl = "https://Test.url" };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
             //Act
-            await RegisterAsync("test@mail.com", "APass123!");
+            await RegisterAsync(new Faker().Internet.Email(), "T3stPa$$");
             var deleteAPet = await PetsApi.DeleteAsync(petCreated.Id);
             //Assert
             deleteAPet.StatusCode.Should().Be(HttpStatusCode.NotFound);
@@ -175,13 +177,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest
-            {
-                Name = "New Pet",
-                Birthdate = DateTime.Now,
-                Gender = Gender.Female,
-                PictureUrl = "https://Test.url"
-            };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
             //Act
             var updatePetRequest = new UpdatePetRequest
@@ -190,7 +186,7 @@ namespace qrAPI.IntegrationTests.v1
                 Birthdate = DateTime.Now,
                 Gender = Gender.Male,
                 PictureUrl = petCreated.PictureUrl, //Stays the same
-                OwnerId = petCreated.OwnerId.GetValueOrDefault()
+                Owners = petCreated.Owners.Select(x=>x.Id).ToArray()
             };
             var response = await PetsApi.UpdateAsync(petCreated.Id, updatePetRequest);
             //Assert
@@ -200,7 +196,7 @@ namespace qrAPI.IntegrationTests.v1
             updatedPet.Birthdate.Should().Be(updatePetRequest.Birthdate);
             updatedPet.Gender.Should().Be(updatePetRequest.Gender);
             new Uri(updatedPet.PictureUrl).Should().BeEquivalentTo(new Uri(updatePetRequest.PictureUrl));
-            updatedPet.OwnerId.Should().Be(updatePetRequest.OwnerId);
+            updatedPet.Owners.Select(x=>x.Id).ToArray().Should().BeEquivalentTo(updatePetRequest.Owners);
         }
 
         [Fact]
@@ -208,13 +204,7 @@ namespace qrAPI.IntegrationTests.v1
         {
             //Arrange
             await RegisterAsync();
-            var createPetRequest = new CreatePetRequest
-            {
-                Name = "New Pet",
-                Birthdate = DateTime.Now,
-                Gender = Gender.Female,
-                PictureUrl = "https://Test.url"
-            };
+            var createPetRequest = new CreatePetRequestFaker().Generate();
             var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
             //Act
             var updatePetRequest = new UpdatePetRequest
@@ -223,7 +213,7 @@ namespace qrAPI.IntegrationTests.v1
                 Birthdate = DateTime.Now,
                 Gender = Gender.Male,
                 PictureUrl = petCreated.PictureUrl, //Stays the same
-                OwnerId = petCreated.OwnerId.GetValueOrDefault()
+                Owners = petCreated.Owners.Select(x => x.Id).ToArray()
             };
             await RegisterAsync("test@mail.com", "APass123!");
             var response = await PetsApi.UpdateAsync(petCreated.Id, updatePetRequest);

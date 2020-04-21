@@ -1,15 +1,15 @@
 ﻿namespace qrAPI.Logic.Tests.Domain
 {
-    public class PetTests : LogicTests
+    public class PetTests
     {
         //[Fact]
         //public void AddNewOwner_AddsNewOwner()
         //{
         //    // Arrange
-        //    var oldOwnersCount = PampaPet.Owner.Count();
+        //    var oldOwnersCount = PampaPet.Owners.Count();
         //    // Act
-        //    PampaPet.AddNewOwner(FacundoPerson);
-        //    var newOwnersCount = PampaPet.Owner.Count();
+        //    PampaPet.AddNewOwner(FacundoUser);
+        //    var newOwnersCount = PampaPet.Owners.Count();
         //    // Assert
         //    newOwnersCount .Should().Be(oldOwnersCount + 1);
         //}
@@ -18,10 +18,10 @@
         //public void AddNewOwner_AddsNewPetToOwner()
         //{
         //    // Arrange
-        //    var oldPetsCount= FacundoPerson.Pets.Count();
+        //    var oldPetsCount= FacundoUser.Pets.Count();
         //    // Act
-        //    PampaPet.AddNewOwner(FacundoPerson);
-        //    var newOwners = FacundoPerson.Pets.Count();
+        //    PampaPet.AddNewOwner(FacundoUser);
+        //    var newOwners = FacundoUser.Pets.Count();
         //    // Assert
         //    newOwners.Should().Be(oldPetsCount + 1);
         //}

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using qrAPI.DAL.Data.EFData.Contexts;
 
 namespace qrAPI.DAL.Data.EFData.Migrations
@@ -218,28 +219,6 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("qrAPI.DAL.Dtos.MedicalRecordDto", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Comments")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("PetId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PetId");
-
-                    b.ToTable("MedicalRecords");
-                });
-
             modelBuilder.Entity("qrAPI.DAL.Dtos.PetDto", b =>
                 {
                     b.Property<Guid>("Id")
@@ -249,18 +228,17 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                     b.Property<DateTime>("Birthdate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Gender")
-                        .HasColumnType("int");
+                    b.Property<string>("Breed")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Gender")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("OwnerId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PictureUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -275,12 +253,15 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("PetId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PetId");
 
                     b.ToTable("Qrs");
                 });
@@ -320,6 +301,37 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("RefreshTokens");
+                });
+
+            modelBuilder.Entity("qrAPI.DAL.Dtos.UserDto", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("IdentityId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdentityId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("qrAPI.DAL.Dtos.UserPetDto", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PetId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("UserId", "PetId");
+
+                    b.HasIndex("PetId");
+
+                    b.ToTable("UserPets");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -373,7 +385,7 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("qrAPI.DAL.Dtos.MedicalRecordDto", b =>
+            modelBuilder.Entity("qrAPI.DAL.Dtos.QrDto", b =>
                 {
                     b.HasOne("qrAPI.DAL.Dtos.PetDto", "Pet")
                         .WithMany()
@@ -387,6 +399,28 @@ namespace qrAPI.DAL.Data.EFData.Migrations
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("qrAPI.DAL.Dtos.UserDto", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Identity")
+                        .WithMany()
+                        .HasForeignKey("IdentityId");
+                });
+
+            modelBuilder.Entity("qrAPI.DAL.Dtos.UserPetDto", b =>
+                {
+                    b.HasOne("qrAPI.DAL.Dtos.PetDto", "Pet")
+                        .WithMany("UserPets")
+                        .HasForeignKey("PetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("qrAPI.DAL.Dtos.UserDto", "User")
+                        .WithMany("UserPets")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

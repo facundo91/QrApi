@@ -26,24 +26,35 @@ namespace qrAPI.DAL.Daos.EfImplementations
             return await _table.Where(expression).ToListAsync();
         }
 
-        public async Task<IEnumerable<TDto>> GetAllAsync()
+        protected async Task<TDto> GetAsyncIncludeProperty<TDto2>(object id, Expression<Func<TDto, TDto2>> navigationPropertyPath)
+        {
+            return await _table.Where(dto => dto.Id == (Guid)id)
+                .Include(navigationPropertyPath).SingleOrDefaultAsync();
+        }
+
+        private async Task<List<TDto>> GetAllAsyncIncludeProperty<TDto2>(Guid id, Expression<Func<TDto, TDto2>> navigationPropertyPath) where TDto2 : Dto
+        {
+            return await _table.Where(userPetDto => userPetDto.Id == id).Include(navigationPropertyPath).ToListAsync();
+        }
+
+        public virtual async Task<IEnumerable<TDto>> GetAllAsync()
         {
             return await _table.ToListAsync();
         }
 
-        public async Task<TDto> GetAsync(object id)
+        public virtual async Task<TDto> GetAsync(object id)
         {
             return await _table.FindAsync(id);
         }
 
-        public async Task<TDto> InsertAsync(TDto obj)
+        public virtual async Task<TDto> InsertAsync(TDto obj)
         {
             var objCreated = (await _table.AddAsync(obj)).Entity;
             var created = await Save();
             return created == 0 ? null : objCreated;
         }
 
-        public async Task<bool> UpdateAsync(TDto obj)
+        public virtual async Task<bool> UpdateAsync(TDto obj)
         {
             var dto = await GetAsync(obj.Id);
             if (dto == null) return false;
@@ -52,7 +63,7 @@ namespace qrAPI.DAL.Daos.EfImplementations
             return updated > 0;
         }
 
-        public async Task<bool> DeleteAsync(object id)
+        public virtual async Task<bool> DeleteAsync(object id)
         {
             var obj = await GetAsync(id);
             if (obj == null) return false;
@@ -61,7 +72,7 @@ namespace qrAPI.DAL.Daos.EfImplementations
             return deleted > 0;
         }
 
-        private async Task<int> Save()
+        protected async Task<int> Save()
         {
             return await _context.SaveChangesAsync();
         }

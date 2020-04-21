@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Options;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using qrAPI.DAL.Options;
 
 namespace qrAPI.DAL.Data.MongoData

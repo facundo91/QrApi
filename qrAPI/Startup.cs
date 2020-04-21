@@ -57,7 +57,6 @@ namespace qrAPI
             var odataBuilder = new ODataConventionModelBuilder();
             odataBuilder.EntitySet<PetResponse>("Pets").EntityType.HasKey(o => o.Id);
             odataBuilder.EntitySet<QrResponse>("Qrs").EntityType.HasKey(o => o.Id);
-            odataBuilder.EntitySet<MedicalRecordResponse>("MedicalRecords").EntityType.HasKey(o => o.Id);
 
             return odataBuilder.GetEdmModel();
         }

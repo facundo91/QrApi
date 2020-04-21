@@ -32,8 +32,8 @@
 //        {
 //            // Arrange
 //            var pets = new List<Pet> {PampaPet};
-//            _httpContextAccessorMock.Setup(x => x.HttpContext.GetUserId()).Returns(PampaPet.Owner.Id);
-//            _serviceAdapterMock.Setup(x => x.GetAllByUserAsync(PampaPet.Owner.Id)).ReturnsAsync(pets);
+//            _httpContextAccessorMock.Setup(x => x.HttpContext.GetUserId()).Returns(PampaPet.Owners.Id);
+//            _serviceAdapterMock.Setup(x => x.GetAllByUserAsync(PampaPet.Owners.Id)).ReturnsAsync(pets);
 //            // Act
 //            var allPets = await _petService.GetAllAsync();
 //            // Assert
@@ -45,8 +45,8 @@
 //        {
 //            // Arrange
 //            var pets = new List<Pet> { PampaPet, VulpiPet };
-//            _httpContextAccessorMock.Setup(x => x.HttpContext.GetUserId()).Returns(PampaPet.Owner.Id);
-//            _serviceAdapterMock.Setup(x => x.GetAllByUserAsync(PampaPet.Owner.Id)).ReturnsAsync(pets);
+//            _httpContextAccessorMock.Setup(x => x.HttpContext.GetUserId()).Returns(PampaPet.Owners.Id);
+//            _serviceAdapterMock.Setup(x => x.GetAllByUserAsync(PampaPet.Owners.Id)).ReturnsAsync(pets);
 //            // Act
 //            var allPets = await _petService.GetAllAsync();
 //            // Assert
@@ -58,8 +58,8 @@
 //        {
 //            // Arrange
 //            var pets = new List<Pet>();
-//            _httpContextAccessorMock.Setup(x => x.HttpContext.GetUserId()).Returns(PampaPet.Owner.Id);
-//            _serviceAdapterMock.Setup(x => x.GetAllByUserAsync(PampaPet.Owner.Id)).ReturnsAsync(pets);
+//            _httpContextAccessorMock.Setup(x => x.HttpContext.GetUserId()).Returns(PampaPet.Owners.Id);
+//            _serviceAdapterMock.Setup(x => x.GetAllByUserAsync(PampaPet.Owners.Id)).ReturnsAsync(pets);
 //            // Act
 //            var allPets = await _petService.GetAllAsync();
 //            // Assert

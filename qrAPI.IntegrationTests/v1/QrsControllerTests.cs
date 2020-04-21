@@ -2,7 +2,7 @@
 using System.Net;
 using System.Threading.Tasks;
 using FluentAssertions;
-using qrAPI.Contracts.v1.Requests.Create;
+using qrAPI.Contracts.v1.Fakers.Requests.Create;
 using Xunit;
 
 namespace qrAPI.IntegrationTests.v1
@@ -36,10 +36,11 @@ namespace qrAPI.IntegrationTests.v1
         public async Task CreateQr_FromSdk()
         {
             //Arrange
+            var createQrRequest = new CreateQrRequestFaker().Generate();
             //Act
-            var response = await QrsApi.CreateAsync(new CreateQrRequest { Name = "Test QR" });
+            var response = await QrsApi.CreateAsync(createQrRequest);
             //Assert
-            response.Content.Name.Should().BeEquivalentTo("Test QR");
+            response.Content.Name.Should().BeEquivalentTo(createQrRequest.Name);
             response.Content.Id.Should().NotBeEmpty();
         }
 
@@ -47,7 +48,7 @@ namespace qrAPI.IntegrationTests.v1
         public async Task CreateQr_AddsOneItem()
         {
             //Arrange
-            var createQrRequest = new CreateQrRequest { Name = "Test QR" };
+            var createQrRequest = new CreateQrRequestFaker().Generate();
             //Act
             var response = await QrsApi.CreateAsync(createQrRequest);
             //Assert
@@ -71,7 +72,7 @@ namespace qrAPI.IntegrationTests.v1
         public async Task GetAllQrs_WithOneQr_ReturnsQr()
         {
             //Arrange
-            var createQrRequest = new CreateQrRequest { Name = "Test QR" };
+            var createQrRequest = new CreateQrRequestFaker().Generate();
             await QrsApi.CreateAsync(createQrRequest);
             //Act
             var qrs = await QrsOdataClient.FindEntriesAsync();
@@ -85,8 +86,10 @@ namespace qrAPI.IntegrationTests.v1
         public async Task GetAllQrs_WithTwoQrs_OrderByName_ReturnsQrsOrderedByName()
         {
             //Arrange
-            var createQrRequest1 = new CreateQrRequest { Name = "ZZZTest QR" };
-            var createQrRequest2 = new CreateQrRequest { Name = "AAATest QR" };
+            var createQrRequest1 = new CreateQrRequestFaker().Generate();
+            createQrRequest1.Name = "Second";
+            var createQrRequest2 = new CreateQrRequestFaker().Generate();
+            createQrRequest2.Name = "First";
             await QrsApi.CreateAsync(createQrRequest1);
             await QrsApi.CreateAsync(createQrRequest2);
             //Act
