@@ -1,0 +1,12 @@
+language: csharp
+mono: none
+dist: xenial
+dotnet: 3.1
+install:
+  - dotnet restore
+script:
+  - dotnet build
+  - dotnet test qrAPI.IntegrationTests/qrAPI.IntegrationTests.csproj
+  - dotnet test qrAPI.Logic.Tests/qrAPI.Logic.Tests.csproj
+  - dotnet test qrAPI.DAL.Tests/qrAPI.DAL.Tests.csproj
+  - dotnet test qrAPI.Presentation.Tests/qrAPI.Presentation.Tests.csproj
