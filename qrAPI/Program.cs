@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using qrAPI.DAL.Data.EFData.Contexts;
 
 namespace qrAPI
@@ -38,6 +39,17 @@ namespace qrAPI
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
+                .ConfigureLogging(logging =>
+                {
+                    logging.ClearProviders();
+                    logging.AddConsole();
+                })
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    // Add the following line:
+                    webBuilder.UseSentry("https://e226ee83cdd84139a45eea5b112f92f9@o381226.ingest.sentry.io/5208239");
+
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }
