@@ -9,6 +9,7 @@
             private const string Relative = Base + "/qrs";
             public const string GetAll = Relative;
             public const string Get = Relative + "/{qrId}";
+            public const string Scan = Relative + "/{qrId}/Scan";
             public const string Update = Relative + "/{qrId}";
             public const string Delete = Relative + "/{qrId}";
             public const string Create = Relative;

@@ -13,7 +13,7 @@ namespace qrAPI.Logic.Services.Implementations
     where TDto : Dto
     {
 
-        private readonly IServiceAdapter<TDto> _serviceToDalAdapter;
+        protected readonly IServiceAdapter<TDto> _serviceToDalAdapter;
 
         protected AbstractGenericService(IServiceAdapter<TDto> serviceToDalAdapter)
         {

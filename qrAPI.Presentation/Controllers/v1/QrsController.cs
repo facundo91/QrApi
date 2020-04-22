@@ -9,6 +9,7 @@ using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
+using qrAPI.Infrastructure.Mail;
 using qrAPI.Infrastructure.Options;
 using qrAPI.Presentation.Adapters.v1.Interfaces;
 using static qrAPI.Contracts.ApiVersions;
@@ -50,6 +51,13 @@ namespace qrAPI.Presentation.Controllers.v1
         {
             var result = await _controllerAdapter.GetByIdAsync<QrResponse>(qrId);
             return result != null ? (IActionResult)Ok(result) : NotFound();
+        }
+
+        [HttpPost(ApiRoutes.Qrs.Scan)]
+        public async Task<IActionResult> ScanQr([FromRoute] Guid qrId)
+        {
+            await _controllerAdapter.ScanQr(qrId);
+            return Ok();
         }
 
         [HttpPost(ApiRoutes.Qrs.Create)]
