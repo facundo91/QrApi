@@ -8,7 +8,7 @@ using qrAPI.Logic.Domain;
 using qrAPI.MappingProfiles;
 using Xunit;
 
-namespace qrAPI.IntegrationTests.Mapping_Profiles
+namespace qrAPI.IntegrationTests.MappingProfiles
 {
     public class RequestToDomainProfileTests : RequestToDomainProfileFixture
     {
@@ -19,7 +19,7 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         }
 
         [Fact]
-        public void AutoMapper_CreatePetRequestToPetMappingConfiguration_IsValid()
+        public void AutoMapper_CreatePetRequestToPetMappingConfiguration()
         {
             var createPetRequest = new CreatePetRequestFaker().Generate();
             var pet = Mapper.Map<Pet>(createPetRequest);
@@ -35,7 +35,7 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         }
 
         [Fact]
-        public void AutoMapper_UpdatePetRequestToPetMappingConfiguration_IsValid()
+        public void AutoMapper_UpdatePetRequestToPetMappingConfiguration()
         {
             var updatePetRequest = new UpdatePetRequestFaker().Generate();
             var pet = Mapper.Map<Pet>(updatePetRequest);
@@ -53,7 +53,7 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         }
 
         [Fact]
-        public void AutoMapper_CreateQrRequestToQrMappingConfiguration_IsValid()
+        public void AutoMapper_CreateQrRequestToQrMappingConfiguration()
         {
             var createQrRequest = new CreateQrRequestFaker().Generate();
             var qr = Mapper.Map<Qr>(createQrRequest);
@@ -62,7 +62,7 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         }
 
         [Fact]
-        public void AutoMapper_UpdateQrRequestToQrMappingConfiguration_IsValid()
+        public void AutoMapper_UpdateQrRequestToQrMappingConfiguration()
         {
             var updateQrRequest = new UpdateQrRequestFaker().Generate();
             var qr = Mapper.Map<Qr>(updateQrRequest);

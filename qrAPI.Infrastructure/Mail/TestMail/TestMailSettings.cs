@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace qrAPI.Infrastructure.Mail.TestMail
+﻿namespace qrAPI.Infrastructure.Mail.TestMail
 {
     public class TestMailSettings
     {

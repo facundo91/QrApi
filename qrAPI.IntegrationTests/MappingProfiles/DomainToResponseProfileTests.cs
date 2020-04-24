@@ -2,12 +2,11 @@
 using AutoMapper;
 using FluentAssertions;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.IntegrationTests.ExampleObjects;
-using qrAPI.Logic.Domain;
+using qrAPI.Logic.Domain.Fakers;
 using qrAPI.MappingProfiles;
 using Xunit;
 
-namespace qrAPI.IntegrationTests.Mapping_Profiles
+namespace qrAPI.IntegrationTests.MappingProfiles
 {
     public class DomainToResponseProfileTests : DomainToResponseProfileFixture
     {
@@ -20,10 +19,11 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         [Fact]
         public void AutoMapper_PetToPetResponseMappingConfiguration()
         {
-            var petResponse = Mapper.Map<PetResponse>(Pet);
-            petResponse.Breed.Should().BeEquivalentTo(Pet.Breed.Name);
-            petResponse.PictureUrl.Should().BeEquivalentTo(Pet.PictureUrl.OriginalString);
-            petResponse.Should().BeEquivalentTo(Pet, options =>
+            var pet = new PetFaker().Generate();
+            var petResponse = Mapper.Map<PetResponse>(pet);
+            petResponse.Breed.Should().BeEquivalentTo(pet.Breed.Name);
+            petResponse.PictureUrl.Should().BeEquivalentTo(pet.PictureUrl.OriginalString);
+            petResponse.Should().BeEquivalentTo(pet, options =>
                 options
                     .ExcludingMissingMembers()
                     .Excluding(x => x.Breed)
@@ -33,8 +33,9 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         [Fact]
         public void AutoMapper_QrToQrResponseMappingConfiguration()
         {
-            var qrResponse = Mapper.Map<QrResponse>(Qr);
-            qrResponse.Should().BeEquivalentTo(Qr, options =>
+            var qr = new QrFaker().Generate();
+            var qrResponse = Mapper.Map<QrResponse>(qr);
+            qrResponse.Should().BeEquivalentTo(qr, options =>
                 options
                     .Excluding(x => x.Pet.PictureUrl)
                     .ExcludingMissingMembers());
@@ -43,8 +44,9 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         [Fact]
         public void AutoMapper_UserToUserResponseMappingConfiguration()
         {
-            var userResponse = Mapper.Map<UserResponse>(User);
-            userResponse.Should().BeEquivalentTo(User, options =>
+            var user = new UserFaker().Generate();
+            var userResponse = Mapper.Map<UserResponse>(user);
+            userResponse.Should().BeEquivalentTo(user, options =>
                 options.ExcludingMissingMembers());
         }
     }
@@ -52,19 +54,12 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
     public class DomainToResponseProfileFixture : IDisposable
     {
         protected readonly IMapper Mapper;
-        protected readonly Pet Pet;
-        protected readonly User User;
-        protected readonly Qr Qr;
 
         protected DomainToResponseProfileFixture()
         {
             var mapperConfiguration = new MapperConfiguration(cfg =>
                 cfg.AddProfile<DomainToResponseProfile>());
-            Mapper = new Mapper(mapperConfiguration); 
-            var domainExampleObjects = new DomainExampleObjects();
-            Pet = domainExampleObjects.PetExample;
-            User = domainExampleObjects.UserExample;
-            Qr = domainExampleObjects.QrExample;
+            Mapper = new Mapper(mapperConfiguration);
         }
 
         public void Dispose()

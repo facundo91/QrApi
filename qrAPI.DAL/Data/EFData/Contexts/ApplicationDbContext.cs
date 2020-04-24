@@ -1,15 +1,11 @@
-﻿
-
-using System;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using qrAPI.DAL.Data.EFData.EntityTypeConfigurations;
+using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Data.EFData.Contexts
 {
-    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-    using Microsoft.EntityFrameworkCore;
-    using Dtos;
-
-    //Should Only operates with DB objects
     public class ApplicationDbContext : IdentityDbContext, IDataContext
     {
         public ApplicationDbContext()
@@ -17,7 +13,7 @@ namespace qrAPI.DAL.Data.EFData.Contexts
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
-        
+
         public DbSet<QrDto> Qrs { get; set; }
         public DbSet<PetDto> Pets { get; set; }
         public DbSet<UserPetDto> UserPets { get; set; }
@@ -27,40 +23,27 @@ namespace qrAPI.DAL.Data.EFData.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFProviders.InMemory;Trusted_Connection=True;ConnectRetryCount=0");
-            }
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=qrdb;Trusted_Connection=True");
         }
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<RefreshToken>().HasKey(x => x.Token);
-            modelBuilder.Entity<RefreshToken>()
-                .Property(p => p.Id)
-                .ValueGeneratedOnAdd();
-            modelBuilder.Entity<RefreshToken>().HasAlternateKey(x => x.Id);
-
-            modelBuilder.Entity<PetDto>().Property(pet => pet.PictureUrl)
-                .HasConversion(v => v.AbsoluteUri, v => new Uri(v));
-
-            modelBuilder.Entity<PetDto>().Property(pet => pet.Gender)
-                .HasConversion(new EnumToStringConverter<Gender>());
-
-            modelBuilder.Entity<UserPetDto>()
-                .HasKey(t => new { t.UserId, t.PetId });
-
-            modelBuilder.Entity<UserPetDto>()
-                .HasOne(pt => pt.Pet)
-                .WithMany(p => p.UserPets)
-                .HasForeignKey(pt => pt.PetId);
-
-            modelBuilder.Entity<UserPetDto>()
-                .HasOne(pt => pt.User)
-                .WithMany(p => p.UserPets)
-                .HasForeignKey(pt => pt.UserId);
+            modelBuilder
+                .ApplyConfiguration(new RefreshTokenEntityConfiguration())
+                .ApplyConfiguration(new UserPetDtoEntityConfiguration())
+                .ApplyConfiguration(new PetDtoEntityConfiguration());
         }
 
+
+    }
+    public class qrContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
+    {
+        public ApplicationDbContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=qrdb;Trusted_Connection=True");
+            return new ApplicationDbContext(optionsBuilder.Options);
+        }
     }
 }

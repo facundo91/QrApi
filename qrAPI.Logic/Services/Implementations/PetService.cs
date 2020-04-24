@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Dtos;
+using qrAPI.Infrastructure.Adapters;
 using qrAPI.Infrastructure.Extensions;
-using qrAPI.Logic.Adapters.Interfaces;
 using qrAPI.Logic.Domain;
 using qrAPI.Logic.Services.Interfaces;
 
 namespace qrAPI.Logic.Services.Implementations
 {
-    public class PetService : AbstractGenericService<Pet, PetDto>, IPetService
+    public class PetService : AbstractGenericService<Pet, PetDto>
     {
-        private readonly IPetServiceAdapter _serviceToDalAdapter;
+        private readonly IPetRepository _repository;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IIdentityService _identityService;
 
-        public PetService(IPetServiceAdapter serviceToDalAdapter, IHttpContextAccessor httpContextAccessor, IIdentityService identityService) : base(serviceToDalAdapter)
+        public PetService(
+            IMapperAdapter mapperAdapter, 
+            IPetRepository repository, 
+            IHttpContextAccessor httpContextAccessor, 
+            IIdentityService identityService) 
+            : base(mapperAdapter, repository)
         {
-            _serviceToDalAdapter = serviceToDalAdapter;
+            _repository = repository;
             _httpContextAccessor = httpContextAccessor;
             _identityService = identityService;
         }
@@ -27,7 +33,7 @@ namespace qrAPI.Logic.Services.Implementations
         public override async Task<IEnumerable<Pet>> GetAllAsync()
         {
             var userId = _httpContextAccessor.HttpContext.GetUserId();
-            return await _serviceToDalAdapter.GetAllByUserAsync(userId);
+            return await MapperAdapter.DoMapAsync<IEnumerable<Pet>>(async () => await _repository.GetAllByUserIdAsync(userId));
         }
 
         public override async Task<Pet> CreateAsync(Pet petToCreate)
@@ -52,10 +58,10 @@ namespace qrAPI.Logic.Services.Implementations
             return pet != null && await base.DeleteAsync(id);
         }
 
-        public override async Task<bool> UpdateAsync(Pet petToCreate)
+        public override async Task<bool> UpdateAsync(Guid id, Pet petToCreate)
         {
-            var pet = await GetByIdAsync(petToCreate.Id);
-            return pet != null && await base.UpdateAsync(petToCreate);
+            var pet = await GetByIdAsync(id);
+            return pet != null && await base.UpdateAsync(id, petToCreate);
         }
     }
 }

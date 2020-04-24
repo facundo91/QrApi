@@ -1,9 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Logic.Adapters.Implementations;
-using qrAPI.Logic.Adapters.Interfaces;
-using qrAPI.Presentation.Adapters.v1.Implementations;
-using qrAPI.Presentation.Adapters.v1.Interfaces;
+using qrAPI.Infrastructure.Adapters;
 
 namespace qrAPI.Installers
 {
@@ -11,20 +8,8 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            AddControllerAdapters(services);
-            AddServiceAdapters(services);
+            services.AddTransient<IMapperAdapter, MapperAdapter>();
         }
 
-        private static void AddControllerAdapters(IServiceCollection services)
-        {
-            services.AddTransient<IPetsControllerAdapter, PetsControllerAdapter>();
-            services.AddTransient<IQrsControllerAdapter, QrsControllerAdapter>();
-        }
-
-        private static void AddServiceAdapters(IServiceCollection services)
-        {
-            services.AddTransient<IPetServiceAdapter, PetServiceAdapter>();
-            services.AddTransient<IQrServiceAdapter, QrServiceAdapter>();
-        }
     }
 }

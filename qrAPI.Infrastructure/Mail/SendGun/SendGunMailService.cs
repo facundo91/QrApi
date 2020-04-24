@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace qrAPI.Infrastructure.Mail.SendGun
@@ -18,7 +16,7 @@ namespace qrAPI.Infrastructure.Mail.SendGun
             _httpClient = httpClient;
         }
 
-        public async Task<HttpResponseMessage> SendSimpleMessage(string from, string to, string subject, string html)
+        public async Task<HttpStatusCode> SendSimpleMessage(string from, string to, string subject, string html)
         {
             var content = new FormUrlEncodedContent(new[]
             {
@@ -27,9 +25,7 @@ namespace qrAPI.Infrastructure.Mail.SendGun
                 new KeyValuePair<string, string>("subject", subject),
                 new KeyValuePair<string, string>("html", html)
             });
-
-            return await _httpClient.PostAsync(_sendGunSettings.RequestUri,
-                 content);
+            return (await _httpClient.PostAsync(_sendGunSettings.RequestUri, content)).StatusCode;
         }
     }
 }

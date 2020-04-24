@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Linq;
+using AutoBogus;
 using AutoMapper;
 using FluentAssertions;
 using qrAPI.DAL.Dtos;
-using qrAPI.IntegrationTests.ExampleObjects;
+using qrAPI.DAL.Dtos.Fakers;
 using qrAPI.Logic.Domain;
 using qrAPI.MappingProfiles;
 using Xunit;
 
-namespace qrAPI.IntegrationTests.Mapping_Profiles
+namespace qrAPI.IntegrationTests.MappingProfiles
 {
     public class DtoToDomainProfileTests : DtoToDomainProfileFixture
     {
@@ -56,7 +57,6 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
         protected readonly IMapper Mapper;
         protected PetDto PetDto;
         protected UserDto UserDto;
-        protected string Breed;
         protected QrDto QrDto;
         protected UserPetDto UserPetDto;
 
@@ -65,12 +65,15 @@ namespace qrAPI.IntegrationTests.Mapping_Profiles
             var mapperConfiguration = new MapperConfiguration(cfg =>
                 cfg.AddProfile<DtoToDomainProfile>());
             Mapper = new Mapper(mapperConfiguration);
-            var dtoExampleObjects = new DtoExampleObjects();
-            PetDto = dtoExampleObjects.PetDto;
-            UserDto = dtoExampleObjects.UserDto;
-            Breed = dtoExampleObjects.Breed;
-            QrDto = dtoExampleObjects.QrDto;
-            UserPetDto = dtoExampleObjects.UserPetDto;
+            QrDto = new QrDtoFaker().Generate();
+            QrDto.Pet = PetDto;
+            PetDto = new PetDtoFaker().Generate();
+            QrDto.Pet = PetDto;
+            QrDto.PetId = PetDto.Id;
+            UserDto = new AutoFaker<UserDto>().Generate();
+            UserPetDto = new UserPetDtoFaker(PetDto, UserDto).Generate();
+            PetDto.UserPets = new[] { UserPetDto };
+            UserDto.UserPets = new[] { UserPetDto };
         }
         
         public void Dispose()

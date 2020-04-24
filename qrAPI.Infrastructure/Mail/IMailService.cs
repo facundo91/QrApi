@@ -1,10 +1,10 @@
-﻿using System.Net.Http;
+﻿using System.Net;
 using System.Threading.Tasks;
 
 namespace qrAPI.Infrastructure.Mail
 {
     public interface IMailService
     {
-        Task<HttpResponseMessage> SendSimpleMessage(string from, string to, string subject, string html);
+        Task<HttpStatusCode> SendSimpleMessage(string @from, string to, string subject, string html);
     }
 }

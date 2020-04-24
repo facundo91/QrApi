@@ -27,8 +27,28 @@ namespace qrAPI.IntegrationTests.v1
 
         protected IntegrationTest()
         {
-            var appFactory = new WebApplicationFactory<Startup>()
-                .WithWebHostBuilder(builder =>
+            var appFactory = GetWebApplicationFactory();
+            _serviceProvider = appFactory.Services;
+            using var serviceScope = _serviceProvider.CreateScope();
+            serviceScope.ServiceProvider.GetService<ApplicationDbContext>().Database.EnsureCreated();
+            _testClient = appFactory.CreateClient();
+
+
+            _identityApi = RestService.For<IIdentityApi>(_testClient);
+            QrsApi = RestService.For<IQrsApi>(_testClient);
+            PetsApi = RestService.For<IPetsApi>(_testClient);
+
+
+            var relativeUri = new Uri("odata/", UriKind.Relative);
+            var oDataClient = new ODataClient(new ODataClientSettings(_testClient, relativeUri));
+            PetsOdataClient = oDataClient.For<PetResponse>("Pets");
+            QrsOdataClient = oDataClient.For<QrResponse>("Qrs");
+        }
+
+        private static WebApplicationFactory<Startup> GetWebApplicationFactory() =>
+            GetLocalDbEnvironmentVariable()
+                ? new WebApplicationFactory<Startup>()
+                : new WebApplicationFactory<Startup>().WithWebHostBuilder(builder =>
                 {
                     builder.ConfigureServices(services =>
                     {
@@ -39,21 +59,11 @@ namespace qrAPI.IntegrationTests.v1
                         });
                     });
                 });
-            _serviceProvider = appFactory.Services;
-            _testClient = appFactory.CreateClient();
-            _identityApi = RestService.For<IIdentityApi>(_testClient);
-            QrsApi = RestService.For<IQrsApi>(_testClient);
-            PetsApi = RestService.For<IPetsApi>(_testClient);
 
-
-            var relativeUri = new Uri("odata/", UriKind.Relative);
-            var oDataClient = new ODataClient(new ODataClientSettings(_testClient, relativeUri)
-            {
-                IgnoreResourceNotFoundException = true,
-                OnTrace = (x, y) => Console.WriteLine(string.Format(x, y))
-            });
-            PetsOdataClient = oDataClient.For<PetResponse>("Pets");
-            QrsOdataClient = oDataClient.For<QrResponse>("Qrs");
+        private static bool GetLocalDbEnvironmentVariable()
+        {
+            var parsed = bool.TryParse(Environment.GetEnvironmentVariable("localdb"), out var localdbEnabled);
+            return parsed && localdbEnabled;
         }
 
         protected async Task RegisterAsync(string email = "test@integration.com", string password = "SomePass1234!")
@@ -61,6 +71,8 @@ namespace qrAPI.IntegrationTests.v1
             var response = await _identityApi.RegisterAsync(new UserRegistrationRequest
             {
                 Email = email,
+                FirstName = "first Name",
+                LastName = "last Name",
                 Password = password
             });
             _testClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", response.Content.Token);
@@ -69,8 +81,7 @@ namespace qrAPI.IntegrationTests.v1
         public void Dispose()
         {
             using var serviceScope = _serviceProvider.CreateScope();
-            var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
-            context.Database.EnsureDeleted();
+            serviceScope.ServiceProvider.GetService<ApplicationDbContext>().Database.EnsureDeleted();
         }
 
     }

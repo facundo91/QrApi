@@ -18,13 +18,13 @@ namespace qrAPI.Presentation.Filters
 
                 var errorResponse = new ErrorResponse();
 
-                foreach (var error in errorsInModelState)
+                foreach (var (key, value) in errorsInModelState)
                 {
-                    foreach (var subError in error.Value)
+                    foreach (var subError in value)
                     {
                         var errorModel = new ErrorModel
                         {
-                            FieldName = error.Key,
+                            FieldName = key,
                             Message = subError
                         };
 

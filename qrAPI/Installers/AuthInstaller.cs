@@ -45,7 +45,7 @@ namespace qrAPI.Installers
             {
                 options.AddPolicy("MustWorkForQRightThing", policy =>
                 {
-                    policy.AddRequirements(new WorksForCompanyRequirement("qr.com"));
+                    policy.AddRequirements(new WorksForCompanyRequirement("qrightthing.tech"));
                 });
             });
 

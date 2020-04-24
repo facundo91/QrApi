@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="AutoBogus" Version="2.8.1" />
     <PackageReference Include="Bogus" Version="29.0.2" />
+    <PackageReference Include="FluentValidation" Version="8.6.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
   </ItemGroup>
 

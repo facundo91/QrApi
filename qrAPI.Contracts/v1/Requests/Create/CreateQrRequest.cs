@@ -7,6 +7,7 @@ namespace qrAPI.Contracts.v1.Requests.Create
     {
         [Required]
         public string Name { get; set; }
+        [Required]
         public Guid PetId { get; set; }
     }
 }

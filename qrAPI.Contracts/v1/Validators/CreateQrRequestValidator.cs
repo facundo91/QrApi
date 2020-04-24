@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using qrAPI.Contracts.v1.Requests.Create;
 
-namespace qrAPI.Presentation.Validators
+namespace qrAPI.Contracts.v1.Validators
 {
     public class CreateQrRequestValidator : AbstractValidator<CreateQrRequest>
     {
@@ -11,6 +11,8 @@ namespace qrAPI.Presentation.Validators
                 .NotEmpty()
                 .NotNull()
                 .MaximumLength(50);
+            RuleFor(x => x.PetId)
+                .NotNull();
         }
     }
 }

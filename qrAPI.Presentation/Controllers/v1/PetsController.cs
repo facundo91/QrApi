@@ -11,9 +11,11 @@ using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
+using qrAPI.Infrastructure.Adapters;
 using static qrAPI.Contracts.ApiVersions;
 using qrAPI.Infrastructure.Options;
-using qrAPI.Presentation.Adapters.v1.Interfaces;
+using qrAPI.Logic.Domain;
+using qrAPI.Logic.Services.Interfaces;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace qrAPI.Presentation.Controllers.v1
@@ -24,11 +26,13 @@ namespace qrAPI.Presentation.Controllers.v1
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PetsController : ODataController
     {
-        private readonly IPetsControllerAdapter _controllerAdapter;
+        private readonly IMapperAdapter _mapperAdapter;
+        private readonly IGenericService<Pet> _petService;
 
-        public PetsController(IPetsControllerAdapter controllerAdapter)
+        public PetsController(IMapperAdapter mapperAdapter, IGenericService<Pet> petService)
         {
-            _controllerAdapter = controllerAdapter;
+            _mapperAdapter = mapperAdapter;
+            _petService = petService;
         }
 
         /// <summary>
@@ -42,7 +46,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         public async Task<IActionResult> GetAllPets()
         {
-            var result = await _controllerAdapter.GetAllAsync<IEnumerable<PetResponse>>();
+            var result = await _mapperAdapter.DoMapAsync<IEnumerable<PetResponse>>(async () => await _petService.GetAllAsync());
             return Ok(result);
         }
 
@@ -54,14 +58,14 @@ namespace qrAPI.Presentation.Controllers.v1
         /// <response code="200">Pet found and retrieved</response>
         /// <response code="404">Pet not found</response>
         [ProducesResponseType(typeof(PetResponse), Status200OK)]
-        [ProducesResponseType( Status404NotFound)]
+        [ProducesResponseType(Status404NotFound)]
         [HttpGet(ApiRoutes.Pets.Get)]
         [EnableQuery]
         [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         [ODataRoute("{petId}")]
         public async Task<IActionResult> GetPet([FromRoute] Guid petId)
         {
-            var result = await _controllerAdapter.GetByIdAsync<PetResponse>(petId);
+            var result = await _mapperAdapter.DoMapAsync<PetResponse>(async () => await _petService.GetByIdAsync(petId));
             return result != null ? (IActionResult)Ok(result) : NotFound();
         }
 
@@ -71,11 +75,11 @@ namespace qrAPI.Presentation.Controllers.v1
         /// <response code="201">Creates a pet in the system</response>
         /// <response code="400">Unable to create the pet due to validation error</response>
         [ProducesResponseType(typeof(PetResponse), Status201Created)]
-        [ProducesResponseType( Status400BadRequest)]
+        [ProducesResponseType(Status400BadRequest)]
         [HttpPost(ApiRoutes.Pets.Create)]
         public async Task<IActionResult> CreatePet([FromBody] CreatePetRequest petRequest)
         {
-            var result = await _controllerAdapter.CreateAsync<PetResponse>(petRequest);
+            var result = await _mapperAdapter.MapDoMapAsync<Pet, PetResponse>(petRequest, async mapped => await _petService.CreateAsync(mapped));
             return result != null
                 ? CreatedAtAction("CreatePet", new { id = result.Id }, result)
                 : (IActionResult)BadRequest();
@@ -87,11 +91,11 @@ namespace qrAPI.Presentation.Controllers.v1
         /// <response code="204">Pet successfully updated</response>
         /// <response code="404">Either Pet wasn't find, or you don't have access to updated it</response>
         [HttpPut(ApiRoutes.Pets.Update)]
-        [ProducesResponseType( Status404NotFound)]
+        [ProducesResponseType(Status404NotFound)]
         [FeatureGate(FeatureFlags.EndpointFlag)]
         public async Task<IActionResult> UpdatePet([FromRoute] Guid petId, [FromBody] UpdatePetRequest petRequest)
         {
-            var result = await _controllerAdapter.UpdateAsync(petId, petRequest);
+            var result = await _mapperAdapter.MapDoAsync<Pet, bool>(petRequest, async mapped => await _petService.UpdateAsync(petId, mapped));
             return result ? NoContent() : (IActionResult)NotFound();
         }
 
@@ -100,12 +104,12 @@ namespace qrAPI.Presentation.Controllers.v1
         /// </summary>
         /// <response code="204">Pet successfully deleted</response>
         /// <response code="404">Either Pet wasn't find, or you don't have access to delete it</response>
-        [ProducesResponseType( Status204NoContent)]
-        [ProducesResponseType( Status404NotFound)]
+        [ProducesResponseType(Status204NoContent)]
+        [ProducesResponseType(Status404NotFound)]
         [HttpDelete(ApiRoutes.Pets.Delete)]
         public async Task<IActionResult> DeletePet([FromRoute] Guid petId)
         {
-            var result = await _controllerAdapter.DeleteAsync(petId);
+            var result = await _petService.DeleteAsync(petId);
             return result ? (IActionResult)NoContent() : NotFound();
         }
     }

@@ -1,8 +1,6 @@
-﻿using qrAPI.DAL.Dtos;
-
-namespace qrAPI.Logic.Domain
+﻿namespace qrAPI.Logic.Domain
 {
-    public class Breed : Dto
+    public class Breed : DomainObject
     {
         public string Name { get; set; }
     }

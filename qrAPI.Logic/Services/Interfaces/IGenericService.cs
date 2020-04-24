@@ -10,7 +10,7 @@ namespace qrAPI.Logic.Services.Interfaces
         Task<IEnumerable<TDomainObject>> GetAllAsync();
         Task<TDomainObject> GetByIdAsync(Guid id);
         Task<TDomainObject> CreateAsync(TDomainObject obj);
-        Task<bool> UpdateAsync(TDomainObject obj);
+        Task<bool> UpdateAsync(Guid id, TDomainObject objToUpdate);
         Task<bool> DeleteAsync(Guid id);
     }
 }

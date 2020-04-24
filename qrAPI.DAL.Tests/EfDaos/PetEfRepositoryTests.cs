@@ -1,14 +1,12 @@
-﻿
+﻿using qrAPI.DAL.Dtos.Fakers;
 
 namespace qrAPI.DAL.Tests.EfDaos
 {
     using System;
     using System.Threading.Tasks;
     using FluentAssertions;
-    using Microsoft.EntityFrameworkCore;
     using Daos.EfImplementations;
     using Data.EFData.Contexts;
-    using Dtos;
     using Xunit;
     public class PetEfRepositoryTests : PetEfRepositoryFixture
     {
@@ -22,75 +20,49 @@ namespace qrAPI.DAL.Tests.EfDaos
             pets.Should().BeEmpty();
         }
 
-        /// <summary>
-        /// Tests the retrieval of prime numbers from the database.
-        /// </summary>
-        /// <returns>
-        /// A <see cref="Task"/> representing the asynchronous operation.
-        /// </returns>
-        //[Fact]
-        //public async Task GetPrimesReturnsPrimesFromDatabaseAsync()
-        //{
-        //    using var database = new TestDatabase();
-
-        //    using (var context = await database.CreateContextAsync().ConfigureAwait(true))
-        //    {
-        //        UserPetRepository = new UserPetRepository(context);
-        //        PetEfRepository = new PetEfRepository(context, UserPetRepository);
-        //        //context.PrimeNumbers.AddRange(
-        //        //    expectedOutput
-        //        //        .Select(x => new PrimeNumber() { Value = x, }));
-        //        var pets = await PetEfRepository.GetAllByUserIdAsync(Guid.NewGuid());
-        //        pets.Should().BeEmpty();
-        //        //await context.SaveChangesAsync().ConfigureAwait(true);
-        //    }
-
-        //    using (var context = await database.CreateContextAsync().ConfigureAwait(true))
-        //    {
-        //        //var manager = this.CreateMathManager(context);
-        //        //var primes = await manager.GetPrimesAsync(3).ConfigureAwait(true);
-
-        //        //Assert.Equal(expectedOutput as IEnumerable<long>, primes as IEnumerable<long>);
-        //    }
-        //}
-
         [Fact]
         public async Task CreatePetAsyncTest()
         {
             //arrange
-            var petDto = new PetDto
-            {
-                Name = "Test Pet", 
-                Birthdate = DateTime.Now, 
-                Gender = Gender.Female, 
-                PictureUrl = new Uri("https://Test.url")
-            };
-            var petCreated = await PetEfRepository.InsertAsync(petDto);
+            var petDto = new PetDtoFaker().Generate();
+            await PetEfRepository.InsertAsync(petDto);
             //act
             var pets = await PetEfRepository.GetAllByUserIdAsync(Guid.NewGuid());
             //assert
             pets.Should().BeEmpty();
+        }
+
+        [Fact]
+        public async Task CreatePetAsyncShouldExistTest()
+        {
+            //arrange
+            var petDto = new PetDtoFaker().Generate();
+            var petCreated = await PetEfRepository.InsertAsync(petDto);
+            //act
+            var pets = await PetEfRepository.GetAsync(petCreated.Id);
+            //assert
+            pets.Should().BeEquivalentTo(petDto);
         }
     }
 
     public class PetEfRepositoryFixture : IDisposable
     {
 
-        protected PetEfRepository PetEfRepository;
-        protected UserPetRepository UserPetRepository;
+        protected readonly PetEfRepository PetEfRepository;
+        private readonly ApplicationDbContext _dbContext;
 
         protected PetEfRepositoryFixture()
         {
-            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("TestDB")
-                .Options;
-           UserPetRepository = new UserPetRepository(new ApplicationDbContext(options));
-            PetEfRepository = new PetEfRepository(new ApplicationDbContext(options), UserPetRepository);
+            _dbContext = new qrContextFactory().CreateDbContext(new string[] { });
+            _dbContext.Database.EnsureCreated();
+            var userPetRepository = new UserPetRepository(_dbContext);
+            PetEfRepository = new PetEfRepository(_dbContext, userPetRepository);
         }
 
 
         public void Dispose()
         {
+            _dbContext.Database.EnsureDeleted();
         }
     }
 }

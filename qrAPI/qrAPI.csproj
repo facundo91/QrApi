@@ -9,35 +9,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Adapters\**" />
-    <Compile Remove="Cache\**" />
-    <Compile Remove="Controllers\**" />
-    <Compile Remove="Filters\**" />
-    <Compile Remove="Options\**" />
-    <Compile Remove="Validators\**" />
-    <Content Remove="Adapters\**" />
-    <Content Remove="Cache\**" />
-    <Content Remove="Controllers\**" />
-    <Content Remove="Filters\**" />
-    <Content Remove="Options\**" />
-    <Content Remove="Validators\**" />
-    <EmbeddedResource Remove="Adapters\**" />
-    <EmbeddedResource Remove="Cache\**" />
-    <EmbeddedResource Remove="Controllers\**" />
-    <EmbeddedResource Remove="Filters\**" />
-    <EmbeddedResource Remove="Options\**" />
-    <EmbeddedResource Remove="Validators\**" />
-    <None Remove="Adapters\**" />
-    <None Remove="Cache\**" />
-    <None Remove="Controllers\**" />
-    <None Remove="Filters\**" />
-    <None Remove="Options\**" />
-    <None Remove="Validators\**" />
-  </ItemGroup>
-
-
+  
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />

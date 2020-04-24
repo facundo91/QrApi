@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
+using qrAPI.Infrastructure.Adapters;
 using qrAPI.Logic.Services.Interfaces;
 
 namespace qrAPI.Presentation.Controllers.v1
@@ -15,10 +16,12 @@ namespace qrAPI.Presentation.Controllers.v1
     public class IdentityController : ControllerBase
     {
         private readonly IIdentityService _identityService;
-        
-        public IdentityController(IIdentityService identityService)
+        private readonly IMapperAdapter _mapperAdapter;
+
+        public IdentityController(IIdentityService identityService, IMapperAdapter mapperAdapter)
         {
             _identityService = identityService;
+            _mapperAdapter = mapperAdapter;
         }
 
         [HttpPost(ApiRoutes.Identity.Register)]
@@ -31,7 +34,7 @@ namespace qrAPI.Presentation.Controllers.v1
                     Errors = ModelState.Values.SelectMany(x => x.Errors.Select(xx => xx.ErrorMessage))
                 });
             }
-            
+
             var authResponse = await _identityService.RegisterAsync(request.Email, request.Password);
 
             if (!authResponse.Success)
@@ -41,14 +44,14 @@ namespace qrAPI.Presentation.Controllers.v1
                     Errors = authResponse.Errors
                 });
             }
-            
+
             return Ok(new AuthSuccessResponse
             {
                 Token = authResponse.Token,
                 RefreshToken = authResponse.RefreshToken
             });
         }
-        
+
         [HttpPost(ApiRoutes.Identity.Login)]
         public async Task<IActionResult> Login([FromBody] UserLoginRequest request)
         {
@@ -61,14 +64,14 @@ namespace qrAPI.Presentation.Controllers.v1
                     Errors = authResponse.Errors
                 });
             }
-            
+
             return Ok(new AuthSuccessResponse
             {
                 Token = authResponse.Token,
                 RefreshToken = authResponse.RefreshToken
             });
         }
-        
+
         [HttpPost(ApiRoutes.Identity.Refresh)]
         public async Task<IActionResult> Refresh([FromBody] RefreshTokenRequest request)
         {
@@ -81,7 +84,7 @@ namespace qrAPI.Presentation.Controllers.v1
                     Errors = authResponse.Errors
                 });
             }
-            
+
             return Ok(new AuthSuccessResponse
             {
                 Token = authResponse.Token,
