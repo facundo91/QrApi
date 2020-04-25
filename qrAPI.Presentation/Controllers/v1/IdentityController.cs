@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Infrastructure.Adapters;
 using qrAPI.Logic.Services.Interfaces;
 
 namespace qrAPI.Presentation.Controllers.v1
@@ -16,12 +15,10 @@ namespace qrAPI.Presentation.Controllers.v1
     public class IdentityController : ControllerBase
     {
         private readonly IIdentityService _identityService;
-        private readonly IMapperAdapter _mapperAdapter;
 
-        public IdentityController(IIdentityService identityService, IMapperAdapter mapperAdapter)
+        public IdentityController(IIdentityService identityService)
         {
             _identityService = identityService;
-            _mapperAdapter = mapperAdapter;
         }
 
         [HttpPost(ApiRoutes.Identity.Register)]

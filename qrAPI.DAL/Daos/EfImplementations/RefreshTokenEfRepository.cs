@@ -8,17 +8,12 @@ namespace qrAPI.DAL.Daos.EfImplementations
 {
     public class RefreshTokenEfRepository : EfRepository<RefreshToken>, IRefreshTokenRepository
     {
-        private new readonly DbSet<RefreshToken> _table;
 
         public RefreshTokenEfRepository(ApplicationDbContext context) : base(context)
         {
-            _table = context.Set<RefreshToken>();
         }
 
-        public async Task<RefreshToken> GetByRefreshName(string refreshToken)
-        {
-            return await _table.SingleOrDefaultAsync(x => x.Token == refreshToken);
-        }
-
+        public async Task<RefreshToken> GetByRefreshName(string refreshToken) => 
+            await Table.SingleOrDefaultAsync(x => x.Token == refreshToken);
     }
 }

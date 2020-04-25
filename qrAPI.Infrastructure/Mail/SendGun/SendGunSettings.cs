@@ -6,5 +6,6 @@
         public string BaseUrl { get; set; }
         public string RequestUri { get; set; }
         public string From { get; set; }
+        public bool Enabled { get; set; }
     }
 }

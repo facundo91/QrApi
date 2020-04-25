@@ -15,9 +15,7 @@ namespace qrAPI.Presentation.Filters
                 var errorsInModelState = context.ModelState
                     .Where(x => x.Value.Errors.Any())
                     .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(x => x.ErrorMessage)).ToArray();
-
                 var errorResponse = new ErrorResponse();
-
                 foreach (var (key, value) in errorsInModelState)
                 {
                     foreach (var subError in value)
@@ -27,11 +25,9 @@ namespace qrAPI.Presentation.Filters
                             FieldName = key,
                             Message = subError
                         };
-
                         errorResponse.Errors.Add(errorModel);
                     }
                 }
-
                 context.Result = new BadRequestObjectResult(errorResponse);
                 return;
             }

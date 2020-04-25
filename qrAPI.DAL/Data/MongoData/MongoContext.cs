@@ -5,7 +5,7 @@ namespace qrAPI.DAL.Data.MongoData
 {
     public class MongoContext : IDataContext
     {
-        public readonly IMongoDatabase _database;
+        private readonly IMongoDatabase _database;
 
         public MongoContext(MongoOptions settings)
         {

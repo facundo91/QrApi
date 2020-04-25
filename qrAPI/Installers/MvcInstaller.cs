@@ -22,7 +22,7 @@ namespace qrAPI.Installers
                     .RegisterValidatorsFromAssemblyContaining(typeof(ApiVersions))
                     .RegisterValidatorsFromAssemblyContaining(typeof(IGenericService<>)));
             services.AddControllers().AddJsonOptions(options =>
-                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter())); ;
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
             services.AddHttpContextAccessor();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddResponseCaching();

@@ -1,4 +1,5 @@
-﻿using qrAPI.DAL.Dtos.Fakers;
+﻿using Microsoft.EntityFrameworkCore;
+using qrAPI.DAL.Dtos.Fakers;
 
 namespace qrAPI.DAL.Tests.EfDaos
 {
@@ -53,12 +54,12 @@ namespace qrAPI.DAL.Tests.EfDaos
 
         protected PetEfRepositoryFixture()
         {
-            _dbContext = new qrContextFactory().CreateDbContext(new string[] { });
+            var dbContextOptions = new DbContextOptionsBuilder<ApplicationDbContext>().UseInMemoryDatabase("TestDB").Options;
+            _dbContext = new ApplicationDbContext(dbContextOptions);
             _dbContext.Database.EnsureCreated();
             var userPetRepository = new UserPetRepository(_dbContext);
             PetEfRepository = new PetEfRepository(_dbContext, userPetRepository);
         }
-
 
         public void Dispose()
         {

@@ -12,44 +12,31 @@ namespace qrAPI.DAL.Daos.EfImplementations
 {
     public class EfRepository<TDto> : IRepository<TDto> where TDto : Dto
     {
-        protected readonly ApplicationDbContext _context;
-        protected readonly DbSet<TDto> _table;
+        private readonly ApplicationDbContext _context;
+        protected DbSet<TDto> Table => _context.Set<TDto>();
 
         public EfRepository(ApplicationDbContext context)
         {
             _context = context;
-            _table = context.Set<TDto>();
         }
 
-        protected async Task<IEnumerable<TDto>> GetAllByQueryExpressionAsync(Expression<Func<TDto, bool>> expression)
-        {
-            return await _table.Where(expression).ToListAsync();
-        }
+        protected async Task<IEnumerable<TDto>> GetAllByQueryExpressionAsync(Expression<Func<TDto, bool>> expression) =>
+            await Table.Where(expression).ToListAsync();
 
-        protected async Task<TDto> GetAsyncIncludeProperty<TDto2>(object id, Expression<Func<TDto, TDto2>> navigationPropertyPath)
-        {
-            return await _table.Where(dto => dto.Id == (Guid)id)
+        protected async Task<TDto> GetAsyncIncludeProperty<TDto2>(object id, Expression<Func<TDto, TDto2>> navigationPropertyPath) =>
+            await Table.Where(dto => dto.Id == (Guid)id)
                 .Include(navigationPropertyPath).SingleOrDefaultAsync();
-        }
 
-        private async Task<List<TDto>> GetAllAsyncIncludeProperty<TDto2>(Guid id, Expression<Func<TDto, TDto2>> navigationPropertyPath) where TDto2 : Dto
-        {
-            return await _table.Where(userPetDto => userPetDto.Id == id).Include(navigationPropertyPath).ToListAsync();
-        }
+        private async Task<List<TDto>> GetAllAsyncIncludeProperty<TDto2>(Guid id, Expression<Func<TDto, TDto2>> navigationPropertyPath) where TDto2 : Dto =>
+            await Table.Where(userPetDto => userPetDto.Id == id).Include(navigationPropertyPath).ToListAsync();
 
-        public virtual async Task<IEnumerable<TDto>> GetAllAsync()
-        {
-            return await _table.ToListAsync();
-        }
+        public virtual async Task<IEnumerable<TDto>> GetAllAsync() => await Table.ToListAsync();
 
-        public virtual async Task<TDto> GetAsync(object id)
-        {
-            return await _table.FindAsync(id);
-        }
+        public virtual async Task<TDto> GetAsync(object id) => await Table.FindAsync(id);
 
         public virtual async Task<TDto> InsertAsync(TDto obj)
         {
-            var objCreated = (await _table.AddAsync(obj)).Entity;
+            var objCreated = (await Table.AddAsync(obj)).Entity;
             var created = await Save();
             return created == 0 ? null : objCreated;
         }
@@ -67,14 +54,11 @@ namespace qrAPI.DAL.Daos.EfImplementations
         {
             var obj = await GetAsync(id);
             if (obj == null) return false;
-            _table.Remove(obj);
+            Table.Remove(obj);
             var deleted = await Save();
             return deleted > 0;
         }
 
-        protected async Task<int> Save()
-        {
-            return await _context.SaveChangesAsync();
-        }
+        private async Task<int> Save() => await _context.SaveChangesAsync();
     }
 }

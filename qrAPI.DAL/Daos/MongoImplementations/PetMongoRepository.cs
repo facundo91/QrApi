@@ -22,7 +22,7 @@ namespace qrAPI.DAL.Daos.MongoImplementations
 
         public async Task<IEnumerable<PetDto>> GetAllByUserIdAsync(Guid userId)
         {
-            return new List<PetDto>();
+            return await Task.Run(() => new List<PetDto>());
             //Expression<Func<PetDto, bool>> expression = pet => pet.OwnerId == userId;
             //return await GetAllByQueryExpressionAsync(expression);
         }

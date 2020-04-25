@@ -24,7 +24,7 @@ namespace qrAPI.DAL.Daos.EfImplementations
         public async Task<IEnumerable<PetDto>> GetAllByUserIdAsync(Guid userId) =>
             (await _userPetRepository.GetAllByUserIdAsync(userId)).Select(userPetDto => userPetDto.Pet);
 
-        public override async Task<PetDto> GetAsync(object id) => await _table.Where(dto => dto.Id == (Guid)id)
+        public override async Task<PetDto> GetAsync(object id) => await Table.Where(dto => dto.Id == (Guid)id)
         .Include(pet => pet.UserPets).ThenInclude(userPets => userPets.User).SingleOrDefaultAsync();
     }
 }

@@ -7,6 +7,10 @@ using FluentAssertions;
 using qrAPI.Contracts.v1.Fakers.Requests.Create;
 using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Requests.Update;
+using qrAPI.Contracts.v1.Responses;
+using qrAPI.Sdk.v1;
+using Refit;
+using Simple.OData.Client;
 using Xunit;
 
 namespace qrAPI.IntegrationTests.v1
@@ -14,6 +18,14 @@ namespace qrAPI.IntegrationTests.v1
     [Collection("Sequential")]
     public class PetsControllerTests : IntegrationTest
     {
+        private readonly IPetsApi _petsApi;
+        private readonly IBoundClient<PetResponse> _petsOdataClient;
+
+        public PetsControllerTests()
+        {
+            _petsApi = RestService.For<IPetsApi>(TestClient);
+            _petsOdataClient = ODataClient.For<PetResponse>("Pets");
+        }
 
         [Fact]
         public async Task GetAllPets_WithoutPets_ReturnsEmptyResponse()
@@ -21,7 +33,7 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             //Act
-            var response = await PetsApi.GetAllAsync();
+            var response = await _petsApi.GetAllAsync();
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
             response.Content.Should().BeEmpty();
@@ -34,9 +46,9 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
-            await PetsApi.CreateAsync(createPetRequest);
+            await _petsApi.CreateAsync(createPetRequest);
             //Act
-            var pets = await PetsOdataClient
+            var pets = await _petsOdataClient
                 .Select(petSelect => new { petSelect.Name, petSelect.Birthdate }).FindEntriesAsync();
             //Assert
             var petResponses = pets.ToList();
@@ -53,7 +65,7 @@ namespace qrAPI.IntegrationTests.v1
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
-            var response = await PetsApi.CreateAsync(createPetRequest);
+            var response = await _petsApi.CreateAsync(createPetRequest);
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.Created);
             var returnedPost = response.Content;
@@ -71,8 +83,8 @@ namespace qrAPI.IntegrationTests.v1
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
-            await PetsApi.CreateAsync(createPetRequest);
-            var response = await PetsApi.GetAllAsync();
+            await _petsApi.CreateAsync(createPetRequest);
+            var response = await _petsApi.GetAllAsync();
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
             var getAllPets = response.Content;
@@ -91,8 +103,8 @@ namespace qrAPI.IntegrationTests.v1
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
-            var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
-            var response = await PetsApi.GetAsync(petCreated.Id);
+            var petCreated = (await _petsApi.CreateAsync(createPetRequest)).Content;
+            var response = await _petsApi.GetAsync(petCreated.Id);
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
             var getCreatedPet = response.Content;
@@ -110,7 +122,7 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             //Act
-            var response = await PetsApi.GetAsync(Guid.NewGuid());
+            var response = await _petsApi.GetAsync(Guid.NewGuid());
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
@@ -122,11 +134,11 @@ namespace qrAPI.IntegrationTests.v1
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
             //Act
-            var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
-            var response = await PetsApi.DeleteAsync(petCreated.Id);
+            var petCreated = (await _petsApi.CreateAsync(createPetRequest)).Content;
+            var response = await _petsApi.DeleteAsync(petCreated.Id);
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.NoContent);
-            var getAll = (await PetsApi.GetAllAsync()).Content;
+            var getAll = (await _petsApi.GetAllAsync()).Content;
             getAll.Should().BeEmpty();
         }
 
@@ -136,7 +148,7 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             //Act
-            var response = await PetsApi.DeleteAsync(Guid.NewGuid());
+            var response = await _petsApi.DeleteAsync(Guid.NewGuid());
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
@@ -147,11 +159,11 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
-            var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
+            var petCreated = (await _petsApi.CreateAsync(createPetRequest)).Content;
             //Act
             await RegisterAsync(new Faker().Internet.Email(), "T3stPa$$");
-            var getAllPets = await PetsApi.GetAllAsync();
-            var getAPet = await PetsApi.GetAsync(petCreated.Id);
+            var getAllPets = await _petsApi.GetAllAsync();
+            var getAPet = await _petsApi.GetAsync(petCreated.Id);
             //Assert
             getAllPets.StatusCode.Should().Be(HttpStatusCode.OK);
             getAllPets.Content.Should().BeEmpty();
@@ -164,10 +176,10 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
-            var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
+            var petCreated = (await _petsApi.CreateAsync(createPetRequest)).Content;
             //Act
             await RegisterAsync(new Faker().Internet.Email(), "T3stPa$$");
-            var deleteAPet = await PetsApi.DeleteAsync(petCreated.Id);
+            var deleteAPet = await _petsApi.DeleteAsync(petCreated.Id);
             //Assert
             deleteAPet.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
@@ -178,7 +190,7 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
-            var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
+            var petCreated = (await _petsApi.CreateAsync(createPetRequest)).Content;
             //Act
             var updatePetRequest = new UpdatePetRequest
             {
@@ -188,10 +200,10 @@ namespace qrAPI.IntegrationTests.v1
                 PictureUrl = petCreated.PictureUrl, //Stays the same
                 Owners = petCreated.Owners.Select(x=>x.Id).ToArray()
             };
-            var response = await PetsApi.UpdateAsync(petCreated.Id, updatePetRequest);
+            var response = await _petsApi.UpdateAsync(petCreated.Id, updatePetRequest);
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.NoContent);
-            var updatedPet = (await PetsApi.GetAsync(petCreated.Id)).Content;
+            var updatedPet = (await _petsApi.GetAsync(petCreated.Id)).Content;
             updatedPet.Name.Should().Be(updatePetRequest.Name);
             updatedPet.Birthdate.Should().Be(updatePetRequest.Birthdate);
             updatedPet.Gender.Should().Be(updatePetRequest.Gender);
@@ -205,7 +217,7 @@ namespace qrAPI.IntegrationTests.v1
             //Arrange
             await RegisterAsync();
             var createPetRequest = new CreatePetRequestFaker().Generate();
-            var petCreated = (await PetsApi.CreateAsync(createPetRequest)).Content;
+            var petCreated = (await _petsApi.CreateAsync(createPetRequest)).Content;
             //Act
             var updatePetRequest = new UpdatePetRequest
             {
@@ -216,7 +228,7 @@ namespace qrAPI.IntegrationTests.v1
                 Owners = petCreated.Owners.Select(x => x.Id).ToArray()
             };
             await RegisterAsync("test@mail.com", "APass123!");
-            var response = await PetsApi.UpdateAsync(petCreated.Id, updatePetRequest);
+            var response = await _petsApi.UpdateAsync(petCreated.Id, updatePetRequest);
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }

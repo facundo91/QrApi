@@ -21,31 +21,18 @@ namespace qrAPI.DAL.Daos.CacheImplementations
             _cacheHelper = cacheHelper;
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
-        {
-            return await GetAllAndCacheAsync(async () => await _repository.GetAllAsync(), GenerateCacheKeyFromQuery);
-        }
+        public async Task<IEnumerable<T>> GetAllAsync() => 
+            await GetAllAndCacheAsync(async () => await _repository.GetAllAsync(), GenerateCacheKeyFromQuery);
 
-        public async Task<T> GetAsync(object id)
-        {
-            return await GetAndCacheAsync(async () => await _repository.GetAsync(id),
+        public async Task<T> GetAsync(object id) =>
+            await GetAndCacheAsync(async () => await _repository.GetAsync(id),
                 () => GenerateCacheKeyFromQuery((Guid)id));
-        }
 
-        public Task<T> InsertAsync(T obj)
-        {
-            return _repository.InsertAsync(obj);
-        }
+        public Task<T> InsertAsync(T obj) => _repository.InsertAsync(obj);
 
-        public Task<bool> UpdateAsync(T obj)
-        {
-            return _repository.UpdateAsync(obj);
-        }
+        public Task<bool> UpdateAsync(T obj) => _repository.UpdateAsync(obj);
 
-        public Task<bool> DeleteAsync(object id)
-        {
-            return _repository.DeleteAsync(id);
-        }
+        public Task<bool> DeleteAsync(object id) => _repository.DeleteAsync(id);
 
         protected async Task<IEnumerable<T>> GetAllAndCacheAsync(Func<Task<IEnumerable<T>>> function, Func<string> keyGeneratorFunction)
         {
@@ -58,7 +45,7 @@ namespace qrAPI.DAL.Daos.CacheImplementations
             return repositoryResponse;
         }
 
-        protected async Task<T> GetAndCacheAsync(Func<Task<T>> function, Func<string> keyGeneratorFunction)
+        private async Task<T> GetAndCacheAsync(Func<Task<T>> function, Func<string> keyGeneratorFunction)
         {
             if (!_memoryCacheOptions.Enabled) return await function.Invoke();
             var cacheKey = keyGeneratorFunction.Invoke();
@@ -69,9 +56,9 @@ namespace qrAPI.DAL.Daos.CacheImplementations
             return repositoryResponse;
         }
 
-        protected static string GenerateCacheKeyFromQuery() => typeof(T).Name;
+        private static string GenerateCacheKeyFromQuery() => typeof(T).Name;
 
-        protected static string GenerateCacheKeyFromQuery(Guid id) => $"{typeof(T).Name}-{id}";
+        private static string GenerateCacheKeyFromQuery(Guid id) => $"{typeof(T).Name}-{id}";
 
         protected static string GenerateCacheKeyFromQuery(string key) => $"{typeof(T).Name}-{key}";
     }
