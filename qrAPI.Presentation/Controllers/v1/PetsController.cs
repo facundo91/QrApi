@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -11,7 +12,6 @@ using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Infrastructure.Adapters;
 using static qrAPI.Contracts.ApiVersions;
 using qrAPI.Infrastructure.Options;
 using qrAPI.Logic.Domain;
@@ -26,12 +26,12 @@ namespace qrAPI.Presentation.Controllers.v1
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PetsController : ODataController
     {
-        private readonly IMapperAdapter _mapperAdapter;
+        private readonly IMapper _mapper;
         private readonly IGenericService<Pet> _petService;
 
-        public PetsController(IMapperAdapter mapperAdapter, IGenericService<Pet> petService)
+        public PetsController(IMapper mapper, IGenericService<Pet> petService)
         {
-            _mapperAdapter = mapperAdapter;
+            _mapper = mapper;
             _petService = petService;
         }
 
@@ -46,7 +46,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         public async Task<IActionResult> GetAllPets()
         {
-            var result = await _mapperAdapter.DoMapAsync<IEnumerable<PetResponse>>(async () => await _petService.GetAllAsync());
+            var result = _mapper.Map<IEnumerable<PetResponse>>(await _petService.GetAllAsync());
             return Ok(result);
         }
 
@@ -65,7 +65,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [ODataRoute("{petId}")]
         public async Task<IActionResult> GetPet([FromRoute] Guid petId)
         {
-            var result = await _mapperAdapter.DoMapAsync<PetResponse>(async () => await _petService.GetByIdAsync(petId));
+            var result = _mapper.Map<PetResponse>(await _petService.GetByIdAsync(petId));
             return result != null ? (IActionResult)Ok(result) : NotFound();
         }
 
@@ -79,7 +79,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [HttpPost(ApiRoutes.Pets.Create)]
         public async Task<IActionResult> CreatePet([FromBody] CreatePetRequest petRequest)
         {
-            var result = await _mapperAdapter.MapDoMapAsync<Pet, PetResponse>(petRequest, async mapped => await _petService.CreateAsync(mapped));
+            var result = _mapper.Map<PetResponse>(await _petService.CreateAsync(_mapper.Map<Pet>(petRequest)));
             return result != null
                 ? CreatedAtAction("CreatePet", new { id = result.Id }, result)
                 : (IActionResult)BadRequest();
@@ -95,7 +95,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [FeatureGate(FeatureFlags.EndpointFlag)]
         public async Task<IActionResult> UpdatePet([FromRoute] Guid petId, [FromBody] UpdatePetRequest petRequest)
         {
-            var result = await _mapperAdapter.MapDoAsync<Pet, bool>(petRequest, async mapped => await _petService.UpdateAsync(petId, mapped));
+            var result = await _petService.UpdateAsync(petId,_mapper.Map<Pet>(petRequest));
             return result ? NoContent() : (IActionResult)NotFound();
         }
 

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Dtos;
-using qrAPI.Infrastructure.Adapters;
 using qrAPI.Infrastructure.Extensions;
 using qrAPI.Logic.Domain;
 using qrAPI.Logic.Services.Interfaces;
@@ -19,11 +19,11 @@ namespace qrAPI.Logic.Services.Implementations
         private readonly IIdentityService _identityService;
 
         public PetService(
-            IMapperAdapter mapperAdapter, 
+            IMapper mapper, 
             IPetRepository repository, 
             IHttpContextAccessor httpContextAccessor, 
             IIdentityService identityService) 
-            : base(mapperAdapter, repository)
+            : base(mapper, repository)
         {
             _repository = repository;
             _httpContextAccessor = httpContextAccessor;
@@ -33,7 +33,7 @@ namespace qrAPI.Logic.Services.Implementations
         public override async Task<IEnumerable<Pet>> GetAllAsync()
         {
             var userId = _httpContextAccessor.HttpContext.GetUserId();
-            return await MapperAdapter.DoMapAsync<IEnumerable<Pet>>(async () => await _repository.GetAllByUserIdAsync(userId));
+            return Mapper.Map<IEnumerable<Pet>>(await _repository.GetAllByUserIdAsync(userId));
         }
 
         public override async Task<Pet> CreateAsync(Pet petToCreate)

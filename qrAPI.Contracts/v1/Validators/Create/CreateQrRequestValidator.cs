@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using qrAPI.Contracts.v1.Requests.Create;
 
-namespace qrAPI.Contracts.v1.Validators
+namespace qrAPI.Contracts.v1.Validators.Create
 {
     public class CreateQrRequestValidator : AbstractValidator<CreateQrRequest>
     {

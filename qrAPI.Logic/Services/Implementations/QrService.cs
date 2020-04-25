@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using AutoMapper;
 using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Dtos;
-using qrAPI.Infrastructure.Adapters;
 using qrAPI.Infrastructure.Mail;
 using qrAPI.Logic.Domain;
 using qrAPI.Logic.Services.Interfaces;
@@ -16,12 +16,12 @@ namespace qrAPI.Logic.Services.Implementations
         private readonly IIdentityService _identityService;
 
         public QrService(
-            IMapperAdapter mapperAdapter, 
+            IMapper mapper, 
             IRepository<QrDto> repository, 
             IMailService mailService, 
             IGenericService<Pet> petService, 
             IIdentityService identityService) 
-            : base(mapperAdapter, repository)
+            : base(mapper, repository)
         {
             _mailService = mailService;
             _petService = petService;

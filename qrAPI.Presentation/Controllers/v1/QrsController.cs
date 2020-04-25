@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +10,6 @@ using qrAPI.Contracts.v1;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Infrastructure.Adapters;
 using qrAPI.Infrastructure.Options;
 using qrAPI.Logic.Domain;
 using qrAPI.Logic.Services.Interfaces;
@@ -23,12 +23,12 @@ namespace qrAPI.Presentation.Controllers.v1
     [ODataRoutePrefix("Qrs")]
     public class QrsController : ODataController
     {
-        private readonly IMapperAdapter _mapperAdapter;
+        private readonly IMapper _mapper;
         private readonly IQrService _qrService;
 
-        public QrsController(IMapperAdapter mapperAdapter, IQrService qrService)
+        public QrsController(IMapper mapper, IQrService qrService)
         {
-            _mapperAdapter = mapperAdapter;
+            _mapper = mapper;
             _qrService = qrService;
         }
 
@@ -39,7 +39,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [EnableQuery]
         public async Task<IActionResult> GetAllQrs()
         {
-            var result = await _mapperAdapter.DoMapAsync<IEnumerable<QrResponse>>(async () => await _qrService.GetAllAsync());
+            var result = _mapper.Map<IEnumerable<QrResponse>>(await _qrService.GetAllAsync());
             return Ok(result);
         }
 
@@ -51,7 +51,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [ResponseCache(VaryByQueryKeys = new[] { "*" }, Duration = 30)]
         public async Task<IActionResult> GetQr([FromRoute] Guid qrId)
         {
-            var result = await _mapperAdapter.DoMapAsync<QrResponse>(async () => await _qrService.GetByIdAsync(qrId));
+            var result = _mapper.Map<QrResponse>(await _qrService.GetByIdAsync(qrId));
             return result != null ? (IActionResult)Ok(result) : NotFound();
         }
 
@@ -66,7 +66,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [FeatureGate(FeatureFlags.EndpointFlag)]
         public async Task<IActionResult> CreateQr([FromBody] CreateQrRequest qrRequest)
         {
-            var result = await _mapperAdapter.MapDoMapAsync<Qr, QrResponse>(qrRequest, async mapped => await _qrService.CreateAsync(mapped));
+            var result = _mapper.Map<QrResponse>(await _qrService.CreateAsync(_mapper.Map<Qr>(qrRequest)));
             return result != null
                 ? CreatedAtAction("CreateQr", new { id = result.Id }, result)
                 : (IActionResult)BadRequest();
@@ -76,7 +76,7 @@ namespace qrAPI.Presentation.Controllers.v1
         [FeatureGate(FeatureFlags.EndpointFlag)]
         public async Task<IActionResult> UpdateQr([FromRoute] Guid qrId, [FromBody] UpdateQrRequest qrRequest)
         {
-            var result = await _mapperAdapter.MapDoAsync(qrRequest, async mapped => await _qrService.UpdateAsync(qrId, (Qr)mapped));
+            var result = await _qrService.UpdateAsync(qrId, _mapper.Map<Qr>(qrRequest));
             return result ? Ok() : (IActionResult)NotFound();
         }
 

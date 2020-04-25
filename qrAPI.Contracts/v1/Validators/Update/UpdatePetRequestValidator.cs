@@ -1,23 +1,24 @@
 ﻿using System;
 using FluentValidation;
+using qrAPI.Contracts.v1.Requests.Update;
 
-namespace qrAPI.Logic.Domain.Validators
+namespace qrAPI.Contracts.v1.Validators.Update
 {
-    public class PetValidator : AbstractValidator<Pet>
+    public class UpdatePetRequestValidator : AbstractValidator<UpdatePetRequest>
     {
-        public PetValidator()
+        public UpdatePetRequestValidator()
         {
             RuleFor(x => x.Name)
                 .NotNull()
                 .NotEmpty()
-                .MinimumLength(Pet.MinNameLength)
-                .MaximumLength(Pet.MaxNameLength);
+                .MinimumLength(UpdatePetRequest.MinNameLength)
+                .MaximumLength(UpdatePetRequest.MaxNameLength);
             RuleFor(x => x.Birthdate)
                 .NotNull()
                 .NotEmpty()
                 .LessThan(DateTime.Now)
                 .WithMessage("The Pet cannot born in the future.")
-                .GreaterThan(DateTime.Now.AddYears(-Pet.MaxAge))
+                .GreaterThan(DateTime.Now.AddYears(-UpdatePetRequest.MaxAge))
                 .WithMessage("The Pet cannot be so old.");
         }
     }

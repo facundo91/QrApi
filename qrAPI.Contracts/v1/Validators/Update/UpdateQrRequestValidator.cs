@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using qrAPI.Contracts.v1.Requests.Update;
 
-namespace qrAPI.Contracts.v1.Validators
+namespace qrAPI.Contracts.v1.Validators.Update
 {
     public class UpdateQrRequestValidator : AbstractValidator<UpdateQrRequest>
     {
