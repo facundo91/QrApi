@@ -8,3 +8,6 @@
 ## Code Coverage
 [![Coverage Status](https://coveralls.io/repos/github/facundo91/QrApi/badge.svg?branch=master&t=7Nzbs7)](https://coveralls.io/github/facundo91/QrApi?branch=master)
 ![Code coverage](https://github.com/facundo91/QrApi/workflows/Code%20coverage/badge.svg)
+
+
+TEST PR
