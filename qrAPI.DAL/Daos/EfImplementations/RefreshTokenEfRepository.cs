@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Dtos;
+using System.Threading.Tasks;
 
 namespace qrAPI.DAL.Daos.EfImplementations
 {
@@ -13,7 +13,7 @@ namespace qrAPI.DAL.Daos.EfImplementations
         {
         }
 
-        public async Task<RefreshToken> GetByRefreshName(string refreshToken) => 
+        public async Task<RefreshToken> GetByRefreshName(string refreshToken) =>
             await Table.SingleOrDefaultAsync(x => x.Token == refreshToken);
     }
 }

@@ -9,7 +9,7 @@ namespace qrAPI.DAL.Dtos
         [NotMapped]
         public override Guid Id { get; set; }
         public Guid UserId { get; set; }
-        public UserDto User{ get; set; }
+        public UserDto User { get; set; }
         public Guid PetId { get; set; }
         public PetDto Pet { get; set; }
     }

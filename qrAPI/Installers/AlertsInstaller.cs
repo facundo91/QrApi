@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using qrAPI.Infra.Mail;
+using qrAPI.Infra.Mail.SendGrid;
+using qrAPI.Infra.Mail.SendGun;
+using System;
 using System.Net.Http.Headers;
 using System.Text;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Infrastructure.Mail;
-using qrAPI.Infrastructure.Mail.SendGrid;
-using qrAPI.Infrastructure.Mail.SendGun;
 
 namespace qrAPI.Installers
 {
@@ -13,7 +13,7 @@ namespace qrAPI.Installers
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            InjectSendGrid(services,configuration);
+            InjectSendGrid(services, configuration);
             InjectSendGun(services, configuration);
         }
 
@@ -23,7 +23,7 @@ namespace qrAPI.Installers
             configuration.GetSection($"EmailSettings:{nameof(SendGunSettings)}").Bind(sendGunSettings);
             if (!sendGunSettings.Enabled) return;
             services.AddSingleton(sendGunSettings);
-            services.AddHttpClient<IMailService, SendGunMailService>(x =>
+            services.AddHttpClient<IMailBroker, SendGunMailBroker>(x =>
             {
                 x.BaseAddress = new Uri(sendGunSettings.BaseUrl);
                 x.DefaultRequestHeaders.Authorization =
@@ -37,7 +37,7 @@ namespace qrAPI.Installers
             configuration.GetSection($"EmailSettings:{nameof(SendGridSettings)}").Bind(sendGridSettings);
             if (!sendGridSettings.Enabled) return;
             services.AddSingleton(sendGridSettings);
-            services.AddScoped<IMailService, SendGridMailService>();
+            services.AddScoped<IMailBroker, SendGridMailBroker>();
         }
     }
 }

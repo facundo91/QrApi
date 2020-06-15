@@ -4,7 +4,7 @@ namespace qrAPI.Contracts.v1.Responses
 {
     public class PagedResponse<T>
     {
-        public PagedResponse(){}
+        public PagedResponse() { }
 
         public PagedResponse(IEnumerable<T> data)
         {

@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using qrAPI.Contracts.v1.Requests.Create;
+﻿using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
 using qrAPI.Contracts.v1.Responses;
 using Refit;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace qrAPI.Sdk.v1
 {

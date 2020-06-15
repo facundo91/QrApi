@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using qrAPI.DAL.Data.EFData.Contexts;
+using System;
+using System.Collections;
+using System.Threading.Tasks;
 
 namespace qrAPI
 {
@@ -23,9 +23,9 @@ namespace qrAPI
             var dbContext = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
             await dbContext.Database.MigrateAsync();
             var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            if (!await roleManager.RoleExistsAsync("Admin")) 
+            if (!await roleManager.RoleExistsAsync("Admin"))
                 await roleManager.CreateAsync(new IdentityRole("Admin"));
-            if (!await roleManager.RoleExistsAsync("Owners")) 
+            if (!await roleManager.RoleExistsAsync("Owners"))
                 await roleManager.CreateAsync(new IdentityRole("Owners"));
             await host.RunAsync();
         }

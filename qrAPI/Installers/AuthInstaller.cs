@@ -1,11 +1,11 @@
-﻿using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using qrAPI.App.Options;
 using qrAPI.Authorization;
-using qrAPI.Logic.Options;
+using System.Text;
 
 namespace qrAPI.Installers
 {

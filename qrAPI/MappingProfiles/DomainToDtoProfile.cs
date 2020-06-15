@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using qrAPI.App.Domain;
 using qrAPI.DAL.Dtos;
-using qrAPI.Logic.Domain;
 
 namespace qrAPI.MappingProfiles
 {
@@ -16,7 +16,7 @@ namespace qrAPI.MappingProfiles
                 .ForMember(entity => entity.Breed,
                     opt => opt.MapFrom(model => model.Breed.Name))
                 // (1)
-                .ForMember(entity => entity.UserPets, 
+                .ForMember(entity => entity.UserPets,
                     opt => opt.MapFrom(model => model.Owners))
                 // (5)
                 .AfterMap((model, entity) =>
@@ -39,7 +39,7 @@ namespace qrAPI.MappingProfiles
 
             // (4)
             CreateMap<User, UserDto>()
-                .ForMember(x=> x.UserPets,opt => opt.Ignore());
+                .ForMember(x => x.UserPets, opt => opt.Ignore());
         }
     }
 }

@@ -4,7 +4,7 @@ using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Data.EFData.EntityTypeConfigurations
 {
-    public class UserPetDtoEntityConfiguration: IEntityTypeConfiguration<UserPetDto>
+    public class UserPetDtoEntityConfiguration : IEntityTypeConfiguration<UserPetDto>
     {
         public void Configure(EntityTypeBuilder<UserPetDto> builder)
         {

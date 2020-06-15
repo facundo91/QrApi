@@ -1,6 +1,6 @@
-﻿using System.Threading.Tasks;
-using qrAPI.DAL.Data.EFData.Contexts;
+﻿using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Dtos;
+using System.Threading.Tasks;
 
 namespace qrAPI.DAL.Daos.EfImplementations
 {
@@ -16,7 +16,7 @@ namespace qrAPI.DAL.Daos.EfImplementations
             return await base.InsertAsync(obj);
         }
 
-        public override async Task<QrDto> GetAsync(object id) => 
+        public override async Task<QrDto> GetAsync(object id) =>
             await GetAsyncIncludeProperty(id, x => x.Pet);
     }
 }

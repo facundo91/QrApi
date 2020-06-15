@@ -1,14 +1,14 @@
-﻿using System.Text.Json.Serialization;
-using AutoMapper;
+﻿using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using qrAPI.App.Services.Interfaces;
 using qrAPI.Contracts;
 using qrAPI.DAL.Data;
-using qrAPI.Logic.Services.Interfaces;
-using qrAPI.Presentation.Filters;
+using qrAPI.Web.Filters;
+using System.Text.Json.Serialization;
 
 namespace qrAPI.Installers
 {

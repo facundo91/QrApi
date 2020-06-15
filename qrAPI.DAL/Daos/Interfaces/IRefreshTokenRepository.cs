@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using qrAPI.DAL.Dtos;
+﻿using qrAPI.DAL.Dtos;
+using System.Threading.Tasks;
 
 namespace qrAPI.DAL.Daos.Interfaces
 {

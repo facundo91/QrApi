@@ -1,5 +1,5 @@
-﻿using System;
-using AutoBogus;
+﻿using AutoBogus;
+using System;
 
 namespace qrAPI.DAL.Dtos.Fakers
 {

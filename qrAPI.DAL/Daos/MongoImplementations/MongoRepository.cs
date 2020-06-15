@@ -1,12 +1,12 @@
-﻿using System;
+﻿using MongoDB.Driver;
+using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Dtos;
+using qrAPI.DAL.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using MongoDB.Driver;
-using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Options;
 
 namespace qrAPI.DAL.Daos.MongoImplementations
 {
@@ -32,7 +32,7 @@ namespace qrAPI.DAL.Daos.MongoImplementations
 
         public async Task<TDto> GetAsync(object id)
         {
-            return (await _table.FindAsync(x => x.Id == (Guid) id))
+            return (await _table.FindAsync(x => x.Id == (Guid)id))
                 .Current.FirstOrDefault();
         }
 

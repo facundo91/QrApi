@@ -1,10 +1,10 @@
-﻿using System;
+﻿using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Dtos;
+using qrAPI.Infra.Cache;
+using qrAPI.Infra.Settings;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Dtos;
-using qrAPI.Infrastructure.Cache;
-using qrAPI.Infrastructure.Settings;
 
 namespace qrAPI.DAL.Daos.CacheImplementations
 {
@@ -12,7 +12,7 @@ namespace qrAPI.DAL.Daos.CacheImplementations
     {
         private readonly IPetRepository _repository;
 
-        public PetCacheRepository(IPetRepository repository, MemoryCacheSettings memoryCacheOptions, ICacheHelper cacheHelper) 
+        public PetCacheRepository(IPetRepository repository, MemoryCacheSettings memoryCacheOptions, ICacheHelper cacheHelper)
             : base(repository, memoryCacheOptions, cacheHelper)
         {
             _repository = repository;

@@ -1,10 +1,10 @@
-﻿using System;
+﻿using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Dtos;
+using qrAPI.DAL.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Dtos;
-using qrAPI.DAL.Options;
 
 namespace qrAPI.DAL.Daos.MongoImplementations
 {

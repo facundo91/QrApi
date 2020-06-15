@@ -1,7 +1,7 @@
-﻿using System;
+﻿using qrAPI.Contracts.v1.Requests;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using qrAPI.Contracts.v1.Requests;
 
 namespace qrAPI.Contracts.v1.Responses
 {

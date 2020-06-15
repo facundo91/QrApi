@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
+using qrAPI.App.Domain;
 using qrAPI.Contracts.v1.Requests.Create;
 using qrAPI.Contracts.v1.Requests.Update;
-using qrAPI.Logic.Domain;
+using System.Linq;
 
 namespace qrAPI.MappingProfiles
 {

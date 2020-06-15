@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using qrAPI.DAL.Daos.Interfaces;
 using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Dtos;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace qrAPI.DAL.Daos.EfImplementations
 {
@@ -18,7 +18,7 @@ namespace qrAPI.DAL.Daos.EfImplementations
         public async Task<IEnumerable<UserPetDto>> GetAllByUserIdAsync(Guid userId) =>
             await Table.Where(userPetDto => userPetDto.UserId == userId).Include(userPet => userPet.Pet).ToListAsync();
 
-        public async Task<IEnumerable<UserPetDto>> GetAllByPetIdAsync(Guid petId) => 
+        public async Task<IEnumerable<UserPetDto>> GetAllByPetIdAsync(Guid petId) =>
             await Table.Where(userPetDto => userPetDto.UserId == petId).Include(userPet => userPet.User).ToListAsync();
     }
 }

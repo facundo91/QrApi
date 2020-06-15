@@ -1,7 +1,7 @@
-﻿using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
+using qrAPI.App.Domain;
 using qrAPI.DAL.Dtos;
-using qrAPI.Logic.Domain;
+using System.Linq;
 
 namespace qrAPI.MappingProfiles
 {
@@ -12,8 +12,8 @@ namespace qrAPI.MappingProfiles
             CreateMap<QrDto, Qr>();
 
             CreateMap<PetDto, Pet>()
-                .ForMember(dest => dest.Owners, opt => opt.MapFrom(src => src.UserPets.Select(x=>x.User)))
-                .ForMember(dest => dest.Breed, opt => opt.MapFrom(src => new Breed{Name = src.Breed}))
+                .ForMember(dest => dest.Owners, opt => opt.MapFrom(src => src.UserPets.Select(x => x.User)))
+                .ForMember(dest => dest.Breed, opt => opt.MapFrom(src => new Breed { Name = src.Breed }))
                 .ForMember(dest => dest.Qr, opt => opt.Ignore());
 
             CreateMap<UserDto, User>()

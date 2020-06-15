@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,8 +9,9 @@ using qrAPI.DAL.Daos.MongoImplementations;
 using qrAPI.DAL.Data.EFData.Contexts;
 using qrAPI.DAL.Dtos;
 using qrAPI.DAL.Options;
-using qrAPI.Infrastructure.Options;
-using qrAPI.Infrastructure.Settings;
+using qrAPI.Infra.Options;
+using qrAPI.Infra.Settings;
+using System;
 
 namespace qrAPI.Installers
 {
@@ -66,7 +66,7 @@ namespace qrAPI.Installers
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            
+
             services.AddTransient(typeof(IRepository<QrDto>), typeof(QrEfRepository));
             services.AddTransient<IRefreshTokenRepository, RefreshTokenEfRepository>();
             services.AddTransient<IPetRepository, PetEfRepository>();

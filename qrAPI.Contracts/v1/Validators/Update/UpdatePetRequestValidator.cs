@@ -1,6 +1,6 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 using qrAPI.Contracts.v1.Requests.Update;
+using System;
 
 namespace qrAPI.Contracts.v1.Validators.Update
 {

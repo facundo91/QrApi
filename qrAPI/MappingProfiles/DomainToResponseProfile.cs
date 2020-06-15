@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using qrAPI.App.Domain;
 using qrAPI.Contracts.v1.Responses;
-using qrAPI.Logic.Domain;
 
 namespace qrAPI.MappingProfiles
 {

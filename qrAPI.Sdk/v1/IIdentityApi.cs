@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
-using qrAPI.Contracts.v1.Requests;
+﻿using qrAPI.Contracts.v1.Requests;
 using qrAPI.Contracts.v1.Responses;
 using Refit;
+using System.Threading.Tasks;
 
 namespace qrAPI.Sdk.v1
 {

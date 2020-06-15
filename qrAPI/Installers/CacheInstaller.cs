@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Infrastructure.Cache;
-using qrAPI.Infrastructure.Settings;
+using qrAPI.Infra.Cache;
+using qrAPI.Infra.Settings;
 using StackExchange.Redis;
 
 namespace qrAPI.Installers

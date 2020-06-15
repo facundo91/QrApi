@@ -1,6 +1,6 @@
+using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 
 namespace qrAPI.Authorization
 {
@@ -14,7 +14,7 @@ namespace qrAPI.Authorization
                 context.Succeed(requirement);
                 return Task.CompletedTask;
             }
-            
+
             context.Fail();
             return Task.CompletedTask;
         }

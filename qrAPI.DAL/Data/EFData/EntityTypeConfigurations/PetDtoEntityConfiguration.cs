@@ -1,12 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using qrAPI.DAL.Dtos;
+using System;
 
 namespace qrAPI.DAL.Data.EFData.EntityTypeConfigurations
 {
-   public class PetDtoEntityConfiguration : IEntityTypeConfiguration<PetDto>
+    public class PetDtoEntityConfiguration : IEntityTypeConfiguration<PetDto>
     {
         public void Configure(EntityTypeBuilder<PetDto> builder)
         {

@@ -1,14 +1,14 @@
-using Microsoft.AspNet.OData.Extensions;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using qrAPI.Installers;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Builder;
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OData.Edm;
 using qrAPI.Contracts.v1.Responses;
+using qrAPI.Installers;
 using static Microsoft.OData.ODataUrlKeyDelimiter;
 
 namespace qrAPI

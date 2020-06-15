@@ -1,8 +1,8 @@
+using Microsoft.AspNetCore.Identity;
+using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Identity;
-using MongoDB.Bson.Serialization.Attributes;
 
 namespace qrAPI.DAL.Dtos
 {

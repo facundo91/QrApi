@@ -1,10 +1,10 @@
-﻿using System;
+﻿using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Dtos;
+using qrAPI.Infra.Cache;
+using qrAPI.Infra.Settings;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Dtos;
-using qrAPI.Infrastructure.Cache;
-using qrAPI.Infrastructure.Settings;
 
 namespace qrAPI.DAL.Daos.CacheImplementations
 {
@@ -21,7 +21,7 @@ namespace qrAPI.DAL.Daos.CacheImplementations
             _cacheHelper = cacheHelper;
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync() => 
+        public async Task<IEnumerable<T>> GetAllAsync() =>
             await GetAllAndCacheAsync(async () => await _repository.GetAllAsync(), GenerateCacheKeyFromQuery);
 
         public async Task<T> GetAsync(object id) =>
@@ -41,7 +41,7 @@ namespace qrAPI.DAL.Daos.CacheImplementations
             var cachedResponse = await _cacheHelper.GetCachedAsync<IEnumerable<T>>(cacheKey);
             if (cachedResponse != null) return cachedResponse;
             var repositoryResponse = await function.Invoke();
-            await _cacheHelper.CacheAsync(cacheKey, repositoryResponse,null);
+            await _cacheHelper.CacheAsync(cacheKey, repositoryResponse, null);
             return repositoryResponse;
         }
 

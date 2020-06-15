@@ -1,7 +1,7 @@
-﻿using System;
+﻿using qrAPI.DAL.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Daos.Interfaces
 {

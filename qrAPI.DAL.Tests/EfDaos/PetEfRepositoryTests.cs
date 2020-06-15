@@ -3,11 +3,11 @@ using qrAPI.DAL.Dtos.Fakers;
 
 namespace qrAPI.DAL.Tests.EfDaos
 {
-    using System;
-    using System.Threading.Tasks;
-    using FluentAssertions;
     using Daos.EfImplementations;
     using Data.EFData.Contexts;
+    using FluentAssertions;
+    using System;
+    using System.Threading.Tasks;
     using Xunit;
     public class PetEfRepositoryTests : PetEfRepositoryFixture
     {

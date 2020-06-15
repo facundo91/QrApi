@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using qrAPI.DAL.Daos.Interfaces;
+using qrAPI.DAL.Data.EFData.Contexts;
+using qrAPI.DAL.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using qrAPI.DAL.Daos.Interfaces;
-using qrAPI.DAL.Data.EFData.Contexts;
-using qrAPI.DAL.Dtos;
 
 namespace qrAPI.DAL.Daos.EfImplementations
 {
