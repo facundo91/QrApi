@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Daos.MongoImplementations
+  commentId: N:qrAPI.DAL.Daos.MongoImplementations
+  id: qrAPI.DAL.Daos.MongoImplementations
+  children:
+  - qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1
+  - qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Daos.MongoImplementations
+  nameWithType: qrAPI.DAL.Daos.MongoImplementations
+  fullName: qrAPI.DAL.Daos.MongoImplementations
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1
+  commentId: T:qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1
+  name: MongoRepository<TDto>
+  nameWithType: MongoRepository<TDto>
+  fullName: qrAPI.DAL.Daos.MongoImplementations.MongoRepository<TDto>
+  nameWithType.vb: MongoRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.MongoImplementations.MongoRepository(Of TDto)
+  name.vb: MongoRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1
+    name: MongoRepository
+    nameWithType: MongoRepository
+    fullName: qrAPI.DAL.Daos.MongoImplementations.MongoRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1
+    name: MongoRepository
+    nameWithType: MongoRepository
+    fullName: qrAPI.DAL.Daos.MongoImplementations.MongoRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository
+  commentId: T:qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository
+  name: PetMongoRepository
+  nameWithType: PetMongoRepository
+  fullName: qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository

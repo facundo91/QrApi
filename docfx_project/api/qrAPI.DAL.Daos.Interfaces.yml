@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  id: qrAPI.DAL.Daos.Interfaces
+  children:
+  - qrAPI.DAL.Daos.Interfaces.IPetRepository
+  - qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+  - qrAPI.DAL.Daos.Interfaces.IRepository`1
+  - qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Daos.Interfaces.IPetRepository
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IPetRepository
+  parent: qrAPI.DAL.Daos.Interfaces
+  name: IPetRepository
+  nameWithType: IPetRepository
+  fullName: qrAPI.DAL.Daos.Interfaces.IPetRepository
+- uid: qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+  parent: qrAPI.DAL.Daos.Interfaces
+  name: IRefreshTokenRepository
+  nameWithType: IRefreshTokenRepository
+  fullName: qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  parent: qrAPI.DAL.Daos.Interfaces
+  name: IUserPetRepository
+  nameWithType: IUserPetRepository
+  fullName: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces

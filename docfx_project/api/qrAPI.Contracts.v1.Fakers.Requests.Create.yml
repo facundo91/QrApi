@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Fakers.Requests.Create
+  commentId: N:qrAPI.Contracts.v1.Fakers.Requests.Create
+  id: qrAPI.Contracts.v1.Fakers.Requests.Create
+  children:
+  - qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker
+  - qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Fakers.Requests.Create
+  nameWithType: qrAPI.Contracts.v1.Fakers.Requests.Create
+  fullName: qrAPI.Contracts.v1.Fakers.Requests.Create
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker
+  commentId: T:qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker
+  name: CreatePetRequestFaker
+  nameWithType: CreatePetRequestFaker
+  fullName: qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker
+- uid: qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker
+  commentId: T:qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker
+  name: CreateQrRequestFaker
+  nameWithType: CreateQrRequestFaker
+  fullName: qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker

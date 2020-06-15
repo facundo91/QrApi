@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Dtos
+  commentId: N:qrAPI.DAL.Dtos
+  id: qrAPI.DAL.Dtos
+  children:
+  - qrAPI.DAL.Dtos.AuthenticationResult
+  - qrAPI.DAL.Dtos.Dto
+  - qrAPI.DAL.Dtos.Gender
+  - qrAPI.DAL.Dtos.PetDto
+  - qrAPI.DAL.Dtos.QrDto
+  - qrAPI.DAL.Dtos.RefreshToken
+  - qrAPI.DAL.Dtos.UserDto
+  - qrAPI.DAL.Dtos.UserPetDto
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Dtos
+  nameWithType: qrAPI.DAL.Dtos
+  fullName: qrAPI.DAL.Dtos
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Dtos.AuthenticationResult
+  commentId: T:qrAPI.DAL.Dtos.AuthenticationResult
+  name: AuthenticationResult
+  nameWithType: AuthenticationResult
+  fullName: qrAPI.DAL.Dtos.AuthenticationResult
+- uid: qrAPI.DAL.Dtos.Dto
+  commentId: T:qrAPI.DAL.Dtos.Dto
+  parent: qrAPI.DAL.Dtos
+  name: Dto
+  nameWithType: Dto
+  fullName: qrAPI.DAL.Dtos.Dto
+- uid: qrAPI.DAL.Dtos.Gender
+  commentId: T:qrAPI.DAL.Dtos.Gender
+  parent: qrAPI.DAL.Dtos
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.DAL.Dtos.Gender
+- uid: qrAPI.DAL.Dtos.PetDto
+  commentId: T:qrAPI.DAL.Dtos.PetDto
+  parent: qrAPI.DAL.Dtos
+  name: PetDto
+  nameWithType: PetDto
+  fullName: qrAPI.DAL.Dtos.PetDto
+- uid: qrAPI.DAL.Dtos.QrDto
+  commentId: T:qrAPI.DAL.Dtos.QrDto
+  parent: qrAPI.DAL.Dtos
+  name: QrDto
+  nameWithType: QrDto
+  fullName: qrAPI.DAL.Dtos.QrDto
+- uid: qrAPI.DAL.Dtos.RefreshToken
+  commentId: T:qrAPI.DAL.Dtos.RefreshToken
+  parent: qrAPI.DAL.Dtos
+  name: RefreshToken
+  nameWithType: RefreshToken
+  fullName: qrAPI.DAL.Dtos.RefreshToken
+- uid: qrAPI.DAL.Dtos.UserDto
+  commentId: T:qrAPI.DAL.Dtos.UserDto
+  parent: qrAPI.DAL.Dtos
+  name: UserDto
+  nameWithType: UserDto
+  fullName: qrAPI.DAL.Dtos.UserDto
+- uid: qrAPI.DAL.Dtos.UserPetDto
+  commentId: T:qrAPI.DAL.Dtos.UserPetDto
+  name: UserPetDto
+  nameWithType: UserPetDto
+  fullName: qrAPI.DAL.Dtos.UserPetDto
+- uid: qrAPI.DAL.Dtos
+  commentId: N:qrAPI.DAL.Dtos
+  name: qrAPI.DAL.Dtos
+  nameWithType: qrAPI.DAL.Dtos
+  fullName: qrAPI.DAL.Dtos

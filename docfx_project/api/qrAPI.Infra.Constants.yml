@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Constants
+  commentId: N:qrAPI.Infra.Constants
+  id: qrAPI.Infra.Constants
+  children:
+  - qrAPI.Infra.Constants.AuthorizationConstants
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Constants
+  nameWithType: qrAPI.Infra.Constants
+  fullName: qrAPI.Infra.Constants
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Constants.AuthorizationConstants
+  commentId: T:qrAPI.Infra.Constants.AuthorizationConstants
+  name: AuthorizationConstants
+  nameWithType: AuthorizationConstants
+  fullName: qrAPI.Infra.Constants.AuthorizationConstants

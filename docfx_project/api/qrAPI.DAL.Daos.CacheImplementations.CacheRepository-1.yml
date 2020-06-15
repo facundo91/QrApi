@@ -1,0 +1,1571 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  commentId: T:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  id: CacheRepository`1
+  parent: qrAPI.DAL.Daos.CacheImplementations
+  children:
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.#ctor(qrAPI.DAL.Daos.Interfaces.IRepository{`0},qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.DeleteAsync(System.Object)
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GenerateCacheKeyFromQuery(System.String)
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAndCacheAsync(System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}},System.Func{System.String})
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAsync
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAsync(System.Object)
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.InsertAsync(`0)
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.UpdateAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: CacheRepository<T>
+  nameWithType: CacheRepository<T>
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CacheRepository
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: 'public class CacheRepository<T> : IRepository<T> where T : Dto'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class CacheRepository(Of T As Dto)
+
+          Implements IRepository(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: CacheRepository(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T)
+  name.vb: CacheRepository(Of T)
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.#ctor(qrAPI.DAL.Daos.Interfaces.IRepository{`0},qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.#ctor(qrAPI.DAL.Daos.Interfaces.IRepository{`0},qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+  id: '#ctor(qrAPI.DAL.Daos.Interfaces.IRepository{`0},qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)'
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: CacheRepository(IRepository<T>, MemoryCacheSettings, ICacheHelper)
+  nameWithType: CacheRepository<T>.CacheRepository(IRepository<T>, MemoryCacheSettings, ICacheHelper)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.CacheRepository(qrAPI.DAL.Daos.Interfaces.IRepository<T>, qrAPI.Infra.Settings.MemoryCacheSettings, qrAPI.Infra.Cache.ICacheHelper)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 16
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: public CacheRepository(IRepository<T> repository, MemoryCacheSettings memoryCacheOptions, ICacheHelper cacheHelper)
+    parameters:
+    - id: repository
+      type: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+    - id: memoryCacheOptions
+      type: qrAPI.Infra.Settings.MemoryCacheSettings
+    - id: cacheHelper
+      type: qrAPI.Infra.Cache.ICacheHelper
+    content.vb: Public Sub New(repository As IRepository(Of T), memoryCacheOptions As MemoryCacheSettings, cacheHelper As ICacheHelper)
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.#ctor*
+  nameWithType.vb: CacheRepository(Of T).CacheRepository(IRepository(Of T), MemoryCacheSettings, ICacheHelper)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).CacheRepository(qrAPI.DAL.Daos.Interfaces.IRepository(Of T), qrAPI.Infra.Settings.MemoryCacheSettings, qrAPI.Infra.Cache.ICacheHelper)
+  name.vb: CacheRepository(IRepository(Of T), MemoryCacheSettings, ICacheHelper)
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAsync
+  id: GetAllAsync
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: CacheRepository<T>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 23
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: public Task<IEnumerable<T>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}
+    content.vb: Public Function GetAllAsync As Task(Of IEnumerable(Of T))
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.GetAllAsync
+  nameWithType.vb: CacheRepository(Of T).GetAllAsync()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GetAllAsync()
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAsync(System.Object)
+  id: GetAsync(System.Object)
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Object)
+  nameWithType: CacheRepository<T>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GetAsync(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 26
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: public Task<T> GetAsync(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Function GetAsync(id As Object) As Task(Of T)
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.GetAsync(System.Object)
+  nameWithType.vb: CacheRepository(Of T).GetAsync(Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GetAsync(System.Object)
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.InsertAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.InsertAsync(`0)
+  id: InsertAsync(`0)
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: InsertAsync(T)
+  nameWithType: CacheRepository<T>.InsertAsync(T)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.InsertAsync(T)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: InsertAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 30
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: public Task<T> InsertAsync(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Function InsertAsync(obj As T) As Task(Of T)
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.InsertAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.InsertAsync({T})
+  nameWithType.vb: CacheRepository(Of T).InsertAsync(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).InsertAsync(T)
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.UpdateAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.UpdateAsync(`0)
+  id: UpdateAsync(`0)
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(T)
+  nameWithType: CacheRepository<T>.UpdateAsync(T)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.UpdateAsync(T)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UpdateAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 32
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: public Task<bool> UpdateAsync(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function UpdateAsync(obj As T) As Task(Of Boolean)
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.UpdateAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.UpdateAsync({T})
+  nameWithType.vb: CacheRepository(Of T).UpdateAsync(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).UpdateAsync(T)
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.DeleteAsync(System.Object)
+  id: DeleteAsync(System.Object)
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Object)
+  nameWithType: CacheRepository<T>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.DeleteAsync(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DeleteAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 34
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: public Task<bool> DeleteAsync(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function DeleteAsync(id As Object) As Task(Of Boolean)
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.DeleteAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.DeleteAsync(System.Object)
+  nameWithType.vb: CacheRepository(Of T).DeleteAsync(Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).DeleteAsync(System.Object)
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAndCacheAsync(System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}},System.Func{System.String})
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAndCacheAsync(System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}},System.Func{System.String})
+  id: GetAllAndCacheAsync(System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}},System.Func{System.String})
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllAndCacheAsync(Func<Task<IEnumerable<T>>>, Func<String>)
+  nameWithType: CacheRepository<T>.GetAllAndCacheAsync(Func<Task<IEnumerable<T>>>, Func<String>)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GetAllAndCacheAsync(System.Func<System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>>, System.Func<System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllAndCacheAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 36
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: protected Task<IEnumerable<T>> GetAllAndCacheAsync(Func<Task<IEnumerable<T>>> function, Func<string> keyGeneratorFunction)
+    parameters:
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}}
+    - id: keyGeneratorFunction
+      type: System.Func{System.String}
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}
+    content.vb: Protected Function GetAllAndCacheAsync(function As Func(Of Task(Of IEnumerable(Of T))), keyGeneratorFunction As Func(Of String)) As Task(Of IEnumerable(Of T))
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAndCacheAsync*
+  nameWithType.vb: CacheRepository(Of T).GetAllAndCacheAsync(Func(Of Task(Of IEnumerable(Of T))), Func(Of String))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GetAllAndCacheAsync(System.Func(Of System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of T))), System.Func(Of System.String))
+  name.vb: GetAllAndCacheAsync(Func(Of Task(Of IEnumerable(Of T))), Func(Of String))
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GenerateCacheKeyFromQuery(System.String)
+  commentId: M:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GenerateCacheKeyFromQuery(System.String)
+  id: GenerateCacheKeyFromQuery(System.String)
+  parent: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GenerateCacheKeyFromQuery(String)
+  nameWithType: CacheRepository<T>.GenerateCacheKeyFromQuery(String)
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GenerateCacheKeyFromQuery(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GenerateCacheKeyFromQuery
+    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    startLine: 62
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.CacheImplementations
+  syntax:
+    content: protected static string GenerateCacheKeyFromQuery(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Protected Shared Function GenerateCacheKeyFromQuery(key As String) As String
+  overload: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GenerateCacheKeyFromQuery*
+  nameWithType.vb: CacheRepository(Of T).GenerateCacheKeyFromQuery(String)
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GenerateCacheKeyFromQuery(System.String)
+references:
+- uid: qrAPI.DAL.Daos.CacheImplementations
+  commentId: N:qrAPI.DAL.Daos.CacheImplementations
+  name: qrAPI.DAL.Daos.CacheImplementations
+  nameWithType: qrAPI.DAL.Daos.CacheImplementations
+  fullName: qrAPI.DAL.Daos.CacheImplementations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository{`0}
+  parent: qrAPI.DAL.Daos.Interfaces
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.#ctor*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.#ctor
+  name: CacheRepository
+  nameWithType: CacheRepository<T>.CacheRepository
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.CacheRepository
+  nameWithType.vb: CacheRepository(Of T).CacheRepository
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).CacheRepository
+- uid: qrAPI.Infra.Settings.MemoryCacheSettings
+  commentId: T:qrAPI.Infra.Settings.MemoryCacheSettings
+  parent: qrAPI.Infra.Settings
+  name: MemoryCacheSettings
+  nameWithType: MemoryCacheSettings
+  fullName: qrAPI.Infra.Settings.MemoryCacheSettings
+- uid: qrAPI.Infra.Cache.ICacheHelper
+  commentId: T:qrAPI.Infra.Cache.ICacheHelper
+  parent: qrAPI.Infra.Cache
+  name: ICacheHelper
+  nameWithType: ICacheHelper
+  fullName: qrAPI.Infra.Cache.ICacheHelper
+- uid: qrAPI.Infra.Settings
+  commentId: N:qrAPI.Infra.Settings
+  name: qrAPI.Infra.Settings
+  nameWithType: qrAPI.Infra.Settings
+  fullName: qrAPI.Infra.Settings
+- uid: qrAPI.Infra.Cache
+  commentId: N:qrAPI.Infra.Cache
+  name: qrAPI.Infra.Cache
+  nameWithType: qrAPI.Infra.Cache
+  fullName: qrAPI.Infra.Cache
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAsync*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAsync
+  name: GetAllAsync
+  nameWithType: CacheRepository<T>.GetAllAsync
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GetAllAsync
+  nameWithType.vb: CacheRepository(Of T).GetAllAsync
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GetAllAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.GetAllAsync
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IRepository<T>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.GetAllAsync()
+  nameWithType.vb: IRepository(Of T).GetAllAsync()
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository<T>.GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository(Of T).GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<T>>
+  nameWithType: Task<IEnumerable<T>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>
+  nameWithType.vb: Task(Of IEnumerable(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Task(Of IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IRepository<TDto>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync()
+  nameWithType.vb: IRepository(Of TDto).GetAllAsync()
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository<TDto>.GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository(Of TDto).GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAsync*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAsync
+  name: GetAsync
+  nameWithType: CacheRepository<T>.GetAsync
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GetAsync
+  nameWithType.vb: CacheRepository(Of T).GetAsync
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GetAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.GetAsync(System.Object)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  name: GetAsync(Object)
+  nameWithType: IRepository<T>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.GetAsync(System.Object)
+  nameWithType.vb: IRepository(Of T).GetAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).GetAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository<T>.GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository(Of T).GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  isExternal: true
+  name: GetAsync(Object)
+  nameWithType: IRepository<TDto>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).GetAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository<TDto>.GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository(Of TDto).GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.InsertAsync*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.InsertAsync
+  name: InsertAsync
+  nameWithType: CacheRepository<T>.InsertAsync
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.InsertAsync
+  nameWithType.vb: CacheRepository(Of T).InsertAsync
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).InsertAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.InsertAsync({T})
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.InsertAsync(`0)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  name: InsertAsync(T)
+  nameWithType: IRepository<T>.InsertAsync(T)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.InsertAsync(T)
+  nameWithType.vb: IRepository(Of T).InsertAsync(T)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).InsertAsync(T)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository<T>.InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository(Of T).InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  name: InsertAsync(TDto)
+  nameWithType: IRepository<TDto>.InsertAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).InsertAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository<TDto>.InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository(Of TDto).InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.UpdateAsync*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.UpdateAsync
+  name: UpdateAsync
+  nameWithType: CacheRepository<T>.UpdateAsync
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.UpdateAsync
+  nameWithType.vb: CacheRepository(Of T).UpdateAsync
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).UpdateAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.UpdateAsync({T})
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.UpdateAsync(`0)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(T)
+  nameWithType: IRepository<T>.UpdateAsync(T)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.UpdateAsync(T)
+  nameWithType.vb: IRepository(Of T).UpdateAsync(T)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).UpdateAsync(T)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository<T>.UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository(Of T).UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(TDto)
+  nameWithType: IRepository<TDto>.UpdateAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).UpdateAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository<TDto>.UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository(Of TDto).UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.DeleteAsync*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.DeleteAsync
+  name: DeleteAsync
+  nameWithType: CacheRepository<T>.DeleteAsync
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.DeleteAsync
+  nameWithType.vb: CacheRepository(Of T).DeleteAsync
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).DeleteAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.DeleteAsync(System.Object)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{T}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  name: DeleteAsync(Object)
+  nameWithType: IRepository<T>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.DeleteAsync(System.Object)
+  nameWithType.vb: IRepository(Of T).DeleteAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).DeleteAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository<T>.DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<T>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository(Of T).DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of T).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  isExternal: true
+  name: DeleteAsync(Object)
+  nameWithType: IRepository<TDto>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).DeleteAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository<TDto>.DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository(Of TDto).DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAndCacheAsync*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GetAllAndCacheAsync
+  name: GetAllAndCacheAsync
+  nameWithType: CacheRepository<T>.GetAllAndCacheAsync
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GetAllAndCacheAsync
+  nameWithType.vb: CacheRepository(Of T).GetAllAndCacheAsync
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GetAllAndCacheAsync
+- uid: System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task<IEnumerable<T>>>
+  nameWithType: Func<Task<IEnumerable<T>>>
+  fullName: System.Func<System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>>
+  nameWithType.vb: Func(Of Task(Of IEnumerable(Of T)))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of T)))
+  name.vb: Func(Of Task(Of IEnumerable(Of T)))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.String}
+  commentId: T:System.Func{System.String}
+  parent: System
+  definition: System.Func`1
+  name: Func<String>
+  nameWithType: Func<String>
+  fullName: System.Func<System.String>
+  nameWithType.vb: Func(Of String)
+  fullName.vb: System.Func(Of System.String)
+  name.vb: Func(Of String)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GenerateCacheKeyFromQuery*
+  commentId: Overload:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1.GenerateCacheKeyFromQuery
+  name: GenerateCacheKeyFromQuery
+  nameWithType: CacheRepository<T>.GenerateCacheKeyFromQuery
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>.GenerateCacheKeyFromQuery
+  nameWithType.vb: CacheRepository(Of T).GenerateCacheKeyFromQuery
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T).GenerateCacheKeyFromQuery
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

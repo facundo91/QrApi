@@ -6,7 +6,7 @@ install:
   - dotnet restore
 script:
   - dotnet build
-  - dotnet test qrAPI.IntegrationTests/qrAPI.IntegrationTests.csproj
-  - dotnet test qrAPI.Logic.Tests/qrAPI.Logic.Tests.csproj
-  - dotnet test qrAPI.DAL.Tests/qrAPI.DAL.Tests.csproj
-  - dotnet test qrAPI.Presentation.Tests/qrAPI.Presentation.Tests.csproj
+  - dotnet test src/qrAPI.Tests/qrAPI.Tests.csproj
+  - dotnet test src/qrAPI.App.Tests/qrAPI.App.Tests.csproj
+  - dotnet test src/qrAPI.DAL.Tests/qrAPI.DAL.Tests.csproj
+  - dotnet test src/qrAPI.Web.Tests/qrAPI.Web.Tests.csproj

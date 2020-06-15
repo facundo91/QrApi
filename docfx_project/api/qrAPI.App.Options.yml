@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Options
+  commentId: N:qrAPI.App.Options
+  id: qrAPI.App.Options
+  children:
+  - qrAPI.App.Options.JwtOptions
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Options
+  nameWithType: qrAPI.App.Options
+  fullName: qrAPI.App.Options
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Options.JwtOptions
+  commentId: T:qrAPI.App.Options.JwtOptions
+  parent: qrAPI.App.Options
+  name: JwtOptions
+  nameWithType: JwtOptions
+  fullName: qrAPI.App.Options.JwtOptions
+- uid: qrAPI.App.Options
+  commentId: N:qrAPI.App.Options
+  name: qrAPI.App.Options
+  nameWithType: qrAPI.App.Options
+  fullName: qrAPI.App.Options

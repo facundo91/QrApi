@@ -1,0 +1,2601 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/facun/source/repos/QrApi/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Breed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Breed.html",
+          "hash": "+nRiGQ3Axaj6FTc3el14aA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.DomainObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.DomainObject.html",
+          "hash": "NqpqyMvWpYXFG9VfDqSldQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Fakers.BreedFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Fakers.BreedFaker.html",
+          "hash": "a2q/KxG/YwiBULg1ZkaQzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Fakers.LocationFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Fakers.LocationFaker.html",
+          "hash": "CTQ7PQLJ2ZFsfIJPiNTVSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Fakers.PetFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Fakers.PetFaker.html",
+          "hash": "JKsN0fBm+u44BJQEw9xYXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Fakers.QrFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Fakers.QrFaker.html",
+          "hash": "sW8fxuv5LJ8C9jdkqkgbXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Fakers.UserFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Fakers.UserFaker.html",
+          "hash": "qzu3++34G0znnMZoLp/caQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Fakers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Fakers.html",
+          "hash": "aYnDk5xjhgPllB7v8tbOSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Gender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Gender.html",
+          "hash": "B8mAiIhc87TJXvLnw/HJmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Location.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Location.html",
+          "hash": "U/1MBt63z2qHG9p2j3onGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Pet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Pet.html",
+          "hash": "rtn/m1KDBixubwUBBjAflw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Qr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Qr.html",
+          "hash": "lrJVeAJ/QujxaOPA0zr8zg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Scan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Scan.html",
+          "hash": "t+/Mp4PyEXKkTR7oHeDQhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.User.html",
+          "hash": "Ined0Ig8tBj/8YlTcy+wSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Validators.PetValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Validators.PetValidator.html",
+          "hash": "7KZJAvnBwU5xbgX8L/qSug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Validators.QrValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Validators.QrValidator.html",
+          "hash": "uGehJWQVIHh7H3ZY/hnLrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.Validators.html",
+          "hash": "V8LojixenMhdo/d7+UWT9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Domain.html",
+          "hash": "RX80kjHvrGrm4hog+MIUiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Options.JwtOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Options.JwtOptions.html",
+          "hash": "9qAlFDVRuJcw+izXimPsRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Options.html",
+          "hash": "EDxNfgD7nho4nHnn/8Kgwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Implementations.AbstractGenericService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Implementations.AbstractGenericService-2.html",
+          "hash": "Vd4IXVS5oRzl+FFeMNxsvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Implementations.IdentityService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Implementations.IdentityService.html",
+          "hash": "S6enoKMIx00IfxXom0nGgw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Implementations.PetService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Implementations.PetService.html",
+          "hash": "DIgOKgCkbU2/9TRcd4D/Yw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Implementations.QrService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Implementations.QrService.html",
+          "hash": "r7NqbcBVNszYgrSrrRMV1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Implementations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Implementations.html",
+          "hash": "GzREGGtlTz63i/hTCV/jPg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Interfaces.IGenericService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Interfaces.IGenericService-1.html",
+          "hash": "TEtZq2/DKjsu2cT1/4Qlbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Interfaces.IIdentityService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Interfaces.IIdentityService.html",
+          "hash": "SLKRmqczy+RFPjsw6xh/YQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Interfaces.IQrService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Interfaces.IQrService.html",
+          "hash": "LyVkNVEuCDtAmCsfJiDWfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Services.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Services.Interfaces.html",
+          "hash": "gPiye3jaY3zfO5OCz5HWPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Validations.CommonValidations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Validations.CommonValidations.html",
+          "hash": "gtAdJIDkZ9DhK6NtyA/X6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.App.Validations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.App.Validations.html",
+          "hash": "9cxfKKFp+QVtwLYB50NInw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Authorization.WorksForCompanyHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Authorization.WorksForCompanyHandler.html",
+          "hash": "VArtacXWgEPC1n/B2RtN5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Authorization.WorksForCompanyRequirement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Authorization.WorksForCompanyRequirement.html",
+          "hash": "+nZ2lf7SlChkYsMkDUaMKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Authorization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Authorization.html",
+          "hash": "4ETvnlwlAg1DaS5l1L8cWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.ApiVersions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.ApiVersions.html",
+          "hash": "veRvFlOPs8a9xuN4pFCzjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.HealthChecks.HealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.HealthChecks.HealthCheck.html",
+          "hash": "G4T9wxEU7/SaKcYvX1KFDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.HealthChecks.HealthCheckResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.HealthChecks.HealthCheckResponse.html",
+          "hash": "Tnz796p4r3MS7uiyKAcn8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.HealthChecks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.HealthChecks.html",
+          "hash": "oG2RIW2ua0RD4F391e1Saw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.Identity.html",
+          "hash": "24yxMVGGclBVRwU1DzlhTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.Pets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.Pets.html",
+          "hash": "kNWXw3c+2oP10XHdO3PdFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.Qrs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.Qrs.html",
+          "hash": "bhT03luFGF4cnB4rwPpBCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.ApiRoutes.html",
+          "hash": "yUtp1NRJHC+vU0ZwwgraBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker.html",
+          "hash": "v1FQUwgKRTk5NedEd3opVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker.html",
+          "hash": "K1wtPwqqTU9JRmaWcRSZJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Create.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Create.html",
+          "hash": "kyj7KFa/9aVwzFbXX9IcVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Update.UpdatePetRequestFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Update.UpdatePetRequestFaker.html",
+          "hash": "Pz1LDKlV+SFYBQjPN7tQug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Update.UpdateQrRequestFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Update.UpdateQrRequestFaker.html",
+          "hash": "vfufCp6CmgC//0Cu5+preQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Requests.Update.html",
+          "hash": "Bq/fXikEY/7qvAqpDeujnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker.html",
+          "hash": "cxKyek3jUmAtDL01eiIFww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Fakers.Responses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Fakers.Responses.html",
+          "hash": "pkPyDKXVV8097F1jh9pvKA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.html",
+          "hash": "6ssiq/9PJxuQg1M123lx2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Create.CreateQrRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Create.CreateQrRequest.html",
+          "hash": "slS9wdtbtpQC2H0/ALswFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Create.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Create.html",
+          "hash": "n3uoitml0M0dDeNQ0N/uqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Gender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Gender.html",
+          "hash": "wJfowu/qKXYlSRQlYuNPGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.RefreshTokenRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.RefreshTokenRequest.html",
+          "hash": "eD64b3SyLzJQp9NgfeG95w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest.html",
+          "hash": "Vjq3vIo2Zzf/o02wq5L2nA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest.html",
+          "hash": "a7SVV2ahbq/Wu48h1Odz+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.Update.html",
+          "hash": "NRPEQNcV+Obx37h07reJUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.UserLoginRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.UserLoginRequest.html",
+          "hash": "MbyuQcgH4wlPDEIoeoKdbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.UserRegistrationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.UserRegistrationRequest.html",
+          "hash": "PtTtH5kxGqcdD3/cKPb9jA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Requests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Requests.html",
+          "hash": "zBBn9AL19WlxuGJeU8eaGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.AuthFailedResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.AuthFailedResponse.html",
+          "hash": "mVFTyV/Au5XLk4iKqMZR9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.AuthSuccessResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.AuthSuccessResponse.html",
+          "hash": "VR/B8+6WHZRIdcJLr+o1JQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.ErrorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.ErrorModel.html",
+          "hash": "p/G1klsiWI35QZowLvOKjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.ErrorResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.ErrorResponse.html",
+          "hash": "8c+hwNnTj0viydi+lMTHSA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.PagedResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.PagedResponse-1.html",
+          "hash": "fi3OeVwv1TE/lTSW9PWU8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.PetResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.PetResponse.html",
+          "hash": "T8y56pcGA7hjIbQ4v2Ob4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.QrResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.QrResponse.html",
+          "hash": "lN76QYKxrA8lp1dyUWktXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.Response-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.Response-1.html",
+          "hash": "xAPpNgPhBdw8I+Z9Kjaw7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.UserResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.UserResponse.html",
+          "hash": "YuOam8FoTqgXXwyVpXJgmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Responses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Responses.html",
+          "hash": "FiTw1nwjpX+dmDdgkA4QDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator.html",
+          "hash": "FULnQF5gF/O8Cx0adDRNHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Validators.Create.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Validators.Create.html",
+          "hash": "L0b9Jj6LiG/V2+MtmzwaRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator.html",
+          "hash": "KIMNDqA13Op3XqiGUGRwUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator.html",
+          "hash": "FDlqvT0fAwXolQ2EU1F6Bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.Validators.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.Validators.Update.html",
+          "hash": "DfW52SblN3b67g/ImF2WuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.v1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.v1.html",
+          "hash": "7HjQENEHXonX9/TKS0u60Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Contracts.html",
+          "hash": "rj7X5IJzv1An8nQcoluJIA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.CacheImplementations.CacheRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.CacheImplementations.CacheRepository-1.html",
+          "hash": "P52qgeCn9z+7iv9NkPB1Rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository.html",
+          "hash": "ntTZ6w/454MtVxXscdcPcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.CacheImplementations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.CacheImplementations.html",
+          "hash": "Q25wSe1aD1RLso9obc1zMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.EfImplementations.EfRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.EfImplementations.EfRepository-1.html",
+          "hash": "YeNZKIFz7Q5g/5wARaRg4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.EfImplementations.PetEfRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.EfImplementations.PetEfRepository.html",
+          "hash": "hlfb9B+v2NZnuS5YONrgLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.EfImplementations.QrEfRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.EfImplementations.QrEfRepository.html",
+          "hash": "w+w1YThLwYf0nLGV0FzJsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository.html",
+          "hash": "6YeKWL5VV7nOuVb+AdOkUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.EfImplementations.UserPetRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.EfImplementations.UserPetRepository.html",
+          "hash": "whz8ADOd+/So1LALuFd0YQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.EfImplementations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.EfImplementations.html",
+          "hash": "PDDxxS1K3tT3lAA/mwhCyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.Interfaces.IPetRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.Interfaces.IPetRepository.html",
+          "hash": "9fPZVrt462/HeSOax0BUWg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository.html",
+          "hash": "9VyEFz8FWBYHdt8gVi15uw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.Interfaces.IRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.Interfaces.IRepository-1.html",
+          "hash": "Jiii0fI7YOyM2pg1m34znw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.Interfaces.IUserPetRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.Interfaces.IUserPetRepository.html",
+          "hash": "A62ld/bYXFAgmT5C7SmNbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.Interfaces.html",
+          "hash": "5wpEvQdLgxIf8LOliyl8ow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.MongoImplementations.MongoRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.MongoImplementations.MongoRepository-1.html",
+          "hash": "QhkPRbwQxGPX43D6dE+tjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository.html",
+          "hash": "c8GnFqtVJwHigzGlpNPnug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Daos.MongoImplementations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Daos.MongoImplementations.html",
+          "hash": "hRbCJ/7a6hjJ1IaOqv+f5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext.html",
+          "hash": "er03WJSOsJeIWYyMUz2Pog=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Contexts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Contexts.html",
+          "hash": "3Cj5WPVgsnXMUREBTBWefg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration.html",
+          "hash": "JLN/vD9QgrACVWElwd5ovg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.html",
+          "hash": "6ILHaF+eGZb6Bo/NmUsH/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration.html",
+          "hash": "35mJ+OHC1musukEX6hnr1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.EntityTypeConfigurations.html",
+          "hash": "6UfHwe+uej4uTCVGpNPUyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema.html",
+          "hash": "cc3sDY/6rcVgDuaOHLe6Tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.FixingQrs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.FixingQrs.html",
+          "hash": "l9nFrM9J6PKYvHFoFi7JOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath.html",
+          "hash": "qHkbLRDkCZflpjl96izuTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.GuidForString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.GuidForString.html",
+          "hash": "Y5N+v3g17yw2TKAij/sKyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos.html",
+          "hash": "jnKVc9ky9ziBw7LefwInzg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.Initial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.Initial.html",
+          "hash": "ww2MFXFpwWj3/9fCJB11/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.UserPetsTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.UserPetsTable.html",
+          "hash": "uvg1YVOEZRz4k3nMfzWNEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename.html",
+          "hash": "VZVX+1mekB2nk4b8jqY6NA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.EFData.Migrations.html",
+          "hash": "4foriilxw9Jemv4wBVGEBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.IDataContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.IDataContext.html",
+          "hash": "LqyAAKgwFGYmY8Zm5UPuyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.MongoData.MongoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.MongoData.MongoContext.html",
+          "hash": "TCxYFFPzX2pUR3I2IytY6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.MongoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.MongoData.html",
+          "hash": "z1mZ2aAWzdRb6YiYu2PvZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Data.html",
+          "hash": "hSNY+g38uWcJK0tECn8HvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.AuthenticationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.AuthenticationResult.html",
+          "hash": "XoNipYdy6G0jEKlTGV9GEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.Dto.html",
+          "hash": "T62k7VYIQXHnIYtgl0enDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.Fakers.PetDtoFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.Fakers.PetDtoFaker.html",
+          "hash": "l4p8sqYPgudCB9pLIT+nHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.Fakers.QrDtoFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.Fakers.QrDtoFaker.html",
+          "hash": "M/6bJ3KZT1MzwGu20QxlFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker.html",
+          "hash": "SJpuvPaKgwUX0I2DFFTvgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.Fakers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.Fakers.html",
+          "hash": "XWUFm8vkxEhnOOHXNKwPTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.Gender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.Gender.html",
+          "hash": "pwu/GeT2v7xfPdY4LuPTkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.PetDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.PetDto.html",
+          "hash": "tNG9m18VRL2uFl8uCSnLXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.QrDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.QrDto.html",
+          "hash": "RG6jAlk//P0XnYee8USy/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.RefreshToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.RefreshToken.html",
+          "hash": "n438rf9Y5qjWYU1U8h8AaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.UserDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.UserDto.html",
+          "hash": "427+m7xZ8Z70xDKOQ0FXpQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.UserPetDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.UserPetDto.html",
+          "hash": "5UxC5qRwne4j3xHrJLAVxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Dtos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Dtos.html",
+          "hash": "jDJQg5OKfzidoanG/+j1dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Options.MongoOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Options.MongoOptions.html",
+          "hash": "fzuXq3OmP5PslsP5mi2sGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.DAL.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.DAL.Options.html",
+          "hash": "14m+yWSDMo3QJ9vNAOn2/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.HealthChecks.DataBaseHealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.HealthChecks.DataBaseHealthCheck.html",
+          "hash": "AVuUO4wrfEzKO9VI4XBTlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.HealthChecks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.HealthChecks.html",
+          "hash": "P0JLSbfpbjOx5dl0G3CJ/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Cache.ICacheHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Cache.ICacheHelper.html",
+          "hash": "8VdROj9ZiZprTUQTloPs4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Cache.RedisCacheHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Cache.RedisCacheHelper.html",
+          "hash": "0UMLUm3BLPpSKc+isQqXVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Cache.html",
+          "hash": "i3iOz3EMcJNjAmeAeUoJyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Constants.AuthorizationConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Constants.AuthorizationConstants.html",
+          "hash": "Glbxcppdrq+75Va0Jhlr7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Constants.html",
+          "hash": "JHwja1Z9UJLFTcpT53+n+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Exceptions.DbDeleteException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Exceptions.DbDeleteException.html",
+          "hash": "QhoEtJFi4OeqNKbOYHDe1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Exceptions.IdNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Exceptions.IdNotFoundException.html",
+          "hash": "5mgJ82rGrAqcb7kfew8Pnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Exceptions.InvalidIdException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Exceptions.InvalidIdException.html",
+          "hash": "CL6xCvhmYKlLPKeRDIAsOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Exceptions.html",
+          "hash": "0b5ZUg1iRJEOnZvAUJ75rQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Extensions.GeneralExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Extensions.GeneralExtensions.html",
+          "hash": "51sylVNlOQD5wYWArALSRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Extensions.html",
+          "hash": "GFviUnmjf/AdmqqEAjIC+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.IMailBroker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.IMailBroker.html",
+          "hash": "Dc65Q0Ne/JHne7HagglTFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.Models.Mail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.Models.Mail.html",
+          "hash": "F4gtuEtKR2jvZ4iM+oDJzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.Models.html",
+          "hash": "MQRuWmPPWKanIv0A9JLCBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.html",
+          "hash": "wG1mzHKrOik1biROLxAWhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.SendGrid.SendGridSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.SendGrid.SendGridSettings.html",
+          "hash": "fLsSooEuQdf7U0oZt0ypRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.SendGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.SendGrid.html",
+          "hash": "ek5oWcaxBSMKlZny+rDBPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.SendGun.SendGunMailBroker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.SendGun.SendGunMailBroker.html",
+          "hash": "jdkLV8n5X0GIgS7A3dy3nA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.SendGun.SendGunSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.SendGun.SendGunSettings.html",
+          "hash": "Mq/6q6AzBtNjRVi9xmKfdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.SendGun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.SendGun.html",
+          "hash": "ONAo1bFrIqQLh8DbS4QqgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.Email.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.Email.html",
+          "hash": "dfie0yeNo/tozNfPD7r8hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.FromParsed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.FromParsed.html",
+          "hash": "UiX83ZVyD4aBLuPimxQ8zA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.TestMailHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.TestMailHelper.html",
+          "hash": "IW0SVtSd4clK9F8NOYNqig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.TestMailResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.TestMailResponse.html",
+          "hash": "UlF5X7IZNpAXLx+6OIntSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.TestMailSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.TestMailSettings.html",
+          "hash": "Qm57EsBCvP0t5MWwYMdfZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.ToParsed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.ToParsed.html",
+          "hash": "RO2G9anzl8b9P3Nd2Z/mgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.TestMail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.TestMail.html",
+          "hash": "x4DMT6vVzP1pEWr+xWP/Wg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Mail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Mail.html",
+          "hash": "VUjMv6K2pTY0SjYagMIveg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Options.FeatureFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Options.FeatureFlags.html",
+          "hash": "FhePahAI7dtpFExDhFHfyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Options.IoCOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Options.IoCOptions.html",
+          "hash": "gWSacXnYI0Iv939W7S3EQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Options.html",
+          "hash": "jiov49cT/a+gpDgppUn3Dw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Settings.MemoryCacheSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Settings.MemoryCacheSettings.html",
+          "hash": "KjwcNAd5/IDx53n/HHFb8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Infra.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Infra.Settings.html",
+          "hash": "tsizrc3jrXc7dhkUk1hJzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.AlertsInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.AlertsInstaller.html",
+          "hash": "RfieORr0w882Ifpb16wDmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.AuthInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.AuthInstaller.html",
+          "hash": "14nPxUFcYQS0uIiUVwjK0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.CacheInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.CacheInstaller.html",
+          "hash": "2onYzXtewiNK/vIH94dSbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.DbInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.DbInstaller.html",
+          "hash": "fe7/lEGN4399rjKviYnZew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.FeatureManagementInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.FeatureManagementInstaller.html",
+          "hash": "bnhhnW3RXVO0nIp3buBZew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.HealthChecksInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.HealthChecksInstaller.html",
+          "hash": "b6KblRYx2tsG3n9mjjaPKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.IInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.IInstaller.html",
+          "hash": "WVUzYA2XXFdeaQlij5j/rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.InstallerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.InstallerExtensions.html",
+          "hash": "D4dPB4YkBmx2VKnxpzLMSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.MvcInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.MvcInstaller.html",
+          "hash": "fwaQQ01y8qYaP65JTa1Pfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.OdataInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.OdataInstaller.html",
+          "hash": "7QlIcKH/ISu3GGCDjMqYfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.ServicesInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.ServicesInstaller.html",
+          "hash": "uwbjQrlAVS+SPYAcH6MOOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.SwaggerInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.SwaggerInstaller.html",
+          "hash": "aa5TGRzMpj7eqH1+Ms7aLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Installers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Installers.html",
+          "hash": "q9cmtUObQQ/N7Xx9NMIWng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.MappingProfiles.DomainToDtoProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.MappingProfiles.DomainToDtoProfile.html",
+          "hash": "bI9bW+bEwMsdXyw6OR2s2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.MappingProfiles.DomainToResponseProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.MappingProfiles.DomainToResponseProfile.html",
+          "hash": "NSKbd2g6jh8wt3XIip+icw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.MappingProfiles.DtoToDomainProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.MappingProfiles.DtoToDomainProfile.html",
+          "hash": "m41gIgkMi6LGVV49zMV1wQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.MappingProfiles.RequestToDomainProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.MappingProfiles.RequestToDomainProfile.html",
+          "hash": "SngSE2JX3vdYDeNBZU3nuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.MappingProfiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.MappingProfiles.html",
+          "hash": "kouoEphvM7HkEvFmBRGwBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Program.html",
+          "hash": "7Zyk1P5Isw2z9tzlb4fHag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Sdk.v1.IIdentityApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Sdk.v1.IIdentityApi.html",
+          "hash": "61XbHX8NjmL4gGlYM6whmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Sdk.v1.IPetsApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Sdk.v1.IPetsApi.html",
+          "hash": "mSNFxwldBY5rTyGqu414Bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Sdk.v1.IQrsApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Sdk.v1.IQrsApi.html",
+          "hash": "jwwurX0zJm5zMzOnqV/arg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Sdk.v1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Sdk.v1.html",
+          "hash": "aSkAnLZgvtSMeqGucrEH8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Startup.html",
+          "hash": "S8BrE5r3aLLWs4igiDU3UA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.ConfigureSwaggerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.ConfigureSwaggerOptions.html",
+          "hash": "BToAM8b2fwzq8Xlfa4CYZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider.html",
+          "hash": "UiNy8EwY/k5MjF6Ci1Y9LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider.html",
+          "hash": "jjJalm0mn4JT5eQSQWcibw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Requests.Create.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Requests.Create.html",
+          "hash": "sZF35Fy0uD4tymz4LY7Lzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider.html",
+          "hash": "wYfLNHGUFvjqwHJEr7I+zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Requests.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Requests.Update.html",
+          "hash": "ontQvQY49IItO+rTB9VINw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.html",
+          "hash": "K8XfgAdy7clkXoUiFVPTZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.Examples.Responses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.Examples.Responses.html",
+          "hash": "P0tpOn2/GrFwC+IgnTOrGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.SwaggerDefaultValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.SwaggerDefaultValues.html",
+          "hash": "1gK31E3byMlTvVwhnmAfTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Swagger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Swagger.html",
+          "hash": "9fEd4YkjFZKyd+TozwD+VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Cache.CachedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Cache.CachedAttribute.html",
+          "hash": "JihBbN8+fJwaZzjeZDU6+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Cache.html",
+          "hash": "czcwhi0K19OTaTdJZFCnHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Controllers.v1.IdentityController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Controllers.v1.IdentityController.html",
+          "hash": "IaOWi7B5Mrc6jdhqpYktcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Controllers.v1.PetsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Controllers.v1.PetsController.html",
+          "hash": "SNb4cDUWgwDRtQNhRQADAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Controllers.v1.QrsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Controllers.v1.QrsController.html",
+          "hash": "gUKc6mhhar+bUUnAMd/6vg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Controllers.v1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Controllers.v1.html",
+          "hash": "hYDGJJVvRl1UetArK3KR9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Filters.ValidationFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Filters.ValidationFilter.html",
+          "hash": "QfIcHruGQmfrNMpTTMh23w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.Web.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.Web.Filters.html",
+          "hash": "aqk/xVLq3V3Nbif/YXJa9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/qrAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/qrAPI.html",
+          "hash": "Us103eQfiBA9bQKP+jEWtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "9vV9OVNE0E9bH2cld/2hpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "gZs3666IJpc2ZHIRmQUHnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "TQx1cR3RridIlIX8sNyWJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "zztv5MIkrfyrZFRP8U6smA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 207,
+          "skipped_file_count": 184
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

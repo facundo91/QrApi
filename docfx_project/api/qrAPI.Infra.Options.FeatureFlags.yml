@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Options.FeatureFlags
+  commentId: T:qrAPI.Infra.Options.FeatureFlags
+  id: FeatureFlags
+  parent: qrAPI.Infra.Options
+  children:
+  - qrAPI.Infra.Options.FeatureFlags.AbTestFlag
+  - qrAPI.Infra.Options.FeatureFlags.EndpointFlag
+  - qrAPI.Infra.Options.FeatureFlags.MethodFlag
+  langs:
+  - csharp
+  - vb
+  name: FeatureFlags
+  nameWithType: FeatureFlags
+  fullName: qrAPI.Infra.Options.FeatureFlags
+  type: Enum
+  source:
+    remote:
+      path: src/qrAPI.Infra/Options/FeatureFlags.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: FeatureFlags
+    path: ../../QrApi/src/qrAPI.Infra/Options/FeatureFlags.cs
+    startLine: 2
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Options
+  syntax:
+    content: public enum FeatureFlags
+    content.vb: Public Enum FeatureFlags
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: qrAPI.Infra.Options.FeatureFlags.EndpointFlag
+  commentId: F:qrAPI.Infra.Options.FeatureFlags.EndpointFlag
+  id: EndpointFlag
+  parent: qrAPI.Infra.Options.FeatureFlags
+  langs:
+  - csharp
+  - vb
+  name: EndpointFlag
+  nameWithType: FeatureFlags.EndpointFlag
+  fullName: qrAPI.Infra.Options.FeatureFlags.EndpointFlag
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Infra/Options/FeatureFlags.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: EndpointFlag
+    path: ../../QrApi/src/qrAPI.Infra/Options/FeatureFlags.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Options
+  syntax:
+    content: EndpointFlag = 0
+    return:
+      type: qrAPI.Infra.Options.FeatureFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Infra.Options.FeatureFlags.MethodFlag
+  commentId: F:qrAPI.Infra.Options.FeatureFlags.MethodFlag
+  id: MethodFlag
+  parent: qrAPI.Infra.Options.FeatureFlags
+  langs:
+  - csharp
+  - vb
+  name: MethodFlag
+  nameWithType: FeatureFlags.MethodFlag
+  fullName: qrAPI.Infra.Options.FeatureFlags.MethodFlag
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Infra/Options/FeatureFlags.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: MethodFlag
+    path: ../../QrApi/src/qrAPI.Infra/Options/FeatureFlags.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Options
+  syntax:
+    content: MethodFlag = 1
+    return:
+      type: qrAPI.Infra.Options.FeatureFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Infra.Options.FeatureFlags.AbTestFlag
+  commentId: F:qrAPI.Infra.Options.FeatureFlags.AbTestFlag
+  id: AbTestFlag
+  parent: qrAPI.Infra.Options.FeatureFlags
+  langs:
+  - csharp
+  - vb
+  name: AbTestFlag
+  nameWithType: FeatureFlags.AbTestFlag
+  fullName: qrAPI.Infra.Options.FeatureFlags.AbTestFlag
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Infra/Options/FeatureFlags.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: AbTestFlag
+    path: ../../QrApi/src/qrAPI.Infra/Options/FeatureFlags.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Options
+  syntax:
+    content: AbTestFlag = 2
+    return:
+      type: qrAPI.Infra.Options.FeatureFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: qrAPI.Infra.Options
+  commentId: N:qrAPI.Infra.Options
+  name: qrAPI.Infra.Options
+  nameWithType: qrAPI.Infra.Options
+  fullName: qrAPI.Infra.Options
+- uid: qrAPI.Infra.Options.FeatureFlags
+  commentId: T:qrAPI.Infra.Options.FeatureFlags
+  parent: qrAPI.Infra.Options
+  name: FeatureFlags
+  nameWithType: FeatureFlags
+  fullName: qrAPI.Infra.Options.FeatureFlags

@@ -1,0 +1,604 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  id: CreatePetRequest
+  parent: qrAPI.Contracts.v1.Requests.Create
+  children:
+  - qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate
+  - qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed
+  - qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender
+  - qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name
+  - qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl
+  langs:
+  - csharp
+  - vb
+  name: CreatePetRequest
+  nameWithType: CreatePetRequest
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CreatePetRequest
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests.Create
+  syntax:
+    content: public class CreatePetRequest
+    content.vb: Public Class CreatePetRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name
+  commentId: P:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name
+  id: Name
+  parent: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CreatePetRequest.Name
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Name
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests.Create
+  syntax:
+    content: >-
+      [Required]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property Name As String
+  overload: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate
+  commentId: P:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate
+  id: Birthdate
+  parent: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  langs:
+  - csharp
+  - vb
+  name: Birthdate
+  nameWithType: CreatePetRequest.Birthdate
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Birthdate
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests.Create
+  syntax:
+    content: public DateTime Birthdate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property Birthdate As Date
+  overload: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender
+  commentId: P:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender
+  id: Gender
+  parent: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  langs:
+  - csharp
+  - vb
+  name: Gender
+  nameWithType: CreatePetRequest.Gender
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Gender
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests.Create
+  syntax:
+    content: >-
+      [EnumDataType(typeof(Gender))]
+
+      public Gender Gender { get; set; }
+    parameters: []
+    return:
+      type: qrAPI.Contracts.v1.Requests.Gender
+    content.vb: >-
+      <EnumDataType(GetType(Gender))>
+
+      Public Property Gender As Gender
+  overload: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.EnumDataTypeAttribute
+    ctor: System.ComponentModel.DataAnnotations.EnumDataTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: qrAPI.Contracts.v1.Requests.Gender
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl
+  commentId: P:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl
+  id: PictureUrl
+  parent: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  langs:
+  - csharp
+  - vb
+  name: PictureUrl
+  nameWithType: CreatePetRequest.PictureUrl
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PictureUrl
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+    startLine: 12
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests.Create
+  syntax:
+    content: >-
+      [Url]
+
+      public string PictureUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Url>
+
+      Public Property PictureUrl As String
+  overload: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.UrlAttribute
+    ctor: System.ComponentModel.DataAnnotations.UrlAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed
+  commentId: P:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed
+  id: Breed
+  parent: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  langs:
+  - csharp
+  - vb
+  name: Breed
+  nameWithType: CreatePetRequest.Breed
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Breed
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Create/CreatePetRequest.cs
+    startLine: 14
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests.Create
+  syntax:
+    content: public string Breed { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Breed As String
+  overload: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.Contracts.v1.Requests.Create
+  commentId: N:qrAPI.Contracts.v1.Requests.Create
+  name: qrAPI.Contracts.v1.Requests.Create
+  nameWithType: qrAPI.Contracts.v1.Requests.Create
+  fullName: qrAPI.Contracts.v1.Requests.Create
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name*
+  commentId: Overload:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name
+  name: Name
+  nameWithType: CreatePetRequest.Name
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate*
+  commentId: Overload:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate
+  name: Birthdate
+  nameWithType: CreatePetRequest.Birthdate
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Birthdate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender*
+  commentId: Overload:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender
+  name: Gender
+  nameWithType: CreatePetRequest.Gender
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Gender
+- uid: qrAPI.Contracts.v1.Requests.Gender
+  commentId: T:qrAPI.Contracts.v1.Requests.Gender
+  parent: qrAPI.Contracts.v1.Requests
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.Contracts.v1.Requests.Gender
+- uid: qrAPI.Contracts.v1.Requests
+  commentId: N:qrAPI.Contracts.v1.Requests
+  name: qrAPI.Contracts.v1.Requests
+  nameWithType: qrAPI.Contracts.v1.Requests
+  fullName: qrAPI.Contracts.v1.Requests
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl*
+  commentId: Overload:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl
+  name: PictureUrl
+  nameWithType: CreatePetRequest.PictureUrl
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.PictureUrl
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed*
+  commentId: Overload:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed
+  name: Breed
+  nameWithType: CreatePetRequest.Breed
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest.Breed

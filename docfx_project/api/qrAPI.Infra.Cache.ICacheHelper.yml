@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Cache.ICacheHelper
+  commentId: T:qrAPI.Infra.Cache.ICacheHelper
+  id: ICacheHelper
+  parent: qrAPI.Infra.Cache
+  children:
+  - qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  - qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  - qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICacheHelper
+  nameWithType: ICacheHelper
+  fullName: qrAPI.Infra.Cache.ICacheHelper
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/ICacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: ICacheHelper
+    path: ../../QrApi/src/qrAPI.Infra/Cache/ICacheHelper.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: public interface ICacheHelper
+    content.vb: Public Interface ICacheHelper
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+  id: GetCachedAsync``1(System.String)
+  parent: qrAPI.Infra.Cache.ICacheHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCachedAsync<T>(String)
+  nameWithType: ICacheHelper.GetCachedAsync<T>(String)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/ICacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetCachedAsync
+    path: ../../QrApi/src/qrAPI.Infra/Cache/ICacheHelper.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: Task<T> GetCachedAsync<T>(string cacheKey)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Function GetCachedAsync(Of T)(cacheKey As String) As Task(Of T)
+  overload: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync*
+  nameWithType.vb: ICacheHelper.GetCachedAsync(Of T)(String)
+  fullName.vb: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(Of T)(System.String)
+  name.vb: GetCachedAsync(Of T)(String)
+- uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  id: GetCachedAsync(System.String)
+  parent: qrAPI.Infra.Cache.ICacheHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCachedAsync(String)
+  nameWithType: ICacheHelper.GetCachedAsync(String)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/ICacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetCachedAsync
+    path: ../../QrApi/src/qrAPI.Infra/Cache/ICacheHelper.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: Task<string> GetCachedAsync(string cacheKey)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function GetCachedAsync(cacheKey As String) As Task(Of String)
+  overload: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync*
+- uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  id: CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  parent: qrAPI.Infra.Cache.ICacheHelper
+  langs:
+  - csharp
+  - vb
+  name: CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  nameWithType: ICacheHelper.CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync<T>(System.String, T, System.Nullable<System.TimeSpan>)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/ICacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CacheAsync
+    path: ../../QrApi/src/qrAPI.Infra/Cache/ICacheHelper.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: Task CacheAsync<T>(string cacheKey, T response, TimeSpan? timeToLive)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    - id: response
+      type: '{T}'
+    - id: timeToLive
+      type: System.Nullable{System.TimeSpan}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CacheAsync(Of T)(cacheKey As String, response As T, timeToLive As TimeSpan?) As Task
+  overload: qrAPI.Infra.Cache.ICacheHelper.CacheAsync*
+  nameWithType.vb: ICacheHelper.CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+  fullName.vb: qrAPI.Infra.Cache.ICacheHelper.CacheAsync(Of T)(System.String, T, System.Nullable(Of System.TimeSpan))
+  name.vb: CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+references:
+- uid: qrAPI.Infra.Cache
+  commentId: N:qrAPI.Infra.Cache
+  name: qrAPI.Infra.Cache
+  nameWithType: qrAPI.Infra.Cache
+  fullName: qrAPI.Infra.Cache
+- uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync*
+  commentId: Overload:qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync
+  name: GetCachedAsync
+  nameWithType: ICacheHelper.GetCachedAsync
+  fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync*
+  commentId: Overload:qrAPI.Infra.Cache.ICacheHelper.CacheAsync
+  name: CacheAsync
+  nameWithType: ICacheHelper.CacheAsync
+  fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<System.TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of System.TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

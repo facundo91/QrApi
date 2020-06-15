@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.EFData.Contexts
+  commentId: N:qrAPI.DAL.Data.EFData.Contexts
+  id: qrAPI.DAL.Data.EFData.Contexts
+  children:
+  - qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Data.EFData.Contexts
+  nameWithType: qrAPI.DAL.Data.EFData.Contexts
+  fullName: qrAPI.DAL.Data.EFData.Contexts
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+  commentId: T:qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+  parent: qrAPI.DAL.Data.EFData.Contexts
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+- uid: qrAPI.DAL.Data.EFData.Contexts
+  commentId: N:qrAPI.DAL.Data.EFData.Contexts
+  name: qrAPI.DAL.Data.EFData.Contexts
+  nameWithType: qrAPI.DAL.Data.EFData.Contexts
+  fullName: qrAPI.DAL.Data.EFData.Contexts

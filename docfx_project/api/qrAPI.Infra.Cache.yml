@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Cache
+  commentId: N:qrAPI.Infra.Cache
+  id: qrAPI.Infra.Cache
+  children:
+  - qrAPI.Infra.Cache.ICacheHelper
+  - qrAPI.Infra.Cache.RedisCacheHelper
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Cache
+  nameWithType: qrAPI.Infra.Cache
+  fullName: qrAPI.Infra.Cache
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Cache.ICacheHelper
+  commentId: T:qrAPI.Infra.Cache.ICacheHelper
+  parent: qrAPI.Infra.Cache
+  name: ICacheHelper
+  nameWithType: ICacheHelper
+  fullName: qrAPI.Infra.Cache.ICacheHelper
+- uid: qrAPI.Infra.Cache.RedisCacheHelper
+  commentId: T:qrAPI.Infra.Cache.RedisCacheHelper
+  name: RedisCacheHelper
+  nameWithType: RedisCacheHelper
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper
+- uid: qrAPI.Infra.Cache
+  commentId: N:qrAPI.Infra.Cache
+  name: qrAPI.Infra.Cache
+  nameWithType: qrAPI.Infra.Cache
+  fullName: qrAPI.Infra.Cache

@@ -1,0 +1,689 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  commentId: T:qrAPI.Infra.Mail.TestMail.TestMailResponse
+  id: TestMailResponse
+  parent: qrAPI.Infra.Mail.TestMail
+  children:
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse.count
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse.emails
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse.limit
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse.message
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse.offset
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse.result
+  langs:
+  - csharp
+  - vb
+  name: TestMailResponse
+  nameWithType: TestMailResponse
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: TestMailResponse
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public class TestMailResponse
+    content.vb: Public Class TestMailResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.result
+  commentId: P:qrAPI.Infra.Mail.TestMail.TestMailResponse.result
+  id: result
+  parent: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  langs:
+  - csharp
+  - vb
+  name: result
+  nameWithType: TestMailResponse.result
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.result
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: result
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public string result { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property result As String
+  overload: qrAPI.Infra.Mail.TestMail.TestMailResponse.result*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.message
+  commentId: P:qrAPI.Infra.Mail.TestMail.TestMailResponse.message
+  id: message
+  parent: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  langs:
+  - csharp
+  - vb
+  name: message
+  nameWithType: TestMailResponse.message
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.message
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: message
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public object message { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property message As Object
+  overload: qrAPI.Infra.Mail.TestMail.TestMailResponse.message*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.count
+  commentId: P:qrAPI.Infra.Mail.TestMail.TestMailResponse.count
+  id: count
+  parent: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  langs:
+  - csharp
+  - vb
+  name: count
+  nameWithType: TestMailResponse.count
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.count
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: count
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public int count { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property count As Integer
+  overload: qrAPI.Infra.Mail.TestMail.TestMailResponse.count*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.limit
+  commentId: P:qrAPI.Infra.Mail.TestMail.TestMailResponse.limit
+  id: limit
+  parent: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  langs:
+  - csharp
+  - vb
+  name: limit
+  nameWithType: TestMailResponse.limit
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.limit
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: limit
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public int limit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property limit As Integer
+  overload: qrAPI.Infra.Mail.TestMail.TestMailResponse.limit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.offset
+  commentId: P:qrAPI.Infra.Mail.TestMail.TestMailResponse.offset
+  id: offset
+  parent: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  langs:
+  - csharp
+  - vb
+  name: offset
+  nameWithType: TestMailResponse.offset
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.offset
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: offset
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public int offset { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property offset As Integer
+  overload: qrAPI.Infra.Mail.TestMail.TestMailResponse.offset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.emails
+  commentId: P:qrAPI.Infra.Mail.TestMail.TestMailResponse.emails
+  id: emails
+  parent: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  langs:
+  - csharp
+  - vb
+  name: emails
+  nameWithType: TestMailResponse.emails
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.emails
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: emails
+    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    startLine: 11
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.TestMail
+  syntax:
+    content: public List<Email> emails { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{qrAPI.Infra.Mail.TestMail.Email}
+    content.vb: Public Property emails As List(Of Email)
+  overload: qrAPI.Infra.Mail.TestMail.TestMailResponse.emails*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.Infra.Mail.TestMail
+  commentId: N:qrAPI.Infra.Mail.TestMail
+  name: qrAPI.Infra.Mail.TestMail
+  nameWithType: qrAPI.Infra.Mail.TestMail
+  fullName: qrAPI.Infra.Mail.TestMail
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.result*
+  commentId: Overload:qrAPI.Infra.Mail.TestMail.TestMailResponse.result
+  name: result
+  nameWithType: TestMailResponse.result
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.result
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.message*
+  commentId: Overload:qrAPI.Infra.Mail.TestMail.TestMailResponse.message
+  name: message
+  nameWithType: TestMailResponse.message
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.message
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.count*
+  commentId: Overload:qrAPI.Infra.Mail.TestMail.TestMailResponse.count
+  name: count
+  nameWithType: TestMailResponse.count
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.limit*
+  commentId: Overload:qrAPI.Infra.Mail.TestMail.TestMailResponse.limit
+  name: limit
+  nameWithType: TestMailResponse.limit
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.limit
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.offset*
+  commentId: Overload:qrAPI.Infra.Mail.TestMail.TestMailResponse.offset
+  name: offset
+  nameWithType: TestMailResponse.offset
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.offset
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse.emails*
+  commentId: Overload:qrAPI.Infra.Mail.TestMail.TestMailResponse.emails
+  name: emails
+  nameWithType: TestMailResponse.emails
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse.emails
+- uid: System.Collections.Generic.List{qrAPI.Infra.Mail.TestMail.Email}
+  commentId: T:System.Collections.Generic.List{qrAPI.Infra.Mail.TestMail.Email}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Email>
+  nameWithType: List<Email>
+  fullName: System.Collections.Generic.List<qrAPI.Infra.Mail.TestMail.Email>
+  nameWithType.vb: List(Of Email)
+  fullName.vb: System.Collections.Generic.List(Of qrAPI.Infra.Mail.TestMail.Email)
+  name.vb: List(Of Email)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.Infra.Mail.TestMail.Email
+    name: Email
+    nameWithType: Email
+    fullName: qrAPI.Infra.Mail.TestMail.Email
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.Infra.Mail.TestMail.Email
+    name: Email
+    nameWithType: Email
+    fullName: qrAPI.Infra.Mail.TestMail.Email
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

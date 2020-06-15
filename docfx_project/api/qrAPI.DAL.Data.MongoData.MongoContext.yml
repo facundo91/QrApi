@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.MongoData.MongoContext
+  commentId: T:qrAPI.DAL.Data.MongoData.MongoContext
+  id: MongoContext
+  parent: qrAPI.DAL.Data.MongoData
+  children:
+  - qrAPI.DAL.Data.MongoData.MongoContext.#ctor(qrAPI.DAL.Options.MongoOptions)
+  - qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck
+  langs:
+  - csharp
+  - vb
+  name: MongoContext
+  nameWithType: MongoContext
+  fullName: qrAPI.DAL.Data.MongoData.MongoContext
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: MongoContext
+    path: ../../QrApi/src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data.MongoData
+  syntax:
+    content: 'public class MongoContext : IDataContext'
+    content.vb: >-
+      Public Class MongoContext
+
+          Implements IDataContext
+  inheritance:
+  - System.Object
+  implements:
+  - qrAPI.DAL.Data.IDataContext
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.DAL.Data.MongoData.MongoContext.#ctor(qrAPI.DAL.Options.MongoOptions)
+  commentId: M:qrAPI.DAL.Data.MongoData.MongoContext.#ctor(qrAPI.DAL.Options.MongoOptions)
+  id: '#ctor(qrAPI.DAL.Options.MongoOptions)'
+  parent: qrAPI.DAL.Data.MongoData.MongoContext
+  langs:
+  - csharp
+  - vb
+  name: MongoContext(MongoOptions)
+  nameWithType: MongoContext.MongoContext(MongoOptions)
+  fullName: qrAPI.DAL.Data.MongoData.MongoContext.MongoContext(qrAPI.DAL.Options.MongoOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data.MongoData
+  syntax:
+    content: public MongoContext(MongoOptions settings)
+    parameters:
+    - id: settings
+      type: qrAPI.DAL.Options.MongoOptions
+    content.vb: Public Sub New(settings As MongoOptions)
+  overload: qrAPI.DAL.Data.MongoData.MongoContext.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck
+  commentId: M:qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck
+  id: HealthCheck
+  parent: qrAPI.DAL.Data.MongoData.MongoContext
+  langs:
+  - csharp
+  - vb
+  name: HealthCheck()
+  nameWithType: MongoContext.HealthCheck()
+  fullName: qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: HealthCheck
+    path: ../../QrApi/src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+    startLine: 15
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data.MongoData
+  syntax:
+    content: public void HealthCheck()
+    content.vb: Public Sub HealthCheck
+  overload: qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck*
+  implements:
+  - qrAPI.DAL.Data.IDataContext.HealthCheck
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.DAL.Data.MongoData
+  commentId: N:qrAPI.DAL.Data.MongoData
+  name: qrAPI.DAL.Data.MongoData
+  nameWithType: qrAPI.DAL.Data.MongoData
+  fullName: qrAPI.DAL.Data.MongoData
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.DAL.Data.IDataContext
+  commentId: T:qrAPI.DAL.Data.IDataContext
+  parent: qrAPI.DAL.Data
+  name: IDataContext
+  nameWithType: IDataContext
+  fullName: qrAPI.DAL.Data.IDataContext
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.DAL.Data
+  commentId: N:qrAPI.DAL.Data
+  name: qrAPI.DAL.Data
+  nameWithType: qrAPI.DAL.Data
+  fullName: qrAPI.DAL.Data
+- uid: qrAPI.DAL.Data.MongoData.MongoContext.#ctor*
+  commentId: Overload:qrAPI.DAL.Data.MongoData.MongoContext.#ctor
+  name: MongoContext
+  nameWithType: MongoContext.MongoContext
+  fullName: qrAPI.DAL.Data.MongoData.MongoContext.MongoContext
+- uid: qrAPI.DAL.Options.MongoOptions
+  commentId: T:qrAPI.DAL.Options.MongoOptions
+  parent: qrAPI.DAL.Options
+  name: MongoOptions
+  nameWithType: MongoOptions
+  fullName: qrAPI.DAL.Options.MongoOptions
+- uid: qrAPI.DAL.Options
+  commentId: N:qrAPI.DAL.Options
+  name: qrAPI.DAL.Options
+  nameWithType: qrAPI.DAL.Options
+  fullName: qrAPI.DAL.Options
+- uid: qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck*
+  commentId: Overload:qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck
+  name: HealthCheck
+  nameWithType: MongoContext.HealthCheck
+  fullName: qrAPI.DAL.Data.MongoData.MongoContext.HealthCheck
+- uid: qrAPI.DAL.Data.IDataContext.HealthCheck
+  commentId: M:qrAPI.DAL.Data.IDataContext.HealthCheck
+  parent: qrAPI.DAL.Data.IDataContext
+  name: HealthCheck()
+  nameWithType: IDataContext.HealthCheck()
+  fullName: qrAPI.DAL.Data.IDataContext.HealthCheck()
+  spec.csharp:
+  - uid: qrAPI.DAL.Data.IDataContext.HealthCheck
+    name: HealthCheck
+    nameWithType: IDataContext.HealthCheck
+    fullName: qrAPI.DAL.Data.IDataContext.HealthCheck
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Data.IDataContext.HealthCheck
+    name: HealthCheck
+    nameWithType: IDataContext.HealthCheck
+    fullName: qrAPI.DAL.Data.IDataContext.HealthCheck
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

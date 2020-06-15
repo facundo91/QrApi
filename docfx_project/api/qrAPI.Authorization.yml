@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Authorization
+  commentId: N:qrAPI.Authorization
+  id: qrAPI.Authorization
+  children:
+  - qrAPI.Authorization.WorksForCompanyHandler
+  - qrAPI.Authorization.WorksForCompanyRequirement
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Authorization
+  nameWithType: qrAPI.Authorization
+  fullName: qrAPI.Authorization
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.Authorization.WorksForCompanyHandler
+  commentId: T:qrAPI.Authorization.WorksForCompanyHandler
+  name: WorksForCompanyHandler
+  nameWithType: WorksForCompanyHandler
+  fullName: qrAPI.Authorization.WorksForCompanyHandler
+- uid: qrAPI.Authorization.WorksForCompanyRequirement
+  commentId: T:qrAPI.Authorization.WorksForCompanyRequirement
+  parent: qrAPI.Authorization
+  name: WorksForCompanyRequirement
+  nameWithType: WorksForCompanyRequirement
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement
+- uid: qrAPI.Authorization
+  commentId: N:qrAPI.Authorization
+  name: qrAPI.Authorization
+  nameWithType: qrAPI.Authorization
+  fullName: qrAPI.Authorization

@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Services.Interfaces
+  commentId: N:qrAPI.App.Services.Interfaces
+  id: qrAPI.App.Services.Interfaces
+  children:
+  - qrAPI.App.Services.Interfaces.IGenericService`1
+  - qrAPI.App.Services.Interfaces.IIdentityService
+  - qrAPI.App.Services.Interfaces.IQrService
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Services.Interfaces
+  nameWithType: qrAPI.App.Services.Interfaces
+  fullName: qrAPI.App.Services.Interfaces
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1
+  commentId: T:qrAPI.App.Services.Interfaces.IGenericService`1
+  name: IGenericService<TDomainObject>
+  nameWithType: IGenericService<TDomainObject>
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>
+  nameWithType.vb: IGenericService(Of TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject)
+  name.vb: IGenericService(Of TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IIdentityService
+  commentId: T:qrAPI.App.Services.Interfaces.IIdentityService
+  parent: qrAPI.App.Services.Interfaces
+  name: IIdentityService
+  nameWithType: IIdentityService
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService
+- uid: qrAPI.App.Services.Interfaces.IQrService
+  commentId: T:qrAPI.App.Services.Interfaces.IQrService
+  parent: qrAPI.App.Services.Interfaces
+  name: IQrService
+  nameWithType: IQrService
+  fullName: qrAPI.App.Services.Interfaces.IQrService
+- uid: qrAPI.App.Services.Interfaces
+  commentId: N:qrAPI.App.Services.Interfaces
+  name: qrAPI.App.Services.Interfaces
+  nameWithType: qrAPI.App.Services.Interfaces
+  fullName: qrAPI.App.Services.Interfaces

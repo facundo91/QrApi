@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Daos.CacheImplementations
+  commentId: N:qrAPI.DAL.Daos.CacheImplementations
+  id: qrAPI.DAL.Daos.CacheImplementations
+  children:
+  - qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  - qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Daos.CacheImplementations
+  nameWithType: qrAPI.DAL.Daos.CacheImplementations
+  fullName: qrAPI.DAL.Daos.CacheImplementations
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  commentId: T:qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+  name: CacheRepository<T>
+  nameWithType: CacheRepository<T>
+  fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository<T>
+  nameWithType.vb: CacheRepository(Of T)
+  fullName.vb: qrAPI.DAL.Daos.CacheImplementations.CacheRepository(Of T)
+  name.vb: CacheRepository(Of T)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+    name: CacheRepository
+    nameWithType: CacheRepository
+    fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+    name: CacheRepository
+    nameWithType: CacheRepository
+    fullName: qrAPI.DAL.Daos.CacheImplementations.CacheRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository
+  commentId: T:qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository
+  name: PetCacheRepository
+  nameWithType: PetCacheRepository
+  fullName: qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository

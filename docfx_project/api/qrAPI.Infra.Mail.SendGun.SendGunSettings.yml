@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  commentId: T:qrAPI.Infra.Mail.SendGun.SendGunSettings
+  id: SendGunSettings
+  parent: qrAPI.Infra.Mail.SendGun
+  children:
+  - qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey
+  - qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl
+  - qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled
+  - qrAPI.Infra.Mail.SendGun.SendGunSettings.From
+  - qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri
+  langs:
+  - csharp
+  - vb
+  name: SendGunSettings
+  nameWithType: SendGunSettings
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: SendGunSettings
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    startLine: 2
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGun
+  syntax:
+    content: public class SendGunSettings
+    content.vb: Public Class SendGunSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey
+  commentId: P:qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey
+  id: ApiKey
+  parent: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  langs:
+  - csharp
+  - vb
+  name: ApiKey
+  nameWithType: SendGunSettings.ApiKey
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: ApiKey
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGun
+  syntax:
+    content: public string ApiKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ApiKey As String
+  overload: qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl
+  commentId: P:qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl
+  id: BaseUrl
+  parent: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  langs:
+  - csharp
+  - vb
+  name: BaseUrl
+  nameWithType: SendGunSettings.BaseUrl
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: BaseUrl
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGun
+  syntax:
+    content: public string BaseUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BaseUrl As String
+  overload: qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri
+  commentId: P:qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri
+  id: RequestUri
+  parent: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  langs:
+  - csharp
+  - vb
+  name: RequestUri
+  nameWithType: SendGunSettings.RequestUri
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RequestUri
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGun
+  syntax:
+    content: public string RequestUri { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RequestUri As String
+  overload: qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.From
+  commentId: P:qrAPI.Infra.Mail.SendGun.SendGunSettings.From
+  id: From
+  parent: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: SendGunSettings.From
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.From
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: From
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGun
+  syntax:
+    content: public string From { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property From As String
+  overload: qrAPI.Infra.Mail.SendGun.SendGunSettings.From*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled
+  commentId: P:qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled
+  id: Enabled
+  parent: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: SendGunSettings.Enabled
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Enabled
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGun
+  syntax:
+    content: public bool Enabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Enabled As Boolean
+  overload: qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.Infra.Mail.SendGun
+  commentId: N:qrAPI.Infra.Mail.SendGun
+  name: qrAPI.Infra.Mail.SendGun
+  nameWithType: qrAPI.Infra.Mail.SendGun
+  fullName: qrAPI.Infra.Mail.SendGun
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey*
+  commentId: Overload:qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey
+  name: ApiKey
+  nameWithType: SendGunSettings.ApiKey
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.ApiKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl*
+  commentId: Overload:qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl
+  name: BaseUrl
+  nameWithType: SendGunSettings.BaseUrl
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.BaseUrl
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri*
+  commentId: Overload:qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri
+  name: RequestUri
+  nameWithType: SendGunSettings.RequestUri
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.RequestUri
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.From*
+  commentId: Overload:qrAPI.Infra.Mail.SendGun.SendGunSettings.From
+  name: From
+  nameWithType: SendGunSettings.From
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.From
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled*
+  commentId: Overload:qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled
+  name: Enabled
+  nameWithType: SendGunSettings.Enabled
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings.Enabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

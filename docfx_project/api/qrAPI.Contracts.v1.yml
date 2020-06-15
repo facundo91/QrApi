@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1
+  commentId: N:qrAPI.Contracts.v1
+  id: qrAPI.Contracts.v1
+  children:
+  - qrAPI.Contracts.v1.ApiRoutes
+  - qrAPI.Contracts.v1.ApiRoutes.Identity
+  - qrAPI.Contracts.v1.ApiRoutes.Pets
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1
+  nameWithType: qrAPI.Contracts.v1
+  fullName: qrAPI.Contracts.v1
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.ApiRoutes
+  commentId: T:qrAPI.Contracts.v1.ApiRoutes
+  name: ApiRoutes
+  nameWithType: ApiRoutes
+  fullName: qrAPI.Contracts.v1.ApiRoutes
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  commentId: T:qrAPI.Contracts.v1.ApiRoutes.Qrs
+  name: ApiRoutes.Qrs
+  nameWithType: ApiRoutes.Qrs
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs
+- uid: qrAPI.Contracts.v1.ApiRoutes.Pets
+  commentId: T:qrAPI.Contracts.v1.ApiRoutes.Pets
+  name: ApiRoutes.Pets
+  nameWithType: ApiRoutes.Pets
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Pets
+- uid: qrAPI.Contracts.v1.ApiRoutes.Identity
+  commentId: T:qrAPI.Contracts.v1.ApiRoutes.Identity
+  name: ApiRoutes.Identity
+  nameWithType: ApiRoutes.Identity
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Identity

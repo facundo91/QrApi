@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Dtos.RefreshToken
+  commentId: T:qrAPI.DAL.Dtos.RefreshToken
+  id: RefreshToken
+  parent: qrAPI.DAL.Dtos
+  children:
+  - qrAPI.DAL.Dtos.RefreshToken.CreationDate
+  - qrAPI.DAL.Dtos.RefreshToken.ExpiryDate
+  - qrAPI.DAL.Dtos.RefreshToken.Id
+  - qrAPI.DAL.Dtos.RefreshToken.Invalidated
+  - qrAPI.DAL.Dtos.RefreshToken.JwtId
+  - qrAPI.DAL.Dtos.RefreshToken.Token
+  - qrAPI.DAL.Dtos.RefreshToken.Used
+  - qrAPI.DAL.Dtos.RefreshToken.User
+  - qrAPI.DAL.Dtos.RefreshToken.UserId
+  langs:
+  - csharp
+  - vb
+  name: RefreshToken
+  nameWithType: RefreshToken
+  fullName: qrAPI.DAL.Dtos.RefreshToken
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RefreshToken
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: 'public class RefreshToken : Dto'
+    content.vb: >-
+      Public Class RefreshToken
+
+          Inherits Dto
+  inheritance:
+  - System.Object
+  - qrAPI.DAL.Dtos.Dto
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.DAL.Dtos.RefreshToken.Id
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.Id
+  id: Id
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: RefreshToken.Id
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Id
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Id
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: >-
+      [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+      public override Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <DatabaseGenerated(DatabaseGeneratedOption.Identity)>
+
+      Public Overrides Property Id As Guid
+  overridden: qrAPI.DAL.Dtos.Dto.Id
+  overload: qrAPI.DAL.Dtos.RefreshToken.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute.#ctor(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+      value: 1
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: qrAPI.DAL.Dtos.RefreshToken.Token
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.Token
+  id: Token
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: RefreshToken.Token
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Token
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Token
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 13
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: >-
+      [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+      [BsonId]
+
+      [Key]
+
+      public string Token { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DatabaseGenerated(DatabaseGeneratedOption.Identity)>
+
+      <BsonId>
+
+      <Key>
+
+      Public Property Token As String
+  overload: qrAPI.DAL.Dtos.RefreshToken.Token*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute.#ctor(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+      value: 1
+  - type: MongoDB.Bson.Serialization.Attributes.BsonIdAttribute
+    ctor: MongoDB.Bson.Serialization.Attributes.BsonIdAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.JwtId
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.JwtId
+  id: JwtId
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: JwtId
+  nameWithType: RefreshToken.JwtId
+  fullName: qrAPI.DAL.Dtos.RefreshToken.JwtId
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: JwtId
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 18
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public string JwtId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property JwtId As String
+  overload: qrAPI.DAL.Dtos.RefreshToken.JwtId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.CreationDate
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.CreationDate
+  id: CreationDate
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: CreationDate
+  nameWithType: RefreshToken.CreationDate
+  fullName: qrAPI.DAL.Dtos.RefreshToken.CreationDate
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CreationDate
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 20
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public DateTime CreationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreationDate As Date
+  overload: qrAPI.DAL.Dtos.RefreshToken.CreationDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.ExpiryDate
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.ExpiryDate
+  id: ExpiryDate
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: ExpiryDate
+  nameWithType: RefreshToken.ExpiryDate
+  fullName: qrAPI.DAL.Dtos.RefreshToken.ExpiryDate
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: ExpiryDate
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 22
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public DateTime ExpiryDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ExpiryDate As Date
+  overload: qrAPI.DAL.Dtos.RefreshToken.ExpiryDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.Used
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.Used
+  id: Used
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: Used
+  nameWithType: RefreshToken.Used
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Used
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Used
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 24
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public bool Used { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Used As Boolean
+  overload: qrAPI.DAL.Dtos.RefreshToken.Used*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.Invalidated
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.Invalidated
+  id: Invalidated
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: Invalidated
+  nameWithType: RefreshToken.Invalidated
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Invalidated
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Invalidated
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 26
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public bool Invalidated { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Invalidated As Boolean
+  overload: qrAPI.DAL.Dtos.RefreshToken.Invalidated*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.UserId
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.UserId
+  id: UserId
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: RefreshToken.UserId
+  fullName: qrAPI.DAL.Dtos.RefreshToken.UserId
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UserId
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 28
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public string UserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserId As String
+  overload: qrAPI.DAL.Dtos.RefreshToken.UserId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.RefreshToken.User
+  commentId: P:qrAPI.DAL.Dtos.RefreshToken.User
+  id: User
+  parent: qrAPI.DAL.Dtos.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: RefreshToken.User
+  fullName: qrAPI.DAL.Dtos.RefreshToken.User
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/RefreshToken.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: User
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/RefreshToken.cs
+    startLine: 30
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: >-
+      [ForeignKey("UserId")]
+
+      public IdentityUser User { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityUser
+    content.vb: >-
+      <ForeignKey("UserId")>
+
+      Public Property User As IdentityUser
+  overload: qrAPI.DAL.Dtos.RefreshToken.User*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UserId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.DAL.Dtos
+  commentId: N:qrAPI.DAL.Dtos
+  name: qrAPI.DAL.Dtos
+  nameWithType: qrAPI.DAL.Dtos
+  fullName: qrAPI.DAL.Dtos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.DAL.Dtos.Dto
+  commentId: T:qrAPI.DAL.Dtos.Dto
+  parent: qrAPI.DAL.Dtos
+  name: Dto
+  nameWithType: Dto
+  fullName: qrAPI.DAL.Dtos.Dto
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.DAL.Dtos.Dto.Id
+  commentId: P:qrAPI.DAL.Dtos.Dto.Id
+  parent: qrAPI.DAL.Dtos.Dto
+  name: Id
+  nameWithType: Dto.Id
+  fullName: qrAPI.DAL.Dtos.Dto.Id
+- uid: qrAPI.DAL.Dtos.RefreshToken.Id*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.Id
+  name: Id
+  nameWithType: RefreshToken.Id
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: qrAPI.DAL.Dtos.RefreshToken.Token*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.Token
+  name: Token
+  nameWithType: RefreshToken.Token
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Token
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: qrAPI.DAL.Dtos.RefreshToken.JwtId*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.JwtId
+  name: JwtId
+  nameWithType: RefreshToken.JwtId
+  fullName: qrAPI.DAL.Dtos.RefreshToken.JwtId
+- uid: qrAPI.DAL.Dtos.RefreshToken.CreationDate*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.CreationDate
+  name: CreationDate
+  nameWithType: RefreshToken.CreationDate
+  fullName: qrAPI.DAL.Dtos.RefreshToken.CreationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: qrAPI.DAL.Dtos.RefreshToken.ExpiryDate*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.ExpiryDate
+  name: ExpiryDate
+  nameWithType: RefreshToken.ExpiryDate
+  fullName: qrAPI.DAL.Dtos.RefreshToken.ExpiryDate
+- uid: qrAPI.DAL.Dtos.RefreshToken.Used*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.Used
+  name: Used
+  nameWithType: RefreshToken.Used
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Used
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: qrAPI.DAL.Dtos.RefreshToken.Invalidated*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.Invalidated
+  name: Invalidated
+  nameWithType: RefreshToken.Invalidated
+  fullName: qrAPI.DAL.Dtos.RefreshToken.Invalidated
+- uid: qrAPI.DAL.Dtos.RefreshToken.UserId*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.UserId
+  name: UserId
+  nameWithType: RefreshToken.UserId
+  fullName: qrAPI.DAL.Dtos.RefreshToken.UserId
+- uid: qrAPI.DAL.Dtos.RefreshToken.User*
+  commentId: Overload:qrAPI.DAL.Dtos.RefreshToken.User
+  name: User
+  nameWithType: RefreshToken.User
+  fullName: qrAPI.DAL.Dtos.RefreshToken.User
+- uid: Microsoft.AspNetCore.Identity.IdentityUser
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityUser
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: IdentityUser
+  nameWithType: IdentityUser
+  fullName: Microsoft.AspNetCore.Identity.IdentityUser
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity

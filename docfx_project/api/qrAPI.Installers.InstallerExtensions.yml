@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Installers.InstallerExtensions
+  commentId: T:qrAPI.Installers.InstallerExtensions
+  id: InstallerExtensions
+  parent: qrAPI.Installers
+  children:
+  - qrAPI.Installers.InstallerExtensions.AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  - qrAPI.Installers.InstallerExtensions.AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  - qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: InstallerExtensions
+  nameWithType: InstallerExtensions
+  fullName: qrAPI.Installers.InstallerExtensions
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI/Installers/InstallerExtensions.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: InstallerExtensions
+    path: ../src/qrAPI/Installers/InstallerExtensions.cs
+    startLine: 13
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Installers
+  syntax:
+    content: public static class InstallerExtensions
+    content.vb: Public Module InstallerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  id: InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  isExtensionMethod: true
+  parent: qrAPI.Installers.InstallerExtensions
+  langs:
+  - csharp
+  - vb
+  name: InstallServicesInAssembly(IServiceCollection, IConfiguration)
+  nameWithType: InstallerExtensions.InstallServicesInAssembly(IServiceCollection, IConfiguration)
+  fullName: qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Installers/InstallerExtensions.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: InstallServicesInAssembly
+    path: ../src/qrAPI/Installers/InstallerExtensions.cs
+    startLine: 15
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Installers
+  syntax:
+    content: public static void InstallServicesInAssembly(this IServiceCollection services, IConfiguration configuration)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub InstallServicesInAssembly(services As IServiceCollection, configuration As IConfiguration)
+  overload: qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: qrAPI.Installers.InstallerExtensions.AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  commentId: M:qrAPI.Installers.InstallerExtensions.AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  id: AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  isExtensionMethod: true
+  parent: qrAPI.Installers.InstallerExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSwagger(IApplicationBuilder, IApiVersionDescriptionProvider)
+  nameWithType: InstallerExtensions.AddSwagger(IApplicationBuilder, IApiVersionDescriptionProvider)
+  fullName: qrAPI.Installers.InstallerExtensions.AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Installers/InstallerExtensions.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: AddSwagger
+    path: ../src/qrAPI/Installers/InstallerExtensions.cs
+    startLine: 23
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Installers
+  syntax:
+    content: public static void AddSwagger(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    - id: provider
+      type: Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddSwagger(app As IApplicationBuilder, provider As IApiVersionDescriptionProvider)
+  overload: qrAPI.Installers.InstallerExtensions.AddSwagger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: qrAPI.Installers.InstallerExtensions.AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:qrAPI.Installers.InstallerExtensions.AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExtensionMethod: true
+  parent: qrAPI.Installers.InstallerExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHealthChecks(IApplicationBuilder)
+  nameWithType: InstallerExtensions.AddHealthChecks(IApplicationBuilder)
+  fullName: qrAPI.Installers.InstallerExtensions.AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Installers/InstallerExtensions.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: AddHealthChecks
+    path: ../src/qrAPI/Installers/InstallerExtensions.cs
+    startLine: 35
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Installers
+  syntax:
+    content: public static void AddHealthChecks(this IApplicationBuilder app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddHealthChecks(app As IApplicationBuilder)
+  overload: qrAPI.Installers.InstallerExtensions.AddHealthChecks*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: qrAPI.Installers
+  commentId: N:qrAPI.Installers
+  name: qrAPI.Installers
+  nameWithType: qrAPI.Installers
+  fullName: qrAPI.Installers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly*
+  commentId: Overload:qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly
+  name: InstallServicesInAssembly
+  nameWithType: InstallerExtensions.InstallServicesInAssembly
+  fullName: qrAPI.Installers.InstallerExtensions.InstallServicesInAssembly
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: qrAPI.Installers.InstallerExtensions.AddSwagger*
+  commentId: Overload:qrAPI.Installers.InstallerExtensions.AddSwagger
+  name: AddSwagger
+  nameWithType: InstallerExtensions.AddSwagger
+  fullName: qrAPI.Installers.InstallerExtensions.AddSwagger
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider
+  commentId: T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider
+  parent: Microsoft.AspNetCore.Mvc.ApiExplorer
+  isExternal: true
+  name: IApiVersionDescriptionProvider
+  nameWithType: IApiVersionDescriptionProvider
+  fullName: Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+- uid: Microsoft.AspNetCore.Mvc.ApiExplorer
+  commentId: N:Microsoft.AspNetCore.Mvc.ApiExplorer
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.ApiExplorer
+  nameWithType: Microsoft.AspNetCore.Mvc.ApiExplorer
+  fullName: Microsoft.AspNetCore.Mvc.ApiExplorer
+- uid: qrAPI.Installers.InstallerExtensions.AddHealthChecks*
+  commentId: Overload:qrAPI.Installers.InstallerExtensions.AddHealthChecks
+  name: AddHealthChecks
+  nameWithType: InstallerExtensions.AddHealthChecks
+  fullName: qrAPI.Installers.InstallerExtensions.AddHealthChecks

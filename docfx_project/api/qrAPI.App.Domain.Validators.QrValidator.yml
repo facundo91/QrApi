@@ -1,0 +1,3932 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Domain.Validators.QrValidator
+  commentId: T:qrAPI.App.Domain.Validators.QrValidator
+  id: QrValidator
+  parent: qrAPI.App.Domain.Validators
+  children:
+  - qrAPI.App.Domain.Validators.QrValidator.#ctor
+  langs:
+  - csharp
+  - vb
+  name: QrValidator
+  nameWithType: QrValidator
+  fullName: qrAPI.App.Domain.Validators.QrValidator
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Validators/QrValidator.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: QrValidator
+    path: ../../QrApi/src/qrAPI.App/Domain/Validators/QrValidator.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain.Validators
+  syntax:
+    content: 'public class QrValidator : AbstractValidator<Qr>, IValidator<Qr>, IValidator, IEnumerable<IValidationRule>, IEnumerable'
+    content.vb: >-
+      Public Class QrValidator
+
+          Inherits AbstractValidator(Of Qr)
+
+          Implements IValidator(Of Qr), IValidator, IEnumerable(Of IValidationRule), IEnumerable
+  inheritance:
+  - System.Object
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  implements:
+  - FluentValidation.IValidator{qrAPI.App.Domain.Qr}
+  - FluentValidation.IValidator
+  - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#Validate(System.Object)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Validate(qrAPI.App.Domain.Qr)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.ValidateAsync(qrAPI.App.Domain.Qr,System.Threading.CancellationToken)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Validate(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr})
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.ValidateAsync(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr},System.Threading.CancellationToken)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.AddRule(FluentValidation.IValidationRule)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.CreateDescriptor
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Qr,{TProperty}}})
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Qr,System.Collections.Generic.IEnumerable{{TProperty}}}})
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleSet(System.String,System.Action)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.When(System.Func{qrAPI.App.Domain.Qr,System.Boolean},System.Action)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Unless(System.Func{qrAPI.App.Domain.Qr,System.Boolean},System.Action)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.WhenAsync(System.Func{qrAPI.App.Domain.Qr,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.UnlessAsync(System.Func{qrAPI.App.Domain.Qr,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Include(FluentValidation.IValidator{qrAPI.App.Domain.Qr})
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Include``1(System.Func{qrAPI.App.Domain.Qr,{TValidator}})
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.GetEnumerator
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.System#Collections#IEnumerable#GetEnumerator
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.EnsureInstanceNotNull(System.Object)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.PreValidate(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr},FluentValidation.Results.ValidationResult)
+  - FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.CascadeMode
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.App.Domain.Validators.QrValidator.#ctor
+  commentId: M:qrAPI.App.Domain.Validators.QrValidator.#ctor
+  id: '#ctor'
+  parent: qrAPI.App.Domain.Validators.QrValidator
+  langs:
+  - csharp
+  - vb
+  name: QrValidator()
+  nameWithType: QrValidator.QrValidator()
+  fullName: qrAPI.App.Domain.Validators.QrValidator.QrValidator()
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Validators/QrValidator.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Domain/Validators/QrValidator.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain.Validators
+  syntax:
+    content: public QrValidator()
+    content.vb: Public Sub New
+  overload: qrAPI.App.Domain.Validators.QrValidator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.App.Domain.Validators
+  commentId: N:qrAPI.App.Domain.Validators
+  name: qrAPI.App.Domain.Validators
+  nameWithType: qrAPI.App.Domain.Validators
+  fullName: qrAPI.App.Domain.Validators
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  commentId: T:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  parent: FluentValidation
+  definition: FluentValidation.AbstractValidator`1
+  name: AbstractValidator<Qr>
+  nameWithType: AbstractValidator<Qr>
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>
+  nameWithType.vb: AbstractValidator(Of Qr)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr)
+  name.vb: AbstractValidator(Of Qr)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.IValidator{qrAPI.App.Domain.Qr}
+  commentId: T:FluentValidation.IValidator{qrAPI.App.Domain.Qr}
+  parent: FluentValidation
+  definition: FluentValidation.IValidator`1
+  name: IValidator<Qr>
+  nameWithType: IValidator<Qr>
+  fullName: FluentValidation.IValidator<qrAPI.App.Domain.Qr>
+  nameWithType.vb: IValidator(Of Qr)
+  fullName.vb: FluentValidation.IValidator(Of qrAPI.App.Domain.Qr)
+  name.vb: IValidator(Of Qr)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.IValidator
+  commentId: T:FluentValidation.IValidator
+  parent: FluentValidation
+  isExternal: true
+  name: IValidator
+  nameWithType: IValidator
+  fullName: FluentValidation.IValidator
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
+  commentId: T:System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IValidationRule>
+  nameWithType: IEnumerable<IValidationRule>
+  fullName: System.Collections.Generic.IEnumerable<FluentValidation.IValidationRule>
+  nameWithType.vb: IEnumerable(Of IValidationRule)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of FluentValidation.IValidationRule)
+  name.vb: IEnumerable(Of IValidationRule)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    nameWithType: IValidationRule
+    fullName: FluentValidation.IValidationRule
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    nameWithType: IValidationRule
+    fullName: FluentValidation.IValidationRule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#Validate(System.Object)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#Validate(System.Object)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+  name: IValidator.Validate(Object)
+  nameWithType: AbstractValidator<Qr>.IValidator.Validate(Object)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.Validate(System.Object)
+  nameWithType.vb: AbstractValidator(Of Qr).FluentValidation.IValidator.Validate(Object)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.Validate(System.Object)
+  name.vb: FluentValidation.IValidator.Validate(Object)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+    name: IValidator.Validate
+    nameWithType: AbstractValidator<Qr>.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+    name: FluentValidation.IValidator.Validate
+    nameWithType: AbstractValidator(Of Qr).FluentValidation.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+  name: IValidator.ValidateAsync(Object, CancellationToken)
+  nameWithType: AbstractValidator<Qr>.IValidator.ValidateAsync(Object, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.ValidateAsync(System.Object, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of Qr).FluentValidation.IValidator.ValidateAsync(Object, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.ValidateAsync(System.Object, System.Threading.CancellationToken)
+  name.vb: FluentValidation.IValidator.ValidateAsync(Object, CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+    name: IValidator.ValidateAsync
+    nameWithType: AbstractValidator<Qr>.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+    name: FluentValidation.IValidator.ValidateAsync
+    nameWithType: AbstractValidator(Of Qr).FluentValidation.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+  name: IValidator.Validate(ValidationContext)
+  nameWithType: AbstractValidator<Qr>.IValidator.Validate(ValidationContext)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.Validate(FluentValidation.ValidationContext)
+  nameWithType.vb: AbstractValidator(Of Qr).FluentValidation.IValidator.Validate(ValidationContext)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.Validate(FluentValidation.ValidationContext)
+  name.vb: FluentValidation.IValidator.Validate(ValidationContext)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+    name: IValidator.Validate
+    nameWithType: AbstractValidator<Qr>.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+    name: FluentValidation.IValidator.Validate
+    nameWithType: AbstractValidator(Of Qr).FluentValidation.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+  name: IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  nameWithType: AbstractValidator<Qr>.IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.ValidateAsync(FluentValidation.ValidationContext, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of Qr).FluentValidation.IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.ValidateAsync(FluentValidation.ValidationContext, System.Threading.CancellationToken)
+  name.vb: FluentValidation.IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+    name: IValidator.ValidateAsync
+    nameWithType: AbstractValidator<Qr>.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+    name: FluentValidation.IValidator.ValidateAsync
+    nameWithType: AbstractValidator(Of Qr).FluentValidation.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Validate(qrAPI.App.Domain.Qr)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Validate(qrAPI.App.Domain.Qr)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.Validate(`0)
+  name: Validate(Qr)
+  nameWithType: AbstractValidator<Qr>.Validate(Qr)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Validate(qrAPI.App.Domain.Qr)
+  nameWithType.vb: AbstractValidator(Of Qr).Validate(Qr)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Validate(qrAPI.App.Domain.Qr)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Validate(`0)
+    name: Validate
+    nameWithType: AbstractValidator<Qr>.Validate
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Validate(`0)
+    name: Validate
+    nameWithType: AbstractValidator(Of Qr).Validate
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.ValidateAsync(qrAPI.App.Domain.Qr,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.ValidateAsync(qrAPI.App.Domain.Qr,System.Threading.CancellationToken)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+  name: ValidateAsync(Qr, CancellationToken)
+  nameWithType: AbstractValidator<Qr>.ValidateAsync(Qr, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.ValidateAsync(qrAPI.App.Domain.Qr, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of Qr).ValidateAsync(Qr, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).ValidateAsync(qrAPI.App.Domain.Qr, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator<Qr>.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator(Of Qr).ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Validate(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr})
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Validate(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr})
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+  name: Validate(ValidationContext<Qr>)
+  nameWithType: AbstractValidator<Qr>.Validate(ValidationContext<Qr>)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Validate(FluentValidation.ValidationContext<qrAPI.App.Domain.Qr>)
+  nameWithType.vb: AbstractValidator(Of Qr).Validate(ValidationContext(Of Qr))
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Validate(FluentValidation.ValidationContext(Of qrAPI.App.Domain.Qr))
+  name.vb: Validate(ValidationContext(Of Qr))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+    name: Validate
+    nameWithType: AbstractValidator<Qr>.Validate
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+    name: Validate
+    nameWithType: AbstractValidator(Of Qr).Validate
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.ValidateAsync(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr},System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.ValidateAsync(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr},System.Threading.CancellationToken)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+  name: ValidateAsync(ValidationContext<Qr>, CancellationToken)
+  nameWithType: AbstractValidator<Qr>.ValidateAsync(ValidationContext<Qr>, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.ValidateAsync(FluentValidation.ValidationContext<qrAPI.App.Domain.Qr>, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of Qr).ValidateAsync(ValidationContext(Of Qr), CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).ValidateAsync(FluentValidation.ValidationContext(Of qrAPI.App.Domain.Qr), System.Threading.CancellationToken)
+  name.vb: ValidateAsync(ValidationContext(Of Qr), CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator<Qr>.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator(Of Qr).ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.AddRule(FluentValidation.IValidationRule)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.AddRule(FluentValidation.IValidationRule)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+  name: AddRule(IValidationRule)
+  nameWithType: AbstractValidator<Qr>.AddRule(IValidationRule)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.AddRule(FluentValidation.IValidationRule)
+  nameWithType.vb: AbstractValidator(Of Qr).AddRule(IValidationRule)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).AddRule(FluentValidation.IValidationRule)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+    name: AddRule
+    nameWithType: AbstractValidator<Qr>.AddRule
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    nameWithType: IValidationRule
+    fullName: FluentValidation.IValidationRule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+    name: AddRule
+    nameWithType: AbstractValidator(Of Qr).AddRule
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    nameWithType: IValidationRule
+    fullName: FluentValidation.IValidationRule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.CreateDescriptor
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.CreateDescriptor
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.CreateDescriptor
+  name: CreateDescriptor()
+  nameWithType: AbstractValidator<Qr>.CreateDescriptor()
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.CreateDescriptor()
+  nameWithType.vb: AbstractValidator(Of Qr).CreateDescriptor()
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).CreateDescriptor()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+    name: CreateDescriptor
+    nameWithType: AbstractValidator<Qr>.CreateDescriptor
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.CreateDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+    name: CreateDescriptor
+    nameWithType: AbstractValidator(Of Qr).CreateDescriptor
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).CreateDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+  name: IValidator.CanValidateInstancesOfType(Type)
+  nameWithType: AbstractValidator<Qr>.IValidator.CanValidateInstancesOfType(Type)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.CanValidateInstancesOfType(System.Type)
+  nameWithType.vb: AbstractValidator(Of Qr).FluentValidation.IValidator.CanValidateInstancesOfType(Type)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.CanValidateInstancesOfType(System.Type)
+  name.vb: FluentValidation.IValidator.CanValidateInstancesOfType(Type)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+    name: IValidator.CanValidateInstancesOfType
+    nameWithType: AbstractValidator<Qr>.IValidator.CanValidateInstancesOfType
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.FluentValidation.IValidator.CanValidateInstancesOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+    name: FluentValidation.IValidator.CanValidateInstancesOfType
+    nameWithType: AbstractValidator(Of Qr).FluentValidation.IValidator.CanValidateInstancesOfType
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).FluentValidation.IValidator.CanValidateInstancesOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Qr,{TProperty}}})
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Qr,``0}})
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: RuleFor<TProperty>(Expression<Func<Qr, TProperty>>)
+  nameWithType: AbstractValidator<Qr>.RuleFor<TProperty>(Expression<Func<Qr, TProperty>>)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Qr, TProperty>>)
+  nameWithType.vb: AbstractValidator(Of Qr).RuleFor(Of TProperty)(Expression(Of Func(Of Qr, TProperty)))
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Qr, TProperty)))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of Qr, TProperty)))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor<TProperty>
+    nameWithType: AbstractValidator<Qr>.RuleFor<TProperty>
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor(Of TProperty)
+    nameWithType: AbstractValidator(Of Qr).RuleFor(Of TProperty)
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Qr,System.Collections.Generic.IEnumerable{{TProperty}}}})
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Qr,System.Collections.Generic.IEnumerable{``0}}})
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+  name: RuleForEach<TProperty>(Expression<Func<Qr, IEnumerable<TProperty>>>)
+  nameWithType: AbstractValidator<Qr>.RuleForEach<TProperty>(Expression<Func<Qr, IEnumerable<TProperty>>>)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.RuleForEach<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Qr, System.Collections.Generic.IEnumerable<TProperty>>>)
+  nameWithType.vb: AbstractValidator(Of Qr).RuleForEach(Of TProperty)(Expression(Of Func(Of Qr, IEnumerable(Of TProperty))))
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).RuleForEach(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Qr, System.Collections.Generic.IEnumerable(Of TProperty))))
+  name.vb: RuleForEach(Of TProperty)(Expression(Of Func(Of Qr, IEnumerable(Of TProperty))))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach<TProperty>
+    nameWithType: AbstractValidator<Qr>.RuleForEach<TProperty>
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.RuleForEach<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach(Of TProperty)
+    nameWithType: AbstractValidator(Of Qr).RuleForEach(Of TProperty)
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).RuleForEach(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleSet(System.String,System.Action)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.RuleSet(System.String,System.Action)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+  name: RuleSet(String, Action)
+  nameWithType: AbstractValidator<Qr>.RuleSet(String, Action)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.RuleSet(System.String, System.Action)
+  nameWithType.vb: AbstractValidator(Of Qr).RuleSet(String, Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).RuleSet(System.String, System.Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+    name: RuleSet
+    nameWithType: AbstractValidator<Qr>.RuleSet
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+    name: RuleSet
+    nameWithType: AbstractValidator(Of Qr).RuleSet
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.When(System.Func{qrAPI.App.Domain.Qr,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.When(System.Func{qrAPI.App.Domain.Qr,System.Boolean},System.Action)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+  name: When(Func<Qr, Boolean>, Action)
+  nameWithType: AbstractValidator<Qr>.When(Func<Qr, Boolean>, Action)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.When(System.Func<qrAPI.App.Domain.Qr, System.Boolean>, System.Action)
+  nameWithType.vb: AbstractValidator(Of Qr).When(Func(Of Qr, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).When(System.Func(Of qrAPI.App.Domain.Qr, System.Boolean), System.Action)
+  name.vb: When(Func(Of Qr, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+    name: When
+    nameWithType: AbstractValidator<Qr>.When
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.When
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+    name: When
+    nameWithType: AbstractValidator(Of Qr).When
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).When
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Unless(System.Func{qrAPI.App.Domain.Qr,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Unless(System.Func{qrAPI.App.Domain.Qr,System.Boolean},System.Action)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+  name: Unless(Func<Qr, Boolean>, Action)
+  nameWithType: AbstractValidator<Qr>.Unless(Func<Qr, Boolean>, Action)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Unless(System.Func<qrAPI.App.Domain.Qr, System.Boolean>, System.Action)
+  nameWithType.vb: AbstractValidator(Of Qr).Unless(Func(Of Qr, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Unless(System.Func(Of qrAPI.App.Domain.Qr, System.Boolean), System.Action)
+  name.vb: Unless(Func(Of Qr, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+    name: Unless
+    nameWithType: AbstractValidator<Qr>.Unless
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Unless
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+    name: Unless
+    nameWithType: AbstractValidator(Of Qr).Unless
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Unless
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.WhenAsync(System.Func{qrAPI.App.Domain.Qr,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.WhenAsync(System.Func{qrAPI.App.Domain.Qr,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  name: WhenAsync(Func<Qr, CancellationToken, Task<Boolean>>, Action)
+  nameWithType: AbstractValidator<Qr>.WhenAsync(Func<Qr, CancellationToken, Task<Boolean>>, Action)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.WhenAsync(System.Func<qrAPI.App.Domain.Qr, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Boolean>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of Qr).WhenAsync(Func(Of Qr, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).WhenAsync(System.Func(Of qrAPI.App.Domain.Qr, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of System.Boolean)), System.Action)
+  name.vb: WhenAsync(Func(Of Qr, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    nameWithType: AbstractValidator<Qr>.WhenAsync
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.WhenAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    nameWithType: AbstractValidator(Of Qr).WhenAsync
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).WhenAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.UnlessAsync(System.Func{qrAPI.App.Domain.Qr,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.UnlessAsync(System.Func{qrAPI.App.Domain.Qr,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  name: UnlessAsync(Func<Qr, CancellationToken, Task<Boolean>>, Action)
+  nameWithType: AbstractValidator<Qr>.UnlessAsync(Func<Qr, CancellationToken, Task<Boolean>>, Action)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.UnlessAsync(System.Func<qrAPI.App.Domain.Qr, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Boolean>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of Qr).UnlessAsync(Func(Of Qr, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).UnlessAsync(System.Func(Of qrAPI.App.Domain.Qr, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of System.Boolean)), System.Action)
+  name.vb: UnlessAsync(Func(Of Qr, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    nameWithType: AbstractValidator<Qr>.UnlessAsync
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.UnlessAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    nameWithType: AbstractValidator(Of Qr).UnlessAsync
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).UnlessAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Include(FluentValidation.IValidator{qrAPI.App.Domain.Qr})
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Include(FluentValidation.IValidator{qrAPI.App.Domain.Qr})
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+  name: Include(IValidator<Qr>)
+  nameWithType: AbstractValidator<Qr>.Include(IValidator<Qr>)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Include(FluentValidation.IValidator<qrAPI.App.Domain.Qr>)
+  nameWithType.vb: AbstractValidator(Of Qr).Include(IValidator(Of Qr))
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Include(FluentValidation.IValidator(Of qrAPI.App.Domain.Qr))
+  name.vb: Include(IValidator(Of Qr))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+    name: Include
+    nameWithType: AbstractValidator<Qr>.Include
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Include
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+    name: Include
+    nameWithType: AbstractValidator(Of Qr).Include
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Include
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Include``1(System.Func{qrAPI.App.Domain.Qr,{TValidator}})
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.Include``1(System.Func{qrAPI.App.Domain.Qr,``0})
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+  name: Include<TValidator>(Func<Qr, TValidator>)
+  nameWithType: AbstractValidator<Qr>.Include<TValidator>(Func<Qr, TValidator>)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Include<TValidator>(System.Func<qrAPI.App.Domain.Qr, TValidator>)
+  nameWithType.vb: AbstractValidator(Of Qr).Include(Of TValidator)(Func(Of Qr, TValidator))
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Include(Of TValidator)(System.Func(Of qrAPI.App.Domain.Qr, TValidator))
+  name.vb: Include(Of TValidator)(Func(Of Qr, TValidator))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+    name: Include<TValidator>
+    nameWithType: AbstractValidator<Qr>.Include<TValidator>
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.Include<TValidator>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValidator
+    nameWithType: TValidator
+    fullName: TValidator
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+    name: Include(Of TValidator)
+    nameWithType: AbstractValidator(Of Qr).Include(Of TValidator)
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).Include(Of TValidator)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValidator
+    nameWithType: TValidator
+    fullName: TValidator
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.GetEnumerator
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.GetEnumerator
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: AbstractValidator<Qr>.GetEnumerator()
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.GetEnumerator()
+  nameWithType.vb: AbstractValidator(Of Qr).GetEnumerator()
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).GetEnumerator()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: AbstractValidator<Qr>.GetEnumerator
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: AbstractValidator(Of Qr).GetEnumerator
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.System#Collections#IEnumerable#GetEnumerator
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  nameWithType: AbstractValidator<Qr>.IEnumerable.GetEnumerator()
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: AbstractValidator(Of Qr).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: AbstractValidator<Qr>.IEnumerable.GetEnumerator
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: AbstractValidator(Of Qr).System.Collections.IEnumerable.GetEnumerator
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.EnsureInstanceNotNull(System.Object)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.EnsureInstanceNotNull(System.Object)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+  name: EnsureInstanceNotNull(Object)
+  nameWithType: AbstractValidator<Qr>.EnsureInstanceNotNull(Object)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.EnsureInstanceNotNull(System.Object)
+  nameWithType.vb: AbstractValidator(Of Qr).EnsureInstanceNotNull(Object)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).EnsureInstanceNotNull(System.Object)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    nameWithType: AbstractValidator<Qr>.EnsureInstanceNotNull
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    nameWithType: AbstractValidator(Of Qr).EnsureInstanceNotNull
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.PreValidate(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr},FluentValidation.Results.ValidationResult)
+  commentId: M:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.PreValidate(FluentValidation.ValidationContext{qrAPI.App.Domain.Qr},FluentValidation.Results.ValidationResult)
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  name: PreValidate(ValidationContext<Qr>, ValidationResult)
+  nameWithType: AbstractValidator<Qr>.PreValidate(ValidationContext<Qr>, ValidationResult)
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.PreValidate(FluentValidation.ValidationContext<qrAPI.App.Domain.Qr>, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: AbstractValidator(Of Qr).PreValidate(ValidationContext(Of Qr), ValidationResult)
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).PreValidate(FluentValidation.ValidationContext(Of qrAPI.App.Domain.Qr), FluentValidation.Results.ValidationResult)
+  name.vb: PreValidate(ValidationContext(Of Qr), ValidationResult)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    nameWithType: AbstractValidator<Qr>.PreValidate
+    fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.PreValidate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: FluentValidation.Results.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    nameWithType: AbstractValidator(Of Qr).PreValidate
+    fullName: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).PreValidate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+    nameWithType: Qr
+    fullName: qrAPI.App.Domain.Qr
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: FluentValidation.Results.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.CascadeMode
+  commentId: P:FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}.CascadeMode
+  parent: FluentValidation.AbstractValidator{qrAPI.App.Domain.Qr}
+  definition: FluentValidation.AbstractValidator`1.CascadeMode
+  name: CascadeMode
+  nameWithType: AbstractValidator<Qr>.CascadeMode
+  fullName: FluentValidation.AbstractValidator<qrAPI.App.Domain.Qr>.CascadeMode
+  nameWithType.vb: AbstractValidator(Of Qr).CascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of qrAPI.App.Domain.Qr).CascadeMode
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: FluentValidation.AbstractValidator`1
+  commentId: T:FluentValidation.AbstractValidator`1
+  isExternal: true
+  name: AbstractValidator<T>
+  nameWithType: AbstractValidator<T>
+  fullName: FluentValidation.AbstractValidator<T>
+  nameWithType.vb: AbstractValidator(Of T)
+  fullName.vb: FluentValidation.AbstractValidator(Of T)
+  name.vb: AbstractValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation
+  commentId: N:FluentValidation
+  isExternal: true
+  name: FluentValidation
+  nameWithType: FluentValidation
+  fullName: FluentValidation
+- uid: FluentValidation.IValidator`1
+  commentId: T:FluentValidation.IValidator`1
+  isExternal: true
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: FluentValidation.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: FluentValidation.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+  commentId: M:FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+  isExternal: true
+  name: IValidator.Validate(Object)
+  nameWithType: AbstractValidator<T>.IValidator.Validate(Object)
+  fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.Validate(System.Object)
+  nameWithType.vb: AbstractValidator(Of T).FluentValidation.IValidator.Validate(Object)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.Validate(System.Object)
+  name.vb: FluentValidation.IValidator.Validate(Object)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+    name: IValidator.Validate
+    nameWithType: AbstractValidator<T>.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(System.Object)
+    name: FluentValidation.IValidator.Validate
+    nameWithType: AbstractValidator(Of T).FluentValidation.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+  isExternal: true
+  name: IValidator.ValidateAsync(Object, CancellationToken)
+  nameWithType: AbstractValidator<T>.IValidator.ValidateAsync(Object, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.ValidateAsync(System.Object, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync(Object, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync(System.Object, System.Threading.CancellationToken)
+  name.vb: FluentValidation.IValidator.ValidateAsync(Object, CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+    name: IValidator.ValidateAsync
+    nameWithType: AbstractValidator<T>.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(System.Object,System.Threading.CancellationToken)
+    name: FluentValidation.IValidator.ValidateAsync
+    nameWithType: AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+  commentId: M:FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+  isExternal: true
+  name: IValidator.Validate(ValidationContext)
+  nameWithType: AbstractValidator<T>.IValidator.Validate(ValidationContext)
+  fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.Validate(FluentValidation.ValidationContext)
+  nameWithType.vb: AbstractValidator(Of T).FluentValidation.IValidator.Validate(ValidationContext)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.Validate(FluentValidation.ValidationContext)
+  name.vb: FluentValidation.IValidator.Validate(ValidationContext)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+    name: IValidator.Validate
+    nameWithType: AbstractValidator<T>.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#Validate(FluentValidation.ValidationContext)
+    name: FluentValidation.IValidator.Validate
+    nameWithType: AbstractValidator(Of T).FluentValidation.IValidator.Validate
+    fullName: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+  isExternal: true
+  name: IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  nameWithType: AbstractValidator<T>.IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.ValidateAsync(FluentValidation.ValidationContext, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync(FluentValidation.ValidationContext, System.Threading.CancellationToken)
+  name.vb: FluentValidation.IValidator.ValidateAsync(ValidationContext, CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+    name: IValidator.ValidateAsync
+    nameWithType: AbstractValidator<T>.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#ValidateAsync(FluentValidation.ValidationContext,System.Threading.CancellationToken)
+    name: FluentValidation.IValidator.ValidateAsync
+    nameWithType: AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.Validate(`0)
+  commentId: M:FluentValidation.AbstractValidator`1.Validate(`0)
+  isExternal: true
+  name: Validate(T)
+  nameWithType: AbstractValidator<T>.Validate(T)
+  fullName: FluentValidation.AbstractValidator<T>.Validate(T)
+  nameWithType.vb: AbstractValidator(Of T).Validate(T)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Validate(T)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Validate(`0)
+    name: Validate
+    nameWithType: AbstractValidator<T>.Validate
+    fullName: FluentValidation.AbstractValidator<T>.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Validate(`0)
+    name: Validate
+    nameWithType: AbstractValidator(Of T).Validate
+    fullName: FluentValidation.AbstractValidator(Of T).Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: ValidateAsync(T, CancellationToken)
+  nameWithType: AbstractValidator<T>.ValidateAsync(T, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<T>.ValidateAsync(T, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of T).ValidateAsync(T, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).ValidateAsync(T, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator<T>.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<T>.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator(Of T).ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of T).ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+  commentId: M:FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+  isExternal: true
+  name: Validate(ValidationContext<T>)
+  nameWithType: AbstractValidator<T>.Validate(ValidationContext<T>)
+  fullName: FluentValidation.AbstractValidator<T>.Validate(FluentValidation.ValidationContext<T>)
+  nameWithType.vb: AbstractValidator(Of T).Validate(ValidationContext(Of T))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Validate(FluentValidation.ValidationContext(Of T))
+  name.vb: Validate(ValidationContext(Of T))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+    name: Validate
+    nameWithType: AbstractValidator<T>.Validate
+    fullName: FluentValidation.AbstractValidator<T>.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+    name: Validate
+    nameWithType: AbstractValidator(Of T).Validate
+    fullName: FluentValidation.AbstractValidator(Of T).Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+  isExternal: true
+  name: ValidateAsync(ValidationContext<T>, CancellationToken)
+  nameWithType: AbstractValidator<T>.ValidateAsync(ValidationContext<T>, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<T>.ValidateAsync(FluentValidation.ValidationContext<T>, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of T).ValidateAsync(ValidationContext(Of T), CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).ValidateAsync(FluentValidation.ValidationContext(Of T), System.Threading.CancellationToken)
+  name.vb: ValidateAsync(ValidationContext(Of T), CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator<T>.ValidateAsync
+    fullName: FluentValidation.AbstractValidator<T>.ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+    name: ValidateAsync
+    nameWithType: AbstractValidator(Of T).ValidateAsync
+    fullName: FluentValidation.AbstractValidator(Of T).ValidateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+  commentId: M:FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+  isExternal: true
+  name: AddRule(IValidationRule)
+  nameWithType: AbstractValidator<T>.AddRule(IValidationRule)
+  fullName: FluentValidation.AbstractValidator<T>.AddRule(FluentValidation.IValidationRule)
+  nameWithType.vb: AbstractValidator(Of T).AddRule(IValidationRule)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).AddRule(FluentValidation.IValidationRule)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+    name: AddRule
+    nameWithType: AbstractValidator<T>.AddRule
+    fullName: FluentValidation.AbstractValidator<T>.AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    nameWithType: IValidationRule
+    fullName: FluentValidation.IValidationRule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)
+    name: AddRule
+    nameWithType: AbstractValidator(Of T).AddRule
+    fullName: FluentValidation.AbstractValidator(Of T).AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    nameWithType: IValidationRule
+    fullName: FluentValidation.IValidationRule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+  commentId: M:FluentValidation.AbstractValidator`1.CreateDescriptor
+  isExternal: true
+  name: CreateDescriptor()
+  nameWithType: AbstractValidator<T>.CreateDescriptor()
+  fullName: FluentValidation.AbstractValidator<T>.CreateDescriptor()
+  nameWithType.vb: AbstractValidator(Of T).CreateDescriptor()
+  fullName.vb: FluentValidation.AbstractValidator(Of T).CreateDescriptor()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+    name: CreateDescriptor
+    nameWithType: AbstractValidator<T>.CreateDescriptor
+    fullName: FluentValidation.AbstractValidator<T>.CreateDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+    name: CreateDescriptor
+    nameWithType: AbstractValidator(Of T).CreateDescriptor
+    fullName: FluentValidation.AbstractValidator(Of T).CreateDescriptor
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+  commentId: M:FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+  isExternal: true
+  name: IValidator.CanValidateInstancesOfType(Type)
+  nameWithType: AbstractValidator<T>.IValidator.CanValidateInstancesOfType(Type)
+  fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.CanValidateInstancesOfType(System.Type)
+  nameWithType.vb: AbstractValidator(Of T).FluentValidation.IValidator.CanValidateInstancesOfType(Type)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.CanValidateInstancesOfType(System.Type)
+  name.vb: FluentValidation.IValidator.CanValidateInstancesOfType(Type)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+    name: IValidator.CanValidateInstancesOfType
+    nameWithType: AbstractValidator<T>.IValidator.CanValidateInstancesOfType
+    fullName: FluentValidation.AbstractValidator<T>.FluentValidation.IValidator.CanValidateInstancesOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.FluentValidation#IValidator#CanValidateInstancesOfType(System.Type)
+    name: FluentValidation.IValidator.CanValidateInstancesOfType
+    nameWithType: AbstractValidator(Of T).FluentValidation.IValidator.CanValidateInstancesOfType
+    fullName: FluentValidation.AbstractValidator(Of T).FluentValidation.IValidator.CanValidateInstancesOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  commentId: M:FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  isExternal: true
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>)
+  nameWithType: AbstractValidator<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>)
+  fullName: FluentValidation.AbstractValidator<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>)
+  nameWithType.vb: AbstractValidator(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor<TProperty>
+    nameWithType: AbstractValidator<T>.RuleFor<TProperty>
+    fullName: FluentValidation.AbstractValidator<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor(Of TProperty)
+    nameWithType: AbstractValidator(Of T).RuleFor(Of TProperty)
+    fullName: FluentValidation.AbstractValidator(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+  commentId: M:FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+  isExternal: true
+  name: RuleForEach<TProperty>(Expression<Func<T, IEnumerable<TProperty>>>)
+  nameWithType: AbstractValidator<T>.RuleForEach<TProperty>(Expression<Func<T, IEnumerable<TProperty>>>)
+  fullName: FluentValidation.AbstractValidator<T>.RuleForEach<TProperty>(System.Linq.Expressions.Expression<System.Func<T, System.Collections.Generic.IEnumerable<TProperty>>>)
+  nameWithType.vb: AbstractValidator(Of T).RuleForEach(Of TProperty)(Expression(Of Func(Of T, IEnumerable(Of TProperty))))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleForEach(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Collections.Generic.IEnumerable(Of TProperty))))
+  name.vb: RuleForEach(Of TProperty)(Expression(Of Func(Of T, IEnumerable(Of TProperty))))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach<TProperty>
+    nameWithType: AbstractValidator<T>.RuleForEach<TProperty>
+    fullName: FluentValidation.AbstractValidator<T>.RuleForEach<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach(Of TProperty)
+    nameWithType: AbstractValidator(Of T).RuleForEach(Of TProperty)
+    fullName: FluentValidation.AbstractValidator(Of T).RuleForEach(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+  isExternal: true
+  name: RuleSet(String, Action)
+  nameWithType: AbstractValidator<T>.RuleSet(String, Action)
+  fullName: FluentValidation.AbstractValidator<T>.RuleSet(System.String, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).RuleSet(String, Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleSet(System.String, System.Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+    name: RuleSet
+    nameWithType: AbstractValidator<T>.RuleSet
+    fullName: FluentValidation.AbstractValidator<T>.RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+    name: RuleSet
+    nameWithType: AbstractValidator(Of T).RuleSet
+    fullName: FluentValidation.AbstractValidator(Of T).RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+  isExternal: true
+  name: When(Func<T, Boolean>, Action)
+  nameWithType: AbstractValidator<T>.When(Func<T, Boolean>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.When(System.Func<T, System.Boolean>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).When(Func(Of T, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).When(System.Func(Of T, System.Boolean), System.Action)
+  name.vb: When(Func(Of T, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+    name: When
+    nameWithType: AbstractValidator<T>.When
+    fullName: FluentValidation.AbstractValidator<T>.When
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+    name: When
+    nameWithType: AbstractValidator(Of T).When
+    fullName: FluentValidation.AbstractValidator(Of T).When
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+  isExternal: true
+  name: Unless(Func<T, Boolean>, Action)
+  nameWithType: AbstractValidator<T>.Unless(Func<T, Boolean>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.Unless(System.Func<T, System.Boolean>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).Unless(Func(Of T, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Unless(System.Func(Of T, System.Boolean), System.Action)
+  name.vb: Unless(Func(Of T, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+    name: Unless
+    nameWithType: AbstractValidator<T>.Unless
+    fullName: FluentValidation.AbstractValidator<T>.Unless
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+    name: Unless
+    nameWithType: AbstractValidator(Of T).Unless
+    fullName: FluentValidation.AbstractValidator(Of T).Unless
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  isExternal: true
+  name: WhenAsync(Func<T, CancellationToken, Task<Boolean>>, Action)
+  nameWithType: AbstractValidator<T>.WhenAsync(Func<T, CancellationToken, Task<Boolean>>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.WhenAsync(System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Boolean>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).WhenAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).WhenAsync(System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of System.Boolean)), System.Action)
+  name.vb: WhenAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    nameWithType: AbstractValidator<T>.WhenAsync
+    fullName: FluentValidation.AbstractValidator<T>.WhenAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    nameWithType: AbstractValidator(Of T).WhenAsync
+    fullName: FluentValidation.AbstractValidator(Of T).WhenAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  isExternal: true
+  name: UnlessAsync(Func<T, CancellationToken, Task<Boolean>>, Action)
+  nameWithType: AbstractValidator<T>.UnlessAsync(Func<T, CancellationToken, Task<Boolean>>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.UnlessAsync(System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Boolean>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).UnlessAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).UnlessAsync(System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of System.Boolean)), System.Action)
+  name.vb: UnlessAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    nameWithType: AbstractValidator<T>.UnlessAsync
+    fullName: FluentValidation.AbstractValidator<T>.UnlessAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    nameWithType: AbstractValidator(Of T).UnlessAsync
+    fullName: FluentValidation.AbstractValidator(Of T).UnlessAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+  commentId: M:FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+  isExternal: true
+  name: Include(IValidator<T>)
+  nameWithType: AbstractValidator<T>.Include(IValidator<T>)
+  fullName: FluentValidation.AbstractValidator<T>.Include(FluentValidation.IValidator<T>)
+  nameWithType.vb: AbstractValidator(Of T).Include(IValidator(Of T))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Include(FluentValidation.IValidator(Of T))
+  name.vb: Include(IValidator(Of T))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+    name: Include
+    nameWithType: AbstractValidator<T>.Include
+    fullName: FluentValidation.AbstractValidator<T>.Include
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+    name: Include
+    nameWithType: AbstractValidator(Of T).Include
+    fullName: FluentValidation.AbstractValidator(Of T).Include
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    nameWithType: IValidator
+    fullName: FluentValidation.IValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+  commentId: M:FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+  isExternal: true
+  name: Include<TValidator>(Func<T, TValidator>)
+  nameWithType: AbstractValidator<T>.Include<TValidator>(Func<T, TValidator>)
+  fullName: FluentValidation.AbstractValidator<T>.Include<TValidator>(System.Func<T, TValidator>)
+  nameWithType.vb: AbstractValidator(Of T).Include(Of TValidator)(Func(Of T, TValidator))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Include(Of TValidator)(System.Func(Of T, TValidator))
+  name.vb: Include(Of TValidator)(Func(Of T, TValidator))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+    name: Include<TValidator>
+    nameWithType: AbstractValidator<T>.Include<TValidator>
+    fullName: FluentValidation.AbstractValidator<T>.Include<TValidator>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValidator
+    nameWithType: TValidator
+    fullName: TValidator
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+    name: Include(Of TValidator)
+    nameWithType: AbstractValidator(Of T).Include(Of TValidator)
+    fullName: FluentValidation.AbstractValidator(Of T).Include(Of TValidator)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValidator
+    nameWithType: TValidator
+    fullName: TValidator
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.GetEnumerator
+  commentId: M:FluentValidation.AbstractValidator`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: AbstractValidator<T>.GetEnumerator()
+  fullName: FluentValidation.AbstractValidator<T>.GetEnumerator()
+  nameWithType.vb: AbstractValidator(Of T).GetEnumerator()
+  fullName.vb: FluentValidation.AbstractValidator(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: AbstractValidator<T>.GetEnumerator
+    fullName: FluentValidation.AbstractValidator<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: AbstractValidator(Of T).GetEnumerator
+    fullName: FluentValidation.AbstractValidator(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+  isExternal: true
+  name: IEnumerable.GetEnumerator()
+  nameWithType: AbstractValidator<T>.IEnumerable.GetEnumerator()
+  fullName: FluentValidation.AbstractValidator<T>.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: AbstractValidator(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: FluentValidation.AbstractValidator(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: AbstractValidator<T>.IEnumerable.GetEnumerator
+    fullName: FluentValidation.AbstractValidator<T>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: AbstractValidator(Of T).System.Collections.IEnumerable.GetEnumerator
+    fullName: FluentValidation.AbstractValidator(Of T).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+  commentId: M:FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+  isExternal: true
+  name: EnsureInstanceNotNull(Object)
+  nameWithType: AbstractValidator<T>.EnsureInstanceNotNull(Object)
+  fullName: FluentValidation.AbstractValidator<T>.EnsureInstanceNotNull(System.Object)
+  nameWithType.vb: AbstractValidator(Of T).EnsureInstanceNotNull(Object)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).EnsureInstanceNotNull(System.Object)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    nameWithType: AbstractValidator<T>.EnsureInstanceNotNull
+    fullName: FluentValidation.AbstractValidator<T>.EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    nameWithType: AbstractValidator(Of T).EnsureInstanceNotNull
+    fullName: FluentValidation.AbstractValidator(Of T).EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  commentId: M:FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  isExternal: true
+  name: PreValidate(ValidationContext<T>, ValidationResult)
+  nameWithType: AbstractValidator<T>.PreValidate(ValidationContext<T>, ValidationResult)
+  fullName: FluentValidation.AbstractValidator<T>.PreValidate(FluentValidation.ValidationContext<T>, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: AbstractValidator(Of T).PreValidate(ValidationContext(Of T), ValidationResult)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).PreValidate(FluentValidation.ValidationContext(Of T), FluentValidation.Results.ValidationResult)
+  name.vb: PreValidate(ValidationContext(Of T), ValidationResult)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    nameWithType: AbstractValidator<T>.PreValidate
+    fullName: FluentValidation.AbstractValidator<T>.PreValidate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: FluentValidation.Results.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    nameWithType: AbstractValidator(Of T).PreValidate
+    fullName: FluentValidation.AbstractValidator(Of T).PreValidate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    nameWithType: ValidationContext
+    fullName: FluentValidation.ValidationContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: FluentValidation.Results.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1.CascadeMode
+  commentId: P:FluentValidation.AbstractValidator`1.CascadeMode
+  isExternal: true
+  name: CascadeMode
+  nameWithType: AbstractValidator<T>.CascadeMode
+  fullName: FluentValidation.AbstractValidator<T>.CascadeMode
+  nameWithType.vb: AbstractValidator(Of T).CascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of T).CascadeMode
+- uid: qrAPI.App.Domain.Validators.QrValidator.#ctor*
+  commentId: Overload:qrAPI.App.Domain.Validators.QrValidator.#ctor
+  name: QrValidator
+  nameWithType: QrValidator.QrValidator
+  fullName: qrAPI.App.Domain.Validators.QrValidator.QrValidator

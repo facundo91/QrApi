@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Domain.Scan
+  commentId: T:qrAPI.App.Domain.Scan
+  id: Scan
+  parent: qrAPI.App.Domain
+  children:
+  - qrAPI.App.Domain.Scan.DateTime
+  - qrAPI.App.Domain.Scan.Location
+  - qrAPI.App.Domain.Scan.Message
+  - qrAPI.App.Domain.Scan.Notified
+  - qrAPI.App.Domain.Scan.PictureUrl
+  - qrAPI.App.Domain.Scan.Qr
+  - qrAPI.App.Domain.Scan.Read
+  langs:
+  - csharp
+  - vb
+  name: Scan
+  nameWithType: Scan
+  fullName: qrAPI.App.Domain.Scan
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Scan
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public class Scan
+    content.vb: Public Class Scan
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.App.Domain.Scan.Qr
+  commentId: P:qrAPI.App.Domain.Scan.Qr
+  id: Qr
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: Qr
+  nameWithType: Scan.Qr
+  fullName: qrAPI.App.Domain.Scan.Qr
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Qr
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public Qr Qr { get; set; }
+    parameters: []
+    return:
+      type: qrAPI.App.Domain.Qr
+    content.vb: Public Property Qr As Qr
+  overload: qrAPI.App.Domain.Scan.Qr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Scan.DateTime
+  commentId: P:qrAPI.App.Domain.Scan.DateTime
+  id: DateTime
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: DateTime
+  nameWithType: Scan.DateTime
+  fullName: qrAPI.App.Domain.Scan.DateTime
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DateTime
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public DateTime DateTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DateTime As Date
+  overload: qrAPI.App.Domain.Scan.DateTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Scan.Location
+  commentId: P:qrAPI.App.Domain.Scan.Location
+  id: Location
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: Scan.Location
+  fullName: qrAPI.App.Domain.Scan.Location
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Location
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public Location Location { get; set; }
+    parameters: []
+    return:
+      type: qrAPI.App.Domain.Location
+    content.vb: Public Property Location As Location
+  overload: qrAPI.App.Domain.Scan.Location*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Scan.Notified
+  commentId: P:qrAPI.App.Domain.Scan.Notified
+  id: Notified
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: Notified
+  nameWithType: Scan.Notified
+  fullName: qrAPI.App.Domain.Scan.Notified
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Notified
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public bool Notified { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Notified As Boolean
+  overload: qrAPI.App.Domain.Scan.Notified*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Scan.Read
+  commentId: P:qrAPI.App.Domain.Scan.Read
+  id: Read
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: Scan.Read
+  fullName: qrAPI.App.Domain.Scan.Read
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Read
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public bool Read { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Read As Boolean
+  overload: qrAPI.App.Domain.Scan.Read*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Scan.PictureUrl
+  commentId: P:qrAPI.App.Domain.Scan.PictureUrl
+  id: PictureUrl
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: PictureUrl
+  nameWithType: Scan.PictureUrl
+  fullName: qrAPI.App.Domain.Scan.PictureUrl
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PictureUrl
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 11
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public Uri PictureUrl { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Property PictureUrl As Uri
+  overload: qrAPI.App.Domain.Scan.PictureUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Scan.Message
+  commentId: P:qrAPI.App.Domain.Scan.Message
+  id: Message
+  parent: qrAPI.App.Domain.Scan
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: Scan.Message
+  fullName: qrAPI.App.Domain.Scan.Message
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Scan.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Message
+    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    startLine: 12
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: qrAPI.App.Domain.Scan.Message*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.App.Domain
+  commentId: N:qrAPI.App.Domain
+  name: qrAPI.App.Domain
+  nameWithType: qrAPI.App.Domain
+  fullName: qrAPI.App.Domain
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.App.Domain.Scan.Qr*
+  commentId: Overload:qrAPI.App.Domain.Scan.Qr
+  name: Qr
+  nameWithType: Scan.Qr
+  fullName: qrAPI.App.Domain.Scan.Qr
+- uid: qrAPI.App.Domain.Qr
+  commentId: T:qrAPI.App.Domain.Qr
+  parent: qrAPI.App.Domain
+  name: Qr
+  nameWithType: Qr
+  fullName: qrAPI.App.Domain.Qr
+- uid: qrAPI.App.Domain.Scan.DateTime*
+  commentId: Overload:qrAPI.App.Domain.Scan.DateTime
+  name: DateTime
+  nameWithType: Scan.DateTime
+  fullName: qrAPI.App.Domain.Scan.DateTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: qrAPI.App.Domain.Scan.Location*
+  commentId: Overload:qrAPI.App.Domain.Scan.Location
+  name: Location
+  nameWithType: Scan.Location
+  fullName: qrAPI.App.Domain.Scan.Location
+- uid: qrAPI.App.Domain.Location
+  commentId: T:qrAPI.App.Domain.Location
+  parent: qrAPI.App.Domain
+  name: Location
+  nameWithType: Location
+  fullName: qrAPI.App.Domain.Location
+- uid: qrAPI.App.Domain.Scan.Notified*
+  commentId: Overload:qrAPI.App.Domain.Scan.Notified
+  name: Notified
+  nameWithType: Scan.Notified
+  fullName: qrAPI.App.Domain.Scan.Notified
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: qrAPI.App.Domain.Scan.Read*
+  commentId: Overload:qrAPI.App.Domain.Scan.Read
+  name: Read
+  nameWithType: Scan.Read
+  fullName: qrAPI.App.Domain.Scan.Read
+- uid: qrAPI.App.Domain.Scan.PictureUrl*
+  commentId: Overload:qrAPI.App.Domain.Scan.PictureUrl
+  name: PictureUrl
+  nameWithType: Scan.PictureUrl
+  fullName: qrAPI.App.Domain.Scan.PictureUrl
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: qrAPI.App.Domain.Scan.Message*
+  commentId: Overload:qrAPI.App.Domain.Scan.Message
+  name: Message
+  nameWithType: Scan.Message
+  fullName: qrAPI.App.Domain.Scan.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

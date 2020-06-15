@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.IMailBroker
+  commentId: T:qrAPI.Infra.Mail.IMailBroker
+  id: IMailBroker
+  parent: qrAPI.Infra.Mail
+  children:
+  - qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  langs:
+  - csharp
+  - vb
+  name: IMailBroker
+  nameWithType: IMailBroker
+  fullName: qrAPI.Infra.Mail.IMailBroker
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/IMailBroker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IMailBroker
+    path: ../../QrApi/src/qrAPI.Infra/Mail/IMailBroker.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail
+  syntax:
+    content: public interface IMailBroker
+    content.vb: Public Interface IMailBroker
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  commentId: M:qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  id: SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  parent: qrAPI.Infra.Mail.IMailBroker
+  langs:
+  - csharp
+  - vb
+  name: SendSimpleMessage(Mail)
+  nameWithType: IMailBroker.SendSimpleMessage(Mail)
+  fullName: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/IMailBroker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: SendSimpleMessage
+    path: ../../QrApi/src/qrAPI.Infra/Mail/IMailBroker.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail
+  syntax:
+    content: Task<HttpStatusCode> SendSimpleMessage(Mail mail)
+    parameters:
+    - id: mail
+      type: qrAPI.Infra.Mail.Models.Mail
+    return:
+      type: System.Threading.Tasks.Task{System.Net.HttpStatusCode}
+    content.vb: Function SendSimpleMessage(mail As Mail) As Task(Of HttpStatusCode)
+  overload: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage*
+references:
+- uid: qrAPI.Infra.Mail
+  commentId: N:qrAPI.Infra.Mail
+  name: qrAPI.Infra.Mail
+  nameWithType: qrAPI.Infra.Mail
+  fullName: qrAPI.Infra.Mail
+- uid: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage*
+  commentId: Overload:qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage
+  name: SendSimpleMessage
+  nameWithType: IMailBroker.SendSimpleMessage
+  fullName: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage
+- uid: qrAPI.Infra.Mail.Models.Mail
+  commentId: T:qrAPI.Infra.Mail.Models.Mail
+  parent: qrAPI.Infra.Mail.Models
+  name: Mail
+  nameWithType: Mail
+  fullName: qrAPI.Infra.Mail.Models.Mail
+- uid: System.Threading.Tasks.Task{System.Net.HttpStatusCode}
+  commentId: T:System.Threading.Tasks.Task{System.Net.HttpStatusCode}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpStatusCode>
+  nameWithType: Task<HttpStatusCode>
+  fullName: System.Threading.Tasks.Task<System.Net.HttpStatusCode>
+  nameWithType.vb: Task(Of HttpStatusCode)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.HttpStatusCode)
+  name.vb: Task(Of HttpStatusCode)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    nameWithType: HttpStatusCode
+    fullName: System.Net.HttpStatusCode
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    nameWithType: HttpStatusCode
+    fullName: System.Net.HttpStatusCode
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Infra.Mail.Models
+  commentId: N:qrAPI.Infra.Mail.Models
+  name: qrAPI.Infra.Mail.Models
+  nameWithType: qrAPI.Infra.Mail.Models
+  fullName: qrAPI.Infra.Mail.Models
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

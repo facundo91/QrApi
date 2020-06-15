@@ -1,0 +1,1140 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Services.Implementations.IdentityService
+  commentId: T:qrAPI.App.Services.Implementations.IdentityService
+  id: IdentityService
+  parent: qrAPI.App.Services.Implementations
+  children:
+  - qrAPI.App.Services.Implementations.IdentityService.#ctor(Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},qrAPI.App.Options.JwtOptions,Microsoft.IdentityModel.Tokens.TokenValidationParameters,qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository,Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})
+  - qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync(System.Guid)
+  - qrAPI.App.Services.Implementations.IdentityService.LoginAsync(System.String,System.String)
+  - qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync(System.String,System.String)
+  - qrAPI.App.Services.Implementations.IdentityService.RegisterAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IdentityService
+  nameWithType: IdentityService
+  fullName: qrAPI.App.Services.Implementations.IdentityService
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/IdentityService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IdentityService
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    startLine: 18
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: 'public class IdentityService : IIdentityService'
+    content.vb: >-
+      Public Class IdentityService
+
+          Implements IIdentityService
+  inheritance:
+  - System.Object
+  implements:
+  - qrAPI.App.Services.Interfaces.IIdentityService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.App.Services.Implementations.IdentityService.#ctor(Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},qrAPI.App.Options.JwtOptions,Microsoft.IdentityModel.Tokens.TokenValidationParameters,qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository,Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})
+  commentId: M:qrAPI.App.Services.Implementations.IdentityService.#ctor(Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},qrAPI.App.Options.JwtOptions,Microsoft.IdentityModel.Tokens.TokenValidationParameters,qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository,Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})
+  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},qrAPI.App.Options.JwtOptions,Microsoft.IdentityModel.Tokens.TokenValidationParameters,qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository,Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})'
+  parent: qrAPI.App.Services.Implementations.IdentityService
+  langs:
+  - csharp
+  - vb
+  name: IdentityService(UserManager<IdentityUser>, JwtOptions, TokenValidationParameters, IRefreshTokenRepository, RoleManager<IdentityRole>)
+  nameWithType: IdentityService.IdentityService(UserManager<IdentityUser>, JwtOptions, TokenValidationParameters, IRefreshTokenRepository, RoleManager<IdentityRole>)
+  fullName: qrAPI.App.Services.Implementations.IdentityService.IdentityService(Microsoft.AspNetCore.Identity.UserManager<Microsoft.AspNetCore.Identity.IdentityUser>, qrAPI.App.Options.JwtOptions, Microsoft.IdentityModel.Tokens.TokenValidationParameters, qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository, Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/IdentityService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    startLine: 26
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public IdentityService(UserManager<IdentityUser> userManager, JwtOptions jwtSettings, TokenValidationParameters tokenValidationParameters, IRefreshTokenRepository repository, RoleManager<IdentityRole> roleManager)
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser}
+    - id: jwtSettings
+      type: qrAPI.App.Options.JwtOptions
+    - id: tokenValidationParameters
+      type: Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    - id: repository
+      type: qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+    - id: roleManager
+      type: Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole}
+    content.vb: Public Sub New(userManager As UserManager(Of IdentityUser), jwtSettings As JwtOptions, tokenValidationParameters As TokenValidationParameters, repository As IRefreshTokenRepository, roleManager As RoleManager(Of IdentityRole))
+  overload: qrAPI.App.Services.Implementations.IdentityService.#ctor*
+  nameWithType.vb: IdentityService.IdentityService(UserManager(Of IdentityUser), JwtOptions, TokenValidationParameters, IRefreshTokenRepository, RoleManager(Of IdentityRole))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.App.Services.Implementations.IdentityService.IdentityService(Microsoft.AspNetCore.Identity.UserManager(Of Microsoft.AspNetCore.Identity.IdentityUser), qrAPI.App.Options.JwtOptions, Microsoft.IdentityModel.Tokens.TokenValidationParameters, qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository, Microsoft.AspNetCore.Identity.RoleManager(Of Microsoft.AspNetCore.Identity.IdentityRole))
+  name.vb: IdentityService(UserManager(Of IdentityUser), JwtOptions, TokenValidationParameters, IRefreshTokenRepository, RoleManager(Of IdentityRole))
+- uid: qrAPI.App.Services.Implementations.IdentityService.RegisterAsync(System.String,System.String)
+  commentId: M:qrAPI.App.Services.Implementations.IdentityService.RegisterAsync(System.String,System.String)
+  id: RegisterAsync(System.String,System.String)
+  parent: qrAPI.App.Services.Implementations.IdentityService
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsync(String, String)
+  nameWithType: IdentityService.RegisterAsync(String, String)
+  fullName: qrAPI.App.Services.Implementations.IdentityService.RegisterAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/IdentityService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RegisterAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    startLine: 39
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public Task<AuthenticationResult> RegisterAsync(string email, string password)
+    parameters:
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{qrAPI.DAL.Dtos.AuthenticationResult}
+    content.vb: Public Function RegisterAsync(email As String, password As String) As Task(Of AuthenticationResult)
+  overload: qrAPI.App.Services.Implementations.IdentityService.RegisterAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Services.Implementations.IdentityService.LoginAsync(System.String,System.String)
+  commentId: M:qrAPI.App.Services.Implementations.IdentityService.LoginAsync(System.String,System.String)
+  id: LoginAsync(System.String,System.String)
+  parent: qrAPI.App.Services.Implementations.IdentityService
+  langs:
+  - csharp
+  - vb
+  name: LoginAsync(String, String)
+  nameWithType: IdentityService.LoginAsync(String, String)
+  fullName: qrAPI.App.Services.Implementations.IdentityService.LoginAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/IdentityService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: LoginAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    startLine: 68
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public Task<AuthenticationResult> LoginAsync(string email, string password)
+    parameters:
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{qrAPI.DAL.Dtos.AuthenticationResult}
+    content.vb: Public Function LoginAsync(email As String, password As String) As Task(Of AuthenticationResult)
+  overload: qrAPI.App.Services.Implementations.IdentityService.LoginAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync(System.String,System.String)
+  commentId: M:qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync(System.String,System.String)
+  id: RefreshTokenAsync(System.String,System.String)
+  parent: qrAPI.App.Services.Implementations.IdentityService
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenAsync(String, String)
+  nameWithType: IdentityService.RefreshTokenAsync(String, String)
+  fullName: qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/IdentityService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RefreshTokenAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    startLine: 89
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public Task<AuthenticationResult> RefreshTokenAsync(string token, string refreshToken)
+    parameters:
+    - id: token
+      type: System.String
+    - id: refreshToken
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{qrAPI.DAL.Dtos.AuthenticationResult}
+    content.vb: Public Function RefreshTokenAsync(token As String, refreshToken As String) As Task(Of AuthenticationResult)
+  overload: qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync(System.Guid)
+  id: GetPersonAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.IdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetPersonAsync(Guid)
+  nameWithType: IdentityService.GetPersonAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/IdentityService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetPersonAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    startLine: 150
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public Task<User> GetPersonAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{qrAPI.App.Domain.User}
+    content.vb: Public Function GetPersonAsync(userId As Guid) As Task(Of User)
+  overload: qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync(System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.App.Services.Implementations
+  commentId: N:qrAPI.App.Services.Implementations
+  name: qrAPI.App.Services.Implementations
+  nameWithType: qrAPI.App.Services.Implementations
+  fullName: qrAPI.App.Services.Implementations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.App.Services.Interfaces.IIdentityService
+  commentId: T:qrAPI.App.Services.Interfaces.IIdentityService
+  parent: qrAPI.App.Services.Interfaces
+  name: IIdentityService
+  nameWithType: IIdentityService
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.App.Services.Interfaces
+  commentId: N:qrAPI.App.Services.Interfaces
+  name: qrAPI.App.Services.Interfaces
+  nameWithType: qrAPI.App.Services.Interfaces
+  fullName: qrAPI.App.Services.Interfaces
+- uid: qrAPI.App.Services.Implementations.IdentityService.#ctor*
+  commentId: Overload:qrAPI.App.Services.Implementations.IdentityService.#ctor
+  name: IdentityService
+  nameWithType: IdentityService.IdentityService
+  fullName: qrAPI.App.Services.Implementations.IdentityService.IdentityService
+- uid: Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser}
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.UserManager`1
+  name: UserManager<IdentityUser>
+  nameWithType: UserManager<IdentityUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<Microsoft.AspNetCore.Identity.IdentityUser>
+  nameWithType.vb: UserManager(Of IdentityUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of Microsoft.AspNetCore.Identity.IdentityUser)
+  name.vb: UserManager(Of IdentityUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.IdentityUser
+    name: IdentityUser
+    nameWithType: IdentityUser
+    fullName: Microsoft.AspNetCore.Identity.IdentityUser
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.IdentityUser
+    name: IdentityUser
+    nameWithType: IdentityUser
+    fullName: Microsoft.AspNetCore.Identity.IdentityUser
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Options.JwtOptions
+  commentId: T:qrAPI.App.Options.JwtOptions
+  parent: qrAPI.App.Options
+  name: JwtOptions
+  nameWithType: JwtOptions
+  fullName: qrAPI.App.Options.JwtOptions
+- uid: Microsoft.IdentityModel.Tokens.TokenValidationParameters
+  commentId: T:Microsoft.IdentityModel.Tokens.TokenValidationParameters
+  parent: Microsoft.IdentityModel.Tokens
+  isExternal: true
+  name: TokenValidationParameters
+  nameWithType: TokenValidationParameters
+  fullName: Microsoft.IdentityModel.Tokens.TokenValidationParameters
+- uid: qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+  parent: qrAPI.DAL.Daos.Interfaces
+  name: IRefreshTokenRepository
+  nameWithType: IRefreshTokenRepository
+  fullName: qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole}
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1
+  name: RoleManager<IdentityRole>
+  nameWithType: RoleManager<IdentityRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>
+  nameWithType.vb: RoleManager(Of IdentityRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Microsoft.AspNetCore.Identity.IdentityRole)
+  name.vb: RoleManager(Of IdentityRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.UserManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
+  isExternal: true
+  name: UserManager<TUser>
+  nameWithType: UserManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<TUser>
+  nameWithType.vb: UserManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of TUser)
+  name.vb: UserManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: qrAPI.App.Options
+  commentId: N:qrAPI.App.Options
+  name: qrAPI.App.Options
+  nameWithType: qrAPI.App.Options
+  fullName: qrAPI.App.Options
+- uid: Microsoft.IdentityModel.Tokens
+  commentId: N:Microsoft.IdentityModel.Tokens
+  isExternal: true
+  name: Microsoft.IdentityModel.Tokens
+  nameWithType: Microsoft.IdentityModel.Tokens
+  fullName: Microsoft.IdentityModel.Tokens
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager`1
+  isExternal: true
+  name: RoleManager<TRole>
+  nameWithType: RoleManager<TRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>
+  nameWithType.vb: RoleManager(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole)
+  name.vb: RoleManager(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.IdentityService.RegisterAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.IdentityService.RegisterAsync
+  name: RegisterAsync
+  nameWithType: IdentityService.RegisterAsync
+  fullName: qrAPI.App.Services.Implementations.IdentityService.RegisterAsync
+- uid: qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync(System.String,System.String)
+  commentId: M:qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync(System.String,System.String)
+  parent: qrAPI.App.Services.Interfaces.IIdentityService
+  isExternal: true
+  name: RegisterAsync(String, String)
+  nameWithType: IIdentityService.RegisterAsync(String, String)
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync(System.String, System.String)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync(System.String,System.String)
+    name: RegisterAsync
+    nameWithType: IIdentityService.RegisterAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync(System.String,System.String)
+    name: RegisterAsync
+    nameWithType: IIdentityService.RegisterAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.RegisterAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{qrAPI.DAL.Dtos.AuthenticationResult}
+  commentId: T:System.Threading.Tasks.Task{qrAPI.DAL.Dtos.AuthenticationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AuthenticationResult>
+  nameWithType: Task<AuthenticationResult>
+  fullName: System.Threading.Tasks.Task<qrAPI.DAL.Dtos.AuthenticationResult>
+  nameWithType.vb: Task(Of AuthenticationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of qrAPI.DAL.Dtos.AuthenticationResult)
+  name.vb: Task(Of AuthenticationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.AuthenticationResult
+    name: AuthenticationResult
+    nameWithType: AuthenticationResult
+    fullName: qrAPI.DAL.Dtos.AuthenticationResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.AuthenticationResult
+    name: AuthenticationResult
+    nameWithType: AuthenticationResult
+    fullName: qrAPI.DAL.Dtos.AuthenticationResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.App.Services.Implementations.IdentityService.LoginAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.IdentityService.LoginAsync
+  name: LoginAsync
+  nameWithType: IdentityService.LoginAsync
+  fullName: qrAPI.App.Services.Implementations.IdentityService.LoginAsync
+- uid: qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync(System.String,System.String)
+  commentId: M:qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync(System.String,System.String)
+  parent: qrAPI.App.Services.Interfaces.IIdentityService
+  isExternal: true
+  name: LoginAsync(String, String)
+  nameWithType: IIdentityService.LoginAsync(String, String)
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync(System.String, System.String)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync(System.String,System.String)
+    name: LoginAsync
+    nameWithType: IIdentityService.LoginAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync(System.String,System.String)
+    name: LoginAsync
+    nameWithType: IIdentityService.LoginAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.LoginAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync
+  name: RefreshTokenAsync
+  nameWithType: IdentityService.RefreshTokenAsync
+  fullName: qrAPI.App.Services.Implementations.IdentityService.RefreshTokenAsync
+- uid: qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync(System.String,System.String)
+  commentId: M:qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync(System.String,System.String)
+  parent: qrAPI.App.Services.Interfaces.IIdentityService
+  isExternal: true
+  name: RefreshTokenAsync(String, String)
+  nameWithType: IIdentityService.RefreshTokenAsync(String, String)
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync(System.String, System.String)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync(System.String,System.String)
+    name: RefreshTokenAsync
+    nameWithType: IIdentityService.RefreshTokenAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync(System.String,System.String)
+    name: RefreshTokenAsync
+    nameWithType: IIdentityService.RefreshTokenAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.RefreshTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync
+  name: GetPersonAsync
+  nameWithType: IdentityService.GetPersonAsync
+  fullName: qrAPI.App.Services.Implementations.IdentityService.GetPersonAsync
+- uid: qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync(System.Guid)
+  parent: qrAPI.App.Services.Interfaces.IIdentityService
+  isExternal: true
+  name: GetPersonAsync(Guid)
+  nameWithType: IIdentityService.GetPersonAsync(Guid)
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync(System.Guid)
+    name: GetPersonAsync
+    nameWithType: IIdentityService.GetPersonAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync(System.Guid)
+    name: GetPersonAsync
+    nameWithType: IIdentityService.GetPersonAsync
+    fullName: qrAPI.App.Services.Interfaces.IIdentityService.GetPersonAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{qrAPI.App.Domain.User}
+  commentId: T:System.Threading.Tasks.Task{qrAPI.App.Domain.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<qrAPI.App.Domain.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of qrAPI.App.Domain.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.User
+    name: User
+    nameWithType: User
+    fullName: qrAPI.App.Domain.User
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.User
+    name: User
+    nameWithType: User
+    fullName: qrAPI.App.Domain.User
+  - name: )
+    nameWithType: )
+    fullName: )

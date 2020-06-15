@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Responses
+  commentId: N:qrAPI.Contracts.v1.Responses
+  id: qrAPI.Contracts.v1.Responses
+  children:
+  - qrAPI.Contracts.v1.Responses.AuthFailedResponse
+  - qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+  - qrAPI.Contracts.v1.Responses.ErrorModel
+  - qrAPI.Contracts.v1.Responses.ErrorResponse
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1
+  - qrAPI.Contracts.v1.Responses.PetResponse
+  - qrAPI.Contracts.v1.Responses.QrResponse
+  - qrAPI.Contracts.v1.Responses.Response`1
+  - qrAPI.Contracts.v1.Responses.UserResponse
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Responses
+  nameWithType: qrAPI.Contracts.v1.Responses
+  fullName: qrAPI.Contracts.v1.Responses
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Responses.AuthFailedResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.AuthFailedResponse
+  name: AuthFailedResponse
+  nameWithType: AuthFailedResponse
+  fullName: qrAPI.Contracts.v1.Responses.AuthFailedResponse
+- uid: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+  name: AuthSuccessResponse
+  nameWithType: AuthSuccessResponse
+  fullName: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+- uid: qrAPI.Contracts.v1.Responses.ErrorModel
+  commentId: T:qrAPI.Contracts.v1.Responses.ErrorModel
+  parent: qrAPI.Contracts.v1.Responses
+  name: ErrorModel
+  nameWithType: ErrorModel
+  fullName: qrAPI.Contracts.v1.Responses.ErrorModel
+- uid: qrAPI.Contracts.v1.Responses.ErrorResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.ErrorResponse
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: qrAPI.Contracts.v1.Responses.ErrorResponse
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  commentId: T:qrAPI.Contracts.v1.Responses.PagedResponse`1
+  name: PagedResponse<T>
+  nameWithType: PagedResponse<T>
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>
+  nameWithType.vb: PagedResponse(Of T)
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T)
+  name.vb: PagedResponse(Of T)
+  spec.csharp:
+  - uid: qrAPI.Contracts.v1.Responses.PagedResponse`1
+    name: PagedResponse
+    nameWithType: PagedResponse
+    fullName: qrAPI.Contracts.v1.Responses.PagedResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.Contracts.v1.Responses.PagedResponse`1
+    name: PagedResponse
+    nameWithType: PagedResponse
+    fullName: qrAPI.Contracts.v1.Responses.PagedResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Responses.PetResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.PetResponse
+  parent: qrAPI.Contracts.v1.Responses
+  name: PetResponse
+  nameWithType: PetResponse
+  fullName: qrAPI.Contracts.v1.Responses.PetResponse
+- uid: qrAPI.Contracts.v1.Responses.QrResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.QrResponse
+  parent: qrAPI.Contracts.v1.Responses
+  name: QrResponse
+  nameWithType: QrResponse
+  fullName: qrAPI.Contracts.v1.Responses.QrResponse
+- uid: qrAPI.Contracts.v1.Responses.Response`1
+  commentId: T:qrAPI.Contracts.v1.Responses.Response`1
+  name: Response<T>
+  nameWithType: Response<T>
+  fullName: qrAPI.Contracts.v1.Responses.Response<T>
+  nameWithType.vb: Response(Of T)
+  fullName.vb: qrAPI.Contracts.v1.Responses.Response(Of T)
+  name.vb: Response(Of T)
+  spec.csharp:
+  - uid: qrAPI.Contracts.v1.Responses.Response`1
+    name: Response
+    nameWithType: Response
+    fullName: qrAPI.Contracts.v1.Responses.Response
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.Contracts.v1.Responses.Response`1
+    name: Response
+    nameWithType: Response
+    fullName: qrAPI.Contracts.v1.Responses.Response
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Responses.UserResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.UserResponse
+  name: UserResponse
+  nameWithType: UserResponse
+  fullName: qrAPI.Contracts.v1.Responses.UserResponse
+- uid: qrAPI.Contracts.v1.Responses
+  commentId: N:qrAPI.Contracts.v1.Responses
+  name: qrAPI.Contracts.v1.Responses
+  nameWithType: qrAPI.Contracts.v1.Responses
+  fullName: qrAPI.Contracts.v1.Responses

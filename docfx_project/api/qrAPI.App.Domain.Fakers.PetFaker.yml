@@ -1,0 +1,5547 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Domain.Fakers.PetFaker
+  commentId: T:qrAPI.App.Domain.Fakers.PetFaker
+  id: PetFaker
+  parent: qrAPI.App.Domain.Fakers
+  children:
+  - qrAPI.App.Domain.Fakers.PetFaker.#ctor
+  - qrAPI.App.Domain.Fakers.PetFaker.#ctor(qrAPI.App.Domain.Qr)
+  - qrAPI.App.Domain.Fakers.PetFaker.#ctor(qrAPI.App.Domain.User)
+  langs:
+  - csharp
+  - vb
+  name: PetFaker
+  nameWithType: PetFaker
+  fullName: qrAPI.App.Domain.Fakers.PetFaker
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Fakers/PetFaker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PetFaker
+    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain.Fakers
+  syntax:
+    content: 'public sealed class PetFaker : AutoFaker<Pet>, IFakerTInternal, ILocaleAware, IRuleSet<Pet>'
+    content.vb: >-
+      Public NotInheritable Class PetFaker
+
+          Inherits AutoFaker(Of Pet)
+
+          Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Pet)
+  inheritance:
+  - System.Object
+  - Bogus.Faker{qrAPI.App.Domain.Pet}
+  - AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}
+  implements:
+  - Bogus.IFakerTInternal
+  - Bogus.ILocaleAware
+  - Bogus.IRuleSet{qrAPI.App.Domain.Pet}
+  inheritedMembers:
+  - AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Generate(System.String)
+  - AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Generate(System.Int32,System.String)
+  - AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Populate(qrAPI.App.Domain.Pet,System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Default
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.FakerHub
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.binder
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Actions
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.FinalizeActions
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.CreateActions
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.TypeProperties
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.SetterCache
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.StrictModes
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.IsValid
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.currentRuleSet
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.localSeed
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Clone
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.UseSeed(System.Int32)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.CustomInstantiator(System.Func{Bogus.Faker,qrAPI.App.Domain.Pet})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,{TProperty}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},{TProperty})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},System.Func{{TProperty}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},System.Func{Bogus.Faker,{TProperty}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.String,System.Func{Bogus.Faker,{TProperty}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.String,System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,{TProperty}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.AddRule(System.String,System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,System.Object})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Rules(System.Action{Bogus.Faker,qrAPI.App.Domain.Pet})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleForType``1(System.Type,System.Func{Bogus.Faker,{TType}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleSet(System.String,System.Action{Bogus.IRuleSet{qrAPI.App.Domain.Pet}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.EnsureMemberExists(System.String,System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Ignore(System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Ignore``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TPropertyOrField}}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.StrictMode(System.Boolean)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.FinishWith(System.Action{Bogus.Faker,qrAPI.App.Domain.Pet})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.ParseDirtyRulesSets(System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.GenerateLazy(System.Int32,System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.GenerateForever(System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.PopulateInternal(qrAPI.App.Domain.Pet,System.String[])
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Validate(System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.AssertConfigurationIsValid(System.String)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.MakeValidationException(Bogus.ValidationResult)
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}})
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#FakerHub
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#Binder
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#LocalSeed
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#TypeOfT
+  - Bogus.Faker{qrAPI.App.Domain.Pet}.Locale
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: qrAPI.App.Domain.Fakers.PetFaker.#ctor
+  commentId: M:qrAPI.App.Domain.Fakers.PetFaker.#ctor
+  id: '#ctor'
+  parent: qrAPI.App.Domain.Fakers.PetFaker
+  langs:
+  - csharp
+  - vb
+  name: PetFaker()
+  nameWithType: PetFaker.PetFaker()
+  fullName: qrAPI.App.Domain.Fakers.PetFaker.PetFaker()
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Fakers/PetFaker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain.Fakers
+  syntax:
+    content: public PetFaker()
+    content.vb: Public Sub New
+  overload: qrAPI.App.Domain.Fakers.PetFaker.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Fakers.PetFaker.#ctor(qrAPI.App.Domain.Qr)
+  commentId: M:qrAPI.App.Domain.Fakers.PetFaker.#ctor(qrAPI.App.Domain.Qr)
+  id: '#ctor(qrAPI.App.Domain.Qr)'
+  parent: qrAPI.App.Domain.Fakers.PetFaker
+  langs:
+  - csharp
+  - vb
+  name: PetFaker(Qr)
+  nameWithType: PetFaker.PetFaker(Qr)
+  fullName: qrAPI.App.Domain.Fakers.PetFaker.PetFaker(qrAPI.App.Domain.Qr)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Fakers/PetFaker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    startLine: 18
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain.Fakers
+  syntax:
+    content: public PetFaker(Qr qr)
+    parameters:
+    - id: qr
+      type: qrAPI.App.Domain.Qr
+    content.vb: Public Sub New(qr As Qr)
+  overload: qrAPI.App.Domain.Fakers.PetFaker.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.App.Domain.Fakers.PetFaker.#ctor(qrAPI.App.Domain.User)
+  commentId: M:qrAPI.App.Domain.Fakers.PetFaker.#ctor(qrAPI.App.Domain.User)
+  id: '#ctor(qrAPI.App.Domain.User)'
+  parent: qrAPI.App.Domain.Fakers.PetFaker
+  langs:
+  - csharp
+  - vb
+  name: PetFaker(User)
+  nameWithType: PetFaker.PetFaker(User)
+  fullName: qrAPI.App.Domain.Fakers.PetFaker.PetFaker(qrAPI.App.Domain.User)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Fakers/PetFaker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    startLine: 27
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain.Fakers
+  syntax:
+    content: public PetFaker(User user)
+    parameters:
+    - id: user
+      type: qrAPI.App.Domain.User
+    content.vb: Public Sub New(user As User)
+  overload: qrAPI.App.Domain.Fakers.PetFaker.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.App.Domain.Fakers
+  commentId: N:qrAPI.App.Domain.Fakers
+  name: qrAPI.App.Domain.Fakers
+  nameWithType: qrAPI.App.Domain.Fakers
+  fullName: qrAPI.App.Domain.Fakers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}
+  commentId: T:Bogus.Faker{qrAPI.App.Domain.Pet}
+  parent: Bogus
+  definition: Bogus.Faker`1
+  name: Faker<Pet>
+  nameWithType: Faker<Pet>
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>
+  nameWithType.vb: Faker(Of Pet)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet)
+  name.vb: Faker(Of Pet)
+  spec.csharp:
+  - uid: Bogus.Faker`1
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Bogus.Faker`1
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}
+  commentId: T:AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}
+  parent: AutoBogus
+  definition: AutoBogus.AutoFaker`1
+  name: AutoFaker<Pet>
+  nameWithType: AutoFaker<Pet>
+  fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>
+  nameWithType.vb: AutoFaker(Of Pet)
+  fullName.vb: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet)
+  name.vb: AutoFaker(Of Pet)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1
+    name: AutoFaker
+    nameWithType: AutoFaker
+    fullName: AutoBogus.AutoFaker
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1
+    name: AutoFaker
+    nameWithType: AutoFaker
+    fullName: AutoBogus.AutoFaker
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.IFakerTInternal
+  commentId: T:Bogus.IFakerTInternal
+  parent: Bogus
+  isExternal: true
+  name: IFakerTInternal
+  nameWithType: IFakerTInternal
+  fullName: Bogus.IFakerTInternal
+- uid: Bogus.ILocaleAware
+  commentId: T:Bogus.ILocaleAware
+  parent: Bogus
+  isExternal: true
+  name: ILocaleAware
+  nameWithType: ILocaleAware
+  fullName: Bogus.ILocaleAware
+- uid: Bogus.IRuleSet{qrAPI.App.Domain.Pet}
+  commentId: T:Bogus.IRuleSet{qrAPI.App.Domain.Pet}
+  parent: Bogus
+  definition: Bogus.IRuleSet`1
+  name: IRuleSet<Pet>
+  nameWithType: IRuleSet<Pet>
+  fullName: Bogus.IRuleSet<qrAPI.App.Domain.Pet>
+  nameWithType.vb: IRuleSet(Of Pet)
+  fullName.vb: Bogus.IRuleSet(Of qrAPI.App.Domain.Pet)
+  name.vb: IRuleSet(Of Pet)
+  spec.csharp:
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Generate(System.String)
+  commentId: M:AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Generate(System.String)
+  parent: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}
+  definition: AutoBogus.AutoFaker`1.Generate(System.String)
+  name: Generate(String)
+  nameWithType: AutoFaker<Pet>.Generate(String)
+  fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>.Generate(System.String)
+  nameWithType.vb: AutoFaker(Of Pet).Generate(String)
+  fullName.vb: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet).Generate(System.String)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.String)
+    name: Generate
+    nameWithType: AutoFaker<Pet>.Generate
+    fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>.Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.String)
+    name: Generate
+    nameWithType: AutoFaker(Of Pet).Generate
+    fullName: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet).Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Generate(System.Int32,System.String)
+  commentId: M:AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Generate(System.Int32,System.String)
+  parent: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}
+  definition: AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+  name: Generate(Int32, String)
+  nameWithType: AutoFaker<Pet>.Generate(Int32, String)
+  fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>.Generate(System.Int32, System.String)
+  nameWithType.vb: AutoFaker(Of Pet).Generate(Int32, String)
+  fullName.vb: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet).Generate(System.Int32, System.String)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+    name: Generate
+    nameWithType: AutoFaker<Pet>.Generate
+    fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>.Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+    name: Generate
+    nameWithType: AutoFaker(Of Pet).Generate
+    fullName: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet).Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Populate(qrAPI.App.Domain.Pet,System.String)
+  commentId: M:AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}.Populate(qrAPI.App.Domain.Pet,System.String)
+  parent: AutoBogus.AutoFaker{qrAPI.App.Domain.Pet}
+  definition: AutoBogus.AutoFaker`1.Populate(`0,System.String)
+  name: Populate(Pet, String)
+  nameWithType: AutoFaker<Pet>.Populate(Pet, String)
+  fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>.Populate(qrAPI.App.Domain.Pet, System.String)
+  nameWithType.vb: AutoFaker(Of Pet).Populate(Pet, String)
+  fullName.vb: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet).Populate(qrAPI.App.Domain.Pet, System.String)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1.Populate(`0,System.String)
+    name: Populate
+    nameWithType: AutoFaker<Pet>.Populate
+    fullName: AutoBogus.AutoFaker<qrAPI.App.Domain.Pet>.Populate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1.Populate(`0,System.String)
+    name: Populate
+    nameWithType: AutoFaker(Of Pet).Populate
+    fullName: AutoBogus.AutoFaker(Of qrAPI.App.Domain.Pet).Populate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Default
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.Default
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Default
+  name: Default
+  nameWithType: Faker<Pet>.Default
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Default
+  nameWithType.vb: Faker(Of Pet).Default
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Default
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.FakerHub
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.FakerHub
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.FakerHub
+  name: FakerHub
+  nameWithType: Faker<Pet>.FakerHub
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.FakerHub
+  nameWithType.vb: Faker(Of Pet).FakerHub
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).FakerHub
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.binder
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.binder
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.binder
+  name: binder
+  nameWithType: Faker<Pet>.binder
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.binder
+  nameWithType.vb: Faker(Of Pet).binder
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).binder
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Actions
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.Actions
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Actions
+  name: Actions
+  nameWithType: Faker<Pet>.Actions
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Actions
+  nameWithType.vb: Faker(Of Pet).Actions
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Actions
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.FinalizeActions
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.FinalizeActions
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.FinalizeActions
+  name: FinalizeActions
+  nameWithType: Faker<Pet>.FinalizeActions
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.FinalizeActions
+  nameWithType.vb: Faker(Of Pet).FinalizeActions
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).FinalizeActions
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.CreateActions
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.CreateActions
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.CreateActions
+  name: CreateActions
+  nameWithType: Faker<Pet>.CreateActions
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.CreateActions
+  nameWithType.vb: Faker(Of Pet).CreateActions
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).CreateActions
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.TypeProperties
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.TypeProperties
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.TypeProperties
+  name: TypeProperties
+  nameWithType: Faker<Pet>.TypeProperties
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.TypeProperties
+  nameWithType.vb: Faker(Of Pet).TypeProperties
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).TypeProperties
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.SetterCache
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.SetterCache
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.SetterCache
+  name: SetterCache
+  nameWithType: Faker<Pet>.SetterCache
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.SetterCache
+  nameWithType.vb: Faker(Of Pet).SetterCache
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).SetterCache
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.StrictModes
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.StrictModes
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.StrictModes
+  name: StrictModes
+  nameWithType: Faker<Pet>.StrictModes
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.StrictModes
+  nameWithType.vb: Faker(Of Pet).StrictModes
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).StrictModes
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.IsValid
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.IsValid
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.IsValid
+  name: IsValid
+  nameWithType: Faker<Pet>.IsValid
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.IsValid
+  nameWithType.vb: Faker(Of Pet).IsValid
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).IsValid
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.currentRuleSet
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.currentRuleSet
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.currentRuleSet
+  name: currentRuleSet
+  nameWithType: Faker<Pet>.currentRuleSet
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.currentRuleSet
+  nameWithType.vb: Faker(Of Pet).currentRuleSet
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).currentRuleSet
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.localSeed
+  commentId: F:Bogus.Faker{qrAPI.App.Domain.Pet}.localSeed
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.localSeed
+  name: localSeed
+  nameWithType: Faker<Pet>.localSeed
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.localSeed
+  nameWithType.vb: Faker(Of Pet).localSeed
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).localSeed
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Clone
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.Clone
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Clone
+  name: Clone()
+  nameWithType: Faker<Pet>.Clone()
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Clone()
+  nameWithType.vb: Faker(Of Pet).Clone()
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Clone()
+  spec.csharp:
+  - uid: Bogus.Faker`1.Clone
+    name: Clone
+    nameWithType: Faker<Pet>.Clone
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Clone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Clone
+    name: Clone
+    nameWithType: Faker(Of Pet).Clone
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).Clone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.UseSeed(System.Int32)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.UseSeed(System.Int32)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.UseSeed(System.Int32)
+  name: UseSeed(Int32)
+  nameWithType: Faker<Pet>.UseSeed(Int32)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.UseSeed(System.Int32)
+  nameWithType.vb: Faker(Of Pet).UseSeed(Int32)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).UseSeed(System.Int32)
+  spec.csharp:
+  - uid: Bogus.Faker`1.UseSeed(System.Int32)
+    name: UseSeed
+    nameWithType: Faker<Pet>.UseSeed
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.UseSeed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.UseSeed(System.Int32)
+    name: UseSeed
+    nameWithType: Faker(Of Pet).UseSeed
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).UseSeed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.CustomInstantiator(System.Func{Bogus.Faker,qrAPI.App.Domain.Pet})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.CustomInstantiator(System.Func{Bogus.Faker,qrAPI.App.Domain.Pet})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+  name: CustomInstantiator(Func<Faker, Pet>)
+  nameWithType: Faker<Pet>.CustomInstantiator(Func<Faker, Pet>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.CustomInstantiator(System.Func<Bogus.Faker, qrAPI.App.Domain.Pet>)
+  nameWithType.vb: Faker(Of Pet).CustomInstantiator(Func(Of Faker, Pet))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).CustomInstantiator(System.Func(Of Bogus.Faker, qrAPI.App.Domain.Pet))
+  name.vb: CustomInstantiator(Func(Of Faker, Pet))
+  spec.csharp:
+  - uid: Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+    name: CustomInstantiator
+    nameWithType: Faker<Pet>.CustomInstantiator
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.CustomInstantiator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+    name: CustomInstantiator
+    nameWithType: Faker(Of Pet).CustomInstantiator
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).CustomInstantiator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,{TProperty}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,``0}},System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,``0})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+  name: RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, Func<Faker, Pet, TProperty>)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, Func<Faker, Pet, TProperty>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Pet, TProperty>>, System.Func<Bogus.Faker, qrAPI.App.Domain.Pet, TProperty>)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), Func(Of Faker, Pet, TProperty))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Pet, TProperty)), System.Func(Of Bogus.Faker, qrAPI.App.Domain.Pet, TProperty))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), Func(Of Faker, Pet, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},{TProperty})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,``0}},``0)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+  name: RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, TProperty)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, TProperty)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Pet, TProperty>>, TProperty)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), TProperty)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Pet, TProperty)), TProperty)
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), TProperty)
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},System.Func{{TProperty}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,``0}},System.Func{``0})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+  name: RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, Func<TProperty>)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, Func<TProperty>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Pet, TProperty>>, System.Func<TProperty>)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), Func(Of TProperty))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Pet, TProperty)), System.Func(Of TProperty))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), Func(Of TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}},System.Func{Bogus.Faker,{TProperty}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,``0}},System.Func{Bogus.Faker,``0})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+  name: RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, Func<Faker, TProperty>)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(Expression<Func<Pet, TProperty>>, Func<Faker, TProperty>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Pet, TProperty>>, System.Func<Bogus.Faker, TProperty>)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), Func(Of Faker, TProperty))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Pet, TProperty)), System.Func(Of Bogus.Faker, TProperty))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)), Func(Of Faker, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.String,System.Func{Bogus.Faker,{TProperty}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+  name: RuleFor<TProperty>(String, Func<Faker, TProperty>)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(String, Func<Faker, TProperty>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.String, System.Func<Bogus.Faker, TProperty>)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(String, Func(Of Faker, TProperty))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.String, System.Func(Of Bogus.Faker, TProperty))
+  name.vb: RuleFor(Of TProperty)(String, Func(Of Faker, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.String,System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,{TProperty}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.String,System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,``0})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+  name: RuleFor<TProperty>(String, Func<Faker, Pet, TProperty>)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(String, Func<Faker, Pet, TProperty>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.String, System.Func<Bogus.Faker, qrAPI.App.Domain.Pet, TProperty>)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(String, Func(Of Faker, Pet, TProperty))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.String, System.Func(Of Bogus.Faker, qrAPI.App.Domain.Pet, TProperty))
+  name.vb: RuleFor(Of TProperty)(String, Func(Of Faker, Pet, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.AddRule(System.String,System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,System.Object})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.AddRule(System.String,System.Func{Bogus.Faker,qrAPI.App.Domain.Pet,System.Object})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+  name: AddRule(String, Func<Faker, Pet, Object>)
+  nameWithType: Faker<Pet>.AddRule(String, Func<Faker, Pet, Object>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.AddRule(System.String, System.Func<Bogus.Faker, qrAPI.App.Domain.Pet, System.Object>)
+  nameWithType.vb: Faker(Of Pet).AddRule(String, Func(Of Faker, Pet, Object))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).AddRule(System.String, System.Func(Of Bogus.Faker, qrAPI.App.Domain.Pet, System.Object))
+  name.vb: AddRule(String, Func(Of Faker, Pet, Object))
+  spec.csharp:
+  - uid: Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+    name: AddRule
+    nameWithType: Faker<Pet>.AddRule
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+    name: AddRule
+    nameWithType: Faker(Of Pet).AddRule
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Rules(System.Action{Bogus.Faker,qrAPI.App.Domain.Pet})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.Rules(System.Action{Bogus.Faker,qrAPI.App.Domain.Pet})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+  name: Rules(Action<Faker, Pet>)
+  nameWithType: Faker<Pet>.Rules(Action<Faker, Pet>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Rules(System.Action<Bogus.Faker, qrAPI.App.Domain.Pet>)
+  nameWithType.vb: Faker(Of Pet).Rules(Action(Of Faker, Pet))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Rules(System.Action(Of Bogus.Faker, qrAPI.App.Domain.Pet))
+  name.vb: Rules(Action(Of Faker, Pet))
+  spec.csharp:
+  - uid: Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+    name: Rules
+    nameWithType: Faker<Pet>.Rules
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Rules
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+    name: Rules
+    nameWithType: Faker(Of Pet).Rules
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).Rules
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleForType``1(System.Type,System.Func{Bogus.Faker,{TType}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+  name: RuleForType<TType>(Type, Func<Faker, TType>)
+  nameWithType: Faker<Pet>.RuleForType<TType>(Type, Func<Faker, TType>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleForType<TType>(System.Type, System.Func<Bogus.Faker, TType>)
+  nameWithType.vb: Faker(Of Pet).RuleForType(Of TType)(Type, Func(Of Faker, TType))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleForType(Of TType)(System.Type, System.Func(Of Bogus.Faker, TType))
+  name.vb: RuleForType(Of TType)(Type, Func(Of Faker, TType))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+    name: RuleForType<TType>
+    nameWithType: Faker<Pet>.RuleForType<TType>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleForType<TType>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+    name: RuleForType(Of TType)
+    nameWithType: Faker(Of Pet).RuleForType(Of TType)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleForType(Of TType)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  name: GetFieldOrPropertyType(MemberInfo)
+  nameWithType: Faker<Pet>.GetFieldOrPropertyType(MemberInfo)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  nameWithType.vb: Faker(Of Pet).GetFieldOrPropertyType(MemberInfo)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  spec.csharp:
+  - uid: Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+    name: GetFieldOrPropertyType
+    nameWithType: Faker<Pet>.GetFieldOrPropertyType
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.GetFieldOrPropertyType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    nameWithType: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+    name: GetFieldOrPropertyType
+    nameWithType: Faker(Of Pet).GetFieldOrPropertyType
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).GetFieldOrPropertyType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    nameWithType: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleSet(System.String,System.Action{Bogus.IRuleSet{qrAPI.App.Domain.Pet}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleSet(System.String,System.Action{Bogus.IRuleSet{qrAPI.App.Domain.Pet}})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+  name: RuleSet(String, Action<IRuleSet<Pet>>)
+  nameWithType: Faker<Pet>.RuleSet(String, Action<IRuleSet<Pet>>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleSet(System.String, System.Action<Bogus.IRuleSet<qrAPI.App.Domain.Pet>>)
+  nameWithType.vb: Faker(Of Pet).RuleSet(String, Action(Of IRuleSet(Of Pet)))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleSet(System.String, System.Action(Of Bogus.IRuleSet(Of qrAPI.App.Domain.Pet)))
+  name.vb: RuleSet(String, Action(Of IRuleSet(Of Pet)))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+    name: RuleSet
+    nameWithType: Faker<Pet>.RuleSet
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+    name: RuleSet
+    nameWithType: Faker(Of Pet).RuleSet
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.EnsureMemberExists(System.String,System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.EnsureMemberExists(System.String,System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+  name: EnsureMemberExists(String, String)
+  nameWithType: Faker<Pet>.EnsureMemberExists(String, String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.EnsureMemberExists(System.String, System.String)
+  nameWithType.vb: Faker(Of Pet).EnsureMemberExists(String, String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).EnsureMemberExists(System.String, System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+    name: EnsureMemberExists
+    nameWithType: Faker<Pet>.EnsureMemberExists
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.EnsureMemberExists
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+    name: EnsureMemberExists
+    nameWithType: Faker(Of Pet).EnsureMemberExists
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).EnsureMemberExists
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Ignore(System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.Ignore(System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Ignore(System.String)
+  name: Ignore(String)
+  nameWithType: Faker<Pet>.Ignore(String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Ignore(System.String)
+  nameWithType.vb: Faker(Of Pet).Ignore(String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Ignore(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.Ignore(System.String)
+    name: Ignore
+    nameWithType: Faker<Pet>.Ignore
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Ignore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Ignore(System.String)
+    name: Ignore
+    nameWithType: Faker(Of Pet).Ignore
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).Ignore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Ignore``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TPropertyOrField}}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.Ignore``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,``0}})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: Ignore<TPropertyOrField>(Expression<Func<Pet, TPropertyOrField>>)
+  nameWithType: Faker<Pet>.Ignore<TPropertyOrField>(Expression<Func<Pet, TPropertyOrField>>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Ignore<TPropertyOrField>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Pet, TPropertyOrField>>)
+  nameWithType.vb: Faker(Of Pet).Ignore(Of TPropertyOrField)(Expression(Of Func(Of Pet, TPropertyOrField)))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Ignore(Of TPropertyOrField)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Pet, TPropertyOrField)))
+  name.vb: Ignore(Of TPropertyOrField)(Expression(Of Func(Of Pet, TPropertyOrField)))
+  spec.csharp:
+  - uid: Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: Ignore<TPropertyOrField>
+    nameWithType: Faker<Pet>.Ignore<TPropertyOrField>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Ignore<TPropertyOrField>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPropertyOrField
+    nameWithType: TPropertyOrField
+    fullName: TPropertyOrField
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: Ignore(Of TPropertyOrField)
+    nameWithType: Faker(Of Pet).Ignore(Of TPropertyOrField)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).Ignore(Of TPropertyOrField)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPropertyOrField
+    nameWithType: TPropertyOrField
+    fullName: TPropertyOrField
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.StrictMode(System.Boolean)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.StrictMode(System.Boolean)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.StrictMode(System.Boolean)
+  name: StrictMode(Boolean)
+  nameWithType: Faker<Pet>.StrictMode(Boolean)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.StrictMode(System.Boolean)
+  nameWithType.vb: Faker(Of Pet).StrictMode(Boolean)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).StrictMode(System.Boolean)
+  spec.csharp:
+  - uid: Bogus.Faker`1.StrictMode(System.Boolean)
+    name: StrictMode
+    nameWithType: Faker<Pet>.StrictMode
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.StrictMode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.StrictMode(System.Boolean)
+    name: StrictMode
+    nameWithType: Faker(Of Pet).StrictMode
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).StrictMode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.FinishWith(System.Action{Bogus.Faker,qrAPI.App.Domain.Pet})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.FinishWith(System.Action{Bogus.Faker,qrAPI.App.Domain.Pet})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+  name: FinishWith(Action<Faker, Pet>)
+  nameWithType: Faker<Pet>.FinishWith(Action<Faker, Pet>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.FinishWith(System.Action<Bogus.Faker, qrAPI.App.Domain.Pet>)
+  nameWithType.vb: Faker(Of Pet).FinishWith(Action(Of Faker, Pet))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).FinishWith(System.Action(Of Bogus.Faker, qrAPI.App.Domain.Pet))
+  name.vb: FinishWith(Action(Of Faker, Pet))
+  spec.csharp:
+  - uid: Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+    name: FinishWith
+    nameWithType: Faker<Pet>.FinishWith
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.FinishWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+    name: FinishWith
+    nameWithType: Faker(Of Pet).FinishWith
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).FinishWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.ParseDirtyRulesSets(System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.ParseDirtyRulesSets(System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+  name: ParseDirtyRulesSets(String)
+  nameWithType: Faker<Pet>.ParseDirtyRulesSets(String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.ParseDirtyRulesSets(System.String)
+  nameWithType.vb: Faker(Of Pet).ParseDirtyRulesSets(String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).ParseDirtyRulesSets(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+    name: ParseDirtyRulesSets
+    nameWithType: Faker<Pet>.ParseDirtyRulesSets
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.ParseDirtyRulesSets
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+    name: ParseDirtyRulesSets
+    nameWithType: Faker(Of Pet).ParseDirtyRulesSets
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).ParseDirtyRulesSets
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.GenerateLazy(System.Int32,System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.GenerateLazy(System.Int32,System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+  name: GenerateLazy(Int32, String)
+  nameWithType: Faker<Pet>.GenerateLazy(Int32, String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.GenerateLazy(System.Int32, System.String)
+  nameWithType.vb: Faker(Of Pet).GenerateLazy(Int32, String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).GenerateLazy(System.Int32, System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+    name: GenerateLazy
+    nameWithType: Faker<Pet>.GenerateLazy
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.GenerateLazy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+    name: GenerateLazy
+    nameWithType: Faker(Of Pet).GenerateLazy
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).GenerateLazy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.GenerateForever(System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.GenerateForever(System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.GenerateForever(System.String)
+  name: GenerateForever(String)
+  nameWithType: Faker<Pet>.GenerateForever(String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.GenerateForever(System.String)
+  nameWithType.vb: Faker(Of Pet).GenerateForever(String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).GenerateForever(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.GenerateForever(System.String)
+    name: GenerateForever
+    nameWithType: Faker<Pet>.GenerateForever
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.GenerateForever
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.GenerateForever(System.String)
+    name: GenerateForever
+    nameWithType: Faker(Of Pet).GenerateForever
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).GenerateForever
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.PopulateInternal(qrAPI.App.Domain.Pet,System.String[])
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.PopulateInternal(qrAPI.App.Domain.Pet,System.String[])
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.PopulateInternal(`0,System.String[])
+  name: PopulateInternal(Pet, String[])
+  nameWithType: Faker<Pet>.PopulateInternal(Pet, String[])
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.PopulateInternal(qrAPI.App.Domain.Pet, System.String[])
+  nameWithType.vb: Faker(Of Pet).PopulateInternal(Pet, String())
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).PopulateInternal(qrAPI.App.Domain.Pet, System.String())
+  name.vb: PopulateInternal(Pet, String())
+  spec.csharp:
+  - uid: Bogus.Faker`1.PopulateInternal(`0,System.String[])
+    name: PopulateInternal
+    nameWithType: Faker<Pet>.PopulateInternal
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.PopulateInternal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.PopulateInternal(`0,System.String[])
+    name: PopulateInternal
+    nameWithType: Faker(Of Pet).PopulateInternal
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).PopulateInternal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Validate(System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.Validate(System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Validate(System.String)
+  name: Validate(String)
+  nameWithType: Faker<Pet>.Validate(String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Validate(System.String)
+  nameWithType.vb: Faker(Of Pet).Validate(String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Validate(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.Validate(System.String)
+    name: Validate
+    nameWithType: Faker<Pet>.Validate
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Validate(System.String)
+    name: Validate
+    nameWithType: Faker(Of Pet).Validate
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.AssertConfigurationIsValid(System.String)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.AssertConfigurationIsValid(System.String)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+  name: AssertConfigurationIsValid(String)
+  nameWithType: Faker<Pet>.AssertConfigurationIsValid(String)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.AssertConfigurationIsValid(System.String)
+  nameWithType.vb: Faker(Of Pet).AssertConfigurationIsValid(String)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).AssertConfigurationIsValid(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+    name: AssertConfigurationIsValid
+    nameWithType: Faker<Pet>.AssertConfigurationIsValid
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.AssertConfigurationIsValid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+    name: AssertConfigurationIsValid
+    nameWithType: Faker(Of Pet).AssertConfigurationIsValid
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).AssertConfigurationIsValid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.MakeValidationException(Bogus.ValidationResult)
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.MakeValidationException(Bogus.ValidationResult)
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+  name: MakeValidationException(ValidationResult)
+  nameWithType: Faker<Pet>.MakeValidationException(ValidationResult)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.MakeValidationException(Bogus.ValidationResult)
+  nameWithType.vb: Faker(Of Pet).MakeValidationException(ValidationResult)
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).MakeValidationException(Bogus.ValidationResult)
+  spec.csharp:
+  - uid: Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+    name: MakeValidationException
+    nameWithType: Faker<Pet>.MakeValidationException
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.MakeValidationException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Bogus.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: Bogus.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+    name: MakeValidationException
+    nameWithType: Faker(Of Pet).MakeValidationException
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).MakeValidationException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Bogus.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: Bogus.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,{TProperty}}})
+  commentId: M:Bogus.Faker{qrAPI.App.Domain.Pet}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{qrAPI.App.Domain.Pet,``0}})
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: RuleFor<TProperty>(Expression<Func<Pet, TProperty>>)
+  nameWithType: Faker<Pet>.RuleFor<TProperty>(Expression<Func<Pet, TProperty>>)
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<qrAPI.App.Domain.Pet, TProperty>>)
+  nameWithType.vb: Faker(Of Pet).RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)))
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of qrAPI.App.Domain.Pet, TProperty)))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of Pet, TProperty)))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<Pet>.RuleFor<TProperty>
+    fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of Pet).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of qrAPI.App.Domain.Pet).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#FakerHub
+  commentId: P:Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#FakerHub
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Bogus#IFakerTInternal#FakerHub
+  name: IFakerTInternal.FakerHub
+  nameWithType: Faker<Pet>.IFakerTInternal.FakerHub
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Bogus.IFakerTInternal.FakerHub
+  nameWithType.vb: Faker(Of Pet).Bogus.IFakerTInternal.FakerHub
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Bogus.IFakerTInternal.FakerHub
+  name.vb: Bogus.IFakerTInternal.FakerHub
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#Binder
+  commentId: P:Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#Binder
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Bogus#IFakerTInternal#Binder
+  name: IFakerTInternal.Binder
+  nameWithType: Faker<Pet>.IFakerTInternal.Binder
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Bogus.IFakerTInternal.Binder
+  nameWithType.vb: Faker(Of Pet).Bogus.IFakerTInternal.Binder
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Bogus.IFakerTInternal.Binder
+  name.vb: Bogus.IFakerTInternal.Binder
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#LocalSeed
+  commentId: P:Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#LocalSeed
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Bogus#IFakerTInternal#LocalSeed
+  name: IFakerTInternal.LocalSeed
+  nameWithType: Faker<Pet>.IFakerTInternal.LocalSeed
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Bogus.IFakerTInternal.LocalSeed
+  nameWithType.vb: Faker(Of Pet).Bogus.IFakerTInternal.LocalSeed
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Bogus.IFakerTInternal.LocalSeed
+  name.vb: Bogus.IFakerTInternal.LocalSeed
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#TypeOfT
+  commentId: P:Bogus.Faker{qrAPI.App.Domain.Pet}.Bogus#IFakerTInternal#TypeOfT
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Bogus#IFakerTInternal#TypeOfT
+  name: IFakerTInternal.TypeOfT
+  nameWithType: Faker<Pet>.IFakerTInternal.TypeOfT
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Bogus.IFakerTInternal.TypeOfT
+  nameWithType.vb: Faker(Of Pet).Bogus.IFakerTInternal.TypeOfT
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Bogus.IFakerTInternal.TypeOfT
+  name.vb: Bogus.IFakerTInternal.TypeOfT
+- uid: Bogus.Faker{qrAPI.App.Domain.Pet}.Locale
+  commentId: P:Bogus.Faker{qrAPI.App.Domain.Pet}.Locale
+  parent: Bogus.Faker{qrAPI.App.Domain.Pet}
+  definition: Bogus.Faker`1.Locale
+  name: Locale
+  nameWithType: Faker<Pet>.Locale
+  fullName: Bogus.Faker<qrAPI.App.Domain.Pet>.Locale
+  nameWithType.vb: Faker(Of Pet).Locale
+  fullName.vb: Bogus.Faker(Of qrAPI.App.Domain.Pet).Locale
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Bogus.Faker`1
+  commentId: T:Bogus.Faker`1
+  isExternal: true
+  name: Faker<T>
+  nameWithType: Faker<T>
+  fullName: Bogus.Faker<T>
+  nameWithType.vb: Faker(Of T)
+  fullName.vb: Bogus.Faker(Of T)
+  name.vb: Faker(Of T)
+  spec.csharp:
+  - uid: Bogus.Faker`1
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Bogus.Faker`1
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus
+  commentId: N:Bogus
+  isExternal: true
+  name: Bogus
+  nameWithType: Bogus
+  fullName: Bogus
+- uid: AutoBogus.AutoFaker`1
+  commentId: T:AutoBogus.AutoFaker`1
+  isExternal: true
+  name: AutoFaker<TType>
+  nameWithType: AutoFaker<TType>
+  fullName: AutoBogus.AutoFaker<TType>
+  nameWithType.vb: AutoFaker(Of TType)
+  fullName.vb: AutoBogus.AutoFaker(Of TType)
+  name.vb: AutoFaker(Of TType)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1
+    name: AutoFaker
+    nameWithType: AutoFaker
+    fullName: AutoBogus.AutoFaker
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1
+    name: AutoFaker
+    nameWithType: AutoFaker
+    fullName: AutoBogus.AutoFaker
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus
+  commentId: N:AutoBogus
+  isExternal: true
+  name: AutoBogus
+  nameWithType: AutoBogus
+  fullName: AutoBogus
+- uid: Bogus.IRuleSet`1
+  commentId: T:Bogus.IRuleSet`1
+  isExternal: true
+  name: IRuleSet<T>
+  nameWithType: IRuleSet<T>
+  fullName: Bogus.IRuleSet<T>
+  nameWithType.vb: IRuleSet(Of T)
+  fullName.vb: Bogus.IRuleSet(Of T)
+  name.vb: IRuleSet(Of T)
+  spec.csharp:
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker`1.Generate(System.String)
+  commentId: M:AutoBogus.AutoFaker`1.Generate(System.String)
+  isExternal: true
+  name: Generate(String)
+  nameWithType: AutoFaker<TType>.Generate(String)
+  fullName: AutoBogus.AutoFaker<TType>.Generate(System.String)
+  nameWithType.vb: AutoFaker(Of TType).Generate(String)
+  fullName.vb: AutoBogus.AutoFaker(Of TType).Generate(System.String)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.String)
+    name: Generate
+    nameWithType: AutoFaker<TType>.Generate
+    fullName: AutoBogus.AutoFaker<TType>.Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.String)
+    name: Generate
+    nameWithType: AutoFaker(Of TType).Generate
+    fullName: AutoBogus.AutoFaker(Of TType).Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+  commentId: M:AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+  isExternal: true
+  name: Generate(Int32, String)
+  nameWithType: AutoFaker<TType>.Generate(Int32, String)
+  fullName: AutoBogus.AutoFaker<TType>.Generate(System.Int32, System.String)
+  nameWithType.vb: AutoFaker(Of TType).Generate(Int32, String)
+  fullName.vb: AutoBogus.AutoFaker(Of TType).Generate(System.Int32, System.String)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+    name: Generate
+    nameWithType: AutoFaker<TType>.Generate
+    fullName: AutoBogus.AutoFaker<TType>.Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1.Generate(System.Int32,System.String)
+    name: Generate
+    nameWithType: AutoFaker(Of TType).Generate
+    fullName: AutoBogus.AutoFaker(Of TType).Generate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AutoBogus.AutoFaker`1.Populate(`0,System.String)
+  commentId: M:AutoBogus.AutoFaker`1.Populate(`0,System.String)
+  isExternal: true
+  name: Populate(TType, String)
+  nameWithType: AutoFaker<TType>.Populate(TType, String)
+  fullName: AutoBogus.AutoFaker<TType>.Populate(TType, System.String)
+  nameWithType.vb: AutoFaker(Of TType).Populate(TType, String)
+  fullName.vb: AutoBogus.AutoFaker(Of TType).Populate(TType, System.String)
+  spec.csharp:
+  - uid: AutoBogus.AutoFaker`1.Populate(`0,System.String)
+    name: Populate
+    nameWithType: AutoFaker<TType>.Populate
+    fullName: AutoBogus.AutoFaker<TType>.Populate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: AutoBogus.AutoFaker`1.Populate(`0,System.String)
+    name: Populate
+    nameWithType: AutoFaker(Of TType).Populate
+    fullName: AutoBogus.AutoFaker(Of TType).Populate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.Default
+  commentId: F:Bogus.Faker`1.Default
+  isExternal: true
+  name: Default
+  nameWithType: Faker<T>.Default
+  fullName: Bogus.Faker<T>.Default
+  nameWithType.vb: Faker(Of T).Default
+  fullName.vb: Bogus.Faker(Of T).Default
+- uid: Bogus.Faker`1.FakerHub
+  commentId: F:Bogus.Faker`1.FakerHub
+  isExternal: true
+  name: FakerHub
+  nameWithType: Faker<T>.FakerHub
+  fullName: Bogus.Faker<T>.FakerHub
+  nameWithType.vb: Faker(Of T).FakerHub
+  fullName.vb: Bogus.Faker(Of T).FakerHub
+- uid: Bogus.Faker`1.binder
+  commentId: F:Bogus.Faker`1.binder
+  isExternal: true
+  name: binder
+  nameWithType: Faker<T>.binder
+  fullName: Bogus.Faker<T>.binder
+  nameWithType.vb: Faker(Of T).binder
+  fullName.vb: Bogus.Faker(Of T).binder
+- uid: Bogus.Faker`1.Actions
+  commentId: F:Bogus.Faker`1.Actions
+  isExternal: true
+  name: Actions
+  nameWithType: Faker<T>.Actions
+  fullName: Bogus.Faker<T>.Actions
+  nameWithType.vb: Faker(Of T).Actions
+  fullName.vb: Bogus.Faker(Of T).Actions
+- uid: Bogus.Faker`1.FinalizeActions
+  commentId: F:Bogus.Faker`1.FinalizeActions
+  isExternal: true
+  name: FinalizeActions
+  nameWithType: Faker<T>.FinalizeActions
+  fullName: Bogus.Faker<T>.FinalizeActions
+  nameWithType.vb: Faker(Of T).FinalizeActions
+  fullName.vb: Bogus.Faker(Of T).FinalizeActions
+- uid: Bogus.Faker`1.CreateActions
+  commentId: F:Bogus.Faker`1.CreateActions
+  isExternal: true
+  name: CreateActions
+  nameWithType: Faker<T>.CreateActions
+  fullName: Bogus.Faker<T>.CreateActions
+  nameWithType.vb: Faker(Of T).CreateActions
+  fullName.vb: Bogus.Faker(Of T).CreateActions
+- uid: Bogus.Faker`1.TypeProperties
+  commentId: F:Bogus.Faker`1.TypeProperties
+  isExternal: true
+  name: TypeProperties
+  nameWithType: Faker<T>.TypeProperties
+  fullName: Bogus.Faker<T>.TypeProperties
+  nameWithType.vb: Faker(Of T).TypeProperties
+  fullName.vb: Bogus.Faker(Of T).TypeProperties
+- uid: Bogus.Faker`1.SetterCache
+  commentId: F:Bogus.Faker`1.SetterCache
+  isExternal: true
+  name: SetterCache
+  nameWithType: Faker<T>.SetterCache
+  fullName: Bogus.Faker<T>.SetterCache
+  nameWithType.vb: Faker(Of T).SetterCache
+  fullName.vb: Bogus.Faker(Of T).SetterCache
+- uid: Bogus.Faker`1.StrictModes
+  commentId: F:Bogus.Faker`1.StrictModes
+  isExternal: true
+  name: StrictModes
+  nameWithType: Faker<T>.StrictModes
+  fullName: Bogus.Faker<T>.StrictModes
+  nameWithType.vb: Faker(Of T).StrictModes
+  fullName.vb: Bogus.Faker(Of T).StrictModes
+- uid: Bogus.Faker`1.IsValid
+  commentId: F:Bogus.Faker`1.IsValid
+  isExternal: true
+  name: IsValid
+  nameWithType: Faker<T>.IsValid
+  fullName: Bogus.Faker<T>.IsValid
+  nameWithType.vb: Faker(Of T).IsValid
+  fullName.vb: Bogus.Faker(Of T).IsValid
+- uid: Bogus.Faker`1.currentRuleSet
+  commentId: F:Bogus.Faker`1.currentRuleSet
+  isExternal: true
+  name: currentRuleSet
+  nameWithType: Faker<T>.currentRuleSet
+  fullName: Bogus.Faker<T>.currentRuleSet
+  nameWithType.vb: Faker(Of T).currentRuleSet
+  fullName.vb: Bogus.Faker(Of T).currentRuleSet
+- uid: Bogus.Faker`1.localSeed
+  commentId: F:Bogus.Faker`1.localSeed
+  isExternal: true
+  name: localSeed
+  nameWithType: Faker<T>.localSeed
+  fullName: Bogus.Faker<T>.localSeed
+  nameWithType.vb: Faker(Of T).localSeed
+  fullName.vb: Bogus.Faker(Of T).localSeed
+- uid: Bogus.Faker`1.Clone
+  commentId: M:Bogus.Faker`1.Clone
+  isExternal: true
+  name: Clone()
+  nameWithType: Faker<T>.Clone()
+  fullName: Bogus.Faker<T>.Clone()
+  nameWithType.vb: Faker(Of T).Clone()
+  fullName.vb: Bogus.Faker(Of T).Clone()
+  spec.csharp:
+  - uid: Bogus.Faker`1.Clone
+    name: Clone
+    nameWithType: Faker<T>.Clone
+    fullName: Bogus.Faker<T>.Clone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Clone
+    name: Clone
+    nameWithType: Faker(Of T).Clone
+    fullName: Bogus.Faker(Of T).Clone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.UseSeed(System.Int32)
+  commentId: M:Bogus.Faker`1.UseSeed(System.Int32)
+  isExternal: true
+  name: UseSeed(Int32)
+  nameWithType: Faker<T>.UseSeed(Int32)
+  fullName: Bogus.Faker<T>.UseSeed(System.Int32)
+  nameWithType.vb: Faker(Of T).UseSeed(Int32)
+  fullName.vb: Bogus.Faker(Of T).UseSeed(System.Int32)
+  spec.csharp:
+  - uid: Bogus.Faker`1.UseSeed(System.Int32)
+    name: UseSeed
+    nameWithType: Faker<T>.UseSeed
+    fullName: Bogus.Faker<T>.UseSeed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.UseSeed(System.Int32)
+    name: UseSeed
+    nameWithType: Faker(Of T).UseSeed
+    fullName: Bogus.Faker(Of T).UseSeed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+  commentId: M:Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+  isExternal: true
+  name: CustomInstantiator(Func<Faker, T>)
+  nameWithType: Faker<T>.CustomInstantiator(Func<Faker, T>)
+  fullName: Bogus.Faker<T>.CustomInstantiator(System.Func<Bogus.Faker, T>)
+  nameWithType.vb: Faker(Of T).CustomInstantiator(Func(Of Faker, T))
+  fullName.vb: Bogus.Faker(Of T).CustomInstantiator(System.Func(Of Bogus.Faker, T))
+  name.vb: CustomInstantiator(Func(Of Faker, T))
+  spec.csharp:
+  - uid: Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+    name: CustomInstantiator
+    nameWithType: Faker<T>.CustomInstantiator
+    fullName: Bogus.Faker<T>.CustomInstantiator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.CustomInstantiator(System.Func{Bogus.Faker,`0})
+    name: CustomInstantiator
+    nameWithType: Faker(Of T).CustomInstantiator
+    fullName: Bogus.Faker(Of T).CustomInstantiator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+  isExternal: true
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>, Func<Faker, T, TProperty>)
+  nameWithType: Faker<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>, Func<Faker, T, TProperty>)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>, System.Func<Bogus.Faker, T, TProperty>)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), Func(Of Faker, T, TProperty))
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), System.Func(Of Bogus.Faker, T, TProperty))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), Func(Of Faker, T, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+  isExternal: true
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>, TProperty)
+  nameWithType: Faker<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>, TProperty)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>, TProperty)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), TProperty)
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), TProperty)
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), TProperty)
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+  isExternal: true
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>, Func<TProperty>)
+  nameWithType: Faker<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>, Func<TProperty>)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>, System.Func<TProperty>)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), Func(Of TProperty))
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), System.Func(Of TProperty))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), Func(Of TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+  isExternal: true
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>, Func<Faker, TProperty>)
+  nameWithType: Faker<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>, Func<Faker, TProperty>)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>, System.Func<Bogus.Faker, TProperty>)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), Func(Of Faker, TProperty))
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), System.Func(Of Bogus.Faker, TProperty))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)), Func(Of Faker, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{Bogus.Faker,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+  isExternal: true
+  name: RuleFor<TProperty>(String, Func<Faker, TProperty>)
+  nameWithType: Faker<T>.RuleFor<TProperty>(String, Func<Faker, TProperty>)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.String, System.Func<Bogus.Faker, TProperty>)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(String, Func(Of Faker, TProperty))
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.String, System.Func(Of Bogus.Faker, TProperty))
+  name.vb: RuleFor(Of TProperty)(String, Func(Of Faker, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+  isExternal: true
+  name: RuleFor<TProperty>(String, Func<Faker, T, TProperty>)
+  nameWithType: Faker<T>.RuleFor<TProperty>(String, Func<Faker, T, TProperty>)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.String, System.Func<Bogus.Faker, T, TProperty>)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(String, Func(Of Faker, T, TProperty))
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.String, System.Func(Of Bogus.Faker, T, TProperty))
+  name.vb: RuleFor(Of TProperty)(String, Func(Of Faker, T, TProperty))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.String,System.Func{Bogus.Faker,`0,``0})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+  commentId: M:Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+  isExternal: true
+  name: AddRule(String, Func<Faker, T, Object>)
+  nameWithType: Faker<T>.AddRule(String, Func<Faker, T, Object>)
+  fullName: Bogus.Faker<T>.AddRule(System.String, System.Func<Bogus.Faker, T, System.Object>)
+  nameWithType.vb: Faker(Of T).AddRule(String, Func(Of Faker, T, Object))
+  fullName.vb: Bogus.Faker(Of T).AddRule(System.String, System.Func(Of Bogus.Faker, T, System.Object))
+  name.vb: AddRule(String, Func(Of Faker, T, Object))
+  spec.csharp:
+  - uid: Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+    name: AddRule
+    nameWithType: Faker<T>.AddRule
+    fullName: Bogus.Faker<T>.AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.AddRule(System.String,System.Func{Bogus.Faker,`0,System.Object})
+    name: AddRule
+    nameWithType: Faker(Of T).AddRule
+    fullName: Bogus.Faker(Of T).AddRule
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+  commentId: M:Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+  isExternal: true
+  name: Rules(Action<Faker, T>)
+  nameWithType: Faker<T>.Rules(Action<Faker, T>)
+  fullName: Bogus.Faker<T>.Rules(System.Action<Bogus.Faker, T>)
+  nameWithType.vb: Faker(Of T).Rules(Action(Of Faker, T))
+  fullName.vb: Bogus.Faker(Of T).Rules(System.Action(Of Bogus.Faker, T))
+  name.vb: Rules(Action(Of Faker, T))
+  spec.csharp:
+  - uid: Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+    name: Rules
+    nameWithType: Faker<T>.Rules
+    fullName: Bogus.Faker<T>.Rules
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Rules(System.Action{Bogus.Faker,`0})
+    name: Rules
+    nameWithType: Faker(Of T).Rules
+    fullName: Bogus.Faker(Of T).Rules
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+  commentId: M:Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+  isExternal: true
+  name: RuleForType<TType>(Type, Func<Faker, TType>)
+  nameWithType: Faker<T>.RuleForType<TType>(Type, Func<Faker, TType>)
+  fullName: Bogus.Faker<T>.RuleForType<TType>(System.Type, System.Func<Bogus.Faker, TType>)
+  nameWithType.vb: Faker(Of T).RuleForType(Of TType)(Type, Func(Of Faker, TType))
+  fullName.vb: Bogus.Faker(Of T).RuleForType(Of TType)(System.Type, System.Func(Of Bogus.Faker, TType))
+  name.vb: RuleForType(Of TType)(Type, Func(Of Faker, TType))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+    name: RuleForType<TType>
+    nameWithType: Faker<T>.RuleForType<TType>
+    fullName: Bogus.Faker<T>.RuleForType<TType>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleForType``1(System.Type,System.Func{Bogus.Faker,``0})
+    name: RuleForType(Of TType)
+    nameWithType: Faker(Of T).RuleForType(Of TType)
+    fullName: Bogus.Faker(Of T).RuleForType(Of TType)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TType
+    nameWithType: TType
+    fullName: TType
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  commentId: M:Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  isExternal: true
+  name: GetFieldOrPropertyType(MemberInfo)
+  nameWithType: Faker<T>.GetFieldOrPropertyType(MemberInfo)
+  fullName: Bogus.Faker<T>.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  nameWithType.vb: Faker(Of T).GetFieldOrPropertyType(MemberInfo)
+  fullName.vb: Bogus.Faker(Of T).GetFieldOrPropertyType(System.Reflection.MemberInfo)
+  spec.csharp:
+  - uid: Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+    name: GetFieldOrPropertyType
+    nameWithType: Faker<T>.GetFieldOrPropertyType
+    fullName: Bogus.Faker<T>.GetFieldOrPropertyType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    nameWithType: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.GetFieldOrPropertyType(System.Reflection.MemberInfo)
+    name: GetFieldOrPropertyType
+    nameWithType: Faker(Of T).GetFieldOrPropertyType
+    fullName: Bogus.Faker(Of T).GetFieldOrPropertyType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    nameWithType: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+  commentId: M:Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+  isExternal: true
+  name: RuleSet(String, Action<IRuleSet<T>>)
+  nameWithType: Faker<T>.RuleSet(String, Action<IRuleSet<T>>)
+  fullName: Bogus.Faker<T>.RuleSet(System.String, System.Action<Bogus.IRuleSet<T>>)
+  nameWithType.vb: Faker(Of T).RuleSet(String, Action(Of IRuleSet(Of T)))
+  fullName.vb: Bogus.Faker(Of T).RuleSet(System.String, System.Action(Of Bogus.IRuleSet(Of T)))
+  name.vb: RuleSet(String, Action(Of IRuleSet(Of T)))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+    name: RuleSet
+    nameWithType: Faker<T>.RuleSet
+    fullName: Bogus.Faker<T>.RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleSet(System.String,System.Action{Bogus.IRuleSet{`0}})
+    name: RuleSet
+    nameWithType: Faker(Of T).RuleSet
+    fullName: Bogus.Faker(Of T).RuleSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.IRuleSet`1
+    name: IRuleSet
+    nameWithType: IRuleSet
+    fullName: Bogus.IRuleSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+  commentId: M:Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+  isExternal: true
+  name: EnsureMemberExists(String, String)
+  nameWithType: Faker<T>.EnsureMemberExists(String, String)
+  fullName: Bogus.Faker<T>.EnsureMemberExists(System.String, System.String)
+  nameWithType.vb: Faker(Of T).EnsureMemberExists(String, String)
+  fullName.vb: Bogus.Faker(Of T).EnsureMemberExists(System.String, System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+    name: EnsureMemberExists
+    nameWithType: Faker<T>.EnsureMemberExists
+    fullName: Bogus.Faker<T>.EnsureMemberExists
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.EnsureMemberExists(System.String,System.String)
+    name: EnsureMemberExists
+    nameWithType: Faker(Of T).EnsureMemberExists
+    fullName: Bogus.Faker(Of T).EnsureMemberExists
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.Ignore(System.String)
+  commentId: M:Bogus.Faker`1.Ignore(System.String)
+  isExternal: true
+  name: Ignore(String)
+  nameWithType: Faker<T>.Ignore(String)
+  fullName: Bogus.Faker<T>.Ignore(System.String)
+  nameWithType.vb: Faker(Of T).Ignore(String)
+  fullName.vb: Bogus.Faker(Of T).Ignore(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.Ignore(System.String)
+    name: Ignore
+    nameWithType: Faker<T>.Ignore
+    fullName: Bogus.Faker<T>.Ignore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Ignore(System.String)
+    name: Ignore
+    nameWithType: Faker(Of T).Ignore
+    fullName: Bogus.Faker(Of T).Ignore
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  commentId: M:Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  isExternal: true
+  name: Ignore<TPropertyOrField>(Expression<Func<T, TPropertyOrField>>)
+  nameWithType: Faker<T>.Ignore<TPropertyOrField>(Expression<Func<T, TPropertyOrField>>)
+  fullName: Bogus.Faker<T>.Ignore<TPropertyOrField>(System.Linq.Expressions.Expression<System.Func<T, TPropertyOrField>>)
+  nameWithType.vb: Faker(Of T).Ignore(Of TPropertyOrField)(Expression(Of Func(Of T, TPropertyOrField)))
+  fullName.vb: Bogus.Faker(Of T).Ignore(Of TPropertyOrField)(System.Linq.Expressions.Expression(Of System.Func(Of T, TPropertyOrField)))
+  name.vb: Ignore(Of TPropertyOrField)(Expression(Of Func(Of T, TPropertyOrField)))
+  spec.csharp:
+  - uid: Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: Ignore<TPropertyOrField>
+    nameWithType: Faker<T>.Ignore<TPropertyOrField>
+    fullName: Bogus.Faker<T>.Ignore<TPropertyOrField>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPropertyOrField
+    nameWithType: TPropertyOrField
+    fullName: TPropertyOrField
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Ignore``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: Ignore(Of TPropertyOrField)
+    nameWithType: Faker(Of T).Ignore(Of TPropertyOrField)
+    fullName: Bogus.Faker(Of T).Ignore(Of TPropertyOrField)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPropertyOrField
+    nameWithType: TPropertyOrField
+    fullName: TPropertyOrField
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.StrictMode(System.Boolean)
+  commentId: M:Bogus.Faker`1.StrictMode(System.Boolean)
+  isExternal: true
+  name: StrictMode(Boolean)
+  nameWithType: Faker<T>.StrictMode(Boolean)
+  fullName: Bogus.Faker<T>.StrictMode(System.Boolean)
+  nameWithType.vb: Faker(Of T).StrictMode(Boolean)
+  fullName.vb: Bogus.Faker(Of T).StrictMode(System.Boolean)
+  spec.csharp:
+  - uid: Bogus.Faker`1.StrictMode(System.Boolean)
+    name: StrictMode
+    nameWithType: Faker<T>.StrictMode
+    fullName: Bogus.Faker<T>.StrictMode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.StrictMode(System.Boolean)
+    name: StrictMode
+    nameWithType: Faker(Of T).StrictMode
+    fullName: Bogus.Faker(Of T).StrictMode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+  commentId: M:Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+  isExternal: true
+  name: FinishWith(Action<Faker, T>)
+  nameWithType: Faker<T>.FinishWith(Action<Faker, T>)
+  fullName: Bogus.Faker<T>.FinishWith(System.Action<Bogus.Faker, T>)
+  nameWithType.vb: Faker(Of T).FinishWith(Action(Of Faker, T))
+  fullName.vb: Bogus.Faker(Of T).FinishWith(System.Action(Of Bogus.Faker, T))
+  name.vb: FinishWith(Action(Of Faker, T))
+  spec.csharp:
+  - uid: Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+    name: FinishWith
+    nameWithType: Faker<T>.FinishWith
+    fullName: Bogus.Faker<T>.FinishWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.FinishWith(System.Action{Bogus.Faker,`0})
+    name: FinishWith
+    nameWithType: Faker(Of T).FinishWith
+    fullName: Bogus.Faker(Of T).FinishWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Bogus.Faker
+    name: Faker
+    nameWithType: Faker
+    fullName: Bogus.Faker
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+  commentId: M:Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+  isExternal: true
+  name: ParseDirtyRulesSets(String)
+  nameWithType: Faker<T>.ParseDirtyRulesSets(String)
+  fullName: Bogus.Faker<T>.ParseDirtyRulesSets(System.String)
+  nameWithType.vb: Faker(Of T).ParseDirtyRulesSets(String)
+  fullName.vb: Bogus.Faker(Of T).ParseDirtyRulesSets(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+    name: ParseDirtyRulesSets
+    nameWithType: Faker<T>.ParseDirtyRulesSets
+    fullName: Bogus.Faker<T>.ParseDirtyRulesSets
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.ParseDirtyRulesSets(System.String)
+    name: ParseDirtyRulesSets
+    nameWithType: Faker(Of T).ParseDirtyRulesSets
+    fullName: Bogus.Faker(Of T).ParseDirtyRulesSets
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+  commentId: M:Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+  isExternal: true
+  name: GenerateLazy(Int32, String)
+  nameWithType: Faker<T>.GenerateLazy(Int32, String)
+  fullName: Bogus.Faker<T>.GenerateLazy(System.Int32, System.String)
+  nameWithType.vb: Faker(Of T).GenerateLazy(Int32, String)
+  fullName.vb: Bogus.Faker(Of T).GenerateLazy(System.Int32, System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+    name: GenerateLazy
+    nameWithType: Faker<T>.GenerateLazy
+    fullName: Bogus.Faker<T>.GenerateLazy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.GenerateLazy(System.Int32,System.String)
+    name: GenerateLazy
+    nameWithType: Faker(Of T).GenerateLazy
+    fullName: Bogus.Faker(Of T).GenerateLazy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.GenerateForever(System.String)
+  commentId: M:Bogus.Faker`1.GenerateForever(System.String)
+  isExternal: true
+  name: GenerateForever(String)
+  nameWithType: Faker<T>.GenerateForever(String)
+  fullName: Bogus.Faker<T>.GenerateForever(System.String)
+  nameWithType.vb: Faker(Of T).GenerateForever(String)
+  fullName.vb: Bogus.Faker(Of T).GenerateForever(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.GenerateForever(System.String)
+    name: GenerateForever
+    nameWithType: Faker<T>.GenerateForever
+    fullName: Bogus.Faker<T>.GenerateForever
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.GenerateForever(System.String)
+    name: GenerateForever
+    nameWithType: Faker(Of T).GenerateForever
+    fullName: Bogus.Faker(Of T).GenerateForever
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.PopulateInternal(`0,System.String[])
+  commentId: M:Bogus.Faker`1.PopulateInternal(`0,System.String[])
+  isExternal: true
+  name: PopulateInternal(T, String[])
+  nameWithType: Faker<T>.PopulateInternal(T, String[])
+  fullName: Bogus.Faker<T>.PopulateInternal(T, System.String[])
+  nameWithType.vb: Faker(Of T).PopulateInternal(T, String())
+  fullName.vb: Bogus.Faker(Of T).PopulateInternal(T, System.String())
+  name.vb: PopulateInternal(T, String())
+  spec.csharp:
+  - uid: Bogus.Faker`1.PopulateInternal(`0,System.String[])
+    name: PopulateInternal
+    nameWithType: Faker<T>.PopulateInternal
+    fullName: Bogus.Faker<T>.PopulateInternal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.PopulateInternal(`0,System.String[])
+    name: PopulateInternal
+    nameWithType: Faker(Of T).PopulateInternal
+    fullName: Bogus.Faker(Of T).PopulateInternal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.Validate(System.String)
+  commentId: M:Bogus.Faker`1.Validate(System.String)
+  isExternal: true
+  name: Validate(String)
+  nameWithType: Faker<T>.Validate(String)
+  fullName: Bogus.Faker<T>.Validate(System.String)
+  nameWithType.vb: Faker(Of T).Validate(String)
+  fullName.vb: Bogus.Faker(Of T).Validate(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.Validate(System.String)
+    name: Validate
+    nameWithType: Faker<T>.Validate
+    fullName: Bogus.Faker<T>.Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.Validate(System.String)
+    name: Validate
+    nameWithType: Faker(Of T).Validate
+    fullName: Bogus.Faker(Of T).Validate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+  commentId: M:Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+  isExternal: true
+  name: AssertConfigurationIsValid(String)
+  nameWithType: Faker<T>.AssertConfigurationIsValid(String)
+  fullName: Bogus.Faker<T>.AssertConfigurationIsValid(System.String)
+  nameWithType.vb: Faker(Of T).AssertConfigurationIsValid(String)
+  fullName.vb: Bogus.Faker(Of T).AssertConfigurationIsValid(System.String)
+  spec.csharp:
+  - uid: Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+    name: AssertConfigurationIsValid
+    nameWithType: Faker<T>.AssertConfigurationIsValid
+    fullName: Bogus.Faker<T>.AssertConfigurationIsValid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.AssertConfigurationIsValid(System.String)
+    name: AssertConfigurationIsValid
+    nameWithType: Faker(Of T).AssertConfigurationIsValid
+    fullName: Bogus.Faker(Of T).AssertConfigurationIsValid
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+  commentId: M:Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+  isExternal: true
+  name: MakeValidationException(ValidationResult)
+  nameWithType: Faker<T>.MakeValidationException(ValidationResult)
+  fullName: Bogus.Faker<T>.MakeValidationException(Bogus.ValidationResult)
+  nameWithType.vb: Faker(Of T).MakeValidationException(ValidationResult)
+  fullName.vb: Bogus.Faker(Of T).MakeValidationException(Bogus.ValidationResult)
+  spec.csharp:
+  - uid: Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+    name: MakeValidationException
+    nameWithType: Faker<T>.MakeValidationException
+    fullName: Bogus.Faker<T>.MakeValidationException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Bogus.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: Bogus.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.MakeValidationException(Bogus.ValidationResult)
+    name: MakeValidationException
+    nameWithType: Faker(Of T).MakeValidationException
+    fullName: Bogus.Faker(Of T).MakeValidationException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Bogus.ValidationResult
+    name: ValidationResult
+    nameWithType: ValidationResult
+    fullName: Bogus.ValidationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  commentId: M:Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  isExternal: true
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>)
+  nameWithType: Faker<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>)
+  fullName: Bogus.Faker<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>)
+  nameWithType.vb: Faker(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)))
+  fullName.vb: Bogus.Faker(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)))
+  spec.csharp:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor<TProperty>
+    nameWithType: Faker<T>.RuleFor<TProperty>
+    fullName: Bogus.Faker<T>.RuleFor<TProperty>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Bogus.Faker`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor(Of TProperty)
+    nameWithType: Faker(Of T).RuleFor(Of TProperty)
+    fullName: Bogus.Faker(Of T).RuleFor(Of TProperty)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProperty
+    nameWithType: TProperty
+    fullName: TProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Bogus.Faker`1.Bogus#IFakerTInternal#FakerHub
+  commentId: P:Bogus.Faker`1.Bogus#IFakerTInternal#FakerHub
+  isExternal: true
+  name: IFakerTInternal.FakerHub
+  nameWithType: Faker<T>.IFakerTInternal.FakerHub
+  fullName: Bogus.Faker<T>.Bogus.IFakerTInternal.FakerHub
+  nameWithType.vb: Faker(Of T).Bogus.IFakerTInternal.FakerHub
+  fullName.vb: Bogus.Faker(Of T).Bogus.IFakerTInternal.FakerHub
+  name.vb: Bogus.IFakerTInternal.FakerHub
+- uid: Bogus.Faker`1.Bogus#IFakerTInternal#Binder
+  commentId: P:Bogus.Faker`1.Bogus#IFakerTInternal#Binder
+  isExternal: true
+  name: IFakerTInternal.Binder
+  nameWithType: Faker<T>.IFakerTInternal.Binder
+  fullName: Bogus.Faker<T>.Bogus.IFakerTInternal.Binder
+  nameWithType.vb: Faker(Of T).Bogus.IFakerTInternal.Binder
+  fullName.vb: Bogus.Faker(Of T).Bogus.IFakerTInternal.Binder
+  name.vb: Bogus.IFakerTInternal.Binder
+- uid: Bogus.Faker`1.Bogus#IFakerTInternal#LocalSeed
+  commentId: P:Bogus.Faker`1.Bogus#IFakerTInternal#LocalSeed
+  isExternal: true
+  name: IFakerTInternal.LocalSeed
+  nameWithType: Faker<T>.IFakerTInternal.LocalSeed
+  fullName: Bogus.Faker<T>.Bogus.IFakerTInternal.LocalSeed
+  nameWithType.vb: Faker(Of T).Bogus.IFakerTInternal.LocalSeed
+  fullName.vb: Bogus.Faker(Of T).Bogus.IFakerTInternal.LocalSeed
+  name.vb: Bogus.IFakerTInternal.LocalSeed
+- uid: Bogus.Faker`1.Bogus#IFakerTInternal#TypeOfT
+  commentId: P:Bogus.Faker`1.Bogus#IFakerTInternal#TypeOfT
+  isExternal: true
+  name: IFakerTInternal.TypeOfT
+  nameWithType: Faker<T>.IFakerTInternal.TypeOfT
+  fullName: Bogus.Faker<T>.Bogus.IFakerTInternal.TypeOfT
+  nameWithType.vb: Faker(Of T).Bogus.IFakerTInternal.TypeOfT
+  fullName.vb: Bogus.Faker(Of T).Bogus.IFakerTInternal.TypeOfT
+  name.vb: Bogus.IFakerTInternal.TypeOfT
+- uid: Bogus.Faker`1.Locale
+  commentId: P:Bogus.Faker`1.Locale
+  isExternal: true
+  name: Locale
+  nameWithType: Faker<T>.Locale
+  fullName: Bogus.Faker<T>.Locale
+  nameWithType.vb: Faker(Of T).Locale
+  fullName.vb: Bogus.Faker(Of T).Locale
+- uid: qrAPI.App.Domain.Fakers.PetFaker.#ctor*
+  commentId: Overload:qrAPI.App.Domain.Fakers.PetFaker.#ctor
+  name: PetFaker
+  nameWithType: PetFaker.PetFaker
+  fullName: qrAPI.App.Domain.Fakers.PetFaker.PetFaker
+- uid: qrAPI.App.Domain.Qr
+  commentId: T:qrAPI.App.Domain.Qr
+  parent: qrAPI.App.Domain
+  name: Qr
+  nameWithType: Qr
+  fullName: qrAPI.App.Domain.Qr
+- uid: qrAPI.App.Domain
+  commentId: N:qrAPI.App.Domain
+  name: qrAPI.App.Domain
+  nameWithType: qrAPI.App.Domain
+  fullName: qrAPI.App.Domain
+- uid: qrAPI.App.Domain.User
+  commentId: T:qrAPI.App.Domain.User
+  parent: qrAPI.App.Domain
+  name: User
+  nameWithType: User
+  fullName: qrAPI.App.Domain.User

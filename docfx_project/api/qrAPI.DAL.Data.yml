@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data
+  commentId: N:qrAPI.DAL.Data
+  id: qrAPI.DAL.Data
+  children:
+  - qrAPI.DAL.Data.IDataContext
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Data
+  nameWithType: qrAPI.DAL.Data
+  fullName: qrAPI.DAL.Data
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Data.IDataContext
+  commentId: T:qrAPI.DAL.Data.IDataContext
+  parent: qrAPI.DAL.Data
+  name: IDataContext
+  nameWithType: IDataContext
+  fullName: qrAPI.DAL.Data.IDataContext
+- uid: qrAPI.DAL.Data
+  commentId: N:qrAPI.DAL.Data
+  name: qrAPI.DAL.Data
+  nameWithType: qrAPI.DAL.Data
+  fullName: qrAPI.DAL.Data

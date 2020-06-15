@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Requests
+  commentId: N:qrAPI.Contracts.v1.Requests
+  id: qrAPI.Contracts.v1.Requests
+  children:
+  - qrAPI.Contracts.v1.Requests.Gender
+  - qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+  - qrAPI.Contracts.v1.Requests.UserLoginRequest
+  - qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Requests
+  nameWithType: qrAPI.Contracts.v1.Requests
+  fullName: qrAPI.Contracts.v1.Requests
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Requests.Gender
+  commentId: T:qrAPI.Contracts.v1.Requests.Gender
+  parent: qrAPI.Contracts.v1.Requests
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.Contracts.v1.Requests.Gender
+- uid: qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+  parent: qrAPI.Contracts.v1.Requests
+  name: RefreshTokenRequest
+  nameWithType: RefreshTokenRequest
+  fullName: qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+- uid: qrAPI.Contracts.v1.Requests.UserLoginRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.UserLoginRequest
+  parent: qrAPI.Contracts.v1.Requests
+  name: UserLoginRequest
+  nameWithType: UserLoginRequest
+  fullName: qrAPI.Contracts.v1.Requests.UserLoginRequest
+- uid: qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+  parent: qrAPI.Contracts.v1.Requests
+  name: UserRegistrationRequest
+  nameWithType: UserRegistrationRequest
+  fullName: qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+- uid: qrAPI.Contracts.v1.Requests
+  commentId: N:qrAPI.Contracts.v1.Requests
+  name: qrAPI.Contracts.v1.Requests
+  nameWithType: qrAPI.Contracts.v1.Requests
+  fullName: qrAPI.Contracts.v1.Requests

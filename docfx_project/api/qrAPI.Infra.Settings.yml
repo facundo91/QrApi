@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Settings
+  commentId: N:qrAPI.Infra.Settings
+  id: qrAPI.Infra.Settings
+  children:
+  - qrAPI.Infra.Settings.MemoryCacheSettings
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Settings
+  nameWithType: qrAPI.Infra.Settings
+  fullName: qrAPI.Infra.Settings
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Settings.MemoryCacheSettings
+  commentId: T:qrAPI.Infra.Settings.MemoryCacheSettings
+  parent: qrAPI.Infra.Settings
+  name: MemoryCacheSettings
+  nameWithType: MemoryCacheSettings
+  fullName: qrAPI.Infra.Settings.MemoryCacheSettings
+- uid: qrAPI.Infra.Settings
+  commentId: N:qrAPI.Infra.Settings
+  name: qrAPI.Infra.Settings
+  nameWithType: qrAPI.Infra.Settings
+  fullName: qrAPI.Infra.Settings

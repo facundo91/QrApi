@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.HealthChecks
+  commentId: N:qrAPI.HealthChecks
+  id: qrAPI.HealthChecks
+  children:
+  - qrAPI.HealthChecks.DataBaseHealthCheck
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.HealthChecks
+  nameWithType: qrAPI.HealthChecks
+  fullName: qrAPI.HealthChecks
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.HealthChecks.DataBaseHealthCheck
+  commentId: T:qrAPI.HealthChecks.DataBaseHealthCheck
+  name: DataBaseHealthCheck
+  nameWithType: DataBaseHealthCheck
+  fullName: qrAPI.HealthChecks.DataBaseHealthCheck

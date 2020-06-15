@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.IDataContext
+  commentId: T:qrAPI.DAL.Data.IDataContext
+  id: IDataContext
+  parent: qrAPI.DAL.Data
+  children:
+  - qrAPI.DAL.Data.IDataContext.HealthCheck
+  langs:
+  - csharp
+  - vb
+  name: IDataContext
+  nameWithType: IDataContext
+  fullName: qrAPI.DAL.Data.IDataContext
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/IDataContext.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IDataContext
+    path: ../../QrApi/src/qrAPI.DAL/Data/IDataContext.cs
+    startLine: 2
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data
+  syntax:
+    content: public interface IDataContext
+    content.vb: Public Interface IDataContext
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.DAL.Data.IDataContext.HealthCheck
+  commentId: M:qrAPI.DAL.Data.IDataContext.HealthCheck
+  id: HealthCheck
+  parent: qrAPI.DAL.Data.IDataContext
+  langs:
+  - csharp
+  - vb
+  name: HealthCheck()
+  nameWithType: IDataContext.HealthCheck()
+  fullName: qrAPI.DAL.Data.IDataContext.HealthCheck()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/IDataContext.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: HealthCheck
+    path: ../../QrApi/src/qrAPI.DAL/Data/IDataContext.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data
+  syntax:
+    content: void HealthCheck()
+    content.vb: Sub HealthCheck
+  overload: qrAPI.DAL.Data.IDataContext.HealthCheck*
+references:
+- uid: qrAPI.DAL.Data
+  commentId: N:qrAPI.DAL.Data
+  name: qrAPI.DAL.Data
+  nameWithType: qrAPI.DAL.Data
+  fullName: qrAPI.DAL.Data
+- uid: qrAPI.DAL.Data.IDataContext.HealthCheck*
+  commentId: Overload:qrAPI.DAL.Data.IDataContext.HealthCheck
+  name: HealthCheck
+  nameWithType: IDataContext.HealthCheck
+  fullName: qrAPI.DAL.Data.IDataContext.HealthCheck

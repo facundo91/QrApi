@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.HealthChecks.DataBaseHealthCheck
+  commentId: T:qrAPI.HealthChecks.DataBaseHealthCheck
+  id: DataBaseHealthCheck
+  parent: qrAPI.HealthChecks
+  children:
+  - qrAPI.HealthChecks.DataBaseHealthCheck.#ctor(qrAPI.DAL.Data.IDataContext)
+  - qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: DataBaseHealthCheck
+  nameWithType: DataBaseHealthCheck
+  fullName: qrAPI.HealthChecks.DataBaseHealthCheck
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI/HealthChecks/DataBaseHealthCheck.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DataBaseHealthCheck
+    path: ../src/qrAPI/HealthChecks/DataBaseHealthCheck.cs
+    startLine: 7
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.HealthChecks
+  syntax:
+    content: 'public class DataBaseHealthCheck : IHealthCheck'
+    content.vb: >-
+      Public Class DataBaseHealthCheck
+
+          Implements IHealthCheck
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.HealthChecks.DataBaseHealthCheck.#ctor(qrAPI.DAL.Data.IDataContext)
+  commentId: M:qrAPI.HealthChecks.DataBaseHealthCheck.#ctor(qrAPI.DAL.Data.IDataContext)
+  id: '#ctor(qrAPI.DAL.Data.IDataContext)'
+  parent: qrAPI.HealthChecks.DataBaseHealthCheck
+  langs:
+  - csharp
+  - vb
+  name: DataBaseHealthCheck(IDataContext)
+  nameWithType: DataBaseHealthCheck.DataBaseHealthCheck(IDataContext)
+  fullName: qrAPI.HealthChecks.DataBaseHealthCheck.DataBaseHealthCheck(qrAPI.DAL.Data.IDataContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI/HealthChecks/DataBaseHealthCheck.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../src/qrAPI/HealthChecks/DataBaseHealthCheck.cs
+    startLine: 11
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.HealthChecks
+  syntax:
+    content: public DataBaseHealthCheck(IDataContext context)
+    parameters:
+    - id: context
+      type: qrAPI.DAL.Data.IDataContext
+    content.vb: Public Sub New(context As IDataContext)
+  overload: qrAPI.HealthChecks.DataBaseHealthCheck.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  commentId: M:qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  id: CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  parent: qrAPI.HealthChecks.DataBaseHealthCheck
+  langs:
+  - csharp
+  - vb
+  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
+  nameWithType: DataBaseHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+  fullName: qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/HealthChecks/DataBaseHealthCheck.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CheckHealthAsync
+    path: ../src/qrAPI/HealthChecks/DataBaseHealthCheck.cs
+    startLine: 16
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.HealthChecks
+  syntax:
+    content: public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: context
+      type: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult}
+    content.vb: Public Function CheckHealthAsync(context As HealthCheckContext, cancellationToken As CancellationToken = Nothing) As Task(Of HealthCheckResult)
+  overload: qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync*
+  implements:
+  - Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.HealthChecks
+  commentId: N:qrAPI.HealthChecks
+  name: qrAPI.HealthChecks
+  nameWithType: qrAPI.HealthChecks
+  fullName: qrAPI.HealthChecks
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
+  commentId: T:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
+  parent: Microsoft.Extensions.Diagnostics.HealthChecks
+  isExternal: true
+  name: IHealthCheck
+  nameWithType: IHealthCheck
+  fullName: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Diagnostics.HealthChecks
+  commentId: N:Microsoft.Extensions.Diagnostics.HealthChecks
+  isExternal: true
+  name: Microsoft.Extensions.Diagnostics.HealthChecks
+  nameWithType: Microsoft.Extensions.Diagnostics.HealthChecks
+  fullName: Microsoft.Extensions.Diagnostics.HealthChecks
+- uid: qrAPI.HealthChecks.DataBaseHealthCheck.#ctor*
+  commentId: Overload:qrAPI.HealthChecks.DataBaseHealthCheck.#ctor
+  name: DataBaseHealthCheck
+  nameWithType: DataBaseHealthCheck.DataBaseHealthCheck
+  fullName: qrAPI.HealthChecks.DataBaseHealthCheck.DataBaseHealthCheck
+- uid: qrAPI.DAL.Data.IDataContext
+  commentId: T:qrAPI.DAL.Data.IDataContext
+  parent: qrAPI.DAL.Data
+  name: IDataContext
+  nameWithType: IDataContext
+  fullName: qrAPI.DAL.Data.IDataContext
+- uid: qrAPI.DAL.Data
+  commentId: N:qrAPI.DAL.Data
+  name: qrAPI.DAL.Data
+  nameWithType: qrAPI.DAL.Data
+  fullName: qrAPI.DAL.Data
+- uid: qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync*
+  commentId: Overload:qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync
+  name: CheckHealthAsync
+  nameWithType: DataBaseHealthCheck.CheckHealthAsync
+  fullName: qrAPI.HealthChecks.DataBaseHealthCheck.CheckHealthAsync
+- uid: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
+  isExternal: true
+  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
+  nameWithType: IHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+  fullName: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+    name: CheckHealthAsync
+    nameWithType: IHealthCheck.CheckHealthAsync
+    fullName: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+    name: HealthCheckContext
+    nameWithType: HealthCheckContext
+    fullName: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+    name: CheckHealthAsync
+    nameWithType: IHealthCheck.CheckHealthAsync
+    fullName: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+    name: HealthCheckContext
+    nameWithType: HealthCheckContext
+    fullName: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+  commentId: T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+  parent: Microsoft.Extensions.Diagnostics.HealthChecks
+  isExternal: true
+  name: HealthCheckContext
+  nameWithType: HealthCheckContext
+  fullName: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HealthCheckResult>
+  nameWithType: Task<HealthCheckResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>
+  nameWithType.vb: Task(Of HealthCheckResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult)
+  name.vb: Task(Of HealthCheckResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult
+    name: HealthCheckResult
+    nameWithType: HealthCheckResult
+    fullName: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult
+    name: HealthCheckResult
+    nameWithType: HealthCheckResult
+    fullName: Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

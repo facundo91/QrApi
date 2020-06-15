@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Swagger
+  commentId: N:qrAPI.Swagger
+  id: qrAPI.Swagger
+  children:
+  - qrAPI.Swagger.ConfigureSwaggerOptions
+  - qrAPI.Swagger.SwaggerDefaultValues
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Swagger
+  nameWithType: qrAPI.Swagger
+  fullName: qrAPI.Swagger
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.Swagger.ConfigureSwaggerOptions
+  commentId: T:qrAPI.Swagger.ConfigureSwaggerOptions
+  name: ConfigureSwaggerOptions
+  nameWithType: ConfigureSwaggerOptions
+  fullName: qrAPI.Swagger.ConfigureSwaggerOptions
+- uid: qrAPI.Swagger.SwaggerDefaultValues
+  commentId: T:qrAPI.Swagger.SwaggerDefaultValues
+  name: SwaggerDefaultValues
+  nameWithType: SwaggerDefaultValues
+  fullName: qrAPI.Swagger.SwaggerDefaultValues

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Web.Cache
+  commentId: N:qrAPI.Web.Cache
+  id: qrAPI.Web.Cache
+  children:
+  - qrAPI.Web.Cache.CachedAttribute
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Web.Cache
+  nameWithType: qrAPI.Web.Cache
+  fullName: qrAPI.Web.Cache
+  type: Namespace
+  assemblies:
+  - qrAPI.Web
+references:
+- uid: qrAPI.Web.Cache.CachedAttribute
+  commentId: T:qrAPI.Web.Cache.CachedAttribute
+  name: CachedAttribute
+  nameWithType: CachedAttribute
+  fullName: qrAPI.Web.Cache.CachedAttribute

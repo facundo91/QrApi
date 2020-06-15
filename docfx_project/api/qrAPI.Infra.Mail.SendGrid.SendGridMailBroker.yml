@@ -1,0 +1,582 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  commentId: T:qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  id: SendGridMailBroker
+  parent: qrAPI.Infra.Mail.SendGrid
+  children:
+  - qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.#ctor(qrAPI.Infra.Mail.SendGrid.SendGridSettings)
+  - qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  langs:
+  - csharp
+  - vb
+  name: SendGridMailBroker
+  nameWithType: SendGridMailBroker
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGrid/SendGridMailBroker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: SendGridMailBroker
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGrid/SendGridMailBroker.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGrid
+  syntax:
+    content: 'public class SendGridMailBroker : IMailBroker'
+    content.vb: >-
+      Public Class SendGridMailBroker
+
+          Implements IMailBroker
+  inheritance:
+  - System.Object
+  implements:
+  - qrAPI.Infra.Mail.IMailBroker
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.#ctor(qrAPI.Infra.Mail.SendGrid.SendGridSettings)
+  commentId: M:qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.#ctor(qrAPI.Infra.Mail.SendGrid.SendGridSettings)
+  id: '#ctor(qrAPI.Infra.Mail.SendGrid.SendGridSettings)'
+  parent: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  langs:
+  - csharp
+  - vb
+  name: SendGridMailBroker(SendGridSettings)
+  nameWithType: SendGridMailBroker.SendGridMailBroker(SendGridSettings)
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendGridMailBroker(qrAPI.Infra.Mail.SendGrid.SendGridSettings)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGrid/SendGridMailBroker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGrid/SendGridMailBroker.cs
+    startLine: 11
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGrid
+  syntax:
+    content: public SendGridMailBroker(SendGridSettings sendGridSettings)
+    parameters:
+    - id: sendGridSettings
+      type: qrAPI.Infra.Mail.SendGrid.SendGridSettings
+    content.vb: Public Sub New(sendGridSettings As SendGridSettings)
+  overload: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  commentId: M:qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  id: SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  parent: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  langs:
+  - csharp
+  - vb
+  name: SendSimpleMessage(Mail)
+  nameWithType: SendGridMailBroker.SendSimpleMessage(Mail)
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Mail/SendGrid/SendGridMailBroker.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: SendSimpleMessage
+    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGrid/SendGridMailBroker.cs
+    startLine: 15
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Mail.SendGrid
+  syntax:
+    content: public Task<HttpStatusCode> SendSimpleMessage(Mail mail)
+    parameters:
+    - id: mail
+      type: qrAPI.Infra.Mail.Models.Mail
+    return:
+      type: System.Threading.Tasks.Task{System.Net.HttpStatusCode}
+    content.vb: Public Function SendSimpleMessage(mail As Mail) As Task(Of HttpStatusCode)
+  overload: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage*
+  implements:
+  - qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.Infra.Mail.SendGrid
+  commentId: N:qrAPI.Infra.Mail.SendGrid
+  name: qrAPI.Infra.Mail.SendGrid
+  nameWithType: qrAPI.Infra.Mail.SendGrid
+  fullName: qrAPI.Infra.Mail.SendGrid
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.Infra.Mail.IMailBroker
+  commentId: T:qrAPI.Infra.Mail.IMailBroker
+  parent: qrAPI.Infra.Mail
+  name: IMailBroker
+  nameWithType: IMailBroker
+  fullName: qrAPI.Infra.Mail.IMailBroker
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Infra.Mail
+  commentId: N:qrAPI.Infra.Mail
+  name: qrAPI.Infra.Mail
+  nameWithType: qrAPI.Infra.Mail
+  fullName: qrAPI.Infra.Mail
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.#ctor*
+  commentId: Overload:qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.#ctor
+  name: SendGridMailBroker
+  nameWithType: SendGridMailBroker.SendGridMailBroker
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendGridMailBroker
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridSettings
+  commentId: T:qrAPI.Infra.Mail.SendGrid.SendGridSettings
+  parent: qrAPI.Infra.Mail.SendGrid
+  name: SendGridSettings
+  nameWithType: SendGridSettings
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridSettings
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage*
+  commentId: Overload:qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage
+  name: SendSimpleMessage
+  nameWithType: SendGridMailBroker.SendSimpleMessage
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker.SendSimpleMessage
+- uid: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  commentId: M:qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  parent: qrAPI.Infra.Mail.IMailBroker
+  name: SendSimpleMessage(Mail)
+  nameWithType: IMailBroker.SendSimpleMessage(Mail)
+  fullName: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+  spec.csharp:
+  - uid: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+    name: SendSimpleMessage
+    nameWithType: IMailBroker.SendSimpleMessage
+    fullName: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.Infra.Mail.Models.Mail
+    name: Mail
+    nameWithType: Mail
+    fullName: qrAPI.Infra.Mail.Models.Mail
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage(qrAPI.Infra.Mail.Models.Mail)
+    name: SendSimpleMessage
+    nameWithType: IMailBroker.SendSimpleMessage
+    fullName: qrAPI.Infra.Mail.IMailBroker.SendSimpleMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.Infra.Mail.Models.Mail
+    name: Mail
+    nameWithType: Mail
+    fullName: qrAPI.Infra.Mail.Models.Mail
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Infra.Mail.Models.Mail
+  commentId: T:qrAPI.Infra.Mail.Models.Mail
+  parent: qrAPI.Infra.Mail.Models
+  name: Mail
+  nameWithType: Mail
+  fullName: qrAPI.Infra.Mail.Models.Mail
+- uid: System.Threading.Tasks.Task{System.Net.HttpStatusCode}
+  commentId: T:System.Threading.Tasks.Task{System.Net.HttpStatusCode}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpStatusCode>
+  nameWithType: Task<HttpStatusCode>
+  fullName: System.Threading.Tasks.Task<System.Net.HttpStatusCode>
+  nameWithType.vb: Task(Of HttpStatusCode)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.HttpStatusCode)
+  name.vb: Task(Of HttpStatusCode)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    nameWithType: HttpStatusCode
+    fullName: System.Net.HttpStatusCode
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    nameWithType: HttpStatusCode
+    fullName: System.Net.HttpStatusCode
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Infra.Mail.Models
+  commentId: N:qrAPI.Infra.Mail.Models
+  name: qrAPI.Infra.Mail.Models
+  nameWithType: qrAPI.Infra.Mail.Models
+  fullName: qrAPI.Infra.Mail.Models
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

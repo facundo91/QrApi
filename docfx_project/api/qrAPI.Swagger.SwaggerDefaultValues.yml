@@ -1,0 +1,493 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Swagger.SwaggerDefaultValues
+  commentId: T:qrAPI.Swagger.SwaggerDefaultValues
+  id: SwaggerDefaultValues
+  parent: qrAPI.Swagger
+  children:
+  - qrAPI.Swagger.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  langs:
+  - csharp
+  - vb
+  name: SwaggerDefaultValues
+  nameWithType: SwaggerDefaultValues
+  fullName: qrAPI.Swagger.SwaggerDefaultValues
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI/Swagger/SwaggerDefaultValues.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: SwaggerDefaultValues
+    path: ../src/qrAPI/Swagger/SwaggerDefaultValues.cs
+    startLine: 13
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Swagger
+  summary: "\nRepresents the Swagger/Swashbuckle operation filter used to document the implicit API version parameter.\n"
+  remarks: >-
+    This <xref href="Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter" data-throw-if-not-resolved="false"></xref> is only required due to bugs in the <xref href="Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator" data-throw-if-not-resolved="false"></xref>.
+
+    Once they are fixed and published, this class can be removed.
+  example: []
+  syntax:
+    content: 'public class SwaggerDefaultValues : IOperationFilter'
+    content.vb: >-
+      Public Class SwaggerDefaultValues
+
+          Implements IOperationFilter
+  inheritance:
+  - System.Object
+  implements:
+  - Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Swagger.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  commentId: M:qrAPI.Swagger.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  id: Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  parent: qrAPI.Swagger.SwaggerDefaultValues
+  langs:
+  - csharp
+  - vb
+  name: Apply(OpenApiOperation, OperationFilterContext)
+  nameWithType: SwaggerDefaultValues.Apply(OpenApiOperation, OperationFilterContext)
+  fullName: qrAPI.Swagger.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation, Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Swagger/SwaggerDefaultValues.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Apply
+    path: ../src/qrAPI/Swagger/SwaggerDefaultValues.cs
+    startLine: 20
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Swagger
+  summary: "\nApplies the filter to the specified operation using the given context.\n"
+  example: []
+  syntax:
+    content: public void Apply(OpenApiOperation operation, OperationFilterContext context)
+    parameters:
+    - id: operation
+      type: Microsoft.OpenApi.Models.OpenApiOperation
+      description: The operation to apply the filter to.
+    - id: context
+      type: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+      description: The current operation filter context.
+    content.vb: Public Sub Apply(operation As OpenApiOperation, context As OperationFilterContext)
+  overload: qrAPI.Swagger.SwaggerDefaultValues.Apply*
+  implements:
+  - Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter
+  commentId: T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter
+  parent: Swashbuckle.AspNetCore.SwaggerGen
+  isExternal: true
+  name: IOperationFilter
+  nameWithType: IOperationFilter
+  fullName: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter
+- uid: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator
+  commentId: T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator
+  isExternal: true
+- uid: qrAPI.Swagger
+  commentId: N:qrAPI.Swagger
+  name: qrAPI.Swagger
+  nameWithType: qrAPI.Swagger
+  fullName: qrAPI.Swagger
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Swashbuckle.AspNetCore.SwaggerGen
+  commentId: N:Swashbuckle.AspNetCore.SwaggerGen
+  isExternal: true
+  name: Swashbuckle.AspNetCore.SwaggerGen
+  nameWithType: Swashbuckle.AspNetCore.SwaggerGen
+  fullName: Swashbuckle.AspNetCore.SwaggerGen
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Swagger.SwaggerDefaultValues.Apply*
+  commentId: Overload:qrAPI.Swagger.SwaggerDefaultValues.Apply
+  name: Apply
+  nameWithType: SwaggerDefaultValues.Apply
+  fullName: qrAPI.Swagger.SwaggerDefaultValues.Apply
+- uid: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  commentId: M:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  parent: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter
+  isExternal: true
+  name: Apply(OpenApiOperation, OperationFilterContext)
+  nameWithType: IOperationFilter.Apply(OpenApiOperation, OperationFilterContext)
+  fullName: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation, Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+  spec.csharp:
+  - uid: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+    name: Apply
+    nameWithType: IOperationFilter.Apply
+    fullName: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.OpenApi.Models.OpenApiOperation
+    name: OpenApiOperation
+    nameWithType: OpenApiOperation
+    fullName: Microsoft.OpenApi.Models.OpenApiOperation
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+    name: OperationFilterContext
+    nameWithType: OperationFilterContext
+    fullName: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+    name: Apply
+    nameWithType: IOperationFilter.Apply
+    fullName: Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter.Apply
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.OpenApi.Models.OpenApiOperation
+    name: OpenApiOperation
+    nameWithType: OpenApiOperation
+    fullName: Microsoft.OpenApi.Models.OpenApiOperation
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+    name: OperationFilterContext
+    nameWithType: OperationFilterContext
+    fullName: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.OpenApi.Models.OpenApiOperation
+  commentId: T:Microsoft.OpenApi.Models.OpenApiOperation
+  parent: Microsoft.OpenApi.Models
+  isExternal: true
+  name: OpenApiOperation
+  nameWithType: OpenApiOperation
+  fullName: Microsoft.OpenApi.Models.OpenApiOperation
+- uid: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+  commentId: T:Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+  parent: Swashbuckle.AspNetCore.SwaggerGen
+  isExternal: true
+  name: OperationFilterContext
+  nameWithType: OperationFilterContext
+  fullName: Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext
+- uid: Microsoft.OpenApi.Models
+  commentId: N:Microsoft.OpenApi.Models
+  isExternal: true
+  name: Microsoft.OpenApi.Models
+  nameWithType: Microsoft.OpenApi.Models
+  fullName: Microsoft.OpenApi.Models

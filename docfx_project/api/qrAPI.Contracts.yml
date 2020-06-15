@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts
+  commentId: N:qrAPI.Contracts
+  id: qrAPI.Contracts
+  children:
+  - qrAPI.Contracts.ApiVersions
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts
+  nameWithType: qrAPI.Contracts
+  fullName: qrAPI.Contracts
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.ApiVersions
+  commentId: T:qrAPI.Contracts.ApiVersions
+  name: ApiVersions
+  nameWithType: ApiVersions
+  fullName: qrAPI.Contracts.ApiVersions

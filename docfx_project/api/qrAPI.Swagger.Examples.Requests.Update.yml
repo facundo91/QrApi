@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Swagger.Examples.Requests.Update
+  commentId: N:qrAPI.Swagger.Examples.Requests.Update
+  id: qrAPI.Swagger.Examples.Requests.Update
+  children:
+  - qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Swagger.Examples.Requests.Update
+  nameWithType: qrAPI.Swagger.Examples.Requests.Update
+  fullName: qrAPI.Swagger.Examples.Requests.Update
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider
+  commentId: T:qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider
+  name: UpdatePetRequestExampleProvider
+  nameWithType: UpdatePetRequestExampleProvider
+  fullName: qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider

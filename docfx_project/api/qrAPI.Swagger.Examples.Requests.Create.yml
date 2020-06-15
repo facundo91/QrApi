@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Swagger.Examples.Requests.Create
+  commentId: N:qrAPI.Swagger.Examples.Requests.Create
+  id: qrAPI.Swagger.Examples.Requests.Create
+  children:
+  - qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider
+  - qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Swagger.Examples.Requests.Create
+  nameWithType: qrAPI.Swagger.Examples.Requests.Create
+  fullName: qrAPI.Swagger.Examples.Requests.Create
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider
+  commentId: T:qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider
+  name: CreatePetRequestExampleProvider
+  nameWithType: CreatePetRequestExampleProvider
+  fullName: qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider
+- uid: qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider
+  commentId: T:qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider
+  name: CreateQrRequestExampleProvider
+  nameWithType: CreateQrRequestExampleProvider
+  fullName: qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider

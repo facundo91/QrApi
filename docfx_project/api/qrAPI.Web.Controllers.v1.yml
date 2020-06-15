@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Web.Controllers.v1
+  commentId: N:qrAPI.Web.Controllers.v1
+  id: qrAPI.Web.Controllers.v1
+  children:
+  - qrAPI.Web.Controllers.v1.IdentityController
+  - qrAPI.Web.Controllers.v1.PetsController
+  - qrAPI.Web.Controllers.v1.QrsController
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Web.Controllers.v1
+  nameWithType: qrAPI.Web.Controllers.v1
+  fullName: qrAPI.Web.Controllers.v1
+  type: Namespace
+  assemblies:
+  - qrAPI.Web
+references:
+- uid: qrAPI.Web.Controllers.v1.IdentityController
+  commentId: T:qrAPI.Web.Controllers.v1.IdentityController
+  name: IdentityController
+  nameWithType: IdentityController
+  fullName: qrAPI.Web.Controllers.v1.IdentityController
+- uid: qrAPI.Web.Controllers.v1.PetsController
+  commentId: T:qrAPI.Web.Controllers.v1.PetsController
+  name: PetsController
+  nameWithType: PetsController
+  fullName: qrAPI.Web.Controllers.v1.PetsController
+- uid: qrAPI.Web.Controllers.v1.QrsController
+  commentId: T:qrAPI.Web.Controllers.v1.QrsController
+  name: QrsController
+  nameWithType: QrsController
+  fullName: qrAPI.Web.Controllers.v1.QrsController

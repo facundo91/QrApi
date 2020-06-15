@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.MongoData
+  commentId: N:qrAPI.DAL.Data.MongoData
+  id: qrAPI.DAL.Data.MongoData
+  children:
+  - qrAPI.DAL.Data.MongoData.MongoContext
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Data.MongoData
+  nameWithType: qrAPI.DAL.Data.MongoData
+  fullName: qrAPI.DAL.Data.MongoData
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Data.MongoData.MongoContext
+  commentId: T:qrAPI.DAL.Data.MongoData.MongoContext
+  name: MongoContext
+  nameWithType: MongoContext
+  fullName: qrAPI.DAL.Data.MongoData.MongoContext

@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Requests.Gender
+  commentId: T:qrAPI.Contracts.v1.Requests.Gender
+  id: Gender
+  parent: qrAPI.Contracts.v1.Requests
+  children:
+  - qrAPI.Contracts.v1.Requests.Gender.Female
+  - qrAPI.Contracts.v1.Requests.Gender.Male
+  langs:
+  - csharp
+  - vb
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.Contracts.v1.Requests.Gender
+  type: Enum
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Gender
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Gender.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests
+  summary: "\nGender\n"
+  example: []
+  syntax:
+    content: public enum Gender
+    content.vb: Public Enum Gender
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: qrAPI.Contracts.v1.Requests.Gender.Female
+  commentId: F:qrAPI.Contracts.v1.Requests.Gender.Female
+  id: Female
+  parent: qrAPI.Contracts.v1.Requests.Gender
+  langs:
+  - csharp
+  - vb
+  name: Female
+  nameWithType: Gender.Female
+  fullName: qrAPI.Contracts.v1.Requests.Gender.Female
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Female
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Gender.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests
+  syntax:
+    content: Female = 0
+    return:
+      type: qrAPI.Contracts.v1.Requests.Gender
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Contracts.v1.Requests.Gender.Male
+  commentId: F:qrAPI.Contracts.v1.Requests.Gender.Male
+  id: Male
+  parent: qrAPI.Contracts.v1.Requests.Gender
+  langs:
+  - csharp
+  - vb
+  name: Male
+  nameWithType: Gender.Male
+  fullName: qrAPI.Contracts.v1.Requests.Gender.Male
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Requests/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Male
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/Gender.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Requests
+  syntax:
+    content: Male = 1
+    return:
+      type: qrAPI.Contracts.v1.Requests.Gender
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: qrAPI.Contracts.v1.Requests
+  commentId: N:qrAPI.Contracts.v1.Requests
+  name: qrAPI.Contracts.v1.Requests
+  nameWithType: qrAPI.Contracts.v1.Requests
+  fullName: qrAPI.Contracts.v1.Requests
+- uid: qrAPI.Contracts.v1.Requests.Gender
+  commentId: T:qrAPI.Contracts.v1.Requests.Gender
+  parent: qrAPI.Contracts.v1.Requests
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.Contracts.v1.Requests.Gender

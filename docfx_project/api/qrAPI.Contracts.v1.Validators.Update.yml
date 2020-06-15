@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Validators.Update
+  commentId: N:qrAPI.Contracts.v1.Validators.Update
+  id: qrAPI.Contracts.v1.Validators.Update
+  children:
+  - qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator
+  - qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Validators.Update
+  nameWithType: qrAPI.Contracts.v1.Validators.Update
+  fullName: qrAPI.Contracts.v1.Validators.Update
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator
+  commentId: T:qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator
+  name: UpdatePetRequestValidator
+  nameWithType: UpdatePetRequestValidator
+  fullName: qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator
+- uid: qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator
+  commentId: T:qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator
+  name: UpdateQrRequestValidator
+  nameWithType: UpdateQrRequestValidator
+  fullName: qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator

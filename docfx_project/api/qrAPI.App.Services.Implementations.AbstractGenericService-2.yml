@@ -1,0 +1,1668 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  commentId: T:qrAPI.App.Services.Implementations.AbstractGenericService`2
+  id: AbstractGenericService`2
+  parent: qrAPI.App.Services.Implementations
+  children:
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}},FluentValidation.AbstractValidator{`0})
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  langs:
+  - csharp
+  - vb
+  name: AbstractGenericService<TDomainObject, TDto>
+  nameWithType: AbstractGenericService<TDomainObject, TDto>
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.Exceptions.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: AbstractGenericService
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.Exceptions.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: 'public abstract class AbstractGenericService<TDomainObject, TDto> : IGenericService<TDomainObject> where TDomainObject : DomainObject where TDto : Dto'
+    typeParameters:
+    - id: TDomainObject
+    - id: TDto
+    content.vb: >-
+      Public MustInherit Class AbstractGenericService(Of TDomainObject As DomainObject, TDto As Dto)
+
+          Implements IGenericService(Of TDomainObject)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - qrAPI.App.Services.Implementations.PetService
+  - qrAPI.App.Services.Implementations.QrService
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)
+  name.vb: AbstractGenericService(Of TDomainObject, TDto)
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
+  commentId: F:qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
+  id: Mapper
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: Mapper
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.Mapper
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.Mapper
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Mapper
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 18
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: protected readonly IMapper Mapper
+    return:
+      type: AutoMapper.IMapper
+    content.vb: Protected ReadOnly Mapper As IMapper
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).Mapper
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).Mapper
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}},FluentValidation.AbstractValidator{`0})
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}},FluentValidation.AbstractValidator{`0})
+  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}},FluentValidation.AbstractValidator{`0})'
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>, AbstractValidator<TDomainObject>)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>, AbstractValidator<TDomainObject>)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<TDto>, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>>, FluentValidation.AbstractValidator<TDomainObject>)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 23
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: protected AbstractGenericService(IMapper mapper, IRepository<TDto> repository, ILogger<AbstractGenericService<TDomainObject, TDto>> logger, AbstractValidator<TDomainObject> validator)
+    parameters:
+    - id: mapper
+      type: AutoMapper.IMapper
+    - id: repository
+      type: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService`2}
+    - id: validator
+      type: FluentValidation.AbstractValidator{{TDomainObject}}
+    content.vb: Protected Sub New(mapper As IMapper, repository As IRepository(Of TDto), logger As ILogger(Of AbstractGenericService(Of TDomainObject, TDto)), validator As AbstractValidator(Of TDomainObject))
+  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor*
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)), AbstractValidator(Of TDomainObject))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto), Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)), FluentValidation.AbstractValidator(Of TDomainObject))
+  name.vb: AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)), AbstractValidator(Of TDomainObject))
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  id: GetAllAsync
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetAllAsync()
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 35
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public virtual Task<IEnumerable<TDomainObject>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TDomainObject}}}
+    content.vb: Public Overridable Function GetAllAsync As Task(Of IEnumerable(Of TDomainObject))
+  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetAllAsync
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetAllAsync()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetAllAsync()
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  id: GetByIdAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetByIdAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 38
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public virtual Task<TDomainObject> GetByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{{TDomainObject}}
+    content.vb: Public Overridable Function GetByIdAsync(id As Guid) As Task(Of TDomainObject)
+  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetByIdAsync(System.Guid)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync(Guid)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync(System.Guid)
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  id: CreateAsync(`0)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(TDomainObject)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.CreateAsync(TDomainObject)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.CreateAsync(TDomainObject)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CreateAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 45
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public virtual Task<TDomainObject> CreateAsync(TDomainObject objToCreate)
+    parameters:
+    - id: objToCreate
+      type: '{TDomainObject}'
+    return:
+      type: System.Threading.Tasks.Task{{TDomainObject}}
+    content.vb: Public Overridable Function CreateAsync(objToCreate As TDomainObject) As Task(Of TDomainObject)
+  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.CreateAsync({TDomainObject})
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).CreateAsync(TDomainObject)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).CreateAsync(TDomainObject)
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  id: UpdateAsync(System.Guid,`0)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Guid, TDomainObject)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.UpdateAsync(Guid, TDomainObject)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.UpdateAsync(System.Guid, TDomainObject)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UpdateAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 48
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public virtual Task<bool> UpdateAsync(Guid id, TDomainObject objToUpdate)
+    parameters:
+    - id: id
+      type: System.Guid
+    - id: objToUpdate
+      type: '{TDomainObject}'
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overridable Function UpdateAsync(id As Guid, objToUpdate As TDomainObject) As Task(Of Boolean)
+  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.UpdateAsync(System.Guid,{TDomainObject})
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).UpdateAsync(Guid, TDomainObject)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).UpdateAsync(System.Guid, TDomainObject)
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  id: DeleteAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Guid)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.DeleteAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DeleteAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    startLine: 57
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public virtual Task<bool> DeleteAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overridable Function DeleteAsync(id As Guid) As Task(Of Boolean)
+  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync*
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.DeleteAsync(System.Guid)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).DeleteAsync(Guid)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).DeleteAsync(System.Guid)
+references:
+- uid: qrAPI.App.Services.Implementations
+  commentId: N:qrAPI.App.Services.Implementations
+  name: qrAPI.App.Services.Implementations
+  nameWithType: qrAPI.App.Services.Implementations
+  fullName: qrAPI.App.Services.Implementations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  commentId: T:qrAPI.App.Services.Interfaces.IGenericService{`0}
+  parent: qrAPI.App.Services.Interfaces
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1
+  name: IGenericService<TDomainObject>
+  nameWithType: IGenericService<TDomainObject>
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>
+  nameWithType.vb: IGenericService(Of TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject)
+  name.vb: IGenericService(Of TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1
+  commentId: T:qrAPI.App.Services.Interfaces.IGenericService`1
+  name: IGenericService<TDomainObject>
+  nameWithType: IGenericService<TDomainObject>
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>
+  nameWithType.vb: IGenericService(Of TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject)
+  name.vb: IGenericService(Of TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces
+  commentId: N:qrAPI.App.Services.Interfaces
+  name: qrAPI.App.Services.Interfaces
+  nameWithType: qrAPI.App.Services.Interfaces
+  fullName: qrAPI.App.Services.Interfaces
+- uid: AutoMapper.IMapper
+  commentId: T:AutoMapper.IMapper
+  parent: AutoMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: AutoMapper.IMapper
+- uid: AutoMapper
+  commentId: N:AutoMapper
+  isExternal: true
+  name: AutoMapper
+  nameWithType: AutoMapper
+  fullName: AutoMapper
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor*
+  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor
+  name: AbstractGenericService
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.AbstractGenericService
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.AbstractGenericService
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository{`0}
+  parent: qrAPI.DAL.Daos.Interfaces
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService`2}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService`2}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<AbstractGenericService<TDomainObject, TDto>>
+  nameWithType: ILogger<AbstractGenericService<TDomainObject, TDto>>
+  fullName: Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>>
+  nameWithType.vb: ILogger(Of AbstractGenericService(Of TDomainObject, TDto))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto))
+  name.vb: ILogger(Of AbstractGenericService(Of TDomainObject, TDto))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator{{TDomainObject}}
+  commentId: T:FluentValidation.AbstractValidator{`0}
+  parent: FluentValidation
+  definition: FluentValidation.AbstractValidator`1
+  name: AbstractValidator<TDomainObject>
+  nameWithType: AbstractValidator<TDomainObject>
+  fullName: FluentValidation.AbstractValidator<TDomainObject>
+  nameWithType.vb: AbstractValidator(Of TDomainObject)
+  fullName.vb: FluentValidation.AbstractValidator(Of TDomainObject)
+  name.vb: AbstractValidator(Of TDomainObject)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: FluentValidation.AbstractValidator`1
+  commentId: T:FluentValidation.AbstractValidator`1
+  isExternal: true
+  name: AbstractValidator<T>
+  nameWithType: AbstractValidator<T>
+  fullName: FluentValidation.AbstractValidator<T>
+  nameWithType.vb: AbstractValidator(Of T)
+  fullName.vb: FluentValidation.AbstractValidator(Of T)
+  name.vb: AbstractValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation
+  commentId: N:FluentValidation
+  isExternal: true
+  name: FluentValidation
+  nameWithType: FluentValidation
+  fullName: FluentValidation
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  name: GetAllAsync
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetAllAsync
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetAllAsync
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetAllAsync
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetAllAsync
+- uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetAllAsync
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.GetAllAsync
+  parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IGenericService<TDomainObject>.GetAllAsync()
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetAllAsync()
+  nameWithType.vb: IGenericService(Of TDomainObject).GetAllAsync()
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericService<TDomainObject>.GetAllAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericService(Of TDomainObject).GetAllAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TDomainObject}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<TDomainObject>>
+  nameWithType: Task<IEnumerable<TDomainObject>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TDomainObject>>
+  nameWithType.vb: Task(Of IEnumerable(Of TDomainObject))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TDomainObject))
+  name.vb: Task(Of IEnumerable(Of TDomainObject))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IGenericService<TDomainObject>.GetAllAsync()
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetAllAsync()
+  nameWithType.vb: IGenericService(Of TDomainObject).GetAllAsync()
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericService<TDomainObject>.GetAllAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericService(Of TDomainObject).GetAllAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync
+  name: GetByIdAsync
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetByIdAsync
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetByIdAsync
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync
+- uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.GetByIdAsync(System.Guid)
+  parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+  name: GetByIdAsync(Guid)
+  nameWithType: IGenericService<TDomainObject>.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetByIdAsync(System.Guid)
+  nameWithType.vb: IGenericService(Of TDomainObject).GetByIdAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: IGenericService<TDomainObject>.GetByIdAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: IGenericService(Of TDomainObject).GetByIdAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{{TDomainObject}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TDomainObject>
+  nameWithType: Task<TDomainObject>
+  fullName: System.Threading.Tasks.Task<TDomainObject>
+  nameWithType.vb: Task(Of TDomainObject)
+  fullName.vb: System.Threading.Tasks.Task(Of TDomainObject)
+  name.vb: Task(Of TDomainObject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+  isExternal: true
+  name: GetByIdAsync(Guid)
+  nameWithType: IGenericService<TDomainObject>.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetByIdAsync(System.Guid)
+  nameWithType.vb: IGenericService(Of TDomainObject).GetByIdAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: IGenericService<TDomainObject>.GetByIdAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: IGenericService(Of TDomainObject).GetByIdAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync
+  name: CreateAsync
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.CreateAsync
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.CreateAsync
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).CreateAsync
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).CreateAsync
+- uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.CreateAsync({TDomainObject})
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.CreateAsync(`0)
+  parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+  name: CreateAsync(TDomainObject)
+  nameWithType: IGenericService<TDomainObject>.CreateAsync(TDomainObject)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.CreateAsync(TDomainObject)
+  nameWithType.vb: IGenericService(Of TDomainObject).CreateAsync(TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).CreateAsync(TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: IGenericService<TDomainObject>.CreateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: IGenericService(Of TDomainObject).CreateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TDomainObject}'
+  commentId: '!:TDomainObject'
+  definition: TDomainObject
+  name: TDomainObject
+  nameWithType: TDomainObject
+  fullName: TDomainObject
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+  name: CreateAsync(TDomainObject)
+  nameWithType: IGenericService<TDomainObject>.CreateAsync(TDomainObject)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.CreateAsync(TDomainObject)
+  nameWithType.vb: IGenericService(Of TDomainObject).CreateAsync(TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).CreateAsync(TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: IGenericService<TDomainObject>.CreateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: IGenericService(Of TDomainObject).CreateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TDomainObject
+  name: TDomainObject
+  nameWithType: TDomainObject
+  fullName: TDomainObject
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync
+  name: UpdateAsync
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.UpdateAsync
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.UpdateAsync
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).UpdateAsync
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).UpdateAsync
+- uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.UpdateAsync(System.Guid,{TDomainObject})
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.UpdateAsync(System.Guid,`0)
+  parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+  name: UpdateAsync(Guid, TDomainObject)
+  nameWithType: IGenericService<TDomainObject>.UpdateAsync(Guid, TDomainObject)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.UpdateAsync(System.Guid, TDomainObject)
+  nameWithType.vb: IGenericService(Of TDomainObject).UpdateAsync(Guid, TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).UpdateAsync(System.Guid, TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: IGenericService<TDomainObject>.UpdateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: IGenericService(Of TDomainObject).UpdateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+  isExternal: true
+  name: UpdateAsync(Guid, TDomainObject)
+  nameWithType: IGenericService<TDomainObject>.UpdateAsync(Guid, TDomainObject)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.UpdateAsync(System.Guid, TDomainObject)
+  nameWithType.vb: IGenericService(Of TDomainObject).UpdateAsync(Guid, TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).UpdateAsync(System.Guid, TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: IGenericService<TDomainObject>.UpdateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: IGenericService(Of TDomainObject).UpdateAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync
+  name: DeleteAsync
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.DeleteAsync
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.DeleteAsync
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).DeleteAsync
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).DeleteAsync
+- uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.DeleteAsync(System.Guid)
+  parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+  name: DeleteAsync(Guid)
+  nameWithType: IGenericService<TDomainObject>.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.DeleteAsync(System.Guid)
+  nameWithType.vb: IGenericService(Of TDomainObject).DeleteAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).DeleteAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: IGenericService<TDomainObject>.DeleteAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: IGenericService(Of TDomainObject).DeleteAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+  isExternal: true
+  name: DeleteAsync(Guid)
+  nameWithType: IGenericService<TDomainObject>.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.DeleteAsync(System.Guid)
+  nameWithType.vb: IGenericService(Of TDomainObject).DeleteAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).DeleteAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: IGenericService<TDomainObject>.DeleteAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: IGenericService(Of TDomainObject).DeleteAsync
+    fullName: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

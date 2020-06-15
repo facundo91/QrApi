@@ -1,0 +1,691 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  id: IUserPetRepository
+  parent: qrAPI.DAL.Daos.Interfaces
+  children:
+  - qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync(System.Guid)
+  - qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: IUserPetRepository
+  nameWithType: IUserPetRepository
+  fullName: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/Interfaces/IUserPetRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IUserPetRepository
+    path: ../../QrApi/src/qrAPI.DAL/Daos/Interfaces/IUserPetRepository.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.Interfaces
+  syntax:
+    content: 'public interface IUserPetRepository : IRepository<UserPetDto>'
+    content.vb: >-
+      Public Interface IUserPetRepository
+
+          Inherits IRepository(Of UserPetDto)
+  inheritedMembers:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.GetAllAsync
+  - qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.GetAsync(System.Object)
+  - qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.InsertAsync(qrAPI.DAL.Dtos.UserPetDto)
+  - qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.UpdateAsync(qrAPI.DAL.Dtos.UserPetDto)
+  - qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.DeleteAsync(System.Object)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync(System.Guid)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync(System.Guid)
+  id: GetAllByUserIdAsync(System.Guid)
+  parent: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllByUserIdAsync(Guid)
+  nameWithType: IUserPetRepository.GetAllByUserIdAsync(Guid)
+  fullName: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/Interfaces/IUserPetRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllByUserIdAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/Interfaces/IUserPetRepository.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.Interfaces
+  syntax:
+    content: Task<IEnumerable<UserPetDto>> GetAllByUserIdAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}}
+    content.vb: Function GetAllByUserIdAsync(userId As Guid) As Task(Of IEnumerable(Of UserPetDto))
+  overload: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync*
+- uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync(System.Guid)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync(System.Guid)
+  id: GetAllByPetIdAsync(System.Guid)
+  parent: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllByPetIdAsync(Guid)
+  nameWithType: IUserPetRepository.GetAllByPetIdAsync(Guid)
+  fullName: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/Interfaces/IUserPetRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllByPetIdAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/Interfaces/IUserPetRepository.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.Interfaces
+  syntax:
+    content: Task<IEnumerable<UserPetDto>> GetAllByPetIdAsync(Guid petId)
+    parameters:
+    - id: petId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}}
+    content.vb: Function GetAllByPetIdAsync(petId As Guid) As Task(Of IEnumerable(Of UserPetDto))
+  overload: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync*
+references:
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.GetAllAsync
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IRepository<UserPetDto>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.GetAllAsync()
+  nameWithType.vb: IRepository(Of UserPetDto).GetAllAsync()
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository<UserPetDto>.GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository(Of UserPetDto).GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.GetAsync(System.Object)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  name: GetAsync(Object)
+  nameWithType: IRepository<UserPetDto>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.GetAsync(System.Object)
+  nameWithType.vb: IRepository(Of UserPetDto).GetAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).GetAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository<UserPetDto>.GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository(Of UserPetDto).GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.InsertAsync(qrAPI.DAL.Dtos.UserPetDto)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.InsertAsync(qrAPI.DAL.Dtos.UserPetDto)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  name: InsertAsync(UserPetDto)
+  nameWithType: IRepository<UserPetDto>.InsertAsync(UserPetDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.InsertAsync(qrAPI.DAL.Dtos.UserPetDto)
+  nameWithType.vb: IRepository(Of UserPetDto).InsertAsync(UserPetDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).InsertAsync(qrAPI.DAL.Dtos.UserPetDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository<UserPetDto>.InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository(Of UserPetDto).InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.UpdateAsync(qrAPI.DAL.Dtos.UserPetDto)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.UpdateAsync(qrAPI.DAL.Dtos.UserPetDto)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(UserPetDto)
+  nameWithType: IRepository<UserPetDto>.UpdateAsync(UserPetDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.UpdateAsync(qrAPI.DAL.Dtos.UserPetDto)
+  nameWithType.vb: IRepository(Of UserPetDto).UpdateAsync(UserPetDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).UpdateAsync(qrAPI.DAL.Dtos.UserPetDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository<UserPetDto>.UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository(Of UserPetDto).UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}.DeleteAsync(System.Object)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  name: DeleteAsync(Object)
+  nameWithType: IRepository<UserPetDto>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.DeleteAsync(System.Object)
+  nameWithType.vb: IRepository(Of UserPetDto).DeleteAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).DeleteAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository<UserPetDto>.DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository(Of UserPetDto).DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IRepository<TDto>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync()
+  nameWithType.vb: IRepository(Of TDto).GetAllAsync()
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository<TDto>.GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository(Of TDto).GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.UserPetDto}
+  parent: qrAPI.DAL.Daos.Interfaces
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<UserPetDto>
+  nameWithType: IRepository<UserPetDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.UserPetDto>
+  nameWithType.vb: IRepository(Of UserPetDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.UserPetDto)
+  name.vb: IRepository(Of UserPetDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  isExternal: true
+  name: GetAsync(Object)
+  nameWithType: IRepository<TDto>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).GetAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository<TDto>.GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository(Of TDto).GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  name: InsertAsync(TDto)
+  nameWithType: IRepository<TDto>.InsertAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).InsertAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository<TDto>.InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository(Of TDto).InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(TDto)
+  nameWithType: IRepository<TDto>.UpdateAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).UpdateAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository<TDto>.UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository(Of TDto).UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  isExternal: true
+  name: DeleteAsync(Object)
+  nameWithType: IRepository<TDto>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).DeleteAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository<TDto>.DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository(Of TDto).DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync*
+  commentId: Overload:qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync
+  name: GetAllByUserIdAsync
+  nameWithType: IUserPetRepository.GetAllByUserIdAsync
+  fullName: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByUserIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<UserPetDto>>
+  nameWithType: Task<IEnumerable<UserPetDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<qrAPI.DAL.Dtos.UserPetDto>>
+  nameWithType.vb: Task(Of IEnumerable(Of UserPetDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of qrAPI.DAL.Dtos.UserPetDto))
+  name.vb: Task(Of IEnumerable(Of UserPetDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync*
+  commentId: Overload:qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync
+  name: GetAllByPetIdAsync
+  nameWithType: IUserPetRepository.GetAllByPetIdAsync
+  fullName: qrAPI.DAL.Daos.Interfaces.IUserPetRepository.GetAllByPetIdAsync

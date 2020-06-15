@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Sdk.v1
+  commentId: N:qrAPI.Sdk.v1
+  id: qrAPI.Sdk.v1
+  children:
+  - qrAPI.Sdk.v1.IIdentityApi
+  - qrAPI.Sdk.v1.IPetsApi
+  - qrAPI.Sdk.v1.IQrsApi
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Sdk.v1
+  nameWithType: qrAPI.Sdk.v1
+  fullName: qrAPI.Sdk.v1
+  type: Namespace
+  assemblies:
+  - qrAPI.Sdk
+references:
+- uid: qrAPI.Sdk.v1.IIdentityApi
+  commentId: T:qrAPI.Sdk.v1.IIdentityApi
+  name: IIdentityApi
+  nameWithType: IIdentityApi
+  fullName: qrAPI.Sdk.v1.IIdentityApi
+- uid: qrAPI.Sdk.v1.IPetsApi
+  commentId: T:qrAPI.Sdk.v1.IPetsApi
+  name: IPetsApi
+  nameWithType: IPetsApi
+  fullName: qrAPI.Sdk.v1.IPetsApi
+- uid: qrAPI.Sdk.v1.IQrsApi
+  commentId: T:qrAPI.Sdk.v1.IQrsApi
+  name: IQrsApi
+  nameWithType: IQrsApi
+  fullName: qrAPI.Sdk.v1.IQrsApi

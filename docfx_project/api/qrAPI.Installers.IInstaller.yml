@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Installers.IInstaller
+  commentId: T:qrAPI.Installers.IInstaller
+  id: IInstaller
+  parent: qrAPI.Installers
+  children:
+  - qrAPI.Installers.IInstaller.InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: IInstaller
+  nameWithType: IInstaller
+  fullName: qrAPI.Installers.IInstaller
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI/Installers/IInstaller.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IInstaller
+    path: ../src/qrAPI/Installers/IInstaller.cs
+    startLine: 5
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Installers
+  syntax:
+    content: public interface IInstaller
+    content.vb: Public Interface IInstaller
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.Installers.IInstaller.InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:qrAPI.Installers.IInstaller.InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  id: InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  parent: qrAPI.Installers.IInstaller
+  langs:
+  - csharp
+  - vb
+  name: InstallServices(IServiceCollection, IConfiguration)
+  nameWithType: IInstaller.InstallServices(IServiceCollection, IConfiguration)
+  fullName: qrAPI.Installers.IInstaller.InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Installers/IInstaller.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: InstallServices
+    path: ../src/qrAPI/Installers/IInstaller.cs
+    startLine: 7
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Installers
+  syntax:
+    content: void InstallServices(IServiceCollection services, IConfiguration configuration)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Sub InstallServices(services As IServiceCollection, configuration As IConfiguration)
+  overload: qrAPI.Installers.IInstaller.InstallServices*
+references:
+- uid: qrAPI.Installers
+  commentId: N:qrAPI.Installers
+  name: qrAPI.Installers
+  nameWithType: qrAPI.Installers
+  fullName: qrAPI.Installers
+- uid: qrAPI.Installers.IInstaller.InstallServices*
+  commentId: Overload:qrAPI.Installers.IInstaller.InstallServices
+  name: InstallServices
+  nameWithType: IInstaller.InstallServices
+  fullName: qrAPI.Installers.IInstaller.InstallServices
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration

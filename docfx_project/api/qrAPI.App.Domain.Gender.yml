@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Domain.Gender
+  commentId: T:qrAPI.App.Domain.Gender
+  id: Gender
+  parent: qrAPI.App.Domain
+  children:
+  - qrAPI.App.Domain.Gender.Female
+  - qrAPI.App.Domain.Gender.Male
+  langs:
+  - csharp
+  - vb
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.App.Domain.Gender
+  type: Enum
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Gender
+    path: ../../QrApi/src/qrAPI.App/Domain/Gender.cs
+    startLine: 2
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: public enum Gender
+    content.vb: Public Enum Gender
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: qrAPI.App.Domain.Gender.Female
+  commentId: F:qrAPI.App.Domain.Gender.Female
+  id: Female
+  parent: qrAPI.App.Domain.Gender
+  langs:
+  - csharp
+  - vb
+  name: Female
+  nameWithType: Gender.Female
+  fullName: qrAPI.App.Domain.Gender.Female
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Female
+    path: ../../QrApi/src/qrAPI.App/Domain/Gender.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: Female = 0
+    return:
+      type: qrAPI.App.Domain.Gender
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.App.Domain.Gender.Male
+  commentId: F:qrAPI.App.Domain.Gender.Male
+  id: Male
+  parent: qrAPI.App.Domain.Gender
+  langs:
+  - csharp
+  - vb
+  name: Male
+  nameWithType: Gender.Male
+  fullName: qrAPI.App.Domain.Gender.Male
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.App/Domain/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Male
+    path: ../../QrApi/src/qrAPI.App/Domain/Gender.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Domain
+  syntax:
+    content: Male = 1
+    return:
+      type: qrAPI.App.Domain.Gender
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: qrAPI.App.Domain
+  commentId: N:qrAPI.App.Domain
+  name: qrAPI.App.Domain
+  nameWithType: qrAPI.App.Domain
+  fullName: qrAPI.App.Domain
+- uid: qrAPI.App.Domain.Gender
+  commentId: T:qrAPI.App.Domain.Gender
+  parent: qrAPI.App.Domain
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.App.Domain.Gender

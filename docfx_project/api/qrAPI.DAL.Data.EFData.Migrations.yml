@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.EFData.Migrations
+  commentId: N:qrAPI.DAL.Data.EFData.Migrations
+  id: qrAPI.DAL.Data.EFData.Migrations
+  children:
+  - qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema
+  - qrAPI.DAL.Data.EFData.Migrations.FixingQrs
+  - qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath
+  - qrAPI.DAL.Data.EFData.Migrations.GuidForString
+  - qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos
+  - qrAPI.DAL.Data.EFData.Migrations.Initial
+  - qrAPI.DAL.Data.EFData.Migrations.UserPetsTable
+  - qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Data.EFData.Migrations
+  nameWithType: qrAPI.DAL.Data.EFData.Migrations
+  fullName: qrAPI.DAL.Data.EFData.Migrations
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema
+  name: CreateIdentitySchema
+  nameWithType: CreateIdentitySchema
+  fullName: qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema
+- uid: qrAPI.DAL.Data.EFData.Migrations.Initial
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.Initial
+  name: Initial
+  nameWithType: Initial
+  fullName: qrAPI.DAL.Data.EFData.Migrations.Initial
+- uid: qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos
+  name: IgnoreDtos
+  nameWithType: IgnoreDtos
+  fullName: qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos
+- uid: qrAPI.DAL.Data.EFData.Migrations.GuidForString
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.GuidForString
+  name: GuidForString
+  nameWithType: GuidForString
+  fullName: qrAPI.DAL.Data.EFData.Migrations.GuidForString
+- uid: qrAPI.DAL.Data.EFData.Migrations.UserPetsTable
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.UserPetsTable
+  name: UserPetsTable
+  nameWithType: UserPetsTable
+  fullName: qrAPI.DAL.Data.EFData.Migrations.UserPetsTable
+- uid: qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename
+  name: UserPetsTableRename
+  nameWithType: UserPetsTableRename
+  fullName: qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename
+- uid: qrAPI.DAL.Data.EFData.Migrations.FixingQrs
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.FixingQrs
+  name: FixingQrs
+  nameWithType: FixingQrs
+  fullName: qrAPI.DAL.Data.EFData.Migrations.FixingQrs
+- uid: qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath
+  commentId: T:qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath
+  name: FixingQrsPath
+  nameWithType: FixingQrsPath
+  fullName: qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath

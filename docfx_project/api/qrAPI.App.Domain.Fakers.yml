@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Domain.Fakers
+  commentId: N:qrAPI.App.Domain.Fakers
+  id: qrAPI.App.Domain.Fakers
+  children:
+  - qrAPI.App.Domain.Fakers.BreedFaker
+  - qrAPI.App.Domain.Fakers.LocationFaker
+  - qrAPI.App.Domain.Fakers.PetFaker
+  - qrAPI.App.Domain.Fakers.QrFaker
+  - qrAPI.App.Domain.Fakers.UserFaker
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Domain.Fakers
+  nameWithType: qrAPI.App.Domain.Fakers
+  fullName: qrAPI.App.Domain.Fakers
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Domain.Fakers.BreedFaker
+  commentId: T:qrAPI.App.Domain.Fakers.BreedFaker
+  name: BreedFaker
+  nameWithType: BreedFaker
+  fullName: qrAPI.App.Domain.Fakers.BreedFaker
+- uid: qrAPI.App.Domain.Fakers.LocationFaker
+  commentId: T:qrAPI.App.Domain.Fakers.LocationFaker
+  name: LocationFaker
+  nameWithType: LocationFaker
+  fullName: qrAPI.App.Domain.Fakers.LocationFaker
+- uid: qrAPI.App.Domain.Fakers.PetFaker
+  commentId: T:qrAPI.App.Domain.Fakers.PetFaker
+  name: PetFaker
+  nameWithType: PetFaker
+  fullName: qrAPI.App.Domain.Fakers.PetFaker
+- uid: qrAPI.App.Domain.Fakers.QrFaker
+  commentId: T:qrAPI.App.Domain.Fakers.QrFaker
+  name: QrFaker
+  nameWithType: QrFaker
+  fullName: qrAPI.App.Domain.Fakers.QrFaker
+- uid: qrAPI.App.Domain.Fakers.UserFaker
+  commentId: T:qrAPI.App.Domain.Fakers.UserFaker
+  name: UserFaker
+  nameWithType: UserFaker
+  fullName: qrAPI.App.Domain.Fakers.UserFaker

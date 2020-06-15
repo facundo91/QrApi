@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.SendGun
+  commentId: N:qrAPI.Infra.Mail.SendGun
+  id: qrAPI.Infra.Mail.SendGun
+  children:
+  - qrAPI.Infra.Mail.SendGun.SendGunMailBroker
+  - qrAPI.Infra.Mail.SendGun.SendGunSettings
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Mail.SendGun
+  nameWithType: qrAPI.Infra.Mail.SendGun
+  fullName: qrAPI.Infra.Mail.SendGun
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Mail.SendGun.SendGunMailBroker
+  commentId: T:qrAPI.Infra.Mail.SendGun.SendGunMailBroker
+  name: SendGunMailBroker
+  nameWithType: SendGunMailBroker
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunMailBroker
+- uid: qrAPI.Infra.Mail.SendGun.SendGunSettings
+  commentId: T:qrAPI.Infra.Mail.SendGun.SendGunSettings
+  parent: qrAPI.Infra.Mail.SendGun
+  name: SendGunSettings
+  nameWithType: SendGunSettings
+  fullName: qrAPI.Infra.Mail.SendGun.SendGunSettings
+- uid: qrAPI.Infra.Mail.SendGun
+  commentId: N:qrAPI.Infra.Mail.SendGun
+  name: qrAPI.Infra.Mail.SendGun
+  nameWithType: qrAPI.Infra.Mail.SendGun
+  fullName: qrAPI.Infra.Mail.SendGun

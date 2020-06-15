@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Options
+  commentId: N:qrAPI.Infra.Options
+  id: qrAPI.Infra.Options
+  children:
+  - qrAPI.Infra.Options.FeatureFlags
+  - qrAPI.Infra.Options.IoCOptions
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Options
+  nameWithType: qrAPI.Infra.Options
+  fullName: qrAPI.Infra.Options
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Options.FeatureFlags
+  commentId: T:qrAPI.Infra.Options.FeatureFlags
+  parent: qrAPI.Infra.Options
+  name: FeatureFlags
+  nameWithType: FeatureFlags
+  fullName: qrAPI.Infra.Options.FeatureFlags
+- uid: qrAPI.Infra.Options.IoCOptions
+  commentId: T:qrAPI.Infra.Options.IoCOptions
+  name: IoCOptions
+  nameWithType: IoCOptions
+  fullName: qrAPI.Infra.Options.IoCOptions
+- uid: qrAPI.Infra.Options
+  commentId: N:qrAPI.Infra.Options
+  name: qrAPI.Infra.Options
+  nameWithType: qrAPI.Infra.Options
+  fullName: qrAPI.Infra.Options

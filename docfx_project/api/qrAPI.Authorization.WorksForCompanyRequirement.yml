@@ -1,0 +1,447 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Authorization.WorksForCompanyRequirement
+  commentId: T:qrAPI.Authorization.WorksForCompanyRequirement
+  id: WorksForCompanyRequirement
+  parent: qrAPI.Authorization
+  children:
+  - qrAPI.Authorization.WorksForCompanyRequirement.#ctor(System.String)
+  - qrAPI.Authorization.WorksForCompanyRequirement.DomainName
+  langs:
+  - csharp
+  - vb
+  name: WorksForCompanyRequirement
+  nameWithType: WorksForCompanyRequirement
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI/Authorization/WorksForCompanyRequirement.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: WorksForCompanyRequirement
+    path: ../src/qrAPI/Authorization/WorksForCompanyRequirement.cs
+    startLine: 4
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Authorization
+  syntax:
+    content: 'public class WorksForCompanyRequirement : IAuthorizationRequirement'
+    content.vb: >-
+      Public Class WorksForCompanyRequirement
+
+          Implements IAuthorizationRequirement
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.AspNetCore.Authorization.IAuthorizationRequirement
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Authorization.WorksForCompanyRequirement.DomainName
+  commentId: P:qrAPI.Authorization.WorksForCompanyRequirement.DomainName
+  id: DomainName
+  parent: qrAPI.Authorization.WorksForCompanyRequirement
+  langs:
+  - csharp
+  - vb
+  name: DomainName
+  nameWithType: WorksForCompanyRequirement.DomainName
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement.DomainName
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI/Authorization/WorksForCompanyRequirement.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DomainName
+    path: ../src/qrAPI/Authorization/WorksForCompanyRequirement.cs
+    startLine: 6
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Authorization
+  syntax:
+    content: public string DomainName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DomainName As String
+  overload: qrAPI.Authorization.WorksForCompanyRequirement.DomainName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: qrAPI.Authorization.WorksForCompanyRequirement.#ctor(System.String)
+  commentId: M:qrAPI.Authorization.WorksForCompanyRequirement.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: qrAPI.Authorization.WorksForCompanyRequirement
+  langs:
+  - csharp
+  - vb
+  name: WorksForCompanyRequirement(String)
+  nameWithType: WorksForCompanyRequirement.WorksForCompanyRequirement(String)
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement.WorksForCompanyRequirement(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI/Authorization/WorksForCompanyRequirement.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../src/qrAPI/Authorization/WorksForCompanyRequirement.cs
+    startLine: 8
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Authorization
+  syntax:
+    content: public WorksForCompanyRequirement(string domainName)
+    parameters:
+    - id: domainName
+      type: System.String
+    content.vb: Public Sub New(domainName As String)
+  overload: qrAPI.Authorization.WorksForCompanyRequirement.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.Authorization
+  commentId: N:qrAPI.Authorization
+  name: qrAPI.Authorization
+  nameWithType: qrAPI.Authorization
+  fullName: qrAPI.Authorization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Authorization.IAuthorizationRequirement
+  commentId: T:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement
+  parent: Microsoft.AspNetCore.Authorization
+  isExternal: true
+  name: IAuthorizationRequirement
+  nameWithType: IAuthorizationRequirement
+  fullName: Microsoft.AspNetCore.Authorization.IAuthorizationRequirement
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Authorization
+  commentId: N:Microsoft.AspNetCore.Authorization
+  isExternal: true
+  name: Microsoft.AspNetCore.Authorization
+  nameWithType: Microsoft.AspNetCore.Authorization
+  fullName: Microsoft.AspNetCore.Authorization
+- uid: qrAPI.Authorization.WorksForCompanyRequirement.DomainName*
+  commentId: Overload:qrAPI.Authorization.WorksForCompanyRequirement.DomainName
+  name: DomainName
+  nameWithType: WorksForCompanyRequirement.DomainName
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement.DomainName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: qrAPI.Authorization.WorksForCompanyRequirement.#ctor*
+  commentId: Overload:qrAPI.Authorization.WorksForCompanyRequirement.#ctor
+  name: WorksForCompanyRequirement
+  nameWithType: WorksForCompanyRequirement.WorksForCompanyRequirement
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement.WorksForCompanyRequirement

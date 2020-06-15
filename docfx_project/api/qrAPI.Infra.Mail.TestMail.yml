@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.TestMail
+  commentId: N:qrAPI.Infra.Mail.TestMail
+  id: qrAPI.Infra.Mail.TestMail
+  children:
+  - qrAPI.Infra.Mail.TestMail.Email
+  - qrAPI.Infra.Mail.TestMail.FromParsed
+  - qrAPI.Infra.Mail.TestMail.TestMailHelper
+  - qrAPI.Infra.Mail.TestMail.TestMailResponse
+  - qrAPI.Infra.Mail.TestMail.TestMailSettings
+  - qrAPI.Infra.Mail.TestMail.ToParsed
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Mail.TestMail
+  nameWithType: qrAPI.Infra.Mail.TestMail
+  fullName: qrAPI.Infra.Mail.TestMail
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Mail.TestMail.Email
+  commentId: T:qrAPI.Infra.Mail.TestMail.Email
+  name: Email
+  nameWithType: Email
+  fullName: qrAPI.Infra.Mail.TestMail.Email
+- uid: qrAPI.Infra.Mail.TestMail.FromParsed
+  commentId: T:qrAPI.Infra.Mail.TestMail.FromParsed
+  name: FromParsed
+  nameWithType: FromParsed
+  fullName: qrAPI.Infra.Mail.TestMail.FromParsed
+- uid: qrAPI.Infra.Mail.TestMail.TestMailHelper
+  commentId: T:qrAPI.Infra.Mail.TestMail.TestMailHelper
+  name: TestMailHelper
+  nameWithType: TestMailHelper
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailHelper
+- uid: qrAPI.Infra.Mail.TestMail.TestMailResponse
+  commentId: T:qrAPI.Infra.Mail.TestMail.TestMailResponse
+  name: TestMailResponse
+  nameWithType: TestMailResponse
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailResponse
+- uid: qrAPI.Infra.Mail.TestMail.TestMailSettings
+  commentId: T:qrAPI.Infra.Mail.TestMail.TestMailSettings
+  parent: qrAPI.Infra.Mail.TestMail
+  name: TestMailSettings
+  nameWithType: TestMailSettings
+  fullName: qrAPI.Infra.Mail.TestMail.TestMailSettings
+- uid: qrAPI.Infra.Mail.TestMail.ToParsed
+  commentId: T:qrAPI.Infra.Mail.TestMail.ToParsed
+  name: ToParsed
+  nameWithType: ToParsed
+  fullName: qrAPI.Infra.Mail.TestMail.ToParsed
+- uid: qrAPI.Infra.Mail.TestMail
+  commentId: N:qrAPI.Infra.Mail.TestMail
+  name: qrAPI.Infra.Mail.TestMail
+  nameWithType: qrAPI.Infra.Mail.TestMail
+  fullName: qrAPI.Infra.Mail.TestMail

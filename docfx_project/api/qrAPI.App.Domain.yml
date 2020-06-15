@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Domain
+  commentId: N:qrAPI.App.Domain
+  id: qrAPI.App.Domain
+  children:
+  - qrAPI.App.Domain.Breed
+  - qrAPI.App.Domain.DomainObject
+  - qrAPI.App.Domain.Gender
+  - qrAPI.App.Domain.Location
+  - qrAPI.App.Domain.Pet
+  - qrAPI.App.Domain.Qr
+  - qrAPI.App.Domain.Scan
+  - qrAPI.App.Domain.User
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Domain
+  nameWithType: qrAPI.App.Domain
+  fullName: qrAPI.App.Domain
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Domain.Breed
+  commentId: T:qrAPI.App.Domain.Breed
+  parent: qrAPI.App.Domain
+  name: Breed
+  nameWithType: Breed
+  fullName: qrAPI.App.Domain.Breed
+- uid: qrAPI.App.Domain.DomainObject
+  commentId: T:qrAPI.App.Domain.DomainObject
+  parent: qrAPI.App.Domain
+  name: DomainObject
+  nameWithType: DomainObject
+  fullName: qrAPI.App.Domain.DomainObject
+- uid: qrAPI.App.Domain.Gender
+  commentId: T:qrAPI.App.Domain.Gender
+  parent: qrAPI.App.Domain
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.App.Domain.Gender
+- uid: qrAPI.App.Domain.Location
+  commentId: T:qrAPI.App.Domain.Location
+  parent: qrAPI.App.Domain
+  name: Location
+  nameWithType: Location
+  fullName: qrAPI.App.Domain.Location
+- uid: qrAPI.App.Domain.Pet
+  commentId: T:qrAPI.App.Domain.Pet
+  parent: qrAPI.App.Domain
+  name: Pet
+  nameWithType: Pet
+  fullName: qrAPI.App.Domain.Pet
+- uid: qrAPI.App.Domain.Qr
+  commentId: T:qrAPI.App.Domain.Qr
+  parent: qrAPI.App.Domain
+  name: Qr
+  nameWithType: Qr
+  fullName: qrAPI.App.Domain.Qr
+- uid: qrAPI.App.Domain.Scan
+  commentId: T:qrAPI.App.Domain.Scan
+  name: Scan
+  nameWithType: Scan
+  fullName: qrAPI.App.Domain.Scan
+- uid: qrAPI.App.Domain.User
+  commentId: T:qrAPI.App.Domain.User
+  parent: qrAPI.App.Domain
+  name: User
+  nameWithType: User
+  fullName: qrAPI.App.Domain.User
+- uid: qrAPI.App.Domain
+  commentId: N:qrAPI.App.Domain
+  name: qrAPI.App.Domain
+  nameWithType: qrAPI.App.Domain
+  fullName: qrAPI.App.Domain

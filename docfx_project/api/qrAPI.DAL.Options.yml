@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Options
+  commentId: N:qrAPI.DAL.Options
+  id: qrAPI.DAL.Options
+  children:
+  - qrAPI.DAL.Options.MongoOptions
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Options
+  nameWithType: qrAPI.DAL.Options
+  fullName: qrAPI.DAL.Options
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Options.MongoOptions
+  commentId: T:qrAPI.DAL.Options.MongoOptions
+  parent: qrAPI.DAL.Options
+  name: MongoOptions
+  nameWithType: MongoOptions
+  fullName: qrAPI.DAL.Options.MongoOptions
+- uid: qrAPI.DAL.Options
+  commentId: N:qrAPI.DAL.Options
+  name: qrAPI.DAL.Options
+  nameWithType: qrAPI.DAL.Options
+  fullName: qrAPI.DAL.Options

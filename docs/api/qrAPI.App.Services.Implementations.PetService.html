@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PetService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PetService
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="qrAPI.App.Services.Implementations.PetService">
+  
+  
+  <h1 id="qrAPI_App_Services_Implementations_PetService" data-uid="qrAPI.App.Services.Implementations.PetService" class="text-break">Class PetService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html">AbstractGenericService</a>&lt;<a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a>, <a class="xref" href="qrAPI.DAL.Dtos.PetDto.html">PetDto</a>&gt;</div>
+    <div class="level2"><span class="xref">PetService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="qrAPI.App.Services.Interfaces.IGenericService-1.html">IGenericService</a>&lt;<a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2_Mapper">AbstractGenericService&lt;Pet, PetDto&gt;.Mapper</a>
+    </div>
+    <div>
+      <a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2_GetAllAsync">AbstractGenericService&lt;Pet, PetDto&gt;.GetAllAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2_GetByIdAsync_System_Guid_">AbstractGenericService&lt;Pet, PetDto&gt;.GetByIdAsync(Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2_CreateAsync__0_">AbstractGenericService&lt;Pet, PetDto&gt;.CreateAsync(Pet)</a>
+    </div>
+    <div>
+      <a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2_UpdateAsync_System_Guid__0_">AbstractGenericService&lt;Pet, PetDto&gt;.UpdateAsync(Guid, Pet)</a>
+    </div>
+    <div>
+      <a class="xref" href="qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2_DeleteAsync_System_Guid_">AbstractGenericService&lt;Pet, PetDto&gt;.DeleteAsync(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="qrAPI.App.Services.Implementations.html">qrAPI.App.Services.Implementations</a></h6>
+  <h6><strong>Assembly</strong>: qrAPI.App.dll</h6>
+  <h5 id="qrAPI_App_Services_Implementations_PetService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PetService : AbstractGenericService&lt;Pet, PetDto&gt;, IGenericService&lt;Pet&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IPetRepository_Microsoft_AspNetCore_Http_IHttpContextAccessor_qrAPI_App_Services_Interfaces_IIdentityService_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_PetService__qrAPI_App_Domain_Validators_PetValidator_.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService.%23ctor(AutoMapper.IMapper%2CqrAPI.DAL.Daos.Interfaces.IPetRepository%2CMicrosoft.AspNetCore.Http.IHttpContextAccessor%2CqrAPI.App.Services.Interfaces.IIdentityService%2CMicrosoft.Extensions.Logging.ILogger%7BqrAPI.App.Services.Implementations.PetService%7D%2CqrAPI.App.Domain.Validators.PetValidator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L23">View Source</a>
+  </span>
+  <a id="qrAPI_App_Services_Implementations_PetService__ctor_" data-uid="qrAPI.App.Services.Implementations.PetService.#ctor*"></a>
+  <h4 id="qrAPI_App_Services_Implementations_PetService__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IPetRepository_Microsoft_AspNetCore_Http_IHttpContextAccessor_qrAPI_App_Services_Interfaces_IIdentityService_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_PetService__qrAPI_App_Domain_Validators_PetValidator_" data-uid="qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)">PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger&lt;PetService&gt;, PetValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PetService(IMapper mapper, IPetRepository repository, IHttpContextAccessor httpContextAccessor, IIdentityService identityService, ILogger&lt;PetService&gt; logger, PetValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AutoMapper.IMapper</span></td>
+        <td><span class="parametername">mapper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="qrAPI.DAL.Daos.Interfaces.IPetRepository.html">IPetRepository</a></td>
+        <td><span class="parametername">repository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IHttpContextAccessor</span></td>
+        <td><span class="parametername">httpContextAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="qrAPI.App.Services.Interfaces.IIdentityService.html">IIdentityService</a></td>
+        <td><span class="parametername">identityService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="qrAPI.App.Services.Implementations.PetService.html">PetService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="qrAPI.App.Domain.Validators.PetValidator.html">PetValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService_CreateAsync_qrAPI_App_Domain_Pet_.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L43">View Source</a>
+  </span>
+  <a id="qrAPI_App_Services_Implementations_PetService_CreateAsync_" data-uid="qrAPI.App.Services.Implementations.PetService.CreateAsync*"></a>
+  <h4 id="qrAPI_App_Services_Implementations_PetService_CreateAsync_qrAPI_App_Domain_Pet_" data-uid="qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)">CreateAsync(Pet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Pet&gt; CreateAsync(Pet petToCreate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a></td>
+        <td><span class="parametername">petToCreate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">qrAPI.App.Services.Implementations.AbstractGenericService&lt;qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto&gt;.CreateAsync(qrAPI.App.Domain.Pet)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService_DeleteAsync_System_Guid_.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L59">View Source</a>
+  </span>
+  <a id="qrAPI_App_Services_Implementations_PetService_DeleteAsync_" data-uid="qrAPI.App.Services.Implementations.PetService.DeleteAsync*"></a>
+  <h4 id="qrAPI_App_Services_Implementations_PetService_DeleteAsync_System_Guid_" data-uid="qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)">DeleteAsync(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; DeleteAsync(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">qrAPI.App.Services.Implementations.AbstractGenericService&lt;qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto&gt;.DeleteAsync(System.Guid)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService_GetAllAsync.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService.GetAllAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L37">View Source</a>
+  </span>
+  <a id="qrAPI_App_Services_Implementations_PetService_GetAllAsync_" data-uid="qrAPI.App.Services.Implementations.PetService.GetAllAsync*"></a>
+  <h4 id="qrAPI_App_Services_Implementations_PetService_GetAllAsync" data-uid="qrAPI.App.Services.Implementations.PetService.GetAllAsync">GetAllAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IEnumerable&lt;Pet&gt;&gt; GetAllAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">qrAPI.App.Services.Implementations.AbstractGenericService&lt;qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto&gt;.GetAllAsync()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService_GetByIdAsync_System_Guid_.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService.GetByIdAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L51">View Source</a>
+  </span>
+  <a id="qrAPI_App_Services_Implementations_PetService_GetByIdAsync_" data-uid="qrAPI.App.Services.Implementations.PetService.GetByIdAsync*"></a>
+  <h4 id="qrAPI_App_Services_Implementations_PetService_GetByIdAsync_System_Guid_" data-uid="qrAPI.App.Services.Implementations.PetService.GetByIdAsync(System.Guid)">GetByIdAsync(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Pet&gt; GetByIdAsync(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">qrAPI.App.Services.Implementations.AbstractGenericService&lt;qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto&gt;.GetByIdAsync(System.Guid)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService_UpdateAsync_System_Guid_qrAPI_App_Domain_Pet_.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService.UpdateAsync(System.Guid%2CqrAPI.App.Domain.Pet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L65">View Source</a>
+  </span>
+  <a id="qrAPI_App_Services_Implementations_PetService_UpdateAsync_" data-uid="qrAPI.App.Services.Implementations.PetService.UpdateAsync*"></a>
+  <h4 id="qrAPI_App_Services_Implementations_PetService_UpdateAsync_System_Guid_qrAPI_App_Domain_Pet_" data-uid="qrAPI.App.Services.Implementations.PetService.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)">UpdateAsync(Guid, Pet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; UpdateAsync(Guid id, Pet petToCreate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="qrAPI.App.Domain.Pet.html">Pet</a></td>
+        <td><span class="parametername">petToCreate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">qrAPI.App.Services.Implementations.AbstractGenericService&lt;qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto&gt;.UpdateAsync(System.Guid, qrAPI.App.Domain.Pet)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="qrAPI.App.Services.Interfaces.IGenericService-1.html">IGenericService&lt;TDomainObject&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/facundo91/QrApi/new/master/apiSpec/new?filename=qrAPI_App_Services_Implementations_PetService.md&amp;value=---%0Auid%3A%20qrAPI.App.Services.Implementations.PetService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/facundo91/QrApi/blob/master/src/qrAPI.App/Services/Implementations/PetService.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

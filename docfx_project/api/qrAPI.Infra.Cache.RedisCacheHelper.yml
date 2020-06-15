@@ -1,0 +1,1056 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Cache.RedisCacheHelper
+  commentId: T:qrAPI.Infra.Cache.RedisCacheHelper
+  id: RedisCacheHelper
+  parent: qrAPI.Infra.Cache
+  children:
+  - qrAPI.Infra.Cache.RedisCacheHelper.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,qrAPI.Infra.Settings.MemoryCacheSettings)
+  - qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  - qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync(System.String)
+  - qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: RedisCacheHelper
+  nameWithType: RedisCacheHelper
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RedisCacheHelper
+    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: 'public class RedisCacheHelper : ICacheHelper'
+    content.vb: >-
+      Public Class RedisCacheHelper
+
+          Implements ICacheHelper
+  inheritance:
+  - System.Object
+  implements:
+  - qrAPI.Infra.Cache.ICacheHelper
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,qrAPI.Infra.Settings.MemoryCacheSettings)
+  commentId: M:qrAPI.Infra.Cache.RedisCacheHelper.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,qrAPI.Infra.Settings.MemoryCacheSettings)
+  id: '#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,qrAPI.Infra.Settings.MemoryCacheSettings)'
+  parent: qrAPI.Infra.Cache.RedisCacheHelper
+  langs:
+  - csharp
+  - vb
+  name: RedisCacheHelper(IDistributedCache, MemoryCacheSettings)
+  nameWithType: RedisCacheHelper.RedisCacheHelper(IDistributedCache, MemoryCacheSettings)
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.RedisCacheHelper(Microsoft.Extensions.Caching.Distributed.IDistributedCache, qrAPI.Infra.Settings.MemoryCacheSettings)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    startLine: 13
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: public RedisCacheHelper(IDistributedCache distributedCache, MemoryCacheSettings memoryCacheSettings)
+    parameters:
+    - id: distributedCache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: memoryCacheSettings
+      type: qrAPI.Infra.Settings.MemoryCacheSettings
+    content.vb: Public Sub New(distributedCache As IDistributedCache, memoryCacheSettings As MemoryCacheSettings)
+  overload: qrAPI.Infra.Cache.RedisCacheHelper.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync``1(System.String)
+  commentId: M:qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync``1(System.String)
+  id: GetCachedAsync``1(System.String)
+  parent: qrAPI.Infra.Cache.RedisCacheHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCachedAsync<T>(String)
+  nameWithType: RedisCacheHelper.GetCachedAsync<T>(String)
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetCachedAsync
+    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    startLine: 19
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: public Task<T> GetCachedAsync<T>(string cacheKey)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Function GetCachedAsync(Of T)(cacheKey As String) As Task(Of T)
+  overload: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync*
+  implements:
+  - qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+  nameWithType.vb: RedisCacheHelper.GetCachedAsync(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync(Of T)(System.String)
+  name.vb: GetCachedAsync(Of T)(String)
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync(System.String)
+  commentId: M:qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync(System.String)
+  id: GetCachedAsync(System.String)
+  parent: qrAPI.Infra.Cache.RedisCacheHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCachedAsync(String)
+  nameWithType: RedisCacheHelper.GetCachedAsync(String)
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetCachedAsync
+    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    startLine: 25
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: public Task<string> GetCachedAsync(string cacheKey)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function GetCachedAsync(cacheKey As String) As Task(Of String)
+  overload: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync*
+  implements:
+  - qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  commentId: M:qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  id: CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  parent: qrAPI.Infra.Cache.RedisCacheHelper
+  langs:
+  - csharp
+  - vb
+  name: CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  nameWithType: RedisCacheHelper.CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync<T>(System.String, T, System.Nullable<System.TimeSpan>)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CacheAsync
+    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    startLine: 31
+  assemblies:
+  - qrAPI.Infra
+  namespace: qrAPI.Infra.Cache
+  syntax:
+    content: public Task CacheAsync<T>(string cacheKey, T response, TimeSpan? timeToLive)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    - id: response
+      type: '{T}'
+    - id: timeToLive
+      type: System.Nullable{System.TimeSpan}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CacheAsync(Of T)(cacheKey As String, response As T, timeToLive As TimeSpan?) As Task
+  overload: qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync*
+  implements:
+  - qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,{T},System.Nullable{System.TimeSpan})
+  nameWithType.vb: RedisCacheHelper.CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync(Of T)(System.String, T, System.Nullable(Of System.TimeSpan))
+  name.vb: CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+references:
+- uid: qrAPI.Infra.Cache
+  commentId: N:qrAPI.Infra.Cache
+  name: qrAPI.Infra.Cache
+  nameWithType: qrAPI.Infra.Cache
+  fullName: qrAPI.Infra.Cache
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.Infra.Cache.ICacheHelper
+  commentId: T:qrAPI.Infra.Cache.ICacheHelper
+  parent: qrAPI.Infra.Cache
+  name: ICacheHelper
+  nameWithType: ICacheHelper
+  fullName: qrAPI.Infra.Cache.ICacheHelper
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.#ctor*
+  commentId: Overload:qrAPI.Infra.Cache.RedisCacheHelper.#ctor
+  name: RedisCacheHelper
+  nameWithType: RedisCacheHelper.RedisCacheHelper
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.RedisCacheHelper
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: qrAPI.Infra.Settings.MemoryCacheSettings
+  commentId: T:qrAPI.Infra.Settings.MemoryCacheSettings
+  parent: qrAPI.Infra.Settings
+  name: MemoryCacheSettings
+  nameWithType: MemoryCacheSettings
+  fullName: qrAPI.Infra.Settings.MemoryCacheSettings
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+- uid: qrAPI.Infra.Settings
+  commentId: N:qrAPI.Infra.Settings
+  name: qrAPI.Infra.Settings
+  nameWithType: qrAPI.Infra.Settings
+  fullName: qrAPI.Infra.Settings
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync*
+  commentId: Overload:qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync
+  name: GetCachedAsync
+  nameWithType: RedisCacheHelper.GetCachedAsync
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.GetCachedAsync
+- uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+  parent: qrAPI.Infra.Cache.ICacheHelper
+  isExternal: true
+  name: GetCachedAsync<T>(String)
+  nameWithType: ICacheHelper.GetCachedAsync<T>(String)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync<T>(System.String)
+  nameWithType.vb: ICacheHelper.GetCachedAsync(Of T)(String)
+  fullName.vb: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(Of T)(System.String)
+  name.vb: GetCachedAsync(Of T)(String)
+  spec.csharp:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+    name: GetCachedAsync<T>
+    nameWithType: ICacheHelper.GetCachedAsync<T>
+    fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync``1(System.String)
+    name: GetCachedAsync(Of T)
+    nameWithType: ICacheHelper.GetCachedAsync(Of T)
+    fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  parent: qrAPI.Infra.Cache.ICacheHelper
+  isExternal: true
+  name: GetCachedAsync(String)
+  nameWithType: ICacheHelper.GetCachedAsync(String)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+  spec.csharp:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+    name: GetCachedAsync
+    nameWithType: ICacheHelper.GetCachedAsync
+    fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync(System.String)
+    name: GetCachedAsync
+    nameWithType: ICacheHelper.GetCachedAsync
+    fullName: qrAPI.Infra.Cache.ICacheHelper.GetCachedAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync*
+  commentId: Overload:qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync
+  name: CacheAsync
+  nameWithType: RedisCacheHelper.CacheAsync
+  fullName: qrAPI.Infra.Cache.RedisCacheHelper.CacheAsync
+- uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,{T},System.Nullable{System.TimeSpan})
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  parent: qrAPI.Infra.Cache.ICacheHelper
+  definition: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  name: CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  nameWithType: ICacheHelper.CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync<T>(System.String, T, System.Nullable<System.TimeSpan>)
+  nameWithType.vb: ICacheHelper.CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+  fullName.vb: qrAPI.Infra.Cache.ICacheHelper.CacheAsync(Of T)(System.String, T, System.Nullable(Of System.TimeSpan))
+  name.vb: CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+  spec.csharp:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+    name: CacheAsync<T>
+    nameWithType: ICacheHelper.CacheAsync<T>
+    fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+    name: CacheAsync(Of T)
+    nameWithType: ICacheHelper.CacheAsync(Of T)
+    fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<System.TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of System.TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  commentId: M:qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+  isExternal: true
+  name: CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  nameWithType: ICacheHelper.CacheAsync<T>(String, T, Nullable<TimeSpan>)
+  fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync<T>(System.String, T, System.Nullable<System.TimeSpan>)
+  nameWithType.vb: ICacheHelper.CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+  fullName.vb: qrAPI.Infra.Cache.ICacheHelper.CacheAsync(Of T)(System.String, T, System.Nullable(Of System.TimeSpan))
+  name.vb: CacheAsync(Of T)(String, T, Nullable(Of TimeSpan))
+  spec.csharp:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+    name: CacheAsync<T>
+    nameWithType: ICacheHelper.CacheAsync<T>
+    fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.Infra.Cache.ICacheHelper.CacheAsync``1(System.String,``0,System.Nullable{System.TimeSpan})
+    name: CacheAsync(Of T)
+    nameWithType: ICacheHelper.CacheAsync(Of T)
+    fullName: qrAPI.Infra.Cache.ICacheHelper.CacheAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

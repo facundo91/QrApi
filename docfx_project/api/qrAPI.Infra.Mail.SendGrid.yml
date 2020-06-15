@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail.SendGrid
+  commentId: N:qrAPI.Infra.Mail.SendGrid
+  id: qrAPI.Infra.Mail.SendGrid
+  children:
+  - qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  - qrAPI.Infra.Mail.SendGrid.SendGridSettings
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Mail.SendGrid
+  nameWithType: qrAPI.Infra.Mail.SendGrid
+  fullName: qrAPI.Infra.Mail.SendGrid
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  commentId: T:qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+  name: SendGridMailBroker
+  nameWithType: SendGridMailBroker
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+- uid: qrAPI.Infra.Mail.SendGrid.SendGridSettings
+  commentId: T:qrAPI.Infra.Mail.SendGrid.SendGridSettings
+  parent: qrAPI.Infra.Mail.SendGrid
+  name: SendGridSettings
+  nameWithType: SendGridSettings
+  fullName: qrAPI.Infra.Mail.SendGrid.SendGridSettings
+- uid: qrAPI.Infra.Mail.SendGrid
+  commentId: N:qrAPI.Infra.Mail.SendGrid
+  name: qrAPI.Infra.Mail.SendGrid
+  nameWithType: qrAPI.Infra.Mail.SendGrid
+  fullName: qrAPI.Infra.Mail.SendGrid

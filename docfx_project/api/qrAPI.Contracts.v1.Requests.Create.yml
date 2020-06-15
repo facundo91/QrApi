@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Requests.Create
+  commentId: N:qrAPI.Contracts.v1.Requests.Create
+  id: qrAPI.Contracts.v1.Requests.Create
+  children:
+  - qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  - qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Requests.Create
+  nameWithType: qrAPI.Contracts.v1.Requests.Create
+  fullName: qrAPI.Contracts.v1.Requests.Create
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+  parent: qrAPI.Contracts.v1.Requests.Create
+  name: CreatePetRequest
+  nameWithType: CreatePetRequest
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+- uid: qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+  parent: qrAPI.Contracts.v1.Requests.Create
+  name: CreateQrRequest
+  nameWithType: CreateQrRequest
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+- uid: qrAPI.Contracts.v1.Requests.Create
+  commentId: N:qrAPI.Contracts.v1.Requests.Create
+  name: qrAPI.Contracts.v1.Requests.Create
+  nameWithType: qrAPI.Contracts.v1.Requests.Create
+  fullName: qrAPI.Contracts.v1.Requests.Create

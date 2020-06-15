@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Sdk.v1.IQrsApi
+  commentId: T:qrAPI.Sdk.v1.IQrsApi
+  id: IQrsApi
+  parent: qrAPI.Sdk.v1
+  children:
+  - qrAPI.Sdk.v1.IQrsApi.CreateAsync(qrAPI.Contracts.v1.Requests.Create.CreateQrRequest)
+  - qrAPI.Sdk.v1.IQrsApi.DeleteAsync(System.Guid)
+  - qrAPI.Sdk.v1.IQrsApi.GetAllAsync
+  - qrAPI.Sdk.v1.IQrsApi.GetAsync(System.Guid)
+  - qrAPI.Sdk.v1.IQrsApi.UpdateAsync(System.Guid,qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest)
+  langs:
+  - csharp
+  - vb
+  name: IQrsApi
+  nameWithType: IQrsApi
+  fullName: qrAPI.Sdk.v1.IQrsApi
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IQrsApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IQrsApi
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IQrsApi.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: public interface IQrsApi
+    content.vb: Public Interface IQrsApi
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.Sdk.v1.IQrsApi.GetAllAsync
+  commentId: M:qrAPI.Sdk.v1.IQrsApi.GetAllAsync
+  id: GetAllAsync
+  parent: qrAPI.Sdk.v1.IQrsApi
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: IQrsApi.GetAllAsync()
+  fullName: qrAPI.Sdk.v1.IQrsApi.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IQrsApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IQrsApi.cs
+    startLine: 12
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Get("/api/qrs")]
+
+      Task<ApiResponse<IEnumerable<QrResponse>>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{System.Collections.Generic.IEnumerable{qrAPI.Contracts.v1.Responses.QrResponse}}}
+    content.vb: >-
+      <Get("/api/qrs")>
+
+      Function GetAllAsync As Task(Of ApiResponse(Of IEnumerable(Of QrResponse)))
+  overload: qrAPI.Sdk.v1.IQrsApi.GetAllAsync*
+  attributes:
+  - type: Refit.GetAttribute
+    ctor: Refit.GetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/qrs
+- uid: qrAPI.Sdk.v1.IQrsApi.GetAsync(System.Guid)
+  commentId: M:qrAPI.Sdk.v1.IQrsApi.GetAsync(System.Guid)
+  id: GetAsync(System.Guid)
+  parent: qrAPI.Sdk.v1.IQrsApi
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Guid)
+  nameWithType: IQrsApi.GetAsync(Guid)
+  fullName: qrAPI.Sdk.v1.IQrsApi.GetAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IQrsApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IQrsApi.cs
+    startLine: 15
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Get("/api/qrs/{qrId}")]
+
+      Task<ApiResponse<QrResponse>> GetAsync(Guid qrId)
+    parameters:
+    - id: qrId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.QrResponse}}
+    content.vb: >-
+      <Get("/api/qrs/{qrId}")>
+
+      Function GetAsync(qrId As Guid) As Task(Of ApiResponse(Of QrResponse))
+  overload: qrAPI.Sdk.v1.IQrsApi.GetAsync*
+  attributes:
+  - type: Refit.GetAttribute
+    ctor: Refit.GetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/qrs/{qrId}
+- uid: qrAPI.Sdk.v1.IQrsApi.CreateAsync(qrAPI.Contracts.v1.Requests.Create.CreateQrRequest)
+  commentId: M:qrAPI.Sdk.v1.IQrsApi.CreateAsync(qrAPI.Contracts.v1.Requests.Create.CreateQrRequest)
+  id: CreateAsync(qrAPI.Contracts.v1.Requests.Create.CreateQrRequest)
+  parent: qrAPI.Sdk.v1.IQrsApi
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(CreateQrRequest)
+  nameWithType: IQrsApi.CreateAsync(CreateQrRequest)
+  fullName: qrAPI.Sdk.v1.IQrsApi.CreateAsync(qrAPI.Contracts.v1.Requests.Create.CreateQrRequest)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IQrsApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CreateAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IQrsApi.cs
+    startLine: 18
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Post("/api/qrs")]
+
+      Task<ApiResponse<QrResponse>> CreateAsync([Body] CreateQrRequest createQrRequest)
+    parameters:
+    - id: createQrRequest
+      type: qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+      attributes:
+      - type: Refit.BodyAttribute
+        ctor: Refit.BodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.QrResponse}}
+    content.vb: >-
+      <Post("/api/qrs")>
+
+      Function CreateAsync(createQrRequest As CreateQrRequest) As Task(Of ApiResponse(Of QrResponse))
+  overload: qrAPI.Sdk.v1.IQrsApi.CreateAsync*
+  attributes:
+  - type: Refit.PostAttribute
+    ctor: Refit.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/qrs
+- uid: qrAPI.Sdk.v1.IQrsApi.UpdateAsync(System.Guid,qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest)
+  commentId: M:qrAPI.Sdk.v1.IQrsApi.UpdateAsync(System.Guid,qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest)
+  id: UpdateAsync(System.Guid,qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest)
+  parent: qrAPI.Sdk.v1.IQrsApi
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Guid, UpdateQrRequest)
+  nameWithType: IQrsApi.UpdateAsync(Guid, UpdateQrRequest)
+  fullName: qrAPI.Sdk.v1.IQrsApi.UpdateAsync(System.Guid, qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IQrsApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UpdateAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IQrsApi.cs
+    startLine: 21
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Put("/api/qrs/{qrId}")]
+
+      Task<ApiResponse<bool>> UpdateAsync(Guid qrId, [Body] UpdateQrRequest updateQrRequest)
+    parameters:
+    - id: qrId
+      type: System.Guid
+    - id: updateQrRequest
+      type: qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+      attributes:
+      - type: Refit.BodyAttribute
+        ctor: Refit.BodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{System.Boolean}}
+    content.vb: >-
+      <Put("/api/qrs/{qrId}")>
+
+      Function UpdateAsync(qrId As Guid, updateQrRequest As UpdateQrRequest) As Task(Of ApiResponse(Of Boolean))
+  overload: qrAPI.Sdk.v1.IQrsApi.UpdateAsync*
+  attributes:
+  - type: Refit.PutAttribute
+    ctor: Refit.PutAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/qrs/{qrId}
+- uid: qrAPI.Sdk.v1.IQrsApi.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.Sdk.v1.IQrsApi.DeleteAsync(System.Guid)
+  id: DeleteAsync(System.Guid)
+  parent: qrAPI.Sdk.v1.IQrsApi
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Guid)
+  nameWithType: IQrsApi.DeleteAsync(Guid)
+  fullName: qrAPI.Sdk.v1.IQrsApi.DeleteAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IQrsApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DeleteAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IQrsApi.cs
+    startLine: 24
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Delete("/api/qrs/{qrId}")]
+
+      Task<ApiResponse<bool>> DeleteAsync(Guid qrId)
+    parameters:
+    - id: qrId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{System.Boolean}}
+    content.vb: >-
+      <Delete("/api/qrs/{qrId}")>
+
+      Function DeleteAsync(qrId As Guid) As Task(Of ApiResponse(Of Boolean))
+  overload: qrAPI.Sdk.v1.IQrsApi.DeleteAsync*
+  attributes:
+  - type: Refit.DeleteAttribute
+    ctor: Refit.DeleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/qrs/{qrId}
+references:
+- uid: qrAPI.Sdk.v1
+  commentId: N:qrAPI.Sdk.v1
+  name: qrAPI.Sdk.v1
+  nameWithType: qrAPI.Sdk.v1
+  fullName: qrAPI.Sdk.v1
+- uid: qrAPI.Sdk.v1.IQrsApi.GetAllAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IQrsApi.GetAllAsync
+  name: GetAllAsync
+  nameWithType: IQrsApi.GetAllAsync
+  fullName: qrAPI.Sdk.v1.IQrsApi.GetAllAsync
+- uid: System.Threading.Tasks.Task{Refit.ApiResponse{System.Collections.Generic.IEnumerable{qrAPI.Contracts.v1.Responses.QrResponse}}}
+  commentId: T:System.Threading.Tasks.Task{Refit.ApiResponse{System.Collections.Generic.IEnumerable{qrAPI.Contracts.v1.Responses.QrResponse}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiResponse<IEnumerable<QrResponse>>>
+  nameWithType: Task<ApiResponse<IEnumerable<QrResponse>>>
+  fullName: System.Threading.Tasks.Task<Refit.ApiResponse<System.Collections.Generic.IEnumerable<qrAPI.Contracts.v1.Responses.QrResponse>>>
+  nameWithType.vb: Task(Of ApiResponse(Of IEnumerable(Of QrResponse)))
+  fullName.vb: System.Threading.Tasks.Task(Of Refit.ApiResponse(Of System.Collections.Generic.IEnumerable(Of qrAPI.Contracts.v1.Responses.QrResponse)))
+  name.vb: Task(Of ApiResponse(Of IEnumerable(Of QrResponse)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.Contracts.v1.Responses.QrResponse
+    name: QrResponse
+    nameWithType: QrResponse
+    fullName: qrAPI.Contracts.v1.Responses.QrResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.Contracts.v1.Responses.QrResponse
+    name: QrResponse
+    nameWithType: QrResponse
+    fullName: qrAPI.Contracts.v1.Responses.QrResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.Sdk.v1.IQrsApi.GetAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IQrsApi.GetAsync
+  name: GetAsync
+  nameWithType: IQrsApi.GetAsync
+  fullName: qrAPI.Sdk.v1.IQrsApi.GetAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.QrResponse}}
+  commentId: T:System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.QrResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiResponse<QrResponse>>
+  nameWithType: Task<ApiResponse<QrResponse>>
+  fullName: System.Threading.Tasks.Task<Refit.ApiResponse<qrAPI.Contracts.v1.Responses.QrResponse>>
+  nameWithType.vb: Task(Of ApiResponse(Of QrResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Refit.ApiResponse(Of qrAPI.Contracts.v1.Responses.QrResponse))
+  name.vb: Task(Of ApiResponse(Of QrResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.Contracts.v1.Responses.QrResponse
+    name: QrResponse
+    nameWithType: QrResponse
+    fullName: qrAPI.Contracts.v1.Responses.QrResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.Contracts.v1.Responses.QrResponse
+    name: QrResponse
+    nameWithType: QrResponse
+    fullName: qrAPI.Contracts.v1.Responses.QrResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Sdk.v1.IQrsApi.CreateAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IQrsApi.CreateAsync
+  name: CreateAsync
+  nameWithType: IQrsApi.CreateAsync
+  fullName: qrAPI.Sdk.v1.IQrsApi.CreateAsync
+- uid: qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+  parent: qrAPI.Contracts.v1.Requests.Create
+  name: CreateQrRequest
+  nameWithType: CreateQrRequest
+  fullName: qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+- uid: qrAPI.Contracts.v1.Requests.Create
+  commentId: N:qrAPI.Contracts.v1.Requests.Create
+  name: qrAPI.Contracts.v1.Requests.Create
+  nameWithType: qrAPI.Contracts.v1.Requests.Create
+  fullName: qrAPI.Contracts.v1.Requests.Create
+- uid: qrAPI.Sdk.v1.IQrsApi.UpdateAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IQrsApi.UpdateAsync
+  name: UpdateAsync
+  nameWithType: IQrsApi.UpdateAsync
+  fullName: qrAPI.Sdk.v1.IQrsApi.UpdateAsync
+- uid: qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+  parent: qrAPI.Contracts.v1.Requests.Update
+  name: UpdateQrRequest
+  nameWithType: UpdateQrRequest
+  fullName: qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+- uid: System.Threading.Tasks.Task{Refit.ApiResponse{System.Boolean}}
+  commentId: T:System.Threading.Tasks.Task{Refit.ApiResponse{System.Boolean}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiResponse<Boolean>>
+  nameWithType: Task<ApiResponse<Boolean>>
+  fullName: System.Threading.Tasks.Task<Refit.ApiResponse<System.Boolean>>
+  nameWithType.vb: Task(Of ApiResponse(Of Boolean))
+  fullName.vb: System.Threading.Tasks.Task(Of Refit.ApiResponse(Of System.Boolean))
+  name.vb: Task(Of ApiResponse(Of Boolean))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Requests.Update
+  commentId: N:qrAPI.Contracts.v1.Requests.Update
+  name: qrAPI.Contracts.v1.Requests.Update
+  nameWithType: qrAPI.Contracts.v1.Requests.Update
+  fullName: qrAPI.Contracts.v1.Requests.Update
+- uid: qrAPI.Sdk.v1.IQrsApi.DeleteAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IQrsApi.DeleteAsync
+  name: DeleteAsync
+  nameWithType: IQrsApi.DeleteAsync
+  fullName: qrAPI.Sdk.v1.IQrsApi.DeleteAsync

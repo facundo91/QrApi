@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Dtos.UserDto
+  commentId: T:qrAPI.DAL.Dtos.UserDto
+  id: UserDto
+  parent: qrAPI.DAL.Dtos
+  children:
+  - qrAPI.DAL.Dtos.UserDto.Identity
+  - qrAPI.DAL.Dtos.UserDto.UserPets
+  langs:
+  - csharp
+  - vb
+  name: UserDto
+  nameWithType: UserDto
+  fullName: qrAPI.DAL.Dtos.UserDto
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/UserDto.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UserDto
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/UserDto.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: >-
+      [Table("Users")]
+
+      public class UserDto : Dto
+    content.vb: >-
+      <Table("Users")>
+
+      Public Class UserDto
+
+          Inherits Dto
+  inheritance:
+  - System.Object
+  - qrAPI.DAL.Dtos.Dto
+  inheritedMembers:
+  - qrAPI.DAL.Dtos.Dto.Id
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Users
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.DAL.Dtos.UserDto.Identity
+  commentId: P:qrAPI.DAL.Dtos.UserDto.Identity
+  id: Identity
+  parent: qrAPI.DAL.Dtos.UserDto
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: UserDto.Identity
+  fullName: qrAPI.DAL.Dtos.UserDto.Identity
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/UserDto.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Identity
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/UserDto.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public IdentityUser Identity { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityUser
+    content.vb: Public Property Identity As IdentityUser
+  overload: qrAPI.DAL.Dtos.UserDto.Identity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: qrAPI.DAL.Dtos.UserDto.UserPets
+  commentId: P:qrAPI.DAL.Dtos.UserDto.UserPets
+  id: UserPets
+  parent: qrAPI.DAL.Dtos.UserDto
+  langs:
+  - csharp
+  - vb
+  name: UserPets
+  nameWithType: UserDto.UserPets
+  fullName: qrAPI.DAL.Dtos.UserDto.UserPets
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/UserDto.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UserPets
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/UserDto.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public IEnumerable<UserPetDto> UserPets { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}
+    content.vb: Public Property UserPets As IEnumerable(Of UserPetDto)
+  overload: qrAPI.DAL.Dtos.UserDto.UserPets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.DAL.Dtos
+  commentId: N:qrAPI.DAL.Dtos
+  name: qrAPI.DAL.Dtos
+  nameWithType: qrAPI.DAL.Dtos
+  fullName: qrAPI.DAL.Dtos
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.DAL.Dtos.Dto
+  commentId: T:qrAPI.DAL.Dtos.Dto
+  parent: qrAPI.DAL.Dtos
+  name: Dto
+  nameWithType: Dto
+  fullName: qrAPI.DAL.Dtos.Dto
+- uid: qrAPI.DAL.Dtos.Dto.Id
+  commentId: P:qrAPI.DAL.Dtos.Dto.Id
+  parent: qrAPI.DAL.Dtos.Dto
+  name: Id
+  nameWithType: Dto.Id
+  fullName: qrAPI.DAL.Dtos.Dto.Id
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.DAL.Dtos.UserDto.Identity*
+  commentId: Overload:qrAPI.DAL.Dtos.UserDto.Identity
+  name: Identity
+  nameWithType: UserDto.Identity
+  fullName: qrAPI.DAL.Dtos.UserDto.Identity
+- uid: Microsoft.AspNetCore.Identity.IdentityUser
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityUser
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: IdentityUser
+  nameWithType: IdentityUser
+  fullName: Microsoft.AspNetCore.Identity.IdentityUser
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: qrAPI.DAL.Dtos.UserDto.UserPets*
+  commentId: Overload:qrAPI.DAL.Dtos.UserDto.UserPets
+  name: UserPets
+  nameWithType: UserDto.UserPets
+  fullName: qrAPI.DAL.Dtos.UserDto.UserPets
+- uid: System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}
+  commentId: T:System.Collections.Generic.IEnumerable{qrAPI.DAL.Dtos.UserPetDto}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<UserPetDto>
+  nameWithType: IEnumerable<UserPetDto>
+  fullName: System.Collections.Generic.IEnumerable<qrAPI.DAL.Dtos.UserPetDto>
+  nameWithType.vb: IEnumerable(Of UserPetDto)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of qrAPI.DAL.Dtos.UserPetDto)
+  name.vb: IEnumerable(Of UserPetDto)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+    nameWithType: UserPetDto
+    fullName: qrAPI.DAL.Dtos.UserPetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

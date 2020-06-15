@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Dtos.Gender
+  commentId: T:qrAPI.DAL.Dtos.Gender
+  id: Gender
+  parent: qrAPI.DAL.Dtos
+  children:
+  - qrAPI.DAL.Dtos.Gender.Female
+  - qrAPI.DAL.Dtos.Gender.Male
+  langs:
+  - csharp
+  - vb
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.DAL.Dtos.Gender
+  type: Enum
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Gender
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/Gender.cs
+    startLine: 2
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: public enum Gender
+    content.vb: Public Enum Gender
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: qrAPI.DAL.Dtos.Gender.Female
+  commentId: F:qrAPI.DAL.Dtos.Gender.Female
+  id: Female
+  parent: qrAPI.DAL.Dtos.Gender
+  langs:
+  - csharp
+  - vb
+  name: Female
+  nameWithType: Gender.Female
+  fullName: qrAPI.DAL.Dtos.Gender.Female
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Female
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/Gender.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: Female = 0
+    return:
+      type: qrAPI.DAL.Dtos.Gender
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.DAL.Dtos.Gender.Male
+  commentId: F:qrAPI.DAL.Dtos.Gender.Male
+  id: Male
+  parent: qrAPI.DAL.Dtos.Gender
+  langs:
+  - csharp
+  - vb
+  name: Male
+  nameWithType: Gender.Male
+  fullName: qrAPI.DAL.Dtos.Gender.Male
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.DAL/Dtos/Gender.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Male
+    path: ../../QrApi/src/qrAPI.DAL/Dtos/Gender.cs
+    startLine: 5
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Dtos
+  syntax:
+    content: Male = 1
+    return:
+      type: qrAPI.DAL.Dtos.Gender
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: qrAPI.DAL.Dtos
+  commentId: N:qrAPI.DAL.Dtos
+  name: qrAPI.DAL.Dtos
+  nameWithType: qrAPI.DAL.Dtos
+  fullName: qrAPI.DAL.Dtos
+- uid: qrAPI.DAL.Dtos.Gender
+  commentId: T:qrAPI.DAL.Dtos.Gender
+  parent: qrAPI.DAL.Dtos
+  name: Gender
+  nameWithType: Gender
+  fullName: qrAPI.DAL.Dtos.Gender

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Dtos.Fakers
+  commentId: N:qrAPI.DAL.Dtos.Fakers
+  id: qrAPI.DAL.Dtos.Fakers
+  children:
+  - qrAPI.DAL.Dtos.Fakers.PetDtoFaker
+  - qrAPI.DAL.Dtos.Fakers.QrDtoFaker
+  - qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Dtos.Fakers
+  nameWithType: qrAPI.DAL.Dtos.Fakers
+  fullName: qrAPI.DAL.Dtos.Fakers
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Dtos.Fakers.PetDtoFaker
+  commentId: T:qrAPI.DAL.Dtos.Fakers.PetDtoFaker
+  name: PetDtoFaker
+  nameWithType: PetDtoFaker
+  fullName: qrAPI.DAL.Dtos.Fakers.PetDtoFaker
+- uid: qrAPI.DAL.Dtos.Fakers.QrDtoFaker
+  commentId: T:qrAPI.DAL.Dtos.Fakers.QrDtoFaker
+  name: QrDtoFaker
+  nameWithType: QrDtoFaker
+  fullName: qrAPI.DAL.Dtos.Fakers.QrDtoFaker
+- uid: qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker
+  commentId: T:qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker
+  name: UserPetDtoFaker
+  nameWithType: UserPetDtoFaker
+  fullName: qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker

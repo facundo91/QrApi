@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Validations
+  commentId: N:qrAPI.App.Validations
+  id: qrAPI.App.Validations
+  children:
+  - qrAPI.App.Validations.CommonValidations
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Validations
+  nameWithType: qrAPI.App.Validations
+  fullName: qrAPI.App.Validations
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Validations.CommonValidations
+  commentId: T:qrAPI.App.Validations.CommonValidations
+  name: CommonValidations
+  nameWithType: CommonValidations
+  fullName: qrAPI.App.Validations.CommonValidations

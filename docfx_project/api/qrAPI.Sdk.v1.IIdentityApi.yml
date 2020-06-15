@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Sdk.v1.IIdentityApi
+  commentId: T:qrAPI.Sdk.v1.IIdentityApi
+  id: IIdentityApi
+  parent: qrAPI.Sdk.v1
+  children:
+  - qrAPI.Sdk.v1.IIdentityApi.LoginAsync(qrAPI.Contracts.v1.Requests.UserLoginRequest)
+  - qrAPI.Sdk.v1.IIdentityApi.RefreshAsync(qrAPI.Contracts.v1.Requests.RefreshTokenRequest)
+  - qrAPI.Sdk.v1.IIdentityApi.RegisterAsync(qrAPI.Contracts.v1.Requests.UserRegistrationRequest)
+  langs:
+  - csharp
+  - vb
+  name: IIdentityApi
+  nameWithType: IIdentityApi
+  fullName: qrAPI.Sdk.v1.IIdentityApi
+  type: Interface
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IIdentityApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: IIdentityApi
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IIdentityApi.cs
+    startLine: 7
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: public interface IIdentityApi
+    content.vb: Public Interface IIdentityApi
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: qrAPI.Sdk.v1.IIdentityApi.RegisterAsync(qrAPI.Contracts.v1.Requests.UserRegistrationRequest)
+  commentId: M:qrAPI.Sdk.v1.IIdentityApi.RegisterAsync(qrAPI.Contracts.v1.Requests.UserRegistrationRequest)
+  id: RegisterAsync(qrAPI.Contracts.v1.Requests.UserRegistrationRequest)
+  parent: qrAPI.Sdk.v1.IIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsync(UserRegistrationRequest)
+  nameWithType: IIdentityApi.RegisterAsync(UserRegistrationRequest)
+  fullName: qrAPI.Sdk.v1.IIdentityApi.RegisterAsync(qrAPI.Contracts.v1.Requests.UserRegistrationRequest)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IIdentityApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RegisterAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IIdentityApi.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Post("/api/identity/register")]
+
+      Task<ApiResponse<AuthSuccessResponse>> RegisterAsync([Body] UserRegistrationRequest registrationRequest)
+    parameters:
+    - id: registrationRequest
+      type: qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+      attributes:
+      - type: Refit.BodyAttribute
+        ctor: Refit.BodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.AuthSuccessResponse}}
+    content.vb: >-
+      <Post("/api/identity/register")>
+
+      Function RegisterAsync(registrationRequest As UserRegistrationRequest) As Task(Of ApiResponse(Of AuthSuccessResponse))
+  overload: qrAPI.Sdk.v1.IIdentityApi.RegisterAsync*
+  attributes:
+  - type: Refit.PostAttribute
+    ctor: Refit.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/identity/register
+- uid: qrAPI.Sdk.v1.IIdentityApi.LoginAsync(qrAPI.Contracts.v1.Requests.UserLoginRequest)
+  commentId: M:qrAPI.Sdk.v1.IIdentityApi.LoginAsync(qrAPI.Contracts.v1.Requests.UserLoginRequest)
+  id: LoginAsync(qrAPI.Contracts.v1.Requests.UserLoginRequest)
+  parent: qrAPI.Sdk.v1.IIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: LoginAsync(UserLoginRequest)
+  nameWithType: IIdentityApi.LoginAsync(UserLoginRequest)
+  fullName: qrAPI.Sdk.v1.IIdentityApi.LoginAsync(qrAPI.Contracts.v1.Requests.UserLoginRequest)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IIdentityApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: LoginAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IIdentityApi.cs
+    startLine: 12
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Post("/api/identity/login")]
+
+      Task<ApiResponse<AuthSuccessResponse>> LoginAsync([Body] UserLoginRequest loginRequest)
+    parameters:
+    - id: loginRequest
+      type: qrAPI.Contracts.v1.Requests.UserLoginRequest
+      attributes:
+      - type: Refit.BodyAttribute
+        ctor: Refit.BodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.AuthSuccessResponse}}
+    content.vb: >-
+      <Post("/api/identity/login")>
+
+      Function LoginAsync(loginRequest As UserLoginRequest) As Task(Of ApiResponse(Of AuthSuccessResponse))
+  overload: qrAPI.Sdk.v1.IIdentityApi.LoginAsync*
+  attributes:
+  - type: Refit.PostAttribute
+    ctor: Refit.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/identity/login
+- uid: qrAPI.Sdk.v1.IIdentityApi.RefreshAsync(qrAPI.Contracts.v1.Requests.RefreshTokenRequest)
+  commentId: M:qrAPI.Sdk.v1.IIdentityApi.RefreshAsync(qrAPI.Contracts.v1.Requests.RefreshTokenRequest)
+  id: RefreshAsync(qrAPI.Contracts.v1.Requests.RefreshTokenRequest)
+  parent: qrAPI.Sdk.v1.IIdentityApi
+  langs:
+  - csharp
+  - vb
+  name: RefreshAsync(RefreshTokenRequest)
+  nameWithType: IIdentityApi.RefreshAsync(RefreshTokenRequest)
+  fullName: qrAPI.Sdk.v1.IIdentityApi.RefreshAsync(qrAPI.Contracts.v1.Requests.RefreshTokenRequest)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.Sdk/v1/IIdentityApi.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RefreshAsync
+    path: ../../QrApi/src/qrAPI.Sdk/v1/IIdentityApi.cs
+    startLine: 15
+  assemblies:
+  - qrAPI.Sdk
+  namespace: qrAPI.Sdk.v1
+  syntax:
+    content: >-
+      [Post("/api/identity/refresh")]
+
+      Task<ApiResponse<AuthSuccessResponse>> RefreshAsync([Body] RefreshTokenRequest refreshRequest)
+    parameters:
+    - id: refreshRequest
+      type: qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+      attributes:
+      - type: Refit.BodyAttribute
+        ctor: Refit.BodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.AuthSuccessResponse}}
+    content.vb: >-
+      <Post("/api/identity/refresh")>
+
+      Function RefreshAsync(refreshRequest As RefreshTokenRequest) As Task(Of ApiResponse(Of AuthSuccessResponse))
+  overload: qrAPI.Sdk.v1.IIdentityApi.RefreshAsync*
+  attributes:
+  - type: Refit.PostAttribute
+    ctor: Refit.PostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: /api/identity/refresh
+references:
+- uid: qrAPI.Sdk.v1
+  commentId: N:qrAPI.Sdk.v1
+  name: qrAPI.Sdk.v1
+  nameWithType: qrAPI.Sdk.v1
+  fullName: qrAPI.Sdk.v1
+- uid: qrAPI.Sdk.v1.IIdentityApi.RegisterAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IIdentityApi.RegisterAsync
+  name: RegisterAsync
+  nameWithType: IIdentityApi.RegisterAsync
+  fullName: qrAPI.Sdk.v1.IIdentityApi.RegisterAsync
+- uid: qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+  parent: qrAPI.Contracts.v1.Requests
+  name: UserRegistrationRequest
+  nameWithType: UserRegistrationRequest
+  fullName: qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+- uid: System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.AuthSuccessResponse}}
+  commentId: T:System.Threading.Tasks.Task{Refit.ApiResponse{qrAPI.Contracts.v1.Responses.AuthSuccessResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiResponse<AuthSuccessResponse>>
+  nameWithType: Task<ApiResponse<AuthSuccessResponse>>
+  fullName: System.Threading.Tasks.Task<Refit.ApiResponse<qrAPI.Contracts.v1.Responses.AuthSuccessResponse>>
+  nameWithType.vb: Task(Of ApiResponse(Of AuthSuccessResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Refit.ApiResponse(Of qrAPI.Contracts.v1.Responses.AuthSuccessResponse))
+  name.vb: Task(Of ApiResponse(Of AuthSuccessResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+    name: AuthSuccessResponse
+    nameWithType: AuthSuccessResponse
+    fullName: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Refit.ApiResponse`1
+    name: ApiResponse
+    nameWithType: ApiResponse
+    fullName: Refit.ApiResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+    name: AuthSuccessResponse
+    nameWithType: AuthSuccessResponse
+    fullName: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Requests
+  commentId: N:qrAPI.Contracts.v1.Requests
+  name: qrAPI.Contracts.v1.Requests
+  nameWithType: qrAPI.Contracts.v1.Requests
+  fullName: qrAPI.Contracts.v1.Requests
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.Sdk.v1.IIdentityApi.LoginAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IIdentityApi.LoginAsync
+  name: LoginAsync
+  nameWithType: IIdentityApi.LoginAsync
+  fullName: qrAPI.Sdk.v1.IIdentityApi.LoginAsync
+- uid: qrAPI.Contracts.v1.Requests.UserLoginRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.UserLoginRequest
+  parent: qrAPI.Contracts.v1.Requests
+  name: UserLoginRequest
+  nameWithType: UserLoginRequest
+  fullName: qrAPI.Contracts.v1.Requests.UserLoginRequest
+- uid: qrAPI.Sdk.v1.IIdentityApi.RefreshAsync*
+  commentId: Overload:qrAPI.Sdk.v1.IIdentityApi.RefreshAsync
+  name: RefreshAsync
+  nameWithType: IIdentityApi.RefreshAsync
+  fullName: qrAPI.Sdk.v1.IIdentityApi.RefreshAsync
+- uid: qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+  parent: qrAPI.Contracts.v1.Requests
+  name: RefreshTokenRequest
+  nameWithType: RefreshTokenRequest
+  fullName: qrAPI.Contracts.v1.Requests.RefreshTokenRequest

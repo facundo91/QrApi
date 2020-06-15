@@ -1,0 +1,1722 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  commentId: T:qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  id: EfRepository`1
+  parent: qrAPI.DAL.Daos.EfImplementations
+  children:
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.#ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.DeleteAsync(System.Object)
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllAsync
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllByQueryExpressionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsync(System.Object)
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsyncIncludeProperty``1(System.Object,System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.InsertAsync(`0)
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.Table
+  - qrAPI.DAL.Daos.EfImplementations.EfRepository`1.UpdateAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: EfRepository<TDto>
+  nameWithType: EfRepository<TDto>
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: EfRepository
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 12
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: 'public class EfRepository<TDto> : IRepository<TDto> where TDto : Dto'
+    typeParameters:
+    - id: TDto
+    content.vb: >-
+      Public Class EfRepository(Of TDto As Dto)
+
+          Implements IRepository(Of TDto)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - qrAPI.DAL.Daos.EfImplementations.PetEfRepository
+  - qrAPI.DAL.Daos.EfImplementations.QrEfRepository
+  - qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository
+  - qrAPI.DAL.Daos.EfImplementations.UserPetRepository
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: EfRepository(Of TDto)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto)
+  name.vb: EfRepository(Of TDto)
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.Table
+  commentId: P:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.Table
+  id: Table
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: EfRepository<TDto>.Table
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.Table
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Table
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 15
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: protected DbSet<TDto> Table { get; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{{TDto}}
+    content.vb: Protected ReadOnly Property Table As DbSet(Of TDto)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.Table*
+  nameWithType.vb: EfRepository(Of TDto).Table
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).Table
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.#ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.#ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+  id: '#ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)'
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: EfRepository(ApplicationDbContext)
+  nameWithType: EfRepository<TDto>.EfRepository(ApplicationDbContext)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.EfRepository(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 17
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: public EfRepository(ApplicationDbContext context)
+    parameters:
+    - id: context
+      type: qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+    content.vb: Public Sub New(context As ApplicationDbContext)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.#ctor*
+  nameWithType.vb: EfRepository(Of TDto).EfRepository(ApplicationDbContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).EfRepository(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllByQueryExpressionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllByQueryExpressionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  id: GetAllByQueryExpressionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllByQueryExpressionAsync(Expression<Func<TDto, Boolean>>)
+  nameWithType: EfRepository<TDto>.GetAllByQueryExpressionAsync(Expression<Func<TDto, Boolean>>)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAllByQueryExpressionAsync(System.Linq.Expressions.Expression<System.Func<TDto, System.Boolean>>)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllByQueryExpressionAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 22
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: protected Task<IEnumerable<TDto>> GetAllByQueryExpressionAsync(Expression<Func<TDto, bool>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{TDto},System.Boolean}}
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TDto}}}
+    content.vb: Protected Function GetAllByQueryExpressionAsync(expression As Expression(Of Func(Of TDto, Boolean))) As Task(Of IEnumerable(Of TDto))
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllByQueryExpressionAsync*
+  nameWithType.vb: EfRepository(Of TDto).GetAllByQueryExpressionAsync(Expression(Of Func(Of TDto, Boolean)))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAllByQueryExpressionAsync(System.Linq.Expressions.Expression(Of System.Func(Of TDto, System.Boolean)))
+  name.vb: GetAllByQueryExpressionAsync(Expression(Of Func(Of TDto, Boolean)))
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsyncIncludeProperty``1(System.Object,System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsyncIncludeProperty``1(System.Object,System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  id: GetAsyncIncludeProperty``1(System.Object,System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAsyncIncludeProperty<TDto2>(Object, Expression<Func<TDto, TDto2>>)
+  nameWithType: EfRepository<TDto>.GetAsyncIncludeProperty<TDto2>(Object, Expression<Func<TDto, TDto2>>)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAsyncIncludeProperty<TDto2>(System.Object, System.Linq.Expressions.Expression<System.Func<TDto, TDto2>>)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAsyncIncludeProperty
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 25
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: protected Task<TDto> GetAsyncIncludeProperty<TDto2>(object id, Expression<Func<TDto, TDto2>> navigationPropertyPath)
+    parameters:
+    - id: id
+      type: System.Object
+    - id: navigationPropertyPath
+      type: System.Linq.Expressions.Expression{System.Func{{TDto},{TDto2}}}
+    typeParameters:
+    - id: TDto2
+    return:
+      type: System.Threading.Tasks.Task{{TDto}}
+    content.vb: Protected Function GetAsyncIncludeProperty(Of TDto2)(id As Object, navigationPropertyPath As Expression(Of Func(Of TDto, TDto2))) As Task(Of TDto)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsyncIncludeProperty*
+  nameWithType.vb: EfRepository(Of TDto).GetAsyncIncludeProperty(Of TDto2)(Object, Expression(Of Func(Of TDto, TDto2)))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAsyncIncludeProperty(Of TDto2)(System.Object, System.Linq.Expressions.Expression(Of System.Func(Of TDto, TDto2)))
+  name.vb: GetAsyncIncludeProperty(Of TDto2)(Object, Expression(Of Func(Of TDto, TDto2)))
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllAsync
+  id: GetAllAsync
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: EfRepository<TDto>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 32
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: public virtual Task<IEnumerable<TDto>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TDto}}}
+    content.vb: Public Overridable Function GetAllAsync As Task(Of IEnumerable(Of TDto))
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.GetAllAsync
+  nameWithType.vb: EfRepository(Of TDto).GetAllAsync()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAllAsync()
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsync(System.Object)
+  id: GetAsync(System.Object)
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Object)
+  nameWithType: EfRepository<TDto>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAsync(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 34
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: public virtual Task<TDto> GetAsync(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task{{TDto}}
+    content.vb: Public Overridable Function GetAsync(id As Object) As Task(Of TDto)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.GetAsync(System.Object)
+  nameWithType.vb: EfRepository(Of TDto).GetAsync(Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAsync(System.Object)
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.InsertAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.InsertAsync(`0)
+  id: InsertAsync(`0)
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: InsertAsync(TDto)
+  nameWithType: EfRepository<TDto>.InsertAsync(TDto)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.InsertAsync(TDto)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: InsertAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 36
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: public virtual Task<TDto> InsertAsync(TDto obj)
+    parameters:
+    - id: obj
+      type: '{TDto}'
+    return:
+      type: System.Threading.Tasks.Task{{TDto}}
+    content.vb: Public Overridable Function InsertAsync(obj As TDto) As Task(Of TDto)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.InsertAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.InsertAsync({TDto})
+  nameWithType.vb: EfRepository(Of TDto).InsertAsync(TDto)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).InsertAsync(TDto)
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.UpdateAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.UpdateAsync(`0)
+  id: UpdateAsync(`0)
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(TDto)
+  nameWithType: EfRepository<TDto>.UpdateAsync(TDto)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.UpdateAsync(TDto)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UpdateAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 43
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: public virtual Task<bool> UpdateAsync(TDto obj)
+    parameters:
+    - id: obj
+      type: '{TDto}'
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overridable Function UpdateAsync(obj As TDto) As Task(Of Boolean)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.UpdateAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.UpdateAsync({TDto})
+  nameWithType.vb: EfRepository(Of TDto).UpdateAsync(TDto)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).UpdateAsync(TDto)
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.DeleteAsync(System.Object)
+  id: DeleteAsync(System.Object)
+  parent: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Object)
+  nameWithType: EfRepository<TDto>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.DeleteAsync(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DeleteAsync
+    path: ../../QrApi/src/qrAPI.DAL/Daos/EfImplementations/EfRepository.cs
+    startLine: 52
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Daos.EfImplementations
+  syntax:
+    content: public virtual Task<bool> DeleteAsync(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overridable Function DeleteAsync(id As Object) As Task(Of Boolean)
+  overload: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.DeleteAsync*
+  implements:
+  - qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.DeleteAsync(System.Object)
+  nameWithType.vb: EfRepository(Of TDto).DeleteAsync(Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).DeleteAsync(System.Object)
+references:
+- uid: qrAPI.DAL.Daos.EfImplementations
+  commentId: N:qrAPI.DAL.Daos.EfImplementations
+  name: qrAPI.DAL.Daos.EfImplementations
+  nameWithType: qrAPI.DAL.Daos.EfImplementations
+  fullName: qrAPI.DAL.Daos.EfImplementations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository{`0}
+  parent: qrAPI.DAL.Daos.Interfaces
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository`1
+  name: IRepository<TDto>
+  nameWithType: IRepository<TDto>
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
+  nameWithType.vb: IRepository(Of TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
+  name.vb: IRepository(Of TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.Table*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.Table
+  name: Table
+  nameWithType: EfRepository<TDto>.Table
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.Table
+  nameWithType.vb: EfRepository(Of TDto).Table
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).Table
+- uid: Microsoft.EntityFrameworkCore.DbSet{{TDto}}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{`0}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  name: DbSet<TDto>
+  nameWithType: DbSet<TDto>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TDto>
+  nameWithType.vb: DbSet(Of TDto)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TDto)
+  name.vb: DbSet(Of TDto)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.DbSet`1
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet`1
+  isExternal: true
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.#ctor*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.#ctor
+  name: EfRepository
+  nameWithType: EfRepository<TDto>.EfRepository
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.EfRepository
+  nameWithType.vb: EfRepository(Of TDto).EfRepository
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).EfRepository
+- uid: qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+  commentId: T:qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+  parent: qrAPI.DAL.Data.EFData.Contexts
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+- uid: qrAPI.DAL.Data.EFData.Contexts
+  commentId: N:qrAPI.DAL.Data.EFData.Contexts
+  name: qrAPI.DAL.Data.EFData.Contexts
+  nameWithType: qrAPI.DAL.Data.EFData.Contexts
+  fullName: qrAPI.DAL.Data.EFData.Contexts
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllByQueryExpressionAsync*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllByQueryExpressionAsync
+  name: GetAllByQueryExpressionAsync
+  nameWithType: EfRepository<TDto>.GetAllByQueryExpressionAsync
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAllByQueryExpressionAsync
+  nameWithType.vb: EfRepository(Of TDto).GetAllByQueryExpressionAsync
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAllByQueryExpressionAsync
+- uid: System.Linq.Expressions.Expression{System.Func{{TDto},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TDto, Boolean>>
+  nameWithType: Expression<Func<TDto, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TDto, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TDto, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TDto, System.Boolean))
+  name.vb: Expression(Of Func(Of TDto, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TDto}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<TDto>>
+  nameWithType: Task<IEnumerable<TDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TDto>>
+  nameWithType.vb: Task(Of IEnumerable(Of TDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TDto))
+  name.vb: Task(Of IEnumerable(Of TDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsyncIncludeProperty*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsyncIncludeProperty
+  name: GetAsyncIncludeProperty
+  nameWithType: EfRepository<TDto>.GetAsyncIncludeProperty
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAsyncIncludeProperty
+  nameWithType.vb: EfRepository(Of TDto).GetAsyncIncludeProperty
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAsyncIncludeProperty
+- uid: System.Linq.Expressions.Expression{System.Func{{TDto},{TDto2}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,``0}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TDto, TDto2>>
+  nameWithType: Expression<Func<TDto, TDto2>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TDto, TDto2>>
+  nameWithType.vb: Expression(Of Func(Of TDto, TDto2))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TDto, TDto2))
+  name.vb: Expression(Of Func(Of TDto, TDto2))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto2
+    nameWithType: TDto2
+    fullName: TDto2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto2
+    nameWithType: TDto2
+    fullName: TDto2
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{TDto}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TDto>
+  nameWithType: Task<TDto>
+  fullName: System.Threading.Tasks.Task<TDto>
+  nameWithType.vb: Task(Of TDto)
+  fullName.vb: System.Threading.Tasks.Task(Of TDto)
+  name.vb: Task(Of TDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllAsync*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAllAsync
+  name: GetAllAsync
+  nameWithType: EfRepository<TDto>.GetAllAsync
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAllAsync
+  nameWithType.vb: EfRepository(Of TDto).GetAllAsync
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAllAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.GetAllAsync
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IRepository<TDto>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync()
+  nameWithType.vb: IRepository(Of TDto).GetAllAsync()
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository<TDto>.GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository(Of TDto).GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IRepository<TDto>.GetAllAsync()
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync()
+  nameWithType.vb: IRepository(Of TDto).GetAllAsync()
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository<TDto>.GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IRepository(Of TDto).GetAllAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsync*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.GetAsync
+  name: GetAsync
+  nameWithType: EfRepository<TDto>.GetAsync
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.GetAsync
+  nameWithType.vb: EfRepository(Of TDto).GetAsync
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).GetAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.GetAsync(System.Object)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  name: GetAsync(Object)
+  nameWithType: IRepository<TDto>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).GetAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository<TDto>.GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository(Of TDto).GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+  isExternal: true
+  name: GetAsync(Object)
+  nameWithType: IRepository<TDto>.GetAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).GetAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository<TDto>.GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.GetAsync(System.Object)
+    name: GetAsync
+    nameWithType: IRepository(Of TDto).GetAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.InsertAsync*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.InsertAsync
+  name: InsertAsync
+  nameWithType: EfRepository<TDto>.InsertAsync
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.InsertAsync
+  nameWithType.vb: EfRepository(Of TDto).InsertAsync
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).InsertAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.InsertAsync({TDto})
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.InsertAsync(`0)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  name: InsertAsync(TDto)
+  nameWithType: IRepository<TDto>.InsertAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).InsertAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository<TDto>.InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository(Of TDto).InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TDto}'
+  commentId: '!:TDto'
+  definition: TDto
+  name: TDto
+  nameWithType: TDto
+  fullName: TDto
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+  name: InsertAsync(TDto)
+  nameWithType: IRepository<TDto>.InsertAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).InsertAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository<TDto>.InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IRepository(Of TDto).InsertAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TDto
+  name: TDto
+  nameWithType: TDto
+  fullName: TDto
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.UpdateAsync*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.UpdateAsync
+  name: UpdateAsync
+  nameWithType: EfRepository<TDto>.UpdateAsync
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.UpdateAsync
+  nameWithType.vb: EfRepository(Of TDto).UpdateAsync
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).UpdateAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.UpdateAsync({TDto})
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.UpdateAsync(`0)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(TDto)
+  nameWithType: IRepository<TDto>.UpdateAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).UpdateAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository<TDto>.UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository(Of TDto).UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(TDto)
+  nameWithType: IRepository<TDto>.UpdateAsync(TDto)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync(TDto)
+  nameWithType.vb: IRepository(Of TDto).UpdateAsync(TDto)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync(TDto)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository<TDto>.UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IRepository(Of TDto).UpdateAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1.DeleteAsync*
+  commentId: Overload:qrAPI.DAL.Daos.EfImplementations.EfRepository`1.DeleteAsync
+  name: DeleteAsync
+  nameWithType: EfRepository<TDto>.DeleteAsync
+  fullName: qrAPI.DAL.Daos.EfImplementations.EfRepository<TDto>.DeleteAsync
+  nameWithType.vb: EfRepository(Of TDto).DeleteAsync
+  fullName.vb: qrAPI.DAL.Daos.EfImplementations.EfRepository(Of TDto).DeleteAsync
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository{`0}.DeleteAsync(System.Object)
+  parent: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
+  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  name: DeleteAsync(Object)
+  nameWithType: IRepository<TDto>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).DeleteAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository<TDto>.DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository(Of TDto).DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  commentId: M:qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+  isExternal: true
+  name: DeleteAsync(Object)
+  nameWithType: IRepository<TDto>.DeleteAsync(Object)
+  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync(System.Object)
+  nameWithType.vb: IRepository(Of TDto).DeleteAsync(Object)
+  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync(System.Object)
+  spec.csharp:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository<TDto>.DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1.DeleteAsync(System.Object)
+    name: DeleteAsync
+    nameWithType: IRepository(Of TDto).DeleteAsync
+    fullName: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

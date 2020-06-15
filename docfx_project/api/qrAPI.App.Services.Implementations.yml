@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Services.Implementations
+  commentId: N:qrAPI.App.Services.Implementations
+  id: qrAPI.App.Services.Implementations
+  children:
+  - qrAPI.App.Services.Implementations.AbstractGenericService`2
+  - qrAPI.App.Services.Implementations.IdentityService
+  - qrAPI.App.Services.Implementations.PetService
+  - qrAPI.App.Services.Implementations.QrService
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Services.Implementations
+  nameWithType: qrAPI.App.Services.Implementations
+  fullName: qrAPI.App.Services.Implementations
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  commentId: T:qrAPI.App.Services.Implementations.AbstractGenericService`2
+  name: AbstractGenericService<TDomainObject, TDto>
+  nameWithType: AbstractGenericService<TDomainObject, TDto>
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)
+  name.vb: AbstractGenericService(Of TDomainObject, TDto)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.IdentityService
+  commentId: T:qrAPI.App.Services.Implementations.IdentityService
+  name: IdentityService
+  nameWithType: IdentityService
+  fullName: qrAPI.App.Services.Implementations.IdentityService
+- uid: qrAPI.App.Services.Implementations.PetService
+  commentId: T:qrAPI.App.Services.Implementations.PetService
+  name: PetService
+  nameWithType: PetService
+  fullName: qrAPI.App.Services.Implementations.PetService
+- uid: qrAPI.App.Services.Implementations.QrService
+  commentId: T:qrAPI.App.Services.Implementations.QrService
+  name: QrService
+  nameWithType: QrService
+  fullName: qrAPI.App.Services.Implementations.QrService

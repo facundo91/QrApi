@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Fakers.Responses
+  commentId: N:qrAPI.Contracts.v1.Fakers.Responses
+  id: qrAPI.Contracts.v1.Fakers.Responses
+  children:
+  - qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Fakers.Responses
+  nameWithType: qrAPI.Contracts.v1.Fakers.Responses
+  fullName: qrAPI.Contracts.v1.Fakers.Responses
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker
+  commentId: T:qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker
+  name: PetResponseFaker
+  nameWithType: PetResponseFaker
+  fullName: qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker

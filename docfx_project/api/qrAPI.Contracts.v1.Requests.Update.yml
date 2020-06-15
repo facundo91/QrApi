@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Requests.Update
+  commentId: N:qrAPI.Contracts.v1.Requests.Update
+  id: qrAPI.Contracts.v1.Requests.Update
+  children:
+  - qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest
+  - qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Requests.Update
+  nameWithType: qrAPI.Contracts.v1.Requests.Update
+  fullName: qrAPI.Contracts.v1.Requests.Update
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest
+  parent: qrAPI.Contracts.v1.Requests.Update
+  name: UpdatePetRequest
+  nameWithType: UpdatePetRequest
+  fullName: qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest
+- uid: qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+  commentId: T:qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+  parent: qrAPI.Contracts.v1.Requests.Update
+  name: UpdateQrRequest
+  nameWithType: UpdateQrRequest
+  fullName: qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+- uid: qrAPI.Contracts.v1.Requests.Update
+  commentId: N:qrAPI.Contracts.v1.Requests.Update
+  name: qrAPI.Contracts.v1.Requests.Update
+  nameWithType: qrAPI.Contracts.v1.Requests.Update
+  fullName: qrAPI.Contracts.v1.Requests.Update

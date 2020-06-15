@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider
+  commentId: T:qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider
+  id: PetResponseExampleProvider
+  parent: qrAPI.Swagger.Examples.Responses
+  children:
+  - qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples
+  langs:
+  - csharp
+  - vb
+  name: PetResponseExampleProvider
+  nameWithType: PetResponseExampleProvider
+  fullName: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI/Swagger/Examples/Responses/PetResponseExampleProvider.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PetResponseExampleProvider
+    path: ../src/qrAPI/Swagger/Examples/Responses/PetResponseExampleProvider.cs
+    startLine: 6
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Swagger.Examples.Responses
+  syntax:
+    content: 'public class PetResponseExampleProvider : IExamplesProvider<PetResponse>'
+    content.vb: >-
+      Public Class PetResponseExampleProvider
+
+          Implements IExamplesProvider(Of PetResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples
+  commentId: M:qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples
+  id: GetExamples
+  parent: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider
+  langs:
+  - csharp
+  - vb
+  name: GetExamples()
+  nameWithType: PetResponseExampleProvider.GetExamples()
+  fullName: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Swagger/Examples/Responses/PetResponseExampleProvider.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetExamples
+    path: ../src/qrAPI/Swagger/Examples/Responses/PetResponseExampleProvider.cs
+    startLine: 8
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Swagger.Examples.Responses
+  syntax:
+    content: public PetResponse GetExamples()
+    return:
+      type: qrAPI.Contracts.v1.Responses.PetResponse
+    content.vb: Public Function GetExamples As PetResponse
+  overload: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples*
+  implements:
+  - Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}.GetExamples
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: qrAPI.Swagger.Examples.Responses
+  commentId: N:qrAPI.Swagger.Examples.Responses
+  name: qrAPI.Swagger.Examples.Responses
+  nameWithType: qrAPI.Swagger.Examples.Responses
+  fullName: qrAPI.Swagger.Examples.Responses
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}
+  commentId: T:Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}
+  parent: Swashbuckle.AspNetCore.Filters
+  definition: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+  name: IExamplesProvider<PetResponse>
+  nameWithType: IExamplesProvider<PetResponse>
+  fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider<qrAPI.Contracts.v1.Responses.PetResponse>
+  nameWithType.vb: IExamplesProvider(Of PetResponse)
+  fullName.vb: Swashbuckle.AspNetCore.Filters.IExamplesProvider(Of qrAPI.Contracts.v1.Responses.PetResponse)
+  name.vb: IExamplesProvider(Of PetResponse)
+  spec.csharp:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+    name: IExamplesProvider
+    nameWithType: IExamplesProvider
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.Contracts.v1.Responses.PetResponse
+    name: PetResponse
+    nameWithType: PetResponse
+    fullName: qrAPI.Contracts.v1.Responses.PetResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+    name: IExamplesProvider
+    nameWithType: IExamplesProvider
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.Contracts.v1.Responses.PetResponse
+    name: PetResponse
+    nameWithType: PetResponse
+    fullName: qrAPI.Contracts.v1.Responses.PetResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+  commentId: T:Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+  isExternal: true
+  name: IExamplesProvider<T>
+  nameWithType: IExamplesProvider<T>
+  fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider<T>
+  nameWithType.vb: IExamplesProvider(Of T)
+  fullName.vb: Swashbuckle.AspNetCore.Filters.IExamplesProvider(Of T)
+  name.vb: IExamplesProvider(Of T)
+  spec.csharp:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+    name: IExamplesProvider
+    nameWithType: IExamplesProvider
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1
+    name: IExamplesProvider
+    nameWithType: IExamplesProvider
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Swashbuckle.AspNetCore.Filters
+  commentId: N:Swashbuckle.AspNetCore.Filters
+  isExternal: true
+  name: Swashbuckle.AspNetCore.Filters
+  nameWithType: Swashbuckle.AspNetCore.Filters
+  fullName: Swashbuckle.AspNetCore.Filters
+- uid: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples*
+  commentId: Overload:qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples
+  name: GetExamples
+  nameWithType: PetResponseExampleProvider.GetExamples
+  fullName: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider.GetExamples
+- uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}.GetExamples
+  commentId: M:Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}.GetExamples
+  parent: Swashbuckle.AspNetCore.Filters.IExamplesProvider{qrAPI.Contracts.v1.Responses.PetResponse}
+  definition: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+  name: GetExamples()
+  nameWithType: IExamplesProvider<PetResponse>.GetExamples()
+  fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider<qrAPI.Contracts.v1.Responses.PetResponse>.GetExamples()
+  nameWithType.vb: IExamplesProvider(Of PetResponse).GetExamples()
+  fullName.vb: Swashbuckle.AspNetCore.Filters.IExamplesProvider(Of qrAPI.Contracts.v1.Responses.PetResponse).GetExamples()
+  spec.csharp:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+    name: GetExamples
+    nameWithType: IExamplesProvider<PetResponse>.GetExamples
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider<qrAPI.Contracts.v1.Responses.PetResponse>.GetExamples
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+    name: GetExamples
+    nameWithType: IExamplesProvider(Of PetResponse).GetExamples
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider(Of qrAPI.Contracts.v1.Responses.PetResponse).GetExamples
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Responses.PetResponse
+  commentId: T:qrAPI.Contracts.v1.Responses.PetResponse
+  parent: qrAPI.Contracts.v1.Responses
+  name: PetResponse
+  nameWithType: PetResponse
+  fullName: qrAPI.Contracts.v1.Responses.PetResponse
+- uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+  commentId: M:Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+  isExternal: true
+  name: GetExamples()
+  nameWithType: IExamplesProvider<T>.GetExamples()
+  fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider<T>.GetExamples()
+  nameWithType.vb: IExamplesProvider(Of T).GetExamples()
+  fullName.vb: Swashbuckle.AspNetCore.Filters.IExamplesProvider(Of T).GetExamples()
+  spec.csharp:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+    name: GetExamples
+    nameWithType: IExamplesProvider<T>.GetExamples
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider<T>.GetExamples
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Swashbuckle.AspNetCore.Filters.IExamplesProvider`1.GetExamples
+    name: GetExamples
+    nameWithType: IExamplesProvider(Of T).GetExamples
+    fullName: Swashbuckle.AspNetCore.Filters.IExamplesProvider(Of T).GetExamples
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Responses
+  commentId: N:qrAPI.Contracts.v1.Responses
+  name: qrAPI.Contracts.v1.Responses
+  nameWithType: qrAPI.Contracts.v1.Responses
+  fullName: qrAPI.Contracts.v1.Responses

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Exceptions
+  commentId: N:qrAPI.Infra.Exceptions
+  id: qrAPI.Infra.Exceptions
+  children:
+  - qrAPI.Infra.Exceptions.DbDeleteException
+  - qrAPI.Infra.Exceptions.IdNotFoundException
+  - qrAPI.Infra.Exceptions.InvalidIdException
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Exceptions
+  nameWithType: qrAPI.Infra.Exceptions
+  fullName: qrAPI.Infra.Exceptions
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Exceptions.DbDeleteException
+  commentId: T:qrAPI.Infra.Exceptions.DbDeleteException
+  name: DbDeleteException
+  nameWithType: DbDeleteException
+  fullName: qrAPI.Infra.Exceptions.DbDeleteException
+- uid: qrAPI.Infra.Exceptions.IdNotFoundException
+  commentId: T:qrAPI.Infra.Exceptions.IdNotFoundException
+  name: IdNotFoundException
+  nameWithType: IdNotFoundException
+  fullName: qrAPI.Infra.Exceptions.IdNotFoundException
+- uid: qrAPI.Infra.Exceptions.InvalidIdException
+  commentId: T:qrAPI.Infra.Exceptions.InvalidIdException
+  name: InvalidIdException
+  nameWithType: InvalidIdException
+  fullName: qrAPI.Infra.Exceptions.InvalidIdException

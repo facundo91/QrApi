@@ -1,0 +1,478 @@
+### YamlMime:TableOfContent
+- uid: qrAPI
+  name: qrAPI
+  items:
+  - uid: qrAPI.Program
+    name: Program
+  - uid: qrAPI.Startup
+    name: Startup
+- uid: qrAPI.App.Domain
+  name: qrAPI.App.Domain
+  items:
+  - uid: qrAPI.App.Domain.Breed
+    name: Breed
+  - uid: qrAPI.App.Domain.DomainObject
+    name: DomainObject
+  - uid: qrAPI.App.Domain.Gender
+    name: Gender
+  - uid: qrAPI.App.Domain.Location
+    name: Location
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+  - uid: qrAPI.App.Domain.Qr
+    name: Qr
+  - uid: qrAPI.App.Domain.Scan
+    name: Scan
+  - uid: qrAPI.App.Domain.User
+    name: User
+- uid: qrAPI.App.Domain.Fakers
+  name: qrAPI.App.Domain.Fakers
+  items:
+  - uid: qrAPI.App.Domain.Fakers.BreedFaker
+    name: BreedFaker
+  - uid: qrAPI.App.Domain.Fakers.LocationFaker
+    name: LocationFaker
+  - uid: qrAPI.App.Domain.Fakers.PetFaker
+    name: PetFaker
+  - uid: qrAPI.App.Domain.Fakers.QrFaker
+    name: QrFaker
+  - uid: qrAPI.App.Domain.Fakers.UserFaker
+    name: UserFaker
+- uid: qrAPI.App.Domain.Validators
+  name: qrAPI.App.Domain.Validators
+  items:
+  - uid: qrAPI.App.Domain.Validators.PetValidator
+    name: PetValidator
+  - uid: qrAPI.App.Domain.Validators.QrValidator
+    name: QrValidator
+- uid: qrAPI.App.Options
+  name: qrAPI.App.Options
+  items:
+  - uid: qrAPI.App.Options.JwtOptions
+    name: JwtOptions
+- uid: qrAPI.App.Services.Implementations
+  name: qrAPI.App.Services.Implementations
+  items:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService<TDomainObject, TDto>
+    name.vb: AbstractGenericService(Of TDomainObject, TDto)
+  - uid: qrAPI.App.Services.Implementations.IdentityService
+    name: IdentityService
+  - uid: qrAPI.App.Services.Implementations.PetService
+    name: PetService
+  - uid: qrAPI.App.Services.Implementations.QrService
+    name: QrService
+- uid: qrAPI.App.Services.Interfaces
+  name: qrAPI.App.Services.Interfaces
+  items:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService<TDomainObject>
+    name.vb: IGenericService(Of TDomainObject)
+  - uid: qrAPI.App.Services.Interfaces.IIdentityService
+    name: IIdentityService
+  - uid: qrAPI.App.Services.Interfaces.IQrService
+    name: IQrService
+- uid: qrAPI.App.Validations
+  name: qrAPI.App.Validations
+  items:
+  - uid: qrAPI.App.Validations.CommonValidations
+    name: CommonValidations
+- uid: qrAPI.Authorization
+  name: qrAPI.Authorization
+  items:
+  - uid: qrAPI.Authorization.WorksForCompanyHandler
+    name: WorksForCompanyHandler
+  - uid: qrAPI.Authorization.WorksForCompanyRequirement
+    name: WorksForCompanyRequirement
+- uid: qrAPI.Contracts
+  name: qrAPI.Contracts
+  items:
+  - uid: qrAPI.Contracts.ApiVersions
+    name: ApiVersions
+- uid: qrAPI.Contracts.HealthChecks
+  name: qrAPI.Contracts.HealthChecks
+  items:
+  - uid: qrAPI.Contracts.HealthChecks.HealthCheck
+    name: HealthCheck
+  - uid: qrAPI.Contracts.HealthChecks.HealthCheckResponse
+    name: HealthCheckResponse
+- uid: qrAPI.Contracts.v1
+  name: qrAPI.Contracts.v1
+  items:
+  - uid: qrAPI.Contracts.v1.ApiRoutes
+    name: ApiRoutes
+  - uid: qrAPI.Contracts.v1.ApiRoutes.Identity
+    name: ApiRoutes.Identity
+  - uid: qrAPI.Contracts.v1.ApiRoutes.Pets
+    name: ApiRoutes.Pets
+  - uid: qrAPI.Contracts.v1.ApiRoutes.Qrs
+    name: ApiRoutes.Qrs
+- uid: qrAPI.Contracts.v1.Fakers.Requests.Create
+  name: qrAPI.Contracts.v1.Fakers.Requests.Create
+  items:
+  - uid: qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker
+    name: CreatePetRequestFaker
+  - uid: qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker
+    name: CreateQrRequestFaker
+- uid: qrAPI.Contracts.v1.Fakers.Requests.Update
+  name: qrAPI.Contracts.v1.Fakers.Requests.Update
+  items:
+  - uid: qrAPI.Contracts.v1.Fakers.Requests.Update.UpdatePetRequestFaker
+    name: UpdatePetRequestFaker
+  - uid: qrAPI.Contracts.v1.Fakers.Requests.Update.UpdateQrRequestFaker
+    name: UpdateQrRequestFaker
+- uid: qrAPI.Contracts.v1.Fakers.Responses
+  name: qrAPI.Contracts.v1.Fakers.Responses
+  items:
+  - uid: qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker
+    name: PetResponseFaker
+- uid: qrAPI.Contracts.v1.Requests
+  name: qrAPI.Contracts.v1.Requests
+  items:
+  - uid: qrAPI.Contracts.v1.Requests.Gender
+    name: Gender
+  - uid: qrAPI.Contracts.v1.Requests.RefreshTokenRequest
+    name: RefreshTokenRequest
+  - uid: qrAPI.Contracts.v1.Requests.UserLoginRequest
+    name: UserLoginRequest
+  - uid: qrAPI.Contracts.v1.Requests.UserRegistrationRequest
+    name: UserRegistrationRequest
+- uid: qrAPI.Contracts.v1.Requests.Create
+  name: qrAPI.Contracts.v1.Requests.Create
+  items:
+  - uid: qrAPI.Contracts.v1.Requests.Create.CreatePetRequest
+    name: CreatePetRequest
+  - uid: qrAPI.Contracts.v1.Requests.Create.CreateQrRequest
+    name: CreateQrRequest
+- uid: qrAPI.Contracts.v1.Requests.Update
+  name: qrAPI.Contracts.v1.Requests.Update
+  items:
+  - uid: qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest
+    name: UpdatePetRequest
+  - uid: qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest
+    name: UpdateQrRequest
+- uid: qrAPI.Contracts.v1.Responses
+  name: qrAPI.Contracts.v1.Responses
+  items:
+  - uid: qrAPI.Contracts.v1.Responses.AuthFailedResponse
+    name: AuthFailedResponse
+  - uid: qrAPI.Contracts.v1.Responses.AuthSuccessResponse
+    name: AuthSuccessResponse
+  - uid: qrAPI.Contracts.v1.Responses.ErrorModel
+    name: ErrorModel
+  - uid: qrAPI.Contracts.v1.Responses.ErrorResponse
+    name: ErrorResponse
+  - uid: qrAPI.Contracts.v1.Responses.PagedResponse`1
+    name: PagedResponse<T>
+    name.vb: PagedResponse(Of T)
+  - uid: qrAPI.Contracts.v1.Responses.PetResponse
+    name: PetResponse
+  - uid: qrAPI.Contracts.v1.Responses.QrResponse
+    name: QrResponse
+  - uid: qrAPI.Contracts.v1.Responses.Response`1
+    name: Response<T>
+    name.vb: Response(Of T)
+  - uid: qrAPI.Contracts.v1.Responses.UserResponse
+    name: UserResponse
+- uid: qrAPI.Contracts.v1.Validators.Create
+  name: qrAPI.Contracts.v1.Validators.Create
+  items:
+  - uid: qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator
+    name: CreateQrRequestValidator
+- uid: qrAPI.Contracts.v1.Validators.Update
+  name: qrAPI.Contracts.v1.Validators.Update
+  items:
+  - uid: qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator
+    name: UpdatePetRequestValidator
+  - uid: qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator
+    name: UpdateQrRequestValidator
+- uid: qrAPI.DAL.Daos.CacheImplementations
+  name: qrAPI.DAL.Daos.CacheImplementations
+  items:
+  - uid: qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1
+    name: CacheRepository<T>
+    name.vb: CacheRepository(Of T)
+  - uid: qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository
+    name: PetCacheRepository
+- uid: qrAPI.DAL.Daos.EfImplementations
+  name: qrAPI.DAL.Daos.EfImplementations
+  items:
+  - uid: qrAPI.DAL.Daos.EfImplementations.EfRepository`1
+    name: EfRepository<TDto>
+    name.vb: EfRepository(Of TDto)
+  - uid: qrAPI.DAL.Daos.EfImplementations.PetEfRepository
+    name: PetEfRepository
+  - uid: qrAPI.DAL.Daos.EfImplementations.QrEfRepository
+    name: QrEfRepository
+  - uid: qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository
+    name: RefreshTokenEfRepository
+  - uid: qrAPI.DAL.Daos.EfImplementations.UserPetRepository
+    name: UserPetRepository
+- uid: qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  items:
+  - uid: qrAPI.DAL.Daos.Interfaces.IPetRepository
+    name: IPetRepository
+  - uid: qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository
+    name: IRefreshTokenRepository
+  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
+    name: IRepository<TDto>
+    name.vb: IRepository(Of TDto)
+  - uid: qrAPI.DAL.Daos.Interfaces.IUserPetRepository
+    name: IUserPetRepository
+- uid: qrAPI.DAL.Daos.MongoImplementations
+  name: qrAPI.DAL.Daos.MongoImplementations
+  items:
+  - uid: qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1
+    name: MongoRepository<TDto>
+    name.vb: MongoRepository(Of TDto)
+  - uid: qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository
+    name: PetMongoRepository
+- uid: qrAPI.DAL.Data
+  name: qrAPI.DAL.Data
+  items:
+  - uid: qrAPI.DAL.Data.IDataContext
+    name: IDataContext
+- uid: qrAPI.DAL.Data.EFData.Contexts
+  name: qrAPI.DAL.Data.EFData.Contexts
+  items:
+  - uid: qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext
+    name: ApplicationDbContext
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  name: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  items:
+  - uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration
+    name: PetDtoEntityConfiguration
+  - uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+    name: RefreshTokenEntityConfiguration
+  - uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration
+    name: UserPetDtoEntityConfiguration
+- uid: qrAPI.DAL.Data.EFData.Migrations
+  name: qrAPI.DAL.Data.EFData.Migrations
+  items:
+  - uid: qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema
+    name: CreateIdentitySchema
+  - uid: qrAPI.DAL.Data.EFData.Migrations.FixingQrs
+    name: FixingQrs
+  - uid: qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath
+    name: FixingQrsPath
+  - uid: qrAPI.DAL.Data.EFData.Migrations.GuidForString
+    name: GuidForString
+  - uid: qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos
+    name: IgnoreDtos
+  - uid: qrAPI.DAL.Data.EFData.Migrations.Initial
+    name: Initial
+  - uid: qrAPI.DAL.Data.EFData.Migrations.UserPetsTable
+    name: UserPetsTable
+  - uid: qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename
+    name: UserPetsTableRename
+- uid: qrAPI.DAL.Data.MongoData
+  name: qrAPI.DAL.Data.MongoData
+  items:
+  - uid: qrAPI.DAL.Data.MongoData.MongoContext
+    name: MongoContext
+- uid: qrAPI.DAL.Dtos
+  name: qrAPI.DAL.Dtos
+  items:
+  - uid: qrAPI.DAL.Dtos.AuthenticationResult
+    name: AuthenticationResult
+  - uid: qrAPI.DAL.Dtos.Dto
+    name: Dto
+  - uid: qrAPI.DAL.Dtos.Gender
+    name: Gender
+  - uid: qrAPI.DAL.Dtos.PetDto
+    name: PetDto
+  - uid: qrAPI.DAL.Dtos.QrDto
+    name: QrDto
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+  - uid: qrAPI.DAL.Dtos.UserDto
+    name: UserDto
+  - uid: qrAPI.DAL.Dtos.UserPetDto
+    name: UserPetDto
+- uid: qrAPI.DAL.Dtos.Fakers
+  name: qrAPI.DAL.Dtos.Fakers
+  items:
+  - uid: qrAPI.DAL.Dtos.Fakers.PetDtoFaker
+    name: PetDtoFaker
+  - uid: qrAPI.DAL.Dtos.Fakers.QrDtoFaker
+    name: QrDtoFaker
+  - uid: qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker
+    name: UserPetDtoFaker
+- uid: qrAPI.DAL.Options
+  name: qrAPI.DAL.Options
+  items:
+  - uid: qrAPI.DAL.Options.MongoOptions
+    name: MongoOptions
+- uid: qrAPI.HealthChecks
+  name: qrAPI.HealthChecks
+  items:
+  - uid: qrAPI.HealthChecks.DataBaseHealthCheck
+    name: DataBaseHealthCheck
+- uid: qrAPI.Infra.Cache
+  name: qrAPI.Infra.Cache
+  items:
+  - uid: qrAPI.Infra.Cache.ICacheHelper
+    name: ICacheHelper
+  - uid: qrAPI.Infra.Cache.RedisCacheHelper
+    name: RedisCacheHelper
+- uid: qrAPI.Infra.Constants
+  name: qrAPI.Infra.Constants
+  items:
+  - uid: qrAPI.Infra.Constants.AuthorizationConstants
+    name: AuthorizationConstants
+- uid: qrAPI.Infra.Exceptions
+  name: qrAPI.Infra.Exceptions
+  items:
+  - uid: qrAPI.Infra.Exceptions.DbDeleteException
+    name: DbDeleteException
+  - uid: qrAPI.Infra.Exceptions.IdNotFoundException
+    name: IdNotFoundException
+  - uid: qrAPI.Infra.Exceptions.InvalidIdException
+    name: InvalidIdException
+- uid: qrAPI.Infra.Extensions
+  name: qrAPI.Infra.Extensions
+  items:
+  - uid: qrAPI.Infra.Extensions.GeneralExtensions
+    name: GeneralExtensions
+- uid: qrAPI.Infra.Mail
+  name: qrAPI.Infra.Mail
+  items:
+  - uid: qrAPI.Infra.Mail.IMailBroker
+    name: IMailBroker
+- uid: qrAPI.Infra.Mail.Models
+  name: qrAPI.Infra.Mail.Models
+  items:
+  - uid: qrAPI.Infra.Mail.Models.Mail
+    name: Mail
+- uid: qrAPI.Infra.Mail.SendGrid
+  name: qrAPI.Infra.Mail.SendGrid
+  items:
+  - uid: qrAPI.Infra.Mail.SendGrid.SendGridMailBroker
+    name: SendGridMailBroker
+  - uid: qrAPI.Infra.Mail.SendGrid.SendGridSettings
+    name: SendGridSettings
+- uid: qrAPI.Infra.Mail.SendGun
+  name: qrAPI.Infra.Mail.SendGun
+  items:
+  - uid: qrAPI.Infra.Mail.SendGun.SendGunMailBroker
+    name: SendGunMailBroker
+  - uid: qrAPI.Infra.Mail.SendGun.SendGunSettings
+    name: SendGunSettings
+- uid: qrAPI.Infra.Mail.TestMail
+  name: qrAPI.Infra.Mail.TestMail
+  items:
+  - uid: qrAPI.Infra.Mail.TestMail.Email
+    name: Email
+  - uid: qrAPI.Infra.Mail.TestMail.FromParsed
+    name: FromParsed
+  - uid: qrAPI.Infra.Mail.TestMail.TestMailHelper
+    name: TestMailHelper
+  - uid: qrAPI.Infra.Mail.TestMail.TestMailResponse
+    name: TestMailResponse
+  - uid: qrAPI.Infra.Mail.TestMail.TestMailSettings
+    name: TestMailSettings
+  - uid: qrAPI.Infra.Mail.TestMail.ToParsed
+    name: ToParsed
+- uid: qrAPI.Infra.Options
+  name: qrAPI.Infra.Options
+  items:
+  - uid: qrAPI.Infra.Options.FeatureFlags
+    name: FeatureFlags
+  - uid: qrAPI.Infra.Options.IoCOptions
+    name: IoCOptions
+- uid: qrAPI.Infra.Settings
+  name: qrAPI.Infra.Settings
+  items:
+  - uid: qrAPI.Infra.Settings.MemoryCacheSettings
+    name: MemoryCacheSettings
+- uid: qrAPI.Installers
+  name: qrAPI.Installers
+  items:
+  - uid: qrAPI.Installers.AlertsInstaller
+    name: AlertsInstaller
+  - uid: qrAPI.Installers.AuthInstaller
+    name: AuthInstaller
+  - uid: qrAPI.Installers.CacheInstaller
+    name: CacheInstaller
+  - uid: qrAPI.Installers.DbInstaller
+    name: DbInstaller
+  - uid: qrAPI.Installers.FeatureManagementInstaller
+    name: FeatureManagementInstaller
+  - uid: qrAPI.Installers.HealthChecksInstaller
+    name: HealthChecksInstaller
+  - uid: qrAPI.Installers.IInstaller
+    name: IInstaller
+  - uid: qrAPI.Installers.InstallerExtensions
+    name: InstallerExtensions
+  - uid: qrAPI.Installers.MvcInstaller
+    name: MvcInstaller
+  - uid: qrAPI.Installers.OdataInstaller
+    name: OdataInstaller
+  - uid: qrAPI.Installers.ServicesInstaller
+    name: ServicesInstaller
+  - uid: qrAPI.Installers.SwaggerInstaller
+    name: SwaggerInstaller
+- uid: qrAPI.MappingProfiles
+  name: qrAPI.MappingProfiles
+  items:
+  - uid: qrAPI.MappingProfiles.DomainToDtoProfile
+    name: DomainToDtoProfile
+  - uid: qrAPI.MappingProfiles.DomainToResponseProfile
+    name: DomainToResponseProfile
+  - uid: qrAPI.MappingProfiles.DtoToDomainProfile
+    name: DtoToDomainProfile
+  - uid: qrAPI.MappingProfiles.RequestToDomainProfile
+    name: RequestToDomainProfile
+- uid: qrAPI.Sdk.v1
+  name: qrAPI.Sdk.v1
+  items:
+  - uid: qrAPI.Sdk.v1.IIdentityApi
+    name: IIdentityApi
+  - uid: qrAPI.Sdk.v1.IPetsApi
+    name: IPetsApi
+  - uid: qrAPI.Sdk.v1.IQrsApi
+    name: IQrsApi
+- uid: qrAPI.Swagger
+  name: qrAPI.Swagger
+  items:
+  - uid: qrAPI.Swagger.ConfigureSwaggerOptions
+    name: ConfigureSwaggerOptions
+  - uid: qrAPI.Swagger.SwaggerDefaultValues
+    name: SwaggerDefaultValues
+- uid: qrAPI.Swagger.Examples.Requests.Create
+  name: qrAPI.Swagger.Examples.Requests.Create
+  items:
+  - uid: qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider
+    name: CreatePetRequestExampleProvider
+  - uid: qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider
+    name: CreateQrRequestExampleProvider
+- uid: qrAPI.Swagger.Examples.Requests.Update
+  name: qrAPI.Swagger.Examples.Requests.Update
+  items:
+  - uid: qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider
+    name: UpdatePetRequestExampleProvider
+- uid: qrAPI.Swagger.Examples.Responses
+  name: qrAPI.Swagger.Examples.Responses
+  items:
+  - uid: qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider
+    name: PetResponseExampleProvider
+- uid: qrAPI.Web.Cache
+  name: qrAPI.Web.Cache
+  items:
+  - uid: qrAPI.Web.Cache.CachedAttribute
+    name: CachedAttribute
+- uid: qrAPI.Web.Controllers.v1
+  name: qrAPI.Web.Controllers.v1
+  items:
+  - uid: qrAPI.Web.Controllers.v1.IdentityController
+    name: IdentityController
+  - uid: qrAPI.Web.Controllers.v1.PetsController
+    name: PetsController
+  - uid: qrAPI.Web.Controllers.v1.QrsController
+    name: QrsController
+- uid: qrAPI.Web.Filters
+  name: qrAPI.Web.Filters
+  items:
+  - uid: qrAPI.Web.Filters.ValidationFilter
+    name: ValidationFilter

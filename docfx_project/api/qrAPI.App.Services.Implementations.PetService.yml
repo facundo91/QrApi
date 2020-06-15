@@ -1,0 +1,1583 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Services.Implementations.PetService
+  commentId: T:qrAPI.App.Services.Implementations.PetService
+  id: PetService
+  parent: qrAPI.App.Services.Implementations
+  children:
+  - qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
+  - qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)
+  - qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)
+  - qrAPI.App.Services.Implementations.PetService.GetAllAsync
+  - qrAPI.App.Services.Implementations.PetService.GetByIdAsync(System.Guid)
+  - qrAPI.App.Services.Implementations.PetService.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  langs:
+  - csharp
+  - vb
+  name: PetService
+  nameWithType: PetService
+  fullName: qrAPI.App.Services.Implementations.PetService
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PetService
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 16
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: 'public class PetService : AbstractGenericService<Pet, PetDto>, IGenericService<Pet>'
+    content.vb: >-
+      Public Class PetService
+
+          Inherits AbstractGenericService(Of Pet, PetDto)
+
+          Implements IGenericService(Of Pet)
+  inheritance:
+  - System.Object
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  implements:
+  - qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet}
+  inheritedMembers:
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.Mapper
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetAllAsync
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetByIdAsync(System.Guid)
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.CreateAsync(qrAPI.App.Domain.Pet)
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  - qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.DeleteAsync(System.Guid)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
+  commentId: M:qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
+  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)'
+  parent: qrAPI.App.Services.Implementations.PetService
+  langs:
+  - csharp
+  - vb
+  name: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>, PetValidator)
+  nameWithType: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>, PetValidator)
+  fullName: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.PetService>, qrAPI.App.Domain.Validators.PetValidator)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 22
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public PetService(IMapper mapper, IPetRepository repository, IHttpContextAccessor httpContextAccessor, IIdentityService identityService, ILogger<PetService> logger, PetValidator validator)
+    parameters:
+    - id: mapper
+      type: AutoMapper.IMapper
+    - id: repository
+      type: qrAPI.DAL.Daos.Interfaces.IPetRepository
+    - id: httpContextAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    - id: identityService
+      type: qrAPI.App.Services.Interfaces.IIdentityService
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService}
+    - id: validator
+      type: qrAPI.App.Domain.Validators.PetValidator
+    content.vb: Public Sub New(mapper As IMapper, repository As IPetRepository, httpContextAccessor As IHttpContextAccessor, identityService As IIdentityService, logger As ILogger(Of PetService), validator As PetValidator)
+  overload: qrAPI.App.Services.Implementations.PetService.#ctor*
+  nameWithType.vb: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService), PetValidator)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.PetService), qrAPI.App.Domain.Validators.PetValidator)
+  name.vb: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService), PetValidator)
+- uid: qrAPI.App.Services.Implementations.PetService.GetAllAsync
+  commentId: M:qrAPI.App.Services.Implementations.PetService.GetAllAsync
+  id: GetAllAsync
+  parent: qrAPI.App.Services.Implementations.PetService
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: PetService.GetAllAsync()
+  fullName: qrAPI.App.Services.Implementations.PetService.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAllAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 36
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public override Task<IEnumerable<Pet>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.App.Domain.Pet}}
+    content.vb: Public Overrides Function GetAllAsync As Task(Of IEnumerable(Of Pet))
+  overridden: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetAllAsync
+  overload: qrAPI.App.Services.Implementations.PetService.GetAllAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)
+  commentId: M:qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)
+  id: CreateAsync(qrAPI.App.Domain.Pet)
+  parent: qrAPI.App.Services.Implementations.PetService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(Pet)
+  nameWithType: PetService.CreateAsync(Pet)
+  fullName: qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: CreateAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 42
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public override Task<Pet> CreateAsync(Pet petToCreate)
+    parameters:
+    - id: petToCreate
+      type: qrAPI.App.Domain.Pet
+    return:
+      type: System.Threading.Tasks.Task{qrAPI.App.Domain.Pet}
+    content.vb: Public Overrides Function CreateAsync(petToCreate As Pet) As Task(Of Pet)
+  overridden: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.CreateAsync(qrAPI.App.Domain.Pet)
+  overload: qrAPI.App.Services.Implementations.PetService.CreateAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: qrAPI.App.Services.Implementations.PetService.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.PetService.GetByIdAsync(System.Guid)
+  id: GetByIdAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.PetService
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(Guid)
+  nameWithType: PetService.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.PetService.GetByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetByIdAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 50
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public override Task<Pet> GetByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{qrAPI.App.Domain.Pet}
+    content.vb: Public Overrides Function GetByIdAsync(id As Guid) As Task(Of Pet)
+  overridden: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetByIdAsync(System.Guid)
+  overload: qrAPI.App.Services.Implementations.PetService.GetByIdAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)
+  id: DeleteAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.PetService
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Guid)
+  nameWithType: PetService.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: DeleteAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 58
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public override Task<bool> DeleteAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overrides Function DeleteAsync(id As Guid) As Task(Of Boolean)
+  overridden: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.DeleteAsync(System.Guid)
+  overload: qrAPI.App.Services.Implementations.PetService.DeleteAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: qrAPI.App.Services.Implementations.PetService.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  commentId: M:qrAPI.App.Services.Implementations.PetService.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  id: UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  parent: qrAPI.App.Services.Implementations.PetService
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Guid, Pet)
+  nameWithType: PetService.UpdateAsync(Guid, Pet)
+  fullName: qrAPI.App.Services.Implementations.PetService.UpdateAsync(System.Guid, qrAPI.App.Domain.Pet)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Implementations/PetService.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: UpdateAsync
+    path: ../../QrApi/src/qrAPI.App/Services/Implementations/PetService.cs
+    startLine: 64
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Implementations
+  syntax:
+    content: public override Task<bool> UpdateAsync(Guid id, Pet petToCreate)
+    parameters:
+    - id: id
+      type: System.Guid
+    - id: petToCreate
+      type: qrAPI.App.Domain.Pet
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overrides Function UpdateAsync(id As Guid, petToCreate As Pet) As Task(Of Boolean)
+  overridden: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  overload: qrAPI.App.Services.Implementations.PetService.UpdateAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: qrAPI.App.Services.Implementations
+  commentId: N:qrAPI.App.Services.Implementations
+  name: qrAPI.App.Services.Implementations
+  nameWithType: qrAPI.App.Services.Implementations
+  fullName: qrAPI.App.Services.Implementations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  commentId: T:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  parent: qrAPI.App.Services.Implementations
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  name: AbstractGenericService<Pet, PetDto>
+  nameWithType: AbstractGenericService<Pet, PetDto>
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto)
+  name.vb: AbstractGenericService(Of Pet, PetDto)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.DAL.Dtos.PetDto
+    name: PetDto
+    nameWithType: PetDto
+    fullName: qrAPI.DAL.Dtos.PetDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.DAL.Dtos.PetDto
+    name: PetDto
+    nameWithType: PetDto
+    fullName: qrAPI.DAL.Dtos.PetDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet}
+  commentId: T:qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet}
+  parent: qrAPI.App.Services.Interfaces
+  definition: qrAPI.App.Services.Interfaces.IGenericService`1
+  name: IGenericService<Pet>
+  nameWithType: IGenericService<Pet>
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<qrAPI.App.Domain.Pet>
+  nameWithType.vb: IGenericService(Of Pet)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of qrAPI.App.Domain.Pet)
+  name.vb: IGenericService(Of Pet)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.Mapper
+  commentId: F:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.Mapper
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
+  name: Mapper
+  nameWithType: AbstractGenericService<Pet, PetDto>.Mapper
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.Mapper
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto).Mapper
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).Mapper
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetAllAsync
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetAllAsync
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: AbstractGenericService<Pet, PetDto>.GetAllAsync()
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.GetAllAsync()
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto).GetAllAsync()
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+    name: GetAllAsync
+    nameWithType: AbstractGenericService<Pet, PetDto>.GetAllAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+    name: GetAllAsync
+    nameWithType: AbstractGenericService(Of Pet, PetDto).GetAllAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.GetByIdAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  name: GetByIdAsync(Guid)
+  nameWithType: AbstractGenericService<Pet, PetDto>.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.GetByIdAsync(System.Guid)
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto).GetByIdAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).GetByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: AbstractGenericService<Pet, PetDto>.GetByIdAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: AbstractGenericService(Of Pet, PetDto).GetByIdAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.CreateAsync(qrAPI.App.Domain.Pet)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.CreateAsync(qrAPI.App.Domain.Pet)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  name: CreateAsync(Pet)
+  nameWithType: AbstractGenericService<Pet, PetDto>.CreateAsync(Pet)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.CreateAsync(qrAPI.App.Domain.Pet)
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto).CreateAsync(Pet)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).CreateAsync(qrAPI.App.Domain.Pet)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: AbstractGenericService<Pet, PetDto>.CreateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: AbstractGenericService(Of Pet, PetDto).CreateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.UpdateAsync(System.Guid,qrAPI.App.Domain.Pet)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  name: UpdateAsync(Guid, Pet)
+  nameWithType: AbstractGenericService<Pet, PetDto>.UpdateAsync(Guid, Pet)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.UpdateAsync(System.Guid, qrAPI.App.Domain.Pet)
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto).UpdateAsync(Guid, Pet)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).UpdateAsync(System.Guid, qrAPI.App.Domain.Pet)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: AbstractGenericService<Pet, PetDto>.UpdateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: AbstractGenericService(Of Pet, PetDto).UpdateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}.DeleteAsync(System.Guid)
+  parent: qrAPI.App.Services.Implementations.AbstractGenericService{qrAPI.App.Domain.Pet,qrAPI.DAL.Dtos.PetDto}
+  definition: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  name: DeleteAsync(Guid)
+  nameWithType: AbstractGenericService<Pet, PetDto>.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.DeleteAsync(System.Guid)
+  nameWithType.vb: AbstractGenericService(Of Pet, PetDto).DeleteAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).DeleteAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: AbstractGenericService<Pet, PetDto>.DeleteAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: AbstractGenericService(Of Pet, PetDto).DeleteAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of qrAPI.App.Domain.Pet, qrAPI.DAL.Dtos.PetDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  commentId: T:qrAPI.App.Services.Implementations.AbstractGenericService`2
+  name: AbstractGenericService<TDomainObject, TDto>
+  nameWithType: AbstractGenericService<TDomainObject, TDto>
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)
+  name.vb: AbstractGenericService(Of TDomainObject, TDto)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
+    name: AbstractGenericService
+    nameWithType: AbstractGenericService
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDto
+    nameWithType: TDto
+    fullName: TDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces.IGenericService`1
+  commentId: T:qrAPI.App.Services.Interfaces.IGenericService`1
+  name: IGenericService<TDomainObject>
+  nameWithType: IGenericService<TDomainObject>
+  fullName: qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>
+  nameWithType.vb: IGenericService(Of TDomainObject)
+  fullName.vb: qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject)
+  name.vb: IGenericService(Of TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Interfaces.IGenericService`1
+    name: IGenericService
+    nameWithType: IGenericService
+    fullName: qrAPI.App.Services.Interfaces.IGenericService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Interfaces
+  commentId: N:qrAPI.App.Services.Interfaces
+  name: qrAPI.App.Services.Interfaces
+  nameWithType: qrAPI.App.Services.Interfaces
+  fullName: qrAPI.App.Services.Interfaces
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
+  commentId: F:qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
+  name: Mapper
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.Mapper
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.Mapper
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).Mapper
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).Mapper
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetAllAsync()
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetAllAsync()
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetAllAsync()
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetAllAsync()
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+    name: GetAllAsync
+    nameWithType: AbstractGenericService<TDomainObject, TDto>.GetAllAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+    name: GetAllAsync
+    nameWithType: AbstractGenericService(Of TDomainObject, TDto).GetAllAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  isExternal: true
+  name: GetByIdAsync(Guid)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetByIdAsync(System.Guid)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: AbstractGenericService<TDomainObject, TDto>.GetByIdAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+    name: GetByIdAsync
+    nameWithType: AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  name: CreateAsync(TDomainObject)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.CreateAsync(TDomainObject)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.CreateAsync(TDomainObject)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).CreateAsync(TDomainObject)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).CreateAsync(TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: AbstractGenericService<TDomainObject, TDto>.CreateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: AbstractGenericService(Of TDomainObject, TDto).CreateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).CreateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  isExternal: true
+  name: UpdateAsync(Guid, TDomainObject)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.UpdateAsync(Guid, TDomainObject)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.UpdateAsync(System.Guid, TDomainObject)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).UpdateAsync(Guid, TDomainObject)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).UpdateAsync(System.Guid, TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: AbstractGenericService<TDomainObject, TDto>.UpdateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+    name: UpdateAsync
+    nameWithType: AbstractGenericService(Of TDomainObject, TDto).UpdateAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  isExternal: true
+  name: DeleteAsync(Guid)
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.DeleteAsync(System.Guid)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).DeleteAsync(Guid)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).DeleteAsync(System.Guid)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: AbstractGenericService<TDomainObject, TDto>.DeleteAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+    name: DeleteAsync
+    nameWithType: AbstractGenericService(Of TDomainObject, TDto).DeleteAsync
+    fullName: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.PetService.#ctor*
+  commentId: Overload:qrAPI.App.Services.Implementations.PetService.#ctor
+  name: PetService
+  nameWithType: PetService.PetService
+  fullName: qrAPI.App.Services.Implementations.PetService.PetService
+- uid: AutoMapper.IMapper
+  commentId: T:AutoMapper.IMapper
+  parent: AutoMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: AutoMapper.IMapper
+- uid: qrAPI.DAL.Daos.Interfaces.IPetRepository
+  commentId: T:qrAPI.DAL.Daos.Interfaces.IPetRepository
+  parent: qrAPI.DAL.Daos.Interfaces
+  name: IPetRepository
+  nameWithType: IPetRepository
+  fullName: qrAPI.DAL.Daos.Interfaces.IPetRepository
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: qrAPI.App.Services.Interfaces.IIdentityService
+  commentId: T:qrAPI.App.Services.Interfaces.IIdentityService
+  parent: qrAPI.App.Services.Interfaces
+  name: IIdentityService
+  nameWithType: IIdentityService
+  fullName: qrAPI.App.Services.Interfaces.IIdentityService
+- uid: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<PetService>
+  nameWithType: ILogger<PetService>
+  fullName: Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.PetService>
+  nameWithType.vb: ILogger(Of PetService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.PetService)
+  name.vb: ILogger(Of PetService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Services.Implementations.PetService
+    name: PetService
+    nameWithType: PetService
+    fullName: qrAPI.App.Services.Implementations.PetService
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Services.Implementations.PetService
+    name: PetService
+    nameWithType: PetService
+    fullName: qrAPI.App.Services.Implementations.PetService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Domain.Validators.PetValidator
+  commentId: T:qrAPI.App.Domain.Validators.PetValidator
+  parent: qrAPI.App.Domain.Validators
+  name: PetValidator
+  nameWithType: PetValidator
+  fullName: qrAPI.App.Domain.Validators.PetValidator
+- uid: AutoMapper
+  commentId: N:AutoMapper
+  isExternal: true
+  name: AutoMapper
+  nameWithType: AutoMapper
+  fullName: AutoMapper
+- uid: qrAPI.DAL.Daos.Interfaces
+  commentId: N:qrAPI.DAL.Daos.Interfaces
+  name: qrAPI.DAL.Daos.Interfaces
+  nameWithType: qrAPI.DAL.Daos.Interfaces
+  fullName: qrAPI.DAL.Daos.Interfaces
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: qrAPI.App.Domain.Validators
+  commentId: N:qrAPI.App.Domain.Validators
+  name: qrAPI.App.Domain.Validators
+  nameWithType: qrAPI.App.Domain.Validators
+  fullName: qrAPI.App.Domain.Validators
+- uid: qrAPI.App.Services.Implementations.PetService.GetAllAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.PetService.GetAllAsync
+  name: GetAllAsync
+  nameWithType: PetService.GetAllAsync
+  fullName: qrAPI.App.Services.Implementations.PetService.GetAllAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.App.Domain.Pet}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{qrAPI.App.Domain.Pet}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<Pet>>
+  nameWithType: Task<IEnumerable<Pet>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<qrAPI.App.Domain.Pet>>
+  nameWithType.vb: Task(Of IEnumerable(Of Pet))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of qrAPI.App.Domain.Pet))
+  name.vb: Task(Of IEnumerable(Of Pet))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: qrAPI.App.Services.Implementations.PetService.CreateAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.PetService.CreateAsync
+  name: CreateAsync
+  nameWithType: PetService.CreateAsync
+  fullName: qrAPI.App.Services.Implementations.PetService.CreateAsync
+- uid: qrAPI.App.Domain.Pet
+  commentId: T:qrAPI.App.Domain.Pet
+  parent: qrAPI.App.Domain
+  name: Pet
+  nameWithType: Pet
+  fullName: qrAPI.App.Domain.Pet
+- uid: System.Threading.Tasks.Task{qrAPI.App.Domain.Pet}
+  commentId: T:System.Threading.Tasks.Task{qrAPI.App.Domain.Pet}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Pet>
+  nameWithType: Task<Pet>
+  fullName: System.Threading.Tasks.Task<qrAPI.App.Domain.Pet>
+  nameWithType.vb: Task(Of Pet)
+  fullName.vb: System.Threading.Tasks.Task(Of qrAPI.App.Domain.Pet)
+  name.vb: Task(Of Pet)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.App.Domain.Pet
+    name: Pet
+    nameWithType: Pet
+    fullName: qrAPI.App.Domain.Pet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Domain
+  commentId: N:qrAPI.App.Domain
+  name: qrAPI.App.Domain
+  nameWithType: qrAPI.App.Domain
+  fullName: qrAPI.App.Domain
+- uid: qrAPI.App.Services.Implementations.PetService.GetByIdAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.PetService.GetByIdAsync
+  name: GetByIdAsync
+  nameWithType: PetService.GetByIdAsync
+  fullName: qrAPI.App.Services.Implementations.PetService.GetByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: qrAPI.App.Services.Implementations.PetService.DeleteAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.PetService.DeleteAsync
+  name: DeleteAsync
+  nameWithType: PetService.DeleteAsync
+  fullName: qrAPI.App.Services.Implementations.PetService.DeleteAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.App.Services.Implementations.PetService.UpdateAsync*
+  commentId: Overload:qrAPI.App.Services.Implementations.PetService.UpdateAsync
+  name: UpdateAsync
+  nameWithType: PetService.UpdateAsync
+  fullName: qrAPI.App.Services.Implementations.PetService.UpdateAsync

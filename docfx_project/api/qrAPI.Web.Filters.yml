@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Web.Filters
+  commentId: N:qrAPI.Web.Filters
+  id: qrAPI.Web.Filters
+  children:
+  - qrAPI.Web.Filters.ValidationFilter
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Web.Filters
+  nameWithType: qrAPI.Web.Filters
+  fullName: qrAPI.Web.Filters
+  type: Namespace
+  assemblies:
+  - qrAPI.Web
+references:
+- uid: qrAPI.Web.Filters.ValidationFilter
+  commentId: T:qrAPI.Web.Filters.ValidationFilter
+  name: ValidationFilter
+  nameWithType: ValidationFilter
+  fullName: qrAPI.Web.Filters.ValidationFilter

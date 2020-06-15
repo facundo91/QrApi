@@ -1,0 +1,824 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  commentId: T:qrAPI.Contracts.v1.Responses.PagedResponse`1
+  id: PagedResponse`1
+  parent: qrAPI.Contracts.v1.Responses
+  children:
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.Data
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.NextPage
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.PageNumber
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.PageSize
+  - qrAPI.Contracts.v1.Responses.PagedResponse`1.PreviousPage
+  langs:
+  - csharp
+  - vb
+  name: PagedResponse<T>
+  nameWithType: PagedResponse<T>
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PagedResponse
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 4
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public class PagedResponse<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Class PagedResponse(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: PagedResponse(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T)
+  name.vb: PagedResponse(Of T)
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor
+  commentId: M:qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor
+  id: '#ctor'
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PagedResponse()
+  nameWithType: PagedResponse<T>.PagedResponse()
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PagedResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public PagedResponse()
+    content.vb: Public Sub New
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor*
+  nameWithType.vb: PagedResponse(Of T).PagedResponse()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PagedResponse()
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PagedResponse(IEnumerable<T>)
+  nameWithType: PagedResponse<T>.PagedResponse(IEnumerable<T>)
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PagedResponse(System.Collections.Generic.IEnumerable<T>)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public PagedResponse(IEnumerable<T> data)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public Sub New(data As IEnumerable(Of T))
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor*
+  nameWithType.vb: PagedResponse(Of T).PagedResponse(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PagedResponse(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: PagedResponse(IEnumerable(Of T))
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.Data
+  commentId: P:qrAPI.Contracts.v1.Responses.PagedResponse`1.Data
+  id: Data
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: PagedResponse<T>.Data
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.Data
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Data
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 13
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public IEnumerable<T> Data { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public Property Data As IEnumerable(Of T)
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.Data*
+  nameWithType.vb: PagedResponse(Of T).Data
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).Data
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.PageNumber
+  commentId: P:qrAPI.Contracts.v1.Responses.PagedResponse`1.PageNumber
+  id: PageNumber
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PageNumber
+  nameWithType: PagedResponse<T>.PageNumber
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PageNumber
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PageNumber
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 15
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public int? PageNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property PageNumber As Integer?
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.PageNumber*
+  nameWithType.vb: PagedResponse(Of T).PageNumber
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PageNumber
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.PageSize
+  commentId: P:qrAPI.Contracts.v1.Responses.PagedResponse`1.PageSize
+  id: PageSize
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: PagedResponse<T>.PageSize
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PageSize
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PageSize
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 17
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public int? PageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property PageSize As Integer?
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.PageSize*
+  nameWithType.vb: PagedResponse(Of T).PageSize
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PageSize
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.NextPage
+  commentId: P:qrAPI.Contracts.v1.Responses.PagedResponse`1.NextPage
+  id: NextPage
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: NextPage
+  nameWithType: PagedResponse<T>.NextPage
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.NextPage
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: NextPage
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 19
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public string NextPage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NextPage As String
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.NextPage*
+  nameWithType.vb: PagedResponse(Of T).NextPage
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).NextPage
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.PreviousPage
+  commentId: P:qrAPI.Contracts.v1.Responses.PagedResponse`1.PreviousPage
+  id: PreviousPage
+  parent: qrAPI.Contracts.v1.Responses.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PreviousPage
+  nameWithType: PagedResponse<T>.PreviousPage
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PreviousPage
+  type: Property
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: PreviousPage
+    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    startLine: 21
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1.Responses
+  syntax:
+    content: public string PreviousPage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PreviousPage As String
+  overload: qrAPI.Contracts.v1.Responses.PagedResponse`1.PreviousPage*
+  nameWithType.vb: PagedResponse(Of T).PreviousPage
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PreviousPage
+references:
+- uid: qrAPI.Contracts.v1.Responses
+  commentId: N:qrAPI.Contracts.v1.Responses
+  name: qrAPI.Contracts.v1.Responses
+  nameWithType: qrAPI.Contracts.v1.Responses
+  fullName: qrAPI.Contracts.v1.Responses
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor*
+  commentId: Overload:qrAPI.Contracts.v1.Responses.PagedResponse`1.#ctor
+  name: PagedResponse
+  nameWithType: PagedResponse<T>.PagedResponse
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PagedResponse
+  nameWithType.vb: PagedResponse(Of T).PagedResponse
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PagedResponse
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.Data*
+  commentId: Overload:qrAPI.Contracts.v1.Responses.PagedResponse`1.Data
+  name: Data
+  nameWithType: PagedResponse<T>.Data
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.Data
+  nameWithType.vb: PagedResponse(Of T).Data
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).Data
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.PageNumber*
+  commentId: Overload:qrAPI.Contracts.v1.Responses.PagedResponse`1.PageNumber
+  name: PageNumber
+  nameWithType: PagedResponse<T>.PageNumber
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PageNumber
+  nameWithType.vb: PagedResponse(Of T).PageNumber
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PageNumber
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.PageSize*
+  commentId: Overload:qrAPI.Contracts.v1.Responses.PagedResponse`1.PageSize
+  name: PageSize
+  nameWithType: PagedResponse<T>.PageSize
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PageSize
+  nameWithType.vb: PagedResponse(Of T).PageSize
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PageSize
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.NextPage*
+  commentId: Overload:qrAPI.Contracts.v1.Responses.PagedResponse`1.NextPage
+  name: NextPage
+  nameWithType: PagedResponse<T>.NextPage
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.NextPage
+  nameWithType.vb: PagedResponse(Of T).NextPage
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).NextPage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: qrAPI.Contracts.v1.Responses.PagedResponse`1.PreviousPage*
+  commentId: Overload:qrAPI.Contracts.v1.Responses.PagedResponse`1.PreviousPage
+  name: PreviousPage
+  nameWithType: PagedResponse<T>.PreviousPage
+  fullName: qrAPI.Contracts.v1.Responses.PagedResponse<T>.PreviousPage
+  nameWithType.vb: PagedResponse(Of T).PreviousPage
+  fullName.vb: qrAPI.Contracts.v1.Responses.PagedResponse(Of T).PreviousPage

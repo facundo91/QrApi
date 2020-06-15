@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Mail
+  commentId: N:qrAPI.Infra.Mail
+  id: qrAPI.Infra.Mail
+  children:
+  - qrAPI.Infra.Mail.IMailBroker
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Mail
+  nameWithType: qrAPI.Infra.Mail
+  fullName: qrAPI.Infra.Mail
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Mail.IMailBroker
+  commentId: T:qrAPI.Infra.Mail.IMailBroker
+  parent: qrAPI.Infra.Mail
+  name: IMailBroker
+  nameWithType: IMailBroker
+  fullName: qrAPI.Infra.Mail.IMailBroker
+- uid: qrAPI.Infra.Mail
+  commentId: N:qrAPI.Infra.Mail
+  name: qrAPI.Infra.Mail
+  nameWithType: qrAPI.Infra.Mail
+  fullName: qrAPI.Infra.Mail

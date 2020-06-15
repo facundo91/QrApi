@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  commentId: N:qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  id: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  children:
+  - qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration
+  - qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  - qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  nameWithType: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  type: Namespace
+  assemblies:
+  - qrAPI.DAL
+references:
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration
+  commentId: T:qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration
+  name: PetDtoEntityConfiguration
+  nameWithType: PetDtoEntityConfiguration
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  commentId: T:qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  name: RefreshTokenEntityConfiguration
+  nameWithType: RefreshTokenEntityConfiguration
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration
+  commentId: T:qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration
+  name: UserPetDtoEntityConfiguration
+  nameWithType: UserPetDtoEntityConfiguration
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration

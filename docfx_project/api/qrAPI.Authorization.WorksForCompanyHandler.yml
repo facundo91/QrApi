@@ -1,0 +1,713 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Authorization.WorksForCompanyHandler
+  commentId: T:qrAPI.Authorization.WorksForCompanyHandler
+  id: WorksForCompanyHandler
+  parent: qrAPI.Authorization
+  children:
+  - qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  langs:
+  - csharp
+  - vb
+  name: WorksForCompanyHandler
+  nameWithType: WorksForCompanyHandler
+  fullName: qrAPI.Authorization.WorksForCompanyHandler
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI/Authorization/WorksForCompanyHandler.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: WorksForCompanyHandler
+    path: ../src/qrAPI/Authorization/WorksForCompanyHandler.cs
+    startLine: 6
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Authorization
+  syntax:
+    content: 'public class WorksForCompanyHandler : AuthorizationHandler<WorksForCompanyRequirement>, IAuthorizationHandler'
+    content.vb: >-
+      Public Class WorksForCompanyHandler
+
+          Inherits AuthorizationHandler(Of WorksForCompanyRequirement)
+
+          Implements IAuthorizationHandler
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}
+  implements:
+  - Microsoft.AspNetCore.Authorization.IAuthorizationHandler
+  inheritedMembers:
+  - Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  commentId: M:qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  id: HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  parent: qrAPI.Authorization.WorksForCompanyHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleRequirementAsync(AuthorizationHandlerContext, WorksForCompanyRequirement)
+  nameWithType: WorksForCompanyHandler.HandleRequirementAsync(AuthorizationHandlerContext, WorksForCompanyRequirement)
+  fullName: qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext, qrAPI.Authorization.WorksForCompanyRequirement)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI/Authorization/WorksForCompanyHandler.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: HandleRequirementAsync
+    path: ../src/qrAPI/Authorization/WorksForCompanyHandler.cs
+    startLine: 8
+  assemblies:
+  - qrAPI
+  namespace: qrAPI.Authorization
+  syntax:
+    content: protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, WorksForCompanyRequirement requirement)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    - id: requirement
+      type: qrAPI.Authorization.WorksForCompanyRequirement
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overrides Function HandleRequirementAsync(context As AuthorizationHandlerContext, requirement As WorksForCompanyRequirement) As Task
+  overridden: Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  overload: qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: qrAPI.Authorization
+  commentId: N:qrAPI.Authorization
+  name: qrAPI.Authorization
+  nameWithType: qrAPI.Authorization
+  fullName: qrAPI.Authorization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}
+  commentId: T:Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}
+  parent: Microsoft.AspNetCore.Authorization
+  definition: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+  name: AuthorizationHandler<WorksForCompanyRequirement>
+  nameWithType: AuthorizationHandler<WorksForCompanyRequirement>
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<qrAPI.Authorization.WorksForCompanyRequirement>
+  nameWithType.vb: AuthorizationHandler(Of WorksForCompanyRequirement)
+  fullName.vb: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of qrAPI.Authorization.WorksForCompanyRequirement)
+  name.vb: AuthorizationHandler(Of WorksForCompanyRequirement)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+    name: AuthorizationHandler
+    nameWithType: AuthorizationHandler
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.Authorization.WorksForCompanyRequirement
+    name: WorksForCompanyRequirement
+    nameWithType: WorksForCompanyRequirement
+    fullName: qrAPI.Authorization.WorksForCompanyRequirement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+    name: AuthorizationHandler
+    nameWithType: AuthorizationHandler
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.Authorization.WorksForCompanyRequirement
+    name: WorksForCompanyRequirement
+    nameWithType: WorksForCompanyRequirement
+    fullName: qrAPI.Authorization.WorksForCompanyRequirement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Authorization.IAuthorizationHandler
+  commentId: T:Microsoft.AspNetCore.Authorization.IAuthorizationHandler
+  parent: Microsoft.AspNetCore.Authorization
+  isExternal: true
+  name: IAuthorizationHandler
+  nameWithType: IAuthorizationHandler
+  fullName: Microsoft.AspNetCore.Authorization.IAuthorizationHandler
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  commentId: M:Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  parent: Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}
+  definition: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  name: HandleAsync(AuthorizationHandlerContext)
+  nameWithType: AuthorizationHandler<WorksForCompanyRequirement>.HandleAsync(AuthorizationHandlerContext)
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<qrAPI.Authorization.WorksForCompanyRequirement>.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  nameWithType.vb: AuthorizationHandler(Of WorksForCompanyRequirement).HandleAsync(AuthorizationHandlerContext)
+  fullName.vb: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of qrAPI.Authorization.WorksForCompanyRequirement).HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+    name: HandleAsync
+    nameWithType: AuthorizationHandler<WorksForCompanyRequirement>.HandleAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<qrAPI.Authorization.WorksForCompanyRequirement>.HandleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+    name: HandleAsync
+    nameWithType: AuthorizationHandler(Of WorksForCompanyRequirement).HandleAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of qrAPI.Authorization.WorksForCompanyRequirement).HandleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+  commentId: T:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+  isExternal: true
+  name: AuthorizationHandler<TRequirement>
+  nameWithType: AuthorizationHandler<TRequirement>
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<TRequirement>
+  nameWithType.vb: AuthorizationHandler(Of TRequirement)
+  fullName.vb: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of TRequirement)
+  name.vb: AuthorizationHandler(Of TRequirement)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+    name: AuthorizationHandler
+    nameWithType: AuthorizationHandler
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRequirement
+    nameWithType: TRequirement
+    fullName: TRequirement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1
+    name: AuthorizationHandler
+    nameWithType: AuthorizationHandler
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRequirement
+    nameWithType: TRequirement
+    fullName: TRequirement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Authorization
+  commentId: N:Microsoft.AspNetCore.Authorization
+  isExternal: true
+  name: Microsoft.AspNetCore.Authorization
+  nameWithType: Microsoft.AspNetCore.Authorization
+  fullName: Microsoft.AspNetCore.Authorization
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  commentId: M:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  isExternal: true
+  name: HandleAsync(AuthorizationHandlerContext)
+  nameWithType: AuthorizationHandler<TRequirement>.HandleAsync(AuthorizationHandlerContext)
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<TRequirement>.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  nameWithType.vb: AuthorizationHandler(Of TRequirement).HandleAsync(AuthorizationHandlerContext)
+  fullName.vb: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of TRequirement).HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+    name: HandleAsync
+    nameWithType: AuthorizationHandler<TRequirement>.HandleAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<TRequirement>.HandleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
+    name: HandleAsync
+    nameWithType: AuthorizationHandler(Of TRequirement).HandleAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of TRequirement).HandleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  commentId: M:Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+  parent: Microsoft.AspNetCore.Authorization.AuthorizationHandler{qrAPI.Authorization.WorksForCompanyRequirement}
+  definition: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+  name: HandleRequirementAsync(AuthorizationHandlerContext, WorksForCompanyRequirement)
+  nameWithType: AuthorizationHandler<WorksForCompanyRequirement>.HandleRequirementAsync(AuthorizationHandlerContext, WorksForCompanyRequirement)
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<qrAPI.Authorization.WorksForCompanyRequirement>.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext, qrAPI.Authorization.WorksForCompanyRequirement)
+  nameWithType.vb: AuthorizationHandler(Of WorksForCompanyRequirement).HandleRequirementAsync(AuthorizationHandlerContext, WorksForCompanyRequirement)
+  fullName.vb: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of qrAPI.Authorization.WorksForCompanyRequirement).HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext, qrAPI.Authorization.WorksForCompanyRequirement)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+    name: HandleRequirementAsync
+    nameWithType: AuthorizationHandler<WorksForCompanyRequirement>.HandleRequirementAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<qrAPI.Authorization.WorksForCompanyRequirement>.HandleRequirementAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.Authorization.WorksForCompanyRequirement
+    name: WorksForCompanyRequirement
+    nameWithType: WorksForCompanyRequirement
+    fullName: qrAPI.Authorization.WorksForCompanyRequirement
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+    name: HandleRequirementAsync
+    nameWithType: AuthorizationHandler(Of WorksForCompanyRequirement).HandleRequirementAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of qrAPI.Authorization.WorksForCompanyRequirement).HandleRequirementAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: qrAPI.Authorization.WorksForCompanyRequirement
+    name: WorksForCompanyRequirement
+    nameWithType: WorksForCompanyRequirement
+    fullName: qrAPI.Authorization.WorksForCompanyRequirement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync*
+  commentId: Overload:qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync
+  name: HandleRequirementAsync
+  nameWithType: WorksForCompanyHandler.HandleRequirementAsync
+  fullName: qrAPI.Authorization.WorksForCompanyHandler.HandleRequirementAsync
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+  commentId: T:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+  parent: Microsoft.AspNetCore.Authorization
+  isExternal: true
+  name: AuthorizationHandlerContext
+  nameWithType: AuthorizationHandlerContext
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+- uid: qrAPI.Authorization.WorksForCompanyRequirement
+  commentId: T:qrAPI.Authorization.WorksForCompanyRequirement
+  parent: qrAPI.Authorization
+  name: WorksForCompanyRequirement
+  nameWithType: WorksForCompanyRequirement
+  fullName: qrAPI.Authorization.WorksForCompanyRequirement
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+  commentId: M:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+  isExternal: true
+  name: HandleRequirementAsync(AuthorizationHandlerContext, TRequirement)
+  nameWithType: AuthorizationHandler<TRequirement>.HandleRequirementAsync(AuthorizationHandlerContext, TRequirement)
+  fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<TRequirement>.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext, TRequirement)
+  nameWithType.vb: AuthorizationHandler(Of TRequirement).HandleRequirementAsync(AuthorizationHandlerContext, TRequirement)
+  fullName.vb: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of TRequirement).HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext, TRequirement)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+    name: HandleRequirementAsync
+    nameWithType: AuthorizationHandler<TRequirement>.HandleRequirementAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler<TRequirement>.HandleRequirementAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequirement
+    nameWithType: TRequirement
+    fullName: TRequirement
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,`0)
+    name: HandleRequirementAsync
+    nameWithType: AuthorizationHandler(Of TRequirement).HandleRequirementAsync
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandler(Of TRequirement).HandleRequirementAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    name: AuthorizationHandlerContext
+    nameWithType: AuthorizationHandlerContext
+    fullName: Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRequirement
+    nameWithType: TRequirement
+    fullName: TRequirement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

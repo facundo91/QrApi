@@ -9,7 +9,7 @@ services:
     container_name: qr-api
     build: 
       context: .
-      dockerfile: qrAPI/Dockerfile
+      dockerfile: src/qrAPI/Dockerfile
     restart: always
     environment: 
       - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}

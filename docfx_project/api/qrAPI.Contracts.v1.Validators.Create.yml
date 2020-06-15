@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.Validators.Create
+  commentId: N:qrAPI.Contracts.v1.Validators.Create
+  id: qrAPI.Contracts.v1.Validators.Create
+  children:
+  - qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Contracts.v1.Validators.Create
+  nameWithType: qrAPI.Contracts.v1.Validators.Create
+  fullName: qrAPI.Contracts.v1.Validators.Create
+  type: Namespace
+  assemblies:
+  - qrAPI.Contracts
+references:
+- uid: qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator
+  commentId: T:qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator
+  name: CreateQrRequestValidator
+  nameWithType: CreateQrRequestValidator
+  fullName: qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator

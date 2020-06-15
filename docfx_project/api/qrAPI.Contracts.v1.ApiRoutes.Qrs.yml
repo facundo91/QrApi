@@ -1,0 +1,554 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  commentId: T:qrAPI.Contracts.v1.ApiRoutes.Qrs
+  id: ApiRoutes.Qrs
+  parent: qrAPI.Contracts.v1
+  children:
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs.Create
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs.Delete
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs.Get
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs.GetAll
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs.Scan
+  - qrAPI.Contracts.v1.ApiRoutes.Qrs.Update
+  langs:
+  - csharp
+  - vb
+  name: ApiRoutes.Qrs
+  nameWithType: ApiRoutes.Qrs
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Qrs
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public static class Qrs
+    content.vb: Public Module Qrs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs.GetAll
+  commentId: F:qrAPI.Contracts.v1.ApiRoutes.Qrs.GetAll
+  id: GetAll
+  parent: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: GetAll
+  nameWithType: ApiRoutes.Qrs.GetAll
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs.GetAll
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: GetAll
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 9
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public const string GetAll = "api/qrs"
+    return:
+      type: System.String
+    content.vb: Public Const GetAll As String = "api/qrs"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs.Get
+  commentId: F:qrAPI.Contracts.v1.ApiRoutes.Qrs.Get
+  id: Get
+  parent: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: Get
+  nameWithType: ApiRoutes.Qrs.Get
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs.Get
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Get
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 10
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public const string Get = "api/qrs/{qrId}"
+    return:
+      type: System.String
+    content.vb: Public Const Get As String = "api/qrs/{qrId}"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs.Scan
+  commentId: F:qrAPI.Contracts.v1.ApiRoutes.Qrs.Scan
+  id: Scan
+  parent: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: Scan
+  nameWithType: ApiRoutes.Qrs.Scan
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs.Scan
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Scan
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 11
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public const string Scan = "api/qrs/{qrId}/Scan"
+    return:
+      type: System.String
+    content.vb: Public Const Scan As String = "api/qrs/{qrId}/Scan"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs.Update
+  commentId: F:qrAPI.Contracts.v1.ApiRoutes.Qrs.Update
+  id: Update
+  parent: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: ApiRoutes.Qrs.Update
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs.Update
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Update
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 12
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public const string Update = "api/qrs/{qrId}"
+    return:
+      type: System.String
+    content.vb: Public Const Update As String = "api/qrs/{qrId}"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs.Delete
+  commentId: F:qrAPI.Contracts.v1.ApiRoutes.Qrs.Delete
+  id: Delete
+  parent: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: ApiRoutes.Qrs.Delete
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs.Delete
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Delete
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 13
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public const string Delete = "api/qrs/{qrId}"
+    return:
+      type: System.String
+    content.vb: Public Const Delete As String = "api/qrs/{qrId}"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: qrAPI.Contracts.v1.ApiRoutes.Qrs.Create
+  commentId: F:qrAPI.Contracts.v1.ApiRoutes.Qrs.Create
+  id: Create
+  parent: qrAPI.Contracts.v1.ApiRoutes.Qrs
+  langs:
+  - csharp
+  - vb
+  name: Create
+  nameWithType: ApiRoutes.Qrs.Create
+  fullName: qrAPI.Contracts.v1.ApiRoutes.Qrs.Create
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.Contracts/v1/ApiRoutes.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Create
+    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    startLine: 14
+  assemblies:
+  - qrAPI.Contracts
+  namespace: qrAPI.Contracts.v1
+  syntax:
+    content: public const string Create = "api/qrs"
+    return:
+      type: System.String
+    content.vb: Public Const Create As String = "api/qrs"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: qrAPI.Contracts.v1
+  commentId: N:qrAPI.Contracts.v1
+  name: qrAPI.Contracts.v1
+  nameWithType: qrAPI.Contracts.v1
+  fullName: qrAPI.Contracts.v1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.Infra.Extensions
+  commentId: N:qrAPI.Infra.Extensions
+  id: qrAPI.Infra.Extensions
+  children:
+  - qrAPI.Infra.Extensions.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.Infra.Extensions
+  nameWithType: qrAPI.Infra.Extensions
+  fullName: qrAPI.Infra.Extensions
+  type: Namespace
+  assemblies:
+  - qrAPI.Infra
+references:
+- uid: qrAPI.Infra.Extensions.GeneralExtensions
+  commentId: T:qrAPI.Infra.Extensions.GeneralExtensions
+  name: GeneralExtensions
+  nameWithType: GeneralExtensions
+  fullName: qrAPI.Infra.Extensions.GeneralExtensions

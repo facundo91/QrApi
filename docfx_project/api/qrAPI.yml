@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI
+  commentId: N:qrAPI
+  id: qrAPI
+  children:
+  - qrAPI.Program
+  - qrAPI.Startup
+  langs:
+  - csharp
+  - vb
+  name: qrAPI
+  nameWithType: qrAPI
+  fullName: qrAPI
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.Program
+  commentId: T:qrAPI.Program
+  name: Program
+  nameWithType: Program
+  fullName: qrAPI.Program
+- uid: qrAPI.Startup
+  commentId: T:qrAPI.Startup
+  name: Startup
+  nameWithType: Startup
+  fullName: qrAPI.Startup

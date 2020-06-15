@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.MappingProfiles
+  commentId: N:qrAPI.MappingProfiles
+  id: qrAPI.MappingProfiles
+  children:
+  - qrAPI.MappingProfiles.DomainToDtoProfile
+  - qrAPI.MappingProfiles.DomainToResponseProfile
+  - qrAPI.MappingProfiles.DtoToDomainProfile
+  - qrAPI.MappingProfiles.RequestToDomainProfile
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.MappingProfiles
+  nameWithType: qrAPI.MappingProfiles
+  fullName: qrAPI.MappingProfiles
+  type: Namespace
+  assemblies:
+  - qrAPI
+references:
+- uid: qrAPI.MappingProfiles.DomainToDtoProfile
+  commentId: T:qrAPI.MappingProfiles.DomainToDtoProfile
+  name: DomainToDtoProfile
+  nameWithType: DomainToDtoProfile
+  fullName: qrAPI.MappingProfiles.DomainToDtoProfile
+- uid: qrAPI.MappingProfiles.DomainToResponseProfile
+  commentId: T:qrAPI.MappingProfiles.DomainToResponseProfile
+  name: DomainToResponseProfile
+  nameWithType: DomainToResponseProfile
+  fullName: qrAPI.MappingProfiles.DomainToResponseProfile
+- uid: qrAPI.MappingProfiles.DtoToDomainProfile
+  commentId: T:qrAPI.MappingProfiles.DtoToDomainProfile
+  name: DtoToDomainProfile
+  nameWithType: DtoToDomainProfile
+  fullName: qrAPI.MappingProfiles.DtoToDomainProfile
+- uid: qrAPI.MappingProfiles.RequestToDomainProfile
+  commentId: T:qrAPI.MappingProfiles.RequestToDomainProfile
+  name: RequestToDomainProfile
+  nameWithType: RequestToDomainProfile
+  fullName: qrAPI.MappingProfiles.RequestToDomainProfile

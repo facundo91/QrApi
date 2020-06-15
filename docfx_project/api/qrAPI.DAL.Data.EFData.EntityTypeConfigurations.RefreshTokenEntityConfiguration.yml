@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  commentId: T:qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  id: RefreshTokenEntityConfiguration
+  parent: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  children:
+  - qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenEntityConfiguration
+  nameWithType: RefreshTokenEntityConfiguration
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/RefreshTokenEntityConfiguration.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: RefreshTokenEntityConfiguration
+    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/RefreshTokenEntityConfiguration.cs
+    startLine: 6
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  syntax:
+    content: 'public class RefreshTokenEntityConfiguration : IEntityTypeConfiguration<RefreshToken>'
+    content.vb: >-
+      Public Class RefreshTokenEntityConfiguration
+
+          Implements IEntityTypeConfiguration(Of RefreshToken)
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  commentId: M:qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  id: Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  parent: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Configure(EntityTypeBuilder<RefreshToken>)
+  nameWithType: RefreshTokenEntityConfiguration.Configure(EntityTypeBuilder<RefreshToken>)
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<qrAPI.DAL.Dtos.RefreshToken>)
+  type: Method
+  source:
+    remote:
+      path: src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/RefreshTokenEntityConfiguration.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: Configure
+    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/RefreshTokenEntityConfiguration.cs
+    startLine: 8
+  assemblies:
+  - qrAPI.DAL
+  namespace: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  syntax:
+    content: public void Configure(EntityTypeBuilder<RefreshToken> builder)
+    parameters:
+    - id: builder
+      type: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken}
+    content.vb: Public Sub Configure(builder As EntityTypeBuilder(Of RefreshToken))
+  overload: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure*
+  implements:
+  - Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  nameWithType.vb: RefreshTokenEntityConfiguration.Configure(EntityTypeBuilder(Of RefreshToken))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of qrAPI.DAL.Dtos.RefreshToken))
+  name.vb: Configure(EntityTypeBuilder(Of RefreshToken))
+references:
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  commentId: N:qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  name: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  nameWithType: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}
+  commentId: T:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+  name: IEntityTypeConfiguration<RefreshToken>
+  nameWithType: IEntityTypeConfiguration<RefreshToken>
+  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<qrAPI.DAL.Dtos.RefreshToken>
+  nameWithType.vb: IEntityTypeConfiguration(Of RefreshToken)
+  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of qrAPI.DAL.Dtos.RefreshToken)
+  name.vb: IEntityTypeConfiguration(Of RefreshToken)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+    name: IEntityTypeConfiguration
+    nameWithType: IEntityTypeConfiguration
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: qrAPI.DAL.Dtos.RefreshToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+    name: IEntityTypeConfiguration
+    nameWithType: IEntityTypeConfiguration
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: qrAPI.DAL.Dtos.RefreshToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+  commentId: T:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+  isExternal: true
+  name: IEntityTypeConfiguration<TEntity>
+  nameWithType: IEntityTypeConfiguration<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>
+  nameWithType.vb: IEntityTypeConfiguration(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of TEntity)
+  name.vb: IEntityTypeConfiguration(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+    name: IEntityTypeConfiguration
+    nameWithType: IEntityTypeConfiguration
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
+    name: IEntityTypeConfiguration
+    nameWithType: IEntityTypeConfiguration
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+- uid: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure*
+  commentId: Overload:qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure
+  name: Configure
+  nameWithType: RefreshTokenEntityConfiguration.Configure
+  fullName: qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration.Configure
+- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  commentId: M:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken})
+  parent: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{qrAPI.DAL.Dtos.RefreshToken}
+  definition: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+  name: Configure(EntityTypeBuilder<RefreshToken>)
+  nameWithType: IEntityTypeConfiguration<RefreshToken>.Configure(EntityTypeBuilder<RefreshToken>)
+  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<qrAPI.DAL.Dtos.RefreshToken>.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<qrAPI.DAL.Dtos.RefreshToken>)
+  nameWithType.vb: IEntityTypeConfiguration(Of RefreshToken).Configure(EntityTypeBuilder(Of RefreshToken))
+  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of qrAPI.DAL.Dtos.RefreshToken).Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of qrAPI.DAL.Dtos.RefreshToken))
+  name.vb: Configure(EntityTypeBuilder(Of RefreshToken))
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: IEntityTypeConfiguration<RefreshToken>.Configure
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<qrAPI.DAL.Dtos.RefreshToken>.Configure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: qrAPI.DAL.Dtos.RefreshToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: IEntityTypeConfiguration(Of RefreshToken).Configure
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of qrAPI.DAL.Dtos.RefreshToken).Configure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: qrAPI.DAL.Dtos.RefreshToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken}
+  commentId: T:Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{qrAPI.DAL.Dtos.RefreshToken}
+  parent: Microsoft.EntityFrameworkCore.Metadata.Builders
+  definition: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  name: EntityTypeBuilder<RefreshToken>
+  nameWithType: EntityTypeBuilder<RefreshToken>
+  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<qrAPI.DAL.Dtos.RefreshToken>
+  nameWithType.vb: EntityTypeBuilder(Of RefreshToken)
+  fullName.vb: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of qrAPI.DAL.Dtos.RefreshToken)
+  name.vb: EntityTypeBuilder(Of RefreshToken)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: qrAPI.DAL.Dtos.RefreshToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: qrAPI.DAL.Dtos.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: qrAPI.DAL.Dtos.RefreshToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+  commentId: M:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+  isExternal: true
+  name: Configure(EntityTypeBuilder<TEntity>)
+  nameWithType: IEntityTypeConfiguration<TEntity>.Configure(EntityTypeBuilder<TEntity>)
+  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>)
+  nameWithType.vb: IEntityTypeConfiguration(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
+  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of TEntity).Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity))
+  name.vb: Configure(EntityTypeBuilder(Of TEntity))
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: IEntityTypeConfiguration<TEntity>.Configure
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>.Configure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: IEntityTypeConfiguration(Of TEntity).Configure
+    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of TEntity).Configure
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  commentId: T:Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  isExternal: true
+  name: EntityTypeBuilder<TEntity>
+  nameWithType: EntityTypeBuilder<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>
+  nameWithType.vb: EntityTypeBuilder(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity)
+  name.vb: EntityTypeBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.Metadata.Builders
+  commentId: N:Microsoft.EntityFrameworkCore.Metadata.Builders
+  isExternal: true
+  name: Microsoft.EntityFrameworkCore.Metadata.Builders
+  nameWithType: Microsoft.EntityFrameworkCore.Metadata.Builders
+  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders
