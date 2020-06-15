@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: JwtOptions
-    path: ../../QrApi/src/qrAPI.App/Options/JwtOptions.cs
+    path: ../src/qrAPI.App/Options/JwtOptions.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -61,7 +61,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Secret
-    path: ../../QrApi/src/qrAPI.App/Options/JwtOptions.cs
+    path: ../src/qrAPI.App/Options/JwtOptions.cs
     startLine: 6
   assemblies:
   - qrAPI.App
@@ -96,7 +96,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: TokenLifetime
-    path: ../../QrApi/src/qrAPI.App/Options/JwtOptions.cs
+    path: ../src/qrAPI.App/Options/JwtOptions.cs
     startLine: 7
   assemblies:
   - qrAPI.App

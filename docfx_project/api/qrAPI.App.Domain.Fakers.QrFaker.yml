@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: QrFaker
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/QrFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/QrFaker.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -29,9 +29,7 @@ items:
     content: 'public sealed class QrFaker : AutoFaker<Qr>, IFakerTInternal, ILocaleAware, IRuleSet<Qr>'
     content.vb: >-
       Public NotInheritable Class QrFaker
-
           Inherits AutoFaker(Of Qr)
-
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Qr)
   inheritance:
   - System.Object
@@ -121,7 +119,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/QrFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/QrFaker.cs
     startLine: 6
   assemblies:
   - qrAPI.App
@@ -151,7 +149,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/QrFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/QrFaker.cs
     startLine: 12
   assemblies:
   - qrAPI.App

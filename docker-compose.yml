@@ -13,8 +13,6 @@ services:
     restart: always
     environment: 
       - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
-      - MemoryCacheSettings__ConnectionString=${MemoryCacheSettings__ConnectionString}
-      - MemoryCacheSettings__Enabled=${MemoryCacheSettings__Enabled}
       - ConnectionStrings__DefaultConnection=${ConnectionStrings__DefaultConnection}
       - JwtOptions__Secret=${JwtOptions__Secret}
       - MongoOptions__DefaultConnection=${MongoOptions__DefaultConnection}

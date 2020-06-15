@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PetValidator
-    path: ../../QrApi/src/qrAPI.App/Domain/Validators/PetValidator.cs
+    path: ../src/qrAPI.App/Domain/Validators/PetValidator.cs
     startLine: 5
   assemblies:
   - qrAPI.App
@@ -28,9 +28,7 @@ items:
     content: 'public class PetValidator : AbstractValidator<Pet>, IValidator<Pet>, IValidator, IEnumerable<IValidationRule>, IEnumerable'
     content.vb: >-
       Public Class PetValidator
-
           Inherits AbstractValidator(Of Pet)
-
           Implements IValidator(Of Pet), IValidator, IEnumerable(Of IValidationRule), IEnumerable
   inheritance:
   - System.Object
@@ -96,7 +94,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Validators/PetValidator.cs
+    path: ../src/qrAPI.App/Domain/Validators/PetValidator.cs
     startLine: 7
   assemblies:
   - qrAPI.App

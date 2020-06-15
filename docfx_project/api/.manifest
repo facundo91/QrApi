@@ -597,7 +597,7 @@
   "qrAPI.Startup": "qrAPI.Startup.yml",
   "qrAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)": "qrAPI.Startup.yml",
   "qrAPI.Startup.Configuration": "qrAPI.Startup.yml",
-  "qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)": "qrAPI.Startup.yml",
+  "qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": "qrAPI.Startup.yml",
   "qrAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": "qrAPI.Startup.yml",
   "qrAPI.Swagger": "qrAPI.Swagger.yml",
   "qrAPI.Swagger.ConfigureSwaggerOptions": "qrAPI.Swagger.ConfigureSwaggerOptions.yml",

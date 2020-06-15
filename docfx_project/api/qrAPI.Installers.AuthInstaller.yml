@@ -28,7 +28,6 @@ items:
     content: 'public class AuthInstaller : IInstaller'
     content.vb: >-
       Public Class AuthInstaller
-
           Implements IInstaller
   inheritance:
   - System.Object

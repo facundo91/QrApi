@@ -28,7 +28,6 @@ items:
     content: 'public class MvcInstaller : IInstaller'
     content.vb: >-
       Public Class MvcInstaller
-
           Implements IInstaller
   inheritance:
   - System.Object

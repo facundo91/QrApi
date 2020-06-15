@@ -25,7 +25,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: AbstractGenericService
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.Exceptions.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.Exceptions.cs
     startLine: 8
   assemblies:
   - qrAPI.App
@@ -37,7 +37,6 @@ items:
     - id: TDto
     content.vb: >-
       Public MustInherit Class AbstractGenericService(Of TDomainObject As DomainObject, TDto As Dto)
-
           Implements IGenericService(Of TDomainObject)
   inheritance:
   - System.Object
@@ -82,7 +81,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Mapper
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 18
   assemblies:
   - qrAPI.App
@@ -117,7 +116,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 23
   assemblies:
   - qrAPI.App
@@ -159,7 +158,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 35
   assemblies:
   - qrAPI.App
@@ -197,7 +196,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetByIdAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 38
   assemblies:
   - qrAPI.App
@@ -238,7 +237,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CreateAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 45
   assemblies:
   - qrAPI.App
@@ -279,7 +278,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 48
   assemblies:
   - qrAPI.App
@@ -322,7 +321,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DeleteAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
     startLine: 57
   assemblies:
   - qrAPI.App

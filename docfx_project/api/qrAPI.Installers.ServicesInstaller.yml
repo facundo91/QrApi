@@ -28,7 +28,6 @@ items:
     content: 'public class ServicesInstaller : IInstaller'
     content.vb: >-
       Public Class ServicesInstaller
-
           Implements IInstaller
   inheritance:
   - System.Object

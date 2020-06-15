@@ -25,7 +25,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Scan
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -66,7 +66,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Qr
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 6
   assemblies:
   - qrAPI.App
@@ -101,7 +101,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DateTime
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 7
   assemblies:
   - qrAPI.App
@@ -136,7 +136,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Location
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 8
   assemblies:
   - qrAPI.App
@@ -171,7 +171,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Notified
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 9
   assemblies:
   - qrAPI.App
@@ -206,7 +206,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Read
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 10
   assemblies:
   - qrAPI.App
@@ -241,7 +241,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PictureUrl
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 11
   assemblies:
   - qrAPI.App
@@ -276,7 +276,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Message
-    path: ../../QrApi/src/qrAPI.App/Domain/Scan.cs
+    path: ../src/qrAPI.App/Domain/Scan.cs
     startLine: 12
   assemblies:
   - qrAPI.App

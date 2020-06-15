@@ -2,9 +2,11 @@ using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Builder;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.OData.Edm;
 using qrAPI.Contracts.v1.Responses;
 using qrAPI.Installers;
@@ -14,22 +16,28 @@ namespace qrAPI
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
-
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.InstallServicesInAssembly(Configuration);
         }
 
-        public void Configure(IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+        public void Configure(IApplicationBuilder app, IApiVersionDescriptionProvider provider, IWebHostEnvironment env)
         {
+            if (IsTestEnvironment(env))
+            {
+                app.UseDeveloperExceptionPage();
+            } else if (env.IsProduction())
+            {
+                app.UseHttpsRedirection();
+            }
             app.AddHealthChecks();
-            //app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
@@ -48,6 +56,8 @@ namespace qrAPI
             });
             app.AddSwagger(provider);
         }
+
+        private static bool IsTestEnvironment(IHostEnvironment env) => env.IsDevelopment() || env.IsEnvironment("Docker");
 
         private IEdmModel GetEdmModel()
         {

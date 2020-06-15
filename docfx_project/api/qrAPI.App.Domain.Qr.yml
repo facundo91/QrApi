@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Qr
-    path: ../../QrApi/src/qrAPI.App/Domain/Qr.cs
+    path: ../src/qrAPI.App/Domain/Qr.cs
     startLine: 2
   assemblies:
   - qrAPI.App
@@ -29,7 +29,6 @@ items:
     content: 'public class Qr : DomainObject'
     content.vb: >-
       Public Class Qr
-
           Inherits DomainObject
   inheritance:
   - System.Object
@@ -66,7 +65,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Name
-    path: ../../QrApi/src/qrAPI.App/Domain/Qr.cs
+    path: ../src/qrAPI.App/Domain/Qr.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -101,7 +100,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Pet
-    path: ../../QrApi/src/qrAPI.App/Domain/Qr.cs
+    path: ../src/qrAPI.App/Domain/Qr.cs
     startLine: 5
   assemblies:
   - qrAPI.App

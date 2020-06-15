@@ -22,7 +22,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IdentityController
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/IdentityController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/IdentityController.cs
     startLine: 11
   assemblies:
   - qrAPI.Web
@@ -44,7 +44,6 @@ items:
       <ODataRouting>
 
       Public Class IdentityController
-
           Inherits ControllerBase
   inheritance:
   - System.Object
@@ -254,7 +253,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/IdentityController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/IdentityController.cs
     startLine: 18
   assemblies:
   - qrAPI.Web
@@ -287,7 +286,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Register
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/IdentityController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/IdentityController.cs
     startLine: 23
   assemblies:
   - qrAPI.Web
@@ -338,7 +337,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Login
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/IdentityController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/IdentityController.cs
     startLine: 51
   assemblies:
   - qrAPI.Web
@@ -389,7 +388,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Refresh
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/IdentityController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/IdentityController.cs
     startLine: 71
   assemblies:
   - qrAPI.Web

@@ -25,7 +25,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: QrsController
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 20
   assemblies:
   - qrAPI.Web
@@ -47,7 +47,6 @@ items:
       <ODataRoutePrefix("Qrs")>
 
       Public Class QrsController
-
           Inherits ODataController
   inheritance:
   - System.Object
@@ -264,7 +263,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 28
   assemblies:
   - qrAPI.Web
@@ -299,7 +298,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllQrs
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 34
   assemblies:
   - qrAPI.Web
@@ -379,7 +378,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetQr
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 45
   assemblies:
   - qrAPI.Web
@@ -472,7 +471,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ScanQr
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 57
   assemblies:
   - qrAPI.Web
@@ -523,7 +522,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CreateQr
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 64
   assemblies:
   - qrAPI.Web
@@ -578,7 +577,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateQr
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 74
   assemblies:
   - qrAPI.Web
@@ -639,7 +638,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DeleteQr
-    path: ../../QrApi/src/qrAPI.Web/Controllers/v1/QrsController.cs
+    path: ../src/qrAPI.Web/Controllers/v1/QrsController.cs
     startLine: 82
   assemblies:
   - qrAPI.Web

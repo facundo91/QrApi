@@ -7,7 +7,7 @@ items:
   children:
   - qrAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
   - qrAPI.Startup.Configuration
-  - qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  - qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
   - qrAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   langs:
   - csharp
@@ -23,7 +23,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: Startup
     path: ../src/qrAPI/Startup.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - qrAPI
   namespace: qrAPI
@@ -46,39 +46,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: qrAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
-  commentId: M:qrAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
-  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration)'
-  parent: qrAPI.Startup
-  langs:
-  - csharp
-  - vb
-  name: Startup(IConfiguration)
-  nameWithType: Startup.Startup(IConfiguration)
-  fullName: qrAPI.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)
-  type: Constructor
-  source:
-    remote:
-      path: src/qrAPI/Startup.cs
-      branch: master
-      repo: https://github.com/facundo91/QrApi.git
-    id: .ctor
-    path: ../src/qrAPI/Startup.cs
-    startLine: 16
-  assemblies:
-  - qrAPI
-  namespace: qrAPI
-  syntax:
-    content: public Startup(IConfiguration configuration)
-    parameters:
-    - id: configuration
-      type: Microsoft.Extensions.Configuration.IConfiguration
-    content.vb: Public Sub New(configuration As IConfiguration)
-  overload: qrAPI.Startup.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: qrAPI.Startup.Configuration
   commentId: P:qrAPI.Startup.Configuration
   id: Configuration
@@ -97,7 +64,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: Configuration
     path: ../src/qrAPI/Startup.cs
-    startLine: 21
+    startLine: 18
   assemblies:
   - qrAPI
   namespace: qrAPI
@@ -114,6 +81,39 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: qrAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:qrAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration)'
+  parent: qrAPI.Startup
+  langs:
+  - csharp
+  - vb
+  name: Startup(IConfiguration)
+  nameWithType: Startup.Startup(IConfiguration)
+  fullName: qrAPI.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/qrAPI/Startup.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: .ctor
+    path: ../src/qrAPI/Startup.cs
+    startLine: 20
+  assemblies:
+  - qrAPI
+  namespace: qrAPI
+  syntax:
+    content: public Startup(IConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Public Sub New(configuration As IConfiguration)
+  overload: qrAPI.Startup.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: qrAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   commentId: M:qrAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   id: ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
@@ -132,7 +132,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: ConfigureServices
     path: ../src/qrAPI/Startup.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - qrAPI
   namespace: qrAPI
@@ -147,16 +147,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
-  commentId: M:qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
-  id: Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+- uid: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  commentId: M:qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  id: Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
   parent: qrAPI.Startup
   langs:
   - csharp
   - vb
-  name: Configure(IApplicationBuilder, IApiVersionDescriptionProvider)
-  nameWithType: Startup.Configure(IApplicationBuilder, IApiVersionDescriptionProvider)
-  fullName: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+  name: Configure(IApplicationBuilder, IApiVersionDescriptionProvider, IWebHostEnvironment)
+  nameWithType: Startup.Configure(IApplicationBuilder, IApiVersionDescriptionProvider, IWebHostEnvironment)
+  fullName: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
   type: Method
   source:
     remote:
@@ -165,18 +165,20 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: Configure
     path: ../src/qrAPI/Startup.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - qrAPI
   namespace: qrAPI
   syntax:
-    content: public void Configure(IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+    content: public void Configure(IApplicationBuilder app, IApiVersionDescriptionProvider provider, IWebHostEnvironment env)
     parameters:
     - id: app
       type: Microsoft.AspNetCore.Builder.IApplicationBuilder
     - id: provider
       type: Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider
-    content.vb: Public Sub Configure(app As IApplicationBuilder, provider As IApiVersionDescriptionProvider)
+    - id: env
+      type: Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+    content.vb: Public Sub Configure(app As IApplicationBuilder, provider As IApiVersionDescriptionProvider, env As IWebHostEnvironment)
   overload: qrAPI.Startup.Configure*
   modifiers.csharp:
   - public
@@ -480,11 +482,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: qrAPI.Startup.#ctor*
-  commentId: Overload:qrAPI.Startup.#ctor
-  name: Startup
-  nameWithType: Startup.Startup
-  fullName: qrAPI.Startup.Startup
+- uid: qrAPI.Startup.Configuration*
+  commentId: Overload:qrAPI.Startup.Configuration
+  name: Configuration
+  nameWithType: Startup.Configuration
+  fullName: qrAPI.Startup.Configuration
 - uid: Microsoft.Extensions.Configuration.IConfiguration
   commentId: T:Microsoft.Extensions.Configuration.IConfiguration
   parent: Microsoft.Extensions.Configuration
@@ -498,11 +500,11 @@ references:
   name: Microsoft.Extensions.Configuration
   nameWithType: Microsoft.Extensions.Configuration
   fullName: Microsoft.Extensions.Configuration
-- uid: qrAPI.Startup.Configuration*
-  commentId: Overload:qrAPI.Startup.Configuration
-  name: Configuration
-  nameWithType: Startup.Configuration
-  fullName: qrAPI.Startup.Configuration
+- uid: qrAPI.Startup.#ctor*
+  commentId: Overload:qrAPI.Startup.#ctor
+  name: Startup
+  nameWithType: Startup.Startup
+  fullName: qrAPI.Startup.Startup
 - uid: qrAPI.Startup.ConfigureServices*
   commentId: Overload:qrAPI.Startup.ConfigureServices
   name: ConfigureServices
@@ -540,6 +542,13 @@ references:
   name: IApiVersionDescriptionProvider
   nameWithType: IApiVersionDescriptionProvider
   fullName: Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider
+- uid: Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+  commentId: T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment
+  parent: Microsoft.AspNetCore.Hosting
+  isExternal: true
+  name: IWebHostEnvironment
+  nameWithType: IWebHostEnvironment
+  fullName: Microsoft.AspNetCore.Hosting.IWebHostEnvironment
 - uid: Microsoft.AspNetCore.Builder
   commentId: N:Microsoft.AspNetCore.Builder
   isExternal: true
@@ -552,3 +561,9 @@ references:
   name: Microsoft.AspNetCore.Mvc.ApiExplorer
   nameWithType: Microsoft.AspNetCore.Mvc.ApiExplorer
   fullName: Microsoft.AspNetCore.Mvc.ApiExplorer
+- uid: Microsoft.AspNetCore.Hosting
+  commentId: N:Microsoft.AspNetCore.Hosting
+  isExternal: true
+  name: Microsoft.AspNetCore.Hosting
+  nameWithType: Microsoft.AspNetCore.Hosting
+  fullName: Microsoft.AspNetCore.Hosting

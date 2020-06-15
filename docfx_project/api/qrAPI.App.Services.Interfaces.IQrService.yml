@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IQrService
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IQrService.cs
+    path: ../src/qrAPI.App/Services/Interfaces/IQrService.cs
     startLine: 6
   assemblies:
   - qrAPI.App
@@ -28,7 +28,6 @@ items:
     content: 'public interface IQrService : IGenericService<Qr>'
     content.vb: >-
       Public Interface IQrService
-
           Inherits IGenericService(Of Qr)
   inheritedMembers:
   - qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Qr}.GetAllAsync
@@ -59,16 +58,19 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ScanQr
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IQrService.cs
-    startLine: 8
+    path: ../src/qrAPI.App/Services/Interfaces/IQrService.cs
+    startLine: 12
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Interfaces
+  summary: "\nScans a code.\n"
+  example: []
   syntax:
     content: Task ScanQr(Guid qrId)
     parameters:
     - id: qrId
       type: System.Guid
+      description: Code Id
     return:
       type: System.Threading.Tasks.Task
     content.vb: Function ScanQr(qrId As Guid) As Task

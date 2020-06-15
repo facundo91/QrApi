@@ -28,7 +28,6 @@ items:
     content: 'public class SwaggerInstaller : IInstaller'
     content.vb: >-
       Public Class SwaggerInstaller
-
           Implements IInstaller
   inheritance:
   - System.Object

@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: QrService
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/QrService.cs
+    path: ../src/qrAPI.App/Services/Implementations/QrService.cs
     startLine: 14
   assemblies:
   - qrAPI.App
@@ -29,9 +29,7 @@ items:
     content: 'public class QrService : AbstractGenericService<Qr, QrDto>, IQrService, IGenericService<Qr>'
     content.vb: >-
       Public Class QrService
-
           Inherits AbstractGenericService(Of Qr, QrDto)
-
           Implements IQrService, IGenericService(Of Qr)
   inheritance:
   - System.Object
@@ -76,7 +74,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/QrService.cs
+    path: ../src/qrAPI.App/Services/Implementations/QrService.cs
     startLine: 20
   assemblies:
   - qrAPI.App
@@ -124,7 +122,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ScanQr
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/QrService.cs
+    path: ../src/qrAPI.App/Services/Implementations/QrService.cs
     startLine: 35
   assemblies:
   - qrAPI.App

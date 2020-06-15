@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: BreedFaker
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/BreedFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/BreedFaker.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -28,9 +28,7 @@ items:
     content: 'public sealed class BreedFaker : AutoFaker<Breed>, IFakerTInternal, ILocaleAware, IRuleSet<Breed>'
     content.vb: >-
       Public NotInheritable Class BreedFaker
-
           Inherits AutoFaker(Of Breed)
-
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Breed)
   inheritance:
   - System.Object
@@ -120,7 +118,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/BreedFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/BreedFaker.cs
     startLine: 6
   assemblies:
   - qrAPI.App

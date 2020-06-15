@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: User
-    path: ../../QrApi/src/qrAPI.App/Domain/User.cs
+    path: ../src/qrAPI.App/Domain/User.cs
     startLine: 6
   assemblies:
   - qrAPI.App
@@ -30,7 +30,6 @@ items:
     content: 'public class User : DomainObject'
     content.vb: >-
       Public Class User
-
           Inherits DomainObject
   inheritance:
   - System.Object
@@ -67,7 +66,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Identity
-    path: ../../QrApi/src/qrAPI.App/Domain/User.cs
+    path: ../src/qrAPI.App/Domain/User.cs
     startLine: 8
   assemblies:
   - qrAPI.App
@@ -102,7 +101,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Pets
-    path: ../../QrApi/src/qrAPI.App/Domain/User.cs
+    path: ../src/qrAPI.App/Domain/User.cs
     startLine: 9
   assemblies:
   - qrAPI.App
@@ -137,7 +136,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: AddOwnedPet
-    path: ../../QrApi/src/qrAPI.App/Domain/User.cs
+    path: ../src/qrAPI.App/Domain/User.cs
     startLine: 11
   assemblies:
   - qrAPI.App

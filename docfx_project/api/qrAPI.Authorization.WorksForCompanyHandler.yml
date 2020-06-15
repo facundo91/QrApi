@@ -28,9 +28,7 @@ items:
     content: 'public class WorksForCompanyHandler : AuthorizationHandler<WorksForCompanyRequirement>, IAuthorizationHandler'
     content.vb: >-
       Public Class WorksForCompanyHandler
-
           Inherits AuthorizationHandler(Of WorksForCompanyRequirement)
-
           Implements IAuthorizationHandler
   inheritance:
   - System.Object

@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: LocationFaker
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/LocationFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/LocationFaker.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -28,9 +28,7 @@ items:
     content: 'public sealed class LocationFaker : AutoFaker<Location>, IFakerTInternal, ILocaleAware, IRuleSet<Location>'
     content.vb: >-
       Public NotInheritable Class LocationFaker
-
           Inherits AutoFaker(Of Location)
-
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Location)
   inheritance:
   - System.Object
@@ -120,7 +118,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/LocationFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/LocationFaker.cs
     startLine: 6
   assemblies:
   - qrAPI.App

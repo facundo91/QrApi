@@ -28,7 +28,6 @@ items:
     content: 'public class UpdatePetRequestExampleProvider : IExamplesProvider<UpdatePetRequest>'
     content.vb: >-
       Public Class UpdatePetRequestExampleProvider
-
           Implements IExamplesProvider(Of UpdatePetRequest)
   inheritance:
   - System.Object

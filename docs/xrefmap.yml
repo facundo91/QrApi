@@ -6353,12 +6353,12 @@ references:
   isSpec: "True"
   fullName: qrAPI.Startup.Configuration
   nameWithType: Startup.Configuration
-- uid: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
-  name: Configure(IApplicationBuilder, IApiVersionDescriptionProvider)
-  href: api/qrAPI.Startup.html#qrAPI_Startup_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiVersionDescriptionProvider_
-  commentId: M:qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
-  fullName: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
-  nameWithType: Startup.Configure(IApplicationBuilder, IApiVersionDescriptionProvider)
+- uid: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name: Configure(IApplicationBuilder, IApiVersionDescriptionProvider, IWebHostEnvironment)
+  href: api/qrAPI.Startup.html#qrAPI_Startup_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiVersionDescriptionProvider_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  commentId: M:qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  fullName: qrAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  nameWithType: Startup.Configure(IApplicationBuilder, IApiVersionDescriptionProvider, IWebHostEnvironment)
 - uid: qrAPI.Startup.Configure*
   name: Configure
   href: api/qrAPI.Startup.html#qrAPI_Startup_Configure_

@@ -28,9 +28,7 @@ items:
     content: 'public class DomainToResponseProfile : Profile, IProfileExpression, IProfileConfiguration'
     content.vb: >-
       Public Class DomainToResponseProfile
-
           Inherits Profile
-
           Implements IProfileExpression, IProfileConfiguration
   inheritance:
   - System.Object

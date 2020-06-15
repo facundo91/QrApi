@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: QrValidator
-    path: ../../QrApi/src/qrAPI.App/Domain/Validators/QrValidator.cs
+    path: ../src/qrAPI.App/Domain/Validators/QrValidator.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -28,9 +28,7 @@ items:
     content: 'public class QrValidator : AbstractValidator<Qr>, IValidator<Qr>, IValidator, IEnumerable<IValidationRule>, IEnumerable'
     content.vb: >-
       Public Class QrValidator
-
           Inherits AbstractValidator(Of Qr)
-
           Implements IValidator(Of Qr), IValidator, IEnumerable(Of IValidationRule), IEnumerable
   inheritance:
   - System.Object
@@ -96,7 +94,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Validators/QrValidator.cs
+    path: ../src/qrAPI.App/Domain/Validators/QrValidator.cs
     startLine: 6
   assemblies:
   - qrAPI.App

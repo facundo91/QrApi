@@ -1,0 +1,7504 @@
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Validations\CommonValidations.cs
+FN:8,System.Void qrAPI.App.Validations.CommonValidations::ValidateId(System.Guid)
+FNDA:11,System.Void qrAPI.App.Validations.CommonValidations::ValidateId(System.Guid)
+DA:9,11
+DA:10,11
+DA:12,11
+LF:3
+LH:3
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Services\Implementations\AbstractGenericService.cs
+FN:39,System.Threading.Tasks.Task`1<TDomainObject> qrAPI.App.Services.Implementations.AbstractGenericService`2::GetByIdAsync(System.Guid)
+FNDA:9,System.Threading.Tasks.Task`1<TDomainObject> qrAPI.App.Services.Implementations.AbstractGenericService`2::GetByIdAsync(System.Guid)
+DA:40,9
+DA:41,18
+DA:42,18
+DA:43,18
+DA:44,18
+FN:49,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.App.Services.Implementations.AbstractGenericService`2::UpdateAsync(System.Guid,TDomainObject)
+FNDA:1,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.App.Services.Implementations.AbstractGenericService`2::UpdateAsync(System.Guid,TDomainObject)
+DA:50,1
+DA:51,2
+DA:52,2
+DA:53,2
+DA:54,2
+DA:55,2
+DA:56,2
+FN:58,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.App.Services.Implementations.AbstractGenericService`2::DeleteAsync(System.Guid)
+FNDA:1,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.App.Services.Implementations.AbstractGenericService`2::DeleteAsync(System.Guid)
+DA:59,1
+DA:60,2
+DA:61,2
+DA:62,2
+DA:63,2
+FN:23,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2::.ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository`1<TDto>,Microsoft.Extensions.Logging.ILogger`1<qrAPI.App.Services.Implementations.AbstractGenericService`2<TDomainObject,TDto>>,FluentValidation.AbstractValidator`1<TDomainObject>)
+FNDA:43,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2::.ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository`1<TDto>,Microsoft.Extensions.Logging.ILogger`1<qrAPI.App.Services.Implementations.AbstractGenericService`2<TDomainObject,TDto>>,FluentValidation.AbstractValidator`1<TDomainObject>)
+DA:24,43
+DA:25,43
+DA:26,43
+DA:27,43
+DA:28,43
+DA:29,43
+DA:30,43
+DA:31,43
+DA:32,43
+DA:33,43
+DA:34,43
+FN:36,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<GetAllAsync>d__5::MoveNext()
+FNDA:5,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<GetAllAsync>d__5::MoveNext()
+DA:37,5
+FN:46,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<CreateAsync>d__7::MoveNext()
+FNDA:14,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<CreateAsync>d__7::MoveNext()
+DA:47,14
+LF:30
+LH:30
+BRF:0
+BRH:0
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Services\Implementations\AbstractGenericService.Exceptions.cs
+FN:14,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<TryCatch>d__12::MoveNext()
+FNDA:2,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<TryCatch>d__12::MoveNext()
+DA:15,2
+DA:17,2
+DA:18,2
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,2
+FN:52,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<TryCatch>d__13::MoveNext()
+FNDA:9,System.Void qrAPI.App.Services.Implementations.AbstractGenericService`2/<TryCatch>d__13::MoveNext()
+DA:53,9
+DA:55,9
+DA:56,9
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,9
+LF:48
+LH:8
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Services\Implementations\IdentityService.cs
+FN:134,System.Security.Claims.ClaimsPrincipal qrAPI.App.Services.Implementations.IdentityService::GetPrincipalFromToken(System.String)
+FNDA:0,System.Security.Claims.ClaimsPrincipal qrAPI.App.Services.Implementations.IdentityService::GetPrincipalFromToken(System.String)
+DA:135,0
+DA:136,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:149,0
+BRDA:143,45,0,0
+BRDA:143,45,1,0
+FN:157,System.Boolean qrAPI.App.Services.Implementations.IdentityService::IsJwtWithValidSecurityAlgorithm(Microsoft.IdentityModel.Tokens.SecurityToken)
+FNDA:0,System.Boolean qrAPI.App.Services.Implementations.IdentityService::IsJwtWithValidSecurityAlgorithm(Microsoft.IdentityModel.Tokens.SecurityToken)
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+BRDA:159,9,0,0
+BRDA:159,9,1,0
+FN:26,System.Void qrAPI.App.Services.Implementations.IdentityService::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,qrAPI.App.Options.JwtOptions,Microsoft.IdentityModel.Tokens.TokenValidationParameters,qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository,Microsoft.AspNetCore.Identity.RoleManager`1<Microsoft.AspNetCore.Identity.IdentityRole>)
+FNDA:58,System.Void qrAPI.App.Services.Implementations.IdentityService::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,qrAPI.App.Options.JwtOptions,Microsoft.IdentityModel.Tokens.TokenValidationParameters,qrAPI.DAL.Daos.Interfaces.IRefreshTokenRepository,Microsoft.AspNetCore.Identity.RoleManager`1<Microsoft.AspNetCore.Identity.IdentityRole>)
+DA:27,58
+DA:28,58
+DA:29,58
+DA:30,58
+DA:31,58
+DA:32,58
+DA:33,58
+DA:34,58
+DA:35,58
+DA:36,58
+DA:37,58
+DA:38,58
+FN:62,System.String qrAPI.App.Services.Implementations.IdentityService/<>c::<RegisterAsync>b__6_0(Microsoft.AspNetCore.Identity.IdentityError)
+FNDA:0,System.String qrAPI.App.Services.Implementations.IdentityService/<>c::<RegisterAsync>b__6_0(Microsoft.AspNetCore.Identity.IdentityError)
+DA:63,0
+FN:97,System.Boolean qrAPI.App.Services.Implementations.IdentityService/<>c::<RefreshTokenAsync>b__8_0(System.Security.Claims.Claim)
+FNDA:0,System.Boolean qrAPI.App.Services.Implementations.IdentityService/<>c::<RefreshTokenAsync>b__8_0(System.Security.Claims.Claim)
+DA:98,0
+FN:105,System.Boolean qrAPI.App.Services.Implementations.IdentityService/<>c::<RefreshTokenAsync>b__8_1(System.Security.Claims.Claim)
+FNDA:0,System.Boolean qrAPI.App.Services.Implementations.IdentityService/<>c::<RefreshTokenAsync>b__8_1(System.Security.Claims.Claim)
+DA:106,0
+FN:129,System.Boolean qrAPI.App.Services.Implementations.IdentityService/<>c::<RefreshTokenAsync>b__8_2(System.Security.Claims.Claim)
+FNDA:0,System.Boolean qrAPI.App.Services.Implementations.IdentityService/<>c::<RefreshTokenAsync>b__8_2(System.Security.Claims.Claim)
+DA:130,0
+FN:40,System.Void qrAPI.App.Services.Implementations.IdentityService/<RegisterAsync>d__6::MoveNext()
+FNDA:15,System.Void qrAPI.App.Services.Implementations.IdentityService/<RegisterAsync>d__6::MoveNext()
+DA:41,15
+DA:42,15
+DA:44,15
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,15
+DA:51,15
+DA:52,15
+DA:53,15
+DA:54,15
+DA:55,15
+DA:56,15
+DA:58,15
+DA:60,15
+DA:61,0
+DA:62,0
+DA:64,0
+DA:66,15
+DA:67,15
+BRDA:44,189,0,0
+BRDA:44,189,1,15
+BRDA:60,463,0,0
+BRDA:60,463,1,15
+FN:69,System.Void qrAPI.App.Services.Implementations.IdentityService/<LoginAsync>d__7::MoveNext()
+FNDA:0,System.Void qrAPI.App.Services.Implementations.IdentityService/<LoginAsync>d__7::MoveNext()
+DA:70,0
+DA:71,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:87,0
+DA:88,0
+BRDA:73,189,0,0
+BRDA:73,189,1,0
+BRDA:81,379,0,0
+BRDA:81,379,1,0
+FN:90,System.Void qrAPI.App.Services.Implementations.IdentityService/<RefreshTokenAsync>d__8::MoveNext()
+FNDA:0,System.Void qrAPI.App.Services.Implementations.IdentityService/<RefreshTokenAsync>d__8::MoveNext()
+DA:91,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:97,0
+DA:100,0
+DA:101,0
+DA:103,0
+DA:104,0
+DA:108,0
+DA:112,0
+DA:113,0
+DA:115,0
+DA:116,0
+DA:118,0
+DA:119,0
+DA:121,0
+DA:122,0
+DA:124,0
+DA:125,0
+DA:127,0
+DA:128,0
+DA:131,0
+DA:132,0
+BRDA:94,86,0,0
+BRDA:94,86,1,0
+BRDA:103,243,0,0
+BRDA:103,243,1,0
+BRDA:112,490,0,0
+BRDA:112,490,1,0
+BRDA:115,551,0,0
+BRDA:115,551,1,0
+BRDA:118,602,0,0
+BRDA:118,602,1,0
+BRDA:121,653,0,0
+BRDA:121,653,1,0
+BRDA:124,715,0,0
+BRDA:124,715,1,0
+FN:151,System.Void qrAPI.App.Services.Implementations.IdentityService/<GetPersonAsync>d__10::MoveNext()
+FNDA:9,System.Void qrAPI.App.Services.Implementations.IdentityService/<GetPersonAsync>d__10::MoveNext()
+DA:152,9
+DA:153,9
+DA:154,9
+DA:155,9
+FN:164,System.Void qrAPI.App.Services.Implementations.IdentityService/<GenerateAuthenticationResultForUserAsync>d__12::MoveNext()
+FNDA:15,System.Void qrAPI.App.Services.Implementations.IdentityService/<GenerateAuthenticationResultForUserAsync>d__12::MoveNext()
+DA:165,15
+DA:166,15
+DA:167,15
+DA:169,15
+DA:170,15
+DA:171,15
+DA:172,15
+DA:173,15
+DA:174,15
+DA:175,15
+DA:177,15
+DA:178,15
+DA:180,15
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:197,15
+DA:198,15
+DA:199,15
+DA:200,15
+DA:201,15
+DA:202,15
+DA:203,15
+DA:205,15
+DA:207,15
+DA:208,15
+DA:209,15
+DA:210,15
+DA:211,15
+DA:212,15
+DA:213,15
+DA:215,15
+DA:217,15
+DA:218,15
+DA:219,15
+DA:220,15
+DA:221,15
+DA:222,15
+DA:223,15
+BRDA:181,1086,1,0
+BRDA:185,770,1,0
+BRDA:188,1017,1,0
+BRDA:190,976,1,0
+BRDA:190,976,0,0
+BRDA:188,1017,0,0
+BRDA:185,770,0,15
+BRDA:181,1086,0,15
+LF:145
+LH:66
+BRF:34
+BRH:4
+FNF:12
+FNH:4
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Services\Implementations\PetService.cs
+FN:29,System.Void qrAPI.App.Services.Implementations.PetService::.ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger`1<qrAPI.App.Services.Implementations.PetService>,qrAPI.App.Domain.Validators.PetValidator)
+FNDA:33,System.Void qrAPI.App.Services.Implementations.PetService::.ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger`1<qrAPI.App.Services.Implementations.PetService>,qrAPI.App.Domain.Validators.PetValidator)
+DA:30,33
+DA:31,33
+DA:32,33
+DA:33,33
+DA:34,33
+DA:35,33
+FN:37,System.Void qrAPI.App.Services.Implementations.PetService/<GetAllAsync>d__4::MoveNext()
+FNDA:5,System.Void qrAPI.App.Services.Implementations.PetService/<GetAllAsync>d__4::MoveNext()
+DA:38,5
+DA:39,5
+DA:40,5
+DA:41,5
+FN:43,System.Void qrAPI.App.Services.Implementations.PetService/<CreateAsync>d__5::MoveNext()
+FNDA:9,System.Void qrAPI.App.Services.Implementations.PetService/<CreateAsync>d__5::MoveNext()
+DA:44,9
+DA:45,9
+DA:46,9
+DA:47,9
+DA:48,9
+DA:49,9
+FN:55,System.Boolean qrAPI.App.Services.Implementations.PetService/<>c__DisplayClass6_0::<GetByIdAsync>b__0(qrAPI.App.Domain.User)
+FNDA:14,System.Boolean qrAPI.App.Services.Implementations.PetService/<>c__DisplayClass6_0::<GetByIdAsync>b__0(qrAPI.App.Domain.User)
+DA:56,14
+BRDA:56,241,0,3
+BRDA:56,241,1,4
+FN:59,System.Void qrAPI.App.Services.Implementations.PetService/<DeleteAsync>d__7::MoveNext()
+FNDA:3,System.Void qrAPI.App.Services.Implementations.PetService/<DeleteAsync>d__7::MoveNext()
+DA:60,3
+DA:61,3
+DA:62,3
+DA:63,3
+BRDA:62,190,0,1
+BRDA:62,190,1,3
+FN:65,System.Void qrAPI.App.Services.Implementations.PetService/<UpdateAsync>d__8::MoveNext()
+FNDA:2,System.Void qrAPI.App.Services.Implementations.PetService/<UpdateAsync>d__8::MoveNext()
+DA:66,2
+DA:67,2
+DA:68,2
+DA:69,2
+BRDA:68,190,0,1
+BRDA:68,190,1,2
+LF:25
+LH:25
+BRF:6
+BRH:6
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Services\Implementations\QrService.cs
+FN:28,System.Void qrAPI.App.Services.Implementations.QrService::.ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository`1<qrAPI.DAL.Dtos.QrDto>,qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService`1<qrAPI.App.Domain.Pet>,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger`1<qrAPI.App.Services.Implementations.QrService>,qrAPI.App.Domain.Validators.QrValidator)
+FNDA:10,System.Void qrAPI.App.Services.Implementations.QrService::.ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository`1<qrAPI.DAL.Dtos.QrDto>,qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService`1<qrAPI.App.Domain.Pet>,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger`1<qrAPI.App.Services.Implementations.QrService>,qrAPI.App.Domain.Validators.QrValidator)
+DA:29,10
+DA:30,10
+DA:31,10
+DA:32,10
+DA:33,10
+DA:34,10
+FN:36,System.Void qrAPI.App.Services.Implementations.QrService/<ScanQr>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.App.Services.Implementations.QrService/<ScanQr>d__4::MoveNext()
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+BRDA:40,763,1,0
+BRDA:40,763,0,0
+LF:17
+LH:6
+BRF:2
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Options\JwtOptions.cs
+FN:6,System.String qrAPI.App.Options.JwtOptions::get_Secret()
+FNDA:72,System.String qrAPI.App.Options.JwtOptions::get_Secret()
+DA:7,72
+FN:7,System.TimeSpan qrAPI.App.Options.JwtOptions::get_TokenLifetime()
+FNDA:53,System.TimeSpan qrAPI.App.Options.JwtOptions::get_TokenLifetime()
+DA:8,53
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Breed.cs
+FN:4,System.String qrAPI.App.Domain.Breed::get_Name()
+FNDA:2407,System.String qrAPI.App.Domain.Breed::get_Name()
+DA:5,2407
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\DomainObject.cs
+FN:6,System.Guid qrAPI.App.Domain.DomainObject::get_Id()
+FNDA:11686,System.Guid qrAPI.App.Domain.DomainObject::get_Id()
+DA:7,11686
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Location.cs
+FN:4,System.Double qrAPI.App.Domain.Location::get_Latitude()
+FNDA:0,System.Double qrAPI.App.Domain.Location::get_Latitude()
+DA:5,0
+FN:5,System.Double qrAPI.App.Domain.Location::get_Longitude()
+FNDA:0,System.Double qrAPI.App.Domain.Location::get_Longitude()
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Pet.cs
+FN:12,qrAPI.App.Domain.Qr qrAPI.App.Domain.Pet::get_Qr()
+FNDA:0,qrAPI.App.Domain.Qr qrAPI.App.Domain.Pet::get_Qr()
+DA:13,0
+FN:13,System.String qrAPI.App.Domain.Pet::get_Name()
+FNDA:1968,System.String qrAPI.App.Domain.Pet::get_Name()
+DA:14,1968
+FN:14,System.DateTime qrAPI.App.Domain.Pet::get_Birthdate()
+FNDA:1968,System.DateTime qrAPI.App.Domain.Pet::get_Birthdate()
+DA:15,1968
+FN:15,qrAPI.App.Domain.Gender qrAPI.App.Domain.Pet::get_Gender()
+FNDA:2419,qrAPI.App.Domain.Gender qrAPI.App.Domain.Pet::get_Gender()
+DA:16,2419
+FN:16,System.Collections.Generic.List`1<qrAPI.App.Domain.User> qrAPI.App.Domain.Pet::get_Owners()
+FNDA:4395,System.Collections.Generic.List`1<qrAPI.App.Domain.User> qrAPI.App.Domain.Pet::get_Owners()
+DA:17,4395
+FN:17,System.Uri qrAPI.App.Domain.Pet::get_PictureUrl()
+FNDA:1961,System.Uri qrAPI.App.Domain.Pet::get_PictureUrl()
+DA:18,1961
+FN:18,qrAPI.App.Domain.Breed qrAPI.App.Domain.Pet::get_Breed()
+FNDA:2446,qrAPI.App.Domain.Breed qrAPI.App.Domain.Pet::get_Breed()
+DA:19,2446
+FN:21,System.Void qrAPI.App.Domain.Pet::AddNewOwner(qrAPI.App.Domain.User,System.Boolean)
+FNDA:9,System.Void qrAPI.App.Domain.Pet::AddNewOwner(qrAPI.App.Domain.User,System.Boolean)
+DA:22,9
+DA:23,0
+DA:24,9
+DA:25,0
+DA:26,9
+BRDA:23,39,1,9
+BRDA:25,64,0,0
+BRDA:23,39,0,9
+BRDA:25,64,1,9
+LF:12
+LH:9
+BRF:4
+BRH:3
+FNF:8
+FNH:7
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Qr.cs
+FN:4,System.String qrAPI.App.Domain.Qr::get_Name()
+FNDA:1000,System.String qrAPI.App.Domain.Qr::get_Name()
+DA:5,1000
+FN:5,qrAPI.App.Domain.Pet qrAPI.App.Domain.Qr::get_Pet()
+FNDA:1020,qrAPI.App.Domain.Pet qrAPI.App.Domain.Qr::get_Pet()
+DA:6,1020
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Scan.cs
+FN:6,qrAPI.App.Domain.Qr qrAPI.App.Domain.Scan::get_Qr()
+FNDA:0,qrAPI.App.Domain.Qr qrAPI.App.Domain.Scan::get_Qr()
+DA:7,0
+FN:7,System.DateTime qrAPI.App.Domain.Scan::get_DateTime()
+FNDA:0,System.DateTime qrAPI.App.Domain.Scan::get_DateTime()
+DA:8,0
+FN:8,qrAPI.App.Domain.Location qrAPI.App.Domain.Scan::get_Location()
+FNDA:0,qrAPI.App.Domain.Location qrAPI.App.Domain.Scan::get_Location()
+DA:9,0
+FN:9,System.Boolean qrAPI.App.Domain.Scan::get_Notified()
+FNDA:0,System.Boolean qrAPI.App.Domain.Scan::get_Notified()
+DA:10,0
+FN:10,System.Boolean qrAPI.App.Domain.Scan::get_Read()
+FNDA:0,System.Boolean qrAPI.App.Domain.Scan::get_Read()
+DA:11,0
+FN:11,System.Uri qrAPI.App.Domain.Scan::get_PictureUrl()
+FNDA:0,System.Uri qrAPI.App.Domain.Scan::get_PictureUrl()
+DA:12,0
+FN:12,System.String qrAPI.App.Domain.Scan::get_Message()
+FNDA:0,System.String qrAPI.App.Domain.Scan::get_Message()
+DA:13,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\User.cs
+FN:8,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.App.Domain.User::get_Identity()
+FNDA:5891,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.App.Domain.User::get_Identity()
+DA:9,5891
+FN:9,System.Collections.Generic.List`1<qrAPI.App.Domain.Pet> qrAPI.App.Domain.User::get_Pets()
+FNDA:6333,System.Collections.Generic.List`1<qrAPI.App.Domain.Pet> qrAPI.App.Domain.User::get_Pets()
+DA:10,6333
+FN:12,System.Void qrAPI.App.Domain.User::AddOwnedPet(qrAPI.App.Domain.Pet,System.Boolean)
+FNDA:9,System.Void qrAPI.App.Domain.User::AddOwnedPet(qrAPI.App.Domain.Pet,System.Boolean)
+DA:13,9
+DA:14,0
+DA:15,9
+DA:16,18
+DA:17,9
+BRDA:14,44,1,9
+BRDA:16,69,0,9
+BRDA:14,44,0,9
+BRDA:16,69,1,9
+LF:7
+LH:6
+BRF:4
+BRH:4
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Validators\PetValidator.cs
+FN:7,System.Void qrAPI.App.Domain.Validators.PetValidator::.ctor()
+FNDA:33,System.Void qrAPI.App.Domain.Validators.PetValidator::.ctor()
+DA:8,33
+DA:9,33
+DA:10,33
+DA:11,33
+DA:12,33
+DA:13,33
+DA:14,33
+DA:15,33
+DA:16,33
+DA:17,33
+DA:18,33
+DA:19,33
+DA:20,33
+DA:21,33
+DA:22,33
+LF:15
+LH:15
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Validators\QrValidator.cs
+FN:6,System.Void qrAPI.App.Domain.Validators.QrValidator::.ctor()
+FNDA:10,System.Void qrAPI.App.Domain.Validators.QrValidator::.ctor()
+DA:7,10
+DA:8,10
+DA:9,10
+DA:10,10
+DA:11,10
+DA:12,10
+LF:6
+LH:6
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Fakers\BreedFaker.cs
+FN:6,System.Void qrAPI.App.Domain.Fakers.BreedFaker::.ctor()
+FNDA:0,System.Void qrAPI.App.Domain.Fakers.BreedFaker::.ctor()
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Fakers\LocationFaker.cs
+FN:6,System.Void qrAPI.App.Domain.Fakers.LocationFaker::.ctor()
+FNDA:0,System.Void qrAPI.App.Domain.Fakers.LocationFaker::.ctor()
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+LF:5
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Fakers\PetFaker.cs
+FN:9,System.Void qrAPI.App.Domain.Fakers.PetFaker::.ctor()
+FNDA:2,System.Void qrAPI.App.Domain.Fakers.PetFaker::.ctor()
+DA:10,2
+DA:11,2
+DA:12,4
+DA:13,4
+DA:14,4
+DA:15,4
+DA:16,4
+DA:17,2
+FN:18,System.Void qrAPI.App.Domain.Fakers.PetFaker::.ctor(qrAPI.App.Domain.Qr)
+FNDA:2,System.Void qrAPI.App.Domain.Fakers.PetFaker::.ctor(qrAPI.App.Domain.Qr)
+DA:19,2
+DA:20,2
+DA:21,4
+DA:22,4
+DA:23,4
+DA:24,2
+DA:25,4
+DA:26,2
+FN:27,System.Void qrAPI.App.Domain.Fakers.PetFaker::.ctor(qrAPI.App.Domain.User)
+FNDA:1,System.Void qrAPI.App.Domain.Fakers.PetFaker::.ctor(qrAPI.App.Domain.User)
+DA:28,1
+DA:29,1
+DA:30,2
+DA:31,2
+DA:32,2
+DA:33,2
+DA:34,2
+DA:35,1
+LF:24
+LH:24
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Fakers\QrFaker.cs
+FN:6,System.Void qrAPI.App.Domain.Fakers.QrFaker::.ctor()
+FNDA:2,System.Void qrAPI.App.Domain.Fakers.QrFaker::.ctor()
+DA:7,2
+DA:8,2
+DA:9,4
+DA:10,4
+DA:11,2
+FN:12,System.Void qrAPI.App.Domain.Fakers.QrFaker::.ctor(qrAPI.App.Domain.Pet)
+FNDA:3,System.Void qrAPI.App.Domain.Fakers.QrFaker::.ctor(qrAPI.App.Domain.Pet)
+DA:13,3
+DA:14,3
+DA:15,6
+DA:16,3
+DA:17,3
+LF:10
+LH:10
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.App\Domain\Fakers\UserFaker.cs
+FN:8,System.Void qrAPI.App.Domain.Fakers.UserFaker::.ctor()
+FNDA:1,System.Void qrAPI.App.Domain.Fakers.UserFaker::.ctor()
+DA:9,1
+DA:10,1
+DA:11,2
+DA:12,1
+FN:13,System.Void qrAPI.App.Domain.Fakers.UserFaker::.ctor(qrAPI.App.Domain.Pet)
+FNDA:4,System.Void qrAPI.App.Domain.Fakers.UserFaker::.ctor(qrAPI.App.Domain.Pet)
+DA:14,4
+DA:15,4
+DA:16,12
+DA:17,4
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\ApiVersions.cs
+FN:6,System.Void qrAPI.Contracts.ApiVersions::.cctor()
+FNDA:1,System.Void qrAPI.Contracts.ApiVersions::.cctor()
+DA:7,1
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Validators\Update\UpdatePetRequestValidator.cs
+FN:8,System.Void qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator::.ctor()
+FNDA:2,System.Void qrAPI.Contracts.v1.Validators.Update.UpdatePetRequestValidator::.ctor()
+DA:9,2
+DA:10,2
+DA:11,2
+DA:12,2
+DA:13,2
+DA:14,2
+DA:15,2
+DA:16,2
+DA:17,2
+DA:18,2
+DA:19,2
+DA:20,2
+DA:21,2
+DA:22,2
+DA:23,2
+LF:15
+LH:15
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Validators\Update\UpdateQrRequestValidator.cs
+FN:7,System.Void qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator::.ctor()
+FNDA:0,System.Void qrAPI.Contracts.v1.Validators.Update.UpdateQrRequestValidator::.ctor()
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Validators\Create\CreateQrRequestValidator.cs
+FN:7,System.Void qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator::.ctor()
+FNDA:5,System.Void qrAPI.Contracts.v1.Validators.Create.CreateQrRequestValidator::.ctor()
+DA:8,5
+DA:9,5
+DA:10,5
+DA:11,5
+DA:12,5
+DA:13,5
+DA:14,5
+DA:15,5
+DA:16,5
+LF:9
+LH:9
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\AuthFailedResponse.cs
+FN:6,System.Collections.Generic.IEnumerable`1<System.String> qrAPI.Contracts.v1.Responses.AuthFailedResponse::get_Errors()
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.String> qrAPI.Contracts.v1.Responses.AuthFailedResponse::get_Errors()
+DA:7,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\AuthSuccessResponse.cs
+FN:4,System.String qrAPI.Contracts.v1.Responses.AuthSuccessResponse::get_Token()
+FNDA:60,System.String qrAPI.Contracts.v1.Responses.AuthSuccessResponse::get_Token()
+DA:5,60
+FN:6,System.String qrAPI.Contracts.v1.Responses.AuthSuccessResponse::get_RefreshToken()
+FNDA:45,System.String qrAPI.Contracts.v1.Responses.AuthSuccessResponse::get_RefreshToken()
+DA:7,45
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\ErrorModel.cs
+FN:4,System.String qrAPI.Contracts.v1.Responses.ErrorModel::get_FieldName()
+FNDA:0,System.String qrAPI.Contracts.v1.Responses.ErrorModel::get_FieldName()
+DA:5,0
+FN:6,System.String qrAPI.Contracts.v1.Responses.ErrorModel::get_Message()
+FNDA:0,System.String qrAPI.Contracts.v1.Responses.ErrorModel::get_Message()
+DA:7,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\ErrorResponse.cs
+FN:15,System.Collections.Generic.List`1<qrAPI.Contracts.v1.Responses.ErrorModel> qrAPI.Contracts.v1.Responses.ErrorResponse::get_Errors()
+FNDA:0,System.Collections.Generic.List`1<qrAPI.Contracts.v1.Responses.ErrorModel> qrAPI.Contracts.v1.Responses.ErrorResponse::get_Errors()
+DA:16,0
+FN:6,System.Void qrAPI.Contracts.v1.Responses.ErrorResponse::.ctor()
+FNDA:0,System.Void qrAPI.Contracts.v1.Responses.ErrorResponse::.ctor()
+DA:7,0
+DA:8,0
+DA:9,0
+FN:10,System.Void qrAPI.Contracts.v1.Responses.ErrorResponse::.ctor(qrAPI.Contracts.v1.Responses.ErrorModel)
+FNDA:0,System.Void qrAPI.Contracts.v1.Responses.ErrorResponse::.ctor(qrAPI.Contracts.v1.Responses.ErrorModel)
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\PagedResponse.cs
+FN:13,System.Collections.Generic.IEnumerable`1<T> qrAPI.Contracts.v1.Responses.PagedResponse`1::get_Data()
+FNDA:0,System.Collections.Generic.IEnumerable`1<T> qrAPI.Contracts.v1.Responses.PagedResponse`1::get_Data()
+DA:14,0
+FN:15,System.Nullable`1<System.Int32> qrAPI.Contracts.v1.Responses.PagedResponse`1::get_PageNumber()
+FNDA:0,System.Nullable`1<System.Int32> qrAPI.Contracts.v1.Responses.PagedResponse`1::get_PageNumber()
+DA:16,0
+FN:17,System.Nullable`1<System.Int32> qrAPI.Contracts.v1.Responses.PagedResponse`1::get_PageSize()
+FNDA:0,System.Nullable`1<System.Int32> qrAPI.Contracts.v1.Responses.PagedResponse`1::get_PageSize()
+DA:18,0
+FN:19,System.String qrAPI.Contracts.v1.Responses.PagedResponse`1::get_NextPage()
+FNDA:0,System.String qrAPI.Contracts.v1.Responses.PagedResponse`1::get_NextPage()
+DA:20,0
+FN:21,System.String qrAPI.Contracts.v1.Responses.PagedResponse`1::get_PreviousPage()
+FNDA:0,System.String qrAPI.Contracts.v1.Responses.PagedResponse`1::get_PreviousPage()
+DA:22,0
+FN:6,System.Void qrAPI.Contracts.v1.Responses.PagedResponse`1::.ctor()
+FNDA:0,System.Void qrAPI.Contracts.v1.Responses.PagedResponse`1::.ctor()
+DA:7,0
+FN:8,System.Void qrAPI.Contracts.v1.Responses.PagedResponse`1::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+FNDA:0,System.Void qrAPI.Contracts.v1.Responses.PagedResponse`1::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+LF:10
+LH:0
+BRF:0
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\PetResponse.cs
+FN:10,System.Guid qrAPI.Contracts.v1.Responses.PetResponse::get_Id()
+FNDA:60,System.Guid qrAPI.Contracts.v1.Responses.PetResponse::get_Id()
+DA:11,60
+FN:11,System.String qrAPI.Contracts.v1.Responses.PetResponse::get_Name()
+FNDA:49,System.String qrAPI.Contracts.v1.Responses.PetResponse::get_Name()
+DA:12,49
+FN:12,System.DateTime qrAPI.Contracts.v1.Responses.PetResponse::get_Birthdate()
+FNDA:49,System.DateTime qrAPI.Contracts.v1.Responses.PetResponse::get_Birthdate()
+DA:13,49
+FN:14,qrAPI.Contracts.v1.Requests.Gender qrAPI.Contracts.v1.Responses.PetResponse::get_Gender()
+FNDA:46,qrAPI.Contracts.v1.Requests.Gender qrAPI.Contracts.v1.Responses.PetResponse::get_Gender()
+DA:15,46
+FN:15,System.String qrAPI.Contracts.v1.Responses.PetResponse::get_Breed()
+FNDA:41,System.String qrAPI.Contracts.v1.Responses.PetResponse::get_Breed()
+DA:16,41
+FN:16,System.Collections.Generic.IEnumerable`1<qrAPI.Contracts.v1.Responses.UserResponse> qrAPI.Contracts.v1.Responses.PetResponse::get_Owners()
+FNDA:72,System.Collections.Generic.IEnumerable`1<qrAPI.Contracts.v1.Responses.UserResponse> qrAPI.Contracts.v1.Responses.PetResponse::get_Owners()
+DA:17,72
+FN:18,System.String qrAPI.Contracts.v1.Responses.PetResponse::get_PictureUrl()
+FNDA:49,System.String qrAPI.Contracts.v1.Responses.PetResponse::get_PictureUrl()
+DA:19,49
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:7
+FNH:7
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\QrResponse.cs
+FN:9,System.Guid qrAPI.Contracts.v1.Responses.QrResponse::get_Id()
+FNDA:33,System.Guid qrAPI.Contracts.v1.Responses.QrResponse::get_Id()
+DA:10,33
+FN:10,System.String qrAPI.Contracts.v1.Responses.QrResponse::get_Name()
+FNDA:33,System.String qrAPI.Contracts.v1.Responses.QrResponse::get_Name()
+DA:11,33
+FN:12,System.Guid qrAPI.Contracts.v1.Responses.QrResponse::get_PetId()
+FNDA:25,System.Guid qrAPI.Contracts.v1.Responses.QrResponse::get_PetId()
+DA:13,25
+FN:13,qrAPI.Contracts.v1.Responses.PetResponse qrAPI.Contracts.v1.Responses.QrResponse::get_Pet()
+FNDA:20,qrAPI.Contracts.v1.Responses.PetResponse qrAPI.Contracts.v1.Responses.QrResponse::get_Pet()
+DA:14,20
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\Response.cs
+FN:11,T qrAPI.Contracts.v1.Responses.Response`1::get_Data()
+FNDA:0,T qrAPI.Contracts.v1.Responses.Response`1::get_Data()
+DA:12,0
+FN:4,System.Void qrAPI.Contracts.v1.Responses.Response`1::.ctor()
+FNDA:0,System.Void qrAPI.Contracts.v1.Responses.Response`1::.ctor()
+DA:5,0
+FN:6,System.Void qrAPI.Contracts.v1.Responses.Response`1::.ctor(T)
+FNDA:0,System.Void qrAPI.Contracts.v1.Responses.Response`1::.ctor(T)
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Responses\UserResponse.cs
+FN:7,System.Guid qrAPI.Contracts.v1.Responses.UserResponse::get_Id()
+FNDA:50,System.Guid qrAPI.Contracts.v1.Responses.UserResponse::get_Id()
+DA:8,50
+FN:8,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.Contracts.v1.Responses.UserResponse::get_Identity()
+FNDA:56,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.Contracts.v1.Responses.UserResponse::get_Identity()
+DA:9,56
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\RefreshTokenRequest.cs
+FN:4,System.String qrAPI.Contracts.v1.Requests.RefreshTokenRequest::get_Token()
+FNDA:0,System.String qrAPI.Contracts.v1.Requests.RefreshTokenRequest::get_Token()
+DA:5,0
+FN:6,System.String qrAPI.Contracts.v1.Requests.RefreshTokenRequest::get_RefreshToken()
+FNDA:0,System.String qrAPI.Contracts.v1.Requests.RefreshTokenRequest::get_RefreshToken()
+DA:7,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\UserLoginRequest.cs
+FN:4,System.String qrAPI.Contracts.v1.Requests.UserLoginRequest::get_Email()
+FNDA:0,System.String qrAPI.Contracts.v1.Requests.UserLoginRequest::get_Email()
+DA:5,0
+FN:6,System.String qrAPI.Contracts.v1.Requests.UserLoginRequest::get_Password()
+FNDA:0,System.String qrAPI.Contracts.v1.Requests.UserLoginRequest::get_Password()
+DA:7,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\UserRegistrationRequest.cs
+FN:7,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_Email()
+FNDA:75,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_Email()
+DA:8,75
+FN:10,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_FirstName()
+FNDA:60,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_FirstName()
+DA:11,60
+FN:13,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_LastName()
+FNDA:60,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_LastName()
+DA:14,60
+FN:14,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_Password()
+FNDA:75,System.String qrAPI.Contracts.v1.Requests.UserRegistrationRequest::get_Password()
+DA:15,75
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\Update\UpdatePetRequest.cs
+FN:11,System.String qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Name()
+FNDA:23,System.String qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Name()
+DA:12,23
+FN:12,System.DateTime qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Birthdate()
+FNDA:23,System.DateTime qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Birthdate()
+DA:13,23
+FN:14,qrAPI.Contracts.v1.Requests.Gender qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Gender()
+FNDA:15,qrAPI.Contracts.v1.Requests.Gender qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Gender()
+DA:15,15
+FN:15,System.Guid[] qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Owners()
+FNDA:23,System.Guid[] qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Owners()
+DA:16,23
+FN:17,System.String qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_PictureUrl()
+FNDA:14,System.String qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_PictureUrl()
+DA:18,14
+FN:18,System.String qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Breed()
+FNDA:13,System.String qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest::get_Breed()
+DA:19,13
+LF:6
+LH:6
+BRF:0
+BRH:0
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\Update\UpdateQrRequest.cs
+FN:8,System.String qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest::get_Name()
+FNDA:3,System.String qrAPI.Contracts.v1.Requests.Update.UpdateQrRequest::get_Name()
+DA:9,3
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\Create\CreatePetRequest.cs
+FN:8,System.String qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Name()
+FNDA:53,System.String qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Name()
+DA:9,53
+FN:9,System.DateTime qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Birthdate()
+FNDA:53,System.DateTime qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Birthdate()
+DA:10,53
+FN:11,qrAPI.Contracts.v1.Requests.Gender qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Gender()
+FNDA:52,qrAPI.Contracts.v1.Requests.Gender qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Gender()
+DA:12,52
+FN:13,System.String qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_PictureUrl()
+FNDA:51,System.String qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_PictureUrl()
+DA:14,51
+FN:14,System.String qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Breed()
+FNDA:59,System.String qrAPI.Contracts.v1.Requests.Create.CreatePetRequest::get_Breed()
+DA:15,59
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Requests\Create\CreateQrRequest.cs
+FN:8,System.String qrAPI.Contracts.v1.Requests.Create.CreateQrRequest::get_Name()
+FNDA:50,System.String qrAPI.Contracts.v1.Requests.Create.CreateQrRequest::get_Name()
+DA:9,50
+FN:10,System.Guid qrAPI.Contracts.v1.Requests.Create.CreateQrRequest::get_PetId()
+FNDA:39,System.Guid qrAPI.Contracts.v1.Requests.Create.CreateQrRequest::get_PetId()
+DA:11,39
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Fakers\Responses\PetResponseFaker.cs
+FN:7,System.Void qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker::.ctor()
+FNDA:0,System.Void qrAPI.Contracts.v1.Fakers.Responses.PetResponseFaker::.ctor()
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Fakers\Requests\Update\UpdatePetRequestFaker.cs
+FN:8,System.Void qrAPI.Contracts.v1.Fakers.Requests.Update.UpdatePetRequestFaker::.ctor()
+FNDA:1,System.Void qrAPI.Contracts.v1.Fakers.Requests.Update.UpdatePetRequestFaker::.ctor()
+DA:9,1
+DA:10,1
+DA:11,2
+DA:12,2
+DA:13,2
+DA:14,2
+DA:15,1
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Fakers\Requests\Update\UpdateQrRequestFaker.cs
+FN:7,System.Void qrAPI.Contracts.v1.Fakers.Requests.Update.UpdateQrRequestFaker::.ctor()
+FNDA:1,System.Void qrAPI.Contracts.v1.Fakers.Requests.Update.UpdateQrRequestFaker::.ctor()
+DA:8,1
+DA:9,1
+DA:10,2
+DA:11,1
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Fakers\Requests\Create\CreatePetRequestFaker.cs
+FN:8,System.Void qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker::.ctor()
+FNDA:10,System.Void qrAPI.Contracts.v1.Fakers.Requests.Create.CreatePetRequestFaker::.ctor()
+DA:9,10
+DA:10,10
+DA:11,20
+DA:12,20
+DA:13,20
+DA:14,20
+DA:15,10
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\v1\Fakers\Requests\Create\CreateQrRequestFaker.cs
+FN:7,System.Void qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker::.ctor()
+FNDA:6,System.Void qrAPI.Contracts.v1.Fakers.Requests.Create.CreateQrRequestFaker::.ctor()
+DA:8,6
+DA:9,6
+DA:10,12
+DA:11,6
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\HealthChecks\HealthCheck.cs
+FN:4,System.String qrAPI.Contracts.HealthChecks.HealthCheck::get_Status()
+FNDA:0,System.String qrAPI.Contracts.HealthChecks.HealthCheck::get_Status()
+DA:5,0
+FN:6,System.String qrAPI.Contracts.HealthChecks.HealthCheck::get_Component()
+FNDA:0,System.String qrAPI.Contracts.HealthChecks.HealthCheck::get_Component()
+DA:7,0
+FN:8,System.String qrAPI.Contracts.HealthChecks.HealthCheck::get_Description()
+FNDA:0,System.String qrAPI.Contracts.HealthChecks.HealthCheck::get_Description()
+DA:9,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Contracts\HealthChecks\HealthCheckResponse.cs
+FN:7,System.String qrAPI.Contracts.HealthChecks.HealthCheckResponse::get_Status()
+FNDA:0,System.String qrAPI.Contracts.HealthChecks.HealthCheckResponse::get_Status()
+DA:8,0
+FN:9,System.Collections.Generic.IEnumerable`1<qrAPI.Contracts.HealthChecks.HealthCheck> qrAPI.Contracts.HealthChecks.HealthCheckResponse::get_Checks()
+FNDA:0,System.Collections.Generic.IEnumerable`1<qrAPI.Contracts.HealthChecks.HealthCheck> qrAPI.Contracts.HealthChecks.HealthCheckResponse::get_Checks()
+DA:10,0
+FN:11,System.TimeSpan qrAPI.Contracts.HealthChecks.HealthCheckResponse::get_Duration()
+FNDA:0,System.TimeSpan qrAPI.Contracts.HealthChecks.HealthCheckResponse::get_Duration()
+DA:12,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Options\MongoOptions.cs
+FN:4,System.String qrAPI.DAL.Options.MongoOptions::get_DefaultConnection()
+FNDA:0,System.String qrAPI.DAL.Options.MongoOptions::get_DefaultConnection()
+DA:5,0
+FN:5,System.String qrAPI.DAL.Options.MongoOptions::get_Database()
+FNDA:0,System.String qrAPI.DAL.Options.MongoOptions::get_Database()
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\AuthenticationResult.cs
+FN:6,System.String qrAPI.DAL.Dtos.AuthenticationResult::get_Token()
+FNDA:30,System.String qrAPI.DAL.Dtos.AuthenticationResult::get_Token()
+DA:7,30
+FN:8,System.String qrAPI.DAL.Dtos.AuthenticationResult::get_RefreshToken()
+FNDA:30,System.String qrAPI.DAL.Dtos.AuthenticationResult::get_RefreshToken()
+DA:9,30
+FN:10,System.Boolean qrAPI.DAL.Dtos.AuthenticationResult::get_Success()
+FNDA:30,System.Boolean qrAPI.DAL.Dtos.AuthenticationResult::get_Success()
+DA:11,30
+FN:12,System.Collections.Generic.IEnumerable`1<System.String> qrAPI.DAL.Dtos.AuthenticationResult::get_Errors()
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.String> qrAPI.DAL.Dtos.AuthenticationResult::get_Errors()
+DA:13,0
+LF:4
+LH:3
+BRF:0
+BRH:0
+FNF:4
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\Dto.cs
+FN:12,System.Guid qrAPI.DAL.Dtos.Dto::get_Id()
+FNDA:1104,System.Guid qrAPI.DAL.Dtos.Dto::get_Id()
+DA:13,1104
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\PetDto.cs
+FN:10,System.String qrAPI.DAL.Dtos.PetDto::get_Name()
+FNDA:320,System.String qrAPI.DAL.Dtos.PetDto::get_Name()
+DA:11,320
+FN:12,System.DateTime qrAPI.DAL.Dtos.PetDto::get_Birthdate()
+FNDA:320,System.DateTime qrAPI.DAL.Dtos.PetDto::get_Birthdate()
+DA:13,320
+FN:13,qrAPI.DAL.Dtos.Gender qrAPI.DAL.Dtos.PetDto::get_Gender()
+FNDA:492,qrAPI.DAL.Dtos.Gender qrAPI.DAL.Dtos.PetDto::get_Gender()
+DA:14,492
+FN:14,System.String qrAPI.DAL.Dtos.PetDto::get_Breed()
+FNDA:320,System.String qrAPI.DAL.Dtos.PetDto::get_Breed()
+DA:15,320
+FN:15,System.Collections.Generic.IEnumerable`1<qrAPI.DAL.Dtos.UserPetDto> qrAPI.DAL.Dtos.PetDto::get_UserPets()
+FNDA:643,System.Collections.Generic.IEnumerable`1<qrAPI.DAL.Dtos.UserPetDto> qrAPI.DAL.Dtos.PetDto::get_UserPets()
+DA:16,643
+FN:16,System.Uri qrAPI.DAL.Dtos.PetDto::get_PictureUrl()
+FNDA:320,System.Uri qrAPI.DAL.Dtos.PetDto::get_PictureUrl()
+DA:17,320
+LF:6
+LH:6
+BRF:0
+BRH:0
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\QrDto.cs
+FN:10,System.String qrAPI.DAL.Dtos.QrDto::get_Name()
+FNDA:23,System.String qrAPI.DAL.Dtos.QrDto::get_Name()
+DA:11,23
+FN:11,System.Guid qrAPI.DAL.Dtos.QrDto::get_PetId()
+FNDA:19,System.Guid qrAPI.DAL.Dtos.QrDto::get_PetId()
+DA:12,19
+FN:13,qrAPI.DAL.Dtos.PetDto qrAPI.DAL.Dtos.QrDto::get_Pet()
+FNDA:39,qrAPI.DAL.Dtos.PetDto qrAPI.DAL.Dtos.QrDto::get_Pet()
+DA:14,39
+LF:3
+LH:3
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\RefreshToken.cs
+FN:11,System.Guid qrAPI.DAL.Dtos.RefreshToken::get_Id()
+FNDA:0,System.Guid qrAPI.DAL.Dtos.RefreshToken::get_Id()
+DA:12,0
+FN:16,System.String qrAPI.DAL.Dtos.RefreshToken::get_Token()
+FNDA:0,System.String qrAPI.DAL.Dtos.RefreshToken::get_Token()
+DA:17,0
+FN:18,System.String qrAPI.DAL.Dtos.RefreshToken::get_JwtId()
+FNDA:0,System.String qrAPI.DAL.Dtos.RefreshToken::get_JwtId()
+DA:19,0
+FN:20,System.DateTime qrAPI.DAL.Dtos.RefreshToken::get_CreationDate()
+FNDA:0,System.DateTime qrAPI.DAL.Dtos.RefreshToken::get_CreationDate()
+DA:21,0
+FN:22,System.DateTime qrAPI.DAL.Dtos.RefreshToken::get_ExpiryDate()
+FNDA:0,System.DateTime qrAPI.DAL.Dtos.RefreshToken::get_ExpiryDate()
+DA:23,0
+FN:24,System.Boolean qrAPI.DAL.Dtos.RefreshToken::get_Used()
+FNDA:0,System.Boolean qrAPI.DAL.Dtos.RefreshToken::get_Used()
+DA:25,0
+FN:26,System.Boolean qrAPI.DAL.Dtos.RefreshToken::get_Invalidated()
+FNDA:0,System.Boolean qrAPI.DAL.Dtos.RefreshToken::get_Invalidated()
+DA:27,0
+FN:28,System.String qrAPI.DAL.Dtos.RefreshToken::get_UserId()
+FNDA:0,System.String qrAPI.DAL.Dtos.RefreshToken::get_UserId()
+DA:29,0
+FN:31,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.DAL.Dtos.RefreshToken::get_User()
+FNDA:0,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.DAL.Dtos.RefreshToken::get_User()
+DA:32,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\UserDto.cs
+FN:9,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.DAL.Dtos.UserDto::get_Identity()
+FNDA:554,Microsoft.AspNetCore.Identity.IdentityUser qrAPI.DAL.Dtos.UserDto::get_Identity()
+DA:10,554
+FN:10,System.Collections.Generic.IEnumerable`1<qrAPI.DAL.Dtos.UserPetDto> qrAPI.DAL.Dtos.UserDto::get_UserPets()
+FNDA:656,System.Collections.Generic.IEnumerable`1<qrAPI.DAL.Dtos.UserPetDto> qrAPI.DAL.Dtos.UserDto::get_UserPets()
+DA:11,656
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\UserPetDto.cs
+FN:9,System.Guid qrAPI.DAL.Dtos.UserPetDto::get_Id()
+FNDA:0,System.Guid qrAPI.DAL.Dtos.UserPetDto::get_Id()
+DA:10,0
+FN:10,System.Guid qrAPI.DAL.Dtos.UserPetDto::get_UserId()
+FNDA:529,System.Guid qrAPI.DAL.Dtos.UserPetDto::get_UserId()
+DA:11,529
+FN:11,qrAPI.DAL.Dtos.UserDto qrAPI.DAL.Dtos.UserPetDto::get_User()
+FNDA:547,qrAPI.DAL.Dtos.UserDto qrAPI.DAL.Dtos.UserPetDto::get_User()
+DA:12,547
+FN:12,System.Guid qrAPI.DAL.Dtos.UserPetDto::get_PetId()
+FNDA:526,System.Guid qrAPI.DAL.Dtos.UserPetDto::get_PetId()
+DA:13,526
+FN:13,qrAPI.DAL.Dtos.PetDto qrAPI.DAL.Dtos.UserPetDto::get_Pet()
+FNDA:474,qrAPI.DAL.Dtos.PetDto qrAPI.DAL.Dtos.UserPetDto::get_Pet()
+DA:14,474
+LF:5
+LH:4
+BRF:0
+BRH:0
+FNF:5
+FNH:4
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\Fakers\PetDtoFaker.cs
+FN:8,System.Void qrAPI.DAL.Dtos.Fakers.PetDtoFaker::.ctor()
+FNDA:4,System.Void qrAPI.DAL.Dtos.Fakers.PetDtoFaker::.ctor()
+DA:9,4
+DA:10,4
+DA:11,8
+DA:12,8
+DA:13,8
+DA:14,8
+DA:15,4
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\Fakers\QrDtoFaker.cs
+FN:6,System.Void qrAPI.DAL.Dtos.Fakers.QrDtoFaker::.ctor()
+FNDA:4,System.Void qrAPI.DAL.Dtos.Fakers.QrDtoFaker::.ctor()
+DA:7,4
+DA:8,4
+DA:9,8
+DA:10,4
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Dtos\Fakers\UserPetDtoFaker.cs
+FN:6,System.Void qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker::.ctor(qrAPI.DAL.Dtos.PetDto,qrAPI.DAL.Dtos.UserDto)
+FNDA:4,System.Void qrAPI.DAL.Dtos.Fakers.UserPetDtoFaker::.ctor(qrAPI.DAL.Dtos.PetDto,qrAPI.DAL.Dtos.UserDto)
+DA:7,4
+DA:8,4
+DA:9,4
+DA:10,4
+DA:11,4
+DA:12,4
+DA:13,4
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\MongoData\MongoContext.cs
+FN:15,System.Void qrAPI.DAL.Data.MongoData.MongoContext::HealthCheck()
+FNDA:0,System.Void qrAPI.DAL.Data.MongoData.MongoContext::HealthCheck()
+DA:16,0
+FN:9,System.Void qrAPI.DAL.Data.MongoData.MongoContext::.ctor(qrAPI.DAL.Options.MongoOptions)
+FNDA:0,System.Void qrAPI.DAL.Data.MongoData.MongoContext::.ctor(qrAPI.DAL.Options.MongoOptions)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\00000000000000_CreateIdentitySchema.cs
+FN:9,System.Void qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+FN:192,System.Void qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:193,0
+DA:194,0
+DA:195,0
+DA:197,0
+DA:198,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:206,0
+DA:207,0
+DA:209,0
+DA:210,0
+DA:212,0
+DA:213,0
+DA:214,0
+LF:184
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
+FN:16,System.Void qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.CreateIdentitySchema::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:275,0
+LF:245
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200324041701_Initial.cs
+FN:8,System.Void qrAPI.DAL.Data.EFData.Migrations.Initial::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.Initial::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+FN:92,System.Void qrAPI.DAL.Data.EFData.Migrations.Initial::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.Initial::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:93,0
+DA:94,0
+DA:95,0
+DA:97,0
+DA:98,0
+DA:100,0
+DA:101,0
+DA:102,0
+LF:85
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200324041701_Initial.Designer.cs
+FN:17,System.Void qrAPI.DAL.Data.EFData.Migrations.Initial::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.Initial::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:18,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:345,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:353,0
+DA:354,0
+DA:355,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:362,0
+DA:363,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:369,0
+DA:370,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:376,0
+DA:377,0
+DA:378,0
+DA:379,0
+DA:380,0
+DA:381,0
+DA:383,0
+LF:346
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200324043314_IgnoreDtos.cs
+FN:8,System.Void qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+FN:43,System.Void qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+LF:65
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200324043314_IgnoreDtos.Designer.cs
+FN:17,System.Void qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.IgnoreDtos::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:18,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:345,0
+DA:346,0
+DA:347,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:354,0
+DA:355,0
+DA:356,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:362,0
+DA:363,0
+DA:365,0
+LF:330
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200407011854_GuidForString.cs
+FN:8,System.Void qrAPI.DAL.Data.EFData.Migrations.GuidForString::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.GuidForString::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+FN:44,System.Void qrAPI.DAL.Data.EFData.Migrations.GuidForString::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.GuidForString::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+LF:43
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200407011854_GuidForString.Designer.cs
+FN:16,System.Void qrAPI.DAL.Data.EFData.Migrations.GuidForString::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.GuidForString::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:355,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:362,0
+DA:363,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:370,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:379,0
+DA:380,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:386,0
+DA:388,0
+DA:389,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:395,0
+LF:359
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421000639_UserPetsTable.cs
+FN:8,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTable::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTable::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+FN:107,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTable::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTable::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:113,0
+DA:114,0
+DA:116,0
+DA:117,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+LF:128
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421000639_UserPetsTable.Designer.cs
+FN:16,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTable::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTable::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:344,0
+DA:345,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:354,0
+DA:355,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:363,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:370,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:378,0
+DA:379,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:386,0
+DA:387,0
+DA:388,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:394,0
+DA:395,0
+DA:396,0
+DA:397,0
+DA:398,0
+DA:399,0
+DA:400,0
+DA:401,0
+DA:402,0
+DA:403,0
+DA:405,0
+DA:406,0
+DA:407,0
+DA:408,0
+DA:409,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:417,0
+DA:418,0
+DA:419,0
+DA:420,0
+DA:421,0
+DA:423,0
+DA:424,0
+DA:425,0
+DA:426,0
+DA:427,0
+DA:428,0
+DA:430,0
+DA:431,0
+DA:432,0
+DA:433,0
+DA:434,0
+DA:435,0
+DA:437,0
+DA:438,0
+DA:439,0
+DA:440,0
+DA:441,0
+DA:442,0
+DA:444,0
+DA:445,0
+DA:446,0
+DA:447,0
+DA:448,0
+DA:449,0
+DA:450,0
+DA:451,0
+DA:452,0
+DA:453,0
+DA:454,0
+DA:455,0
+DA:456,0
+DA:457,0
+DA:459,0
+LF:418
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421003318_UserPetsTableRename.cs
+FN:8,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+FN:60,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+LF:106
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421003318_UserPetsTableRename.Designer.cs
+FN:16,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.UserPetsTableRename::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:355,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:362,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:370,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:379,0
+DA:380,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:386,0
+DA:388,0
+DA:389,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:395,0
+DA:396,0
+DA:397,0
+DA:398,0
+DA:399,0
+DA:400,0
+DA:402,0
+DA:403,0
+DA:404,0
+DA:405,0
+DA:406,0
+DA:407,0
+DA:409,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:413,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:417,0
+DA:418,0
+DA:419,0
+DA:420,0
+DA:421,0
+DA:422,0
+DA:424,0
+LF:385
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421030608_FixingQrs.cs
+FN:8,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrs::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrs::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+FN:39,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrs::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrs::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+LF:50
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421030608_FixingQrs.Designer.cs
+FN:16,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrs::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrs::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:345,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:354,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:362,0
+DA:363,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:370,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:378,0
+DA:380,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:386,0
+DA:387,0
+DA:389,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:394,0
+DA:395,0
+DA:396,0
+DA:398,0
+DA:399,0
+DA:400,0
+DA:401,0
+DA:402,0
+DA:403,0
+DA:405,0
+DA:406,0
+DA:407,0
+DA:408,0
+DA:409,0
+DA:410,0
+DA:412,0
+DA:413,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:417,0
+DA:418,0
+DA:419,0
+DA:420,0
+DA:421,0
+DA:422,0
+DA:423,0
+DA:424,0
+DA:425,0
+DA:427,0
+LF:388
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421033607_FixingQrsPath.cs
+FN:7,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+LF:16
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\20200421033607_FixingQrsPath.Designer.cs
+FN:16,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.FixingQrsPath::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:337,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:345,0
+DA:346,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:354,0
+DA:355,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:362,0
+DA:363,0
+DA:364,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:370,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:378,0
+DA:379,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:386,0
+DA:387,0
+DA:388,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:394,0
+DA:395,0
+DA:396,0
+DA:397,0
+DA:399,0
+DA:400,0
+DA:401,0
+DA:402,0
+DA:403,0
+DA:404,0
+DA:406,0
+DA:407,0
+DA:408,0
+DA:409,0
+DA:410,0
+DA:411,0
+DA:413,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:417,0
+DA:418,0
+DA:419,0
+DA:420,0
+DA:421,0
+DA:422,0
+DA:423,0
+DA:424,0
+DA:425,0
+DA:426,0
+DA:428,0
+LF:389
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Migrations\ApplicationDbContextModelSnapshot.cs
+FN:13,System.Void qrAPI.DAL.Data.EFData.Migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:336,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:345,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:354,0
+DA:355,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:363,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:370,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:378,0
+DA:379,0
+DA:380,0
+DA:381,0
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:387,0
+DA:388,0
+DA:389,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:394,0
+DA:396,0
+DA:397,0
+DA:398,0
+DA:399,0
+DA:400,0
+DA:401,0
+DA:403,0
+DA:404,0
+DA:405,0
+DA:406,0
+DA:407,0
+DA:408,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:413,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:417,0
+DA:418,0
+DA:419,0
+DA:420,0
+DA:421,0
+DA:422,0
+DA:423,0
+DA:425,0
+LF:389
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\EntityTypeConfigurations\PetDtoEntityConfiguration.cs
+FN:11,System.Void qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<qrAPI.DAL.Dtos.PetDto>)
+FNDA:1,System.Void qrAPI.DAL.Data.EFData.EntityTypeConfigurations.PetDtoEntityConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<qrAPI.DAL.Dtos.PetDto>)
+DA:12,1
+DA:13,1
+DA:14,1
+DA:16,1
+DA:17,1
+DA:18,1
+LF:6
+LH:6
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\EntityTypeConfigurations\RefreshTokenEntityConfiguration.cs
+FN:9,System.Void qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<qrAPI.DAL.Dtos.RefreshToken>)
+FNDA:1,System.Void qrAPI.DAL.Data.EFData.EntityTypeConfigurations.RefreshTokenEntityConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<qrAPI.DAL.Dtos.RefreshToken>)
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+DA:15,1
+DA:16,1
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\EntityTypeConfigurations\UserPetDtoEntityConfiguration.cs
+FN:9,System.Void qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<qrAPI.DAL.Dtos.UserPetDto>)
+FNDA:1,System.Void qrAPI.DAL.Data.EFData.EntityTypeConfigurations.UserPetDtoEntityConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<qrAPI.DAL.Dtos.UserPetDto>)
+DA:10,1
+DA:11,1
+DA:12,1
+DA:14,1
+DA:15,1
+DA:16,1
+DA:17,1
+DA:19,1
+DA:20,1
+DA:21,1
+DA:22,1
+DA:23,1
+LF:12
+LH:12
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Data\EFData\Contexts\ApplicationDbContext.cs
+FN:12,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.QrDto> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_Qrs()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.QrDto> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_Qrs()
+DA:13,0
+FN:13,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.PetDto> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_Pets()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.PetDto> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_Pets()
+DA:14,0
+FN:14,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.UserPetDto> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_UserPets()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.UserPetDto> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_UserPets()
+DA:15,0
+FN:15,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.RefreshToken> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_RefreshTokens()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<qrAPI.DAL.Dtos.RefreshToken> qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::get_RefreshTokens()
+DA:16,0
+FN:16,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::HealthCheck()
+FNDA:0,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::HealthCheck()
+DA:17,0
+FN:19,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+FNDA:86,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+DA:20,86
+DA:21,86
+DA:22,0
+DA:23,86
+BRDA:21,12,0,0
+BRDA:21,12,1,86
+FN:25,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:1,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:26,1
+DA:27,1
+DA:28,1
+DA:29,1
+FN:8,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext>)
+FNDA:86,System.Void qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext>)
+DA:9,86
+DA:10,86
+DA:11,86
+LF:16
+LH:10
+BRF:2
+BRH:1
+FNF:8
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\MongoImplementations\MongoRepository.cs
+FN:16,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1::.ctor(qrAPI.DAL.Options.MongoOptions)
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1::.ctor(qrAPI.DAL.Options.MongoOptions)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:23,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<GetAllByQueryExpressionAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<GetAllByQueryExpressionAsync>d__2::MoveNext()
+DA:24,0
+DA:25,0
+DA:26,0
+FN:28,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<GetAllAsync>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<GetAllAsync>d__3::MoveNext()
+DA:29,0
+DA:30,0
+DA:31,0
+FN:33,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<GetAsync>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<GetAsync>d__4::MoveNext()
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+FN:39,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<InsertAsync>d__5::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<InsertAsync>d__5::MoveNext()
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+FN:46,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<UpdateAsync>d__6::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<UpdateAsync>d__6::MoveNext()
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+BRDA:52,331,0,0
+BRDA:52,331,1,0
+FN:56,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<DeleteAsync>d__7::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.MongoRepository`1/<DeleteAsync>d__7::MoveNext()
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+BRDA:59,334,0,0
+BRDA:59,334,1,0
+LF:32
+LH:0
+BRF:4
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\MongoImplementations\PetMongoRepository.cs
+FN:12,System.Void qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository::.ctor(qrAPI.DAL.Options.MongoOptions)
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository::.ctor(qrAPI.DAL.Options.MongoOptions)
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository/<GetAllByNameAsync>d__1::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository/<GetAllByNameAsync>d__1::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:24,System.Collections.Generic.List`1<qrAPI.DAL.Dtos.PetDto> qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository/<>c::<GetAllByUserIdAsync>b__2_0()
+FNDA:0,System.Collections.Generic.List`1<qrAPI.DAL.Dtos.PetDto> qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository/<>c::<GetAllByUserIdAsync>b__2_0()
+DA:25,0
+FN:23,System.Void qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository/<GetAllByUserIdAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.MongoImplementations.PetMongoRepository/<GetAllByUserIdAsync>d__2::MoveNext()
+DA:24,0
+DA:28,0
+LF:10
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\EfImplementations\EfRepository.cs
+FN:15,Microsoft.EntityFrameworkCore.DbSet`1<TDto> qrAPI.DAL.Daos.EfImplementations.EfRepository`1::get_Table()
+FNDA:51,Microsoft.EntityFrameworkCore.DbSet`1<TDto> qrAPI.DAL.Daos.EfImplementations.EfRepository`1::get_Table()
+DA:16,51
+FN:17,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+FNDA:134,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+DA:18,134
+DA:19,134
+DA:20,134
+DA:21,134
+FN:23,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAllByQueryExpressionAsync>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAllByQueryExpressionAsync>d__4::MoveNext()
+DA:24,0
+FN:26,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAsyncIncludeProperty>d__5`1::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAsyncIncludeProperty>d__5`1::MoveNext()
+DA:27,0
+DA:28,0
+FN:30,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAllAsyncIncludeProperty>d__6`1::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAllAsyncIncludeProperty>d__6`1::MoveNext()
+DA:31,0
+FN:32,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAllAsync>d__7::MoveNext()
+FNDA:5,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAllAsync>d__7::MoveNext()
+DA:33,5
+FN:34,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAsync>d__8::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<GetAsync>d__8::MoveNext()
+DA:35,0
+BRDA:35,61,0,0
+BRDA:35,61,1,0
+FN:37,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<InsertAsync>d__9::MoveNext()
+FNDA:29,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<InsertAsync>d__9::MoveNext()
+DA:38,29
+DA:39,29
+DA:40,29
+DA:41,29
+DA:42,29
+BRDA:39,74,0,0
+BRDA:39,74,1,29
+BRDA:41,309,0,29
+BRDA:41,309,1,0
+FN:44,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<UpdateAsync>d__10::MoveNext()
+FNDA:1,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<UpdateAsync>d__10::MoveNext()
+DA:45,1
+DA:46,1
+DA:47,0
+DA:48,1
+DA:49,1
+DA:50,1
+DA:51,1
+BRDA:47,195,0,0
+BRDA:47,195,1,1
+FN:53,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<DeleteAsync>d__11::MoveNext()
+FNDA:1,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<DeleteAsync>d__11::MoveNext()
+DA:54,1
+DA:55,1
+DA:56,0
+DA:57,1
+DA:58,1
+DA:59,1
+DA:60,1
+BRDA:56,180,0,0
+BRDA:56,180,1,1
+FN:61,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<Save>d__12::MoveNext()
+FNDA:31,System.Void qrAPI.DAL.Daos.EfImplementations.EfRepository`1/<Save>d__12::MoveNext()
+DA:62,31
+LF:31
+LH:24
+BRF:10
+BRH:4
+FNF:11
+FNH:7
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\EfImplementations\PetEfRepository.cs
+FN:15,System.Void qrAPI.DAL.Daos.EfImplementations.PetEfRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext,qrAPI.DAL.Daos.Interfaces.IUserPetRepository)
+FNDA:33,System.Void qrAPI.DAL.Daos.EfImplementations.PetEfRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext,qrAPI.DAL.Daos.Interfaces.IUserPetRepository)
+DA:16,33
+DA:17,33
+DA:18,33
+DA:19,33
+FN:21,System.Void qrAPI.DAL.Daos.EfImplementations.PetEfRepository/<GetAllByNameAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.PetEfRepository/<GetAllByNameAsync>d__2::MoveNext()
+DA:22,0
+FN:24,qrAPI.DAL.Dtos.PetDto qrAPI.DAL.Daos.EfImplementations.PetEfRepository/<>c::<GetAllByUserIdAsync>b__3_0(qrAPI.DAL.Dtos.UserPetDto)
+FNDA:7,qrAPI.DAL.Dtos.PetDto qrAPI.DAL.Daos.EfImplementations.PetEfRepository/<>c::<GetAllByUserIdAsync>b__3_0(qrAPI.DAL.Dtos.UserPetDto)
+DA:25,7
+FN:26,System.Void qrAPI.DAL.Daos.EfImplementations.PetEfRepository/<GetAsync>d__4::MoveNext()
+FNDA:11,System.Void qrAPI.DAL.Daos.EfImplementations.PetEfRepository/<GetAsync>d__4::MoveNext()
+DA:27,11
+DA:28,11
+LF:8
+LH:7
+BRF:0
+BRH:0
+FNF:4
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\EfImplementations\QrEfRepository.cs
+FN:8,System.Void qrAPI.DAL.Daos.EfImplementations.QrEfRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+FNDA:10,System.Void qrAPI.DAL.Daos.EfImplementations.QrEfRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+DA:9,10
+DA:10,10
+DA:11,10
+FN:13,System.Void qrAPI.DAL.Daos.EfImplementations.QrEfRepository/<InsertAsync>d__1::MoveNext()
+FNDA:5,System.Void qrAPI.DAL.Daos.EfImplementations.QrEfRepository/<InsertAsync>d__1::MoveNext()
+DA:14,5
+DA:15,5
+DA:16,5
+DA:17,5
+FN:19,System.Void qrAPI.DAL.Daos.EfImplementations.QrEfRepository/<GetAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.QrEfRepository/<GetAsync>d__2::MoveNext()
+DA:20,0
+LF:8
+LH:7
+BRF:0
+BRH:0
+FNF:3
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\EfImplementations\RefreshTokenEfRepository.cs
+FN:11,System.Void qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+FNDA:58,System.Void qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+DA:12,58
+DA:13,58
+DA:14,58
+FN:16,System.Void qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository/<GetByRefreshName>d__1::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.RefreshTokenEfRepository/<GetByRefreshName>d__1::MoveNext()
+DA:17,0
+LF:4
+LH:3
+BRF:0
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\EfImplementations\UserPetRepository.cs
+FN:13,System.Void qrAPI.DAL.Daos.EfImplementations.UserPetRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+FNDA:33,System.Void qrAPI.DAL.Daos.EfImplementations.UserPetRepository::.ctor(qrAPI.DAL.Data.EFData.Contexts.ApplicationDbContext)
+DA:14,33
+DA:15,33
+DA:16,33
+FN:18,System.Void qrAPI.DAL.Daos.EfImplementations.UserPetRepository/<GetAllByUserIdAsync>d__1::MoveNext()
+FNDA:5,System.Void qrAPI.DAL.Daos.EfImplementations.UserPetRepository/<GetAllByUserIdAsync>d__1::MoveNext()
+DA:19,5
+FN:21,System.Void qrAPI.DAL.Daos.EfImplementations.UserPetRepository/<GetAllByPetIdAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.EfImplementations.UserPetRepository/<GetAllByPetIdAsync>d__2::MoveNext()
+DA:22,0
+LF:5
+LH:4
+BRF:0
+BRH:0
+FNF:3
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\CacheImplementations\CacheRepository.cs
+FN:30,System.Threading.Tasks.Task`1<T> qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::InsertAsync(T)
+FNDA:0,System.Threading.Tasks.Task`1<T> qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::InsertAsync(T)
+DA:31,0
+FN:32,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::UpdateAsync(T)
+FNDA:0,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::UpdateAsync(T)
+DA:33,0
+FN:34,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::DeleteAsync(System.Object)
+FNDA:0,System.Threading.Tasks.Task`1<System.Boolean> qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::DeleteAsync(System.Object)
+DA:35,0
+FN:58,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::GenerateCacheKeyFromQuery()
+FNDA:0,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::GenerateCacheKeyFromQuery()
+DA:59,0
+FN:60,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::GenerateCacheKeyFromQuery(System.Guid)
+FNDA:0,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::GenerateCacheKeyFromQuery(System.Guid)
+DA:61,0
+FN:62,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::GenerateCacheKeyFromQuery(System.String)
+FNDA:0,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::GenerateCacheKeyFromQuery(System.String)
+DA:63,0
+FN:16,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::.ctor(qrAPI.DAL.Daos.Interfaces.IRepository`1<T>,qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1::.ctor(qrAPI.DAL.Daos.Interfaces.IRepository`1<T>,qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:24,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<GetAllAsync>d__4::MoveNext()
+DA:25,0
+FN:28,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<>c__DisplayClass5_0::<GetAsync>b__1()
+FNDA:0,System.String qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<>c__DisplayClass5_0::<GetAsync>b__1()
+DA:29,0
+FN:27,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<>c__DisplayClass5_0/<<GetAsync>b__0>d::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<>c__DisplayClass5_0/<<GetAsync>b__0>d::MoveNext()
+DA:28,0
+FN:37,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<GetAllAndCacheAsync>d__9::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<GetAllAndCacheAsync>d__9::MoveNext()
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+BRDA:39,70,0,0
+BRDA:39,70,1,0
+BRDA:42,361,0,0
+BRDA:42,361,1,0
+FN:48,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<GetAndCacheAsync>d__10::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.CacheRepository`1/<GetAndCacheAsync>d__10::MoveNext()
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+BRDA:50,70,0,0
+BRDA:50,70,1,0
+BRDA:53,371,0,0
+BRDA:53,371,1,0
+LF:33
+LH:0
+BRF:8
+BRH:0
+FNF:12
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.DAL\Daos\CacheImplementations\PetCacheRepository.cs
+FN:15,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository::.ctor(qrAPI.DAL.Daos.Interfaces.IPetRepository,qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository::.ctor(qrAPI.DAL.Daos.Interfaces.IPetRepository,qrAPI.Infra.Settings.MemoryCacheSettings,qrAPI.Infra.Cache.ICacheHelper)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+FN:24,System.String qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass2_0::<GetAllByNameAsync>b__1()
+FNDA:0,System.String qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass2_0::<GetAllByNameAsync>b__1()
+DA:25,0
+FN:23,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass2_0/<<GetAllByNameAsync>b__0>d::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass2_0/<<GetAllByNameAsync>b__0>d::MoveNext()
+DA:24,0
+FN:22,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<GetAllByNameAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<GetAllByNameAsync>d__2::MoveNext()
+DA:23,0
+DA:26,0
+FN:30,System.String qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass3_0::<GetAllByUserIdAsync>b__1()
+FNDA:0,System.String qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass3_0::<GetAllByUserIdAsync>b__1()
+DA:31,0
+FN:29,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass3_0/<<GetAllByUserIdAsync>b__0>d::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<>c__DisplayClass3_0/<<GetAllByUserIdAsync>b__0>d::MoveNext()
+DA:30,0
+FN:28,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<GetAllByUserIdAsync>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.DAL.Daos.CacheImplementations.PetCacheRepository/<GetAllByUserIdAsync>d__3::MoveNext()
+DA:29,0
+DA:32,0
+LF:12
+LH:0
+BRF:0
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Program.cs
+FN:33,Microsoft.Extensions.Hosting.IHostBuilder qrAPI.Program::CreateHostBuilder(System.String[])
+FNDA:19,Microsoft.Extensions.Hosting.IHostBuilder qrAPI.Program::CreateHostBuilder(System.String[])
+DA:34,19
+DA:35,19
+DA:36,19
+DA:37,38
+DA:38,38
+DA:39,38
+DA:40,38
+DA:41,19
+DA:42,38
+DA:43,38
+DA:44,38
+DA:45,38
+DA:46,19
+FN:16,System.Void qrAPI.Program/<Main>d__0::MoveNext()
+FNDA:0,System.Void qrAPI.Program/<Main>d__0::MoveNext()
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+BRDA:21,282,1,0
+BRDA:22,204,0,0
+BRDA:22,204,1,0
+BRDA:22,232,0,0
+BRDA:22,232,1,0
+BRDA:21,282,0,0
+BRDA:26,608,0,0
+BRDA:26,608,1,0
+BRDA:28,853,0,0
+BRDA:28,853,1,0
+LF:28
+LH:13
+BRF:10
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Startup.cs
+FN:21,Microsoft.Extensions.Configuration.IConfiguration qrAPI.Startup::get_Configuration()
+FNDA:19,Microsoft.Extensions.Configuration.IConfiguration qrAPI.Startup::get_Configuration()
+DA:22,19
+FN:24,System.Void qrAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:19,System.Void qrAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:25,19
+DA:26,19
+DA:27,19
+FN:29,System.Void qrAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+FNDA:19,System.Void qrAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+DA:30,19
+DA:31,19
+DA:33,19
+DA:34,19
+DA:35,19
+DA:36,19
+DA:38,19
+DA:39,38
+DA:40,19
+DA:41,19
+DA:42,19
+DA:43,38
+DA:44,38
+DA:45,38
+DA:46,38
+DA:47,38
+DA:48,38
+DA:49,19
+DA:50,19
+FN:52,Microsoft.OData.Edm.IEdmModel qrAPI.Startup::GetEdmModel()
+FNDA:19,Microsoft.OData.Edm.IEdmModel qrAPI.Startup::GetEdmModel()
+DA:53,19
+DA:54,19
+DA:55,19
+DA:56,19
+DA:58,19
+DA:59,19
+FN:16,System.Void qrAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+DA:17,19
+DA:18,19
+DA:19,19
+DA:20,19
+LF:33
+LH:33
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Swagger\ConfigureSwaggerOptions.cs
+FN:26,System.Void qrAPI.Swagger.ConfigureSwaggerOptions::Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)
+FNDA:0,System.Void qrAPI.Swagger.ConfigureSwaggerOptions::Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)
+DA:27,0
+DA:30,0
+DA:31,0
+DA:32,0
+BRDA:30,53,1,0
+BRDA:30,53,0,0
+FN:34,Microsoft.OpenApi.Models.OpenApiInfo qrAPI.Swagger.ConfigureSwaggerOptions::CreateInfoForApiVersion(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)
+FNDA:0,Microsoft.OpenApi.Models.OpenApiInfo qrAPI.Swagger.ConfigureSwaggerOptions::CreateInfoForApiVersion(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+BRDA:44,134,0,0
+BRDA:44,134,1,0
+FN:22,System.Void qrAPI.Swagger.ConfigureSwaggerOptions::.ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+FNDA:0,System.Void qrAPI.Swagger.ConfigureSwaggerOptions::.ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+DA:23,0
+LF:17
+LH:0
+BRF:4
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Swagger\SwaggerDefaultValues.cs
+FN:21,System.Void qrAPI.Swagger.SwaggerDefaultValues::Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+FNDA:0,System.Void qrAPI.Swagger.SwaggerDefaultValues::Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+BRDA:25,39,1,0
+BRDA:28,259,1,0
+BRDA:31,123,0,0
+BRDA:31,135,0,0
+BRDA:31,135,1,0
+BRDA:31,123,1,0
+BRDA:32,171,0,0
+BRDA:32,171,1,0
+BRDA:32,190,0,0
+BRDA:32,190,1,0
+BRDA:28,259,0,0
+BRDA:25,39,0,0
+LF:13
+LH:0
+BRF:12
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Swagger\Examples\Responses\PetResponseExampleProvider.cs
+FN:8,qrAPI.Contracts.v1.Responses.PetResponse qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider::GetExamples()
+FNDA:0,qrAPI.Contracts.v1.Responses.PetResponse qrAPI.Swagger.Examples.Responses.PetResponseExampleProvider::GetExamples()
+DA:9,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Swagger\Examples\Requests\Update\UpdatePetRequestExampleProvider.cs
+FN:8,qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider::GetExamples()
+FNDA:0,qrAPI.Contracts.v1.Requests.Update.UpdatePetRequest qrAPI.Swagger.Examples.Requests.Update.UpdatePetRequestExampleProvider::GetExamples()
+DA:9,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Swagger\Examples\Requests\Create\CreatePetRequestExampleProvider.cs
+FN:8,qrAPI.Contracts.v1.Requests.Create.CreatePetRequest qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider::GetExamples()
+FNDA:0,qrAPI.Contracts.v1.Requests.Create.CreatePetRequest qrAPI.Swagger.Examples.Requests.Create.CreatePetRequestExampleProvider::GetExamples()
+DA:9,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Swagger\Examples\Requests\Create\CreateQrRequestExampleProvider.cs
+FN:8,qrAPI.Contracts.v1.Requests.Create.CreateQrRequest qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider::GetExamples()
+FNDA:0,qrAPI.Contracts.v1.Requests.Create.CreateQrRequest qrAPI.Swagger.Examples.Requests.Create.CreateQrRequestExampleProvider::GetExamples()
+DA:9,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\MappingProfiles\DomainToDtoProfile.cs
+FN:8,System.Void qrAPI.MappingProfiles.DomainToDtoProfile::.ctor()
+FNDA:24,System.Void qrAPI.MappingProfiles.DomainToDtoProfile::.ctor()
+DA:9,24
+DA:10,24
+DA:11,24
+DA:12,48
+DA:15,24
+DA:16,24
+DA:17,48
+DA:18,24
+DA:19,24
+DA:20,48
+DA:21,24
+DA:22,24
+DA:23,41
+DA:24,107
+DA:25,40
+DA:26,40
+DA:27,40
+DA:28,40
+DA:29,41
+DA:32,24
+DA:33,24
+DA:34,48
+DA:35,48
+DA:36,48
+DA:37,48
+DA:38,48
+DA:41,24
+DA:42,48
+DA:43,24
+BRDA:24,52,1,16
+BRDA:24,52,0,17
+LF:29
+LH:29
+BRF:2
+BRH:2
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\MappingProfiles\DomainToResponseProfile.cs
+FN:8,System.Void qrAPI.MappingProfiles.DomainToResponseProfile::.ctor()
+FNDA:23,System.Void qrAPI.MappingProfiles.DomainToResponseProfile::.ctor()
+DA:9,23
+DA:10,23
+DA:11,23
+DA:13,23
+DA:14,46
+DA:15,46
+DA:17,23
+DA:18,23
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\MappingProfiles\DtoToDomainProfile.cs
+FN:9,System.Void qrAPI.MappingProfiles.DtoToDomainProfile::.ctor()
+FNDA:23,System.Void qrAPI.MappingProfiles.DtoToDomainProfile::.ctor()
+DA:10,23
+DA:11,23
+DA:12,23
+DA:14,23
+DA:15,46
+DA:16,46
+DA:17,46
+DA:19,23
+DA:20,46
+DA:21,23
+LF:10
+LH:10
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\MappingProfiles\RequestToDomainProfile.cs
+FN:10,System.Void qrAPI.MappingProfiles.RequestToDomainProfile::.ctor()
+FNDA:24,System.Void qrAPI.MappingProfiles.RequestToDomainProfile::.ctor()
+DA:11,24
+DA:12,24
+DA:13,24
+DA:14,48
+DA:15,48
+DA:17,24
+DA:18,48
+DA:19,48
+DA:21,24
+DA:22,48
+DA:23,48
+DA:24,48
+DA:25,48
+DA:27,24
+DA:28,48
+DA:29,48
+DA:30,48
+DA:31,24
+DA:32,48
+DA:33,24
+LF:20
+LH:20
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\AlertsInstaller.cs
+FN:14,System.Void qrAPI.Installers.AlertsInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.AlertsInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:15,19
+DA:16,19
+DA:17,19
+DA:18,19
+FN:20,System.Void qrAPI.Installers.AlertsInstaller::InjectSendGun(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.AlertsInstaller::InjectSendGun(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:21,19
+DA:22,19
+DA:23,19
+DA:24,38
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,19
+BRDA:24,57,1,0
+BRDA:24,57,0,19
+FN:34,System.Void qrAPI.Installers.AlertsInstaller::InjectSendGrid(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.AlertsInstaller::InjectSendGrid(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:35,19
+DA:36,19
+DA:37,19
+DA:38,0
+DA:39,19
+DA:40,19
+DA:41,19
+BRDA:38,36,1,19
+BRDA:38,36,0,19
+LF:23
+LH:15
+BRF:4
+BRH:3
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\AuthInstaller.cs
+FN:14,System.Void qrAPI.Installers.AuthInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.AuthInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:15,19
+DA:16,19
+DA:17,19
+DA:18,19
+DA:20,19
+DA:21,19
+DA:22,19
+DA:23,19
+DA:24,19
+DA:25,19
+DA:26,19
+DA:27,19
+DA:28,19
+DA:30,19
+DA:32,19
+DA:33,38
+DA:34,38
+DA:35,38
+DA:36,38
+DA:37,38
+DA:38,19
+DA:39,38
+DA:40,38
+DA:41,38
+DA:42,38
+DA:44,19
+DA:45,38
+DA:46,38
+DA:47,57
+DA:48,57
+DA:49,57
+DA:50,38
+DA:52,19
+DA:61,19
+LF:34
+LH:34
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\CacheInstaller.cs
+FN:11,System.Void qrAPI.Installers.CacheInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.CacheInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:12,19
+DA:13,19
+DA:14,19
+DA:15,19
+DA:17,38
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,19
+BRDA:17,70,1,0
+BRDA:17,70,0,19
+LF:10
+LH:6
+BRF:2
+BRH:1
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\DbInstaller.cs
+FN:20,System.Void qrAPI.Installers.DbInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.DbInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:21,19
+DA:22,19
+DA:23,19
+DA:24,19
+DA:27,19
+DA:28,19
+DA:30,0
+DA:31,0
+DA:33,0
+DA:35,19
+BRDA:24,35,0,19
+BRDA:24,48,0,0
+BRDA:24,48,1,19
+BRDA:24,61,1,0
+BRDA:24,35,1,0
+BRDA:24,61,0,0
+FN:37,System.Void qrAPI.Installers.DbInstaller::InstallMongoDb(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.Void qrAPI.Installers.DbInstaller::InstallMongoDb(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+BRDA:55,198,0,0
+BRDA:55,198,1,0
+FN:62,System.Void qrAPI.Installers.DbInstaller::InstallEfDb(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.DbInstaller::InstallEfDb(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:63,19
+DA:64,19
+DA:65,0
+DA:66,38
+DA:67,19
+DA:68,19
+DA:70,19
+DA:71,19
+DA:72,19
+DA:73,19
+DA:75,19
+DA:76,19
+DA:77,19
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,19
+BRDA:77,168,0,0
+BRDA:77,168,1,19
+LF:48
+LH:20
+BRF:10
+BRH:3
+FNF:3
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\FeatureManagementInstaller.cs
+FN:10,System.Void qrAPI.Installers.FeatureManagementInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.FeatureManagementInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:11,19
+DA:12,19
+DA:13,19
+DA:14,19
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\HealthChecksInstaller.cs
+FN:11,System.Void qrAPI.Installers.HealthChecksInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.HealthChecksInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:12,19
+DA:13,19
+DA:14,19
+DA:16,19
+DA:19,19
+DA:20,19
+DA:22,0
+DA:23,0
+DA:25,19
+BRDA:16,35,0,19
+BRDA:16,48,1,19
+BRDA:16,35,1,0
+BRDA:16,48,0,0
+LF:9
+LH:7
+BRF:4
+BRH:2
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\InstallerExtensions.cs
+FN:16,System.Void qrAPI.Installers.InstallerExtensions::InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.InstallerExtensions::InstallServicesInAssembly(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:17,19
+DA:18,19
+DA:19,532
+DA:20,19
+DA:21,209
+DA:22,19
+BRDA:19,16,0,209
+BRDA:19,24,0,190
+BRDA:19,16,1,323
+BRDA:19,24,1,323
+FN:24,System.Void qrAPI.Installers.InstallerExtensions::AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+FNDA:19,System.Void qrAPI.Installers.InstallerExtensions::AddSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)
+DA:25,19
+DA:26,19
+DA:27,19
+DA:28,19
+DA:29,38
+DA:30,19
+DA:31,114
+DA:32,38
+DA:33,38
+DA:34,38
+DA:35,19
+BRDA:31,73,1,19
+BRDA:31,73,0,19
+FN:36,System.Void qrAPI.Installers.InstallerExtensions::AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+FNDA:19,System.Void qrAPI.Installers.InstallerExtensions::AddHealthChecks(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+DA:37,19
+DA:38,19
+DA:39,19
+DA:40,19
+DA:41,0
+DA:42,0
+DA:43,19
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,19
+DA:56,0
+DA:57,0
+DA:58,19
+DA:59,19
+LF:40
+LH:25
+BRF:6
+BRH:6
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\MvcInstaller.cs
+FN:17,System.Void qrAPI.Installers.MvcInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.MvcInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:18,19
+DA:19,76
+DA:20,38
+DA:21,38
+DA:22,38
+DA:23,38
+DA:24,19
+DA:25,38
+DA:26,19
+DA:27,19
+DA:28,19
+DA:29,19
+DA:30,19
+LF:13
+LH:13
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\OdataInstaller.cs
+FN:12,System.Void qrAPI.Installers.OdataInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.OdataInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:13,19
+DA:14,19
+DA:15,38
+DA:16,38
+DA:17,38
+DA:18,38
+DA:19,38
+DA:20,19
+DA:22,19
+DA:23,38
+DA:24,171
+DA:25,38
+DA:26,38
+DA:27,38
+DA:28,171
+DA:29,38
+DA:30,38
+DA:31,38
+DA:32,38
+DA:33,19
+DA:34,19
+DA:35,38
+DA:36,19
+DA:37,19
+DA:38,38
+DA:39,19
+DA:40,19
+DA:41,19
+DA:42,38
+DA:43,38
+DA:44,19
+BRDA:24,99,1,19
+BRDA:24,99,0,19
+BRDA:28,212,1,19
+BRDA:28,212,0,19
+LF:31
+LH:31
+BRF:4
+BRH:4
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\ServicesInstaller.cs
+FN:11,System.Void qrAPI.Installers.ServicesInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.ServicesInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:12,19
+DA:13,19
+DA:14,19
+DA:15,19
+DA:16,19
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Installers\SwaggerInstaller.cs
+FN:17,System.Void qrAPI.Installers.SwaggerInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:19,System.Void qrAPI.Installers.SwaggerInstaller::InstallServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:18,19
+DA:19,19
+DA:20,19
+DA:21,19
+DA:22,0
+DA:23,19
+DA:24,0
+DA:25,0
+DA:26,19
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,19
+DA:46,19
+LF:29
+LH:8
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\HealthChecks\DataBaseHealthCheck.cs
+FN:18,System.Threading.Tasks.Task`1<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult> qrAPI.HealthChecks.DataBaseHealthCheck::CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+FNDA:0,System.Threading.Tasks.Task`1<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult> qrAPI.HealthChecks.DataBaseHealthCheck::CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:29,0
+FN:11,System.Void qrAPI.HealthChecks.DataBaseHealthCheck::.ctor(qrAPI.DAL.Data.IDataContext)
+FNDA:0,System.Void qrAPI.HealthChecks.DataBaseHealthCheck::.ctor(qrAPI.DAL.Data.IDataContext)
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+LF:12
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Authorization\WorksForCompanyHandler.cs
+FN:9,System.Threading.Tasks.Task qrAPI.Authorization.WorksForCompanyHandler::HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+FNDA:0,System.Threading.Tasks.Task qrAPI.Authorization.WorksForCompanyHandler::HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,qrAPI.Authorization.WorksForCompanyRequirement)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:18,0
+DA:19,0
+DA:20,0
+BRDA:11,8,0,0
+BRDA:11,8,1,0
+BRDA:11,25,0,0
+BRDA:11,25,1,0
+BRDA:12,48,0,0
+BRDA:12,48,1,0
+LF:9
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI\Authorization\WorksForCompanyRequirement.cs
+FN:6,System.String qrAPI.Authorization.WorksForCompanyRequirement::get_DomainName()
+FNDA:0,System.String qrAPI.Authorization.WorksForCompanyRequirement::get_DomainName()
+DA:7,0
+FN:8,System.Void qrAPI.Authorization.WorksForCompanyRequirement::.ctor(System.String)
+FNDA:19,System.Void qrAPI.Authorization.WorksForCompanyRequirement::.ctor(System.String)
+DA:9,19
+DA:10,19
+DA:11,19
+DA:12,19
+LF:5
+LH:4
+BRF:0
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Settings\MemoryCacheSettings.cs
+FN:6,System.Boolean qrAPI.Infra.Settings.MemoryCacheSettings::get_Enabled()
+FNDA:114,System.Boolean qrAPI.Infra.Settings.MemoryCacheSettings::get_Enabled()
+DA:7,114
+FN:7,System.String qrAPI.Infra.Settings.MemoryCacheSettings::get_ConnectionString()
+FNDA:76,System.String qrAPI.Infra.Settings.MemoryCacheSettings::get_ConnectionString()
+DA:8,76
+FN:8,System.TimeSpan qrAPI.Infra.Settings.MemoryCacheSettings::get_AbsoluteExpirationHours()
+FNDA:76,System.TimeSpan qrAPI.Infra.Settings.MemoryCacheSettings::get_AbsoluteExpirationHours()
+DA:9,76
+FN:9,System.TimeSpan qrAPI.Infra.Settings.MemoryCacheSettings::get_SlidingExpiration()
+FNDA:76,System.TimeSpan qrAPI.Infra.Settings.MemoryCacheSettings::get_SlidingExpiration()
+DA:10,76
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Options\IoCOptions.cs
+FN:4,System.String qrAPI.Infra.Options.IoCOptions::get_DalImplementation()
+FNDA:114,System.String qrAPI.Infra.Options.IoCOptions::get_DalImplementation()
+DA:5,114
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\TestMail\Email.cs
+FN:6,System.Object qrAPI.Infra.Mail.TestMail.Email::get_date()
+FNDA:0,System.Object qrAPI.Infra.Mail.TestMail.Email::get_date()
+DA:7,0
+FN:7,System.Collections.Generic.List`1<System.Object> qrAPI.Infra.Mail.TestMail.Email::get_attachments()
+FNDA:0,System.Collections.Generic.List`1<System.Object> qrAPI.Infra.Mail.TestMail.Email::get_attachments()
+DA:8,0
+FN:8,System.String qrAPI.Infra.Mail.TestMail.Email::get_dkim()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_dkim()
+DA:9,0
+FN:9,System.String qrAPI.Infra.Mail.TestMail.Email::get_envelope_to()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_envelope_to()
+DA:10,0
+FN:10,System.String qrAPI.Infra.Mail.TestMail.Email::get_subject()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_subject()
+DA:11,0
+FN:11,System.String qrAPI.Infra.Mail.TestMail.Email::get_SPF()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_SPF()
+DA:12,0
+FN:12,System.Collections.Generic.List`1<qrAPI.Infra.Mail.TestMail.ToParsed> qrAPI.Infra.Mail.TestMail.Email::get_to_parsed()
+FNDA:0,System.Collections.Generic.List`1<qrAPI.Infra.Mail.TestMail.ToParsed> qrAPI.Infra.Mail.TestMail.Email::get_to_parsed()
+DA:13,0
+FN:13,System.String qrAPI.Infra.Mail.TestMail.Email::get_oid()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_oid()
+DA:14,0
+FN:14,System.String qrAPI.Infra.Mail.TestMail.Email::get_envelope_from()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_envelope_from()
+DA:15,0
+FN:15,System.Collections.Generic.List`1<System.Object> qrAPI.Infra.Mail.TestMail.Email::get_cc_parsed()
+FNDA:0,System.Collections.Generic.List`1<System.Object> qrAPI.Infra.Mail.TestMail.Email::get_cc_parsed()
+DA:16,0
+FN:16,System.String qrAPI.Infra.Mail.TestMail.Email::get_namespace()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_namespace()
+DA:17,0
+FN:17,System.String qrAPI.Infra.Mail.TestMail.Email::get_from()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_from()
+DA:18,0
+FN:18,System.String qrAPI.Infra.Mail.TestMail.Email::get_sender_ip()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_sender_ip()
+DA:19,0
+FN:19,System.String qrAPI.Infra.Mail.TestMail.Email::get_html()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_html()
+DA:20,0
+FN:20,System.String qrAPI.Infra.Mail.TestMail.Email::get_to()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_to()
+DA:21,0
+FN:21,System.String qrAPI.Infra.Mail.TestMail.Email::get_tag()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_tag()
+DA:22,0
+FN:22,System.String qrAPI.Infra.Mail.TestMail.Email::get_text()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_text()
+DA:23,0
+FN:23,System.Collections.Generic.List`1<qrAPI.Infra.Mail.TestMail.FromParsed> qrAPI.Infra.Mail.TestMail.Email::get_from_parsed()
+FNDA:0,System.Collections.Generic.List`1<qrAPI.Infra.Mail.TestMail.FromParsed> qrAPI.Infra.Mail.TestMail.Email::get_from_parsed()
+DA:24,0
+FN:24,System.Object qrAPI.Infra.Mail.TestMail.Email::get_timestamp()
+FNDA:0,System.Object qrAPI.Infra.Mail.TestMail.Email::get_timestamp()
+DA:25,0
+FN:25,System.String qrAPI.Infra.Mail.TestMail.Email::get_id()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_id()
+DA:26,0
+FN:26,System.String qrAPI.Infra.Mail.TestMail.Email::get_downloadUrl()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.Email::get_downloadUrl()
+DA:27,0
+LF:21
+LH:0
+BRF:0
+BRH:0
+FNF:21
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\TestMail\FromParsed.cs
+FN:4,System.String qrAPI.Infra.Mail.TestMail.FromParsed::get_address()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.FromParsed::get_address()
+DA:5,0
+FN:5,System.String qrAPI.Infra.Mail.TestMail.FromParsed::get_name()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.FromParsed::get_name()
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\TestMail\TestMailHelper.cs
+FN:12,System.Void qrAPI.Infra.Mail.TestMail.TestMailHelper::.ctor(qrAPI.Infra.Mail.TestMail.TestMailSettings,System.Net.Http.HttpClient)
+FNDA:0,System.Void qrAPI.Infra.Mail.TestMail.TestMailHelper::.ctor(qrAPI.Infra.Mail.TestMail.TestMailSettings,System.Net.Http.HttpClient)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+FN:20,System.Void qrAPI.Infra.Mail.TestMail.TestMailHelper/<GetMails>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.Infra.Mail.TestMail.TestMailHelper/<GetMails>d__3::MoveNext()
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+LF:11
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\TestMail\TestMailResponse.cs
+FN:6,System.String qrAPI.Infra.Mail.TestMail.TestMailResponse::get_result()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.TestMailResponse::get_result()
+DA:7,0
+FN:7,System.Object qrAPI.Infra.Mail.TestMail.TestMailResponse::get_message()
+FNDA:0,System.Object qrAPI.Infra.Mail.TestMail.TestMailResponse::get_message()
+DA:8,0
+FN:8,System.Int32 qrAPI.Infra.Mail.TestMail.TestMailResponse::get_count()
+FNDA:0,System.Int32 qrAPI.Infra.Mail.TestMail.TestMailResponse::get_count()
+DA:9,0
+FN:9,System.Int32 qrAPI.Infra.Mail.TestMail.TestMailResponse::get_limit()
+FNDA:0,System.Int32 qrAPI.Infra.Mail.TestMail.TestMailResponse::get_limit()
+DA:10,0
+FN:10,System.Int32 qrAPI.Infra.Mail.TestMail.TestMailResponse::get_offset()
+FNDA:0,System.Int32 qrAPI.Infra.Mail.TestMail.TestMailResponse::get_offset()
+DA:11,0
+FN:11,System.Collections.Generic.List`1<qrAPI.Infra.Mail.TestMail.Email> qrAPI.Infra.Mail.TestMail.TestMailResponse::get_emails()
+FNDA:0,System.Collections.Generic.List`1<qrAPI.Infra.Mail.TestMail.Email> qrAPI.Infra.Mail.TestMail.TestMailResponse::get_emails()
+DA:12,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\TestMail\TestMailSettings.cs
+FN:4,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_ApiKey()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_ApiKey()
+DA:5,0
+FN:5,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_Namespace()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_Namespace()
+DA:6,0
+FN:6,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_BaseUrl()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_BaseUrl()
+DA:7,0
+FN:7,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_TestMail()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.TestMailSettings::get_TestMail()
+DA:8,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\TestMail\ToParsed.cs
+FN:4,System.String qrAPI.Infra.Mail.TestMail.ToParsed::get_address()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.ToParsed::get_address()
+DA:5,0
+FN:5,System.String qrAPI.Infra.Mail.TestMail.ToParsed::get_name()
+FNDA:0,System.String qrAPI.Infra.Mail.TestMail.ToParsed::get_name()
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\SendGun\SendGunMailBroker.cs
+FN:12,System.Void qrAPI.Infra.Mail.SendGun.SendGunMailBroker::.ctor(qrAPI.Infra.Mail.SendGun.SendGunSettings,System.Net.Http.HttpClient)
+FNDA:0,System.Void qrAPI.Infra.Mail.SendGun.SendGunMailBroker::.ctor(qrAPI.Infra.Mail.SendGun.SendGunSettings,System.Net.Http.HttpClient)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+FN:19,System.Void qrAPI.Infra.Mail.SendGun.SendGunMailBroker/<SendSimpleMessage>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.Infra.Mail.SendGun.SendGunMailBroker/<SendSimpleMessage>d__3::MoveNext()
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+LF:15
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\SendGun\SendGunSettings.cs
+FN:4,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_ApiKey()
+FNDA:38,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_ApiKey()
+DA:5,38
+FN:5,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_BaseUrl()
+FNDA:38,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_BaseUrl()
+DA:6,38
+FN:6,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_RequestUri()
+FNDA:38,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_RequestUri()
+DA:7,38
+FN:7,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_From()
+FNDA:38,System.String qrAPI.Infra.Mail.SendGun.SendGunSettings::get_From()
+DA:8,38
+FN:8,System.Boolean qrAPI.Infra.Mail.SendGun.SendGunSettings::get_Enabled()
+FNDA:57,System.Boolean qrAPI.Infra.Mail.SendGun.SendGunSettings::get_Enabled()
+DA:9,57
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\SendGrid\SendGridMailBroker.cs
+FN:11,System.Void qrAPI.Infra.Mail.SendGrid.SendGridMailBroker::.ctor(qrAPI.Infra.Mail.SendGrid.SendGridSettings)
+FNDA:10,System.Void qrAPI.Infra.Mail.SendGrid.SendGridMailBroker::.ctor(qrAPI.Infra.Mail.SendGrid.SendGridSettings)
+DA:12,10
+DA:13,10
+DA:14,10
+DA:15,10
+FN:16,System.Void qrAPI.Infra.Mail.SendGrid.SendGridMailBroker/<SendSimpleMessage>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.Infra.Mail.SendGrid.SendGridMailBroker/<SendSimpleMessage>d__2::MoveNext()
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+LF:11
+LH:4
+BRF:0
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\SendGrid\SendGridSettings.cs
+FN:4,System.String qrAPI.Infra.Mail.SendGrid.SendGridSettings::get_ApiKey()
+FNDA:38,System.String qrAPI.Infra.Mail.SendGrid.SendGridSettings::get_ApiKey()
+DA:5,38
+FN:5,System.Boolean qrAPI.Infra.Mail.SendGrid.SendGridSettings::get_Enabled()
+FNDA:57,System.Boolean qrAPI.Infra.Mail.SendGrid.SendGridSettings::get_Enabled()
+DA:6,57
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Mail\Models\Mail.cs
+FN:4,System.Void qrAPI.Infra.Mail.Models.Mail::.ctor(System.String,System.String,System.String,System.String)
+FNDA:0,System.Void qrAPI.Infra.Mail.Models.Mail::.ctor(System.String,System.String,System.String,System.String)
+DA:5,0
+DA:6,0
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Extensions\GeneralExtensions.cs
+FN:9,System.Guid qrAPI.Infra.Extensions.GeneralExtensions::GetUserId(Microsoft.AspNetCore.Http.HttpContext)
+FNDA:21,System.Guid qrAPI.Infra.Extensions.GeneralExtensions::GetUserId(Microsoft.AspNetCore.Http.HttpContext)
+DA:10,21
+DA:11,21
+DA:12,168
+BRDA:10,6,0,21
+BRDA:10,6,1,0
+LF:3
+LH:3
+BRF:2
+BRH:1
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Exceptions\DbDeleteException.cs
+FN:6,System.Void qrAPI.Infra.Exceptions.DbDeleteException::.ctor()
+FNDA:0,System.Void qrAPI.Infra.Exceptions.DbDeleteException::.ctor()
+DA:7,0
+DA:8,0
+DA:9,0
+FN:11,System.Void qrAPI.Infra.Exceptions.DbDeleteException::.ctor(System.String)
+FNDA:0,System.Void qrAPI.Infra.Exceptions.DbDeleteException::.ctor(System.String)
+DA:12,0
+DA:13,0
+DA:14,0
+FN:16,System.Void qrAPI.Infra.Exceptions.DbDeleteException::.ctor(System.String,System.Exception)
+FNDA:0,System.Void qrAPI.Infra.Exceptions.DbDeleteException::.ctor(System.String,System.Exception)
+DA:17,0
+DA:18,0
+DA:19,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Exceptions\IdNotFoundException.cs
+FN:6,System.Void qrAPI.Infra.Exceptions.IdNotFoundException::.ctor()
+FNDA:0,System.Void qrAPI.Infra.Exceptions.IdNotFoundException::.ctor()
+DA:7,0
+DA:8,0
+DA:9,0
+FN:11,System.Void qrAPI.Infra.Exceptions.IdNotFoundException::.ctor(System.String)
+FNDA:0,System.Void qrAPI.Infra.Exceptions.IdNotFoundException::.ctor(System.String)
+DA:12,0
+DA:13,0
+DA:14,0
+FN:16,System.Void qrAPI.Infra.Exceptions.IdNotFoundException::.ctor(System.String,System.Exception)
+FNDA:0,System.Void qrAPI.Infra.Exceptions.IdNotFoundException::.ctor(System.String,System.Exception)
+DA:17,0
+DA:18,0
+DA:19,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Exceptions\InvalidIdException.cs
+FN:7,System.Void qrAPI.Infra.Exceptions.InvalidIdException::.ctor()
+FNDA:0,System.Void qrAPI.Infra.Exceptions.InvalidIdException::.ctor()
+DA:8,0
+DA:9,0
+DA:10,0
+FN:12,System.Void qrAPI.Infra.Exceptions.InvalidIdException::.ctor(System.String)
+FNDA:0,System.Void qrAPI.Infra.Exceptions.InvalidIdException::.ctor(System.String)
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void qrAPI.Infra.Exceptions.InvalidIdException::.ctor(System.String,System.Exception)
+FNDA:0,System.Void qrAPI.Infra.Exceptions.InvalidIdException::.ctor(System.String,System.Exception)
+DA:18,0
+DA:19,0
+DA:20,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Infra\Cache\RedisCacheHelper.cs
+FN:13,System.Void qrAPI.Infra.Cache.RedisCacheHelper::.ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,qrAPI.Infra.Settings.MemoryCacheSettings)
+FNDA:0,System.Void qrAPI.Infra.Cache.RedisCacheHelper::.ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,qrAPI.Infra.Settings.MemoryCacheSettings)
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+FN:20,System.Void qrAPI.Infra.Cache.RedisCacheHelper/<GetCachedAsync>d__3`1::MoveNext()
+FNDA:0,System.Void qrAPI.Infra.Cache.RedisCacheHelper/<GetCachedAsync>d__3`1::MoveNext()
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+BRDA:23,172,0,0
+BRDA:23,172,1,0
+FN:26,System.Void qrAPI.Infra.Cache.RedisCacheHelper/<GetCachedAsync>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.Infra.Cache.RedisCacheHelper/<GetCachedAsync>d__4::MoveNext()
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+BRDA:29,172,0,0
+BRDA:29,172,1,0
+FN:32,System.Void qrAPI.Infra.Cache.RedisCacheHelper/<CacheAsync>d__5`1::MoveNext()
+FNDA:0,System.Void qrAPI.Infra.Cache.RedisCacheHelper/<CacheAsync>d__5`1::MoveNext()
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+BRDA:34,34,0,0
+BRDA:34,34,1,0
+BRDA:36,80,0,0
+BRDA:36,80,1,0
+BRDA:36,133,0,0
+BRDA:36,133,1,0
+LF:23
+LH:0
+BRF:10
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Web\Filters\ValidationFilter.cs
+FN:15,System.Boolean qrAPI.Web.Filters.ValidationFilter/<>c::<OnActionExecutionAsync>b__0_0(System.Collections.Generic.KeyValuePair`2<System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry>)
+FNDA:0,System.Boolean qrAPI.Web.Filters.ValidationFilter/<>c::<OnActionExecutionAsync>b__0_0(System.Collections.Generic.KeyValuePair`2<System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry>)
+DA:16,0
+FN:16,System.String qrAPI.Web.Filters.ValidationFilter/<>c::<OnActionExecutionAsync>b__0_1(System.Collections.Generic.KeyValuePair`2<System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry>)
+FNDA:0,System.String qrAPI.Web.Filters.ValidationFilter/<>c::<OnActionExecutionAsync>b__0_1(System.Collections.Generic.KeyValuePair`2<System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry>)
+DA:17,0
+FN:11,System.Void qrAPI.Web.Filters.ValidationFilter/<OnActionExecutionAsync>d__0::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Filters.ValidationFilter/<OnActionExecutionAsync>d__0::MoveNext()
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:35,0
+DA:38,0
+BRDA:13,39,0,0
+BRDA:19,455,1,0
+BRDA:21,376,1,0
+BRDA:21,376,0,0
+BRDA:19,455,0,0
+BRDA:13,39,1,0
+LF:23
+LH:0
+BRF:6
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Web\Controllers\v1\IdentityController.cs
+FN:18,System.Void qrAPI.Web.Controllers.v1.IdentityController::.ctor(qrAPI.App.Services.Interfaces.IIdentityService)
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.IdentityController::.ctor(qrAPI.App.Services.Interfaces.IIdentityService)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:30,System.Collections.Generic.IEnumerable`1<System.String> qrAPI.Web.Controllers.v1.IdentityController/<>c::<Register>b__2_0(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry)
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.String> qrAPI.Web.Controllers.v1.IdentityController/<>c::<Register>b__2_0(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry)
+DA:31,0
+FN:25,System.Void qrAPI.Web.Controllers.v1.IdentityController/<Register>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.IdentityController/<Register>d__2::MoveNext()
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:32,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+BRDA:27,39,0,0
+BRDA:27,39,1,0
+BRDA:37,299,0,0
+BRDA:37,299,1,0
+FN:53,System.Void qrAPI.Web.Controllers.v1.IdentityController/<Login>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.IdentityController/<Login>d__3::MoveNext()
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+BRDA:57,185,0,0
+BRDA:57,185,1,0
+FN:73,System.Void qrAPI.Web.Controllers.v1.IdentityController/<Refresh>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.IdentityController/<Refresh>d__4::MoveNext()
+DA:74,0
+DA:75,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+BRDA:77,185,0,0
+BRDA:77,185,1,0
+LF:52
+LH:0
+BRF:8
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Web\Controllers\v1\PetsController.cs
+FN:31,System.Void qrAPI.Web.Controllers.v1.PetsController::.ctor(AutoMapper.IMapper,qrAPI.App.Services.Interfaces.IGenericService`1<qrAPI.App.Domain.Pet>)
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.PetsController::.ctor(AutoMapper.IMapper,qrAPI.App.Services.Interfaces.IGenericService`1<qrAPI.App.Domain.Pet>)
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+FN:47,System.Void qrAPI.Web.Controllers.v1.PetsController/<GetAllPets>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.PetsController/<GetAllPets>d__3::MoveNext()
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+FN:66,System.Void qrAPI.Web.Controllers.v1.PetsController/<GetPet>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.PetsController/<GetPet>d__4::MoveNext()
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+BRDA:69,192,0,0
+BRDA:69,192,1,0
+FN:80,System.Void qrAPI.Web.Controllers.v1.PetsController/<CreatePet>d__5::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.PetsController/<CreatePet>d__5::MoveNext()
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+BRDA:83,208,0,0
+BRDA:83,208,1,0
+FN:96,System.Void qrAPI.Web.Controllers.v1.PetsController/<UpdatePet>d__6::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.PetsController/<UpdatePet>d__6::MoveNext()
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+BRDA:99,172,0,0
+BRDA:99,172,1,0
+FN:110,System.Void qrAPI.Web.Controllers.v1.PetsController/<DeletePet>d__7::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.PetsController/<DeletePet>d__7::MoveNext()
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+BRDA:113,150,0,0
+BRDA:113,150,1,0
+LF:27
+LH:0
+BRF:8
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Web\Controllers\v1\QrsController.cs
+FN:28,System.Void qrAPI.Web.Controllers.v1.QrsController::.ctor(AutoMapper.IMapper,qrAPI.App.Services.Interfaces.IQrService)
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController::.ctor(AutoMapper.IMapper,qrAPI.App.Services.Interfaces.IQrService)
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+FN:40,System.Void qrAPI.Web.Controllers.v1.QrsController/<GetAllQrs>d__3::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController/<GetAllQrs>d__3::MoveNext()
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+FN:52,System.Void qrAPI.Web.Controllers.v1.QrsController/<GetQr>d__4::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController/<GetQr>d__4::MoveNext()
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+BRDA:55,192,0,0
+BRDA:55,192,1,0
+FN:59,System.Void qrAPI.Web.Controllers.v1.QrsController/<ScanQr>d__5::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController/<ScanQr>d__5::MoveNext()
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+FN:67,System.Void qrAPI.Web.Controllers.v1.QrsController/<CreateQr>d__6::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController/<CreateQr>d__6::MoveNext()
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+BRDA:70,208,0,0
+BRDA:70,208,1,0
+FN:77,System.Void qrAPI.Web.Controllers.v1.QrsController/<UpdateQr>d__7::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController/<UpdateQr>d__7::MoveNext()
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+BRDA:80,172,0,0
+BRDA:80,172,1,0
+FN:84,System.Void qrAPI.Web.Controllers.v1.QrsController/<DeleteQr>d__8::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Controllers.v1.QrsController/<DeleteQr>d__8::MoveNext()
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+BRDA:87,150,0,0
+BRDA:87,150,1,0
+LF:31
+LH:0
+BRF:8
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:C:\Users\facun\source\repos\QrApi\src\qrAPI.Web\Cache\CachedAttribute.cs
+FN:60,System.String qrAPI.Web.Cache.CachedAttribute::GenerateCacheKeyFromRequest(Microsoft.AspNetCore.Http.HttpRequest)
+FNDA:0,System.String qrAPI.Web.Cache.CachedAttribute::GenerateCacheKeyFromRequest(Microsoft.AspNetCore.Http.HttpRequest)
+DA:61,0
+DA:62,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:71,0
+DA:72,0
+BRDA:66,144,1,0
+BRDA:66,144,0,0
+FN:19,System.Void qrAPI.Web.Cache.CachedAttribute::.ctor(System.Int32)
+FNDA:0,System.Void qrAPI.Web.Cache.CachedAttribute::.ctor(System.Int32)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:25,System.Void qrAPI.Web.Cache.CachedAttribute/<OnActionExecutionAsync>d__2::MoveNext()
+FNDA:0,System.Void qrAPI.Web.Cache.CachedAttribute/<OnActionExecutionAsync>d__2::MoveNext()
+DA:26,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+BRDA:29,92,0,0
+BRDA:29,92,1,0
+BRDA:40,407,0,0
+BRDA:40,407,1,0
+BRDA:54,653,0,0
+BRDA:54,653,1,0
+LF:38
+LH:0
+BRF:8
+BRH:0
+FNF:3
+FNH:0
+end_of_record

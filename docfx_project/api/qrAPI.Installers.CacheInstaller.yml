@@ -28,7 +28,6 @@ items:
     content: 'public class CacheInstaller : IInstaller'
     content.vb: >-
       Public Class CacheInstaller
-
           Implements IInstaller
   inheritance:
   - System.Object

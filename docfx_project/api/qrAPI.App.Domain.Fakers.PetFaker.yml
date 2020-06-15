@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PetFaker
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/PetFaker.cs
     startLine: 7
   assemblies:
   - qrAPI.App
@@ -30,9 +30,7 @@ items:
     content: 'public sealed class PetFaker : AutoFaker<Pet>, IFakerTInternal, ILocaleAware, IRuleSet<Pet>'
     content.vb: >-
       Public NotInheritable Class PetFaker
-
           Inherits AutoFaker(Of Pet)
-
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Pet)
   inheritance:
   - System.Object
@@ -122,7 +120,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/PetFaker.cs
     startLine: 9
   assemblies:
   - qrAPI.App
@@ -152,7 +150,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/PetFaker.cs
     startLine: 18
   assemblies:
   - qrAPI.App
@@ -185,7 +183,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Domain/Fakers/PetFaker.cs
+    path: ../src/qrAPI.App/Domain/Fakers/PetFaker.cs
     startLine: 27
   assemblies:
   - qrAPI.App

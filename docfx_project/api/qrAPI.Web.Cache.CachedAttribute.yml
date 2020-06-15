@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CachedAttribute
-    path: ../../QrApi/src/qrAPI.Web/Cache/CachedAttribute.cs
+    path: ../src/qrAPI.Web/Cache/CachedAttribute.cs
     startLine: 14
   assemblies:
   - qrAPI.Web
@@ -34,9 +34,7 @@ items:
       <AttributeUsage(AttributeTargets.Class Or AttributeTargets.Method)>
 
       Public Class CachedAttribute
-
           Inherits Attribute
-
           Implements IAsyncActionFilter, IFilterMetadata
   inheritance:
   - System.Object
@@ -116,7 +114,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Web/Cache/CachedAttribute.cs
+    path: ../src/qrAPI.Web/Cache/CachedAttribute.cs
     startLine: 19
   assemblies:
   - qrAPI.Web
@@ -149,7 +147,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: OnActionExecutionAsync
-    path: ../../QrApi/src/qrAPI.Web/Cache/CachedAttribute.cs
+    path: ../src/qrAPI.Web/Cache/CachedAttribute.cs
     startLine: 24
   assemblies:
   - qrAPI.Web

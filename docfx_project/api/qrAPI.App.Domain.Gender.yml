@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Gender
-    path: ../../QrApi/src/qrAPI.App/Domain/Gender.cs
+    path: ../src/qrAPI.App/Domain/Gender.cs
     startLine: 2
   assemblies:
   - qrAPI.App
@@ -51,7 +51,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Female
-    path: ../../QrApi/src/qrAPI.App/Domain/Gender.cs
+    path: ../src/qrAPI.App/Domain/Gender.cs
     startLine: 4
   assemblies:
   - qrAPI.App
@@ -83,7 +83,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Male
-    path: ../../QrApi/src/qrAPI.App/Domain/Gender.cs
+    path: ../src/qrAPI.App/Domain/Gender.cs
     startLine: 5
   assemblies:
   - qrAPI.App

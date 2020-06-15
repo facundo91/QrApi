@@ -23,7 +23,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IdentityService
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    path: ../src/qrAPI.App/Services/Implementations/IdentityService.cs
     startLine: 18
   assemblies:
   - qrAPI.App
@@ -32,7 +32,6 @@ items:
     content: 'public class IdentityService : IIdentityService'
     content.vb: >-
       Public Class IdentityService
-
           Implements IIdentityService
   inheritance:
   - System.Object
@@ -69,7 +68,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    path: ../src/qrAPI.App/Services/Implementations/IdentityService.cs
     startLine: 26
   assemblies:
   - qrAPI.App
@@ -113,7 +112,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: RegisterAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    path: ../src/qrAPI.App/Services/Implementations/IdentityService.cs
     startLine: 39
   assemblies:
   - qrAPI.App
@@ -152,7 +151,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: LoginAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    path: ../src/qrAPI.App/Services/Implementations/IdentityService.cs
     startLine: 68
   assemblies:
   - qrAPI.App
@@ -191,7 +190,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: RefreshTokenAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    path: ../src/qrAPI.App/Services/Implementations/IdentityService.cs
     startLine: 89
   assemblies:
   - qrAPI.App
@@ -230,7 +229,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetPersonAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Implementations/IdentityService.cs
+    path: ../src/qrAPI.App/Services/Implementations/IdentityService.cs
     startLine: 150
   assemblies:
   - qrAPI.App

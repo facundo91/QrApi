@@ -28,7 +28,6 @@ items:
     content: 'public class AlertsInstaller : IInstaller'
     content.vb: >-
       Public Class AlertsInstaller
-
           Implements IInstaller
   inheritance:
   - System.Object

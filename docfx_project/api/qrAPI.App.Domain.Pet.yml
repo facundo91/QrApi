@@ -29,7 +29,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Pet
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 6
   assemblies:
   - qrAPI.App
@@ -38,7 +38,6 @@ items:
     content: 'public class Pet : DomainObject'
     content.vb: >-
       Public Class Pet
-
           Inherits DomainObject
   inheritance:
   - System.Object
@@ -75,7 +74,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: MaxAge
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 8
   assemblies:
   - qrAPI.App
@@ -108,7 +107,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: MaxNameLength
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 9
   assemblies:
   - qrAPI.App
@@ -141,7 +140,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: MinNameLength
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 10
   assemblies:
   - qrAPI.App
@@ -174,7 +173,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Qr
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 12
   assemblies:
   - qrAPI.App
@@ -209,7 +208,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Name
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 13
   assemblies:
   - qrAPI.App
@@ -244,7 +243,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Birthdate
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 14
   assemblies:
   - qrAPI.App
@@ -279,7 +278,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Gender
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 15
   assemblies:
   - qrAPI.App
@@ -314,7 +313,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Owners
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 16
   assemblies:
   - qrAPI.App
@@ -349,7 +348,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PictureUrl
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 17
   assemblies:
   - qrAPI.App
@@ -384,7 +383,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Breed
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 18
   assemblies:
   - qrAPI.App
@@ -419,7 +418,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: AddNewOwner
-    path: ../../QrApi/src/qrAPI.App/Domain/Pet.cs
+    path: ../src/qrAPI.App/Domain/Pet.cs
     startLine: 20
   assemblies:
   - qrAPI.App

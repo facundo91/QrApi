@@ -22,7 +22,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IIdentityService
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IIdentityService.cs
+    path: ../src/qrAPI.App/Services/Interfaces/IIdentityService.cs
     startLine: 7
   assemblies:
   - qrAPI.App
@@ -53,7 +53,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: RegisterAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IIdentityService.cs
+    path: ../src/qrAPI.App/Services/Interfaces/IIdentityService.cs
     startLine: 9
   assemblies:
   - qrAPI.App
@@ -86,7 +86,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: LoginAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IIdentityService.cs
+    path: ../src/qrAPI.App/Services/Interfaces/IIdentityService.cs
     startLine: 11
   assemblies:
   - qrAPI.App
@@ -119,7 +119,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: RefreshTokenAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IIdentityService.cs
+    path: ../src/qrAPI.App/Services/Interfaces/IIdentityService.cs
     startLine: 13
   assemblies:
   - qrAPI.App
@@ -152,7 +152,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetPersonAsync
-    path: ../../QrApi/src/qrAPI.App/Services/Interfaces/IIdentityService.cs
+    path: ../src/qrAPI.App/Services/Interfaces/IIdentityService.cs
     startLine: 15
   assemblies:
   - qrAPI.App

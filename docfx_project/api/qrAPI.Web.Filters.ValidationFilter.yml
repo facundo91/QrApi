@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ValidationFilter
-    path: ../../QrApi/src/qrAPI.Web/Filters/ValidationFilter.cs
+    path: ../src/qrAPI.Web/Filters/ValidationFilter.cs
     startLine: 8
   assemblies:
   - qrAPI.Web
@@ -28,7 +28,6 @@ items:
     content: 'public class ValidationFilter : IAsyncActionFilter, IFilterMetadata'
     content.vb: >-
       Public Class ValidationFilter
-
           Implements IAsyncActionFilter, IFilterMetadata
   inheritance:
   - System.Object
@@ -66,7 +65,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: OnActionExecutionAsync
-    path: ../../QrApi/src/qrAPI.Web/Filters/ValidationFilter.cs
+    path: ../src/qrAPI.Web/Filters/ValidationFilter.cs
     startLine: 10
   assemblies:
   - qrAPI.Web
