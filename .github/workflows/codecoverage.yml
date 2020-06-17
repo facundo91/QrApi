@@ -27,11 +27,11 @@ jobs:
         run: |
           ls -la
           echo $PWD
-          cd src
+          cd \src
           ls -la
-          cd QrAPI.Tests
+          cd \QrAPI.Tests
           ls -la
-          cd TestResults
+          cd \TestResults
           ls -la
           cd ../../..
       - name: Publish coverage report to coveralls.io
