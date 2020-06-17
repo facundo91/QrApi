@@ -25,18 +25,20 @@ jobs:
       - name: List Directory
         working-directory: ${{ github.workspace }}
         run: |
-          ls -la
           echo $PWD
+          ls -la
           cd \src
+          echo $PWD
           ls -la
           cd \qrAPI.Tests
+          echo $PWD
           ls -la
           cd \TestResults
+          echo $PWD
           ls -la
           cd ../../..
       - name: Publish coverage report to coveralls.io
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: coverage.info
-          base-path: src/qrAPI.Tests/TestResults
+          path-to-lcov: src/qrAPI.Tests/TestResults/coverage.info
