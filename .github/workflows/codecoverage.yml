@@ -29,7 +29,7 @@ jobs:
           echo $PWD
           cd \src
           ls -la
-          cd \QrAPI.Tests
+          cd \qrAPI.Tests
           ls -la
           cd \TestResults
           ls -la
@@ -39,4 +39,4 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: coverage.info
-          base-path: src/QrAPI.Tests/TestResults
+          base-path: src/qrAPI.Tests/TestResults
