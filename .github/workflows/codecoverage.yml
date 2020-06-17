@@ -11,16 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@master
       - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@master
         with:
            dotnet-version: 3.1.101
       - name: Generate coverage report
         run: |
+          cd ./QrAPITests/
           dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
       - name: Publish coverage report to coveralls.io
-        uses: coverallsapp/github-action@v1.0.1
+        uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: TestResults/coverage.info   
+          path-to-lcov: TestResults/coverage.info
+          base-path: ./QrAPITests/
