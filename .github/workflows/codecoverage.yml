@@ -24,7 +24,16 @@ jobs:
           dotnet test /p:CollectCoverage=true /p:CoverletOutput=./TestResults/ /p:CoverletOutputFormat=lcov
       - name: List Directory
         working-directory: ${{ github.workspace }}
-        run: ls -la
+        run: |
+          ls -la
+          echo $PWD
+          cd src
+          ls -la
+          cd QrAPI.Tests
+          ls -la
+          cd TestResults
+          ls -la
+          cd ../../..
       - name: Publish coverage report to coveralls.io
         uses: coverallsapp/github-action@master
         with:
