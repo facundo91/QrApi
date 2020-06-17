@@ -18,10 +18,12 @@ jobs:
            dotnet-version: 3.1.101
       - name: Generate coverage report
         run: |
+          dir
           dotnet test /p:CollectCoverage=true /p:CoverletOutput=./TestResults/ /p:CoverletOutputFormat=lcov
+          dir
       - name: Publish coverage report to coveralls.io
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: coverage.info
-          base-path: ./src/QrAPI.Tests/TestResults
+          base-path: src/QrAPI.Tests/TestResults
