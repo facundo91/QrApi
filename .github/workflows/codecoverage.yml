@@ -16,27 +16,9 @@ jobs:
         uses: actions/setup-dotnet@master
         with:
            dotnet-version: 3.1.101
-      - name: List Directory
-        working-directory: ${{ github.workspace }}
-        run: ls -la
       - name: Generate coverage report
         run: |
           dotnet test /p:CollectCoverage=true /p:CoverletOutput=./TestResults/ /p:CoverletOutputFormat=lcov
-      - name: List Directory
-        working-directory: ${{ github.workspace }}
-        run: |
-          echo $PWD
-          ls -la
-          cd \src
-          echo $PWD
-          ls -la
-          cd \qrAPI.Tests
-          echo $PWD
-          ls -la
-          cd \TestResults
-          echo $PWD
-          ls -la
-          cd ../../..
       - name: Publish coverage report to coveralls.io
         uses: coverallsapp/github-action@master
         with:
