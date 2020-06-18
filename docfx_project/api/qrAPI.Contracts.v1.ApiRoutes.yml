@@ -18,7 +18,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ApiRoutes
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 2
   assemblies:
   - qrAPI.Contracts

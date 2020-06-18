@@ -22,7 +22,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: RedisCacheHelper
-    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    path: ../src/qrAPI.Infra/Cache/RedisCacheHelper.cs
     startLine: 8
   assemblies:
   - qrAPI.Infra
@@ -68,7 +68,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    path: ../src/qrAPI.Infra/Cache/RedisCacheHelper.cs
     startLine: 13
   assemblies:
   - qrAPI.Infra
@@ -103,7 +103,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetCachedAsync
-    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    path: ../src/qrAPI.Infra/Cache/RedisCacheHelper.cs
     startLine: 19
   assemblies:
   - qrAPI.Infra
@@ -145,7 +145,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetCachedAsync
-    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    path: ../src/qrAPI.Infra/Cache/RedisCacheHelper.cs
     startLine: 25
   assemblies:
   - qrAPI.Infra
@@ -182,7 +182,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CacheAsync
-    path: ../../QrApi/src/qrAPI.Infra/Cache/RedisCacheHelper.cs
+    path: ../src/qrAPI.Infra/Cache/RedisCacheHelper.cs
     startLine: 31
   assemblies:
   - qrAPI.Infra

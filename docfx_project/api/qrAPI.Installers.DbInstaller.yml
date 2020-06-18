@@ -28,6 +28,7 @@ items:
     content: 'public class DbInstaller : IInstaller'
     content.vb: >-
       Public Class DbInstaller
+
           Implements IInstaller
   inheritance:
   - System.Object

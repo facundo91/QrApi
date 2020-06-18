@@ -25,9 +25,8 @@ namespace qrAPI.App.Services.Implementations
             IPetRepository repository,
             IHttpContextAccessor httpContextAccessor,
             IIdentityService identityService,
-            ILogger<PetService> logger,
-            PetValidator validator)
-            : base(mapper, repository, logger, validator)
+            ILogger<PetService> logger)
+            : base(mapper, repository, logger)
         {
             _repository = repository;
             _httpContextAccessor = httpContextAccessor;

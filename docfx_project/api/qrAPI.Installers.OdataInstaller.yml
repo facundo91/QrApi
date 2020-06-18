@@ -28,6 +28,7 @@ items:
     content: 'public class OdataInstaller : IInstaller'
     content.vb: >-
       Public Class OdataInstaller
+
           Implements IInstaller
   inheritance:
   - System.Object

@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GeneralExtensions
-    path: ../../QrApi/src/qrAPI.Infra/Extensions/GeneralExtensions.cs
+    path: ../src/qrAPI.Infra/Extensions/GeneralExtensions.cs
     startLine: 6
   assemblies:
   - qrAPI.Infra
@@ -62,7 +62,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetUserId
-    path: ../../QrApi/src/qrAPI.Infra/Extensions/GeneralExtensions.cs
+    path: ../src/qrAPI.Infra/Extensions/GeneralExtensions.cs
     startLine: 8
   assemblies:
   - qrAPI.Infra

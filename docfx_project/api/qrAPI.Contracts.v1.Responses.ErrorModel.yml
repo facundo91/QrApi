@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ErrorModel
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorModel.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorModel.cs
     startLine: 2
   assemblies:
   - qrAPI.Contracts
@@ -61,7 +61,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: FieldName
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorModel.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorModel.cs
     startLine: 4
   assemblies:
   - qrAPI.Contracts
@@ -96,7 +96,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Message
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorModel.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorModel.cs
     startLine: 6
   assemblies:
   - qrAPI.Contracts

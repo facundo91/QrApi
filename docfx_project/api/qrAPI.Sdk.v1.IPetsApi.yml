@@ -23,7 +23,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IPetsApi
-    path: ../../QrApi/src/qrAPI.Sdk/v1/IPetsApi.cs
+    path: ../src/qrAPI.Sdk/v1/IPetsApi.cs
     startLine: 11
   assemblies:
   - qrAPI.Sdk
@@ -54,7 +54,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllAsync
-    path: ../../QrApi/src/qrAPI.Sdk/v1/IPetsApi.cs
+    path: ../src/qrAPI.Sdk/v1/IPetsApi.cs
     startLine: 13
   assemblies:
   - qrAPI.Sdk
@@ -94,7 +94,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAsync
-    path: ../../QrApi/src/qrAPI.Sdk/v1/IPetsApi.cs
+    path: ../src/qrAPI.Sdk/v1/IPetsApi.cs
     startLine: 16
   assemblies:
   - qrAPI.Sdk
@@ -137,7 +137,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CreateAsync
-    path: ../../QrApi/src/qrAPI.Sdk/v1/IPetsApi.cs
+    path: ../src/qrAPI.Sdk/v1/IPetsApi.cs
     startLine: 19
   assemblies:
   - qrAPI.Sdk
@@ -184,7 +184,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateAsync
-    path: ../../QrApi/src/qrAPI.Sdk/v1/IPetsApi.cs
+    path: ../src/qrAPI.Sdk/v1/IPetsApi.cs
     startLine: 22
   assemblies:
   - qrAPI.Sdk
@@ -233,7 +233,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DeleteAsync
-    path: ../../QrApi/src/qrAPI.Sdk/v1/IPetsApi.cs
+    path: ../src/qrAPI.Sdk/v1/IPetsApi.cs
     startLine: 25
   assemblies:
   - qrAPI.Sdk

@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: SendGunMailBroker
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunMailBroker.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunMailBroker.cs
     startLine: 7
   assemblies:
   - qrAPI.Infra
@@ -66,7 +66,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunMailBroker.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunMailBroker.cs
     startLine: 12
   assemblies:
   - qrAPI.Infra
@@ -101,7 +101,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: SendSimpleMessage
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunMailBroker.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunMailBroker.cs
     startLine: 18
   assemblies:
   - qrAPI.Infra

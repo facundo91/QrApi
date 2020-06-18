@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IgnoreDtos
-    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.Designer.cs
+    path: ../src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.Designer.cs
     startLine: 12
   assemblies:
   - qrAPI.DAL
@@ -91,7 +91,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Up
-    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.cs
+    path: ../src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.cs
     startLine: 7
   assemblies:
   - qrAPI.DAL
@@ -127,7 +127,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Down
-    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.cs
+    path: ../src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.cs
     startLine: 42
   assemblies:
   - qrAPI.DAL
@@ -163,7 +163,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: BuildTargetModel
-    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.Designer.cs
+    path: ../src/qrAPI.DAL/Data/EFData/Migrations/20200324043314_IgnoreDtos.Designer.cs
     startLine: 16
   assemblies:
   - qrAPI.DAL

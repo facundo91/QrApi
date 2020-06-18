@@ -28,7 +28,9 @@ items:
     content: 'public sealed class BreedFaker : AutoFaker<Breed>, IFakerTInternal, ILocaleAware, IRuleSet<Breed>'
     content.vb: >-
       Public NotInheritable Class BreedFaker
+
           Inherits AutoFaker(Of Breed)
+
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Breed)
   inheritance:
   - System.Object

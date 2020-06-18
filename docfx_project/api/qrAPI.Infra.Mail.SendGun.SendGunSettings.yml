@@ -23,7 +23,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: SendGunSettings
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
     startLine: 2
   assemblies:
   - qrAPI.Infra
@@ -64,7 +64,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ApiKey
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
     startLine: 4
   assemblies:
   - qrAPI.Infra
@@ -99,7 +99,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: BaseUrl
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
     startLine: 5
   assemblies:
   - qrAPI.Infra
@@ -134,7 +134,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: RequestUri
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
     startLine: 6
   assemblies:
   - qrAPI.Infra
@@ -169,7 +169,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: From
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
     startLine: 7
   assemblies:
   - qrAPI.Infra
@@ -204,7 +204,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Enabled
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGun/SendGunSettings.cs
     startLine: 8
   assemblies:
   - qrAPI.Infra

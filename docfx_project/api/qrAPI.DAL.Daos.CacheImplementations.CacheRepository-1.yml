@@ -26,7 +26,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CacheRepository
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 10
   assemblies:
   - qrAPI.DAL
@@ -79,7 +79,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 16
   assemblies:
   - qrAPI.DAL
@@ -119,7 +119,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 23
   assemblies:
   - qrAPI.DAL
@@ -155,7 +155,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 26
   assemblies:
   - qrAPI.DAL
@@ -194,7 +194,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: InsertAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 30
   assemblies:
   - qrAPI.DAL
@@ -233,7 +233,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 32
   assemblies:
   - qrAPI.DAL
@@ -272,7 +272,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DeleteAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 34
   assemblies:
   - qrAPI.DAL
@@ -311,7 +311,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllAndCacheAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 36
   assemblies:
   - qrAPI.DAL
@@ -351,7 +351,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GenerateCacheKeyFromQuery
-    path: ../../QrApi/src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
+    path: ../src/qrAPI.DAL/Daos/CacheImplementations/CacheRepository.cs
     startLine: 62
   assemblies:
   - qrAPI.DAL

@@ -44,6 +44,7 @@ items:
       <ODataRouting>
 
       Public Class IdentityController
+
           Inherits ControllerBase
   inheritance:
   - System.Object

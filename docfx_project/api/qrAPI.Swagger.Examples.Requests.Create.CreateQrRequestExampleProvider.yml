@@ -28,6 +28,7 @@ items:
     content: 'public class CreateQrRequestExampleProvider : IExamplesProvider<CreateQrRequest>'
     content.vb: >-
       Public Class CreateQrRequestExampleProvider
+
           Implements IExamplesProvider(Of CreateQrRequest)
   inheritance:
   - System.Object

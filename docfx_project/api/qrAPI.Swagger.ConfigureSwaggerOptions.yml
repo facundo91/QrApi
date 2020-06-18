@@ -35,6 +35,7 @@ items:
     content: 'public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>'
     content.vb: >-
       Public Class ConfigureSwaggerOptions
+
           Implements IConfigureOptions(Of SwaggerGenOptions)
   inheritance:
   - System.Object

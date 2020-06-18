@@ -30,7 +30,9 @@ items:
     content: 'public sealed class PetFaker : AutoFaker<Pet>, IFakerTInternal, ILocaleAware, IRuleSet<Pet>'
     content.vb: >-
       Public NotInheritable Class PetFaker
+
           Inherits AutoFaker(Of Pet)
+
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Pet)
   inheritance:
   - System.Object

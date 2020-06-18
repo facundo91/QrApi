@@ -24,9 +24,8 @@ namespace qrAPI.App.Services.Implementations
             IMailBroker mailService,
             IGenericService<Pet> petService,
             IIdentityService identityService,
-            ILogger<QrService> logger,
-            QrValidator validator)
-            : base(mapper, repository, logger, validator)
+            ILogger<QrService> logger)
+            : base(mapper, repository, logger)
         {
             _mailService = mailService;
             _petService = petService;

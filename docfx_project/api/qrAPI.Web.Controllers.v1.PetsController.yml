@@ -50,6 +50,7 @@ items:
       <Authorize(AuthenticationSchemes:="Bearer")>
 
       Public Class PetsController
+
           Inherits ODataController
   inheritance:
   - System.Object

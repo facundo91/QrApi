@@ -5,7 +5,7 @@ items:
   id: PetService
   parent: qrAPI.App.Services.Implementations
   children:
-  - qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
+  - qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService})
   - qrAPI.App.Services.Implementations.PetService.CreateAsync(qrAPI.App.Domain.Pet)
   - qrAPI.App.Services.Implementations.PetService.DeleteAsync(System.Guid)
   - qrAPI.App.Services.Implementations.PetService.GetAllAsync
@@ -33,7 +33,9 @@ items:
     content: 'public class PetService : AbstractGenericService<Pet, PetDto>, IGenericService<Pet>'
     content.vb: >-
       Public Class PetService
+
           Inherits AbstractGenericService(Of Pet, PetDto)
+
           Implements IGenericService(Of Pet)
   inheritance:
   - System.Object
@@ -60,16 +62,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
-  commentId: M:qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
-  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)'
+- uid: qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService})
+  commentId: M:qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService})
+  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService})'
   parent: qrAPI.App.Services.Implementations.PetService
   langs:
   - csharp
   - vb
-  name: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>, PetValidator)
-  nameWithType: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>, PetValidator)
-  fullName: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.PetService>, qrAPI.App.Domain.Validators.PetValidator)
+  name: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>)
+  nameWithType: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>)
+  fullName: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.PetService>)
   type: Constructor
   source:
     remote:
@@ -83,7 +85,7 @@ items:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
   syntax:
-    content: public PetService(IMapper mapper, IPetRepository repository, IHttpContextAccessor httpContextAccessor, IIdentityService identityService, ILogger<PetService> logger, PetValidator validator)
+    content: public PetService(IMapper mapper, IPetRepository repository, IHttpContextAccessor httpContextAccessor, IIdentityService identityService, ILogger<PetService> logger)
     parameters:
     - id: mapper
       type: AutoMapper.IMapper
@@ -95,17 +97,15 @@ items:
       type: qrAPI.App.Services.Interfaces.IIdentityService
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService}
-    - id: validator
-      type: qrAPI.App.Domain.Validators.PetValidator
-    content.vb: Public Sub New(mapper As IMapper, repository As IPetRepository, httpContextAccessor As IHttpContextAccessor, identityService As IIdentityService, logger As ILogger(Of PetService), validator As PetValidator)
+    content.vb: Public Sub New(mapper As IMapper, repository As IPetRepository, httpContextAccessor As IHttpContextAccessor, identityService As IIdentityService, logger As ILogger(Of PetService))
   overload: qrAPI.App.Services.Implementations.PetService.#ctor*
-  nameWithType.vb: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService), PetValidator)
+  nameWithType.vb: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.PetService), qrAPI.App.Domain.Validators.PetValidator)
-  name.vb: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService), PetValidator)
+  fullName.vb: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.PetService))
+  name.vb: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService))
 - uid: qrAPI.App.Services.Implementations.PetService.GetAllAsync
   commentId: M:qrAPI.App.Services.Implementations.PetService.GetAllAsync
   id: GetAllAsync
@@ -124,7 +124,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllAsync
     path: ../src/qrAPI.App/Services/Implementations/PetService.cs
-    startLine: 36
+    startLine: 35
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
@@ -159,7 +159,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: CreateAsync
     path: ../src/qrAPI.App/Services/Implementations/PetService.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
@@ -197,7 +197,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: GetByIdAsync
     path: ../src/qrAPI.App/Services/Implementations/PetService.cs
-    startLine: 50
+    startLine: 49
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
@@ -235,7 +235,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: DeleteAsync
     path: ../src/qrAPI.App/Services/Implementations/PetService.cs
-    startLine: 58
+    startLine: 57
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
@@ -273,7 +273,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateAsync
     path: ../src/qrAPI.App/Services/Implementations/PetService.cs
-    startLine: 64
+    startLine: 63
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
@@ -1268,12 +1268,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: qrAPI.App.Domain.Validators.PetValidator
-  commentId: T:qrAPI.App.Domain.Validators.PetValidator
-  parent: qrAPI.App.Domain.Validators
-  name: PetValidator
-  nameWithType: PetValidator
-  fullName: qrAPI.App.Domain.Validators.PetValidator
 - uid: AutoMapper
   commentId: N:AutoMapper
   isExternal: true
@@ -1336,11 +1330,6 @@ references:
   name: Microsoft.Extensions.Logging
   nameWithType: Microsoft.Extensions.Logging
   fullName: Microsoft.Extensions.Logging
-- uid: qrAPI.App.Domain.Validators
-  commentId: N:qrAPI.App.Domain.Validators
-  name: qrAPI.App.Domain.Validators
-  nameWithType: qrAPI.App.Domain.Validators
-  fullName: qrAPI.App.Domain.Validators
 - uid: qrAPI.App.Services.Implementations.PetService.GetAllAsync*
   commentId: Overload:qrAPI.App.Services.Implementations.PetService.GetAllAsync
   name: GetAllAsync

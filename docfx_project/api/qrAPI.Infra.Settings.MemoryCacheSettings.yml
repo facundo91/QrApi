@@ -22,7 +22,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: MemoryCacheSettings
-    path: ../../QrApi/src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
+    path: ../src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
     startLine: 4
   assemblies:
   - qrAPI.Infra
@@ -63,7 +63,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Enabled
-    path: ../../QrApi/src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
+    path: ../src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
     startLine: 6
   assemblies:
   - qrAPI.Infra
@@ -98,7 +98,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ConnectionString
-    path: ../../QrApi/src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
+    path: ../src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
     startLine: 7
   assemblies:
   - qrAPI.Infra
@@ -133,7 +133,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: AbsoluteExpirationHours
-    path: ../../QrApi/src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
+    path: ../src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
     startLine: 8
   assemblies:
   - qrAPI.Infra
@@ -168,7 +168,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: SlidingExpiration
-    path: ../../QrApi/src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
+    path: ../src/qrAPI.Infra/Settings/MemoryCacheSettings.cs
     startLine: 9
   assemblies:
   - qrAPI.Infra

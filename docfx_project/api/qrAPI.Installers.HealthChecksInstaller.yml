@@ -28,6 +28,7 @@ items:
     content: 'public class HealthChecksInstaller : IInstaller'
     content.vb: >-
       Public Class HealthChecksInstaller
+
           Implements IInstaller
   inheritance:
   - System.Object

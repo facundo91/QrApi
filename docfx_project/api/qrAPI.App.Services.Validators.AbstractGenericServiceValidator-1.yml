@@ -1,49 +1,46 @@
 ### YamlMime:ManagedReference
 items:
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
-  commentId: T:qrAPI.App.Services.Implementations.AbstractGenericService`2
-  id: AbstractGenericService`2
-  parent: qrAPI.App.Services.Implementations
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  commentId: T:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  id: AbstractGenericServiceValidator`1
+  parent: qrAPI.App.Services.Validators
   children:
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}})
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
-  - qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator{`0}},qrAPI.App.Services.Interfaces.IGenericService{`0},FluentValidation.AbstractValidator{`0})
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._decoratedService
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._logger
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync(`0)
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync(System.Guid)
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync(System.Guid)
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync(System.Guid,`0)
   langs:
   - csharp
   - vb
-  name: AbstractGenericService<TDomainObject, TDto>
-  nameWithType: AbstractGenericService<TDomainObject, TDto>
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>
+  name: AbstractGenericServiceValidator<TDomainObject>
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>
   type: Class
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
-    id: AbstractGenericService
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+    id: AbstractGenericServiceValidator
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
     startLine: 12
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: 'public abstract class AbstractGenericService<TDomainObject, TDto> : IGenericService<TDomainObject> where TDomainObject : DomainObject where TDto : Dto'
+    content: 'public class AbstractGenericServiceValidator<TDomainObject> : IGenericService<TDomainObject> where TDomainObject : DomainObject'
     typeParameters:
     - id: TDomainObject
-    - id: TDto
     content.vb: >-
-      Public MustInherit Class AbstractGenericService(Of TDomainObject As DomainObject, TDto As Dto)
+      Public Class AbstractGenericServiceValidator(Of TDomainObject As DomainObject)
 
           Implements IGenericService(Of TDomainObject)
   inheritance:
   - System.Object
-  derivedClasses:
-  - qrAPI.App.Services.Implementations.PetService
-  - qrAPI.App.Services.Implementations.QrService
   implements:
   - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
   inheritedMembers:
@@ -54,236 +51,263 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)
   modifiers.csharp:
   - public
-  - abstract
   - class
   modifiers.vb:
   - Public
-  - MustInherit
   - Class
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)
-  name.vb: AbstractGenericService(Of TDomainObject, TDto)
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
-  commentId: F:qrAPI.App.Services.Implementations.AbstractGenericService`2.Mapper
-  id: Mapper
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)
+  name.vb: AbstractGenericServiceValidator(Of TDomainObject)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._decoratedService
+  commentId: F:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._decoratedService
+  id: _decoratedService
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
-  name: Mapper
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.Mapper
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.Mapper
+  name: _decoratedService
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>._decoratedService
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>._decoratedService
   type: Field
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
-    id: Mapper
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 16
+    id: _decoratedService
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 15
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: protected readonly IMapper Mapper
+    content: public readonly IGenericService<TDomainObject> _decoratedService
     return:
-      type: AutoMapper.IMapper
-    content.vb: Protected ReadOnly Mapper As IMapper
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).Mapper
+      type: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+    content.vb: Public ReadOnly _decoratedService As IGenericService(Of TDomainObject)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)._decoratedService
   modifiers.csharp:
-  - protected
+  - public
   - readonly
   modifiers.vb:
-  - Protected
+  - Public
   - ReadOnly
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).Mapper
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}})
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}})
-  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}})'
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)._decoratedService
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._logger
+  commentId: F:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._logger
+  id: _logger
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
-  name: AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>)
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>)
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<TDto>, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>>)
+  name: _logger
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>._logger
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>._logger
+  type: Field
+  source:
+    remote:
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+      branch: master
+      repo: https://github.com/facundo91/QrApi.git
+    id: _logger
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 17
+  assemblies:
+  - qrAPI.App
+  namespace: qrAPI.App.Services.Validators
+  syntax:
+    content: public readonly ILogger<AbstractGenericServiceValidator<TDomainObject>> _logger
+    return:
+      type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1}
+    content.vb: Public ReadOnly _logger As ILogger(Of AbstractGenericServiceValidator(Of TDomainObject))
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)._logger
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)._logger
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator{`0}},qrAPI.App.Services.Interfaces.IGenericService{`0},FluentValidation.AbstractValidator{`0})
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator{`0}},qrAPI.App.Services.Interfaces.IGenericService{`0},FluentValidation.AbstractValidator{`0})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator{`0}},qrAPI.App.Services.Interfaces.IGenericService{`0},FluentValidation.AbstractValidator{`0})'
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  langs:
+  - csharp
+  - vb
+  name: AbstractGenericServiceValidator(ILogger<AbstractGenericServiceValidator<TDomainObject>>, IGenericService<TDomainObject>, AbstractValidator<TDomainObject>)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator(ILogger<AbstractGenericServiceValidator<TDomainObject>>, IGenericService<TDomainObject>, AbstractValidator<TDomainObject>)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator(Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>>, qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>, FluentValidation.AbstractValidator<TDomainObject>)
   type: Constructor
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 20
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 19
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: protected AbstractGenericService(IMapper mapper, IRepository<TDto> repository, ILogger<AbstractGenericService<TDomainObject, TDto>> logger)
+    content: public AbstractGenericServiceValidator(ILogger<AbstractGenericServiceValidator<TDomainObject>> logger, IGenericService<TDomainObject> decoratedService, AbstractValidator<TDomainObject> validator)
     parameters:
-    - id: mapper
-      type: AutoMapper.IMapper
-    - id: repository
-      type: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
     - id: logger
-      type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService`2}
-    content.vb: Protected Sub New(mapper As IMapper, repository As IRepository(Of TDto), logger As ILogger(Of AbstractGenericService(Of TDomainObject, TDto)))
-  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor*
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)))
+      type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1}
+    - id: decoratedService
+      type: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
+    - id: validator
+      type: FluentValidation.AbstractValidator{{TDomainObject}}
+    content.vb: Public Sub New(logger As ILogger(Of AbstractGenericServiceValidator(Of TDomainObject)), decoratedService As IGenericService(Of TDomainObject), validator As AbstractValidator(Of TDomainObject))
+  overload: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor*
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator(ILogger(Of AbstractGenericServiceValidator(Of TDomainObject)), IGenericService(Of TDomainObject), AbstractValidator(Of TDomainObject))
   modifiers.csharp:
-  - protected
+  - public
   modifiers.vb:
-  - Protected
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto), Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)))
-  name.vb: AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)))
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+  - Public
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator(Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)), qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject), FluentValidation.AbstractValidator(Of TDomainObject))
+  name.vb: AbstractGenericServiceValidator(ILogger(Of AbstractGenericServiceValidator(Of TDomainObject)), IGenericService(Of TDomainObject), AbstractValidator(Of TDomainObject))
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
   id: GetAllAsync
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
   name: GetAllAsync()
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetAllAsync()
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetAllAsync()
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetAllAsync()
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetAllAsync()
   type: Method
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllAsync
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 30
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 29
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: public virtual Task<IEnumerable<TDomainObject>> GetAllAsync()
+    content: public Task<IEnumerable<TDomainObject>> GetAllAsync()
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TDomainObject}}}
-    content.vb: Public Overridable Function GetAllAsync As Task(Of IEnumerable(Of TDomainObject))
-  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync*
+    content.vb: Public Function GetAllAsync As Task(Of IEnumerable(Of TDomainObject))
+  overload: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync*
   implements:
   - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetAllAsync
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetAllAsync()
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync()
   modifiers.csharp:
   - public
-  - virtual
   modifiers.vb:
   - Public
-  - Overridable
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetAllAsync()
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync(System.Guid)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync()
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync(System.Guid)
   id: GetByIdAsync(System.Guid)
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
   name: GetByIdAsync(Guid)
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetByIdAsync(Guid)
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetByIdAsync(System.Guid)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync(Guid)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync(System.Guid)
   type: Method
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetByIdAsync
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 33
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 32
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: public virtual Task<TDomainObject> GetByIdAsync(Guid id)
+    content: public Task<TDomainObject> GetByIdAsync(Guid id)
     parameters:
     - id: id
       type: System.Guid
     return:
       type: System.Threading.Tasks.Task{{TDomainObject}}
-    content.vb: Public Overridable Function GetByIdAsync(id As Guid) As Task(Of TDomainObject)
-  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync*
+    content.vb: Public Function GetByIdAsync(id As Guid) As Task(Of TDomainObject)
+  overload: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync*
   implements:
   - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetByIdAsync(System.Guid)
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync(Guid)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync(Guid)
   modifiers.csharp:
   - public
-  - virtual
   modifiers.vb:
   - Public
-  - Overridable
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync(System.Guid)
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync(`0)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync(System.Guid)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync(`0)
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync(`0)
   id: CreateAsync(`0)
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
   name: CreateAsync(TDomainObject)
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.CreateAsync(TDomainObject)
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.CreateAsync(TDomainObject)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.CreateAsync(TDomainObject)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.CreateAsync(TDomainObject)
   type: Method
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: CreateAsync
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 36
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 35
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: public virtual Task<TDomainObject> CreateAsync(TDomainObject objToCreate)
+    content: public Task<TDomainObject> CreateAsync(TDomainObject obj)
     parameters:
-    - id: objToCreate
+    - id: obj
       type: '{TDomainObject}'
     return:
       type: System.Threading.Tasks.Task{{TDomainObject}}
-    content.vb: Public Overridable Function CreateAsync(objToCreate As TDomainObject) As Task(Of TDomainObject)
-  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync*
+    content.vb: Public Function CreateAsync(obj As TDomainObject) As Task(Of TDomainObject)
+  overload: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync*
   implements:
   - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.CreateAsync({TDomainObject})
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).CreateAsync(TDomainObject)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).CreateAsync(TDomainObject)
   modifiers.csharp:
   - public
-  - virtual
   modifiers.vb:
   - Public
-  - Overridable
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).CreateAsync(TDomainObject)
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync(System.Guid,`0)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).CreateAsync(TDomainObject)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync(System.Guid,`0)
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync(System.Guid,`0)
   id: UpdateAsync(System.Guid,`0)
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
   name: UpdateAsync(Guid, TDomainObject)
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.UpdateAsync(Guid, TDomainObject)
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.UpdateAsync(System.Guid, TDomainObject)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.UpdateAsync(Guid, TDomainObject)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.UpdateAsync(System.Guid, TDomainObject)
   type: Method
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateAsync
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 39
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 41
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: public virtual Task<bool> UpdateAsync(Guid id, TDomainObject objToUpdate)
+    content: public Task<bool> UpdateAsync(Guid id, TDomainObject objToUpdate)
     parameters:
     - id: id
       type: System.Guid
@@ -291,65 +315,61 @@ items:
       type: '{TDomainObject}'
     return:
       type: System.Threading.Tasks.Task{System.Boolean}
-    content.vb: Public Overridable Function UpdateAsync(id As Guid, objToUpdate As TDomainObject) As Task(Of Boolean)
-  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync*
+    content.vb: Public Function UpdateAsync(id As Guid, objToUpdate As TDomainObject) As Task(Of Boolean)
+  overload: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync*
   implements:
   - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.UpdateAsync(System.Guid,{TDomainObject})
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).UpdateAsync(Guid, TDomainObject)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync(Guid, TDomainObject)
   modifiers.csharp:
   - public
-  - virtual
   modifiers.vb:
   - Public
-  - Overridable
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).UpdateAsync(System.Guid, TDomainObject)
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync(System.Guid)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync(System.Guid, TDomainObject)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync(System.Guid)
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync(System.Guid)
   id: DeleteAsync(System.Guid)
-  parent: qrAPI.App.Services.Implementations.AbstractGenericService`2
+  parent: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
   langs:
   - csharp
   - vb
   name: DeleteAsync(Guid)
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.DeleteAsync(Guid)
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.DeleteAsync(System.Guid)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.DeleteAsync(Guid)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.DeleteAsync(System.Guid)
   type: Method
   source:
     remote:
-      path: src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
+      path: src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DeleteAsync
-    path: ../src/qrAPI.App/Services/Implementations/AbstractGenericService.cs
-    startLine: 45
+    path: ../src/qrAPI.App/Services/Validators/AbstractGenericServiceValidator.cs
+    startLine: 44
   assemblies:
   - qrAPI.App
-  namespace: qrAPI.App.Services.Implementations
+  namespace: qrAPI.App.Services.Validators
   syntax:
-    content: public virtual Task<bool> DeleteAsync(Guid id)
+    content: public Task<bool> DeleteAsync(Guid id)
     parameters:
     - id: id
       type: System.Guid
     return:
       type: System.Threading.Tasks.Task{System.Boolean}
-    content.vb: Public Overridable Function DeleteAsync(id As Guid) As Task(Of Boolean)
-  overload: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync*
+    content.vb: Public Function DeleteAsync(id As Guid) As Task(Of Boolean)
+  overload: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync*
   implements:
   - qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.DeleteAsync(System.Guid)
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).DeleteAsync(Guid)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync(Guid)
   modifiers.csharp:
   - public
-  - virtual
   modifiers.vb:
   - Public
-  - Overridable
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).DeleteAsync(System.Guid)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync(System.Guid)
 references:
-- uid: qrAPI.App.Services.Implementations
-  commentId: N:qrAPI.App.Services.Implementations
-  name: qrAPI.App.Services.Implementations
-  nameWithType: qrAPI.App.Services.Implementations
-  fullName: qrAPI.App.Services.Implementations
+- uid: qrAPI.App.Services.Validators
+  commentId: N:qrAPI.App.Services.Validators
+  name: qrAPI.App.Services.Validators
+  nameWithType: qrAPI.App.Services.Validators
+  fullName: qrAPI.App.Services.Validators
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -721,74 +741,16 @@ references:
   name: qrAPI.App.Services.Interfaces
   nameWithType: qrAPI.App.Services.Interfaces
   fullName: qrAPI.App.Services.Interfaces
-- uid: AutoMapper.IMapper
-  commentId: T:AutoMapper.IMapper
-  parent: AutoMapper
-  isExternal: true
-  name: IMapper
-  nameWithType: IMapper
-  fullName: AutoMapper.IMapper
-- uid: AutoMapper
-  commentId: N:AutoMapper
-  isExternal: true
-  name: AutoMapper
-  nameWithType: AutoMapper
-  fullName: AutoMapper
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor*
-  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor
-  name: AbstractGenericService
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.AbstractGenericService
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.AbstractGenericService
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService
-- uid: qrAPI.DAL.Daos.Interfaces.IRepository{{TDto}}
-  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository{`0}
-  parent: qrAPI.DAL.Daos.Interfaces
-  definition: qrAPI.DAL.Daos.Interfaces.IRepository`1
-  name: IRepository<TDto>
-  nameWithType: IRepository<TDto>
-  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
-  nameWithType.vb: IRepository(Of TDto)
-  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
-  name.vb: IRepository(Of TDto)
-  spec.csharp:
-  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
-    name: IRepository
-    nameWithType: IRepository
-    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TDto
-    nameWithType: TDto
-    fullName: TDto
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
-    name: IRepository
-    nameWithType: IRepository
-    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TDto
-    nameWithType: TDto
-    fullName: TDto
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService`2}
-  commentId: T:Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService`2}
+- uid: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1}
   parent: Microsoft.Extensions.Logging
   definition: Microsoft.Extensions.Logging.ILogger`1
-  name: ILogger<AbstractGenericService<TDomainObject, TDto>>
-  nameWithType: ILogger<AbstractGenericService<TDomainObject, TDto>>
-  fullName: Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>>
-  nameWithType.vb: ILogger(Of AbstractGenericService(Of TDomainObject, TDto))
-  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto))
-  name.vb: ILogger(Of AbstractGenericService(Of TDomainObject, TDto))
+  name: ILogger<AbstractGenericServiceValidator<TDomainObject>>
+  nameWithType: ILogger<AbstractGenericServiceValidator<TDomainObject>>
+  fullName: Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>>
+  nameWithType.vb: ILogger(Of AbstractGenericServiceValidator(Of TDomainObject))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject))
+  name.vb: ILogger(Of AbstractGenericServiceValidator(Of TDomainObject))
   spec.csharp:
   - uid: Microsoft.Extensions.Logging.ILogger`1
     name: ILogger
@@ -798,22 +760,16 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
-    name: AbstractGenericService
-    nameWithType: AbstractGenericService
-    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+    name: AbstractGenericServiceValidator
+    nameWithType: AbstractGenericServiceValidator
+    fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator
   - name: <
     nameWithType: <
     fullName: <
   - name: TDomainObject
     nameWithType: TDomainObject
     fullName: TDomainObject
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TDto
-    nameWithType: TDto
-    fullName: TDto
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -829,69 +785,22 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2
-    name: AbstractGenericService
-    nameWithType: AbstractGenericService
-    fullName: qrAPI.App.Services.Implementations.AbstractGenericService
+  - uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+    name: AbstractGenericServiceValidator
+    nameWithType: AbstractGenericServiceValidator
+    fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
   - name: TDomainObject
     nameWithType: TDomainObject
     fullName: TDomainObject
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TDto
-    nameWithType: TDto
-    fullName: TDto
   - name: )
     nameWithType: )
     fullName: )
   - name: )
     nameWithType: )
     fullName: )
-- uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
-  commentId: T:qrAPI.DAL.Daos.Interfaces.IRepository`1
-  name: IRepository<TDto>
-  nameWithType: IRepository<TDto>
-  fullName: qrAPI.DAL.Daos.Interfaces.IRepository<TDto>
-  nameWithType.vb: IRepository(Of TDto)
-  fullName.vb: qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto)
-  name.vb: IRepository(Of TDto)
-  spec.csharp:
-  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
-    name: IRepository
-    nameWithType: IRepository
-    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TDto
-    nameWithType: TDto
-    fullName: TDto
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: qrAPI.DAL.Daos.Interfaces.IRepository`1
-    name: IRepository
-    nameWithType: IRepository
-    fullName: qrAPI.DAL.Daos.Interfaces.IRepository
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TDto
-    nameWithType: TDto
-    fullName: TDto
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: qrAPI.DAL.Daos.Interfaces
-  commentId: N:qrAPI.DAL.Daos.Interfaces
-  name: qrAPI.DAL.Daos.Interfaces
-  nameWithType: qrAPI.DAL.Daos.Interfaces
-  fullName: qrAPI.DAL.Daos.Interfaces
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1
   isExternal: true
@@ -937,13 +846,105 @@ references:
   name: Microsoft.Extensions.Logging
   nameWithType: Microsoft.Extensions.Logging
   fullName: Microsoft.Extensions.Logging
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync*
-  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetAllAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor*
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor
+  name: AbstractGenericServiceValidator
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator
+- uid: FluentValidation.AbstractValidator{{TDomainObject}}
+  commentId: T:FluentValidation.AbstractValidator{`0}
+  parent: FluentValidation
+  definition: FluentValidation.AbstractValidator`1
+  name: AbstractValidator<TDomainObject>
+  nameWithType: AbstractValidator<TDomainObject>
+  fullName: FluentValidation.AbstractValidator<TDomainObject>
+  nameWithType.vb: AbstractValidator(Of TDomainObject)
+  fullName.vb: FluentValidation.AbstractValidator(Of TDomainObject)
+  name.vb: AbstractValidator(Of TDomainObject)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation.AbstractValidator`1
+  commentId: T:FluentValidation.AbstractValidator`1
+  isExternal: true
+  name: AbstractValidator<T>
+  nameWithType: AbstractValidator<T>
+  fullName: FluentValidation.AbstractValidator<T>
+  nameWithType.vb: AbstractValidator(Of T)
+  fullName.vb: FluentValidation.AbstractValidator(Of T)
+  name.vb: AbstractValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    nameWithType: AbstractValidator
+    fullName: FluentValidation.AbstractValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FluentValidation
+  commentId: N:FluentValidation
+  isExternal: true
+  name: FluentValidation
+  nameWithType: FluentValidation
+  fullName: FluentValidation
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync*
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
   name: GetAllAsync
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetAllAsync
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetAllAsync
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetAllAsync
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetAllAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetAllAsync
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetAllAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync
 - uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetAllAsync
   commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.GetAllAsync
   parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
@@ -1111,13 +1112,13 @@ references:
   name: System.Threading.Tasks
   nameWithType: System.Threading.Tasks
   fullName: System.Threading.Tasks
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync*
-  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.GetByIdAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync*
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync
   name: GetByIdAsync
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.GetByIdAsync
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.GetByIdAsync
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).GetByIdAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync
 - uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.GetByIdAsync(System.Guid)
   commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.GetByIdAsync(System.Guid)
   parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
@@ -1246,13 +1247,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync*
-  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.CreateAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync*
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync
   name: CreateAsync
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.CreateAsync
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.CreateAsync
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).CreateAsync
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).CreateAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.CreateAsync
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.CreateAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).CreateAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).CreateAsync
 - uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.CreateAsync({TDomainObject})
   commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.CreateAsync(`0)
   parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
@@ -1335,13 +1336,13 @@ references:
   name: TDomainObject
   nameWithType: TDomainObject
   fullName: TDomainObject
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync*
-  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.UpdateAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync*
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync
   name: UpdateAsync
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.UpdateAsync
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.UpdateAsync
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).UpdateAsync
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).UpdateAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.UpdateAsync
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.UpdateAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync
 - uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.UpdateAsync(System.Guid,{TDomainObject})
   commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.UpdateAsync(System.Guid,`0)
   parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}
@@ -1491,13 +1492,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync*
-  commentId: Overload:qrAPI.App.Services.Implementations.AbstractGenericService`2.DeleteAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync*
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync
   name: DeleteAsync
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.DeleteAsync
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.DeleteAsync
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).DeleteAsync
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).DeleteAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.DeleteAsync
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.DeleteAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync
 - uid: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}.DeleteAsync(System.Guid)
   commentId: M:qrAPI.App.Services.Interfaces.IGenericService{`0}.DeleteAsync(System.Guid)
   parent: qrAPI.App.Services.Interfaces.IGenericService{{TDomainObject}}

@@ -30,6 +30,7 @@ items:
     content: 'public class User : DomainObject'
     content.vb: >-
       Public Class User
+
           Inherits DomainObject
   inheritance:
   - System.Object

@@ -9,31 +9,6 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="api\**" />
-    <Compile Remove="articles\**" />
-    <Compile Remove="_site\**" />
-    <Content Remove="api\**" />
-    <Content Remove="articles\**" />
-    <Content Remove="_site\**" />
-    <EmbeddedResource Remove="api\**" />
-    <EmbeddedResource Remove="articles\**" />
-    <EmbeddedResource Remove="_site\**" />
-    <None Remove="api\**" />
-    <None Remove="articles\**" />
-    <None Remove="_site\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="docfx.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="index.md" />
-    <None Remove="log.txt" />
-    <None Remove="toc.yml" />
-  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />

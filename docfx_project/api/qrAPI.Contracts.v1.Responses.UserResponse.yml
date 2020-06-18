@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UserResponse
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/UserResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/UserResponse.cs
     startLine: 5
   assemblies:
   - qrAPI.Contracts
@@ -61,7 +61,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Id
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/UserResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/UserResponse.cs
     startLine: 7
   assemblies:
   - qrAPI.Contracts
@@ -96,7 +96,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Identity
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/UserResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/UserResponse.cs
     startLine: 8
   assemblies:
   - qrAPI.Contracts

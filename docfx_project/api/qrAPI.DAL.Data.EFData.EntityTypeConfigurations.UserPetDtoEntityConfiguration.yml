@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UserPetDtoEntityConfiguration
-    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/UserPetDtoEntityConfiguration.cs
+    path: ../src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/UserPetDtoEntityConfiguration.cs
     startLine: 6
   assemblies:
   - qrAPI.DAL
@@ -65,7 +65,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Configure
-    path: ../../QrApi/src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/UserPetDtoEntityConfiguration.cs
+    path: ../src/qrAPI.DAL/Data/EFData/EntityTypeConfigurations/UserPetDtoEntityConfiguration.cs
     startLine: 8
   assemblies:
   - qrAPI.DAL

@@ -34,7 +34,9 @@ items:
       <AttributeUsage(AttributeTargets.Class Or AttributeTargets.Method)>
 
       Public Class CachedAttribute
+
           Inherits Attribute
+
           Implements IAsyncActionFilter, IFilterMetadata
   inheritance:
   - System.Object

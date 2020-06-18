@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: HealthCheck
-    path: ../../QrApi/src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
+    path: ../src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
     startLine: 2
   assemblies:
   - qrAPI.Contracts
@@ -62,7 +62,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Status
-    path: ../../QrApi/src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
+    path: ../src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
     startLine: 4
   assemblies:
   - qrAPI.Contracts
@@ -97,7 +97,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Component
-    path: ../../QrApi/src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
+    path: ../src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
     startLine: 6
   assemblies:
   - qrAPI.Contracts
@@ -132,7 +132,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Description
-    path: ../../QrApi/src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
+    path: ../src/qrAPI.Contracts/HealthChecks/HealthCheck.cs
     startLine: 8
   assemblies:
   - qrAPI.Contracts

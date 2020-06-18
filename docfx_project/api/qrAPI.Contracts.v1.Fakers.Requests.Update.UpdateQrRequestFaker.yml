@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UpdateQrRequestFaker
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Fakers/Requests/Update/UpdateQrRequestFaker.cs
+    path: ../src/qrAPI.Contracts/v1/Fakers/Requests/Update/UpdateQrRequestFaker.cs
     startLine: 5
   assemblies:
   - qrAPI.Contracts
@@ -120,7 +120,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Fakers/Requests/Update/UpdateQrRequestFaker.cs
+    path: ../src/qrAPI.Contracts/v1/Fakers/Requests/Update/UpdateQrRequestFaker.cs
     startLine: 7
   assemblies:
   - qrAPI.Contracts

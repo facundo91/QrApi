@@ -18,18 +18,11 @@ items:
 references:
 - uid: qrAPI.App.Domain.Validators.PetValidator
   commentId: T:qrAPI.App.Domain.Validators.PetValidator
-  parent: qrAPI.App.Domain.Validators
   name: PetValidator
   nameWithType: PetValidator
   fullName: qrAPI.App.Domain.Validators.PetValidator
 - uid: qrAPI.App.Domain.Validators.QrValidator
   commentId: T:qrAPI.App.Domain.Validators.QrValidator
-  parent: qrAPI.App.Domain.Validators
   name: QrValidator
   nameWithType: QrValidator
   fullName: qrAPI.App.Domain.Validators.QrValidator
-- uid: qrAPI.App.Domain.Validators
-  commentId: N:qrAPI.App.Domain.Validators
-  name: qrAPI.App.Domain.Validators
-  nameWithType: qrAPI.App.Domain.Validators
-  fullName: qrAPI.App.Domain.Validators

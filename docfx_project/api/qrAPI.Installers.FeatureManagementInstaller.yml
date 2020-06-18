@@ -28,6 +28,7 @@ items:
     content: 'public class FeatureManagementInstaller : IInstaller'
     content.vb: >-
       Public Class FeatureManagementInstaller
+
           Implements IInstaller
   inheritance:
   - System.Object

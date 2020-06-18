@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: QrDto
-    path: ../../QrApi/src/qrAPI.DAL/Dtos/QrDto.cs
+    path: ../src/qrAPI.DAL/Dtos/QrDto.cs
     startLine: 6
   assemblies:
   - qrAPI.DAL
@@ -78,7 +78,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Name
-    path: ../../QrApi/src/qrAPI.DAL/Dtos/QrDto.cs
+    path: ../src/qrAPI.DAL/Dtos/QrDto.cs
     startLine: 9
   assemblies:
   - qrAPI.DAL
@@ -123,7 +123,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PetId
-    path: ../../QrApi/src/qrAPI.DAL/Dtos/QrDto.cs
+    path: ../src/qrAPI.DAL/Dtos/QrDto.cs
     startLine: 11
   assemblies:
   - qrAPI.DAL
@@ -158,7 +158,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Pet
-    path: ../../QrApi/src/qrAPI.DAL/Dtos/QrDto.cs
+    path: ../src/qrAPI.DAL/Dtos/QrDto.cs
     startLine: 12
   assemblies:
   - qrAPI.DAL

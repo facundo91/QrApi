@@ -22,7 +22,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: UserRegistrationRequest
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
+    path: ../src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
     startLine: 4
   assemblies:
   - qrAPI.Contracts
@@ -63,7 +63,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Email
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
+    path: ../src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
     startLine: 6
   assemblies:
   - qrAPI.Contracts
@@ -108,7 +108,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: FirstName
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
+    path: ../src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
     startLine: 8
   assemblies:
   - qrAPI.Contracts
@@ -166,7 +166,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: LastName
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
+    path: ../src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
     startLine: 11
   assemblies:
   - qrAPI.Contracts
@@ -224,7 +224,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Password
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
+    path: ../src/qrAPI.Contracts/v1/Requests/UserRegistrationRequest.cs
     startLine: 14
   assemblies:
   - qrAPI.Contracts

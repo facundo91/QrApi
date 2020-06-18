@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ErrorResponse
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
     startLine: 4
   assemblies:
   - qrAPI.Contracts
@@ -62,7 +62,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
     startLine: 6
   assemblies:
   - qrAPI.Contracts
@@ -92,7 +92,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
     startLine: 10
   assemblies:
   - qrAPI.Contracts
@@ -125,7 +125,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Errors
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/ErrorResponse.cs
     startLine: 15
   assemblies:
   - qrAPI.Contracts

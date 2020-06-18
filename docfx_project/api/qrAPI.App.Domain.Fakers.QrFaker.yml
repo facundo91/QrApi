@@ -29,7 +29,9 @@ items:
     content: 'public sealed class QrFaker : AutoFaker<Qr>, IFakerTInternal, ILocaleAware, IRuleSet<Qr>'
     content.vb: >-
       Public NotInheritable Class QrFaker
+
           Inherits AutoFaker(Of Qr)
+
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Qr)
   inheritance:
   - System.Object

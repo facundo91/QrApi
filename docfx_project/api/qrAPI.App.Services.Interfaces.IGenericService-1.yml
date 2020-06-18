@@ -31,6 +31,7 @@ items:
   syntax:
     content: >-
       public interface IGenericService<TDomainObject>
+
           where TDomainObject : DomainObject
     typeParameters:
     - id: TDomainObject

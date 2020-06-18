@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IDataContext
-    path: ../../QrApi/src/qrAPI.DAL/Data/IDataContext.cs
+    path: ../src/qrAPI.DAL/Data/IDataContext.cs
     startLine: 2
   assemblies:
   - qrAPI.DAL
@@ -50,7 +50,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: HealthCheck
-    path: ../../QrApi/src/qrAPI.DAL/Data/IDataContext.cs
+    path: ../src/qrAPI.DAL/Data/IDataContext.cs
     startLine: 4
   assemblies:
   - qrAPI.DAL

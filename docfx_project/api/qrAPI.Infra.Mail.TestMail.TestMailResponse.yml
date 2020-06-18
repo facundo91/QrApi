@@ -24,7 +24,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: TestMailResponse
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 4
   assemblies:
   - qrAPI.Infra
@@ -65,7 +65,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: result
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 6
   assemblies:
   - qrAPI.Infra
@@ -100,7 +100,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: message
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 7
   assemblies:
   - qrAPI.Infra
@@ -135,7 +135,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: count
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 8
   assemblies:
   - qrAPI.Infra
@@ -170,7 +170,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: limit
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 9
   assemblies:
   - qrAPI.Infra
@@ -205,7 +205,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: offset
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 10
   assemblies:
   - qrAPI.Infra
@@ -240,7 +240,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: emails
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/TestMailResponse.cs
     startLine: 11
   assemblies:
   - qrAPI.Infra

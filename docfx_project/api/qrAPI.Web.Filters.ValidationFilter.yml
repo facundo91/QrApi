@@ -28,6 +28,7 @@ items:
     content: 'public class ValidationFilter : IAsyncActionFilter, IFilterMetadata'
     content.vb: >-
       Public Class ValidationFilter
+
           Implements IAsyncActionFilter, IFilterMetadata
   inheritance:
   - System.Object

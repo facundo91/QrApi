@@ -47,6 +47,7 @@ items:
       <ODataRoutePrefix("Qrs")>
 
       Public Class QrsController
+
           Inherits ODataController
   inheritance:
   - System.Object

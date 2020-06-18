@@ -34,6 +34,7 @@ items:
     content: 'public class SwaggerDefaultValues : IOperationFilter'
     content.vb: >-
       Public Class SwaggerDefaultValues
+
           Implements IOperationFilter
   inheritance:
   - System.Object

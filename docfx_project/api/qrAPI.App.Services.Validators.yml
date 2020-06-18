@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: qrAPI.App.Services.Validators
+  commentId: N:qrAPI.App.Services.Validators
+  id: qrAPI.App.Services.Validators
+  children:
+  - qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  langs:
+  - csharp
+  - vb
+  name: qrAPI.App.Services.Validators
+  nameWithType: qrAPI.App.Services.Validators
+  fullName: qrAPI.App.Services.Validators
+  type: Namespace
+  assemblies:
+  - qrAPI.App
+references:
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  commentId: T:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  name: AbstractGenericServiceValidator<TDomainObject>
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)
+  name.vb: AbstractGenericServiceValidator(Of TDomainObject)
+  spec.csharp:
+  - uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+    name: AbstractGenericServiceValidator
+    nameWithType: AbstractGenericServiceValidator
+    fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+    name: AbstractGenericServiceValidator
+    nameWithType: AbstractGenericServiceValidator
+    fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDomainObject
+    nameWithType: TDomainObject
+    fullName: TDomainObject
+  - name: )
+    nameWithType: )
+    fullName: )

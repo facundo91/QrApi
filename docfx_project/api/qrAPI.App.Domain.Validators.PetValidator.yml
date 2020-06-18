@@ -28,7 +28,9 @@ items:
     content: 'public class PetValidator : AbstractValidator<Pet>, IValidator<Pet>, IValidator, IEnumerable<IValidationRule>, IEnumerable'
     content.vb: >-
       Public Class PetValidator
+
           Inherits AbstractValidator(Of Pet)
+
           Implements IValidator(Of Pet), IValidator, IEnumerable(Of IValidationRule), IEnumerable
   inheritance:
   - System.Object

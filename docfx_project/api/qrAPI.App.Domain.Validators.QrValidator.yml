@@ -28,7 +28,9 @@ items:
     content: 'public class QrValidator : AbstractValidator<Qr>, IValidator<Qr>, IValidator, IEnumerable<IValidationRule>, IEnumerable'
     content.vb: >-
       Public Class QrValidator
+
           Inherits AbstractValidator(Of Qr)
+
           Implements IValidator(Of Qr), IValidator, IEnumerable(Of IValidationRule), IEnumerable
   inheritance:
   - System.Object

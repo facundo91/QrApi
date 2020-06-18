@@ -29,7 +29,9 @@ items:
     content: 'public sealed class UserFaker : AutoFaker<User>, IFakerTInternal, ILocaleAware, IRuleSet<User>'
     content.vb: >-
       Public NotInheritable Class UserFaker
+
           Inherits AutoFaker(Of User)
+
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of User)
   inheritance:
   - System.Object

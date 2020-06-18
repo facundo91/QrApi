@@ -28,6 +28,7 @@ items:
     content: 'public class PetResponseExampleProvider : IExamplesProvider<PetResponse>'
     content.vb: >-
       Public Class PetResponseExampleProvider
+
           Implements IExamplesProvider(Of PetResponse)
   inheritance:
   - System.Object

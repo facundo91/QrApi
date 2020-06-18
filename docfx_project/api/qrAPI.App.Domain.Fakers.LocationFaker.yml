@@ -28,7 +28,9 @@ items:
     content: 'public sealed class LocationFaker : AutoFaker<Location>, IFakerTInternal, ILocaleAware, IRuleSet<Location>'
     content.vb: >-
       Public NotInheritable Class LocationFaker
+
           Inherits AutoFaker(Of Location)
+
           Implements IFakerTInternal, ILocaleAware, IRuleSet(Of Location)
   inheritance:
   - System.Object

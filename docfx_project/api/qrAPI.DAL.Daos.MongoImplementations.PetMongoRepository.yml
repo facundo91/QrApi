@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PetMongoRepository
-    path: ../../QrApi/src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
+    path: ../src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
     startLine: 10
   assemblies:
   - qrAPI.DAL
@@ -77,7 +77,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
+    path: ../src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
     startLine: 12
   assemblies:
   - qrAPI.DAL
@@ -110,7 +110,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllByNameAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
+    path: ../src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
     startLine: 16
   assemblies:
   - qrAPI.DAL
@@ -147,7 +147,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAllByUserIdAsync
-    path: ../../QrApi/src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
+    path: ../src/qrAPI.DAL/Daos/MongoImplementations/PetMongoRepository.cs
     startLine: 22
   assemblies:
   - qrAPI.DAL

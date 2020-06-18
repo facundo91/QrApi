@@ -38,6 +38,7 @@ items:
     content: 'public class Pet : DomainObject'
     content.vb: >-
       Public Class Pet
+
           Inherits DomainObject
   inheritance:
   - System.Object

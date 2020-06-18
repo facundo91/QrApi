@@ -29,6 +29,7 @@ items:
     content: 'public class DataBaseHealthCheck : IHealthCheck'
     content.vb: >-
       Public Class DataBaseHealthCheck
+
           Implements IHealthCheck
   inheritance:
   - System.Object

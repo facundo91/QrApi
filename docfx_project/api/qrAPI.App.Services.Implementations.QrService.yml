@@ -5,7 +5,7 @@ items:
   id: QrService
   parent: qrAPI.App.Services.Implementations
   children:
-  - qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService},qrAPI.App.Domain.Validators.QrValidator)
+  - qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService})
   - qrAPI.App.Services.Implementations.QrService.ScanQr(System.Guid)
   langs:
   - csharp
@@ -29,7 +29,9 @@ items:
     content: 'public class QrService : AbstractGenericService<Qr, QrDto>, IQrService, IGenericService<Qr>'
     content.vb: >-
       Public Class QrService
+
           Inherits AbstractGenericService(Of Qr, QrDto)
+
           Implements IQrService, IGenericService(Of Qr)
   inheritance:
   - System.Object
@@ -57,16 +59,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService},qrAPI.App.Domain.Validators.QrValidator)
-  commentId: M:qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService},qrAPI.App.Domain.Validators.QrValidator)
-  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService},qrAPI.App.Domain.Validators.QrValidator)'
+- uid: qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService})
+  commentId: M:qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService})
+  id: '#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService})'
   parent: qrAPI.App.Services.Implementations.QrService
   langs:
   - csharp
   - vb
-  name: QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>, QrValidator)
-  nameWithType: QrService.QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>, QrValidator)
-  fullName: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.QrDto>, qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService<qrAPI.App.Domain.Pet>, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.QrService>, qrAPI.App.Domain.Validators.QrValidator)
+  name: QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>)
+  nameWithType: QrService.QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>)
+  fullName: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.QrDto>, qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService<qrAPI.App.Domain.Pet>, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.QrService>)
   type: Constructor
   source:
     remote:
@@ -80,7 +82,7 @@ items:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
   syntax:
-    content: public QrService(IMapper mapper, IRepository<QrDto> repository, IMailBroker mailService, IGenericService<Pet> petService, IIdentityService identityService, ILogger<QrService> logger, QrValidator validator)
+    content: public QrService(IMapper mapper, IRepository<QrDto> repository, IMailBroker mailService, IGenericService<Pet> petService, IIdentityService identityService, ILogger<QrService> logger)
     parameters:
     - id: mapper
       type: AutoMapper.IMapper
@@ -94,17 +96,15 @@ items:
       type: qrAPI.App.Services.Interfaces.IIdentityService
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService}
-    - id: validator
-      type: qrAPI.App.Domain.Validators.QrValidator
-    content.vb: Public Sub New(mapper As IMapper, repository As IRepository(Of QrDto), mailService As IMailBroker, petService As IGenericService(Of Pet), identityService As IIdentityService, logger As ILogger(Of QrService), validator As QrValidator)
+    content.vb: Public Sub New(mapper As IMapper, repository As IRepository(Of QrDto), mailService As IMailBroker, petService As IGenericService(Of Pet), identityService As IIdentityService, logger As ILogger(Of QrService))
   overload: qrAPI.App.Services.Implementations.QrService.#ctor*
-  nameWithType.vb: QrService.QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService), QrValidator)
+  nameWithType.vb: QrService.QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.QrDto), qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService(Of qrAPI.App.Domain.Pet), qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.QrService), qrAPI.App.Domain.Validators.QrValidator)
-  name.vb: QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService), QrValidator)
+  fullName.vb: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.QrDto), qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService(Of qrAPI.App.Domain.Pet), qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.QrService))
+  name.vb: QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService))
 - uid: qrAPI.App.Services.Implementations.QrService.ScanQr(System.Guid)
   commentId: M:qrAPI.App.Services.Implementations.QrService.ScanQr(System.Guid)
   id: ScanQr(System.Guid)
@@ -123,7 +123,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: ScanQr
     path: ../src/qrAPI.App/Services/Implementations/QrService.cs
-    startLine: 35
+    startLine: 34
   assemblies:
   - qrAPI.App
   namespace: qrAPI.App.Services.Implementations
@@ -1194,12 +1194,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: qrAPI.App.Domain.Validators.QrValidator
-  commentId: T:qrAPI.App.Domain.Validators.QrValidator
-  parent: qrAPI.App.Domain.Validators
-  name: QrValidator
-  nameWithType: QrValidator
-  fullName: qrAPI.App.Domain.Validators.QrValidator
 - uid: AutoMapper
   commentId: N:AutoMapper
   isExternal: true
@@ -1297,11 +1291,6 @@ references:
   name: Microsoft.Extensions.Logging
   nameWithType: Microsoft.Extensions.Logging
   fullName: Microsoft.Extensions.Logging
-- uid: qrAPI.App.Domain.Validators
-  commentId: N:qrAPI.App.Domain.Validators
-  name: qrAPI.App.Domain.Validators
-  nameWithType: qrAPI.App.Domain.Validators
-  fullName: qrAPI.App.Domain.Validators
 - uid: qrAPI.App.Services.Implementations.QrService.ScanQr*
   commentId: Overload:qrAPI.App.Services.Implementations.QrService.ScanQr
   name: ScanQr

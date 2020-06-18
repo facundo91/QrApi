@@ -28,6 +28,7 @@ items:
     content: 'public interface IQrService : IGenericService<Qr>'
     content.vb: >-
       Public Interface IQrService
+
           Inherits IGenericService(Of Qr)
   inheritedMembers:
   - qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Qr}.GetAllAsync

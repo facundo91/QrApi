@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: SendGridSettings
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGrid/SendGridSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGrid/SendGridSettings.cs
     startLine: 2
   assemblies:
   - qrAPI.Infra
@@ -61,7 +61,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: ApiKey
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGrid/SendGridSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGrid/SendGridSettings.cs
     startLine: 4
   assemblies:
   - qrAPI.Infra
@@ -96,7 +96,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Enabled
-    path: ../../QrApi/src/qrAPI.Infra/Mail/SendGrid/SendGridSettings.cs
+    path: ../src/qrAPI.Infra/Mail/SendGrid/SendGridSettings.cs
     startLine: 5
   assemblies:
   - qrAPI.Infra

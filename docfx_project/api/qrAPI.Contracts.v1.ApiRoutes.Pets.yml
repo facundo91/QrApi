@@ -23,7 +23,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Pets
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 17
   assemblies:
   - qrAPI.Contracts
@@ -65,7 +65,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: GetAll
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 20
   assemblies:
   - qrAPI.Contracts
@@ -98,7 +98,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Get
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 21
   assemblies:
   - qrAPI.Contracts
@@ -131,7 +131,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Update
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 22
   assemblies:
   - qrAPI.Contracts
@@ -164,7 +164,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Delete
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 23
   assemblies:
   - qrAPI.Contracts
@@ -197,7 +197,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Create
-    path: ../../QrApi/src/qrAPI.Contracts/v1/ApiRoutes.cs
+    path: ../src/qrAPI.Contracts/v1/ApiRoutes.cs
     startLine: 24
   assemblies:
   - qrAPI.Contracts

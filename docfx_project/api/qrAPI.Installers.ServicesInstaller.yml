@@ -20,7 +20,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: ServicesInstaller
     path: ../src/qrAPI/Installers/ServicesInstaller.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - qrAPI
   namespace: qrAPI.Installers
@@ -28,6 +28,7 @@ items:
     content: 'public class ServicesInstaller : IInstaller'
     content.vb: >-
       Public Class ServicesInstaller
+
           Implements IInstaller
   inheritance:
   - System.Object
@@ -65,7 +66,7 @@ items:
       repo: https://github.com/facundo91/QrApi.git
     id: InstallServices
     path: ../src/qrAPI/Installers/ServicesInstaller.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - qrAPI
   namespace: qrAPI.Installers

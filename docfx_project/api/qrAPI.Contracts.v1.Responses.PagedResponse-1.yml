@@ -25,7 +25,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PagedResponse
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 4
   assemblies:
   - qrAPI.Contracts
@@ -71,7 +71,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 6
   assemblies:
   - qrAPI.Contracts
@@ -103,7 +103,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 8
   assemblies:
   - qrAPI.Contracts
@@ -139,7 +139,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Data
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 13
   assemblies:
   - qrAPI.Contracts
@@ -176,7 +176,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PageNumber
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 15
   assemblies:
   - qrAPI.Contracts
@@ -213,7 +213,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PageSize
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 17
   assemblies:
   - qrAPI.Contracts
@@ -250,7 +250,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: NextPage
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 19
   assemblies:
   - qrAPI.Contracts
@@ -287,7 +287,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PreviousPage
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PagedResponse.cs
     startLine: 21
   assemblies:
   - qrAPI.Contracts

@@ -625,15 +625,15 @@ references:
   fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)
   nameWithType: AbstractGenericService<TDomainObject, TDto>
   nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto)
-- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}},FluentValidation.AbstractValidator{`0})
-  name: AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>, AbstractValidator<TDomainObject>)
-  href: api/qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IRepository__1__Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_AbstractGenericService__0__1___FluentValidation_AbstractValidator__0__
-  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}},FluentValidation.AbstractValidator{`0})
-  name.vb: AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)), AbstractValidator(Of TDomainObject))
-  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<TDto>, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>>, FluentValidation.AbstractValidator<TDomainObject>)
-  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto), Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)), FluentValidation.AbstractValidator(Of TDomainObject))
-  nameWithType: AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>, AbstractValidator<TDomainObject>)
-  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)), AbstractValidator(Of TDomainObject))
+- uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}})
+  name: AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>)
+  href: api/qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IRepository__1__Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_AbstractGenericService__0__1___
+  commentId: M:qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{`1},Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.AbstractGenericService{`0,`1}})
+  name.vb: AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)))
+  fullName: qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<TDto>, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.AbstractGenericService<TDomainObject, TDto>>)
+  fullName.vb: qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of TDto), Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.AbstractGenericService(Of TDomainObject, TDto)))
+  nameWithType: AbstractGenericService<TDomainObject, TDto>.AbstractGenericService(IMapper, IRepository<TDto>, ILogger<AbstractGenericService<TDomainObject, TDto>>)
+  nameWithType.vb: AbstractGenericService(Of TDomainObject, TDto).AbstractGenericService(IMapper, IRepository(Of TDto), ILogger(Of AbstractGenericService(Of TDomainObject, TDto)))
 - uid: qrAPI.App.Services.Implementations.AbstractGenericService`2.#ctor*
   name: AbstractGenericService
   href: api/qrAPI.App.Services.Implementations.AbstractGenericService-2.html#qrAPI_App_Services_Implementations_AbstractGenericService_2__ctor_
@@ -816,15 +816,15 @@ references:
   commentId: T:qrAPI.App.Services.Implementations.PetService
   fullName: qrAPI.App.Services.Implementations.PetService
   nameWithType: PetService
-- uid: qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
-  name: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>, PetValidator)
-  href: api/qrAPI.App.Services.Implementations.PetService.html#qrAPI_App_Services_Implementations_PetService__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IPetRepository_Microsoft_AspNetCore_Http_IHttpContextAccessor_qrAPI_App_Services_Interfaces_IIdentityService_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_PetService__qrAPI_App_Domain_Validators_PetValidator_
-  commentId: M:qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService},qrAPI.App.Domain.Validators.PetValidator)
-  name.vb: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService), PetValidator)
-  fullName: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.PetService>, qrAPI.App.Domain.Validators.PetValidator)
-  fullName.vb: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.PetService), qrAPI.App.Domain.Validators.PetValidator)
-  nameWithType: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>, PetValidator)
-  nameWithType.vb: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService), PetValidator)
+- uid: qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService})
+  name: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>)
+  href: api/qrAPI.App.Services.Implementations.PetService.html#qrAPI_App_Services_Implementations_PetService__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IPetRepository_Microsoft_AspNetCore_Http_IHttpContextAccessor_qrAPI_App_Services_Interfaces_IIdentityService_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_PetService__
+  commentId: M:qrAPI.App.Services.Implementations.PetService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IPetRepository,Microsoft.AspNetCore.Http.IHttpContextAccessor,qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.PetService})
+  name.vb: PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService))
+  fullName: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.PetService>)
+  fullName.vb: qrAPI.App.Services.Implementations.PetService.PetService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IPetRepository, Microsoft.AspNetCore.Http.IHttpContextAccessor, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.PetService))
+  nameWithType: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger<PetService>)
+  nameWithType.vb: PetService.PetService(IMapper, IPetRepository, IHttpContextAccessor, IIdentityService, ILogger(Of PetService))
 - uid: qrAPI.App.Services.Implementations.PetService.#ctor*
   name: PetService
   href: api/qrAPI.App.Services.Implementations.PetService.html#qrAPI_App_Services_Implementations_PetService__ctor_
@@ -903,15 +903,15 @@ references:
   commentId: T:qrAPI.App.Services.Implementations.QrService
   fullName: qrAPI.App.Services.Implementations.QrService
   nameWithType: QrService
-- uid: qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService},qrAPI.App.Domain.Validators.QrValidator)
-  name: QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>, QrValidator)
-  href: api/qrAPI.App.Services.Implementations.QrService.html#qrAPI_App_Services_Implementations_QrService__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IRepository_qrAPI_DAL_Dtos_QrDto__qrAPI_Infra_Mail_IMailBroker_qrAPI_App_Services_Interfaces_IGenericService_qrAPI_App_Domain_Pet__qrAPI_App_Services_Interfaces_IIdentityService_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_QrService__qrAPI_App_Domain_Validators_QrValidator_
-  commentId: M:qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService},qrAPI.App.Domain.Validators.QrValidator)
-  name.vb: QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService), QrValidator)
-  fullName: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.QrDto>, qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService<qrAPI.App.Domain.Pet>, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.QrService>, qrAPI.App.Domain.Validators.QrValidator)
-  fullName.vb: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.QrDto), qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService(Of qrAPI.App.Domain.Pet), qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.QrService), qrAPI.App.Domain.Validators.QrValidator)
-  nameWithType: QrService.QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>, QrValidator)
-  nameWithType.vb: QrService.QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService), QrValidator)
+- uid: qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService})
+  name: QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>)
+  href: api/qrAPI.App.Services.Implementations.QrService.html#qrAPI_App_Services_Implementations_QrService__ctor_AutoMapper_IMapper_qrAPI_DAL_Daos_Interfaces_IRepository_qrAPI_DAL_Dtos_QrDto__qrAPI_Infra_Mail_IMailBroker_qrAPI_App_Services_Interfaces_IGenericService_qrAPI_App_Domain_Pet__qrAPI_App_Services_Interfaces_IIdentityService_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Implementations_QrService__
+  commentId: M:qrAPI.App.Services.Implementations.QrService.#ctor(AutoMapper.IMapper,qrAPI.DAL.Daos.Interfaces.IRepository{qrAPI.DAL.Dtos.QrDto},qrAPI.Infra.Mail.IMailBroker,qrAPI.App.Services.Interfaces.IGenericService{qrAPI.App.Domain.Pet},qrAPI.App.Services.Interfaces.IIdentityService,Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Implementations.QrService})
+  name.vb: QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService))
+  fullName: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository<qrAPI.DAL.Dtos.QrDto>, qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService<qrAPI.App.Domain.Pet>, qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Implementations.QrService>)
+  fullName.vb: qrAPI.App.Services.Implementations.QrService.QrService(AutoMapper.IMapper, qrAPI.DAL.Daos.Interfaces.IRepository(Of qrAPI.DAL.Dtos.QrDto), qrAPI.Infra.Mail.IMailBroker, qrAPI.App.Services.Interfaces.IGenericService(Of qrAPI.App.Domain.Pet), qrAPI.App.Services.Interfaces.IIdentityService, Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Implementations.QrService))
+  nameWithType: QrService.QrService(IMapper, IRepository<QrDto>, IMailBroker, IGenericService<Pet>, IIdentityService, ILogger<QrService>)
+  nameWithType.vb: QrService.QrService(IMapper, IRepository(Of QrDto), IMailBroker, IGenericService(Of Pet), IIdentityService, ILogger(Of QrService))
 - uid: qrAPI.App.Services.Implementations.QrService.#ctor*
   name: QrService
   href: api/qrAPI.App.Services.Implementations.QrService.html#qrAPI_App_Services_Implementations_QrService__ctor_
@@ -1109,6 +1109,140 @@ references:
   isSpec: "True"
   fullName: qrAPI.App.Services.Interfaces.IQrService.ScanQr
   nameWithType: IQrService.ScanQr
+- uid: qrAPI.App.Services.Validators
+  name: qrAPI.App.Services.Validators
+  href: api/qrAPI.App.Services.Validators.html
+  commentId: N:qrAPI.App.Services.Validators
+  fullName: qrAPI.App.Services.Validators
+  nameWithType: qrAPI.App.Services.Validators
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  name: AbstractGenericServiceValidator<TDomainObject>
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html
+  commentId: T:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+  name.vb: AbstractGenericServiceValidator(Of TDomainObject)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator{`0}},qrAPI.App.Services.Interfaces.IGenericService{`0},FluentValidation.AbstractValidator{`0})
+  name: AbstractGenericServiceValidator(ILogger<AbstractGenericServiceValidator<TDomainObject>>, IGenericService<TDomainObject>, AbstractValidator<TDomainObject>)
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1__ctor_Microsoft_Extensions_Logging_ILogger_qrAPI_App_Services_Validators_AbstractGenericServiceValidator__0___qrAPI_App_Services_Interfaces_IGenericService__0__FluentValidation_AbstractValidator__0__
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{qrAPI.App.Services.Validators.AbstractGenericServiceValidator{`0}},qrAPI.App.Services.Interfaces.IGenericService{`0},FluentValidation.AbstractValidator{`0})
+  name.vb: AbstractGenericServiceValidator(ILogger(Of AbstractGenericServiceValidator(Of TDomainObject)), IGenericService(Of TDomainObject), AbstractValidator(Of TDomainObject))
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator(Microsoft.Extensions.Logging.ILogger<qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>>, qrAPI.App.Services.Interfaces.IGenericService<TDomainObject>, FluentValidation.AbstractValidator<TDomainObject>)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator(Microsoft.Extensions.Logging.ILogger(Of qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)), qrAPI.App.Services.Interfaces.IGenericService(Of TDomainObject), FluentValidation.AbstractValidator(Of TDomainObject))
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator(ILogger<AbstractGenericServiceValidator<TDomainObject>>, IGenericService<TDomainObject>, AbstractValidator<TDomainObject>)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator(ILogger(Of AbstractGenericServiceValidator(Of TDomainObject)), IGenericService(Of TDomainObject), AbstractValidator(Of TDomainObject))
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor*
+  name: AbstractGenericServiceValidator
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1__ctor_
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.#ctor
+  isSpec: "True"
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.AbstractGenericServiceValidator
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).AbstractGenericServiceValidator
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._decoratedService
+  name: _decoratedService
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1__decoratedService
+  commentId: F:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._decoratedService
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>._decoratedService
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)._decoratedService
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>._decoratedService
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)._decoratedService
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._logger
+  name: _logger
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1__logger
+  commentId: F:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1._logger
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>._logger
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject)._logger
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>._logger
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject)._logger
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync(`0)
+  name: CreateAsync(TDomainObject)
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_CreateAsync__0_
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync(`0)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.CreateAsync(TDomainObject)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).CreateAsync(TDomainObject)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.CreateAsync(TDomainObject)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).CreateAsync(TDomainObject)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync*
+  name: CreateAsync
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_CreateAsync_
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.CreateAsync
+  isSpec: "True"
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.CreateAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).CreateAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.CreateAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).CreateAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync(System.Guid)
+  name: DeleteAsync(Guid)
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_DeleteAsync_System_Guid_
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync(System.Guid)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.DeleteAsync(System.Guid)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync(System.Guid)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.DeleteAsync(Guid)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync(Guid)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync*
+  name: DeleteAsync
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_DeleteAsync_
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.DeleteAsync
+  isSpec: "True"
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.DeleteAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.DeleteAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).DeleteAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
+  name: GetAllAsync()
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_GetAllAsync
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetAllAsync()
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync()
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetAllAsync()
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync()
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync*
+  name: GetAllAsync
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_GetAllAsync_
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetAllAsync
+  isSpec: "True"
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetAllAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetAllAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetAllAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync(System.Guid)
+  name: GetByIdAsync(Guid)
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_GetByIdAsync_System_Guid_
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync(System.Guid)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync(System.Guid)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync(System.Guid)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync(Guid)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync(Guid)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_GetByIdAsync_
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.GetByIdAsync
+  isSpec: "True"
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.GetByIdAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).GetByIdAsync
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync(System.Guid,`0)
+  name: UpdateAsync(Guid, TDomainObject)
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_UpdateAsync_System_Guid__0_
+  commentId: M:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync(System.Guid,`0)
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.UpdateAsync(System.Guid, TDomainObject)
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync(System.Guid, TDomainObject)
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.UpdateAsync(Guid, TDomainObject)
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync(Guid, TDomainObject)
+- uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync*
+  name: UpdateAsync
+  href: api/qrAPI.App.Services.Validators.AbstractGenericServiceValidator-1.html#qrAPI_App_Services_Validators_AbstractGenericServiceValidator_1_UpdateAsync_
+  commentId: Overload:qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1.UpdateAsync
+  isSpec: "True"
+  fullName: qrAPI.App.Services.Validators.AbstractGenericServiceValidator<TDomainObject>.UpdateAsync
+  fullName.vb: qrAPI.App.Services.Validators.AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync
+  nameWithType: AbstractGenericServiceValidator<TDomainObject>.UpdateAsync
+  nameWithType.vb: AbstractGenericServiceValidator(Of TDomainObject).UpdateAsync
 - uid: qrAPI.App.Validations
   name: qrAPI.App.Validations
   href: api/qrAPI.App.Validations.html

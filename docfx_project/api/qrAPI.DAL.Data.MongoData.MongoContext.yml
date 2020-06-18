@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: MongoContext
-    path: ../../QrApi/src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+    path: ../src/qrAPI.DAL/Data/MongoData/MongoContext.cs
     startLine: 5
   assemblies:
   - qrAPI.DAL
@@ -66,7 +66,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: .ctor
-    path: ../../QrApi/src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+    path: ../src/qrAPI.DAL/Data/MongoData/MongoContext.cs
     startLine: 9
   assemblies:
   - qrAPI.DAL
@@ -99,7 +99,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: HealthCheck
-    path: ../../QrApi/src/qrAPI.DAL/Data/MongoData/MongoContext.cs
+    path: ../src/qrAPI.DAL/Data/MongoData/MongoContext.cs
     startLine: 15
   assemblies:
   - qrAPI.DAL

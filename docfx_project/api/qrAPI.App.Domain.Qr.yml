@@ -29,6 +29,7 @@ items:
     content: 'public class Qr : DomainObject'
     content.vb: >-
       Public Class Qr
+
           Inherits DomainObject
   inheritance:
   - System.Object

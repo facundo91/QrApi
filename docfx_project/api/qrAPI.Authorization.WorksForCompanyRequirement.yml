@@ -29,6 +29,7 @@ items:
     content: 'public class WorksForCompanyRequirement : IAuthorizationRequirement'
     content.vb: >-
       Public Class WorksForCompanyRequirement
+
           Implements IAuthorizationRequirement
   inheritance:
   - System.Object

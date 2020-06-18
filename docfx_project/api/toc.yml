@@ -72,6 +72,12 @@
     name: IIdentityService
   - uid: qrAPI.App.Services.Interfaces.IQrService
     name: IQrService
+- uid: qrAPI.App.Services.Validators
+  name: qrAPI.App.Services.Validators
+  items:
+  - uid: qrAPI.App.Services.Validators.AbstractGenericServiceValidator`1
+    name: AbstractGenericServiceValidator<TDomainObject>
+    name.vb: AbstractGenericServiceValidator(Of TDomainObject)
 - uid: qrAPI.App.Validations
   name: qrAPI.App.Validations
   items:

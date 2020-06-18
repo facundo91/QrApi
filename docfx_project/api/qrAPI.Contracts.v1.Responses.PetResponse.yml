@@ -25,7 +25,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PetResponse
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 7
   assemblies:
   - qrAPI.Contracts
@@ -66,7 +66,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Id
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 9
   assemblies:
   - qrAPI.Contracts
@@ -111,7 +111,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Name
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 11
   assemblies:
   - qrAPI.Contracts
@@ -146,7 +146,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Birthdate
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 12
   assemblies:
   - qrAPI.Contracts
@@ -181,7 +181,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Gender
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 13
   assemblies:
   - qrAPI.Contracts
@@ -228,7 +228,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Breed
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 15
   assemblies:
   - qrAPI.Contracts
@@ -263,7 +263,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Owners
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 16
   assemblies:
   - qrAPI.Contracts
@@ -298,7 +298,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: PictureUrl
-    path: ../../QrApi/src/qrAPI.Contracts/v1/Responses/PetResponse.cs
+    path: ../src/qrAPI.Contracts/v1/Responses/PetResponse.cs
     startLine: 17
   assemblies:
   - qrAPI.Contracts

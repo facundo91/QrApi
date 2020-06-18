@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: IoCOptions
-    path: ../../QrApi/src/qrAPI.Infra/Options/IoCOptions.cs
+    path: ../src/qrAPI.Infra/Options/IoCOptions.cs
     startLine: 2
   assemblies:
   - qrAPI.Infra
@@ -60,7 +60,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: DalImplementation
-    path: ../../QrApi/src/qrAPI.Infra/Options/IoCOptions.cs
+    path: ../src/qrAPI.Infra/Options/IoCOptions.cs
     startLine: 4
   assemblies:
   - qrAPI.Infra

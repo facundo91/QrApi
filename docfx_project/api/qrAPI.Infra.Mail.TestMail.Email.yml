@@ -39,7 +39,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: Email
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 4
   assemblies:
   - qrAPI.Infra
@@ -80,7 +80,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: date
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 6
   assemblies:
   - qrAPI.Infra
@@ -115,7 +115,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: attachments
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 7
   assemblies:
   - qrAPI.Infra
@@ -150,7 +150,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: dkim
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 8
   assemblies:
   - qrAPI.Infra
@@ -185,7 +185,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: envelope_to
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 9
   assemblies:
   - qrAPI.Infra
@@ -220,7 +220,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: subject
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 10
   assemblies:
   - qrAPI.Infra
@@ -255,7 +255,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: SPF
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 11
   assemblies:
   - qrAPI.Infra
@@ -290,7 +290,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: to_parsed
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 12
   assemblies:
   - qrAPI.Infra
@@ -325,7 +325,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: oid
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 13
   assemblies:
   - qrAPI.Infra
@@ -360,7 +360,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: envelope_from
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 14
   assemblies:
   - qrAPI.Infra
@@ -395,7 +395,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: cc_parsed
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 15
   assemblies:
   - qrAPI.Infra
@@ -430,7 +430,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: namespace
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 16
   assemblies:
   - qrAPI.Infra
@@ -465,7 +465,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: from
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 17
   assemblies:
   - qrAPI.Infra
@@ -500,7 +500,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: sender_ip
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 18
   assemblies:
   - qrAPI.Infra
@@ -535,7 +535,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: html
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 19
   assemblies:
   - qrAPI.Infra
@@ -570,7 +570,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: to
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 20
   assemblies:
   - qrAPI.Infra
@@ -605,7 +605,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: tag
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 21
   assemblies:
   - qrAPI.Infra
@@ -640,7 +640,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: text
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 22
   assemblies:
   - qrAPI.Infra
@@ -675,7 +675,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: from_parsed
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 23
   assemblies:
   - qrAPI.Infra
@@ -710,7 +710,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: timestamp
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 24
   assemblies:
   - qrAPI.Infra
@@ -745,7 +745,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: id
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 25
   assemblies:
   - qrAPI.Infra
@@ -780,7 +780,7 @@ items:
       branch: master
       repo: https://github.com/facundo91/QrApi.git
     id: downloadUrl
-    path: ../../QrApi/src/qrAPI.Infra/Mail/TestMail/Email.cs
+    path: ../src/qrAPI.Infra/Mail/TestMail/Email.cs
     startLine: 26
   assemblies:
   - qrAPI.Infra
