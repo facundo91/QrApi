@@ -18,7 +18,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.0.103'
+        dotnet-version: '3.1.102'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'qrightthing'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f6637b174d954fc7ae4165659a09ed00 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_fe61164f506d4f478b5951dca20110b3 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
